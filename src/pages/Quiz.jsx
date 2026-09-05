@@ -385,11 +385,6 @@ function Quiz({ profile }) {
 
   return (
     <div style={{ minHeight: '100vh', padding: '20px', background: 'linear-gradient(135deg, #FF6B35 0%, #8338EC 100%)' }}>
-      {/* DEBUG: Show question text at very top */}
-      <div style={{ color: 'yellow', fontSize: '1.2rem', marginBottom: '20px', textAlign: 'center', fontWeight: 'bold' }}>
-        DEBUG QUESTION: {q.text}
-      </div>
-
       <div style={{ maxWidth: '500px', margin: '0 auto', position: 'relative' }}>
         {/* Avatar in top-right corner */}
         <div style={{
@@ -452,22 +447,16 @@ function Quiz({ profile }) {
           }}
         >
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: '15px' }}>
-            <h2 style={{
+            <div style={{
               margin: 0,
               fontSize: '1.3rem',
               flex: 1,
               color: 'white',
               fontWeight: 'bold',
-              textShadow: '0 2px 4px rgba(0,0,0,0.3)',
-              display: 'block',
-              visibility: 'visible',
-              opacity: 1,
-              overflow: 'visible',
-              height: 'auto',
-              minHeight: '1em'
+              textShadow: '0 2px 4px rgba(0,0,0,0.3)'
             }}>
               {q.text || 'NO TEXT FOUND'}
-            </h2>
+            </div>
             {isAnswered && (
               <div style={{ fontSize: '2rem', marginLeft: '10px' }}>
                 {feedbackType === 'correct' ? '✓' : '✗'}
