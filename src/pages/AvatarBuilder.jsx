@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getProfileService } from '../services/profileService';
+import RobloxAvatar from '../components/RobloxAvatar';
 
 function AvatarBuilder({ profile }) {
   const navigate = useNavigate();
@@ -60,6 +61,26 @@ function AvatarBuilder({ profile }) {
 
   // Render avatar based on gender
   const AvatarPreview = () => {
+    // Use the new Roblox-style avatar
+    const profilePreview = {
+      avatar: {
+        gender: avatar.gender,
+        skinColor: avatar.skinColor,
+        hairColor: avatar.hairColor,
+        outfitColor: avatar.outfitColor,
+        faceType: 'happy'
+      }
+    };
+
+    return (
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <RobloxAvatar profile={profilePreview} size={140} />
+      </div>
+    );
+  };
+
+  // OLD AVATAR CODE - keeping as reference but not used
+  const AvatarPreviewOld = () => {
     if (avatar.gender === 'boy') {
       return (
         <svg viewBox="0 0 100 150" style={{ width: '120px', height: '180px' }}>
