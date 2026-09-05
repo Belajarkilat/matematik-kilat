@@ -342,6 +342,43 @@ function Quiz({ profile }) {
     );
   };
 
+  // Guard: if no questions, show error
+  if (!loading && (!questions || questions.length === 0)) {
+    console.error('[Quiz] NO QUESTIONS TO DISPLAY! Questions array:', questions);
+    return (
+      <div style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        minHeight: '100vh',
+        background: 'linear-gradient(135deg, #FF6B35 0%, #8338EC 100%)',
+        flexDirection: 'column',
+        gap: '20px',
+        color: 'white',
+        textAlign: 'center'
+      }}>
+        <div style={{ fontSize: '3rem' }}>❌</div>
+        <h1>No questions found!</h1>
+        <p>Questions array is empty or undefined.</p>
+        <button
+          onClick={() => navigate('/hub')}
+          style={{
+            marginTop: '20px',
+            padding: '12px 24px',
+            background: 'white',
+            color: '#FF6B35',
+            border: 'none',
+            borderRadius: '8px',
+            fontWeight: 'bold',
+            cursor: 'pointer'
+          }}
+        >
+          Back to Hub
+        </button>
+      </div>
+    );
+  }
+
   return (
     <div style={{ minHeight: '100vh', padding: '20px', background: 'linear-gradient(135deg, #FF6B35 0%, #8338EC 100%)' }}>
       <div style={{ maxWidth: '500px', margin: '0 auto', position: 'relative' }}>
