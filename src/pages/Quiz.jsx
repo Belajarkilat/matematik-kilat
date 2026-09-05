@@ -446,23 +446,25 @@ function Quiz({ profile }) {
             border: isAnswered ? '4px solid white' : '4px solid rgba(255,255,255,0.5)'
           }}
         >
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: '15px' }}>
+          {/* Question Text - NO FLEX, SIMPLE DIV */}
+          <div style={{ marginBottom: '15px' }}>
             <div style={{
-              margin: 0,
               fontSize: '1.3rem',
-              flex: 1,
               color: 'white',
               fontWeight: 'bold',
-              textShadow: '0 2px 4px rgba(0,0,0,0.3)'
+              textShadow: '0 2px 4px rgba(0,0,0,0.3)',
+              lineHeight: '1.5'
             }}>
-              {q.text || 'NO TEXT FOUND'}
+              {q.text}
             </div>
-            {isAnswered && (
-              <div style={{ fontSize: '2rem', marginLeft: '10px' }}>
-                {feedbackType === 'correct' ? '✓' : '✗'}
-              </div>
-            )}
           </div>
+
+          {/* Feedback Icon */}
+          {isAnswered && (
+            <div style={{ fontSize: '2rem', textAlign: 'center', marginBottom: '15px' }}>
+              {feedbackType === 'correct' ? '✓' : '✗'}
+            </div>
+          )}
 
           {q.type === 'mcq' ? (
             <div style={{ display: 'grid', gap: '12px' }}>
