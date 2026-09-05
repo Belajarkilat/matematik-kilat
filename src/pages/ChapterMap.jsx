@@ -12,12 +12,28 @@ function ChapterMap({ profile }) {
   useEffect(() => {
     const loadChapters = async () => {
       try {
-        const response = await fetch(`/matematik-kilat/data/questions/tahun${tahun}.json`);
-        if (!response.ok) throw new Error('Failed to load chapters');
+        console.log(`Loading chapters for tahun: ${tahun}`);
+        const url = `/matematik-kilat/data/questions/tahun${tahun}.json`;
+        console.log(`Fetching from: ${url}`);
+
+        const response = await fetch(url);
+        console.log(`Response status: ${response.status}`);
+
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}: Failed to load chapters from ${url}`);
+        }
+
         const data = await response.json();
-        setChapters(data.chapters || []);
+        console.log(`Loaded chapters:`, data.chapters);
+
+        if (!data.chapters || data.chapters.length === 0) {
+          throw new Error('No chapters found in data');
+        }
+
+        setChapters(data.chapters);
       } catch (error) {
-        console.error('Failed to load chapters:', error);
+        console.error('CRITICAL ERROR - Failed to load chapters:', error);
+        alert(`Error loading chapters: ${error.message}. Going back to Hub.`);
         navigate('/hub');
       } finally {
         setLoading(false);
