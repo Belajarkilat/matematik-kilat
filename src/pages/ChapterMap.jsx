@@ -12,28 +12,35 @@ function ChapterMap({ profile }) {
   useEffect(() => {
     const loadChapters = async () => {
       try {
-        console.log(`Loading chapters for tahun: ${tahun}`);
+        console.log(`[ChapterMap] Loading chapters for tahun: ${tahun}`);
         const url = `/matematik-kilat/data/questions/tahun${tahun}.json`;
-        console.log(`Fetching from: ${url}`);
+        console.log(`[ChapterMap] Fetching from: ${url}`);
 
         const response = await fetch(url);
-        console.log(`Response status: ${response.status}`);
+        console.log(`[ChapterMap] Response status: ${response.status}`);
+        console.log(`[ChapterMap] Response OK: ${response.ok}`);
 
         if (!response.ok) {
-          throw new Error(`HTTP ${response.status}: Failed to load chapters from ${url}`);
+          const text = await response.text();
+          throw new Error(`HTTP ${response.status}: ${text.substring(0, 100)}`);
         }
 
-        const data = await response.json();
-        console.log(`Loaded chapters:`, data.chapters);
+        const text = await response.text();
+        console.log(`[ChapterMap] Response text length: ${text.length}`);
+        console.log(`[ChapterMap] First 200 chars:`, text.substring(0, 200));
 
-        if (!data.chapters || data.chapters.length === 0) {
-          throw new Error('No chapters found in data');
+        const data = JSON.parse(text);
+        console.log(`[ChapterMap] Parsed data:`, data);
+        console.log(`[ChapterMap] Data chapters:`, data.chapters);
+
+        if (!data || !data.chapters || data.chapters.length === 0) {
+          throw new Error(`Invalid data structure: chapters is ${data?.chapters}`);
         }
 
         setChapters(data.chapters);
       } catch (error) {
-        console.error('CRITICAL ERROR - Failed to load chapters:', error);
-        alert(`Error loading chapters: ${error.message}. Going back to Hub.`);
+        console.error('[ChapterMap] CRITICAL ERROR:', error);
+        alert(`Error: ${error.message}`);
         navigate('/hub');
       } finally {
         setLoading(false);

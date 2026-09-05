@@ -40,13 +40,35 @@ function Quiz({ profile }) {
 
         const response = await fetch(url);
         console.log(`[Quiz] Response status: ${response.status}`);
+        console.log(`[Quiz] Response OK: ${response.ok}`);
 
-        if (!response.ok) throw new Error(`HTTP ${response.status}: Failed to load questions`);
-        const data = await response.json();
-        console.log(`[Quiz] Data loaded, chapters count: ${data.chapters?.length}`);
+        if (!response.ok) {
+          const text = await response.text();
+          throw new Error(`HTTP ${response.status}: ${text.substring(0, 100)}`);
+        }
+
+        const text = await response.text();
+        console.log(`[Quiz] Response text length: ${text.length}`);
+        console.log(`[Quiz] First 200 chars:`, text.substring(0, 200));
+
+        const data = JSON.parse(text);
+        console.log(`[Quiz] Parsed data:`, data);
+        console.log(`[Quiz] Data chapters count: ${data?.chapters?.length}`);
+
+        if (!data || !data.chapters || data.chapters.length === 0) {
+          throw new Error(`Invalid data structure: chapters is ${data?.chapters}`);
+        }
+
         const chapterNum = parseInt(chapter.split('-')[1]);
+        if (!chapterNum || chapterNum < 1 || chapterNum > data.chapters.length) {
+          throw new Error(`Invalid chapter number: ${chapterNum}`);
+        }
+
         const chapterData = data.chapters[chapterNum - 1];
         const levelNum = parseInt(level);
+
+        console.log(`[Quiz] Chapter data:`, chapterData);
+        console.log(`[Quiz] Questions in chapter:`, chapterData.questions?.length);
 
         // Handle Ultra difficulty (reuse Cabaran with 5x multiplier)
         const levelDifficulties = ['mudah', 'sederhana', 'cabaran'];
@@ -55,6 +77,8 @@ function Quiz({ profile }) {
         let levelQuestions = chapterData.questions
           .filter(q => q.difficulty === baseDifficulty)
           .slice(0, 10);
+
+        console.log(`[Quiz] Filtered questions for level ${levelNum}:`, levelQuestions.length);
 
         // Mark Ultra questions with higher difficulty for scoring
         if (levelNum === 4) {
@@ -65,12 +89,14 @@ function Quiz({ profile }) {
           }));
         }
 
+        console.log(`[Quiz] Final questions set:`, levelQuestions.length);
         setQuestions(levelQuestions);
         // Initialize hints from settings
         setHintsRemaining(ss.getSettings().hintsPerQuiz);
         setLoading(false);
       } catch (error) {
-        console.error('Failed to load questions:', error);
+        console.error('[Quiz] CRITICAL ERROR:', error);
+        alert(`Quiz Error: ${error.message}`);
         navigate('/hub');
       }
     };
