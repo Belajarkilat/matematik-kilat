@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ms">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematik Kilat - Roblox Edition</title>
+    <script>
+      // SPA routing fix for GitHub Pages
+      // Redirect 404s to the index.html with the correct subpath
+      var pathSegments = window.location.pathname.split('/').filter(Boolean);
+
+      // If the last segment doesn't have a file extension, redirect to index
+      if (pathSegments.length > 0) {
+        var lastSegment = pathSegments[pathSegments.length - 1];
+        if (lastSegment && !lastSegment.includes('.')) {
+          var basePath = '/' + pathSegments.slice(0, -1).join('/') + '/';
+          window.location.href = basePath + '?redirect=' + lastSegment;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Matematik Kilat - Loading...</h1>
+    <p>Please wait while the page loads...</p>
+    <script>
+      // Fallback: redirect to index.html
+      if (window.location.pathname !== '/matematik-kilat-roblox/') {
+        window.location.href = '/matematik-kilat-roblox/';
+      }
+    </script>
+  </body>
+</html>
