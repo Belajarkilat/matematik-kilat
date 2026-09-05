@@ -306,9 +306,11 @@ function Quiz({ profile }) {
     );
   }
 
+  console.log(`[Quiz] About to render main quiz UI. Questions:`, questions.length, 'Loading:', loading);
   const q = questions[currentIdx];
   console.log(`[Quiz RENDER] currentIdx: ${currentIdx}, question:`, q);
   console.log(`[Quiz RENDER] q.text:`, q?.text);
+  console.log('[Quiz RENDER] ABOUT TO RENDER H2 WITH TEXT');
   const difficultyLabels = { mudah: '😊 Mudah', sederhana: '😌 Sederhana', cabaran: '🚀 Cabaran' };
   const isAnswered = submitted[currentIdx];
   const feedbackType = feedback[currentIdx];
@@ -346,7 +348,7 @@ function Quiz({ profile }) {
 
   // Guard: if no questions, show error
   if (!loading && (!questions || questions.length === 0)) {
-    console.error('[Quiz] NO QUESTIONS TO DISPLAY! Questions array:', questions);
+    console.error('[Quiz] ERROR GUARD TRIGGERED! NO QUESTIONS! Questions array:', questions, 'Loading:', loading);
     return (
       <div style={{
         display: 'flex',
