@@ -406,7 +406,7 @@ function Quiz({ profile }) {
           }}
         >
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: '15px' }}>
-            <h2 style={{ margin: 0, fontSize: '1.3rem', flex: 1 }}>{q.q}</h2>
+            <h2 style={{ margin: 0, fontSize: '1.3rem', flex: 1 }}>{q.text}</h2>
             {isAnswered && (
               <div style={{ fontSize: '2rem', marginLeft: '10px' }}>
                 {feedbackType === 'correct' ? '✓' : '✗'}
