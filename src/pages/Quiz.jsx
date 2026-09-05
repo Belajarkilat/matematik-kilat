@@ -452,8 +452,21 @@ function Quiz({ profile }) {
           }}
         >
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: '15px' }}>
-            <h2 style={{ margin: 0, fontSize: '1.3rem', flex: 1, color: 'white', fontWeight: 'bold', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
-              {q.text || 'NO TEXT'}
+            <h2 style={{
+              margin: 0,
+              fontSize: '1.3rem',
+              flex: 1,
+              color: 'white',
+              fontWeight: 'bold',
+              textShadow: '0 2px 4px rgba(0,0,0,0.3)',
+              display: 'block',
+              visibility: 'visible',
+              opacity: 1,
+              overflow: 'visible',
+              height: 'auto',
+              minHeight: '1em'
+            }}>
+              {q.text || 'NO TEXT FOUND'}
             </h2>
             {isAnswered && (
               <div style={{ fontSize: '2rem', marginLeft: '10px' }}>
