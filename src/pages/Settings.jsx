@@ -1,16 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getSettingsService } from '../services/settingsService';
+import { getLanguageService } from '../services/languageService';
+import LanguageSelector from '../components/LanguageSelector';
 
 function Settings() {
   const navigate = useNavigate();
   const [settings, setSettings] = useState({});
   const [testSoundPlayed, setTestSoundPlayed] = useState(false);
+  const [language, setLanguage] = useState('ms');
   const ss = getSettingsService();
+  const ls = getLanguageService();
   const audioContextRef = React.useRef(null);
 
   useEffect(() => {
     setSettings(ss.getSettings());
+    setLanguage(ls.getLanguage());
     try {
       audioContextRef.current = new (window.AudioContext || window.webkitAudioContext)();
     } catch (e) {
@@ -161,6 +166,15 @@ function Settings() {
               </button>
             </div>
           )}
+        </div>
+
+        {/* Language Settings */}
+        <div className="card" style={{ marginBottom: '20px' }}>
+          <h2 style={{ margin: '0 0 15px 0', fontSize: '1.2rem' }}>🌐 Language / Bahasa</h2>
+          <LanguageSelector onLanguageChange={() => window.location.reload()} />
+          <p style={{ fontSize: '0.9rem', color: '#666', marginTop: '12px', textAlign: 'center' }}>
+            Pilih bahasa untuk antamuka aplikasi
+          </p>
         </div>
 
         {/* Difficulty Settings */}
