@@ -72,7 +72,17 @@ function Quiz({ profile }) {
         const levelNum = parseInt(level);
 
         console.log(`[Quiz] Chapter data:`, chapterData);
-        console.log(`[Quiz] Questions in chapter:`, chapterData.questions?.length);
+        console.log(`[Quiz] Chapter data type:`, typeof chapterData);
+        console.log(`[Quiz] Questions in chapter:`, chapterData?.questions?.length);
+
+        if (!chapterData) {
+          throw new Error(`Chapter data not found at index ${chapterNum - 1}`);
+        }
+
+        if (!Array.isArray(chapterData.questions)) {
+          console.error(`[Quiz] chapterData.questions is not an array:`, chapterData.questions);
+          throw new Error(`Chapter questions is not an array: ${typeof chapterData.questions}`);
+        }
 
         // Handle Ultra difficulty (reuse Cabaran with 5x multiplier)
         const levelDifficulties = ['mudah', 'sederhana', 'cabaran'];
