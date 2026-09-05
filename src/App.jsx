@@ -72,7 +72,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename="/matematik-kilat/">
       <Routes>
         <Route path="/" element={activeProfile ? <Navigate to="/hub" /> : <ProfileSelector onProfileChange={handleProfileChange} />} />
         <Route path="/new-profile" element={<ProfileSelector onProfileChange={handleProfileChange} />} />
