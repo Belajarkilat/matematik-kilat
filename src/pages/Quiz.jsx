@@ -33,7 +33,9 @@ function Quiz({ profile }) {
   useEffect(() => {
     const loadQuestions = async () => {
       try {
-        const data = await import(`../data/questions/tahun${tahun}.json`);
+        const response = await fetch(`/matematik-kilat/data/questions/tahun${tahun}.json`);
+        if (!response.ok) throw new Error('Failed to load questions');
+        const data = await response.json();
         const chapterNum = parseInt(chapter.split('-')[1]);
         const chapterData = data.chapters[chapterNum - 1];
         const levelNum = parseInt(level);
