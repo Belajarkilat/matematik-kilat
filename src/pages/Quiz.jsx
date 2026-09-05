@@ -59,9 +59,13 @@ function Quiz({ profile }) {
           throw new Error(`Invalid data structure: chapters is ${data?.chapters}`);
         }
 
-        const chapterNum = parseInt(chapter.split('-')[1]);
-        if (!chapterNum || chapterNum < 1 || chapterNum > data.chapters.length) {
-          throw new Error(`Invalid chapter number: ${chapterNum}`);
+        // Parse chapter ID format: "d1-b1" -> extract "1" from "b1"
+        const chapterPart = chapter.split('-')[1]; // "b1"
+        const chapterNum = parseInt(chapterPart.substring(1)); // "1" -> 1
+        console.log(`[Quiz] Chapter ID: ${chapter}, parsed to chapterNum: ${chapterNum}`);
+
+        if (!chapterNum || isNaN(chapterNum) || chapterNum < 1 || chapterNum > data.chapters.length) {
+          throw new Error(`Invalid chapter number: ${chapterNum} (from ID: ${chapter})`);
         }
 
         const chapterData = data.chapters[chapterNum - 1];
