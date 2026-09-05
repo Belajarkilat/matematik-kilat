@@ -307,6 +307,8 @@ function Quiz({ profile }) {
   }
 
   const q = questions[currentIdx];
+  console.log(`[Quiz RENDER] currentIdx: ${currentIdx}, question:`, q);
+  console.log(`[Quiz RENDER] q.text:`, q?.text);
   const difficultyLabels = { mudah: '😊 Mudah', sederhana: '😌 Sederhana', cabaran: '🚀 Cabaran' };
   const isAnswered = submitted[currentIdx];
   const feedbackType = feedback[currentIdx];
