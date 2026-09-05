@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematik Kilat - Soalan Preview D1-D6</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            overflow-x: auto;
+            padding-bottom: 10px;
+        }
+
+        .tab-btn {
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+
+        .tab-btn.active {
+            background: white;
+            color: #667eea;
+            border-color: white;
+        }
+
+        .tab-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .difficulty-group {
+            margin-bottom: 20px;
+        }
+
+        .difficulty-title {
+            display: inline-block;
+            padding: 8px 16px;
+            background: white;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .difficulty-title.mudah {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .difficulty-title.sederhana {
+            background: #FF9800;
+            color: white;
+        }
+
+        .difficulty-title.cabaran {
+            background: #F44336;
+            color: white;
+        }
+
+        .question-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .question-text {
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .options {
+            margin-bottom: 15px;
+        }
+
+        .option {
+            padding: 10px 15px;
+            margin-bottom: 8px;
+            background: #f5f5f5;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .option:hover {
+            background: #e0e0e0;
+        }
+
+        .option.correct {
+            background: #4CAF50;
+            color: white;
+            font-weight: bold;
+        }
+
+        .answer-display {
+            padding: 10px 15px;
+            background: #f5f5f5;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            flex: 1;
+        }
+
+        .btn-working {
+            background: #2196F3;
+            color: white;
+        }
+
+        .btn-working:hover {
+            background: #1976D2;
+            transform: translateY(-2px);
+        }
+
+        .working {
+            background: #E3F2FD;
+            border-left: 4px solid #2196F3;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+            display: none;
+        }
+
+        .working.show {
+            display: block;
+            animation: slideIn 0.3s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .working h4 {
+            color: #1976D2;
+            margin-bottom: 10px;
+        }
+
+        .working-steps {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+
+        .working-steps li {
+            counter-increment: step-counter;
+            margin-bottom: 8px;
+            padding-left: 30px;
+            position: relative;
+            color: #333;
+        }
+
+        .working-steps li:before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #2196F3;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        .answer-box {
+            background: #C8E6C9;
+            border-left: 4px solid #4CAF50;
+            padding: 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #2E7D32;
+            margin-top: 10px;
+        }
+
+        .points {
+            display: inline-block;
+            background: #FFD700;
+            color: #333;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .tabs {
+                flex-wrap: wrap;
+            }
+
+            .tab-btn {
+                padding: 8px 15px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎓 Matematik Kilat</h1>
+            <p>Preview Soalan Darjah 1-6 | 900+ Soalan Berkualiti</p>
+        </div>
+
+        <div class="tabs" id="tabs"></div>
+
+        <div id="content"></div>
+
+        <div class="footer">
+            <p>💡 <strong>Matematik Kilat</strong> - Platform pembelajaran interaktif untuk murid-murid Malaysia</p>
+            <p>RM30/subjek/tahun | 900+ soalan | 5 bab | Tiga aras kesukaran</p>
+        </div>
+    </div>
+
+    <script>
+        const sampleData = {
+            1: {
+                title: "Darjah 1",
+                chapter: "Nombor Bulat hingga 100",
+                mudah: {
+                    id: "t1_c1_q1",
+                    text: "Berapakah nilai bagi 5 + 3?",
+                    type: "mcq",
+                    options: ["6", "8", "7", "9"],
+                    correctAnswer: 1,
+                    points: 10,
+                    working: [
+                        "Kita perlu tambah 5 dengan 3",
+                        "5 + 3 = ?",
+                        "Kirakan jari: 5, 6, 7, 8",
+                        "Jadi jawapannya ialah 8"
+                    ]
+                },
+                sederhana: {
+                    id: "t1_c1_q12",
+                    text: "Berapakah 15 - 7?",
+                    type: "mcq",
+                    options: ["6", "8", "7", "9"],
+                    correctAnswer: 2,
+                    points: 20,
+                    working: [
+                        "Kita perlu tolak 7 daripada 15",
+                        "15 - 7 = ?",
+                        "Mulai dari 15, kurang 7: 15, 14, 13, 12, 11, 10, 9, 8",
+                        "Jadi jawapannya ialah 8"
+                    ]
+                },
+                cabaran: {
+                    id: "t1_c1_q25",
+                    text: "Ali ada 12 guli. Dia beri 5 kepada Bakar. Berapa guli yang Ali ada sekarang?",
+                    type: "mcq",
+                    options: ["6", "7", "8", "17"],
+                    correctAnswer: 1,
+                    points: 30,
+                    working: [
+                        "Ali mula-mula ada 12 guli",
+                        "Dia beri 5 kepada Bakar",
+                        "Jadi Ali kehilangan 5 guli",
+                        "12 - 5 = 7",
+                        "Ali ada 7 guli sekarang"
+                    ]
+                }
+            },
+            2: {
+                title: "Darjah 2",
+                chapter: "Nombor Bulat hingga 1000",
+                mudah: {
+                    id: "t2_c1_q1",
+                    text: "Berapakah nilai tempat bagi digit 7 dalam nombor 27?",
+                    type: "mcq",
+                    options: ["Ones", "Tens", "Hundreds", "Thousands"],
+                    correctAnswer: 1,
+                    points: 10,
+                    working: [
+                        "Lihat nombor 27",
+                        "Digit 7 berada di posisi puluh",
+                        "Jadi nilai tempatnya ialah PULUH (Tens)"
+                    ]
+                },
+                sederhana: {
+                    id: "t2_c1_q15",
+                    text: "Bundarkan 46 kepada puluh yang terdekat.",
+                    type: "input",
+                    correctAnswer: 50,
+                    points: 20,
+                    working: [
+                        "Lihat nombor 46",
+                        "Digit ones ialah 6",
+                        "6 ≥ 5, jadi kita bundar naik",
+                        "46 bundar naik kepada 50"
+                    ]
+                },
+                cabaran: {
+                    id: "t2_c1_q28",
+                    text: "Sebuah kedai menjual 24 biji telur pagi dan 18 biji telur petang. Berapa biji telur dijual sehari?",
+                    type: "input",
+                    correctAnswer: 42,
+                    points: 30,
+                    working: [
+                        "Pagi dijual: 24 biji",
+                        "Petang dijual: 18 biji",
+                        "Total = 24 + 18",
+                        "20 + 10 = 30, 4 + 8 = 12",
+                        "30 + 12 = 42 biji telur"
+                    ]
+                }
+            },
+            3: {
+                title: "Darjah 3",
+                chapter: "Nombor Bulat hingga 10 000",
+                mudah: {
+                    id: "t3_c1_q1",
+                    text: "Apakah nilai tempat bagi digit 3 dalam nombor 3,245?",
+                    type: "mcq",
+                    options: ["Ones", "Tens", "Hundreds", "Thousands"],
+                    correctAnswer: 3,
+                    points: 10,
+                    working: [
+                        "Lihat nombor 3,245",
+                        "Pisahkan: 3 | 2 | 4 | 5",
+                        "3 berada di posisi ribu (thousands)",
+                        "Jadi nilai tempatnya ialah RIBU"
+                    ]
+                },
+                sederhana: {
+                    id: "t3_c1_q18",
+                    text: "Berapakah 2,345 + 1,230?",
+                    type: "input",
+                    correctAnswer: 3575,
+                    points: 20,
+                    working: [
+                        "Kita tambah 2,345 + 1,230",
+                        "Susun mengikut nilai tempat:",
+                        "  2,345",
+                        "+ 1,230",
+                        "-------",
+                        "= 3,575"
+                    ]
+                },
+                cabaran: {
+                    id: "t3_c1_q30",
+                    text: "Sebuah sekolah ada 1,250 murid lelaki dan 1,180 murid perempuan. Berapa jumlah murid keseluruhan?",
+                    type: "input",
+                    correctAnswer: 2430,
+                    points: 30,
+                    working: [
+                        "Murid lelaki: 1,250",
+                        "Murid perempuan: 1,180",
+                        "Total = 1,250 + 1,180",
+                        "= 1,000 + 1,000 + 250 + 180",
+                        "= 2,000 + 430",
+                        "= 2,430 murid"
+                    ]
+                }
+            },
+            4: {
+                title: "Darjah 4",
+                chapter: "Nombor Bulat hingga 100 000",
+                mudah: {
+                    id: "t4_c1_q1",
+                    text: "Apakah nilai tempat bagi digit 5 dalam nombor 54,321?",
+                    type: "mcq",
+                    options: ["Thousands", "Ten thousands", "Hundreds", "Tens"],
+                    correctAnswer: 1,
+                    points: 10,
+                    working: [
+                        "Lihat nombor 54,321",
+                        "Pisahkan: 5 | 4 | 3 | 2 | 1",
+                        "5 berada di posisi puluh ribu (ten thousands)",
+                        "Jadi nilai tempatnya ialah PULUH RIBU"
+                    ]
+                },
+                sederhana: {
+                    id: "t4_c1_q18",
+                    text: "Hitung: 45,000 ÷ 5 = ?",
+                    type: "input",
+                    correctAnswer: 9000,
+                    points: 20,
+                    working: [
+                        "Kita bahagi 45,000 dengan 5",
+                        "45,000 ÷ 5 = ?",
+                        "45 ÷ 5 = 9",
+                        "Jadi 45,000 ÷ 5 = 9,000"
+                    ]
+                },
+                cabaran: {
+                    id: "t4_c1_q29",
+                    text: "Sebuah kilang menghasilkan 3,500 unit sehari. Berapakah unit dihasilkan dalam 12 hari?",
+                    type: "input",
+                    correctAnswer: 42000,
+                    points: 30,
+                    working: [
+                        "Sehari menghasilkan: 3,500 unit",
+                        "12 hari: 3,500 × 12",
+                        "= 3,500 × 10 + 3,500 × 2",
+                        "= 35,000 + 7,000",
+                        "= 42,000 unit"
+                    ]
+                }
+            },
+            5: {
+                title: "Darjah 5",
+                chapter: "Nombor Bulat hingga 1 000 000",
+                mudah: {
+                    id: "t5_c1_q1",
+                    text: "Apakah nilai tempat bagi digit 2 dalam nombor 2,345,678?",
+                    type: "mcq",
+                    options: ["Thousands", "Hundred thousands", "Millions", "Ten thousands"],
+                    correctAnswer: 2,
+                    points: 10,
+                    working: [
+                        "Lihat nombor 2,345,678",
+                        "Pisahkan: 2 | 3 | 4 | 5 | 6 | 7 | 8",
+                        "2 berada di posisi juta (millions)",
+                        "Jadi nilai tempatnya ialah JUTA"
+                    ]
+                },
+                sederhana: {
+                    id: "t5_c1_q16",
+                    text: "Bundarkan 567,890 kepada ratus ribu yang terdekat.",
+                    type: "input",
+                    correctAnswer: 600000,
+                    points: 20,
+                    working: [
+                        "Lihat nombor 567,890",
+                        "Digit ratus ribu: 5",
+                        "Lihat digit selepasnya (6)",
+                        "6 ≥ 5, jadi bundar naik",
+                        "567,890 bundar naik kepada 600,000"
+                    ]
+                },
+                cabaran: {
+                    id: "t5_c1_q28",
+                    text: "Nisbah wang Azman kepada Budi ialah 3:2. Jika Azman ada RM300, berapa wang Budi?",
+                    type: "input",
+                    correctAnswer: 200,
+                    points: 30,
+                    working: [
+                        "Nisbah = 3:2",
+                        "Azman (3 bahagian) = RM300",
+                        "1 bahagian = RM300 ÷ 3 = RM100",
+                        "Budi (2 bahagian) = RM100 × 2 = RM200"
+                    ]
+                }
+            },
+            6: {
+                title: "Darjah 6",
+                chapter: "Nombor Bulat & Operasi Bergabung",
+                mudah: {
+                    id: "t6_c1_q1",
+                    text: "Apakah nilai tempat bagi digit 7 dalam nombor 7,245,910?",
+                    type: "mcq",
+                    options: ["Juta", "Ratus ribu", "Puluh ribu", "Ribu"],
+                    correctAnswer: 0,
+                    points: 10,
+                    working: [
+                        "Lihat nombor 7,245,910",
+                        "Pisahkan: 7 | 2 | 4 | 5 | 9 | 1 | 0",
+                        "7 berada di posisi juta (millions)",
+                        "Jadi nilai tempatnya ialah JUTA"
+                    ]
+                },
+                sederhana: {
+                    id: "t6_c1_q15",
+                    text: "Nombor manakah nombor perdana antara 20 dan 30?",
+                    type: "mcq",
+                    options: ["21", "24", "23", "27"],
+                    correctAnswer: 2,
+                    points: 20,
+                    working: [
+                        "Nombor perdana = dibahagi dengan 1 dan dirinya sahaja",
+                        "21 = 3 × 7 (bukan perdana)",
+                        "24 = 2 × 12 (bukan perdana)",
+                        "23 = hanya 1 × 23 (PERDANA ✓)",
+                        "27 = 3 × 9 (bukan perdana)",
+                        "Jadi jawapannya ialah 23"
+                    ]
+                },
+                cabaran: {
+                    id: "t6_c1_q21",
+                    text: "Sebuah kilang menghasilkan 3,450 unit sehari. Berapakah jumlah unit dihasilkan dalam 12 hari?",
+                    type: "input",
+                    correctAnswer: 41400,
+                    points: 30,
+                    working: [
+                        "Sehari: 3,450 unit",
+                        "12 hari: 3,450 × 12",
+                        "= 3,450 × (10 + 2)",
+                        "= 34,500 + 6,900",
+                        "= 41,400 unit"
+                    ]
+                }
+            }
+        };
+
+        function renderTabs() {
+            const tabsDiv = document.getElementById('tabs');
+            for (let year = 1; year <= 6; year++) {
+                const btn = document.createElement('button');
+                btn.className = `tab-btn ${year === 1 ? 'active' : ''}`;
+                btn.textContent = `D${year}`;
+                btn.onclick = () => switchTab(year);
+                tabsDiv.appendChild(btn);
+            }
+        }
+
+        function switchTab(year) {
+            // Update tabs
+            document.querySelectorAll('.tab-btn').forEach((btn, idx) => {
+                btn.classList.toggle('active', idx === year - 1);
+            });
+
+            // Update content
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.getElementById(`content-${year}`).classList.add('active');
+        }
+
+        function createQuestionCard(question, difficulty) {
+            const card = document.createElement('div');
+            card.className = 'question-card';
+
+            let optionsHtml = '';
+            if (question.type === 'mcq') {
+                optionsHtml = '<div class="options">' +
+                    question.options.map((opt, idx) =>
+                        `<div class="option ${idx === question.correctAnswer ? 'correct' : ''}">${String.fromCharCode(65+idx)}. ${opt}</div>`
+                    ).join('') +
+                    '</div>';
+            }
+
+            const workingId = `working-${question.id}`;
+            const workingSteps = question.working.map(step => `<li>${step}</li>`).join('');
+
+            card.innerHTML = `
+                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+                    <span class="difficulty-title ${difficulty}">${difficulty.charAt(0).toUpperCase() + difficulty.slice(1)}</span>
+                    <span class="points">${question.points} pts</span>
+                </div>
+                <div class="question-text">${question.text}</div>
+                ${optionsHtml}
+                ${question.type === 'input' ? `<div class="answer-display"><strong>Jawapan:</strong> ${question.correctAnswer}</div>` : ''}
+                <button class="btn btn-working" onclick="toggleWorking('${workingId}')">📖 Tunjuk Kerja</button>
+                <div class="working" id="${workingId}">
+                    <h4>✍️ Cara Menyelesaikan:</h4>
+                    <ul class="working-steps">
+                        ${workingSteps}
+                    </ul>
+                    <div class="answer-box">
+                        <strong>Jawapan: ${question.correctAnswer}</strong>
+                    </div>
+                </div>
+            `;
+            return card;
+        }
+
+        function toggleWorking(id) {
+            document.getElementById(id).classList.toggle('show');
+        }
+
+        function renderContent() {
+            const contentDiv = document.getElementById('content');
+            for (let year = 1; year <= 6; year++) {
+                const data = sampleData[year];
+                const tabContent = document.createElement('div');
+                tabContent.id = `content-${year}`;
+                tabContent.className = `tab-content ${year === 1 ? 'active' : ''}`;
+
+                let html = `<h2 style="color: white; margin-bottom: 20px;">${data.title} - ${data.chapter}</h2>`;
+
+                // Easy
+                html += '<div class="difficulty-group">';
+                html += '<div class="difficulty-title mudah">🟢 MUDAH (Easy) - 10 Points</div>';
+                html += createQuestionCard(data.mudah, 'mudah').outerHTML;
+                html += '</div>';
+
+                // Medium
+                html += '<div class="difficulty-group">';
+                html += '<div class="difficulty-title sederhana">🟡 SEDERHANA (Medium) - 20 Points</div>';
+                html += createQuestionCard(data.sederhana, 'sederhana').outerHTML;
+                html += '</div>';
+
+                // Hard
+                html += '<div class="difficulty-group">';
+                html += '<div class="difficulty-title cabaran">🔴 CABARAN (Challenge) - 30 Points</div>';
+                html += createQuestionCard(data.cabaran, 'cabaran').outerHTML;
+                html += '</div>';
+
+                tabContent.innerHTML = html;
+                contentDiv.appendChild(tabContent);
+            }
+        }
+
+        // Initialize
+        renderTabs();
+        renderContent();
+    </script>
+</body>
+</html>

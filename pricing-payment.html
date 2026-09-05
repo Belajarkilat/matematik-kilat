@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematik Kilat - Pricing & Payment</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .pricing-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .pricing-card.featured {
+            border: 3px solid #667eea;
+            transform: scale(1.05);
+        }
+
+        .subject-name {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .subject-grades {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+
+        .price {
+            font-size: 3em;
+            color: #667eea;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .price-label {
+            color: #999;
+            font-size: 0.9em;
+        }
+
+        .features {
+            list-style: none;
+            margin: 25px 0;
+            text-align: left;
+        }
+
+        .features li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            color: #555;
+        }
+
+        .features li:before {
+            content: "✓ ";
+            color: #4CAF50;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .btn-buy {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.1em;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            transition: all 0.3s;
+            margin-top: 20px;
+        }
+
+        .btn-buy:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .referral-section {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .referral-section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .referral-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .referral-text h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .referral-text p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        .referral-bonus {
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .referral-code-box {
+            background: #f5f5f5;
+            border: 2px dashed #667eea;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .referral-code-box h4 {
+            color: #666;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+
+        .referral-code {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #667eea;
+            font-family: monospace;
+            letter-spacing: 2px;
+            word-break: break-all;
+        }
+
+        .copy-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .copy-btn:hover {
+            background: #5568d3;
+        }
+
+        .payment-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.7);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .payment-modal.active {
+            display: flex;
+        }
+
+        .payment-form {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            max-width: 500px;
+            width: 90%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .payment-form h3 {
+            color: #333;
+            margin-bottom: 25px;
+            font-size: 1.5em;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .payment-info {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        .close-btn {
+            float: right;
+            font-size: 1.5em;
+            cursor: pointer;
+            color: #999;
+        }
+
+        .close-btn:hover {
+            color: #333;
+        }
+
+        .btn-submit {
+            width: 100%;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 6px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn-submit:hover {
+            transform: scale(1.02);
+        }
+
+        .success-message {
+            background: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .success-message.show {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .referral-content {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-card.featured {
+                transform: scale(1);
+            }
+
+            .header h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🎓 Matematik Kilat</h1>
+            <p>Harga Istimewa - Mulai Pembelajaran Hari Ini!</p>
+        </div>
+
+        <!-- Pricing Cards -->
+        <div class="pricing-grid">
+            <div class="pricing-card featured">
+                <div class="subject-name">Matematik Kilat</div>
+                <div class="subject-grades">Darjah 1-6 (KSSR)</div>
+                <div class="price">RM30<span class="price-label">/tahun</span></div>
+                <ul class="features">
+                    <li>150 soalan per darjah</li>
+                    <li>900+ soalan lengkap</li>
+                    <li>3 aras kesukaran</li>
+                    <li>Akses 3 device</li>
+                    <li>Unlimited practice</li>
+                    <li>Penyelesaian step-by-step</li>
+                    <li>Offline mode</li>
+                </ul>
+                <button class="btn-buy" onclick="openPayment('Matematik Kilat D1-D6', 30)">Beli Sekarang</button>
+            </div>
+        </div>
+
+        <!-- Referral Section -->
+        <div class="referral-section">
+            <h2>💰 Dapatkan Komisi Referral</h2>
+            <div class="referral-content">
+                <div class="referral-text">
+                    <h3>Ajak Rakan, Dapatkan Komisi!</h3>
+                    <p>Setiap kali rakan anda membeli menggunakan kod referral anda:</p>
+                    <div class="referral-bonus">
+                        <span>RM9 Satu Kali Bayaran</span>
+                    </div>
+                    <p style="margin-top: 15px; font-size: 0.95em;">
+                        ✓ Seorang rakan = RM9 komisi<br>
+                        ✓ 10 rakan = RM90<br>
+                        ✓ 100 rakan = RM900<br>
+                        ✓ Tanpa had maximum!
+                    </p>
+                </div>
+                <div class="referral-code-box">
+                    <h4>Kod Referral Anda:</h4>
+                    <div class="referral-code" id="referralCode">REF-2026-SEPT-001</div>
+                    <button class="copy-btn" onclick="copyReferralCode()">📋 Salin Kod</button>
+                    <p style="color: #999; font-size: 0.9em; margin-top: 10px;">
+                        Bagikan kod ini kepada rakan-rakan!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Payment Modal -->
+        <div class="payment-modal" id="paymentModal">
+            <div class="payment-form">
+                <span class="close-btn" onclick="closePayment()">&times;</span>
+                <h3 id="productName">Matematik Kilat</h3>
+
+                <div class="success-message" id="successMessage">
+                    ✓ Pembelian berjaya! Akun anda sudah aktif.
+                </div>
+
+                <div class="payment-info">
+                    <strong>Harga:</strong> <span id="paymentPrice">RM30</span>/tahun<br>
+                    <strong>Akses:</strong> 3 device<br>
+                    <strong>Durasi:</strong> 1 tahun (365 hari)
+                </div>
+
+                <form onsubmit="processPayment(event)">
+                    <div class="form-group">
+                        <label>Nama Penuh</label>
+                        <input type="text" id="fullName" required placeholder="Masukkan nama anda">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="email" required placeholder="contoh@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Nombor Telefon</label>
+                        <input type="tel" id="phone" required placeholder="01XXXXXXXX">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Kaedah Pembayaran</label>
+                        <select id="paymentMethod" required>
+                            <option value="">-- Pilih Kaedah --</option>
+                            <option value="fpx">FPX Bank Transfer</option>
+                            <option value="credit">Credit/Debit Card</option>
+                            <option value="online">Online Banking</option>
+                            <option value="ewallet">E-Wallet</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Kod Referral (Opsional)</label>
+                        <input type="text" id="referralCodeInput" placeholder="Masukkan kod jika ada">
+                    </div>
+
+                    <button type="submit" class="btn-submit">💳 Bayar Sekarang</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openPayment(productName, price) {
+            document.getElementById('productName').textContent = productName;
+            document.getElementById('paymentPrice').textContent = 'RM' + price;
+            document.getElementById('paymentModal').classList.add('active');
+            window.currentPrice = price;
+        }
+
+        function closePayment() {
+            document.getElementById('paymentModal').classList.remove('active');
+            document.getElementById('successMessage').classList.remove('show');
+        }
+
+        function copyReferralCode() {
+            const code = document.getElementById('referralCode').textContent;
+            navigator.clipboard.writeText(code).then(() => {
+                alert('✓ Kod referral disalin: ' + code);
+            });
+        }
+
+        function processPayment(e) {
+            e.preventDefault();
+
+            const data = {
+                fullName: document.getElementById('fullName').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                paymentMethod: document.getElementById('paymentMethod').value,
+                referralCode: document.getElementById('referralCodeInput').value,
+                amount: window.currentPrice,
+                timestamp: new Date().toISOString()
+            };
+
+            // Save to localStorage (temporary)
+            let transactions = JSON.parse(localStorage.getItem('mkPayments') || '[]');
+            transactions.push(data);
+            localStorage.setItem('mkPayments', JSON.stringify(transactions));
+
+            // Show success message
+            document.getElementById('successMessage').classList.add('show');
+
+            // Clear form
+            document.querySelector('form').reset();
+
+            // Redirect after 2 seconds
+            setTimeout(() => {
+                alert('✅ Terima kasih! Sila tunggu email pengesahan.\n\nNama: ' + data.fullName + '\nEmail: ' + data.email + '\nKadar: RM' + data.amount + '/tahun\n\nSelepas 24 jam, akun anda akan aktif.');
+                closePayment();
+            }, 2000);
+        }
+
+        // Generate random referral code
+        function generateReferralCode() {
+            const code = 'REF-' + new Date().getFullYear() + '-' +
+                         String(Math.random()).substr(2, 6).toUpperCase();
+            document.getElementById('referralCode').textContent = code;
+        }
+
+        // Initialize
+        generateReferralCode();
+
+        // Close modal when clicking outside
+        document.getElementById('paymentModal').addEventListener('click', function(e) {
+            if (e.target === this) closePayment();
+        });
+    </script>
+</body>
+</html>
