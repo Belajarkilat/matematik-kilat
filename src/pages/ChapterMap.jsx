@@ -12,7 +12,9 @@ function ChapterMap({ profile }) {
   useEffect(() => {
     const loadChapters = async () => {
       try {
-        const data = await import(`../data/questions/tahun${tahun}.json`);
+        const response = await fetch(`/matematik-kilat/data/questions/tahun${tahun}.json`);
+        if (!response.ok) throw new Error('Failed to load chapters');
+        const data = await response.json();
         setChapters(data.chapters || []);
       } catch (error) {
         console.error('Failed to load chapters:', error);
