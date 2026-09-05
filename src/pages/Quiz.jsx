@@ -17,6 +17,7 @@ function Quiz({ profile }) {
   const [maxCombo, setMaxCombo] = useState(0);
   const [hintsRemaining, setHintsRemaining] = useState(3);
   const [revealedHint, setRevealedHint] = useState({});
+  const [showWorking, setShowWorking] = useState({});
   const audioContextRef = useRef(null);
   const ps = getProfileService();
   const ss = getSettingsService();
@@ -466,6 +467,62 @@ function Quiz({ profile }) {
         }}>
           💡 Hints Remaining: {hintsRemaining}
         </div>
+
+        {/* Working/Solution Section */}
+        {isAnswered && feedbackType === 'wrong' && q.working && (
+          <div style={{
+            background: 'linear-gradient(135deg, #3498DB 0%, #2980B9 100%)',
+            color: 'white',
+            padding: '15px',
+            borderRadius: '12px',
+            marginBottom: '15px',
+            border: '3px solid #1F618D',
+            boxShadow: '4px 4px 0px rgba(0,0,0,0.2)'
+          }}>
+            {!showWorking[currentIdx] ? (
+              <button
+                onClick={() => setShowWorking({ ...showWorking, [currentIdx]: true })}
+                style={{
+                  width: '100%',
+                  padding: '12px',
+                  background: 'rgba(255,255,255,0.2)',
+                  border: '2px solid white',
+                  color: 'white',
+                  borderRadius: '8px',
+                  fontSize: '1rem',
+                  fontWeight: 'bold',
+                  cursor: 'pointer',
+                  transition: 'all 0.2s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = 'rgba(255,255,255,0.3)';
+                  e.currentTarget.style.transform = 'scale(1.02)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = 'rgba(255,255,255,0.2)';
+                  e.currentTarget.style.transform = 'scale(1)';
+                }}
+              >
+                📖 Tunjuk Jalan Kerja
+              </button>
+            ) : (
+              <div>
+                <div style={{ fontWeight: 'bold', marginBottom: '10px', fontSize: '0.95rem' }}>
+                  📖 Jalan Kerja:
+                </div>
+                <div style={{
+                  background: 'rgba(255,255,255,0.15)',
+                  padding: '12px',
+                  borderRadius: '8px',
+                  fontSize: '0.95rem',
+                  lineHeight: '1.5'
+                }}>
+                  {q.working}
+                </div>
+              </div>
+            )}
+          </div>
+        )}
 
         {/* Navigation */}
         <div style={{ display: 'grid', gridTemplateColumns: hintsRemaining > 0 && !revealedHint[currentIdx] && !isAnswered ? '1fr 1fr 1fr' : '1fr 1fr', gap: '10px' }}>

@@ -14,7 +14,8 @@
           "correctAnswer": 5000,
           "difficulty": "mudah",
           "points": 10,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 5000"
         },
         {
           "id": "t3_c1_q2",
@@ -28,7 +29,8 @@
           "correctAnswer": 0,
           "difficulty": "mudah",
           "points": 10,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 3620"
         },
         {
           "id": "t3_c1_q3",
@@ -37,7 +39,8 @@
           "correctAnswer": 5000,
           "difficulty": "mudah",
           "points": 10,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 5000"
         },
         {
           "id": "t3_c1_q4",
@@ -46,7 +49,8 @@
           "correctAnswer": 6999,
           "difficulty": "mudah",
           "points": 10,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 6999"
         },
         {
           "id": "t3_c1_q5",
@@ -60,7 +64,8 @@
           "correctAnswer": 0,
           "difficulty": "mudah",
           "points": 10,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 342"
         },
         {
           "id": "t3_c1_q6",
@@ -69,7 +74,8 @@
           "correctAnswer": 8009,
           "difficulty": "mudah",
           "points": 10,
-          "type": "input"
+          "type": "input",
+          "working": "Sila tulis: 8009"
         },
         {
           "id": "t3_c1_q7",
@@ -83,7 +89,8 @@
           "correctAnswer": 0,
           "difficulty": "mudah",
           "points": 10,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 7"
         },
         {
           "id": "t3_c1_q8",
@@ -92,7 +99,8 @@
           "correctAnswer": 2002,
           "difficulty": "mudah",
           "points": 10,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 2002"
         },
         {
           "id": "t3_c1_q9",
@@ -106,7 +114,8 @@
           "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 4650"
         },
         {
           "id": "t3_c1_q10",
@@ -115,7 +124,8 @@
           "correctAnswer": 9345,
           "difficulty": "mudah",
           "points": 10,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 9345"
         },
         {
           "id": "t3_c1_q11",
@@ -129,7 +139,8 @@
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 3245"
         },
         {
           "id": "t3_c1_q12",
@@ -138,7 +149,8 @@
           "correctAnswer": 7000,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 7000"
         },
         {
           "id": "t3_c1_q13",
@@ -152,7 +164,8 @@
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 5500"
         },
         {
           "id": "t3_c1_q14",
@@ -161,7 +174,8 @@
           "correctAnswer": 6780,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 6780"
         },
         {
           "id": "t3_c1_q15",
@@ -175,7 +189,8 @@
           "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 3721"
         },
         {
           "id": "t3_c1_q16",
@@ -184,7 +199,8 @@
           "correctAnswer": 4400,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 4400"
         },
         {
           "id": "t3_c1_q17",
@@ -198,7 +214,8 @@
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 7970"
         },
         {
           "id": "t3_c1_q18",
@@ -207,7 +224,8 @@
           "correctAnswer": 852,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 852"
         },
         {
           "id": "t3_c1_q19",
@@ -221,7 +239,8 @@
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 1800"
         },
         {
           "id": "t3_c1_q20",
@@ -230,7 +249,8 @@
           "correctAnswer": 9400,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 9400"
         },
         {
           "id": "t3_c1_q21",
@@ -244,7 +264,8 @@
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 5000"
         },
         {
           "id": "t3_c1_q22",
@@ -253,7 +274,8 @@
           "correctAnswer": 7000,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 7000"
         },
         {
           "id": "t3_c1_q23",
@@ -267,7 +289,8 @@
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 2001, 2010, 2100"
         },
         {
           "id": "t3_c1_q24",
@@ -276,7 +299,8 @@
           "correctAnswer": 8500,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 8500"
         },
         {
           "id": "t3_c1_q25",
@@ -290,7 +314,8 @@
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 7190"
         },
         {
           "id": "t3_c1_q26",
@@ -299,7 +324,8 @@
           "correctAnswer": 7500,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 7500"
         },
         {
           "id": "t3_c1_q27",
@@ -313,7 +339,8 @@
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 6083"
         },
         {
           "id": "t3_c1_q28",
@@ -322,7 +349,8 @@
           "correctAnswer": 7263,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 7263"
         },
         {
           "id": "t3_c1_q29",
@@ -336,7 +364,8 @@
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 6750"
         },
         {
           "id": "t3_c1_q30",
@@ -345,7 +374,8 @@
           "correctAnswer": 3700,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 3700"
         }
       ]
     },
@@ -361,7 +391,8 @@
           "correctAnswer": 3778,
           "difficulty": "mudah",
           "points": 10,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 3778"
         },
         {
           "id": "t3_c2_q2",
@@ -370,7 +401,8 @@
           "correctAnswer": 3333,
           "difficulty": "mudah",
           "points": 10,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 3333"
         },
         {
           "id": "t3_c2_q3",
@@ -379,7 +411,8 @@
           "correctAnswer": 393,
           "difficulty": "mudah",
           "points": 10,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 393"
         },
         {
           "id": "t3_c2_q4",
@@ -388,7 +421,8 @@
           "correctAnswer": 444,
           "difficulty": "mudah",
           "points": 10,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 444"
         },
         {
           "id": "t3_c2_q5",
@@ -402,7 +436,8 @@
           "correctAnswer": 0,
           "difficulty": "mudah",
           "points": 10,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 2700"
         },
         {
           "id": "t3_c2_q6",
@@ -411,7 +446,8 @@
           "correctAnswer": 5000,
           "difficulty": "mudah",
           "points": 10,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 5000"
         },
         {
           "id": "t3_c2_q7",
@@ -425,7 +461,8 @@
           "correctAnswer": 0,
           "difficulty": "mudah",
           "points": 10,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 3500"
         },
         {
           "id": "t3_c2_q8",
@@ -434,7 +471,8 @@
           "correctAnswer": 5556,
           "difficulty": "mudah",
           "points": 10,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 5556"
         },
         {
           "id": "t3_c2_q9",
@@ -448,7 +486,8 @@
           "correctAnswer": 0,
           "difficulty": "mudah",
           "points": 10,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 600"
         },
         {
           "id": "t3_c2_q10",
@@ -457,7 +496,8 @@
           "correctAnswer": 4434,
           "difficulty": "mudah",
           "points": 10,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 4434"
         },
         {
           "id": "t3_c2_q11",
@@ -466,7 +506,8 @@
           "correctAnswer": 6245,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 6245"
         },
         {
           "id": "t3_c2_q12",
@@ -475,7 +516,8 @@
           "correctAnswer": 3433,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 3433"
         },
         {
           "id": "t3_c2_q13",
@@ -489,7 +531,8 @@
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 2232"
         },
         {
           "id": "t3_c2_q14",
@@ -498,7 +541,8 @@
           "correctAnswer": 4358,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 4358"
         },
         {
           "id": "t3_c2_q15",
@@ -512,7 +556,8 @@
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 1755"
         },
         {
           "id": "t3_c2_q16",
@@ -521,7 +566,8 @@
           "correctAnswer": 6001,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 6001"
         },
         {
           "id": "t3_c2_q17",
@@ -535,7 +581,8 @@
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 2625"
         },
         {
           "id": "t3_c2_q18",
@@ -544,7 +591,8 @@
           "correctAnswer": 5655,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 5655"
         },
         {
           "id": "t3_c2_q19",
@@ -558,7 +606,8 @@
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 3548"
         },
         {
           "id": "t3_c2_q20",
@@ -567,7 +616,8 @@
           "correctAnswer": 4444,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 4444"
         },
         {
           "id": "t3_c2_q21",
@@ -581,7 +631,8 @@
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 4543"
         },
         {
           "id": "t3_c2_q22",
@@ -590,7 +641,8 @@
           "correctAnswer": 2675,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 2675"
         },
         {
           "id": "t3_c2_q23",
@@ -604,7 +656,8 @@
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 4542"
         },
         {
           "id": "t3_c2_q24",
@@ -613,7 +666,8 @@
           "correctAnswer": 1500,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 1500"
         },
         {
           "id": "t3_c2_q25",
@@ -627,7 +681,8 @@
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 471"
         },
         {
           "id": "t3_c2_q26",
@@ -636,7 +691,8 @@
           "correctAnswer": 5000,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 5000"
         },
         {
           "id": "t3_c2_q27",
@@ -650,7 +706,8 @@
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 3242"
         },
         {
           "id": "t3_c2_q28",
@@ -659,7 +716,8 @@
           "correctAnswer": 5980,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 5980"
         },
         {
           "id": "t3_c2_q29",
@@ -673,7 +731,8 @@
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 3246"
         },
         {
           "id": "t3_c2_q30",
@@ -682,7 +741,8 @@
           "correctAnswer": 6750,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 6750"
         }
       ]
     },
@@ -698,7 +758,8 @@
           "correctAnswer": 42,
           "difficulty": "mudah",
           "points": 10,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 42"
         },
         {
           "id": "t3_c3_q2",
@@ -707,7 +768,8 @@
           "correctAnswer": 72,
           "difficulty": "mudah",
           "points": 10,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 72"
         },
         {
           "id": "t3_c3_q3",
@@ -721,7 +783,8 @@
           "correctAnswer": 0,
           "difficulty": "mudah",
           "points": 10,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 42"
         },
         {
           "id": "t3_c3_q4",
@@ -730,7 +793,8 @@
           "correctAnswer": 72,
           "difficulty": "mudah",
           "points": 10,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 72"
         },
         {
           "id": "t3_c3_q5",
@@ -739,7 +803,8 @@
           "correctAnswer": 6,
           "difficulty": "mudah",
           "points": 10,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 6"
         },
         {
           "id": "t3_c3_q6",
@@ -753,7 +818,8 @@
           "correctAnswer": 0,
           "difficulty": "mudah",
           "points": 10,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 8"
         },
         {
           "id": "t3_c3_q7",
@@ -762,7 +828,8 @@
           "correctAnswer": 36,
           "difficulty": "mudah",
           "points": 10,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 36"
         },
         {
           "id": "t3_c3_q8",
@@ -776,7 +843,8 @@
           "correctAnswer": 0,
           "difficulty": "mudah",
           "points": 10,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 7"
         },
         {
           "id": "t3_c3_q9",
@@ -785,7 +853,8 @@
           "correctAnswer": 48,
           "difficulty": "mudah",
           "points": 10,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 48"
         },
         {
           "id": "t3_c3_q10",
@@ -794,7 +863,8 @@
           "correctAnswer": 9,
           "difficulty": "mudah",
           "points": 10,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 9"
         },
         {
           "id": "t3_c3_q11",
@@ -803,7 +873,8 @@
           "correctAnswer": 92,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 92"
         },
         {
           "id": "t3_c3_q12",
@@ -817,7 +888,8 @@
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 85"
         },
         {
           "id": "t3_c3_q13",
@@ -826,7 +898,8 @@
           "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 3"
         },
         {
           "id": "t3_c3_q14",
@@ -840,7 +913,8 @@
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 6"
         },
         {
           "id": "t3_c3_q15",
@@ -849,7 +923,8 @@
           "correctAnswer": 135,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 135"
         },
         {
           "id": "t3_c3_q16",
@@ -863,7 +938,8 @@
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 1"
         },
         {
           "id": "t3_c3_q17",
@@ -872,7 +948,8 @@
           "correctAnswer": 96,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 96"
         },
         {
           "id": "t3_c3_q18",
@@ -886,7 +963,8 @@
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 9"
         },
         {
           "id": "t3_c3_q19",
@@ -895,7 +973,8 @@
           "correctAnswer": 108,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 108"
         },
         {
           "id": "t3_c3_q20",
@@ -909,7 +988,8 @@
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 9"
         },
         {
           "id": "t3_c3_q21",
@@ -923,7 +1003,8 @@
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 48"
         },
         {
           "id": "t3_c3_q22",
@@ -932,7 +1013,8 @@
           "correctAnswer": 168,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 168"
         },
         {
           "id": "t3_c3_q23",
@@ -946,7 +1028,8 @@
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 8"
         },
         {
           "id": "t3_c3_q24",
@@ -955,7 +1038,8 @@
           "correctAnswer": 12,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 12"
         },
         {
           "id": "t3_c3_q25",
@@ -969,7 +1053,8 @@
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 3"
         },
         {
           "id": "t3_c3_q26",
@@ -978,7 +1063,8 @@
           "correctAnswer": 180,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 180"
         },
         {
           "id": "t3_c3_q27",
@@ -992,7 +1078,8 @@
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 12"
         },
         {
           "id": "t3_c3_q28",
@@ -1001,7 +1088,8 @@
           "correctAnswer": 270,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 270"
         },
         {
           "id": "t3_c3_q29",
@@ -1015,7 +1103,8 @@
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 12"
         },
         {
           "id": "t3_c3_q30",
@@ -1024,7 +1113,8 @@
           "correctAnswer": 152,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 152"
         }
       ]
     },
@@ -1045,7 +1135,8 @@
           "correctAnswer": 0,
           "difficulty": "mudah",
           "points": 10,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 1/2"
         },
         {
           "id": "t3_c4_q2",
@@ -1059,7 +1150,8 @@
           "correctAnswer": 0,
           "difficulty": "mudah",
           "points": 10,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 3/4"
         },
         {
           "id": "t3_c4_q3",
@@ -1068,7 +1160,8 @@
           "correctAnswer": 500,
           "difficulty": "mudah",
           "points": 10,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 500"
         },
         {
           "id": "t3_c4_q4",
@@ -1082,7 +1175,8 @@
           "correctAnswer": 0,
           "difficulty": "mudah",
           "points": 10,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: RM15"
         },
         {
           "id": "t3_c4_q5",
@@ -1096,7 +1190,8 @@
           "correctAnswer": 0,
           "difficulty": "mudah",
           "points": 10,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 1/2"
         },
         {
           "id": "t3_c4_q6",
@@ -1105,7 +1200,8 @@
           "correctAnswer": 80,
           "difficulty": "mudah",
           "points": 10,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 80"
         },
         {
           "id": "t3_c4_q7",
@@ -1119,7 +1215,8 @@
           "correctAnswer": 0,
           "difficulty": "mudah",
           "points": 10,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 2/5"
         },
         {
           "id": "t3_c4_q8",
@@ -1128,7 +1225,8 @@
           "correctAnswer": 100,
           "difficulty": "mudah",
           "points": 10,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 100"
         },
         {
           "id": "t3_c4_q9",
@@ -1142,7 +1240,8 @@
           "correctAnswer": 0,
           "difficulty": "mudah",
           "points": 10,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: RM0.80"
         },
         {
           "id": "t3_c4_q10",
@@ -1156,7 +1255,8 @@
           "correctAnswer": 0,
           "difficulty": "mudah",
           "points": 10,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 2/6"
         },
         {
           "id": "t3_c4_q11",
@@ -1170,7 +1270,8 @@
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 3/4"
         },
         {
           "id": "t3_c4_q12",
@@ -1184,7 +1285,8 @@
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 2/5"
         },
         {
           "id": "t3_c4_q13",
@@ -1193,7 +1295,8 @@
           "correctAnswer": 5,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 5"
         },
         {
           "id": "t3_c4_q14",
@@ -1207,7 +1310,8 @@
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 4/6"
         },
         {
           "id": "t3_c4_q15",
@@ -1216,7 +1320,8 @@
           "correctAnswer": 195,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 195"
         },
         {
           "id": "t3_c4_q16",
@@ -1230,7 +1335,8 @@
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 3/4"
         },
         {
           "id": "t3_c4_q17",
@@ -1244,7 +1350,8 @@
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 3/8"
         },
         {
           "id": "t3_c4_q18",
@@ -1253,7 +1360,8 @@
           "correctAnswer": 40,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 40"
         },
         {
           "id": "t3_c4_q19",
@@ -1267,7 +1375,8 @@
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 3/6"
         },
         {
           "id": "t3_c4_q20",
@@ -1276,7 +1385,8 @@
           "correctAnswer": 155,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 155"
         },
         {
           "id": "t3_c4_q21",
@@ -1290,7 +1400,8 @@
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 5/8"
         },
         {
           "id": "t3_c4_q22",
@@ -1299,7 +1410,8 @@
           "correctAnswer": 115,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 115"
         },
         {
           "id": "t3_c4_q23",
@@ -1313,7 +1425,8 @@
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: RM18"
         },
         {
           "id": "t3_c4_q24",
@@ -1322,7 +1435,8 @@
           "correctAnswer": 95,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 95"
         },
         {
           "id": "t3_c4_q25",
@@ -1336,7 +1450,8 @@
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 3/6"
         },
         {
           "id": "t3_c4_q26",
@@ -1345,7 +1460,8 @@
           "correctAnswer": 330,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 330"
         },
         {
           "id": "t3_c4_q27",
@@ -1359,7 +1475,8 @@
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 6/8"
         },
         {
           "id": "t3_c4_q28",
@@ -1368,7 +1485,8 @@
           "correctAnswer": 76,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 76"
         },
         {
           "id": "t3_c4_q29",
@@ -1382,7 +1500,8 @@
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 4/8"
         },
         {
           "id": "t3_c4_q30",
@@ -1391,7 +1510,8 @@
           "correctAnswer": 530,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 530"
         }
       ]
     },
@@ -1412,7 +1532,8 @@
           "correctAnswer": 0,
           "difficulty": "mudah",
           "points": 10,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 3:00"
         },
         {
           "id": "t3_c5_q2",
@@ -1426,7 +1547,8 @@
           "correctAnswer": 0,
           "difficulty": "mudah",
           "points": 10,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 7:30"
         },
         {
           "id": "t3_c5_q3",
@@ -1435,7 +1557,8 @@
           "correctAnswer": 100,
           "difficulty": "mudah",
           "points": 10,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 100"
         },
         {
           "id": "t3_c5_q4",
@@ -1444,7 +1567,8 @@
           "correctAnswer": 1000,
           "difficulty": "mudah",
           "points": 10,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 1000"
         },
         {
           "id": "t3_c5_q5",
@@ -1458,7 +1582,8 @@
           "correctAnswer": 0,
           "difficulty": "mudah",
           "points": 10,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 1000"
         },
         {
           "id": "t3_c5_q6",
@@ -1472,7 +1597,8 @@
           "correctAnswer": 0,
           "difficulty": "mudah",
           "points": 10,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 12:15"
         },
         {
           "id": "t3_c5_q7",
@@ -1481,7 +1607,8 @@
           "correctAnswer": 60,
           "difficulty": "mudah",
           "points": 10,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 60"
         },
         {
           "id": "t3_c5_q8",
@@ -1495,7 +1622,8 @@
           "correctAnswer": 0,
           "difficulty": "mudah",
           "points": 10,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 10"
         },
         {
           "id": "t3_c5_q9",
@@ -1504,7 +1632,8 @@
           "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 2"
         },
         {
           "id": "t3_c5_q10",
@@ -1518,7 +1647,8 @@
           "correctAnswer": 0,
           "difficulty": "mudah",
           "points": 10,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: Segi empat sama"
         },
         {
           "id": "t3_c5_q11",
@@ -1532,7 +1662,8 @@
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 15"
         },
         {
           "id": "t3_c5_q12",
@@ -1541,7 +1672,8 @@
           "correctAnswer": 90,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 90"
         },
         {
           "id": "t3_c5_q13",
@@ -1555,7 +1687,8 @@
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 16"
         },
         {
           "id": "t3_c5_q14",
@@ -1564,7 +1697,8 @@
           "correctAnswer": 350,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 350"
         },
         {
           "id": "t3_c5_q15",
@@ -1578,7 +1712,8 @@
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 2300"
         },
         {
           "id": "t3_c5_q16",
@@ -1587,7 +1722,8 @@
           "correctAnswer": 250,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 250"
         },
         {
           "id": "t3_c5_q17",
@@ -1601,7 +1737,8 @@
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 2:00 petang"
         },
         {
           "id": "t3_c5_q18",
@@ -1610,7 +1747,8 @@
           "correctAnswer": 45,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 45"
         },
         {
           "id": "t3_c5_q19",
@@ -1624,7 +1762,8 @@
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 16"
         },
         {
           "id": "t3_c5_q20",
@@ -1633,7 +1772,8 @@
           "correctAnswer": 5200,
           "difficulty": "sederhana",
           "points": 20,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 5200"
         },
         {
           "id": "t3_c5_q21",
@@ -1647,7 +1787,8 @@
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 90"
         },
         {
           "id": "t3_c5_q22",
@@ -1656,7 +1797,8 @@
           "correctAnswer": 155,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 155"
         },
         {
           "id": "t3_c5_q23",
@@ -1670,7 +1812,8 @@
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 16"
         },
         {
           "id": "t3_c5_q24",
@@ -1679,7 +1822,8 @@
           "correctAnswer": 4500,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 4500"
         },
         {
           "id": "t3_c5_q25",
@@ -1693,7 +1837,8 @@
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 90"
         },
         {
           "id": "t3_c5_q26",
@@ -1702,7 +1847,8 @@
           "correctAnswer": 5250,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 5250"
         },
         {
           "id": "t3_c5_q27",
@@ -1716,7 +1862,8 @@
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 36"
         },
         {
           "id": "t3_c5_q28",
@@ -1725,7 +1872,8 @@
           "correctAnswer": 5,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul ialah: 5"
         },
         {
           "id": "t3_c5_q29",
@@ -1739,7 +1887,8 @@
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "mcq"
+          "type": "mcq",
+          "working": "Jawapan yang betul ialah: 22"
         },
         {
           "id": "t3_c5_q30",
@@ -1748,7 +1897,8 @@
           "correctAnswer": 15750,
           "difficulty": "cabaran",
           "points": 30,
-          "type": "input"
+          "type": "input",
+          "working": "Jawapan yang betul adalah: 15750"
         }
       ]
     }
