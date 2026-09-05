@@ -385,6 +385,11 @@ function Quiz({ profile }) {
 
   return (
     <div style={{ minHeight: '100vh', padding: '20px', background: 'linear-gradient(135deg, #FF6B35 0%, #8338EC 100%)' }}>
+      {/* DEBUG: Show question text at very top */}
+      <div style={{ color: 'yellow', fontSize: '1.2rem', marginBottom: '20px', textAlign: 'center', fontWeight: 'bold' }}>
+        DEBUG QUESTION: {q.text}
+      </div>
+
       <div style={{ maxWidth: '500px', margin: '0 auto', position: 'relative' }}>
         {/* Avatar in top-right corner */}
         <div style={{
