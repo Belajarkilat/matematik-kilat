@@ -416,7 +416,7 @@ function Quiz({ profile }) {
 
           {q.type === 'mcq' ? (
             <div style={{ display: 'grid', gap: '12px' }}>
-              {q.ch.map((choice, idx) => {
+              {q.options.map((choice, idx) => {
                 const buttonColors = ['#FF6B35', '#3498DB', '#2ECC71', '#F39C12'];
                 const btnColor = buttonColors[idx % buttonColors.length];
                 const isSelected = answers[currentIdx] === idx;
