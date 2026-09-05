@@ -224,7 +224,7 @@ function Quiz({ profile }) {
     setScore(finalScore);
 
     // Update progress
-    const chapterNum = parseInt(chapter.split('-')[1]);
+    const chapterNum = parseInt(chapter.split('-')[1].substring(1)); // Parse "b1" -> "1"
     ps.updateProgress(profile.id, tahun, chapterNum, parseInt(level), '', finalScore >= 50);
 
     // Unlock badges
@@ -246,7 +246,9 @@ function Quiz({ profile }) {
     unlockedBadges.push(...newBadges);
 
     // Calculate points with difficulty multiplier
-    const difficultyMultiplier = { mudah: 1, sederhana: 2, cabaran: 3, ultra: 5 }[q.difficulty] || 1;
+    const levelNum = parseInt(level);
+    const baseDifficulty = ['mudah', 'sederhana', 'cabaran', 'ultra'][levelNum - 1] || 'mudah';
+    const difficultyMultiplier = { mudah: 1, sederhana: 2, cabaran: 3, ultra: 5 }[baseDifficulty] || 1;
     const basePoints = correct * 10 * difficultyMultiplier;
     const comboBonus = maxCombo > 0 ? maxCombo * 5 : 0;
     ps.addPoints(profile.id, basePoints + comboBonus);
