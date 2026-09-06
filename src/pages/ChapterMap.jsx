@@ -1,149 +1,143 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getProfileService } from '../services/profileService';
+import ChapterGlyph, { GLYPH_COLOR } from '../components/ChapterGlyph';
+
+const LEVELS = [
+  { n: 1, name: 'Mudah' },
+  { n: 2, name: 'Sederhana' },
+  { n: 3, name: 'Cabaran' },
+  { n: 4, name: 'Ultra' }
+];
+
+// Chapter ids look like "d3-b2": the chapter number is the digit after the "b".
+function chapterNumber(id) {
+  const m = /-b(\d+)$/.exec(id || '');
+  return m ? parseInt(m[1], 10) : 1;
+}
 
 function ChapterMap({ profile }) {
   const { tahun } = useParams();
   const navigate = useNavigate();
   const [chapters, setChapters] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
   const ps = getProfileService();
 
   useEffect(() => {
-    const loadChapters = async () => {
+    let alive = true;
+    const load = async () => {
       try {
-        console.log(`[ChapterMap] Loading chapters for tahun: ${tahun}`);
-        const url = `/matematik-kilat/data/questions/tahun${tahun}.json`;
-        console.log(`[ChapterMap] Fetching from: ${url}`);
-
-        const response = await fetch(url);
-        console.log(`[ChapterMap] Response status: ${response.status}`);
-        console.log(`[ChapterMap] Response OK: ${response.ok}`);
-
-        if (!response.ok) {
-          const text = await response.text();
-          throw new Error(`HTTP ${response.status}: ${text.substring(0, 100)}`);
-        }
-
-        const text = await response.text();
-        console.log(`[ChapterMap] Response text length: ${text.length}`);
-        console.log(`[ChapterMap] First 200 chars:`, text.substring(0, 200));
-
-        const data = JSON.parse(text);
-        console.log(`[ChapterMap] Parsed data:`, data);
-        console.log(`[ChapterMap] Data chapters:`, data.chapters);
-
-        if (!data || !data.chapters || data.chapters.length === 0) {
-          throw new Error(`Invalid data structure: chapters is ${data?.chapters}`);
-        }
-
-        setChapters(data.chapters);
-      } catch (error) {
-        console.error('[ChapterMap] CRITICAL ERROR:', error);
-        alert(`Error: ${error.message}`);
-        navigate('/hub');
+        const res = await fetch(`/matematik-kilat/data/questions/tahun${tahun}.json`);
+        if (!res.ok) throw new Error(`Fail soalan tidak dijumpai (${res.status})`);
+        const data = await res.json();
+        if (!data?.chapters?.length) throw new Error('Fail soalan tiada bab');
+        if (alive) setChapters(data.chapters);
+      } catch (e) {
+        if (alive) setError(e.message);
       } finally {
-        setLoading(false);
+        if (alive) setLoading(false);
       }
     };
-    loadChapters();
-  }, [tahun, navigate]);
+    load();
+    return () => { alive = false; };
+  }, [tahun]);
 
   if (loading) {
     return (
-      <div style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        minHeight: '100vh',
-        background: 'linear-gradient(135deg, #FF6B35 0%, #8338EC 100%)',
-        flexDirection: 'column',
-        gap: '20px'
-      }}>
-        <div style={{
-          width: '50px',
-          height: '50px',
-          border: '4px solid rgba(255,255,255,0.3)',
-          borderTop: '4px solid white',
-          borderRadius: '50%',
-          animation: 'spin 1s linear infinite'
-        }} />
-        <div style={{ color: 'white', fontSize: '1.1rem', fontWeight: 'bold' }}>
-          Sedang memuatkan bab...
+      <div className="page" style={{ display: 'grid', placeItems: 'center', minHeight: '70vh' }}>
+        <div className="center">
+          <div className="spinner" style={{ margin: '0 auto 16px' }} />
+          <div className="on-ink-muted">Membuka Tahun {tahun}…</div>
         </div>
       </div>
     );
   }
 
-  return (
-    <div style={{ minHeight: '100vh', padding: '20px' }}>
-      <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-        <button
-          onClick={() => navigate('/hub')}
-          style={{
-            background: 'none',
-            border: 'none',
-            fontSize: '1.5rem',
-            cursor: 'pointer',
-            marginBottom: '20px'
-          }}
-        >
-          ← Kembali
-        </button>
-
-        <div className="card card--primary" style={{ marginBottom: '30px' }}>
-          <h1 style={{ color: 'white', margin: '0 0 10px 0' }}>Tahun {tahun}</h1>
-          <p style={{ color: 'rgba(255,255,255,0.9)', margin: 0 }}>Pilih bab untuk mula belajar</p>
+  if (error) {
+    return (
+      <div className="page">
+        <button className="back" onClick={() => navigate('/hub')}>← Kembali</button>
+        <div className="paper paper--plain center">
+          <h2 style={{ marginBottom: 8 }}>Soalan Tahun {tahun} tidak dapat dibuka</h2>
+          <p className="muted" style={{ marginBottom: 16 }}>{error}</p>
+          <button className="btn btn--go" onClick={() => window.location.reload()}>Cuba lagi</button>
         </div>
+      </div>
+    );
+  }
 
-        <div style={{ display: 'grid', gap: '15px' }}>
-          {chapters.map(chapter => (
-            <div key={chapter.id} className="card">
-              <h2 style={{ margin: '0 0 15px 0' }}>📚 {chapter.title}</h2>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: '10px' }}>
-                {['mudah', 'sederhana', 'cabaran', 'ultra'].map((difficulty, idx) => {
-                  const levelNum = idx + 1;
-                  const labels = ['😊 Mudah', '😌 Sederhana', '🚀 Cabaran', '💎 Ultra'];
-                  // Safe chapter number parsing (format: "d1-b1" -> 1)
-                  const chapterNum = parseInt(chapter.id?.split('-')[1]) || 1;
-                  const progress = ps.getProgressPercentage(profile.id, tahun, chapterNum, levelNum);
+  const cleared = ps.getClearedCount(profile.id, tahun, chapters.length, LEVELS.length);
+
+  return (
+    <div className="page">
+      <button className="back" onClick={() => navigate('/hub')}>← Kembali</button>
+
+      <div className="page__head">
+        <div className="grow">
+          <h1 className="page__title">Tahun {tahun}</h1>
+          <div className="page__sub">
+            {cleared.done} daripada {cleared.total} aras sudah dikuasai
+          </div>
+        </div>
+        <span className="pill pill--quiet">{chapters.length} bab</span>
+      </div>
+
+      <div className="stack">
+        {chapters.map((chapter) => {
+          const num = chapterNumber(chapter.id);
+          const spine = GLYPH_COLOR[chapter.glyph] || GLYPH_COLOR.nombor;
+
+          return (
+            <section
+              key={chapter.id}
+              className="paper paper--plain paper--spine"
+              style={{ '--spine': spine }}
+            >
+              <div className="row" style={{ alignItems: 'flex-start' }}>
+                <ChapterGlyph glyph={chapter.glyph} size={40} />
+                <div className="grow">
+                  <h2 style={{ fontSize: '1.1rem' }}>{chapter.title}</h2>
+                  <div className="muted" style={{ fontSize: '0.85rem' }}>
+                    {chapter.questions.length} soalan
+                  </div>
+                </div>
+              </div>
+
+              <div className="levels">
+                {LEVELS.map(({ n, name }) => {
+                  const open = ps.isLevelOpen(profile.id, tahun, num, n);
+                  const done = ps.isLevelCleared(profile.id, tahun, num, n);
+                  const score = ps.getProgressPercentage(profile.id, tahun, num, n);
+                  const isNext = open && !done;
+
+                  const cls = done ? 'level level--done'
+                    : !open ? 'level level--locked'
+                      : isNext ? 'level level--next' : 'level';
 
                   return (
                     <button
-                      key={difficulty}
-                      onClick={() => navigate(`/quiz/${tahun}/${chapter.id}/${levelNum}`)}
-                      className="btn btn--primary"
-                      style={{
-                        flexDirection: 'column',
-                        height: '100px',
-                        position: 'relative',
-                        overflow: 'hidden'
-                      }}
+                      key={n}
+                      className={cls}
+                      disabled={!open}
+                      onClick={() => navigate(`/quiz/${tahun}/${chapter.id}/${n}`)}
+                      aria-label={
+                        open
+                          ? `${name}, ${done ? `sudah dikuasai, markah terbaik ${score} peratus` : 'belum dicuba'}`
+                          : `${name}, berkunci sehingga aras sebelumnya dikuasai`
+                      }
                     >
-                      <div>{labels[idx]}</div>
-                      <div style={{ fontSize: '0.8rem', marginTop: '5px' }}>{progress}%</div>
-                      <div style={{
-                        position: 'absolute',
-                        bottom: 0,
-                        left: 0,
-                        right: 0,
-                        height: '3px',
-                        background: 'rgba(255,255,255,0.3)',
-                        overflow: 'hidden'
-                      }}>
-                        <div style={{
-                          background: 'rgba(255,255,255,0.8)',
-                          height: '100%',
-                          width: `${progress}%`
-                        }} />
-                      </div>
+                      <span className="level__name">{name}</span>
+                      <span className="level__meta">
+                        {!open ? 'Berkunci' : done ? `${score}%` : 'Mula'}
+                      </span>
                     </button>
                   );
                 })}
               </div>
-            </div>
-          ))}
-        </div>
+            </section>
+          );
+        })}
       </div>
     </div>
   );

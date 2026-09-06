@@ -1,11 +1,11 @@
 import React from 'react';
 
 /**
- * Proper Roblox-Style Avatar Component
- * Creates realistic-looking Roblox minifigure style characters
+ * Kilat blocky avatar component
+ * Draws the chunky block-figure mascot used across the app
  */
 
-function RobloxAvatar({ profile, size = 200 }) {
+function KilatAvatar({ profile, size = 200 }) {
   const gender = profile?.avatar?.gender || 'neutral';
   const skinColor = profile?.avatar?.skinColor || '#f4c4a0';
   const hairColor = profile?.avatar?.hairColor || '#8B4513';
@@ -150,4 +150,4 @@ function RobloxAvatar({ profile, size = 200 }) {
   );
 }
 
-export default RobloxAvatar;
+export default KilatAvatar;

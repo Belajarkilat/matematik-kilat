@@ -11,9 +11,10 @@ import ChapterMap from './pages/ChapterMap';
 import Quiz from './pages/Quiz';
 import ResultsPage from './pages/ResultsPage';
 import Settings from './pages/Settings';
+import VisualGallery from './pages/VisualGallery';
 
 // Styles
-import './styles/roblox-theme.css';
+import './styles/kilat-theme.css';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -78,10 +79,15 @@ function App() {
         <Route path="/new-profile" element={<ProfileSelector onProfileChange={handleProfileChange} />} />
         <Route path="/avatar" element={activeProfile ? <AvatarBuilder profile={activeProfile} /> : <Navigate to="/" />} />
         <Route path="/settings" element={<Settings />} />
+        {import.meta.env.DEV && (
+          <Route path="/dev/visuals" element={<VisualGallery />} />
+        )}
         <Route path="/hub" element={activeProfile ? <Hub profile={activeProfile} /> : <Navigate to="/" />} />
         <Route path="/tahun/:tahun" element={activeProfile ? <ChapterMap profile={activeProfile} /> : <Navigate to="/" />} />
         <Route path="/quiz/:tahun/:chapter/:level" element={activeProfile ? <Quiz profile={activeProfile} /> : <Navigate to="/" />} />
         <Route path="/results/:tahun/:chapter/:level" element={activeProfile ? <ResultsPage profile={activeProfile} /> : <Navigate to="/" />} />
+        {/* Catch-all: an unknown URL must never leave the child staring at a blank page. */}
+        <Route path="*" element={<Navigate to={activeProfile ? '/hub' : '/'} replace />} />
       </Routes>
     </Router>
   );

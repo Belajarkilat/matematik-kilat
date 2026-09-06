@@ -4,7 +4,22 @@
  * Uses localStorage - same pattern as the original Matematik Kilat app
  */
 
-const PROFILES_KEY = 'bk_matematik_roblox_profiles_v1';
+const PROFILES_KEY = 'bk_matematik_kilat_profiles_v1';
+// Profiles saved before the rename still live under the old key; move them
+// across once so nobody loses their child's progress on first launch.
+const LEGACY_PROFILES_KEY = 'bk_matematik_roblox_profiles_v1';
+
+function migrateLegacyProfiles() {
+  try {
+    if (localStorage.getItem(PROFILES_KEY)) return;
+    const legacy = localStorage.getItem(LEGACY_PROFILES_KEY);
+    if (!legacy) return;
+    localStorage.setItem(PROFILES_KEY, legacy);
+    localStorage.removeItem(LEGACY_PROFILES_KEY);
+  } catch (e) {
+    // Private browsing or a full quota - nothing to migrate, carry on.
+  }
+}
 
 // Badge definitions
 const BADGES = {
@@ -37,6 +52,7 @@ class ProfileService {
    */
   _loadProfiles() {
     try {
+      migrateLegacyProfiles();
       const stored = localStorage.getItem(PROFILES_KEY);
       if (stored) {
         return JSON.parse(stored);
@@ -208,6 +224,39 @@ class ProfileService {
     if (!prog || prog.attempted === 0) return 0;
 
     return Math.round((prog.correct / prog.attempted) * 100);
+  }
+
+  /**
+   * Has this level been passed at least once?
+   *
+   * updateProgress records one row per completed quiz, where `correct` counts
+   * the runs that scored 50% or more. So a level is cleared once that count is
+   * above zero. Level 1 of every chapter is always open; the rest unlock when
+   * the level before them is cleared.
+   */
+  isLevelCleared(profileId, tahun, chapter, level) {
+    const profile = this.profiles.profiles.find(p => p.id === profileId);
+    if (!profile) return false;
+    const prog = profile.progress[`t${tahun}_c${chapter}_l${level}`];
+    return Boolean(prog && prog.correct > 0);
+  }
+
+  isLevelOpen(profileId, tahun, chapter, level) {
+    if (level <= 1) return true;
+    return this.isLevelCleared(profileId, tahun, chapter, level - 1);
+  }
+
+  /**
+   * How many levels of a tahun have been cleared, out of the total on offer.
+   */
+  getClearedCount(profileId, tahun, chapters = 5, levels = 4) {
+    let done = 0;
+    for (let c = 1; c <= chapters; c += 1) {
+      for (let l = 1; l <= levels; l += 1) {
+        if (this.isLevelCleared(profileId, tahun, c, l)) done += 1;
+      }
+    }
+    return { done, total: chapters * levels };
   }
 
   /**

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getProfileService } from '../services/profileService';
-import RobloxAvatar from '../components/RobloxAvatar';
+import KilatAvatar from '../components/KilatAvatar';
 
 function AvatarBuilder({ profile }) {
   const navigate = useNavigate();
@@ -61,7 +61,7 @@ function AvatarBuilder({ profile }) {
 
   // Render avatar based on gender
   const AvatarPreview = () => {
-    // Use the new Roblox-style avatar
+    // Use the blocky Kilat avatar
     const profilePreview = {
       avatar: {
         gender: avatar.gender,
@@ -74,7 +74,7 @@ function AvatarBuilder({ profile }) {
 
     return (
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <RobloxAvatar profile={profilePreview} size={140} />
+        <KilatAvatar profile={profilePreview} size={140} />
       </div>
     );
   };

@@ -1,87 +1,85 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 
-function ResultsPage({ profile }) {
-  const { tahun, chapter } = useParams();
+const PASS = 50;
+
+function verdictFor(score) {
+  if (score === 100) return { head: 'Semua betul', note: 'Aras ini sudah dikuasai sepenuhnya.' };
+  if (score >= 80) return { head: 'Cemerlang', note: 'Hampir semua betul. Teruskan ke aras seterusnya.' };
+  if (score >= PASS) return { head: 'Lulus', note: 'Aras seterusnya sudah dibuka.' };
+  if (score >= 30) return { head: 'Hampir', note: 'Baca semula langkah kerja, kemudian cuba sekali lagi.' };
+  return { head: 'Belum lulus', note: 'Cuba aras Mudah dahulu untuk membina asas.' };
+}
+
+function ResultsPage() {
+  const { tahun, chapter, level } = useParams();
   const navigate = useNavigate();
   const location = useLocation();
-  const state = location.state || { score: 0, correct: 0, total: 0, combo: 0 };
   const canvasRef = useRef(null);
 
-  useEffect(() => {
-    // Confetti animation
-    const canvas = canvasRef.current;
-    if (!canvas) return;
+  const state = location.state || { score: 0, correct: 0, total: 0, combo: 0 };
+  const passed = state.score >= PASS;
+  const verdict = verdictFor(state.score);
+  const bonus = state.combo * 5;
+  const points = state.correct * 10 + bonus;
 
+  // Confetti is a reward, so it only runs on a pass, and never for anyone who
+  // has asked the system to reduce motion.
+  useEffect(() => {
+    if (!passed) return undefined;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return undefined;
+
+    const canvas = canvasRef.current;
+    if (!canvas) return undefined;
     const ctx = canvas.getContext('2d');
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const confettiPieces = [];
-    const colors = ['#FF6B35', '#2ECC71', '#3498DB', '#9B59B6', '#F39C12', '#FFC93C'];
+    const colors = ['#FFC300', '#148F5F', '#3E6FD9', '#C2529E', '#E2711D'];
+    const pieces = Array.from({ length: 90 }, () => ({
+      x: Math.random() * canvas.width,
+      y: -20 - Math.random() * canvas.height * 0.4,
+      vx: (Math.random() - 0.5) * 4,
+      vy: Math.random() * 3 + 2,
+      size: Math.random() * 8 + 4,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      rot: Math.random() * Math.PI,
+      spin: (Math.random() - 0.5) * 0.15
+    }));
 
-    for (let i = 0; i < 100; i++) {
-      confettiPieces.push({
-        x: Math.random() * canvas.width,
-        y: -10,
-        vx: (Math.random() - 0.5) * 10,
-        vy: Math.random() * 5 + 3,
-        size: Math.random() * 6 + 3,
-        color: colors[Math.floor(Math.random() * colors.length)],
-        rotation: Math.random() * Math.PI * 2,
-        rotationSpeed: (Math.random() - 0.5) * 0.1
-      });
-    }
-
-    let animationId;
-    const animate = () => {
+    let raf;
+    const draw = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-      confettiPieces.forEach((piece) => {
-        piece.x += piece.vx;
-        piece.y += piece.vy;
-        piece.vy += 0.2; // gravity
-        piece.rotation += piece.rotationSpeed;
-
+      let alive = false;
+      pieces.forEach((p) => {
+        p.x += p.vx;
+        p.y += p.vy;
+        p.vy += 0.12;
+        p.rot += p.spin;
+        if (p.y < canvas.height + 40) alive = true;
         ctx.save();
-        ctx.translate(piece.x, piece.y);
-        ctx.rotate(piece.rotation);
-        ctx.fillStyle = piece.color;
-        ctx.fillRect(-piece.size / 2, -piece.size / 2, piece.size, piece.size);
+        ctx.translate(p.x, p.y);
+        ctx.rotate(p.rot);
+        ctx.fillStyle = p.color;
+        ctx.fillRect(-p.size / 2, -p.size / 3, p.size, p.size / 1.5);
         ctx.restore();
       });
-
-      if (confettiPieces.some(p => p.y < canvas.height)) {
-        animationId = requestAnimationFrame(animate);
-      }
+      if (alive) raf = requestAnimationFrame(draw);
     };
+    draw();
+    return () => raf && cancelAnimationFrame(raf);
+  }, [passed]);
 
-    animate();
-
-    return () => {
-      if (animationId) cancelAnimationFrame(animationId);
-    };
-  }, []);
-
-  const getMessage = (score) => {
-    if (score === 100) return { msg: 'Sempurna! 🌟', emoji: '👑' };
-    if (score >= 80) return { msg: 'Cemerlang! 🎉', emoji: '⭐' };
-    if (score >= 60) return { msg: 'Bagus! 😊', emoji: '👍' };
-    if (score >= 40) return { msg: 'Terus Berusaha! 💪', emoji: '🔥' };
-    return { msg: 'Jangan Menyerah! 💪', emoji: '😢' };
-  };
-
-  const result = getMessage(state.score);
-  const bonusPoints = state.combo * 5;
+  const nextLevel = Math.min(4, parseInt(level, 10) + 1);
 
   return (
-    <div style={{ minHeight: '100vh', padding: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'linear-gradient(135deg, #2ECC71 0%, #27AE60 100%)', position: 'relative', overflow: 'hidden' }}>
+    <div className="page" style={{ position: 'relative' }}>
       <canvas
         ref={canvasRef}
+        aria-hidden="true"
         style={{
           position: 'fixed',
-          top: 0,
-          left: 0,
+          inset: 0,
           width: '100%',
           height: '100%',
           pointerEvents: 'none',
@@ -89,74 +87,50 @@ function ResultsPage({ profile }) {
         }}
       />
 
-      <div style={{ maxWidth: '500px', width: '100%', textAlign: 'center', position: 'relative', zIndex: 10 }}>
-        <div className="card card--success">
-          <div style={{ fontSize: '5rem', marginBottom: '20px', animation: 'bounce 1s ease infinite' }}>
-            {result.emoji}
+      <div style={{ position: 'relative', zIndex: 2 }}>
+        <div className="paper center pop" style={{ marginBottom: 16 }}>
+          <div className="score">{state.score}%</div>
+          <div className="score__label">
+            {state.correct} betul daripada {state.total} soalan
           </div>
-          <h1 style={{ color: 'white', fontSize: '2rem', marginBottom: '10px' }}>
-            {result.msg}
-          </h1>
 
-          <div style={{
-            background: 'rgba(255,255,255,0.2)',
-            padding: '20px',
-            borderRadius: '12px',
-            marginBottom: '20px',
-            color: 'white'
-          }}>
-            <div style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '10px' }}>
-              {state.score}%
+          <h2 style={{ marginTop: 18, fontSize: '1.3rem' }}>{verdict.head}</h2>
+          <p className="muted" style={{ marginTop: 6 }}>{verdict.note}</p>
+
+          <div className="stats" style={{ marginTop: 18, gridTemplateColumns: 'repeat(3, 1fr)' }}>
+            <div className="stat">
+              <div className="stat__num">{state.correct}</div>
+              <div className="stat__label">Betul</div>
             </div>
-            <div style={{ fontSize: '1.1rem', marginBottom: '15px' }}>
-              Betul {state.correct} daripada {state.total} soalan
+            <div className="stat">
+              <div className="stat__num">{state.combo}</div>
+              <div className="stat__label">Rentetan terbaik</div>
             </div>
-
-            {state.combo > 0 && (
-              <div style={{
-                background: 'rgba(255,215,0,0.3)',
-                padding: '10px',
-                borderRadius: '8px',
-                marginBottom: '10px',
-                border: '2px solid #FFD700'
-              }}>
-                <div style={{ fontSize: '1.3rem', fontWeight: 'bold' }}>
-                  🔥 COMBO {state.combo}!
-                </div>
-                <div style={{ fontSize: '0.9rem' }}>
-                  +{bonusPoints} bonus points
-                </div>
-              </div>
-            )}
+            <div className="stat">
+              <div className="stat__num">{points}</div>
+              <div className="stat__label">Poin</div>
+            </div>
           </div>
+        </div>
 
-          <div style={{
-            background: 'rgba(255,255,255,0.1)',
-            padding: '12px',
-            borderRadius: '8px',
-            marginBottom: '20px',
-            color: 'white',
-            fontSize: '0.95rem'
-          }}>
-            Total Poin: {state.correct * 10 + bonusPoints}
-          </div>
-
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
+        <div className="stack">
+          {passed && parseInt(level, 10) < 4 && (
             <button
-              onClick={() => navigate(`/tahun/${tahun}`)}
-              className="btn btn--primary"
-              style={{ marginBottom: 0 }}
+              className="btn btn--go btn--block"
+              onClick={() => navigate(`/quiz/${tahun}/${chapter}/${nextLevel}`)}
             >
-              ← Kembali
+              Teruskan ke aras seterusnya
             </button>
-            <button
-              onClick={() => navigate('/hub')}
-              className="btn btn--ghost"
-              style={{ marginBottom: 0 }}
-            >
-              🏠 Rumah
-            </button>
-          </div>
+          )}
+          <button
+            className="btn btn--paper btn--block"
+            onClick={() => navigate(`/quiz/${tahun}/${chapter}/${level}`)}
+          >
+            Cuba aras ini sekali lagi
+          </button>
+          <button className="btn btn--quiet btn--block" onClick={() => navigate(`/tahun/${tahun}`)}>
+            Pilih bab lain
+          </button>
         </div>
       </div>
     </div>

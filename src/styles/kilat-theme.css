@@ -1,0 +1,696 @@
+/**
+ * Matematik Kilat — "Buku Petak"
+ *
+ * The visual system is built from the object every Malaysian primary pupil
+ * already does maths on: the squared exercise book. Content sits on paper
+ * panels with a real printed grid; the app chrome around them is ink. One
+ * accent, the lightning yellow of "Kilat", marks the thing you should look at
+ * next and nothing else.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap');
+
+:root {
+  /* Ink — chrome, never body text background */
+  --ink: #17225A;
+  --ink-deep: #0E1740;
+  --ink-soft: #2E3C7E;
+  --ink-line: #46559C;
+
+  /* Paper — every readable surface */
+  --paper: #FFFDF6;
+  --paper-edge: #E8E2CE;
+  --grid-line: #E2E9F8;
+
+  /* Accent — used only for "this is your turn" */
+  --kilat: #FFC300;
+  --kilat-deep: #E0A500;
+
+  /* Verdicts */
+  --betul: #148F5F;
+  --betul-soft: #DFF3E9;
+  --salah: #C7363C;
+  --salah-soft: #FBE3E4;
+
+  /* Text */
+  --text: #16204A;
+  --text-muted: #5A648C;
+  --on-ink: #F4F6FF;
+  --on-ink-muted: #B9C2E8;
+
+  /* Chapter marks */
+  --mark-nombor: #3E6FD9;
+  --mark-pecahan: #C2529E;
+  --mark-tambah: #2E8B57;
+  --mark-tolak: #C0562A;
+  --mark-darab: #1F7FA8;
+  --mark-tambahtolak: #E2711D;
+  --mark-wangmasa: #148F5F;
+  --mark-bentuk: #7A4DD4;
+
+  /* Structure */
+  --r-panel: 20px;
+  --r-tile: 14px;
+  --r-pill: 999px;
+  --edge: 0 4px 0 var(--paper-edge);
+  --edge-ink: 0 4px 0 var(--ink-deep);
+  --tap: 56px;
+
+  --page-max: 780px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--ink);
+}
+
+body {
+  font-family: 'Nunito', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background:
+    radial-gradient(120% 80% at 50% -10%, var(--ink-soft) 0%, transparent 60%),
+    var(--ink);
+  background-attachment: fixed;
+  color: var(--text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, .display {
+  font-family: 'Fredoka', 'Nunito', system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+
+/* ============================================================
+   Page shell
+   ============================================================ */
+
+.page {
+  max-width: var(--page-max);
+  margin: 0 auto;
+  padding: 18px 16px 56px;
+}
+
+.page__head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.page__title {
+  color: var(--on-ink);
+  font-size: 1.5rem;
+}
+
+.page__sub {
+  color: var(--on-ink-muted);
+  font-size: 0.95rem;
+  margin-top: 2px;
+}
+
+/* ============================================================
+   Paper — the squared exercise-book surface
+   ============================================================ */
+
+.paper {
+  position: relative;
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 22px 22px;
+  background-position: -1px -1px;
+  border-radius: var(--r-panel);
+  box-shadow: var(--edge);
+  padding: 18px 18px 24px;
+  overflow: hidden;
+}
+
+/* A quieter paper for dense content: grid fades out behind text. */
+.paper--plain {
+  background-image: none;
+}
+
+/* The coloured spine down the left edge, like a taped exercise book. */
+.paper--spine::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 8px;
+  background: var(--spine, var(--kilat));
+}
+
+.paper--spine {
+  padding-left: 24px;
+}
+
+/* ============================================================
+   Buttons — chunky keys with a physical bottom edge
+   ============================================================ */
+
+.btn {
+  font-family: 'Fredoka', 'Nunito', system-ui, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  min-height: var(--tap);
+  padding: 14px 20px;
+  border: none;
+  border-radius: var(--r-tile);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+  transition: transform 0.08s ease, box-shadow 0.08s ease, background-color 0.15s ease;
+}
+
+.btn:active:not(:disabled) {
+  transform: translateY(3px);
+  box-shadow: none !important;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--kilat);
+  outline-offset: 3px;
+}
+
+.btn--go {
+  background: var(--kilat);
+  color: var(--ink-deep);
+  box-shadow: 0 4px 0 var(--kilat-deep);
+}
+
+.btn--go:hover:not(:disabled) {
+  background: #FFCE2B;
+}
+
+.btn--paper {
+  background: var(--paper);
+  color: var(--text);
+  box-shadow: var(--edge);
+}
+
+.btn--quiet {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--on-ink);
+  box-shadow: inset 0 0 0 2px var(--ink-line);
+}
+
+.btn--quiet:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.btn--block {
+  width: 100%;
+}
+
+.btn--small {
+  min-height: 40px;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+}
+
+/* Back control: a link, not a button box. */
+.back {
+  background: none;
+  border: none;
+  color: var(--on-ink-muted);
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 8px 4px;
+  cursor: pointer;
+  min-height: 44px;
+}
+
+.back:hover { color: var(--on-ink); }
+.back:focus-visible { outline: 3px solid var(--kilat); outline-offset: 2px; border-radius: 6px; }
+
+/* ============================================================
+   Small parts
+   ============================================================ */
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: var(--r-pill);
+  font-size: 0.85rem;
+  font-weight: 800;
+  background: var(--kilat);
+  color: var(--ink-deep);
+}
+
+.pill--quiet {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--on-ink);
+}
+
+.meter {
+  height: 12px;
+  border-radius: var(--r-pill);
+  background: rgba(23, 34, 90, 0.12);
+  overflow: hidden;
+}
+
+.meter__fill {
+  height: 100%;
+  border-radius: var(--r-pill);
+  background: var(--kilat);
+  transition: width 0.4s ease;
+}
+
+.meter--onInk {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+/* ============================================================
+   Stat row
+   ============================================================ */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.stat {
+  background: var(--paper);
+  border-radius: var(--r-tile);
+  box-shadow: var(--edge);
+  padding: 12px 8px;
+  text-align: center;
+}
+
+.stat__num {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.1;
+}
+
+.stat__label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* ============================================================
+   Year and chapter tiles
+   ============================================================ */
+
+.years {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.year {
+  background: var(--paper);
+  border-radius: var(--r-tile);
+  box-shadow: var(--edge);
+  border: none;
+  padding: 14px 10px;
+  cursor: pointer;
+  text-align: center;
+  font: inherit;
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+
+.year:active { transform: translateY(3px); box-shadow: none; }
+.year:focus-visible { outline: 3px solid var(--kilat); outline-offset: 3px; }
+
+.year__n {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1;
+}
+
+.year__label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin: 4px 0 8px;
+}
+
+.levels {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.level {
+  border: none;
+  border-radius: 12px;
+  background: #EDF0FA;
+  box-shadow: 0 3px 0 #D3DAF0;
+  color: var(--text);
+  font: inherit;
+  font-weight: 800;
+  font-size: 0.85rem;
+  padding: 12px 4px;
+  min-height: var(--tap);
+  cursor: pointer;
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+
+.level:active:not(:disabled) { transform: translateY(3px); box-shadow: none; }
+.level:focus-visible { outline: 3px solid var(--kilat); outline-offset: 3px; }
+
+.level--done {
+  background: var(--betul-soft);
+  box-shadow: 0 3px 0 #B7DFCB;
+  color: var(--betul);
+}
+
+.level--next {
+  background: var(--kilat);
+  box-shadow: 0 3px 0 var(--kilat-deep);
+  color: var(--ink-deep);
+}
+
+.level--locked {
+  background: #E4E7F0;
+  box-shadow: none;
+  color: #6B7291;
+  cursor: not-allowed;
+}
+
+.level__name { display: block; }
+.level__meta { display: block; font-size: 0.72rem; font-weight: 700; opacity: 0.75; margin-top: 2px; }
+
+/* ============================================================
+   Quiz
+   ============================================================ */
+
+.quiz__bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.quiz__count {
+  color: var(--on-ink);
+  font-weight: 800;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.quiz__question {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--text);
+  text-align: center;
+  line-height: 1.35;
+  margin-bottom: 18px;
+}
+
+.options {
+  display: grid;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.option {
+  border: none;
+  border-radius: var(--r-tile);
+  background: #EDF0FA;
+  box-shadow: 0 4px 0 #D3DAF0;
+  color: var(--text);
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  min-height: var(--tap);
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: transform 0.08s ease, box-shadow 0.08s ease, background-color 0.15s ease;
+}
+
+.option:active:not(:disabled) { transform: translateY(4px); box-shadow: none; }
+.option:focus-visible { outline: 3px solid var(--kilat); outline-offset: 3px; }
+.option:hover:not(:disabled):not(.option--picked) { background: #E3E8F8; }
+
+.option--picked {
+  background: var(--kilat);
+  box-shadow: 0 4px 0 var(--kilat-deep);
+  color: var(--ink-deep);
+}
+
+.option--right {
+  background: var(--betul-soft);
+  box-shadow: 0 4px 0 #B7DFCB;
+  color: var(--betul);
+}
+
+.option--wrong {
+  background: var(--salah-soft);
+  box-shadow: 0 4px 0 #EFC2C4;
+  color: var(--salah);
+}
+
+.option--dim { background: #F1F3FA; box-shadow: none; color: #6B7291; }
+
+.answer-input {
+  width: 100%;
+  min-height: var(--tap);
+  padding: 14px 16px;
+  border-radius: var(--r-tile);
+  border: 3px solid var(--ink-line);
+  background: #FFFFFF;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text);
+  text-align: center;
+}
+
+.answer-input:focus {
+  outline: none;
+  border-color: var(--kilat);
+}
+
+.answer-input::placeholder { color: #A8B0CC; font-weight: 500; }
+
+.verdict {
+  border-radius: var(--r-tile);
+  padding: 14px 16px;
+  margin-top: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.verdict--right { background: var(--betul-soft); color: #0E6B47; }
+.verdict--wrong { background: var(--salah-soft); color: #99282D; }
+
+.verdict__head {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.verdict__working { font-weight: 600; font-size: 0.95rem; }
+
+/* ============================================================
+   Results
+   ============================================================ */
+
+.score {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.score__label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-top: 6px;
+}
+
+/* ============================================================
+   Utilities
+   ============================================================ */
+
+.stack { display: grid; gap: 14px; }
+.row { display: flex; align-items: center; gap: 10px; }
+.grow { flex: 1; }
+.center { text-align: center; }
+.muted { color: var(--text-muted); }
+.on-ink { color: var(--on-ink); }
+.on-ink-muted { color: var(--on-ink-muted); }
+
+.section-title {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--on-ink);
+  margin: 26px 0 10px;
+}
+
+.spinner {
+  width: 44px;
+  height: 44px;
+  border: 5px solid rgba(255, 255, 255, 0.25);
+  border-top-color: var(--kilat);
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+@keyframes pop {
+  0% { transform: scale(0.9); }
+  60% { transform: scale(1.04); }
+  100% { transform: scale(1); }
+}
+
+.pop { animation: pop 0.28s ease-out; }
+
+/* Four stat tiles across stop being readable well before the narrowest
+   phone, so they break to two rows first. Year tiles stay three across: at
+   this size they are still comfortably wider than a thumb. */
+@media (max-width: 560px) {
+  .stats { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 420px) {
+  .years { grid-template-columns: repeat(2, 1fr); }
+  .levels { grid-template-columns: repeat(2, 1fr); }
+  .quiz__question { font-size: 1.15rem; }
+  .score { font-size: 3.2rem; }
+  .page { padding-left: 12px; padding-right: 12px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* ============================================================
+   Bridge for the screens still written against the old class
+   names (profile picker, avatar builder, settings). They map onto
+   the same tokens so every screen reads as one system.
+   ============================================================ */
+
+.card {
+  background: var(--paper);
+  border-radius: var(--r-panel);
+  box-shadow: var(--edge);
+  padding: 18px;
+  color: var(--text);
+  margin-bottom: 14px;
+}
+
+.card--primary {
+  background: var(--ink-soft);
+  box-shadow: 0 4px 0 var(--ink-deep);
+  color: var(--on-ink);
+}
+
+.card--primary h1,
+.card--primary h2,
+.card--primary h3,
+.card--primary p {
+  color: var(--on-ink);
+}
+
+.card--success {
+  background: var(--betul-soft);
+  box-shadow: 0 4px 0 #B7DFCB;
+  color: #0E6B47;
+}
+
+.btn--primary {
+  background: var(--kilat);
+  color: var(--ink-deep);
+  box-shadow: 0 4px 0 var(--kilat-deep);
+}
+
+.btn--primary:hover:not(:disabled) { background: #FFCE2B; }
+
+.btn--ghost {
+  background: var(--paper);
+  color: var(--text);
+  box-shadow: var(--edge);
+}
+
+.btn--secondary {
+  background: #EDF0FA;
+  color: var(--text);
+  box-shadow: 0 4px 0 #D3DAF0;
+}
+
+.eyebrow {
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: var(--text-muted);
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  font-family: 'Nunito', system-ui, sans-serif;
+  font-size: 1rem;
+  padding: 12px 14px;
+  border-radius: var(--r-tile);
+  border: 2px solid #D3DAF0;
+  background: #FFFFFF;
+  color: var(--text);
+  min-height: 48px;
+  width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+  outline: none;
+  border-color: var(--kilat);
+}
+
+/* A heading sitting straight on the ink background, not inside a panel,
+   must be light or it disappears. Panels re-assert the dark ink colour. */
+.page > h1,
+.page > h2,
+.page > h3,
+body > div > h1,
+body > div > h2 {
+  color: var(--on-ink);
+}
+
+.card h1, .card h2, .card h3,
+.paper h1, .paper h2, .paper h3 {
+  color: var(--text);
+}
+
+.card--primary h1, .card--primary h2, .card--primary h3 {
+  color: var(--on-ink);
+}

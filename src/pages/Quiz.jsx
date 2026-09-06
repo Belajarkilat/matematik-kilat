@@ -1,257 +1,242 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getProfileService } from '../services/profileService';
+import QuestionVisual from '../components/QuestionVisual';
+
+// Compares a submitted answer against a question's key.
+// MCQ answers are option indices. Written answers are compared numerically when
+// both sides are numbers, so "15.70", "15.7" and "RM 15.70" all count for a key
+// of 15.7; anything else falls back to a whitespace-insensitive text match so
+// "3 kg 500 g" and "(3, 4)" still work.
+export function isAnswerCorrect(q, given) {
+  if (given === undefined || given === null || given === '') return false;
+  if (q.type === 'mcq') return given === q.correctAnswer;
+
+  const text = (v) => String(v).trim().toLowerCase().replace(/\s+/g, '');
+  const numeric = (v) => {
+    const cleaned = String(v).trim().toLowerCase()
+      .replace(/^rm/, '')
+      .replace(/[\s,]/g, '');
+    if (!/^-?\d+(\.\d+)?$/.test(cleaned)) return null;
+    return parseFloat(cleaned);
+  };
+
+  const a = numeric(given);
+  const b = numeric(q.correctAnswer);
+  if (a !== null && b !== null) return Math.abs(a - b) < 1e-9;
+
+  return text(given) === text(q.correctAnswer);
+}
+
+const LEVEL_NAME = ['Mudah', 'Sederhana', 'Cabaran', 'Ultra'];
+const DIFFICULTIES = ['mudah', 'sederhana', 'cabaran'];
+
+function chapterNumber(id) {
+  const m = /-b(\d+)$/.exec(id || '');
+  return m ? parseInt(m[1], 10) : 1;
+}
 
 function Quiz({ profile }) {
   const { tahun, chapter, level } = useParams();
   const navigate = useNavigate();
+  const ps = getProfileService();
+
   const [questions, setQuestions] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
   const [currentIdx, setCurrentIdx] = useState(0);
   const [answers, setAnswers] = useState({});
-  const [submitted, setSubmitted] = useState({});
-  const [feedback, setFeedback] = useState({});
-  const [loading, setLoading] = useState(true);
+  const [checked, setChecked] = useState({});
   const [combo, setCombo] = useState(0);
   const [maxCombo, setMaxCombo] = useState(0);
 
-  const ps = getProfileService();
+  const levelNum = parseInt(level, 10);
 
-  // Load questions
   useEffect(() => {
-    const loadQuestions = async () => {
+    let alive = true;
+    const load = async () => {
       try {
-        const url = `/matematik-kilat/data/questions/tahun${tahun}.json`;
-        const response = await fetch(url);
-        if (!response.ok) throw new Error('Failed to load');
+        const res = await fetch(`/matematik-kilat/data/questions/tahun${tahun}.json`);
+        if (!res.ok) throw new Error(`Fail soalan tidak dijumpai (${res.status})`);
+        const data = await res.json();
+        const chapterData = data.chapters[chapterNumber(chapter) - 1];
+        if (!chapterData) throw new Error('Bab ini tiada dalam fail soalan');
 
-        const data = await response.json();
-        const chapterNum = parseInt(chapter.split('-')[1].substring(1));
-        const chapterData = data.chapters[chapterNum - 1];
-        const levelNum = parseInt(level);
-
-        const difficulties = ['mudah', 'sederhana', 'cabaran'];
-        const baseDifficulty = levelNum === 4 ? 'cabaran' : difficulties[levelNum - 1];
-
-        let levelQuestions = chapterData.questions
-          .filter(q => q.difficulty === baseDifficulty)
+        const baseDifficulty = levelNum === 4 ? 'cabaran' : DIFFICULTIES[levelNum - 1];
+        let picked = chapterData.questions
+          .filter((q) => q.difficulty === baseDifficulty)
           .slice(0, 10);
 
         if (levelNum === 4) {
-          levelQuestions = levelQuestions.map(q => ({
-            ...q,
-            difficulty: 'ultra',
-            points: q.points * 5
-          }));
+          picked = picked.map((q) => ({ ...q, difficulty: 'ultra', points: q.points * 5 }));
         }
-
-        setQuestions(levelQuestions);
-        setLoading(false);
-      } catch (error) {
-        console.error('Error:', error);
-        alert('Error loading questions');
-        navigate('/hub');
+        if (!picked.length) throw new Error('Aras ini tiada soalan');
+        if (alive) setQuestions(picked);
+      } catch (e) {
+        if (alive) setError(e.message);
+      } finally {
+        if (alive) setLoading(false);
       }
     };
-    loadQuestions();
-  }, [tahun, chapter, level, navigate]);
+    load();
+    return () => { alive = false; };
+  }, [tahun, chapter, levelNum]);
 
-  if (loading || !questions.length) {
-    return <div style={{ padding: '20px', textAlign: 'center', color: 'white', background: 'linear-gradient(135deg, #FF6B35 0%, #8338EC 100%)', minHeight: '100vh' }}>Loading questions...</div>;
+  if (loading) {
+    return (
+      <div className="page" style={{ display: 'grid', placeItems: 'center', minHeight: '70vh' }}>
+        <div className="center">
+          <div className="spinner" style={{ margin: '0 auto 16px' }} />
+          <div className="on-ink-muted">Menyediakan soalan…</div>
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="page">
+        <button className="back" onClick={() => navigate(`/tahun/${tahun}`)}>← Kembali</button>
+        <div className="paper paper--plain center">
+          <h2 style={{ marginBottom: 8 }}>Kuiz ini tidak dapat dimulakan</h2>
+          <p className="muted" style={{ marginBottom: 16 }}>{error}</p>
+          <button className="btn btn--go" onClick={() => navigate(`/tahun/${tahun}`)}>
+            Pilih bab lain
+          </button>
+        </div>
+      </div>
+    );
   }
 
   const q = questions[currentIdx];
-  const isAnswered = submitted[currentIdx];
-  const feedbackType = feedback[currentIdx];
+  const given = answers[currentIdx];
+  const isChecked = Boolean(checked[currentIdx]);
+  const wasRight = isChecked && isAnswerCorrect(q, given);
+  const isLast = currentIdx === questions.length - 1;
+  const answeredCount = Object.keys(checked).length;
 
-  const handleAnswer = (value) => {
-    if (!isAnswered) {
-      setAnswers({ ...answers, [currentIdx]: value });
-    }
+  const handlePick = (value) => {
+    if (isChecked) return;
+    setAnswers({ ...answers, [currentIdx]: value });
   };
 
-  const handleSubmit = () => {
-    if (answers[currentIdx] === undefined && answers[currentIdx] !== 0) return;
-
-    let isCorrect = false;
-    if (q.type === 'mcq') {
-      isCorrect = answers[currentIdx] === q.correctAnswer;
-    } else {
-      isCorrect = parseInt(answers[currentIdx]) === q.correctAnswer;
-    }
-
-    setSubmitted({ ...submitted, [currentIdx]: true });
-    setFeedback({ ...feedback, [currentIdx]: isCorrect ? 'correct' : 'wrong' });
-
-    if (isCorrect) {
-      setCombo(combo + 1);
-      if (combo + 1 > maxCombo) setMaxCombo(combo + 1);
+  const handleCheck = () => {
+    if (given === undefined || given === null || given === '') return;
+    const right = isAnswerCorrect(q, given);
+    setChecked({ ...checked, [currentIdx]: true });
+    if (right) {
+      const next = combo + 1;
+      setCombo(next);
+      setMaxCombo(Math.max(maxCombo, next));
     } else {
       setCombo(0);
     }
-
-    setTimeout(() => {
-      if (currentIdx < questions.length - 1) {
-        setCurrentIdx(currentIdx + 1);
-        setAnswers({});
-        setSubmitted({});
-        setFeedback({});
-      } else {
-        handleFinish();
-      }
-    }, 1000);
   };
 
-  const handleFinish = () => {
-    let correct = 0;
-    questions.forEach((q, idx) => {
-      if (q.type === 'mcq') {
-        if (answers[idx] === q.correctAnswer) correct++;
-      } else {
-        if (parseInt(answers[idx]) === q.correctAnswer) correct++;
-      }
-    });
-
-    const finalScore = Math.round((correct / questions.length) * 100);
-    const chapterNum = parseInt(chapter.split('-')[1].substring(1));
-    ps.updateProgress(profile.id, tahun, chapterNum, parseInt(level), '', finalScore >= 50);
-
-    navigate('/results', {
-      state: { score: finalScore, correct, total: questions.length, combo: maxCombo }
+  const finish = () => {
+    const correct = questions.reduce(
+      (n, question, idx) => n + (isAnswerCorrect(question, answers[idx]) ? 1 : 0), 0
+    );
+    const score = Math.round((correct / questions.length) * 100);
+    ps.updateProgress(profile.id, tahun, chapterNumber(chapter), levelNum, '', score >= 50);
+    navigate(`/results/${tahun}/${chapter}/${levelNum}`, {
+      state: { score, correct, total: questions.length, combo: maxCombo }
     });
   };
+
+  const handleNext = () => (isLast ? finish() : setCurrentIdx(currentIdx + 1));
+
+  const optionClass = (idx) => {
+    if (!isChecked) return given === idx ? 'option option--picked' : 'option';
+    if (idx === q.correctAnswer) return 'option option--right';
+    if (idx === given) return 'option option--wrong';
+    return 'option option--dim';
+  };
+
+  const progress = Math.round((answeredCount / questions.length) * 100);
+  const correctText = q.type === 'mcq' ? q.options[q.correctAnswer] : q.correctAnswer;
 
   return (
-    <div style={{
-      minHeight: '100vh',
-      padding: '20px',
-      background: 'linear-gradient(135deg, #FF6B35 0%, #8338EC 100%)',
-      color: 'white'
-    }}>
-      <div style={{ maxWidth: '600px', margin: '0 auto' }}>
-        {/* Progress */}
-        <div style={{ marginBottom: '30px', textAlign: 'center', fontSize: '1.2rem', fontWeight: 'bold' }}>
-          Question {currentIdx + 1} / {questions.length}
-        </div>
-
-        {/* Question Card */}
-        <div style={{
-          background: 'rgba(0,0,0,0.2)',
-          padding: '30px',
-          borderRadius: '15px',
-          marginBottom: '30px',
-          border: '3px solid rgba(255,255,255,0.3)'
-        }}>
-          {/* QUESTION TEXT */}
-          <div style={{
-            fontSize: '1.6rem',
-            fontWeight: 'bold',
-            marginBottom: '30px',
-            lineHeight: '1.8',
-            color: '#FFFFFF',
-            textAlign: 'center'
-          }}>
-            {q.text}
-          </div>
-
-          {/* Answers */}
-          {q.type === 'mcq' ? (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-              {q.options.map((option, idx) => (
-                <button
-                  key={idx}
-                  onClick={() => handleAnswer(idx)}
-                  disabled={isAnswered}
-                  style={{
-                    padding: '15px',
-                    fontSize: '1.1rem',
-                    background: isAnswered
-                      ? (idx === q.correctAnswer ? '#2ECC71' : idx === answers[currentIdx] ? '#E74C3C' : 'rgba(255,255,255,0.05)')
-                      : (answers[currentIdx] === idx ? '#FFD700' : 'rgba(255,255,255,0.2)'),
-                    color: 'white',
-                    border: '2px solid rgba(255,255,255,0.3)',
-                    borderRadius: '10px',
-                    cursor: isAnswered ? 'default' : 'pointer',
-                    fontWeight: 'bold',
-                    transition: 'all 0.2s'
-                  }}
-                >
-                  {option}
-                </button>
-              ))}
-            </div>
-          ) : (
-            <div>
-              <input
-                type="text"
-                value={answers[currentIdx] || ''}
-                onChange={(e) => handleAnswer(e.target.value)}
-                disabled={isAnswered}
-                style={{
-                  width: '100%',
-                  padding: '15px',
-                  fontSize: '1.1rem',
-                  borderRadius: '10px',
-                  border: '2px solid #FFD700',
-                  marginBottom: '10px',
-                  boxSizing: 'border-box'
-                }}
-                placeholder="Type your answer"
-              />
-            </div>
-          )}
-
-          {/* Feedback */}
-          {isAnswered && (
-            <div style={{ marginTop: '20px', textAlign: 'center', fontSize: '1.4rem', fontWeight: 'bold' }}>
-              {feedbackType === 'correct' ? '✅ Correct!' : '❌ Wrong!'}
-            </div>
-          )}
-        </div>
-
-        {/* Action Button */}
-        {!isAnswered && (
-          <button
-            onClick={handleSubmit}
-            disabled={answers[currentIdx] === undefined && answers[currentIdx] !== 0}
-            style={{
-              width: '100%',
-              padding: '18px',
-              fontSize: '1.3rem',
-              background: '#FFD700',
-              color: '#333',
-              border: 'none',
-              borderRadius: '10px',
-              fontWeight: 'bold',
-              cursor: 'pointer',
-              opacity: answers[currentIdx] === undefined && answers[currentIdx] !== 0 ? 0.5 : 1
-            }}
+    <div className="page">
+      <div className="quiz__bar">
+        <button className="back" onClick={() => navigate(`/tahun/${tahun}`)} aria-label="Keluar dari kuiz">
+          ← Keluar
+        </button>
+        <div className="grow">
+          <div
+            className="meter meter--onInk"
+            role="progressbar"
+            aria-valuenow={progress}
+            aria-valuemin={0}
+            aria-valuemax={100}
           >
-            Submit Answer
-          </button>
+            <div className="meter__fill" style={{ width: `${progress}%` }} />
+          </div>
+        </div>
+        <div className="quiz__count">{currentIdx + 1}/{questions.length}</div>
+      </div>
+
+      <div className="row" style={{ marginBottom: 12, justifyContent: 'space-between' }}>
+        <span className="pill pill--quiet">{LEVEL_NAME[levelNum - 1]}</span>
+        {combo >= 2 && <span className="pill">{combo} betul berturut-turut</span>}
+      </div>
+
+      <div className="paper">
+        <div className="quiz__question">{q.text}</div>
+
+        <QuestionVisual visual={q.visual} />
+
+        {q.type === 'mcq' && q.options?.length ? (
+          <div className="options">
+            {q.options.map((option, idx) => (
+              <button
+                key={idx}
+                className={optionClass(idx)}
+                onClick={() => handlePick(idx)}
+                disabled={isChecked}
+              >
+                {option}
+              </button>
+            ))}
+          </div>
+        ) : (
+          <input
+            className="answer-input"
+            type="text"
+            inputMode="decimal"
+            value={given ?? ''}
+            onChange={(e) => handlePick(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter') (isChecked ? handleNext() : handleCheck());
+            }}
+            disabled={isChecked}
+            placeholder="Tulis jawapan"
+          />
         )}
 
-        {isAnswered && (
+        {isChecked && (
+          <div className={`verdict ${wasRight ? 'verdict--right' : 'verdict--wrong'} pop`}>
+            <div className="verdict__head">
+              {wasRight ? 'Betul' : `Belum betul. Jawapannya ${correctText}`}
+            </div>
+            <div className="verdict__working">{q.working}</div>
+          </div>
+        )}
+      </div>
+
+      <div style={{ marginTop: 16 }}>
+        {isChecked ? (
+          <button className="btn btn--go btn--block" onClick={handleNext}>
+            {isLast ? 'Lihat keputusan' : 'Soalan seterusnya'}
+          </button>
+        ) : (
           <button
-            onClick={() => {
-              if (currentIdx < questions.length - 1) {
-                setCurrentIdx(currentIdx + 1);
-              } else {
-                handleFinish();
-              }
-            }}
-            style={{
-              width: '100%',
-              padding: '18px',
-              fontSize: '1.3rem',
-              background: '#4CAF50',
-              color: 'white',
-              border: 'none',
-              borderRadius: '10px',
-              fontWeight: 'bold',
-              cursor: 'pointer'
-            }}
+            className="btn btn--go btn--block"
+            onClick={handleCheck}
+            disabled={given === undefined || given === null || given === ''}
           >
-            {currentIdx === questions.length - 1 ? '🏁 Finish Quiz' : 'Next Question →'}
+            Semak jawapan
           </button>
         )}
       </div>

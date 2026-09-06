@@ -1,8 +1,8 @@
 {
-  "name": "matematik-kilat-roblox",
+  "name": "matematik-kilat",
   "version": "1.0.0",
   "type": "module",
-  "description": "Matematik Kilat - Roblox Edition: Interactive math learning game for KSSR grades 1-6",
+  "description": "Matematik Kilat: permainan latihan matematik KSSR untuk Darjah 1 hingga 6",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

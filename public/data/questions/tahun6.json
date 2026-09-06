@@ -1,1866 +1,1669 @@
 {
-  "tahun": 5,
+  "tahun": 6,
   "total": 150,
   "chapters": [
     {
-      "id": "d5-b1",
-      "title": "Nombor Bulat hingga 1 000 000",
+      "id": "d6-b1",
+      "title": "Nombor Bulat hingga 10 000 000",
       "glyph": "nombor",
       "questions": [
         {
-          "id": "t5_c1_q1",
-          "text": "Apakah nilai digit 7 dalam nombor 726,450?",
-          "options": [
-            700000,
-            70000,
-            7000,
-            700
-          ],
-          "correctAnswer": 0,
+          "id": "t6_c1_q1",
+          "text": "Apakah nilai digit 6 dalam nombor 6 452 130?",
           "difficulty": "mudah",
           "points": 10,
+          "working": "Dalam 6 452 130, digit 6 berada di tempat juta. Nilainya 6 × 1 000 000 = 6 000 000.",
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 700000"
+          "options": [
+            60000,
+            6000000,
+            6000,
+            600000
+          ],
+          "correctAnswer": 1
         },
         {
-          "id": "t5_c1_q2",
-          "text": "45,678 dibundarkan kepada ribu terdekat ialah?",
-          "options": [],
-          "correctAnswer": 46000,
+          "id": "t6_c1_q2",
+          "text": "Tulis dalam angka: tiga juta empat ratus ribu.",
           "difficulty": "mudah",
           "points": 10,
+          "working": "Pecahkan mengikut nilai tempat: tiga juta = 3 000 000, empat ratus ribu = 400 000. Campurkan: 3 400 000.",
           "type": "input",
-          "working": "Jawapan yang betul ialah: 46000"
+          "options": [],
+          "correctAnswer": 3400000
         },
         {
-          "id": "t5_c1_q3",
-          "text": "Yang manakah nombor genap?",
-          "options": [
-            123457,
-            234568,
-            345671,
-            456789
-          ],
-          "correctAnswer": 1,
+          "id": "t6_c1_q3",
+          "text": "Bundarkan 4 738 264 kepada juta terdekat.",
           "difficulty": "mudah",
           "points": 10,
+          "working": "Lihat digit ratus ribu, iaitu 7. Kerana 7 lebih besar daripada 5, naikkan juta dari 4 menjadi 5, jadi 5 000 000.",
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 234568"
+          "options": [
+            4800000,
+            4000000,
+            4700000,
+            5000000
+          ],
+          "correctAnswer": 3
         },
         {
-          "id": "t5_c1_q4",
-          "text": "Apakah angka bagi lima ratus enam puluh ribu?",
-          "options": [],
-          "correctAnswer": 560000,
+          "id": "t6_c1_q4",
+          "text": "Antara nombor berikut, yang manakah mempunyai nilai paling besar?",
           "difficulty": "mudah",
           "points": 10,
-          "type": "input",
-          "working": "Jawapan yang betul ialah: 560000"
+          "working": "Bandingkan digit dari kiri. Semua bermula 24, jadi lihat digit seterusnya: 5 mengalahkan 0. Antara 2 450 900 dan 2 459 000, digit ribu 9 mengalahkan 0, jadi 2 459 000 paling besar.",
+          "type": "mcq",
+          "options": [
+            2405900,
+            2409500,
+            2459000,
+            2450900
+          ],
+          "correctAnswer": 2
         },
         {
-          "id": "t5_c1_q5",
-          "text": "Susun nombor berikut mengikut tertib menaik: 45000, 4500, 450000. Yang manakah terbesar?",
-          "options": [
-            45000,
-            4500,
-            450000
-          ],
-          "correctAnswer": 2,
+          "id": "t6_c1_q5",
+          "text": "Berapakah nombor selepas 1 999 999?",
           "difficulty": "mudah",
           "points": 10,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 450000"
+          "working": "Nombor selepas ialah satu lebih: 1 999 999 + 1 = 2 000 000.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 2000000
         },
         {
-          "id": "t5_c1_q6",
-          "text": "Nombor manakah yang ganjil?",
-          "options": [
-            512346,
-            678902,
-            349107,
-            823450
-          ],
-          "correctAnswer": 2,
+          "id": "t6_c1_q6",
+          "text": "Digit manakah berada di tempat ratus ribu dalam nombor 8 275 940?",
           "difficulty": "mudah",
           "points": 10,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 349107"
+          "working": "Tempat ratus ribu bernilai 100 000. Dalam 8 275 940, digit di kedudukan itu ialah 2.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 2
         },
         {
-          "id": "t5_c1_q7",
-          "text": "782,340 dibundarkan kepada ratus ribu terdekat ialah?",
-          "options": [],
-          "correctAnswer": 800000,
+          "id": "t6_c1_q7",
+          "text": "1 250 000 + 2 300 000 = ?",
           "difficulty": "mudah",
           "points": 10,
+          "working": "Tambah bahagian juta dahulu: 1 juta + 2 juta = 3 juta. Kemudian 250 000 + 300 000 = 550 000. Jumlahnya 3 550 000.",
           "type": "input",
-          "working": "Jawapan yang betul ialah: 800000"
+          "options": [],
+          "correctAnswer": 3550000
         },
         {
-          "id": "t5_c1_q8",
-          "text": "Yang manakah gandaan 8?",
-          "options": [
-            36,
-            42,
-            48,
-            54
-          ],
-          "correctAnswer": 2,
+          "id": "t6_c1_q8",
+          "text": "5 000 000 − 1 750 000 = ?",
           "difficulty": "mudah",
           "points": 10,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 48"
+          "working": "Tolak 1 750 000 daripada 5 000 000. 5 000 000 − 1 750 000 = 3 250 000. Semak: 3 250 000 + 1 750 000 = 5 000 000.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 3250000
         },
         {
-          "id": "t5_c1_q9",
-          "text": "Berapakah bilangan faktor bagi 12?",
-          "options": [],
-          "correctAnswer": 6,
+          "id": "t6_c1_q9",
+          "text": "Apakah gandaan 9 yang paling hampir dengan 100?",
           "difficulty": "mudah",
           "points": 10,
-          "type": "input",
-          "working": "Jawapan yang betul adalah: 6"
+          "working": "Gandaan 9 ialah 90, 99, 108. Beza dengan 100 masing-masing 10, 1 dan 8, jadi 99 paling hampir.",
+          "type": "mcq",
+          "options": [
+            99,
+            108,
+            81,
+            90
+          ],
+          "correctAnswer": 0
         },
         {
-          "id": "t5_c1_q10",
-          "text": "Nombor manakah yang paling hampir dengan 500,000?",
-          "options": [
-            498000,
-            505000,
-            460000,
-            540000
-          ],
-          "correctAnswer": 0,
+          "id": "t6_c1_q10",
+          "text": "Nombor 7 004 500 dibaca sebagai?",
           "difficulty": "mudah",
           "points": 10,
+          "working": "Pecahkan mengikut nilai tempat: 7 juta, 0 ratus ribu, 0 puluh ribu, 4 ribu, 5 ratus. Jadi tujuh juta empat ribu lima ratus.",
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 498000"
+          "options": [
+            "Tujuh juta empat ribu lima ratus",
+            "Tujuh juta empat puluh ribu lima ratus",
+            "Tujuh ratus ribu empat ribu lima ratus",
+            "Tujuh juta empat ratus lima puluh"
+          ],
+          "correctAnswer": 0
         },
         {
-          "id": "t5_c1_q11",
-          "text": "364,829 dibundarkan kepada ribu terdekat ialah?",
-          "options": [],
-          "correctAnswer": 365000,
+          "id": "t6_c1_q11",
+          "text": "Cari hasil: 3 600 000 ÷ 6 = ?",
           "difficulty": "sederhana",
           "points": 20,
+          "working": "Bahagi 36 dengan 6 dahulu, iaitu 6. Kemudian kekalkan lima sifar di belakang, jadi 3 600 000 ÷ 6 = 600 000.",
           "type": "input",
-          "working": "Jawapan yang betul ialah: 365000"
+          "options": [],
+          "correctAnswer": 600000
         },
         {
-          "id": "t5_c1_q12",
-          "text": "Apakah nilai digit 4 tolak nilai digit 2 dalam nombor 427,150?",
-          "options": [
-            380000,
-            420000,
-            398000,
-            400000
-          ],
-          "correctAnswer": 0,
+          "id": "t6_c1_q12",
+          "text": "Apakah beza antara nilai digit 5 dan digit 3 dalam nombor 5 300 000?",
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 380000"
+          "working": "Digit 5 di tempat juta bernilai 5 000 000, dan digit 3 di tempat ratus ribu bernilai 300 000. Bezanya 5 000 000 − 300 000 = 4 700 000.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 4700000
         },
         {
-          "id": "t5_c1_q13",
-          "text": "Apakah HCF (Faktor Sepunya Terbesar) bagi 12 dan 18?",
-          "options": [],
-          "correctAnswer": 6,
+          "id": "t6_c1_q13",
+          "text": "Sebuah negeri mempunyai 1 845 000 penduduk. Bundarkan kepada ratus ribu terdekat.",
           "difficulty": "sederhana",
           "points": 20,
-          "type": "input",
-          "working": "Jawapan yang betul ialah: 6"
+          "working": "Lihat digit puluh ribu, iaitu 4. Kerana 4 kurang daripada 5, kekalkan ratus ribu, jadi 1 800 000.",
+          "type": "mcq",
+          "options": [
+            1900000,
+            1850000,
+            1800000,
+            2000000
+          ],
+          "correctAnswer": 2
         },
         {
-          "id": "t5_c1_q14",
-          "text": "Apakah GSTK (Gandaan Sepunya Terkecil) bagi 4 dan 6?",
-          "options": [
-            12,
-            18,
-            24,
-            6
-          ],
-          "correctAnswer": 0,
+          "id": "t6_c1_q14",
+          "text": "Faktor sepunya terbesar bagi 36 dan 48 ialah?",
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 12"
+          "working": "Faktor 36: 1, 2, 3, 4, 6, 9, 12, 18, 36. Faktor 48: 1, 2, 3, 4, 6, 8, 12, 16, 24, 48. Faktor sepunya terbesar ialah 12.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 12
         },
         {
-          "id": "t5_c1_q15",
-          "text": "895,432 dibundarkan kepada ratus ribu terdekat ialah?",
-          "options": [],
-          "correctAnswer": 900000,
+          "id": "t6_c1_q15",
+          "text": "Gandaan sepunya terkecil bagi 9 dan 12 ialah?",
           "difficulty": "sederhana",
           "points": 20,
+          "working": "Gandaan 9: 9, 18, 27, 36. Gandaan 12: 12, 24, 36. Gandaan sepunya paling kecil ialah 36.",
           "type": "input",
-          "working": "Jawapan yang betul ialah: 900000"
+          "options": [],
+          "correctAnswer": 36
         },
         {
-          "id": "t5_c1_q16",
-          "text": "Nombor manakah yang terletak di antara 250,000 dan 300,000?",
-          "options": [
-            249999,
-            300001,
-            275500,
-            199999
-          ],
-          "correctAnswer": 2,
+          "id": "t6_c1_q16",
+          "text": "Kira: 250 000 × 8 = ?",
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 275500"
+          "working": "Darab 25 dengan 8 dahulu, iaitu 200. Kemudian kekalkan empat sifar, jadi 250 000 × 8 = 2 000 000.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 2000000
         },
         {
-          "id": "t5_c1_q17",
-          "text": "Apakah angka bagi tujuh ratus lapan ribu tiga puluh?",
-          "options": [],
-          "correctAnswer": 708030,
+          "id": "t6_c1_q17",
+          "text": "Sebuah kilang menghasilkan 125 000 unit sebulan. Berapakah pengeluaran dalam setahun?",
           "difficulty": "sederhana",
           "points": 20,
+          "working": "Setahun ada 12 bulan, jadi darab: 125 000 × 12 = 1 500 000 unit.",
           "type": "input",
-          "working": "Jawapan yang betul ialah: 708030"
+          "options": [],
+          "correctAnswer": 1500000
         },
         {
-          "id": "t5_c1_q18",
-          "text": "Faktor manakah BUKAN faktor bagi 24?",
-          "options": [
-            4,
-            6,
-            9,
-            8
-          ],
-          "correctAnswer": 2,
+          "id": "t6_c1_q18",
+          "text": "Susun 3 405 120, 3 450 210 dan 3 045 210 secara menaik.",
           "difficulty": "sederhana",
           "points": 20,
+          "working": "Bandingkan digit dari kiri. Digit ratus ribu masing-masing 0, 4 dan 4, jadi 3 045 210 paling kecil. Antara dua yang lain, digit puluh ribu 0 kurang daripada 5, jadi tertib menaik ialah 3 045 210, 3 405 120, 3 450 210.",
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 9"
+          "options": [
+            "3 045 210, 3 405 120, 3 450 210",
+            "3 450 210, 3 405 120, 3 045 210",
+            "3 045 210, 3 450 210, 3 405 120",
+            "3 405 120, 3 045 210, 3 450 210"
+          ],
+          "correctAnswer": 0
         },
         {
-          "id": "t5_c1_q19",
-          "text": "Berapakah baki apabila 47 dibahagi dengan 5?",
-          "options": [],
-          "correctAnswer": 2,
+          "id": "t6_c1_q19",
+          "text": "Nombor X ialah 5 kurang daripada 2 000 000. Berapakah nilai X?",
           "difficulty": "sederhana",
           "points": 20,
+          "working": "Tolak 5 daripada 2 000 000: 2 000 000 − 5 = 1 999 995.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 2"
+          "options": [],
+          "correctAnswer": 1999995
         },
         {
-          "id": "t5_c1_q20",
-          "text": "Antara 386,500 dan 386,050, yang manakah lebih besar?",
-          "options": [
-            386500,
-            386050
-          ],
-          "correctAnswer": 0,
+          "id": "t6_c1_q20",
+          "text": "Anggarkan 2 980 000 + 4 120 000 dengan membundarkan kepada juta terdekat.",
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 386500"
-        },
-        {
-          "id": "t5_c1_q21",
-          "text": "Sebuah kilang menghasilkan 12,500 unit barangan sehari. Berapakah jumlah unit yang dihasilkan dalam 8 hari?",
-          "options": [],
-          "correctAnswer": 100000,
-          "difficulty": "cabaran",
-          "points": 30,
+          "working": "Bundarkan dahulu: 2 980 000 menjadi 3 000 000 dan 4 120 000 menjadi 4 000 000. Anggaran: 3 000 000 + 4 000 000 = 7 000 000.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 100000"
-        },
-        {
-          "id": "t5_c1_q22",
-          "text": "Sebuah bandar mempunyai penduduk seramai 458,732 orang. Apakah anggaran penduduk bandar itu kepada ribu terdekat?",
-          "options": [
-            458000,
-            459000,
-            460000,
-            450000
-          ],
-          "correctAnswer": 1,
-          "difficulty": "cabaran",
-          "points": 30,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 459000"
-        },
-        {
-          "id": "t5_c1_q23",
-          "text": "Encik Ali mempunyai RM250,000. Beliau membelanjakan RM175,000 untuk membeli sebuah rumah. Berapakah baki wang Encik Ali, dalam RM?",
           "options": [],
-          "correctAnswer": 75000,
+          "correctAnswer": 7000000
+        },
+        {
+          "id": "t6_c1_q21",
+          "text": "Sebuah bandar mempunyai 2 456 780 penduduk. Sebanyak 348 920 berpindah keluar dan 125 400 berpindah masuk. Berapakah penduduk sekarang?",
           "difficulty": "cabaran",
           "points": 30,
+          "working": "Selesaikan dua langkah. Pertama 2 456 780 − 348 920 = 2 107 860. Kemudian 2 107 860 + 125 400 = 2 233 260.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 75000"
-        },
-        {
-          "id": "t5_c1_q24",
-          "text": "Nombor X apabila dibundarkan kepada ratus ribu terdekat menjadi 600,000. Yang manakah mungkin nilai X?",
-          "options": [
-            549999,
-            650001,
-            563000,
-            699999
-          ],
-          "correctAnswer": 2,
-          "difficulty": "cabaran",
-          "points": 30,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 563000"
-        },
-        {
-          "id": "t5_c1_q25",
-          "text": "Sebuah sekolah mempunyai 4 kelas dengan bilangan murid masing-masing 36, 34, 38 dan 32. Berapakah jumlah murid sekolah itu?",
           "options": [],
-          "correctAnswer": 140,
+          "correctAnswer": 2233260
+        },
+        {
+          "id": "t6_c1_q22",
+          "text": "Kira: (1 200 000 + 800 000) ÷ 4 = ?",
           "difficulty": "cabaran",
           "points": 30,
+          "working": "Ikut turutan operasi: kurungan dahulu. 1 200 000 + 800 000 = 2 000 000, kemudian 2 000 000 ÷ 4 = 500 000.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 140"
-        },
-        {
-          "id": "t5_c1_q26",
-          "text": "Gandaan sepunya terkecil (GSTK) bagi 6 dan 8 ialah?",
-          "options": [
-            24,
-            48,
-            12,
-            16
-          ],
-          "correctAnswer": 0,
-          "difficulty": "cabaran",
-          "points": 30,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 24"
-        },
-        {
-          "id": "t5_c1_q27",
-          "text": "Sebuah kedai menjual 15,000 biji telur dalam seminggu. Jika penjualan meningkat sebanyak 3,500 biji pada minggu berikutnya, berapakah jumlah telur yang dijual pada minggu itu?",
           "options": [],
-          "correctAnswer": 18500,
+          "correctAnswer": 500000
+        },
+        {
+          "id": "t6_c1_q23",
+          "text": "Sebuah syarikat membahagikan keuntungan 4 500 000 kepada 3 pemilik sama rata. Seorang pemilik menderma 250 000 daripada bahagiannya. Berapakah baki bahagian pemilik itu?",
           "difficulty": "cabaran",
           "points": 30,
+          "working": "Selesaikan dua langkah. Pertama 4 500 000 ÷ 3 = 1 500 000. Kemudian 1 500 000 − 250 000 = 1 250 000.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 18500"
-        },
-        {
-          "id": "t5_c1_q28",
-          "text": "Nombor 999,999 ditambah dengan 1 menjadi?",
-          "options": [
-            1000000,
-            999999,
-            1000998,
-            900000
-          ],
-          "correctAnswer": 0,
-          "difficulty": "cabaran",
-          "points": 30,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 1000000"
-        },
-        {
-          "id": "t5_c1_q29",
-          "text": "Faktor Sepunya Terbesar (HCF) bagi 24 dan 36 ialah?",
           "options": [],
-          "correctAnswer": 12,
-          "difficulty": "cabaran",
-          "points": 30,
-          "type": "input",
-          "working": "Jawapan yang betul ialah: 12"
+          "correctAnswer": 1250000
         },
         {
-          "id": "t5_c1_q30",
-          "text": "Jumlah penduduk sebuah bandar ialah 845,600 orang. Apakah nilai bagi digit 4 dalam nombor tersebut?",
-          "options": [
-            40000,
-            4000,
-            400000,
-            4
-          ],
-          "correctAnswer": 0,
+          "id": "t6_c1_q24",
+          "text": "Nombor Y apabila dibundarkan kepada juta terdekat menjadi 8 000 000. Yang manakah mungkin nilai Y?",
           "difficulty": "cabaran",
           "points": 30,
+          "working": "Untuk membundar kepada 8 000 000, nombor mesti antara 7 500 000 dan 8 499 999. Hanya 7 620 000 berada dalam julat itu.",
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 40000"
+          "options": [
+            7620000,
+            8510000,
+            8540000,
+            7480000
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": "t6_c1_q25",
+          "text": "Sebuah stadium menjual 45 000 tiket sehari selama 30 hari. Jika 150 000 tiket dibatalkan, berapakah tiket yang sah?",
+          "difficulty": "cabaran",
+          "points": 30,
+          "working": "Selesaikan dua langkah. Pertama 45 000 × 30 = 1 350 000. Kemudian 1 350 000 − 150 000 = 1 200 000.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 1200000
+        },
+        {
+          "id": "t6_c1_q26",
+          "text": "Berapakah jumlah nilai digit 4 dalam nombor 4 424 000?",
+          "difficulty": "cabaran",
+          "points": 30,
+          "working": "Digit 4 muncul tiga kali: di tempat juta bernilai 4 000 000, di tempat puluh ribu bernilai 20 000 tetapi digitnya 2 maka abaikan, dan di tempat ribu bernilai 400 000 serta 4 000. Jumlah nilai semua digit 4 ialah 4 000 000 + 400 000 + 20 000 = 4 420 000.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 4420000
+        },
+        {
+          "id": "t6_c1_q27",
+          "text": "Beza antara nombor 7 digit terbesar dan nombor 7 digit terkecil ialah?",
+          "difficulty": "cabaran",
+          "points": 30,
+          "working": "Nombor 7 digit terbesar ialah 9 999 999 dan terkecil ialah 1 000 000. Bezanya 9 999 999 − 1 000 000 = 8 999 999.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 8999999
+        },
+        {
+          "id": "t6_c1_q28",
+          "text": "Kira: 6 000 000 ÷ 5 × 2 = ?",
+          "difficulty": "cabaran",
+          "points": 30,
+          "working": "Ikut turutan operasi: bahagi dan darab dikira dari kiri ke kanan. 6 000 000 ÷ 5 = 1 200 000, kemudian 1 200 000 × 2 = 2 400 000.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 2400000
+        },
+        {
+          "id": "t6_c1_q29",
+          "text": "Sebuah bank mempunyai simpanan 9 250 000. Sebanyak 1/5 daripadanya dikeluarkan. Berapakah baki simpanan?",
+          "difficulty": "cabaran",
+          "points": 30,
+          "working": "Wang yang dikeluarkan ialah 9 250 000 ÷ 5 = 1 850 000. Baki: 9 250 000 − 1 850 000 = 7 400 000.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 7400000
+        },
+        {
+          "id": "t6_c1_q30",
+          "text": "Sebuah ladang menuai 385 600 kg pada tahun pertama dan meningkat 15 000 kg setiap tahun. Berapakah jumlah tuaian pada tahun ketiga?",
+          "difficulty": "cabaran",
+          "points": 30,
+          "working": "Tahun kedua: 385 600 + 15 000 = 400 600. Tahun ketiga: 400 600 + 15 000 = 415 600 kg.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 415600
         }
       ]
     },
     {
-      "id": "d5-b2",
+      "id": "d6-b2",
       "title": "Pecahan, Perpuluhan & Peratus",
       "glyph": "pecahan",
       "questions": [
         {
-          "id": "t5_c2_q1",
-          "text": "Berapakah pecahan yang ditunjukkan oleh gambar ini?",
-          "options": [
-            "1/4",
-            "3/4",
-            "2/4",
-            "4/4"
-          ],
-          "correctAnswer": 1,
+          "id": "t6_c2_q1",
+          "text": "Tukarkan 3/4 kepada peratus.",
           "difficulty": "mudah",
           "points": 10,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 3/4"
+          "working": "Peratus bermaksud bahagian daripada 100. Darab pengangka dan penyebut dengan 25: 3/4 = 75/100, jadi 75%.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": "75%"
         },
         {
-          "id": "t5_c2_q2",
-          "text": "1/3 + 1/6 = ?",
+          "id": "t6_c2_q2",
+          "text": "Apakah bentuk perpuluhan bagi 2/5?",
+          "difficulty": "mudah",
+          "points": 10,
+          "working": "Tukar penyebut kepada 10: 2/5 = 4/10. Pecahan persepuluhan 4/10 ditulis sebagai 0.4.",
+          "type": "mcq",
           "options": [
+            0.5,
+            0.25,
+            0.4,
+            0.2
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": "t6_c2_q3",
+          "text": "Berapakah 25% daripada 200?",
+          "difficulty": "mudah",
+          "points": 10,
+          "working": "25% bermaksud 25 bahagian daripada 100. Kira 25/100 × 200 = 50.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 50
+        },
+        {
+          "id": "t6_c2_q4",
+          "text": "2/3 + 1/6 = ?",
+          "difficulty": "mudah",
+          "points": 10,
+          "working": "Penyebut sepunya bagi 3 dan 6 ialah 6. Tukar: 2/3 = 4/6. Kemudian 4/6 + 1/6 = 5/6.",
+          "type": "mcq",
+          "options": [
+            "5/6",
             "1/2",
-            "2/9",
-            "4/9",
-            "1/3"
+            "3/9",
+            "3/6"
           ],
-          "correctAnswer": 0,
-          "difficulty": "mudah",
-          "points": 10,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 1/2"
+          "correctAnswer": 0
         },
         {
-          "id": "t5_c2_q3",
-          "text": "0.2 + 0.3 = ?",
-          "options": [
-            "0.5",
-            "0.6",
-            "0.05",
-            "5"
-          ],
-          "correctAnswer": 0,
+          "id": "t6_c2_q5",
+          "text": "Apakah bentuk pecahan termudah bagi 0.6?",
           "difficulty": "mudah",
           "points": 10,
+          "working": "0.6 bermaksud 6/10. Bahagi pengangka dan penyebut dengan 2: (6 ÷ 2)/(10 ÷ 2) = 3/5.",
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 0.5"
-        },
-        {
-          "id": "t5_c2_q4",
-          "text": "Berapa peratuskah 1/2?",
           "options": [
-            "50%",
-            "25%",
-            "75%",
-            "12%"
-          ],
-          "correctAnswer": 0,
-          "difficulty": "mudah",
-          "points": 10,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 50%"
-        },
-        {
-          "id": "t5_c2_q5",
-          "text": "Apakah bentuk pecahan termudah bagi 0.75?",
-          "options": [
-            "3/4",
-            "1/4",
+            "6/100",
+            "2/5",
             "3/5",
-            "7/4"
+            "1/6"
           ],
-          "correctAnswer": 0,
-          "difficulty": "mudah",
-          "points": 10,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 3/4"
+          "correctAnswer": 2
         },
         {
-          "id": "t5_c2_q6",
-          "text": "Berapakah 3/5 daripada 20 orang murid?",
-          "options": [],
-          "correctAnswer": 12,
+          "id": "t6_c2_q6",
+          "text": "0.75 + 0.25 = ?",
           "difficulty": "mudah",
           "points": 10,
+          "working": "Susun mengikut titik perpuluhan. 0.75 + 0.25 = 1.00, iaitu 1.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 12"
-        },
-        {
-          "id": "t5_c2_q7",
-          "text": "2/3 × 9 = ?",
           "options": [],
-          "correctAnswer": 6,
-          "difficulty": "mudah",
-          "points": 10,
-          "type": "input",
-          "working": "Jawapan yang betul ialah: 6"
+          "correctAnswer": 1
         },
         {
-          "id": "t5_c2_q8",
-          "text": "Apakah bentuk perpuluhan bagi 3/10?",
-          "options": [
-            "0.3",
-            "3.0",
-            "0.03",
-            "30"
-          ],
-          "correctAnswer": 0,
+          "id": "t6_c2_q7",
+          "text": "Tukarkan 40% kepada pecahan termudah.",
           "difficulty": "mudah",
           "points": 10,
+          "working": "40% bermaksud 40/100. Bahagi pengangka dan penyebut dengan 20: (40 ÷ 20)/(100 ÷ 20) = 2/5.",
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 0.3"
-        },
-        {
-          "id": "t5_c2_q9",
-          "text": "Berapakah 20% daripada 50?",
-          "options": [],
-          "correctAnswer": 10,
-          "difficulty": "mudah",
-          "points": 10,
-          "type": "input",
-          "working": "Jawapan yang betul adalah: 10"
-        },
-        {
-          "id": "t5_c2_q10",
-          "text": "1/2 + 1/4 = ?",
-          "options": [
-            "3/4",
-            "2/6",
-            "1/6",
-            "2/4"
-          ],
-          "correctAnswer": 0,
-          "difficulty": "mudah",
-          "points": 10,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 3/4"
-        },
-        {
-          "id": "t5_c2_q11",
-          "text": "3/4 âˆ’ 1/2 = ?",
           "options": [
             "1/4",
-            "2/2",
-            "1/2",
-            "3/2"
+            "40/10",
+            "4/10",
+            "2/5"
           ],
-          "correctAnswer": 0,
-          "difficulty": "sederhana",
-          "points": 20,
+          "correctAnswer": 3
+        },
+        {
+          "id": "t6_c2_q8",
+          "text": "Yang manakah lebih besar, 0.7 atau 3/5?",
+          "difficulty": "mudah",
+          "points": 10,
+          "working": "Tukar pecahan kepada perpuluhan: 3/5 = 0.6. Bandingkan 0.7 dengan 0.6, jadi 0.7 lebih besar.",
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 1/4"
-        },
-        {
-          "id": "t5_c2_q12",
-          "text": "2/5 + 3/10 = ?",
           "options": [
-            "7/10",
-            "5/15",
-            "1/2",
-            "7/15"
-          ],
-          "correctAnswer": 0,
-          "difficulty": "sederhana",
-          "points": 20,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 7/10"
-        },
-        {
-          "id": "t5_c2_q13",
-          "text": "1.25 + 0.375 = ?",
-          "options": [
-            "1.625",
-            "1.5",
-            "1.725",
-            "16.25"
-          ],
-          "correctAnswer": 0,
-          "difficulty": "sederhana",
-          "points": 20,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 1.625"
-        },
-        {
-          "id": "t5_c2_q14",
-          "text": "3/8 × 16 = ?",
-          "options": [],
-          "correctAnswer": 6,
-          "difficulty": "sederhana",
-          "points": 20,
-          "type": "input",
-          "working": "Jawapan yang betul ialah: 6"
-        },
-        {
-          "id": "t5_c2_q15",
-          "text": "Apakah bentuk perpuluhan bagi 3/8?",
-          "options": [
-            "0.375",
-            "0.38",
-            "3.8",
-            "0.83"
-          ],
-          "correctAnswer": 0,
-          "difficulty": "sederhana",
-          "points": 20,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 0.375"
-        },
-        {
-          "id": "t5_c2_q16",
-          "text": "Berapakah 35% daripada 200?",
-          "options": [],
-          "correctAnswer": 70,
-          "difficulty": "sederhana",
-          "points": 20,
-          "type": "input",
-          "working": "Jawapan yang betul adalah: 70"
-        },
-        {
-          "id": "t5_c2_q17",
-          "text": "2.500 âˆ’ 1.750 = ?",
-          "options": [
-            "0.75",
-            "1.25",
-            "0.850",
-            "7.5"
-          ],
-          "correctAnswer": 0,
-          "difficulty": "sederhana",
-          "points": 20,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 0.75"
-        },
-        {
-          "id": "t5_c2_q18",
-          "text": "Apakah bentuk pecahan termudah bagi 45%?",
-          "options": [
-            "9/20",
-            "45/100",
-            "4/5",
-            "9/10"
-          ],
-          "correctAnswer": 0,
-          "difficulty": "sederhana",
-          "points": 20,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 9/20"
-        },
-        {
-          "id": "t5_c2_q19",
-          "text": "Sebuah kedai menjual 5/6 daripada 240 biji epal. Berapakah bilangan epal yang dijual?",
-          "options": [],
-          "correctAnswer": 200,
-          "difficulty": "sederhana",
-          "points": 20,
-          "type": "input",
-          "working": "Jawapan yang betul adalah: 200"
-        },
-        {
-          "id": "t5_c2_q20",
-          "text": "0.6 × 0.5 = ?",
-          "options": [
-            "0.3",
-            "1.1",
-            "0.03",
-            "3.0"
-          ],
-          "correctAnswer": 0,
-          "difficulty": "sederhana",
-          "points": 20,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 0.3"
-        },
-        {
-          "id": "t5_c2_q21",
-          "text": "Ibu membeli 2 1/2 kg gula dan menggunakan 3/4 kg untuk membuat kek. Berapakah baki gula ibu?",
-          "options": [
-            "1 3/4 kg",
-            "1 1/4 kg",
-            "2 1/4 kg",
-            "1/4 kg"
-          ],
-          "correctAnswer": 0,
-          "difficulty": "cabaran",
-          "points": 30,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 1 3/4 kg"
-        },
-        {
-          "id": "t5_c2_q22",
-          "text": "Sebuah kelas mempunyai 40 orang murid. 60% daripada mereka ialah murid perempuan. Berapakah bilangan murid lelaki?",
-          "options": [],
-          "correctAnswer": 16,
-          "difficulty": "cabaran",
-          "points": 30,
-          "type": "input",
-          "working": "Jawapan yang betul adalah: 16"
-        },
-        {
-          "id": "t5_c2_q23",
-          "text": "Sebuah kolam mempunyai kapasiti 500 liter air. Jika 25% daripada kapasiti itu telah digunakan, berapakah liter air yang tinggal?",
-          "options": [],
-          "correctAnswer": 375,
-          "difficulty": "cabaran",
-          "points": 30,
-          "type": "input",
-          "working": "Jawapan yang betul adalah: 375"
-        },
-        {
-          "id": "t5_c2_q24",
-          "text": "Perpuluhan 0.6 ditambah dengan pecahan 1/5 memberi jawapan?",
-          "options": [
-            "0.8",
+            "Tidak dapat ditentukan",
+            "Sama",
             "0.7",
-            "0.62",
-            "8.0"
+            "3/5"
           ],
-          "correctAnswer": 0,
-          "difficulty": "cabaran",
-          "points": 30,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 0.8"
+          "correctAnswer": 2
         },
         {
-          "id": "t5_c2_q25",
-          "text": "Sebuah kilang mengeluarkan 1,200 biskut. 3/4 daripadanya dibungkus untuk dijual. Berapakah bilangan biskut yang dibungkus?",
-          "options": [],
-          "correctAnswer": 900,
-          "difficulty": "cabaran",
-          "points": 30,
+          "id": "t6_c2_q9",
+          "text": "Berapakah 10% daripada 850?",
+          "difficulty": "mudah",
+          "points": 10,
+          "working": "10% bermaksud satu persepuluh. Bahagi dengan 10: 850 ÷ 10 = 85.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 900"
+          "options": [],
+          "correctAnswer": 85
         },
         {
-          "id": "t5_c2_q26",
-          "text": "Bandingkan 3/5 dan 0.55. Yang manakah lebih besar?",
+          "id": "t6_c2_q10",
+          "text": "2.5 × 4 = ?",
+          "difficulty": "mudah",
+          "points": 10,
+          "working": "Abaikan titik dahulu: 25 × 4 = 100. Kerana ada satu tempat perpuluhan, letak semula titik: 10.0, iaitu 10.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 10
+        },
+        {
+          "id": "t6_c2_q11",
+          "text": "3/4 − 1/3 = ?",
+          "difficulty": "sederhana",
+          "points": 20,
+          "working": "Penyebut sepunya bagi 4 dan 3 ialah 12. Tukar: 3/4 = 9/12 dan 1/3 = 4/12. Kemudian 9/12 − 4/12 = 5/12.",
+          "type": "mcq",
           "options": [
+            "2/1",
+            "4/7",
+            "1/12",
+            "5/12"
+          ],
+          "correctAnswer": 3
+        },
+        {
+          "id": "t6_c2_q12",
+          "text": "Kira 2/3 × 9.",
+          "difficulty": "sederhana",
+          "points": 20,
+          "working": "Darab pengangka dengan 9: 2 × 9 = 18. Kemudian bahagi dengan penyebut: 18 ÷ 3 = 6.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 6
+        },
+        {
+          "id": "t6_c2_q13",
+          "text": "Sebuah kelas ada 45 murid. 20% daripada mereka menyertai kelab sukan. Berapakah bilangan murid itu?",
+          "difficulty": "sederhana",
+          "points": 20,
+          "working": "20% bermaksud 20 bahagian daripada 100. Kira 20/100 × 45 = 9 orang.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 9
+        },
+        {
+          "id": "t6_c2_q14",
+          "text": "Tukarkan 1 3/5 kepada pecahan tak wajar.",
+          "difficulty": "sederhana",
+          "points": 20,
+          "working": "Darab nombor bulat dengan penyebut, kemudian campur pengangka: (1 × 5) + 3 = 8. Kekalkan penyebut, jadi 8/5.",
+          "type": "mcq",
+          "options": [
+            "4/5",
             "3/5",
-            "0.55",
-            "Sama besar",
-            "Tidak boleh dibandingkan"
+            "8/5",
+            "15/3"
           ],
-          "correctAnswer": 0,
-          "difficulty": "cabaran",
-          "points": 30,
+          "correctAnswer": 2
+        },
+        {
+          "id": "t6_c2_q15",
+          "text": "6.4 ÷ 8 = ?",
+          "difficulty": "sederhana",
+          "points": 20,
+          "working": "Bahagi 64 dengan 8 dahulu, iaitu 8. Kerana ada satu tempat perpuluhan, jawapannya 0.8.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 0.8
+        },
+        {
+          "id": "t6_c2_q16",
+          "text": "Berapakah 15% daripada 320?",
+          "difficulty": "sederhana",
+          "points": 20,
+          "working": "Kira 10% dahulu, iaitu 32. Kemudian 5% ialah separuh daripada itu, iaitu 16. Campurkan: 32 + 16 = 48.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 48
+        },
+        {
+          "id": "t6_c2_q17",
+          "text": "Sebuah botol berisi 1.5 liter jus dituang sama banyak ke dalam 6 gelas. Berapakah isi setiap gelas, dalam liter?",
+          "difficulty": "sederhana",
+          "points": 20,
+          "working": "Bahagi isi keseluruhan dengan bilangan gelas: 1.5 ÷ 6 = 0.25 liter.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 0.25
+        },
+        {
+          "id": "t6_c2_q18",
+          "text": "Susun 0.45, 2/5 dan 48% secara menaik.",
+          "difficulty": "sederhana",
+          "points": 20,
+          "working": "Tukar semuanya kepada perpuluhan: 2/5 = 0.4, 0.45 kekal 0.45, dan 48% = 0.48. Tertib menaik ialah 2/5, 0.45, 48%.",
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 3/5"
-        },
-        {
-          "id": "t5_c2_q27",
-          "text": "Markah ujian Aiman ialah 45 daripada 50. Berapakah peratus markah yang diperoleh Aiman?",
-          "options": [],
-          "correctAnswer": 90,
-          "difficulty": "cabaran",
-          "points": 30,
-          "type": "input",
-          "working": "Jawapan yang betul adalah: 90"
-        },
-        {
-          "id": "t5_c2_q28",
-          "text": "1/4 daripada sebuah kebun seluas 800 meter persegi ditanam bunga, manakala 30% ditanam sayur. Berapakah luas, dalam meter persegi, yang ditanam bunga?",
-          "options": [],
-          "correctAnswer": 200,
-          "difficulty": "cabaran",
-          "points": 30,
-          "type": "input",
-          "working": "Jawapan yang betul adalah: 200"
-        },
-        {
-          "id": "t5_c2_q29",
-          "text": "Sebuah bekas berisi 2.750 liter jus. Jus tersebut dituang sama banyak ke dalam 5 gelas. Berapakah isipadu jus, dalam liter, bagi setiap gelas?",
           "options": [
-            "0.55",
-            "5.5",
-            "0.155",
-            "1.55"
+            "2/5, 0.45, 48%",
+            "2/5, 48%, 0.45",
+            "0.45, 2/5, 48%",
+            "48%, 0.45, 2/5"
           ],
-          "correctAnswer": 0,
-          "difficulty": "cabaran",
-          "points": 30,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 0.55"
+          "correctAnswer": 0
         },
         {
-          "id": "t5_c2_q30",
-          "text": "Sebuah baldi mengandungi 15 liter air, iaitu 3/5 daripada kapasiti penuhnya. Berapakah kapasiti penuh baldi itu, dalam liter?",
+          "id": "t6_c2_q19",
+          "text": "Harga sebuah beg RM80 diberi diskaun 25%. Berapakah harga selepas diskaun, dalam RM?",
+          "difficulty": "sederhana",
+          "points": 20,
+          "working": "Diskaun ialah 25/100 × 80 = 20. Harga baharu: 80 − 20 = RM60.",
+          "type": "input",
           "options": [],
-          "correctAnswer": 25,
+          "correctAnswer": 60
+        },
+        {
+          "id": "t6_c2_q20",
+          "text": "5/8 daripada 240 ialah?",
+          "difficulty": "sederhana",
+          "points": 20,
+          "working": "Bahagi dengan penyebut dahulu: 240 ÷ 8 = 30. Kemudian darab dengan pengangka: 30 × 5 = 150.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 150
+        },
+        {
+          "id": "t6_c2_q21",
+          "text": "Kira: 1/2 + 1/3 − 1/6 = ?",
           "difficulty": "cabaran",
           "points": 30,
+          "working": "Penyebut sepunya ialah 6. Tukar: 3/6 + 2/6 − 1/6 = 4/6. Permudahkan dengan bahagi 2: 2/3.",
+          "type": "mcq",
+          "options": [
+            "5/6",
+            "1/3",
+            "1/2",
+            "2/3"
+          ],
+          "correctAnswer": 3
+        },
+        {
+          "id": "t6_c2_q22",
+          "text": "Sebuah tangki berisi 3/4 penuh. Selepas 1/4 daripada jumlah keseluruhan digunakan, berapakah pecahan tangki yang berbaki?",
+          "difficulty": "cabaran",
+          "points": 30,
+          "working": "Tolak terus kerana penyebut sudah sama: 3/4 − 1/4 = 2/4. Permudahkan dengan bahagi 2: 1/2.",
+          "type": "mcq",
+          "options": [
+            "2/3",
+            "3/8",
+            "1/4",
+            "1/2"
+          ],
+          "correctAnswer": 3
+        },
+        {
+          "id": "t6_c2_q23",
+          "text": "Markah Aiman naik daripada 40 kepada 50. Berapakah peratus kenaikannya?",
+          "difficulty": "cabaran",
+          "points": 30,
+          "working": "Kenaikan ialah 50 − 40 = 10. Peratus kenaikan = 10 ÷ 40 × 100 = 25%.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 25"
+          "options": [],
+          "correctAnswer": 25
+        },
+        {
+          "id": "t6_c2_q24",
+          "text": "Sebuah kedai menjual barang berharga RM250 dengan untung 20%. Berapakah harga jualan, dalam RM?",
+          "difficulty": "cabaran",
+          "points": 30,
+          "working": "Untung ialah 20/100 × 250 = 50. Harga jualan: 250 + 50 = RM300.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 300
+        },
+        {
+          "id": "t6_c2_q25",
+          "text": "Kira: 0.6 × 0.5 = ?",
+          "difficulty": "cabaran",
+          "points": 30,
+          "working": "Abaikan titik dahulu: 6 × 5 = 30. Terdapat dua tempat perpuluhan kesemuanya, jadi jawapannya 0.30, iaitu 0.3.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 0.3
+        },
+        {
+          "id": "t6_c2_q26",
+          "text": "2 1/4 kg tepung digunakan 3/4 kg. Berapakah baki tepung, dalam kg?",
+          "difficulty": "cabaran",
+          "points": 30,
+          "working": "Tukar kepada pecahan tak wajar: 2 1/4 = 9/4. Kemudian 9/4 − 3/4 = 6/4, iaitu 1 2/4 atau 1 1/2 kg.",
+          "type": "mcq",
+          "options": [
+            "2",
+            "1 1/4",
+            "1 1/2",
+            "1 3/4"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": "t6_c2_q27",
+          "text": "Sebuah sekolah mempunyai 600 murid. 45% lelaki dan selebihnya perempuan. Berapakah lebihan murid perempuan berbanding lelaki?",
+          "difficulty": "cabaran",
+          "points": 30,
+          "working": "Murid lelaki: 45/100 × 600 = 270. Murid perempuan: 600 − 270 = 330. Lebihannya 330 − 270 = 60 orang.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 60
+        },
+        {
+          "id": "t6_c2_q28",
+          "text": "Kira: 3/5 daripada 2/3 daripada 90.",
+          "difficulty": "cabaran",
+          "points": 30,
+          "working": "Kira dari dalam ke luar. 2/3 daripada 90 ialah 90 ÷ 3 × 2 = 60. Kemudian 3/5 daripada 60 ialah 60 ÷ 5 × 3 = 36.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 36
+        },
+        {
+          "id": "t6_c2_q29",
+          "text": "Harga sebuah telefon selepas diskaun 20% ialah RM960. Berapakah harga asalnya, dalam RM?",
+          "difficulty": "cabaran",
+          "points": 30,
+          "working": "Selepas diskaun 20%, harga tinggal 80% daripada asal. Jadi harga asal = 960 ÷ 80 × 100 = RM1 200.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 1200
+        },
+        {
+          "id": "t6_c2_q30",
+          "text": "Sebuah bekas berisi 4.8 liter air. Air itu dituang ke dalam botol 0.4 liter. Berapakah bilangan botol yang penuh?",
+          "difficulty": "cabaran",
+          "points": 30,
+          "working": "Bahagi jumlah air dengan isi setiap botol: 4.8 ÷ 0.4 = 12 botol.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 12
         }
       ]
     },
     {
-      "id": "d5-b3",
-      "title": "Operasi Bergabung & Wang",
+      "id": "d6-b3",
+      "title": "Wang, Untung Rugi & Belanjawan",
       "glyph": "tambahtolak",
       "questions": [
         {
-          "id": "t5_c3_q1",
-          "text": "Kira: 5 + 3 × 2 = ?",
-          "options": [],
-          "correctAnswer": 11,
+          "id": "t6_c3_q1",
+          "text": "Ali membeli buku RM12.50 dan pen RM3.20. Berapakah jumlah belanjanya, dalam RM?",
           "difficulty": "mudah",
           "points": 10,
+          "working": "Susun mengikut titik perpuluhan dan campurkan: RM12.50 + RM3.20 = RM15.70.",
           "type": "input",
-          "working": "Jawapan yang betul ialah: 11"
+          "options": [],
+          "correctAnswer": 15.7
         },
         {
-          "id": "t5_c3_q2",
-          "text": "Mengikut turutan operasi, yang manakah perlu dikira dahulu dalam 10 âˆ’ 2 × 3?",
-          "options": [
-            "2 × 3",
-            "10 âˆ’ 2",
-            "10 × 3",
-            "Kira dari kiri ke kanan"
-          ],
-          "correctAnswer": 0,
+          "id": "t6_c3_q2",
+          "text": "Berapakah baki daripada RM50 jika berbelanja RM18.60, dalam RM?",
           "difficulty": "mudah",
           "points": 10,
+          "working": "Tolak belanja daripada wang yang ada: RM50.00 − RM18.60 = RM31.40.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 31.4
+        },
+        {
+          "id": "t6_c3_q3",
+          "text": "RM2.45 bersamaan berapa sen?",
+          "difficulty": "mudah",
+          "points": 10,
+          "working": "RM1 bersamaan 100 sen, jadi RM2.45 = 2 × 100 + 45 = 245 sen.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 245
+        },
+        {
+          "id": "t6_c3_q4",
+          "text": "Sebuah barang dibeli RM40 dan dijual RM55. Berapakah untungnya, dalam RM?",
+          "difficulty": "mudah",
+          "points": 10,
+          "working": "Untung ialah harga jual tolak harga beli: RM55 − RM40 = RM15.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 15
+        },
+        {
+          "id": "t6_c3_q5",
+          "text": "Sebuah barang dibeli RM90 dan dijual RM75. Peniaga itu?",
+          "difficulty": "mudah",
+          "points": 10,
+          "working": "Harga jual lebih rendah daripada harga beli, jadi rugi. Rugi = RM90 − RM75 = RM15.",
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 2 × 3"
+          "options": [
+            "Rugi RM15",
+            "Untung RM75",
+            "Rugi RM75",
+            "Untung RM15"
+          ],
+          "correctAnswer": 0
         },
         {
-          "id": "t5_c3_q3",
-          "text": "Kira: (6 + 4) × 3 = ?",
-          "options": [],
-          "correctAnswer": 30,
+          "id": "t6_c3_q6",
+          "text": "5 × RM6.20 = ?",
           "difficulty": "mudah",
           "points": 10,
+          "working": "Darab RM6.20 dengan 5: 6.20 × 5 = RM31.00.",
           "type": "input",
-          "working": "Jawapan yang betul ialah: 30"
+          "options": [],
+          "correctAnswer": 31
         },
         {
-          "id": "t5_c3_q4",
-          "text": "Berapakah jumlah wang ini, dalam RM?",
-          "options": [],
-          "correctAnswer": 30,
+          "id": "t6_c3_q7",
+          "text": "Berapakah jumlah 3 keping RM50 dan 4 keping RM10, dalam RM?",
           "difficulty": "mudah",
           "points": 10,
+          "working": "Kira setiap jenis: 3 × RM50 = RM150 dan 4 × RM10 = RM40. Campurkan: RM150 + RM40 = RM190.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 30"
+          "options": [],
+          "correctAnswer": 190
         },
         {
-          "id": "t5_c3_q5",
-          "text": "Kira: 20 âˆ’ 5 × 3 = ?",
-          "options": [],
-          "correctAnswer": 5,
+          "id": "t6_c3_q8",
+          "text": "RM7.80 dibahagi 6 sama rata. Berapakah setiap bahagian, dalam RM?",
           "difficulty": "mudah",
           "points": 10,
+          "working": "Bahagi RM7.80 dengan 6: 7.80 ÷ 6 = RM1.30.",
           "type": "input",
-          "working": "Jawapan yang betul ialah: 5"
+          "options": [],
+          "correctAnswer": 1.3
         },
         {
-          "id": "t5_c3_q6",
-          "text": "Ali membeli sebuah buku berharga RM12 dan sebatang pen berharga RM3. Berapakah jumlah perbelanjaan Ali, dalam RM?",
-          "options": [],
-          "correctAnswer": 15,
+          "id": "t6_c3_q9",
+          "text": "Jika 1 kg gula berharga RM2.80, berapakah harga 3 kg, dalam RM?",
           "difficulty": "mudah",
           "points": 10,
+          "working": "Darab harga seunit dengan kuantiti: RM2.80 × 3 = RM8.40.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 15"
+          "options": [],
+          "correctAnswer": 8.4
         },
         {
-          "id": "t5_c3_q7",
-          "text": "Kira: 12 ÷ 2 + 4 = ?",
-          "options": [
-            10,
-            2,
-            8,
-            6
-          ],
-          "correctAnswer": 0,
+          "id": "t6_c3_q10",
+          "text": "Apakah maksud belanjawan?",
           "difficulty": "mudah",
           "points": 10,
+          "working": "Belanjawan ialah rancangan yang menyenaraikan pendapatan dan perbelanjaan supaya wang dapat diurus dengan baik.",
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 10"
-        },
-        {
-          "id": "t5_c3_q8",
-          "text": "Siti ada RM50. Dia membeli baju berharga RM35. Berapakah baki wang Siti, dalam RM?",
-          "options": [],
-          "correctAnswer": 15,
-          "difficulty": "mudah",
-          "points": 10,
-          "type": "input",
-          "working": "Jawapan yang betul adalah: 15"
-        },
-        {
-          "id": "t5_c3_q9",
-          "text": "Kira: 15 âˆ’ 3 + 2 × 4 = ?",
-          "options": [],
-          "correctAnswer": 20,
-          "difficulty": "mudah",
-          "points": 10,
-          "type": "input",
-          "working": "Jawapan yang betul ialah: 20"
-        },
-        {
-          "id": "t5_c3_q10",
-          "text": "Berapakah jumlah wang yang ditunjukkan, dalam RM?",
-          "options": [],
-          "correctAnswer": 80,
-          "difficulty": "mudah",
-          "points": 10,
-          "type": "input",
-          "working": "Jawapan yang betul adalah: 80"
-        },
-        {
-          "id": "t5_c3_q11",
-          "text": "Kira: 24 ÷ (2 + 4) × 3 = ?",
-          "options": [],
-          "correctAnswer": 12,
-          "difficulty": "sederhana",
-          "points": 20,
-          "type": "input",
-          "working": "Jawapan yang betul ialah: 12"
-        },
-        {
-          "id": "t5_c3_q12",
-          "text": "Nilai bagi 3 + 4 × (5 âˆ’ 2) ialah?",
           "options": [
-            15,
-            21,
-            9,
-            35
+            "Jumlah hutang",
+            "Rancangan pendapatan dan perbelanjaan",
+            "Untung jualan",
+            "Wang simpanan sahaja"
           ],
-          "correctAnswer": 0,
-          "difficulty": "sederhana",
-          "points": 20,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 15"
+          "correctAnswer": 1
         },
         {
-          "id": "t5_c3_q13",
-          "text": "Sebuah kedai menjual buku dengan harga kos RM8 dan menjual pada harga RM11. Berapakah untung bagi setiap buku, dalam RM?",
-          "options": [],
-          "correctAnswer": 3,
+          "id": "t6_c3_q11",
+          "text": "Puan Sara berpendapatan RM3 200 sebulan. Beliau berbelanja RM1 850 dan menyimpan bakinya. Berapakah simpanannya, dalam RM?",
           "difficulty": "sederhana",
           "points": 20,
+          "working": "Tolak perbelanjaan daripada pendapatan: RM3 200 − RM1 850 = RM1 350.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 3"
+          "options": [],
+          "correctAnswer": 1350
         },
         {
-          "id": "t5_c3_q14",
-          "text": "Sebuah beg dibeli pada harga RM45 dan dijual pada harga RM38. Adakah peniaga itu untung atau rugi, dan berapakah jumlahnya?",
+          "id": "t6_c3_q12",
+          "text": "Seorang peniaga membeli 15 kotak pada harga RM18 sekotak. Berapakah jumlah kosnya, dalam RM?",
+          "difficulty": "sederhana",
+          "points": 20,
+          "working": "Darab bilangan kotak dengan harga sekotak: 15 × RM18 = RM270.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 270
+        },
+        {
+          "id": "t6_c3_q13",
+          "text": "Sebuah barang berharga RM120 diberi diskaun 15%. Berapakah harga selepas diskaun, dalam RM?",
+          "difficulty": "sederhana",
+          "points": 20,
+          "working": "Diskaun ialah 15/100 × 120 = RM18. Harga baharu: RM120 − RM18 = RM102.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 102
+        },
+        {
+          "id": "t6_c3_q14",
+          "text": "Encik Rahim membayar RM1 200 sewa, RM450 makanan dan RM180 pengangkutan sebulan. Berapakah jumlah perbelanjaannya, dalam RM?",
+          "difficulty": "sederhana",
+          "points": 20,
+          "working": "Campurkan semua: RM1 200 + RM450 = RM1 650, kemudian RM1 650 + RM180 = RM1 830.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 1830
+        },
+        {
+          "id": "t6_c3_q15",
+          "text": "Sebuah kedai membeli 40 unit pada RM25 seunit dan menjual semuanya pada RM32 seunit. Berapakah untungnya, dalam RM?",
+          "difficulty": "sederhana",
+          "points": 20,
+          "working": "Untung seunit ialah RM32 − RM25 = RM7. Untung keseluruhan: 40 × RM7 = RM280.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 280
+        },
+        {
+          "id": "t6_c3_q16",
+          "text": "Wang RM960 dibahagi sama rata kepada 8 orang. Berapakah bahagian setiap orang, dalam RM?",
+          "difficulty": "sederhana",
+          "points": 20,
+          "working": "Bahagi jumlah wang dengan bilangan orang: RM960 ÷ 8 = RM120.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 120
+        },
+        {
+          "id": "t6_c3_q17",
+          "text": "Aminah menyimpan RM45 setiap bulan. Berapakah simpanannya selepas 2 tahun, dalam RM?",
+          "difficulty": "sederhana",
+          "points": 20,
+          "working": "Dua tahun ialah 24 bulan. Darab: RM45 × 24 = RM1 080.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 1080
+        },
+        {
+          "id": "t6_c3_q18",
+          "text": "Sebuah barang dijual RM144 dengan untung 20% daripada harga kos. Berapakah harga kosnya, dalam RM?",
+          "difficulty": "sederhana",
+          "points": 20,
+          "working": "Harga jual ialah 120% daripada kos. Jadi kos = 144 ÷ 120 × 100 = RM120.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 120
+        },
+        {
+          "id": "t6_c3_q19",
+          "text": "Berapakah baki daripada RM200 selepas membeli 3 barang berharga RM45 setiap satu, dalam RM?",
+          "difficulty": "sederhana",
+          "points": 20,
+          "working": "Selesaikan dua langkah. Pertama 3 × RM45 = RM135. Kemudian RM200 − RM135 = RM65.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 65
+        },
+        {
+          "id": "t6_c3_q20",
+          "text": "Sebuah keluarga memperuntukkan 30% daripada pendapatan RM4 000 untuk makanan. Berapakah jumlah itu, dalam RM?",
+          "difficulty": "sederhana",
+          "points": 20,
+          "working": "Kira 30/100 × 4 000 = RM1 200.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 1200
+        },
+        {
+          "id": "t6_c3_q21",
+          "text": "Seorang peniaga membeli 200 kg buah pada RM4 sekilogram. Beliau menjual 150 kg pada RM7 sekilogram dan selebihnya rosak. Berapakah untung atau ruginya, dalam RM?",
+          "difficulty": "cabaran",
+          "points": 30,
+          "working": "Kos: 200 × RM4 = RM800. Jualan: 150 × RM7 = RM1 050. Untung: RM1 050 − RM800 = RM250.",
+          "type": "mcq",
           "options": [
-            "Rugi RM7",
-            "Untung RM7",
-            "Rugi RM83",
-            "Untung RM83"
+            "Rugi RM250",
+            "Rugi RM50",
+            "Untung RM250",
+            "Untung RM300"
           ],
-          "correctAnswer": 0,
-          "difficulty": "sederhana",
-          "points": 20,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: Rugi RM7"
+          "correctAnswer": 2
         },
         {
-          "id": "t5_c3_q15",
-          "text": "Kira: (15 âˆ’ 5) ÷ 2 + 6 = ?",
-          "options": [],
-          "correctAnswer": 11,
-          "difficulty": "sederhana",
-          "points": 20,
-          "type": "input",
-          "working": "Jawapan yang betul ialah: 11"
-        },
-        {
-          "id": "t5_c3_q16",
-          "text": "Puan Zainab membeli 3 kg gula pada harga RM2 sekilogram dan 2 kg tepung pada harga RM3 sekilogram. Berapakah jumlah perbelanjaan Puan Zainab, dalam RM?",
-          "options": [],
-          "correctAnswer": 12,
-          "difficulty": "sederhana",
-          "points": 20,
-          "type": "input",
-          "working": "Jawapan yang betul adalah: 12"
-        },
-        {
-          "id": "t5_c3_q17",
-          "text": "Yang manakah bersamaan dengan 50 âˆ’ 6 × 5 + 10?",
-          "options": [
-            30,
-            70,
-            5,
-            20
-          ],
-          "correctAnswer": 0,
-          "difficulty": "sederhana",
-          "points": 20,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 30"
-        },
-        {
-          "id": "t5_c3_q18",
-          "text": "Kira: 100 ÷ 5 × 2 = ?",
-          "options": [],
-          "correctAnswer": 40,
-          "difficulty": "sederhana",
-          "points": 20,
-          "type": "input",
-          "working": "Jawapan yang betul ialah: 40"
-        },
-        {
-          "id": "t5_c3_q19",
-          "text": "Encik Kumar berbelanja RM250 sebulan untuk makanan dan RM180 untuk bil elektrik & air. Jika gajinya RM800 sebulan, berapakah baki wang selepas kedua-dua perbelanjaan itu?",
-          "options": [
-            370,
-            430,
-            320,
-            450
-          ],
-          "correctAnswer": 0,
-          "difficulty": "sederhana",
-          "points": 20,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 370"
-        },
-        {
-          "id": "t5_c3_q20",
-          "text": "Kira: 7 × 3 âˆ’ 12 ÷ 4 = ?",
-          "options": [],
-          "correctAnswer": 18,
-          "difficulty": "sederhana",
-          "points": 20,
-          "type": "input",
-          "working": "Jawapan yang betul ialah: 18"
-        },
-        {
-          "id": "t5_c3_q21",
-          "text": "Sebuah kedai membeli 50 buah beg pada harga RM15 sebuah. Kedai itu menjual kesemua beg itu pada harga RM22 sebuah. Berapakah jumlah untung kedai itu, dalam RM?",
-          "options": [],
-          "correctAnswer": 350,
+          "id": "t6_c3_q22",
+          "text": "Pendapatan bulanan Encik Lim ialah RM5 400. Beliau membelanjakan 1/3 untuk sewa dan 25% untuk makanan. Berapakah bakinya, dalam RM?",
           "difficulty": "cabaran",
           "points": 30,
+          "working": "Sewa: RM5 400 ÷ 3 = RM1 800. Makanan: 25/100 × 5 400 = RM1 350. Baki: 5 400 − 1 800 − 1 350 = RM2 250.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 350"
-        },
-        {
-          "id": "t5_c3_q22",
-          "text": "Nilai bagi (8 + 12) ÷ 4 × 5 âˆ’ 3 ialah?",
-          "options": [
-            22,
-            17,
-            37,
-            7
-          ],
-          "correctAnswer": 0,
-          "difficulty": "cabaran",
-          "points": 30,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 22"
-        },
-        {
-          "id": "t5_c3_q23",
-          "text": "Puan Aina mempunyai belanjawan RM500 sebulan. Beliau membelanjakan RM180 untuk makanan, RM120 untuk pengangkutan dan bakinya disimpan. Berapakah jumlah simpanan Puan Aina, dalam RM?",
           "options": [],
-          "correctAnswer": 200,
+          "correctAnswer": 2250
+        },
+        {
+          "id": "t6_c3_q23",
+          "text": "Sebuah barang dibeli RM250 dan dijual dengan rugi 12%. Berapakah harga jualannya, dalam RM?",
           "difficulty": "cabaran",
           "points": 30,
+          "working": "Rugi ialah 12/100 × 250 = RM30. Harga jual: RM250 − RM30 = RM220.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 200"
-        },
-        {
-          "id": "t5_c3_q24",
-          "text": "Sebuah kilang membeli bahan mentah RM3,200. Selepas diproses, barangan dijual dengan harga keseluruhan RM4,500. Adakah kilang itu untung atau rugi, dan berapakah jumlahnya?",
-          "options": [
-            "Untung RM1,300",
-            "Rugi RM1,300",
-            "Untung RM7,700",
-            "Rugi RM800"
-          ],
-          "correctAnswer": 0,
-          "difficulty": "cabaran",
-          "points": 30,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: Untung RM1,300"
-        },
-        {
-          "id": "t5_c3_q25",
-          "text": "Kira: 3 × (9 âˆ’ 4) + 18 ÷ 3 = ?",
           "options": [],
-          "correctAnswer": 21,
-          "difficulty": "cabaran",
-          "points": 30,
-          "type": "input",
-          "working": "Jawapan yang betul ialah: 21"
+          "correctAnswer": 220
         },
         {
-          "id": "t5_c3_q26",
-          "text": "Sebuah keluarga berbelanja RM45 seminggu untuk susu dan RM60 seminggu untuk sayur. Berapakah jumlah perbelanjaan mereka untuk kedua-dua barangan itu dalam masa 4 minggu, dalam RM?",
+          "id": "t6_c3_q24",
+          "text": "Simpanan RM2 000 memperoleh faedah 5% setahun. Berapakah jumlah simpanan selepas setahun, dalam RM?",
+          "difficulty": "cabaran",
+          "points": 30,
+          "working": "Faedah setahun: 5/100 × 2 000 = RM100. Jumlah simpanan: RM2 000 + RM100 = RM2 100.",
+          "type": "input",
           "options": [],
-          "correctAnswer": 420,
+          "correctAnswer": 2100
+        },
+        {
+          "id": "t6_c3_q25",
+          "text": "Sebuah syarikat memperoleh jualan RM48 000 dan kos operasi RM35 500. Keuntungan dibahagi sama rata kepada 5 pekerja. Berapakah bahagian setiap pekerja, dalam RM?",
           "difficulty": "cabaran",
           "points": 30,
+          "working": "Keuntungan: RM48 000 − RM35 500 = RM12 500. Bahagian setiap pekerja: RM12 500 ÷ 5 = RM2 500.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 420"
-        },
-        {
-          "id": "t5_c3_q27",
-          "text": "Nilai bagi 60 ÷ (2 + 3) × 2 âˆ’ 4 ialah?",
-          "options": [
-            20,
-            16,
-            32,
-            8
-          ],
-          "correctAnswer": 0,
-          "difficulty": "cabaran",
-          "points": 30,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 20"
-        },
-        {
-          "id": "t5_c3_q28",
-          "text": "Seorang peniaga membeli 20 kotak barangan pada harga RM25 sekotak. Beliau menjual semua barangan itu dan memperoleh jumlah RM620. Berapakah untung peniaga itu, dalam RM?",
           "options": [],
-          "correctAnswer": 120,
-          "difficulty": "cabaran",
-          "points": 30,
-          "type": "input",
-          "working": "Jawapan yang betul adalah: 120"
+          "correctAnswer": 2500
         },
         {
-          "id": "t5_c3_q29",
-          "text": "Ahmad ada RM100. Dia membeli 3 buah buku pada harga RM12 sebuah dan sebuah beg pada harga RM45. Berapakah baki wang Ahmad, dalam RM?",
-          "options": [],
-          "correctAnswer": 19,
+          "id": "t6_c3_q26",
+          "text": "Harga asal sebuah basikal ialah RM480. Selepas dua kali diskaun masing-masing 10% dan 10% daripada harga terkini, berapakah harga akhirnya, dalam RM?",
           "difficulty": "cabaran",
           "points": 30,
+          "working": "Diskaun pertama: 10% daripada 480 ialah 48, jadi harga menjadi RM432. Diskaun kedua: 10% daripada 432 ialah 43.20, jadi harga akhir RM388.80.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 19"
+          "options": [],
+          "correctAnswer": 388.8
         },
         {
-          "id": "t5_c3_q30",
-          "text": "Kira: (25 âˆ’ 10) × 2 + 30 ÷ 5 = ?",
-          "options": [],
-          "correctAnswer": 36,
+          "id": "t6_c3_q27",
+          "text": "Puan Nora membeli 12 helai tudung pada RM25 sehelai. Beliau menjual 8 helai pada RM40 sehelai dan 4 helai pada RM30 sehelai. Berapakah untungnya, dalam RM?",
           "difficulty": "cabaran",
           "points": 30,
+          "working": "Kos: 12 × RM25 = RM300. Jualan: (8 × RM40) + (4 × RM30) = RM320 + RM120 = RM440. Untung: RM440 − RM300 = RM140.",
           "type": "input",
-          "working": "Jawapan yang betul ialah: 36"
+          "options": [],
+          "correctAnswer": 140
+        },
+        {
+          "id": "t6_c3_q28",
+          "text": "Sebuah kedai mensasarkan jualan RM15 000 sebulan. Setakat ini jualannya RM9 750. Berapakah peratus sasaran yang belum tercapai?",
+          "difficulty": "cabaran",
+          "points": 30,
+          "working": "Baki jualan: RM15 000 − RM9 750 = RM5 250. Peratusnya: 5 250 ÷ 15 000 × 100 = 35%.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 35
+        },
+        {
+          "id": "t6_c3_q29",
+          "text": "Belanjawan bulanan sebuah keluarga ialah RM3 600. Jika 40% untuk sewa, 25% untuk makanan dan bakinya simpanan, berapakah simpanan mereka, dalam RM?",
+          "difficulty": "cabaran",
+          "points": 30,
+          "working": "Sewa dan makanan berjumlah 40% + 25% = 65%. Simpanan ialah 35%. Kira 35/100 × 3 600 = RM1 260.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 1260
+        },
+        {
+          "id": "t6_c3_q30",
+          "text": "Seorang peniaga menjual barang pada RM72 dan memperoleh untung 20%. Berapakah untungnya, dalam RM?",
+          "difficulty": "cabaran",
+          "points": 30,
+          "working": "Harga jual ialah 120% daripada kos, jadi kos = 72 ÷ 120 × 100 = RM60. Untung: RM72 − RM60 = RM12.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 12
         }
       ]
     },
     {
-      "id": "d5-b4",
-      "title": "Masa, Ukuran & Purata",
+      "id": "d6-b4",
+      "title": "Masa, Ukuran, Jisim & Isipadu",
       "glyph": "wangmasa",
       "questions": [
         {
-          "id": "t5_c4_q1",
-          "text": "Pukul berapakah yang ditunjukkan jam ini, dalam format 24 jam (waktu petang)?",
-          "options": [
-            "15:30",
-            "03:30",
-            "15:00",
-            "17:30"
-          ],
-          "correctAnswer": 0,
+          "id": "t6_c4_q1",
+          "text": "2 jam 15 minit bersamaan berapa minit?",
           "difficulty": "mudah",
           "points": 10,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 15:30"
+          "working": "1 jam = 60 minit, jadi 2 jam = 120 minit. Campur 15 minit lagi: 120 + 15 = 135 minit.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 135
         },
         {
-          "id": "t5_c4_q2",
-          "text": "Aktiviti bermula pukul 0800 dan berakhir pukul 1030. Berapa minitkah tempoh aktiviti itu?",
-          "options": [],
-          "correctAnswer": 150,
+          "id": "t6_c4_q2",
+          "text": "3.5 kg bersamaan berapa gram?",
           "difficulty": "mudah",
           "points": 10,
+          "working": "1 kg = 1 000 g, jadi 3.5 kg = 3.5 × 1 000 = 3 500 gram.",
           "type": "input",
-          "working": "Jawapan yang betul ialah: 150"
+          "options": [],
+          "correctAnswer": 3500
         },
         {
-          "id": "t5_c4_q3",
-          "text": "2500 gram bersamaan dengan berapa kilogram?",
-          "options": [
-            "2.5 kg",
-            "25 kg",
-            "0.25 kg",
-            "250 kg"
-          ],
-          "correctAnswer": 0,
+          "id": "t6_c4_q3",
+          "text": "Berapakah purata bagi 12, 18 dan 21?",
           "difficulty": "mudah",
           "points": 10,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 2.5 kg"
+          "working": "Campurkan semua: 12 + 18 + 21 = 51. Bahagi dengan bilangan data: 51 ÷ 3 = 17.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 17
         },
         {
-          "id": "t5_c4_q4",
-          "text": "Jumlah markah 4 orang murid ialah 320. Berapakah purata markah bagi setiap murid?",
-          "options": [],
-          "correctAnswer": 80,
+          "id": "t6_c4_q4",
+          "text": "4.2 liter bersamaan berapa mililiter?",
           "difficulty": "mudah",
           "points": 10,
+          "working": "1 liter = 1 000 ml, jadi 4.2 liter = 4.2 × 1 000 = 4 200 ml.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 80"
+          "options": [],
+          "correctAnswer": 4200
         },
         {
-          "id": "t5_c4_q5",
-          "text": "3 liter bersamaan dengan berapa mililiter?",
-          "options": [],
-          "correctAnswer": 3000,
+          "id": "t6_c4_q5",
+          "text": "Sebuah aktiviti bermula pukul 0930 dan berakhir pukul 1145. Berapakah tempohnya, dalam minit?",
           "difficulty": "mudah",
           "points": 10,
+          "working": "Dari 930 ke 1 130 ialah 2 jam, iaitu 120 minit. Tambah 15 minit lagi hingga 1 145, jadi 135 minit.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 3000"
+          "options": [],
+          "correctAnswer": 135
         },
         {
-          "id": "t5_c4_q6",
-          "text": "Berapakah luas, dalam unit persegi, bentuk grid ini?",
-          "options": [],
-          "correctAnswer": 6,
+          "id": "t6_c4_q6",
+          "text": "Waktu 2015 dalam sistem 12 jam ialah?",
           "difficulty": "mudah",
           "points": 10,
-          "type": "input",
-          "working": "Jawapan yang betul adalah: 6"
+          "working": "Selepas tengah hari, tolak 12 daripada jam: 20 − 12 = 8. Jadi 8:15 malam.",
+          "type": "mcq",
+          "options": [
+            "10:15 malam",
+            "9:15 malam",
+            "8:15 malam",
+            "8:15 pagi"
+          ],
+          "correctAnswer": 2
         },
         {
-          "id": "t5_c4_q7",
-          "text": "Waktu 1945 dalam sistem 24 jam bersamaan dengan pukul berapa dalam sistem 12 jam?",
-          "options": [
-            "7:45 malam",
-            "7:45 pagi",
-            "9:45 malam",
-            "9:45 pagi"
-          ],
-          "correctAnswer": 0,
+          "id": "t6_c4_q7",
+          "text": "1 tahun bersamaan berapa minggu (anggaran)?",
           "difficulty": "mudah",
           "points": 10,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 7:45 malam"
+          "working": "Setahun ada kira-kira 365 hari. Bahagi dengan 7 hari seminggu: 365 ÷ 7 lebih kurang 52 minggu.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 52
         },
         {
-          "id": "t5_c4_q8",
-          "text": "4 meter bersamaan dengan berapa sentimeter?",
-          "options": [],
-          "correctAnswer": 400,
+          "id": "t6_c4_q8",
+          "text": "650 cm bersamaan berapa meter?",
           "difficulty": "mudah",
           "points": 10,
+          "working": "1 meter = 100 sentimeter, jadi bahagi dengan 100: 650 ÷ 100 = 6.5 meter.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 400"
+          "options": [],
+          "correctAnswer": 6.5
         },
         {
-          "id": "t5_c4_q9",
-          "text": "Sebuah kubus mempunyai panjang sisi 2 unit. Berapakah bilangan kiub unit yang membentuk kubus itu?",
-          "options": [],
-          "correctAnswer": 8,
+          "id": "t6_c4_q9",
+          "text": "Berapakah bilangan hari dalam bulan Ogos?",
           "difficulty": "mudah",
           "points": 10,
+          "working": "Ogos ialah salah satu bulan yang mempunyai 31 hari.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 8"
+          "options": [],
+          "correctAnswer": 31
         },
         {
-          "id": "t5_c4_q10",
-          "text": "Jumlah hujan yang turun dalam 5 hari ialah 45 mm. Berapakah purata hujan sehari, dalam mm?",
-          "options": [],
-          "correctAnswer": 9,
+          "id": "t6_c4_q10",
+          "text": "Purata jisim 4 beg ialah 5 kg. Berapakah jumlah jisim semua beg, dalam kg?",
           "difficulty": "mudah",
           "points": 10,
+          "working": "Jumlah ialah purata darab bilangan data: 5 × 4 = 20 kg.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 9"
+          "options": [],
+          "correctAnswer": 20
         },
         {
-          "id": "t5_c4_q11",
-          "text": "Sebuah bas bertolak pada pukul 2245 malam dan sampai pada pukul 0130 pagi keesokan hari. Berapa minitkah tempoh perjalanan bas itu?",
-          "options": [
-            165,
-            135,
-            195,
-            205
-          ],
-          "correctAnswer": 0,
+          "id": "t6_c4_q11",
+          "text": "Sebuah kereta bergerak 240 km dalam 3 jam. Berapakah laju puratanya, dalam km sejam?",
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 165"
+          "working": "Laju purata ialah jarak dibahagi masa: 240 ÷ 3 = 80 km sejam.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 80
         },
         {
-          "id": "t5_c4_q12",
-          "text": "Kira purata bagi 15, 20 dan 25.",
-          "options": [],
-          "correctAnswer": 20,
+          "id": "t6_c4_q12",
+          "text": "Purata markah 5 ujian ialah 78. Berapakah jumlah markah kesemuanya?",
           "difficulty": "sederhana",
           "points": 20,
+          "working": "Jumlah ialah purata darab bilangan ujian: 78 × 5 = 390.",
           "type": "input",
-          "working": "Jawapan yang betul ialah: 20"
+          "options": [],
+          "correctAnswer": 390
         },
         {
-          "id": "t5_c4_q13",
-          "text": "Sebuah kotak berbentuk kuboid mempunyai panjang 4 unit, lebar 3 unit dan tinggi 2 unit. Berapakah isipadu kotak itu, dalam unit padu?",
-          "options": [],
-          "correctAnswer": 24,
+          "id": "t6_c4_q13",
+          "text": "Sebuah bekas berisi 2 liter 350 ml air. Ditambah 1 liter 800 ml lagi. Berapakah jumlah air, dalam ml?",
           "difficulty": "sederhana",
           "points": 20,
+          "working": "Tukar kepada ml: 2 liter 350 ml = 2 350 ml dan 1 liter 800 ml = 1 800 ml. Campurkan: 2 350 + 1 800 = 4 150 ml.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 24"
+          "options": [],
+          "correctAnswer": 4150
         },
         {
-          "id": "t5_c4_q14",
-          "text": "1.5 kg bersamaan dengan berapa gram?",
-          "options": [
-            1500,
-            150,
-            15000,
-            105
-          ],
-          "correctAnswer": 0,
+          "id": "t6_c4_q14",
+          "text": "Sebuah perjalanan bermula pukul 1345 dan mengambil masa 2 jam 40 minit. Pukul berapakah ia berakhir dalam sistem 24 jam?",
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 1500"
+          "working": "Mula 1 345, tambah 2 jam menjadi 1545. Tambah 40 minit: 45 + 40 = 85 minit, iaitu 1 jam 25 minit, jadi 1625.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 1625
         },
         {
-          "id": "t5_c4_q15",
-          "text": "Sebuah program bermula pukul 2015 dan berakhir pukul 2150. Berapa minitkah tempoh program itu?",
-          "options": [],
-          "correctAnswer": 95,
+          "id": "t6_c4_q15",
+          "text": "Jisim 3 kotak ialah 4.5 kg, 3.8 kg dan 5.2 kg. Berapakah purata jisimnya, dalam kg?",
           "difficulty": "sederhana",
           "points": 20,
+          "working": "Campurkan: 4.5 + 3.8 + 5.2 = 13.5. Bahagi dengan 3: 13.5 ÷ 3 = 4.5 kg.",
           "type": "input",
-          "working": "Jawapan yang betul ialah: 95"
+          "options": [],
+          "correctAnswer": 4.5
         },
         {
-          "id": "t5_c4_q16",
-          "text": "3.2 m ditambah dengan 45 cm bersamaan dengan berapa sentimeter?",
-          "options": [
-            365,
-            325,
-            3650,
-            45
-          ],
-          "correctAnswer": 0,
+          "id": "t6_c4_q16",
+          "text": "Sebuah paip mengalirkan 15 liter air seminit. Berapakah isipadu air dalam 12 minit, dalam liter?",
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 365"
+          "working": "Darab kadar dengan masa: 15 × 12 = 180 liter.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 180
         },
         {
-          "id": "t5_c4_q17",
-          "text": "Jumlah markah 5 orang murid dalam ujian ialah 375. Selepas seorang murid baharu menyertai dengan markah 45, berapakah purata markah 6 orang murid itu?",
-          "options": [],
-          "correctAnswer": 70,
+          "id": "t6_c4_q17",
+          "text": "2 km 450 m bersamaan berapa meter?",
           "difficulty": "sederhana",
           "points": 20,
+          "working": "1 km = 1 000 m, jadi 2 km = 2 000 m. Campur 450 m: 2 000 + 450 = 2 450 meter.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 70"
+          "options": [],
+          "correctAnswer": 2450
         },
         {
-          "id": "t5_c4_q18",
-          "text": "Sebuah tangki air berisi 8 liter 250 ml. Berapakah jumlah isipadu air itu, dalam mililiter?",
-          "options": [
-            8250,
-            8025,
-            825,
-            8205
-          ],
-          "correctAnswer": 0,
+          "id": "t6_c4_q18",
+          "text": "Sebuah mesin menghasilkan 320 unit dalam 4 jam. Berapakah unit yang dihasilkan dalam 7 jam pada kadar sama?",
           "difficulty": "sederhana",
           "points": 20,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 8250"
+          "working": "Kadar sejam: 320 ÷ 4 = 80 unit. Dalam 7 jam: 80 × 7 = 560 unit.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 560
         },
         {
-          "id": "t5_c4_q19",
-          "text": "Berapakah perimeter, dalam unit, bagi bentuk segi empat tepat ini?",
-          "options": [],
-          "correctAnswer": 18,
+          "id": "t6_c4_q19",
+          "text": "Berat sebuah kotak ialah 6 kg 250 g. Jika 1 kg 750 g dikeluarkan, berapakah baki berat, dalam g?",
           "difficulty": "sederhana",
           "points": 20,
+          "working": "Tukar kepada gram: 6 kg 250 g = 6 250 g dan 1 kg 750 g = 1 750 g. Tolak: 6 250 − 1 750 = 4 500 g.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 18"
+          "options": [],
+          "correctAnswer": 4500
         },
         {
-          "id": "t5_c4_q20",
-          "text": "Seorang peniaga merekod jualan selama 4 hari: RM120, RM150, RM90 dan RM140. Berapakah purata jualan sehari, dalam RM?",
-          "options": [],
-          "correctAnswer": 125,
+          "id": "t6_c4_q20",
+          "text": "Purata suhu selama 4 hari ialah 30°C. Jika tiga hari pertama masing-masing 28°C, 31°C dan 29°C, berapakah suhu hari keempat, dalam °C?",
           "difficulty": "sederhana",
           "points": 20,
+          "working": "Jumlah suhu empat hari: 30 × 4 = 120. Tiga hari pertama: 28 + 31 + 29 = 88. Hari keempat: 120 − 88 = 32°C.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 125"
-        },
-        {
-          "id": "t5_c4_q21",
-          "text": "Sebuah kem bermula pukul 0800 pagi dan berakhir pukul 1730 petang pada hari yang sama, dengan rehat makan tengah hari selama 45 minit. Berapa minitkah tempoh aktiviti sebenar (tidak termasuk rehat)?",
           "options": [],
-          "correctAnswer": 525,
-          "difficulty": "cabaran",
-          "points": 30,
-          "type": "input",
-          "working": "Jawapan yang betul ialah: 525"
+          "correctAnswer": 32
         },
         {
-          "id": "t5_c4_q22",
-          "text": "Sebuah kotak kuboid mempunyai isipadu 60 unit padu. Jika panjangnya 5 unit dan lebarnya 4 unit, berapakah tingginya, dalam unit?",
+          "id": "t6_c4_q21",
+          "text": "Sebuah kereta bergerak 180 km dalam 2 jam, kemudian 150 km dalam 3 jam. Berapakah laju purata keseluruhan, dalam km sejam?",
+          "difficulty": "cabaran",
+          "points": 30,
+          "working": "Jumlah jarak: 180 + 150 = 330 km. Jumlah masa: 2 + 3 = 5 jam. Laju purata: 330 ÷ 5 = 66 km sejam.",
+          "type": "input",
           "options": [],
-          "correctAnswer": 3,
-          "difficulty": "cabaran",
-          "points": 30,
-          "type": "input",
-          "working": "Jawapan yang betul adalah: 3"
+          "correctAnswer": 66
         },
         {
-          "id": "t5_c4_q23",
-          "text": "Markah 4 orang murid dalam ujian Matematik ialah 65, 70, 80 dan 85. Berapakah markah yang perlu diperoleh oleh murid kelima supaya purata kelima-lima murid itu ialah 76?",
+          "id": "t6_c4_q22",
+          "text": "Sebuah tangki berisi 45 liter air. Air mengalir keluar 750 ml seminit. Berapa minit diperlukan untuk mengosongkan tangki?",
+          "difficulty": "cabaran",
+          "points": 30,
+          "working": "Tukar kepada unit sama: 45 liter = 45 000 ml. Bahagi dengan kadar: 45 000 ÷ 750 = 60 minit.",
+          "type": "input",
           "options": [],
-          "correctAnswer": 80,
+          "correctAnswer": 60
+        },
+        {
+          "id": "t6_c4_q23",
+          "text": "Purata jisim 5 murid ialah 42 kg. Apabila seorang murid lagi menyertai, purata menjadi 43 kg. Berapakah jisim murid baharu itu, dalam kg?",
           "difficulty": "cabaran",
           "points": 30,
+          "working": "Jumlah asal: 42 × 5 = 210 kg. Jumlah baharu: 43 × 6 = 258 kg. Jisim murid baharu: 258 − 210 = 48 kg.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 80"
-        },
-        {
-          "id": "t5_c4_q24",
-          "text": "Sebuah tangki air mempunyai isipadu 15 liter. Air dituang keluar sebanyak 3500 ml. Berapakah baki air dalam tangki itu, dalam mililiter?",
-          "options": [
-            11500,
-            11650,
-            8500,
-            18500
-          ],
-          "correctAnswer": 0,
-          "difficulty": "cabaran",
-          "points": 30,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 11500"
-        },
-        {
-          "id": "t5_c4_q25",
-          "text": "Sebuah bangunan mempunyai jam yang menunjukkan pukul 2358. Berapa minitkah lagi sebelum pukul 0030 keesokan hari?",
           "options": [],
-          "correctAnswer": 32,
-          "difficulty": "cabaran",
-          "points": 30,
-          "type": "input",
-          "working": "Jawapan yang betul ialah: 32"
+          "correctAnswer": 48
         },
         {
-          "id": "t5_c4_q26",
-          "text": "Sebuah kolam renang diisi menggunakan paip yang mengalirkan air 250 liter setiap jam. Jika kolam itu memerlukan 1500 liter air, berapa jamkah masa yang diperlukan untuk mengisi kolam itu sepenuhnya?",
+          "id": "t6_c4_q24",
+          "text": "Sebuah bengkel dibuka pukul 0815 dan ditutup pukul 1730, dengan dua rehat masing-masing 30 minit dan 45 minit. Berapa minitkah waktu kerja sebenar?",
+          "difficulty": "cabaran",
+          "points": 30,
+          "working": "Dari 815 ke 1 730 ialah 9 jam 15 minit, iaitu 555 minit. Tolak rehat: 555 − 30 − 45 = 480 minit.",
+          "type": "input",
           "options": [],
-          "correctAnswer": 6,
+          "correctAnswer": 480
+        },
+        {
+          "id": "t6_c4_q25",
+          "text": "Sebuah bekas kuboid berukuran 20 cm × 15 cm × 10 cm diisi penuh air. Berapakah isipadunya, dalam ml?",
           "difficulty": "cabaran",
           "points": 30,
+          "working": "Isipadu kuboid = panjang × lebar × tinggi = 20 × 15 × 10 = 3 000 cm padu. Kerana 1 cm padu = 1 ml, isipadunya 3 000 ml.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 6"
-        },
-        {
-          "id": "t5_c4_q27",
-          "text": "Sebuah kuboid mempunyai panjang 6 unit, lebar 3 unit dan tinggi 4 unit. Jika tingginya ditambah 1 unit, berapakah pertambahan isipadu, dalam unit padu?",
-          "options": [
-            18,
-            90,
-            72,
-            24
-          ],
-          "correctAnswer": 0,
-          "difficulty": "cabaran",
-          "points": 30,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 18"
-        },
-        {
-          "id": "t5_c4_q28",
-          "text": "Sebuah perjalanan bermula pukul 1140 pagi dan mengambil masa 3 jam 25 minit. Pukul berapakah (format HHMM, sistem 24 jam) perjalanan itu berakhir?",
           "options": [],
-          "correctAnswer": 1505,
+          "correctAnswer": 3000
+        },
+        {
+          "id": "t6_c4_q26",
+          "text": "Seorang pelari berlari 400 m dalam 80 saat. Pada kadar sama, berapa saat diperlukan untuk 1 km?",
           "difficulty": "cabaran",
           "points": 30,
+          "working": "1 km = 1 000 m, iaitu 2.5 kali ganda 400 m. Masa yang diperlukan: 80 × 2.5 = 200 saat.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 1505"
-        },
-        {
-          "id": "t5_c4_q29",
-          "text": "Purata berat 3 orang kanak-kanak ialah 28 kg. Jika seorang kanak-kanak lagi yang mempunyai berat 24 kg turut disertakan, berapakah purata baharu, dalam kg?",
-          "options": [
-            27,
-            26,
-            28,
-            25
-          ],
-          "correctAnswer": 0,
-          "difficulty": "cabaran",
-          "points": 30,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 27"
-        },
-        {
-          "id": "t5_c4_q30",
-          "text": "Sebuah bekas kuboid berukuran panjang 10 unit, lebar 5 unit dan tinggi 6 unit diisi separuh penuh dengan air. Berapakah isipadu air, dalam unit padu, di dalam bekas itu?",
           "options": [],
-          "correctAnswer": 150,
+          "correctAnswer": 200
+        },
+        {
+          "id": "t6_c4_q27",
+          "text": "Purata bacaan hujan selama 6 hari ialah 12 mm. Jika bacaan hari ketujuh ialah 26 mm, berapakah purata baharu, dalam mm?",
           "difficulty": "cabaran",
           "points": 30,
+          "working": "Jumlah enam hari: 12 × 6 = 72 mm. Jumlah tujuh hari: 72 + 26 = 98 mm. Purata baharu: 98 ÷ 7 = 14 mm.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 150"
+          "options": [],
+          "correctAnswer": 14
+        },
+        {
+          "id": "t6_c4_q28",
+          "text": "Sebuah kilang beroperasi 7 jam 30 minit sehari selama 6 hari seminggu. Berapa minitkah jumlah operasi seminggu?",
+          "difficulty": "cabaran",
+          "points": 30,
+          "working": "Sehari: 7 jam 30 minit = 450 minit. Seminggu: 450 × 6 = 2 700 minit.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 2700
+        },
+        {
+          "id": "t6_c4_q29",
+          "text": "Sebuah tangki berisi 3/5 daripada kapasiti 250 liter. Berapakah liter air lagi diperlukan untuk memenuhkannya?",
+          "difficulty": "cabaran",
+          "points": 30,
+          "working": "Air sedia ada: 250 ÷ 5 × 3 = 150 liter. Baki ruang: 250 − 150 = 100 liter.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 100
+        },
+        {
+          "id": "t6_c4_q30",
+          "text": "Dua buah kereta bertolak serentak. Kereta A bergerak 60 km sejam dan kereta B 75 km sejam. Selepas 4 jam, berapakah beza jarak mereka, dalam km?",
+          "difficulty": "cabaran",
+          "points": 30,
+          "working": "Jarak A: 60 × 4 = 240 km. Jarak B: 75 × 4 = 300 km. Bezanya 300 − 240 = 60 km.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 60
         }
       ]
     },
     {
-      "id": "d5-b5",
-      "title": "Ruang, Koordinat & Data",
+      "id": "d6-b5",
+      "title": "Ruang, Koordinat, Nisbah & Data",
       "glyph": "bentuk",
       "questions": [
         {
-          "id": "t5_c5_q1",
-          "text": "Berapakah bilangan sisi yang ada pada bentuk ini?",
-          "options": [],
-          "correctAnswer": 3,
+          "id": "t6_c5_q1",
+          "text": "Berapakah bilangan permukaan bagi sebuah kuboid?",
           "difficulty": "mudah",
           "points": 10,
+          "working": "Kuboid mempunyai 6 permukaan berbentuk segi empat tepat, iaitu atas, bawah dan empat sisi.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 3"
+          "options": [],
+          "correctAnswer": 6
         },
         {
-          "id": "t5_c5_q2",
-          "text": "Apakah nama poligon yang mempunyai 5 sisi?",
+          "id": "t6_c5_q2",
+          "text": "Titik C berada pada koordinat (4, 9). Apakah nilai y bagi titik C?",
+          "difficulty": "mudah",
+          "points": 10,
+          "working": "Koordinat ditulis dalam bentuk (x, y). Nombor kedua ialah nilai y, jadi bagi (4, 9) nilai y ialah 9.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 9
+        },
+        {
+          "id": "t6_c5_q3",
+          "text": "Nisbah 4 : 8 dalam bentuk termudah ialah?",
+          "difficulty": "mudah",
+          "points": 10,
+          "working": "Bahagi kedua-dua belah dengan faktor sepunya terbesar, iaitu 4. Maka 4 : 8 menjadi 1 : 2.",
+          "type": "mcq",
           "options": [
-            "Pentagon",
+            "4 : 2",
+            "1 : 2",
+            "2 : 4",
+            "1 : 4"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": "t6_c5_q4",
+          "text": "Isipadu sebuah kubus bersisi 3 cm ialah berapa cm padu?",
+          "difficulty": "mudah",
+          "points": 10,
+          "working": "Isipadu kubus = sisi × sisi × sisi = 3 × 3 × 3 = 27 cm padu.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 27
+        },
+        {
+          "id": "t6_c5_q5",
+          "text": "Berapakah bilangan bucu bagi sebuah kubus?",
+          "difficulty": "mudah",
+          "points": 10,
+          "working": "Kubus mempunyai 8 bucu, iaitu titik pertemuan tiga tepi.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 8
+        },
+        {
+          "id": "t6_c5_q6",
+          "text": "Perimeter sebuah segi empat sama bersisi 9 cm ialah berapa cm?",
+          "difficulty": "mudah",
+          "points": 10,
+          "working": "Segi empat sama ada 4 sisi yang sama panjang. Perimeter = 4 × 9 = 36 cm.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 36
+        },
+        {
+          "id": "t6_c5_q7",
+          "text": "Apakah min bagi data 4, 6, 8 dan 10?",
+          "difficulty": "mudah",
+          "points": 10,
+          "working": "Campurkan semua: 4 + 6 + 8 + 10 = 28. Bahagi dengan bilangan data: 28 ÷ 4 = 7.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 7
+        },
+        {
+          "id": "t6_c5_q8",
+          "text": "Poligon yang mempunyai 8 sisi dinamakan?",
+          "difficulty": "mudah",
+          "points": 10,
+          "working": "Poligon dinamakan mengikut bilangan sisi. Poligon dengan 8 sisi ialah oktagon.",
+          "type": "mcq",
+          "options": [
             "Heksagon",
-            "Sisi Empat",
-            "Segi Tiga"
-          ],
-          "correctAnswer": 0,
-          "difficulty": "mudah",
-          "points": 10,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: Pentagon"
-        },
-        {
-          "id": "t5_c5_q3",
-          "text": "Berapakah perimeter, dalam unit, bagi segi empat tepat ini?",
-          "options": [],
-          "correctAnswer": 14,
-          "difficulty": "mudah",
-          "points": 10,
-          "type": "input",
-          "working": "Jawapan yang betul adalah: 14"
-        },
-        {
-          "id": "t5_c5_q4",
-          "text": "Berapakah darjah bagi satu sudut tegak?",
-          "options": [
-            90,
-            180,
-            45,
-            360
-          ],
-          "correctAnswer": 0,
-          "difficulty": "mudah",
-          "points": 10,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 90"
-        },
-        {
-          "id": "t5_c5_q5",
-          "text": "Titik A berada pada koordinat (3, 5). Apakah nilai x bagi titik A?",
-          "options": [],
-          "correctAnswer": 3,
-          "difficulty": "mudah",
-          "points": 10,
-          "type": "input",
-          "working": "Jawapan yang betul ialah: 3"
-        },
-        {
-          "id": "t5_c5_q6",
-          "text": "Berapakah bilangan bucu bagi sebuah heksagon?",
-          "options": [
-            6,
-            5,
-            7,
-            8
-          ],
-          "correctAnswer": 0,
-          "difficulty": "mudah",
-          "points": 10,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 6"
-        },
-        {
-          "id": "t5_c5_q7",
-          "text": "Berapakah luas, dalam unit persegi, bentuk segi empat tepat ini?",
-          "options": [],
-          "correctAnswer": 10,
-          "difficulty": "mudah",
-          "points": 10,
-          "type": "input",
-          "working": "Jawapan yang betul adalah: 10"
-        },
-        {
-          "id": "t5_c5_q8",
-          "text": "Titik B berada pada koordinat (2, 7). Apakah nilai y bagi titik B?",
-          "options": [],
-          "correctAnswer": 7,
-          "difficulty": "mudah",
-          "points": 10,
-          "type": "input",
-          "working": "Jawapan yang betul ialah: 7"
-        },
-        {
-          "id": "t5_c5_q9",
-          "text": "Sebuah carta palang menunjukkan jualan buku: Isnin 20, Selasa 35, Rabu 15. Berapakah jumlah jualan buku bagi ketiga-tiga hari itu?",
-          "options": [],
-          "correctAnswer": 70,
-          "difficulty": "mudah",
-          "points": 10,
-          "type": "input",
-          "working": "Jawapan yang betul adalah: 70"
-        },
-        {
-          "id": "t5_c5_q10",
-          "text": "Bentuk manakah mempunyai empat sisi sama panjang dan empat sudut tegak?",
-          "options": [
-            "Segi Empat Sama",
-            "Segi Tiga",
             "Pentagon",
-            "Bulatan"
+            "Oktagon",
+            "Heptagon"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2
+        },
+        {
+          "id": "t6_c5_q9",
+          "text": "Luas sebuah segi empat tepat 12 cm × 5 cm ialah berapa cm persegi?",
           "difficulty": "mudah",
           "points": 10,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: Segi Empat Sama"
+          "working": "Luas segi empat tepat = panjang × lebar = 12 × 5 = 60 cm persegi.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 60
         },
         {
-          "id": "t5_c5_q11",
-          "text": "Sebuah taman berbentuk segi empat tepat mempunyai panjang 6 unit dan lebar 4 unit. Berapakah luas taman itu, dalam unit persegi?",
+          "id": "t6_c5_q10",
+          "text": "Dalam data 3, 5, 5, 7, 9, apakah modnya?",
+          "difficulty": "mudah",
+          "points": 10,
+          "working": "Mod ialah nilai yang paling kerap muncul. Nilai 5 muncul dua kali, lebih daripada yang lain.",
+          "type": "input",
           "options": [],
-          "correctAnswer": 24,
+          "correctAnswer": 5
+        },
+        {
+          "id": "t6_c5_q11",
+          "text": "Nisbah bilangan murid lelaki kepada perempuan ialah 3 : 5. Jika ada 24 murid lelaki, berapakah bilangan murid perempuan?",
           "difficulty": "sederhana",
           "points": 20,
+          "working": "Satu bahagian bersamaan 24 ÷ 3 = 8 murid. Murid perempuan ialah 5 bahagian: 8 × 5 = 40 orang.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 24"
+          "options": [],
+          "correctAnswer": 40
         },
         {
-          "id": "t5_c5_q12",
-          "text": "Berapakah jumlah semua sudut dalam sebuah segi tiga, dalam darjah?",
+          "id": "t6_c5_q12",
+          "text": "Isipadu sebuah kuboid 8 cm × 5 cm × 4 cm ialah berapa cm padu?",
+          "difficulty": "sederhana",
+          "points": 20,
+          "working": "Isipadu kuboid = panjang × lebar × tinggi = 8 × 5 × 4 = 160 cm padu.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 160
+        },
+        {
+          "id": "t6_c5_q13",
+          "text": "Dalam data 12, 15, 18, 20, 25, apakah medianya?",
+          "difficulty": "sederhana",
+          "points": 20,
+          "working": "Data sudah tersusun menaik. Median ialah nilai di tengah, iaitu nilai ketiga daripada lima, iaitu 18.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 18
+        },
+        {
+          "id": "t6_c5_q14",
+          "text": "Perimeter sebuah segi empat tepat ialah 46 cm. Jika lebarnya 8 cm, berapakah panjangnya, dalam cm?",
+          "difficulty": "sederhana",
+          "points": 20,
+          "working": "Perimeter = 2 × (panjang + lebar), jadi 46 = 2 × (panjang + 8). Bahagi dua: 23 = panjang + 8. Maka panjang = 23 − 8 = 15 cm.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 15
+        },
+        {
+          "id": "t6_c5_q15",
+          "text": "Titik A(2, 3) dan titik B(2, 11). Berapakah jarak menegak antara kedua-dua titik, dalam unit?",
+          "difficulty": "sederhana",
+          "points": 20,
+          "working": "Kedua-dua titik mempunyai nilai x yang sama, jadi kira beza nilai y: 11 − 3 = 8 unit.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 8
+        },
+        {
+          "id": "t6_c5_q16",
+          "text": "Wang RM540 dibahagi mengikut nisbah 2 : 7. Berapakah bahagian yang lebih besar, dalam RM?",
+          "difficulty": "sederhana",
+          "points": 20,
+          "working": "Jumlah bahagian ialah 2 + 7 = 9. Satu bahagian: RM540 ÷ 9 = RM60. Bahagian besar: 7 × RM60 = RM420.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 420
+        },
+        {
+          "id": "t6_c5_q17",
+          "text": "Sebuah carta pai menunjukkan 25% suka bola sepak daripada 200 murid. Berapakah bilangan murid itu?",
+          "difficulty": "sederhana",
+          "points": 20,
+          "working": "Kira 25/100 × 200 = 50 orang murid.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 50
+        },
+        {
+          "id": "t6_c5_q18",
+          "text": "Luas sebuah segi tiga bertapak 14 cm dan tinggi 9 cm ialah berapa cm persegi?",
+          "difficulty": "sederhana",
+          "points": 20,
+          "working": "Luas segi tiga = (tapak × tinggi) ÷ 2 = (14 × 9) ÷ 2 = 126 ÷ 2 = 63 cm persegi.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 63
+        },
+        {
+          "id": "t6_c5_q19",
+          "text": "Sebuah kotak kuboid berisipadu 240 cm padu dengan tapak 12 cm × 5 cm. Berapakah tingginya, dalam cm?",
+          "difficulty": "sederhana",
+          "points": 20,
+          "working": "Luas tapak: 12 × 5 = 60 cm persegi. Tinggi = isipadu dibahagi luas tapak: 240 ÷ 60 = 4 cm.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 4
+        },
+        {
+          "id": "t6_c5_q20",
+          "text": "Nisbah 15 : 25 : 35 dalam bentuk termudah ialah?",
+          "difficulty": "sederhana",
+          "points": 20,
+          "working": "Faktor sepunya terbesar bagi 15, 25 dan 35 ialah 5. Bahagi semuanya dengan 5: 3 : 5 : 7.",
+          "type": "mcq",
           "options": [
-            180,
-            360,
-            90,
-            270
+            "15 : 5 : 7",
+            "1 : 2 : 3",
+            "3 : 5 : 7",
+            "5 : 7 : 9"
           ],
-          "correctAnswer": 0,
-          "difficulty": "sederhana",
-          "points": 20,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 180"
+          "correctAnswer": 2
         },
         {
-          "id": "t5_c5_q13",
-          "text": "Sebuah bentuk komposit terdiri daripada segi empat tepat 8 unit × 5 unit dengan sebuah segi empat 2 unit × 2 unit dipotong daripada sudutnya. Berapakah luas bentuk itu, dalam unit persegi?",
-          "options": [],
-          "correctAnswer": 36,
-          "difficulty": "sederhana",
-          "points": 20,
-          "type": "input",
-          "working": "Jawapan yang betul adalah: 36"
-        },
-        {
-          "id": "t5_c5_q14",
-          "text": "Titik P berada 3 unit ke kanan dan 4 unit ke atas daripada titik asalan (0,0). Apakah koordinat titik P?",
-          "options": [
-            "(3, 4)",
-            "(4, 3)",
-            "(0, 3)",
-            "(3, 0)"
-          ],
-          "correctAnswer": 0,
-          "difficulty": "sederhana",
-          "points": 20,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: (3, 4)"
-        },
-        {
-          "id": "t5_c5_q15",
-          "text": "Berapakah perimeter, dalam unit, bentuk segi empat tepat ini?",
-          "options": [],
-          "correctAnswer": 20,
-          "difficulty": "sederhana",
-          "points": 20,
-          "type": "input",
-          "working": "Jawapan yang betul adalah: 20"
-        },
-        {
-          "id": "t5_c5_q16",
-          "text": "Sebuah carta palang menunjukkan bilangan buah-buahan yang dijual: Epal 45, Oren 30, Pisang 60. Buah manakah yang paling banyak dijual?",
-          "options": [
-            "Pisang",
-            "Epal",
-            "Oren",
-            "Sama banyak"
-          ],
-          "correctAnswer": 0,
-          "difficulty": "sederhana",
-          "points": 20,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: Pisang"
-        },
-        {
-          "id": "t5_c5_q17",
-          "text": "Dalam sebuah piktograf, setiap simbol ðŸŽ mewakili 10 biji epal. Jika terdapat 6 simbol bagi hari Isnin, berapakah bilangan epal yang dijual pada hari Isnin?",
-          "options": [],
-          "correctAnswer": 60,
-          "difficulty": "sederhana",
-          "points": 20,
-          "type": "input",
-          "working": "Jawapan yang betul adalah: 60"
-        },
-        {
-          "id": "t5_c5_q18",
-          "text": "Sebuah poligon mempunyai 4 sisi tetapi sisinya tidak sama panjang. Manakah antara berikut yang PALING sesuai menerangkan poligon ini?",
-          "options": [
-            "Sisi Empat Tak Sekata",
-            "Segi Empat Sama",
-            "Segi Tiga",
-            "Pentagon"
-          ],
-          "correctAnswer": 0,
-          "difficulty": "sederhana",
-          "points": 20,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: Sisi Empat Tak Sekata"
-        },
-        {
-          "id": "t5_c5_q19",
-          "text": "Titik Q berada pada (5, 2) dan titik R berada pada (5, 9). Berapakah jarak menegak antara Q dan R, dalam unit?",
-          "options": [],
-          "correctAnswer": 7,
-          "difficulty": "sederhana",
-          "points": 20,
-          "type": "input",
-          "working": "Jawapan yang betul adalah: 7"
-        },
-        {
-          "id": "t5_c5_q20",
-          "text": "Sebuah carta palang menunjukkan markah 4 orang murid: Ali 70, Ben 85, Cindy 60, Dan 90. Berapakah beza markah antara murid tertinggi dan terendah?",
-          "options": [],
-          "correctAnswer": 30,
-          "difficulty": "sederhana",
-          "points": 20,
-          "type": "input",
-          "working": "Jawapan yang betul adalah: 30"
-        },
-        {
-          "id": "t5_c5_q21",
-          "text": "Sebuah bentuk komposit dibentuk oleh segi empat tepat 10 unit × 6 unit dengan sebuah segi tiga bersudut tegak (kaki 4 unit dan 6 unit) ditambah pada satu sisi. Berapakah luas keseluruhan bentuk itu, dalam unit persegi?",
-          "options": [],
-          "correctAnswer": 72,
+          "id": "t6_c5_q21",
+          "text": "Sebuah bentuk komposit terdiri daripada segi empat tepat 12 unit × 7 unit dengan segi empat sama bersisi 3 unit dipotong dari satu sudut. Berapakah luasnya, dalam unit persegi?",
           "difficulty": "cabaran",
           "points": 30,
+          "working": "Luas segi empat tepat: 12 × 7 = 84 unit persegi. Luas yang dipotong: 3 × 3 = 9. Baki: 84 − 9 = 75 unit persegi.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 72"
-        },
-        {
-          "id": "t5_c5_q22",
-          "text": "Poligon manakah mempunyai jumlah sudut dalam bersamaan 360 darjah?",
-          "options": [
-            "Sisi Empat",
-            "Segi Tiga",
-            "Pentagon",
-            "Heksagon"
-          ],
-          "correctAnswer": 0,
-          "difficulty": "cabaran",
-          "points": 30,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: Sisi Empat"
-        },
-        {
-          "id": "t5_c5_q23",
-          "text": "Sebuah dewan berbentuk segi empat tepat berukuran 9 unit × 5 unit. Jika perimeter dewan itu perlu dipagar dengan kos RM4 seunit panjang, berapakah jumlah kos memagar keseluruhan dewan itu, dalam RM?",
           "options": [],
-          "correctAnswer": 112,
+          "correctAnswer": 75
+        },
+        {
+          "id": "t6_c5_q22",
+          "text": "Titik P(1, 2), Q(7, 2) dan R(7, 6) membentuk sebuah segi tiga bersudut tegak. Berapakah luasnya, dalam unit persegi?",
           "difficulty": "cabaran",
           "points": 30,
+          "working": "Tapak PQ ialah 7 − 1 = 6 unit dan tinggi QR ialah 6 − 2 = 4 unit. Luas = (6 × 4) ÷ 2 = 12 unit persegi.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 112"
-        },
-        {
-          "id": "t5_c5_q24",
-          "text": "Titik A(2,3), titik B(2,8) dan titik C(6,3) membentuk sebuah segi tiga bersudut tegak. Berapakah luas segi tiga itu, dalam unit persegi?",
-          "options": [
-            10,
-            20,
-            9,
-            14
-          ],
-          "correctAnswer": 0,
-          "difficulty": "cabaran",
-          "points": 30,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 10"
-        },
-        {
-          "id": "t5_c5_q25",
-          "text": "Sebuah carta palang menunjukkan jualan minggu ini: Isnin 40, Selasa 55, Rabu 25, Khamis 60. Berapakah purata jualan sehari bagi keempat-empat hari itu?",
           "options": [],
-          "correctAnswer": 45,
+          "correctAnswer": 12
+        },
+        {
+          "id": "t6_c5_q23",
+          "text": "Umur Ali dan Bakar dalam nisbah 3 : 4. Jika jumlah umur mereka 42 tahun, berapakah umur Bakar?",
           "difficulty": "cabaran",
           "points": 30,
+          "working": "Jumlah bahagian ialah 3 + 4 = 7. Satu bahagian: 42 ÷ 7 = 6 tahun. Umur Bakar: 4 × 6 = 24 tahun.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 45"
-        },
-        {
-          "id": "t5_c5_q26",
-          "text": "Sebuah bentuk komposit terdiri daripada segi empat sama bersisi 6 unit dengan segi empat sama kecil bersisi 2 unit dipotong dari satu sudut. Berapakah luas baki bentuk itu, dalam unit persegi?",
-          "options": [
-            32,
-            34,
-            30,
-            28
-          ],
-          "correctAnswer": 0,
-          "difficulty": "cabaran",
-          "points": 30,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 32"
-        },
-        {
-          "id": "t5_c5_q27",
-          "text": "Piktograf menunjukkan bilangan buku yang dibaca murid dalam sebulan, setiap simbol ðŸ“– mewakili 5 buku. Ali mempunyai 4 simbol dan Mira mempunyai 6 simbol. Berapakah lebih banyak buku yang dibaca Mira berbanding Ali?",
           "options": [],
-          "correctAnswer": 10,
+          "correctAnswer": 24
+        },
+        {
+          "id": "t6_c5_q24",
+          "text": "Sebuah akuarium kuboid berukuran 50 cm × 30 cm × 40 cm diisi air sehingga 3/4 penuh. Berapakah isipadu air, dalam liter?",
           "difficulty": "cabaran",
           "points": 30,
+          "working": "Isipadu penuh: 50 × 30 × 40 = 60 000 cm padu, iaitu 60 liter. Air ialah 3/4 daripadanya: 60 ÷ 4 × 3 = 45 liter.",
           "type": "input",
-          "working": "Jawapan yang betul adalah: 10"
-        },
-        {
-          "id": "t5_c5_q28",
-          "text": "Sebuah taman berbentuk segi empat tepat mempunyai perimeter 40 unit. Jika panjangnya 12 unit, berapakah lebarnya, dalam unit?",
-          "options": [
-            8,
-            14,
-            28,
-            4
-          ],
-          "correctAnswer": 0,
-          "difficulty": "cabaran",
-          "points": 30,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: 8"
-        },
-        {
-          "id": "t5_c5_q29",
-          "text": "Titik asalan (0,0), titik D(0,6) dan titik E(8,0) membentuk sebuah segi tiga bersudut tegak. Berapakah luas segi tiga itu, dalam unit persegi?",
           "options": [],
-          "correctAnswer": 24,
-          "difficulty": "cabaran",
-          "points": 30,
-          "type": "input",
-          "working": "Jawapan yang betul adalah: 24"
+          "correctAnswer": 45
         },
         {
-          "id": "t5_c5_q30",
-          "text": "Sebuah carta palang menunjukkan bilangan pelawat ke sebuah muzium selama 3 hari: Jumaat 120, Sabtu 200, Ahad 180. Jika sasaran jumlah pelawat bagi 3 hari itu ialah 550, adakah sasaran itu tercapai?",
-          "options": [
-            "Tidak tercapai, kurang 50",
-            "Tercapai",
-            "Tidak tercapai, kurang 100",
-            "Tercapai, lebih 50"
-          ],
-          "correctAnswer": 0,
+          "id": "t6_c5_q25",
+          "text": "Min bagi lima nombor ialah 24. Jika empat nombor pertama ialah 20, 26, 22 dan 30, berapakah nombor kelima?",
           "difficulty": "cabaran",
           "points": 30,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: Tidak tercapai, kurang 50"
+          "working": "Jumlah lima nombor: 24 × 5 = 120. Jumlah empat nombor pertama: 20 + 26 + 22 + 30 = 98. Nombor kelima: 120 − 98 = 22.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 22
+        },
+        {
+          "id": "t6_c5_q26",
+          "text": "Sebuah carta palang menunjukkan jualan: Isnin 45, Selasa 60, Rabu 35, Khamis 40. Berapakah purata jualan sehari?",
+          "difficulty": "cabaran",
+          "points": 30,
+          "working": "Campurkan semua: 45 + 60 + 35 + 40 = 180. Bahagi dengan 4 hari: 180 ÷ 4 = 45.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 45
+        },
+        {
+          "id": "t6_c5_q27",
+          "text": "Perimeter sebuah segi empat sama ialah 48 cm. Berapakah luasnya, dalam cm persegi?",
+          "difficulty": "cabaran",
+          "points": 30,
+          "working": "Sisi segi empat sama: 48 ÷ 4 = 12 cm. Luas = 12 × 12 = 144 cm persegi.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 144
+        },
+        {
+          "id": "t6_c5_q28",
+          "text": "Nisbah wang Ahmad kepada Siti ialah 5 : 3. Selepas Ahmad memberi RM20 kepada Siti, wang mereka menjadi sama. Berapakah wang asal Ahmad, dalam RM?",
+          "difficulty": "cabaran",
+          "points": 30,
+          "working": "Beza asal ialah 2 bahagian. Selepas pindah RM20, beza berkurang RM40, jadi 2 bahagian = RM40 dan 1 bahagian = RM20. Wang Ahmad: 5 × RM20 = RM100.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 100
+        },
+        {
+          "id": "t6_c5_q29",
+          "text": "Sebuah kotak kuboid 24 cm × 18 cm × 12 cm diisi penuh kubus kecil bersisi 6 cm. Berapakah bilangan kubus kecil itu?",
+          "difficulty": "cabaran",
+          "points": 30,
+          "working": "Sepanjang setiap tepi: 24 ÷ 6 = 4, 18 ÷ 6 = 3 dan 12 ÷ 6 = 2. Bilangan kubus: 4 × 3 × 2 = 24.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 24
+        },
+        {
+          "id": "t6_c5_q30",
+          "text": "Dalam sebuah carta pai bagi 360 murid, sudut bagi bahagian 'suka membaca' ialah 90 darjah. Berapakah bilangan murid itu?",
+          "difficulty": "cabaran",
+          "points": 30,
+          "working": "Sudut 90 darjah ialah 90/360, iaitu 1/4 daripada keseluruhan. Kira 360 ÷ 4 = 90 orang murid.",
+          "type": "input",
+          "options": [],
+          "correctAnswer": 90
         }
       ]
     }

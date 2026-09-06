@@ -1,54 +1,35 @@
 import React from 'react';
 import { getLanguageService } from '../services/languageService';
 
+/**
+ * Language picker.
+ *
+ * The buttons used to be white text on a translucent white fill, which made
+ * every unselected language invisible on the light settings panel. They now
+ * use the shared level-tile classes, so the selected one is the only thing
+ * carrying the accent.
+ */
 function LanguageSelector({ onLanguageChange }) {
   const ls = getLanguageService();
-  const currentLanguage = ls.getLanguage();
+  const current = ls.getLanguage();
   const languages = ls.getAvailableLanguages();
 
-  const handleLanguageChange = (lang) => {
-    ls.setLanguage(lang);
-    if (onLanguageChange) {
-      onLanguageChange(lang);
-    }
+  const pick = (code) => {
+    ls.setLanguage(code);
+    if (onLanguageChange) onLanguageChange(code);
   };
 
   return (
-    <div style={{
-      display: 'flex',
-      gap: '10px',
-      justifyContent: 'center',
-      flexWrap: 'wrap'
-    }}>
+    <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
       {languages.map((lang) => (
         <button
           key={lang.code}
-          onClick={() => handleLanguageChange(lang.code)}
-          style={{
-            padding: '8px 16px',
-            borderRadius: '8px',
-            border: currentLanguage === lang.code ? '3px solid white' : '2px solid rgba(255,255,255,0.5)',
-            background: currentLanguage === lang.code
-              ? 'linear-gradient(135deg, #FF6B35 0%, #8338EC 100%)'
-              : 'rgba(255,255,255,0.1)',
-            color: 'white',
-            fontWeight: currentLanguage === lang.code ? 'bold' : 'normal',
-            cursor: 'pointer',
-            transition: 'all 0.2s ease',
-            fontSize: '0.95rem'
-          }}
-          onMouseEnter={(e) => {
-            if (currentLanguage !== lang.code) {
-              e.currentTarget.style.background = 'rgba(255,255,255,0.2)';
-            }
-          }}
-          onMouseLeave={(e) => {
-            if (currentLanguage !== lang.code) {
-              e.currentTarget.style.background = 'rgba(255,255,255,0.1)';
-            }
-          }}
+          onClick={() => pick(lang.code)}
+          className={current === lang.code ? 'level level--next' : 'level'}
+          style={{ flex: '1 1 120px' }}
+          aria-pressed={current === lang.code}
         >
-          {lang.name}
+          <span className="level__name">{lang.name}</span>
         </button>
       ))}
     </div>
