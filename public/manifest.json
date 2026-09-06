@@ -8,10 +8,13 @@
   "start_url": "/matematik-kilat/",
   "scope": "/matematik-kilat/",
   "display": "standalone",
-  "background_color": "#FF9F1C",
-  "theme_color": "#F4581E",
+  "background_color": "#17225A",
+  "theme_color": "#17225A",
   "orientation": "portrait",
-  "categories": ["education", "games"],
+  "categories": [
+    "education",
+    "games"
+  ],
   "icons": [
     {
       "src": "/matematik-kilat/icon-192.png",

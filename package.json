@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "extract-questions": "node extract-questions.js",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "build:docs": "vite build && node build-docs.js"
   },
   "dependencies": {
     "react": "^18.2.0",

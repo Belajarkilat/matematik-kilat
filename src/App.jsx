@@ -54,15 +54,12 @@ function App() {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        minHeight: '100vh',
-        background: 'linear-gradient(135deg, #FF6B35 0%, #8338EC 100%)',
-        color: 'white',
-        fontSize: '1.2rem'
+        minHeight: '100vh'
       }}>
         <div style={{ textAlign: 'center' }}>
-          <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>⚡</div>
-          <h1>Matematik Kilat</h1>
-          <p>Sedang memuatkan...</p>
+          <div style={{ fontSize: '3rem', marginBottom: '0.5rem' }}>⚡</div>
+          <h1 className="page__title">Matematik Kilat</h1>
+          <p className="page__sub">Sedang memuatkan...</p>
         </div>
       </div>
     );
@@ -77,7 +74,7 @@ function App() {
       <Routes>
         <Route path="/" element={activeProfile ? <Navigate to="/hub" /> : <ProfileSelector onProfileChange={handleProfileChange} />} />
         <Route path="/new-profile" element={<ProfileSelector onProfileChange={handleProfileChange} />} />
-        <Route path="/avatar" element={activeProfile ? <AvatarBuilder profile={activeProfile} /> : <Navigate to="/" />} />
+        <Route path="/avatar" element={activeProfile ? <AvatarBuilder profile={activeProfile} onProfileChange={handleProfileChange} /> : <Navigate to="/" />} />
         <Route path="/settings" element={<Settings />} />
         {import.meta.env.DEV && (
           <Route path="/dev/visuals" element={<VisualGallery />} />

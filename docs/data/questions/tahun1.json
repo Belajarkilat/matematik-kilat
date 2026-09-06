@@ -11,46 +11,64 @@
           "id": "t1_c1_q1",
           "text": "Berapakah nombor ini?",
           "options": [
-            23,
-            32,
             20,
-            3
+            3,
+            23,
+            32
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 23"
+          "working": "Kira setiap nilai tempat: 2 batang puluh = 20, 3 kiub sa = 3. Campur semuanya jadi 23.",
+          "visual": {
+            "type": "base10",
+            "hundreds": 0,
+            "tens": 2,
+            "ones": 3
+          }
         },
         {
           "id": "t1_c1_q2",
           "text": "Berapakah nombor ini?",
           "options": [
             15,
+            5,
             51,
-            10,
-            5
+            10
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 15"
+          "working": "Kira setiap nilai tempat: 1 batang puluh = 10, 5 kiub sa = 5. Campur semuanya jadi 15.",
+          "visual": {
+            "type": "base10",
+            "hundreds": 0,
+            "tens": 1,
+            "ones": 5
+          }
         },
         {
           "id": "t1_c1_q3",
           "text": "Berapakah nombor ini?",
           "options": [
-            40,
-            4,
             14,
-            44
+            44,
+            4,
+            40
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 40"
+          "working": "Kira setiap nilai tempat: 4 batang puluh = 40. Campur semuanya jadi 40.",
+          "visual": {
+            "type": "base10",
+            "hundreds": 0,
+            "tens": 4,
+            "ones": 0
+          }
         },
         {
           "id": "t1_c1_q4",
@@ -60,7 +78,7 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Sila tulis: 20"
+          "working": "Nombor selepas 19 ialah satu lebih: 19 + 1 = 20."
         },
         {
           "id": "t1_c1_q5",
@@ -70,20 +88,20 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Sila tulis: 29"
+          "working": "Nombor sebelum 30 ialah satu kurang: 30 − 1 = 29."
         },
         {
           "id": "t1_c1_q6",
           "text": "Nombor manakah lebih besar, 12 atau 21?",
           "options": [
-            12,
-            21
+            21,
+            12
           ],
-          "correctAnswer": 1,
+          "correctAnswer": 0,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 21"
+          "working": "Bandingkan digit dari kiri. Disusun dari yang paling besar: 21 , 12. Jadi jawapannya 21."
         },
         {
           "id": "t1_c1_q7",
@@ -96,7 +114,7 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 45"
+          "working": "Bandingkan digit dari kiri. Disusun dari yang paling kecil: 45 , 54. Jadi jawapannya 45."
         },
         {
           "id": "t1_c1_q8",
@@ -106,7 +124,7 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 10"
+          "working": "Nombor selepas 9 ialah satu lebih: 9 + 1 = 10."
         },
         {
           "id": "t1_c1_q9",
@@ -116,22 +134,22 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 40"
+          "working": "Corak ini naik 10 setiap kali: 10, 20, 30. Jadi selepas 30 ialah 30 + 10 = 40."
         },
         {
           "id": "t1_c1_q10",
           "text": "Manakah nombor genap?",
           "options": [
-            7,
-            8,
             9,
+            8,
+            7,
             5
           ],
           "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 8"
+          "working": "Nombor genap berakhir dengan 0, 2, 4, 6 atau 8. 8 berakhir dengan 8, jadi ia genap."
         },
         {
           "id": "t1_c1_q11",
@@ -141,7 +159,7 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 6"
+          "working": "Tempat puluh bernilai 10. Dalam 67, digit di kedudukan itu ialah 6."
         },
         {
           "id": "t1_c1_q12",
@@ -151,7 +169,7 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 7"
+          "working": "Tempat sa bernilai 1. Dalam 67, digit di kedudukan itu ialah 7."
         },
         {
           "id": "t1_c1_q13",
@@ -161,35 +179,35 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 8"
+          "working": "Tempat puluh bernilai 10. Dalam 89, digit di kedudukan itu ialah 8."
         },
         {
           "id": "t1_c1_q14",
-          "text": "Antara 34, 43, 24 â€” yang manakah paling besar?",
+          "text": "Antara 34, 43, 24 — yang manakah paling besar?",
           "options": [
-            34,
+            24,
             43,
-            24
+            34
           ],
           "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 43"
+          "working": "Bandingkan digit dari kiri. Disusun dari besar ke kecil: 43, 34, 24. Jawapannya 43."
         },
         {
           "id": "t1_c1_q15",
-          "text": "Antara 56, 65, 50 â€” yang manakah paling kecil?",
+          "text": "Antara 56, 65, 50 — yang manakah paling kecil?",
           "options": [
-            56,
+            50,
             65,
-            50
+            56
           ],
-          "correctAnswer": 2,
+          "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 50"
+          "working": "Bandingkan digit dari kiri. Disusun dari kecil ke besar: 50, 56, 65. Jawapannya 50."
         },
         {
           "id": "t1_c1_q16",
@@ -199,7 +217,7 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Sila tulis: 80"
+          "working": "Nombor selepas 79 ialah satu lebih: 79 + 1 = 80."
         },
         {
           "id": "t1_c1_q17",
@@ -209,36 +227,42 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Sila tulis: 99"
+          "working": "Nombor sebelum 100 ialah satu kurang: 100 − 1 = 99."
         },
         {
           "id": "t1_c1_q18",
           "text": "Berapakah nombor ini?",
           "options": [
-            72,
+            7,
             27,
             70,
-            7
+            72
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 72"
+          "working": "Kira setiap nilai tempat: 7 batang puluh = 70, 2 kiub sa = 2. Campur semuanya jadi 72.",
+          "visual": {
+            "type": "base10",
+            "hundreds": 0,
+            "tens": 7,
+            "ones": 2
+          }
         },
         {
           "id": "t1_c1_q19",
-          "text": "Antara 38, 83, 3 â€” yang manakah PALING KECIL?",
+          "text": "Antara 38, 83, 3 — yang manakah PALING KECIL?",
           "options": [
-            38,
             83,
-            3
+            3,
+            38
           ],
-          "correctAnswer": 2,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 3"
+          "working": "Bandingkan digit dari kiri. Disusun dari kecil ke besar: 3, 38, 83. Jawapannya 3."
         },
         {
           "id": "t1_c1_q20",
@@ -248,7 +272,7 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 65"
+          "working": "Nilai setiap tempat: 6 puluh = 60, 5 sa = 5. Campurkan semuanya: 65."
         },
         {
           "id": "t1_c1_q21",
@@ -258,22 +282,31 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 41"
+          "working": "Nombor di antara 40 dan 42 ialah 41, kerana 40 + 1 = 41."
         },
         {
           "id": "t1_c1_q22",
           "text": "8, 16, 24, ___. Apakah nombor seterusnya dalam corak ini?",
           "options": [
-            30,
-            32,
             28,
-            34
+            34,
+            32,
+            30
           ],
-          "correctAnswer": 1,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 32"
+          "working": "Setiap kali corak naik 8. Selepas 24, tambah 8 lagi: 24 + 8 = 32.",
+          "visual": {
+            "type": "pattern",
+            "items": [
+              "8",
+              "16",
+              "24",
+              "?"
+            ]
+          }
         },
         {
           "id": "t1_c1_q23",
@@ -286,7 +319,7 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Bakar"
+          "working": "Bandingkan jumlah masing-masing: Amir 45, Bakar 54. Yang paling banyak ialah Bakar."
         },
         {
           "id": "t1_c1_q24",
@@ -296,22 +329,22 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 50"
+          "working": "Nilai setiap tempat: 5 puluh = 50, 0 sa = 0. Campurkan semuanya: 50."
         },
         {
           "id": "t1_c1_q25",
           "text": "Manakah antara berikut adalah nombor GANJIL?",
           "options": [
-            24,
             35,
             42,
+            24,
             60
           ],
-          "correctAnswer": 1,
+          "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 35"
+          "working": "Nombor ganjil berakhir dengan 1, 3, 5, 7 atau 9. 35 berakhir dengan 5, jadi ia ganjil."
         },
         {
           "id": "t1_c1_q26",
@@ -321,20 +354,20 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 60"
+          "working": "Corak ini turun 10 setiap kali: 90, 80, 70. Jadi selepas 70 ialah 70 − 10 = 60."
         },
         {
           "id": "t1_c1_q27",
           "text": "Nombor manakah paling hampir dengan 50: 48 atau 55?",
           "options": [
-            48,
-            55
+            55,
+            48
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 48"
+          "working": "Kira beza dengan 50: 48 beza 2, 55 beza 5. Yang paling hampir ialah 48."
         },
         {
           "id": "t1_c1_q28",
@@ -344,21 +377,21 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 100"
+          "working": "Soalan minta jumlah, jadi campurkan: 1 + 99 = 100."
         },
         {
           "id": "t1_c1_q29",
-          "text": "Antara 77, 17, 71 â€” manakah yang PALING BESAR?",
+          "text": "Antara 77, 17, 71 — manakah yang PALING BESAR?",
           "options": [
-            77,
+            71,
             17,
-            71
+            77
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 77"
+          "working": "Bandingkan digit dari kiri. Disusun dari besar ke kecil: 77, 71, 17. Jawapannya 77."
         },
         {
           "id": "t1_c1_q30",
@@ -368,7 +401,7 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 5"
+          "working": "Soalan minta baki atau beza, jadi tolak: 30 − 25 = 5."
         }
       ]
     },
@@ -385,7 +418,7 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 8"
+          "working": "Tambah 5 dengan 3. Mula dari 5, naik 3 lagi, jadi 5 + 3 = 8."
         },
         {
           "id": "t1_c2_q2",
@@ -395,7 +428,7 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 13"
+          "working": "Tambah 7 dengan 6. Mula dari 7, naik 6 lagi, jadi 7 + 6 = 13."
         },
         {
           "id": "t1_c2_q3",
@@ -405,7 +438,7 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 17"
+          "working": "Tambah 9 dengan 8. Mula dari 9, naik 8 lagi, jadi 9 + 8 = 17."
         },
         {
           "id": "t1_c2_q4",
@@ -415,7 +448,7 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 17"
+          "working": "Tambah 12 dengan 5. Mula dari 12, naik 5 lagi, jadi 12 + 5 = 17."
         },
         {
           "id": "t1_c2_q5",
@@ -425,22 +458,22 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 30"
+          "working": "Tambah 20 dengan 10. Mula dari 20, naik 10 lagi, jadi 20 + 10 = 30."
         },
         {
           "id": "t1_c2_q6",
           "text": "6 + 7 = ?",
           "options": [
-            13,
+            11,
             12,
-            14,
-            11
+            13,
+            14
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 13"
+          "working": "Tambah 6 dengan 7. Mula dari 6, naik 7 lagi, jadi 6 + 7 = 13."
         },
         {
           "id": "t1_c2_q7",
@@ -450,7 +483,7 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 19"
+          "working": "Tambah 15 dengan 4. Mula dari 15, naik 4 lagi, jadi 15 + 4 = 19."
         },
         {
           "id": "t1_c2_q8",
@@ -460,22 +493,22 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 16"
+          "working": "Tambah 8 dengan 8. Mula dari 8, naik 8 lagi, jadi 8 + 8 = 16."
         },
         {
           "id": "t1_c2_q9",
           "text": "10 + 9 = ?",
           "options": [
-            19,
-            18,
+            17,
             20,
-            17
+            18,
+            19
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 19"
+          "working": "Tambah 10 dengan 9. Mula dari 10, naik 9 lagi, jadi 10 + 9 = 19."
         },
         {
           "id": "t1_c2_q10",
@@ -485,7 +518,7 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 50"
+          "working": "Tambah 30 dengan 20. Mula dari 30, naik 20 lagi, jadi 30 + 20 = 50."
         },
         {
           "id": "t1_c2_q11",
@@ -495,7 +528,7 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 38"
+          "working": "Tambah 23 dengan 15. Mula dari 23, naik 15 lagi, jadi 23 + 15 = 38."
         },
         {
           "id": "t1_c2_q12",
@@ -505,22 +538,22 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 56"
+          "working": "Tambah 34 dengan 22. Mula dari 34, naik 22 lagi, jadi 34 + 22 = 56."
         },
         {
           "id": "t1_c2_q13",
           "text": "45 + 30 = ?",
           "options": [
-            75,
+            55,
             65,
             85,
-            55
+            75
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 75"
+          "working": "Tambah 45 dengan 30. Mula dari 45, naik 30 lagi, jadi 45 + 30 = 75."
         },
         {
           "id": "t1_c2_q14",
@@ -530,7 +563,7 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 25"
+          "working": "Tambah 18 dengan 7. Mula dari 18, naik 7 lagi, jadi 18 + 7 = 25."
         },
         {
           "id": "t1_c2_q15",
@@ -540,22 +573,22 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 82"
+          "working": "Tambah 56 dengan 26. Mula dari 56, naik 26 lagi, jadi 56 + 26 = 82."
         },
         {
           "id": "t1_c2_q16",
-          "text": "9 + 8 = ?",
+          "text": "7 + 6 = ?",
           "options": [
-            17,
-            16,
-            18,
-            15
+            13,
+            12,
+            14,
+            11
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 17"
+          "working": "Tambah 7 dengan 6. Mula dari 7, naik 6 lagi, jadi 7 + 6 = 13."
         },
         {
           "id": "t1_c2_q17",
@@ -565,7 +598,7 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 81"
+          "working": "Tambah 62 dengan 19. Mula dari 62, naik 19 lagi, jadi 62 + 19 = 81."
         },
         {
           "id": "t1_c2_q18",
@@ -575,7 +608,7 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 85"
+          "working": "Tambah 47 dengan 38. Mula dari 47, naik 38 lagi, jadi 47 + 38 = 85."
         },
         {
           "id": "t1_c2_q19",
@@ -585,22 +618,22 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 42"
+          "working": "Tambah 29 dengan 13. Mula dari 29, naik 13 lagi, jadi 29 + 13 = 42."
         },
         {
           "id": "t1_c2_q20",
           "text": "50 + 45 = ?",
           "options": [
-            95,
+            105,
             85,
-            90,
-            105
+            95,
+            90
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 95"
+          "working": "Tambah 50 dengan 45. Mula dari 50, naik 45 lagi, jadi 50 + 45 = 95."
         },
         {
           "id": "t1_c2_q21",
@@ -610,7 +643,7 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 45"
+          "working": "Soalan minta jumlah, jadi campurkan: 27 + 18 = 45."
         },
         {
           "id": "t1_c2_q22",
@@ -620,22 +653,22 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 70"
+          "working": "Kira dari kiri ke kanan. 38 + 27 = 65, kemudian 65 + 5 = 70."
         },
         {
           "id": "t1_c2_q23",
           "text": "Nombor manakah bila ditambah dengan 15 akan memberi 40?",
           "options": [
             25,
-            20,
+            15,
             30,
-            15
+            20
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 25"
+          "working": "Soalan minta baki atau beza, jadi tolak: 40 − 15 = 25."
         },
         {
           "id": "t1_c2_q24",
@@ -645,7 +678,7 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 51"
+          "working": "Soalan minta jumlah, jadi campurkan: RM32 + RM19 = RM51."
         },
         {
           "id": "t1_c2_q25",
@@ -655,22 +688,22 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 90"
+          "working": "Tambah 44 dengan 46. Mula dari 44, naik 46 lagi, jadi 44 + 46 = 90."
         },
         {
           "id": "t1_c2_q26",
           "text": "Jumlah dua nombor ialah 60. Satu nombor ialah 35. Berapakah nombor satu lagi?",
           "options": [
-            25,
             30,
+            35,
             20,
-            35
+            25
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 25"
+          "working": "Soalan minta baki atau beza, jadi tolak: 60 − 35 = 25."
         },
         {
           "id": "t1_c2_q27",
@@ -680,7 +713,7 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 98"
+          "working": "Tambah 59 dengan 39. Mula dari 59, naik 39 lagi, jadi 59 + 39 = 98."
         },
         {
           "id": "t1_c2_q28",
@@ -690,22 +723,22 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 81"
+          "working": "Soalan minta jumlah, jadi campurkan: 48 + 33 = 81."
         },
         {
           "id": "t1_c2_q29",
           "text": "67 + 28 = ?",
           "options": [
-            95,
             85,
-            105,
-            90
+            95,
+            90,
+            105
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 95"
+          "working": "Tambah 67 dengan 28. Mula dari 67, naik 28 lagi, jadi 67 + 28 = 95."
         },
         {
           "id": "t1_c2_q30",
@@ -715,7 +748,7 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 75"
+          "working": "Kira dari kiri ke kanan. 25 + 25 = 50, kemudian 50 + 25 = 75."
         }
       ]
     },
@@ -726,228 +759,228 @@
       "questions": [
         {
           "id": "t1_c3_q1",
-          "text": "8 âˆ’ 3 = ?",
+          "text": "8 − 3 = ?",
           "options": [],
           "correctAnswer": 5,
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 5"
+          "working": "Tolak 3 daripada 8. 8 − 3 = 5. Semak: 5 + 3 = 8."
         },
         {
           "id": "t1_c3_q2",
-          "text": "12 âˆ’ 5 = ?",
+          "text": "12 − 5 = ?",
           "options": [],
           "correctAnswer": 7,
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 7"
+          "working": "Tolak 5 daripada 12. 12 − 5 = 7. Semak: 7 + 5 = 12."
         },
         {
           "id": "t1_c3_q3",
-          "text": "15 âˆ’ 7 = ?",
+          "text": "15 − 7 = ?",
           "options": [],
           "correctAnswer": 8,
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 8"
+          "working": "Tolak 7 daripada 15. 15 − 7 = 8. Semak: 8 + 7 = 15."
         },
         {
           "id": "t1_c3_q4",
-          "text": "20 âˆ’ 10 = ?",
+          "text": "20 − 10 = ?",
           "options": [],
           "correctAnswer": 10,
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 10"
+          "working": "Tolak 10 daripada 20. 20 − 10 = 10. Semak: 10 + 10 = 20."
         },
         {
           "id": "t1_c3_q5",
-          "text": "9 âˆ’ 4 = ?",
+          "text": "9 − 4 = ?",
           "options": [
+            3,
             5,
-            4,
             6,
-            3
+            4
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 5"
+          "working": "Tolak 4 daripada 9. 9 − 4 = 5. Semak: 5 + 4 = 9."
         },
         {
           "id": "t1_c3_q6",
-          "text": "18 âˆ’ 6 = ?",
+          "text": "18 − 6 = ?",
           "options": [],
           "correctAnswer": 12,
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 12"
+          "working": "Tolak 6 daripada 18. 18 − 6 = 12. Semak: 12 + 6 = 18."
         },
         {
           "id": "t1_c3_q7",
-          "text": "14 âˆ’ 9 = ?",
+          "text": "14 − 9 = ?",
           "options": [],
           "correctAnswer": 5,
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 5"
+          "working": "Tolak 9 daripada 14. 14 − 9 = 5. Semak: 5 + 9 = 14."
         },
         {
           "id": "t1_c3_q8",
-          "text": "16 âˆ’ 8 = ?",
+          "text": "16 − 8 = ?",
           "options": [
-            8,
+            6,
             7,
-            9,
-            6
+            8,
+            9
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 8"
+          "working": "Tolak 8 daripada 16. 16 − 8 = 8. Semak: 8 + 8 = 16."
         },
         {
           "id": "t1_c3_q9",
-          "text": "25 âˆ’ 5 = ?",
+          "text": "25 − 5 = ?",
           "options": [],
           "correctAnswer": 20,
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 20"
+          "working": "Tolak 5 daripada 25. 25 − 5 = 20. Semak: 20 + 5 = 25."
         },
         {
           "id": "t1_c3_q10",
-          "text": "30 âˆ’ 10 = ?",
+          "text": "30 − 10 = ?",
           "options": [],
           "correctAnswer": 20,
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 20"
+          "working": "Tolak 10 daripada 30. 30 − 10 = 20. Semak: 20 + 10 = 30."
         },
         {
           "id": "t1_c3_q11",
-          "text": "48 âˆ’ 15 = ?",
+          "text": "48 − 15 = ?",
           "options": [],
           "correctAnswer": 33,
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 33"
+          "working": "Tolak 15 daripada 48. 48 − 15 = 33. Semak: 33 + 15 = 48."
         },
         {
           "id": "t1_c3_q12",
-          "text": "76 âˆ’ 24 = ?",
+          "text": "76 − 24 = ?",
           "options": [],
           "correctAnswer": 52,
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 52"
+          "working": "Tolak 24 daripada 76. 76 − 24 = 52. Semak: 52 + 24 = 76."
         },
         {
           "id": "t1_c3_q13",
-          "text": "90 âˆ’ 40 = ?",
+          "text": "90 − 40 = ?",
           "options": [
+            40,
             50,
             60,
-            40,
             45
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 50"
+          "working": "Tolak 40 daripada 90. 90 − 40 = 50. Semak: 50 + 40 = 90."
         },
         {
           "id": "t1_c3_q14",
-          "text": "33 âˆ’ 8 = ?",
+          "text": "33 − 8 = ?",
           "options": [],
           "correctAnswer": 25,
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 25"
+          "working": "Tolak 8 daripada 33. 33 − 8 = 25. Semak: 25 + 8 = 33."
         },
         {
           "id": "t1_c3_q15",
-          "text": "82 âˆ’ 37 = ?",
+          "text": "82 − 37 = ?",
           "options": [],
           "correctAnswer": 45,
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 45"
+          "working": "Tolak 37 daripada 82. 82 − 37 = 45. Semak: 45 + 37 = 82."
         },
         {
           "id": "t1_c3_q16",
-          "text": "15 âˆ’ 7 = ?",
+          "text": "16 − 9 = ?",
           "options": [
             8,
-            7,
             9,
+            7,
             6
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 8"
+          "working": "Tolak 9 daripada 16. 16 − 9 = 7. Semak: 7 + 9 = 16."
         },
         {
           "id": "t1_c3_q17",
-          "text": "100 âˆ’ 45 = ?",
+          "text": "100 − 45 = ?",
           "options": [],
           "correctAnswer": 55,
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 55"
+          "working": "Tolak 45 daripada 100. 100 − 45 = 55. Semak: 55 + 45 = 100."
         },
         {
           "id": "t1_c3_q18",
-          "text": "61 âˆ’ 19 = ?",
+          "text": "61 − 19 = ?",
           "options": [],
           "correctAnswer": 42,
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 42"
+          "working": "Tolak 19 daripada 61. 61 − 19 = 42. Semak: 42 + 19 = 61."
         },
         {
           "id": "t1_c3_q19",
-          "text": "54 âˆ’ 26 = ?",
+          "text": "54 − 26 = ?",
           "options": [],
           "correctAnswer": 28,
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 28"
+          "working": "Tolak 26 daripada 54. 54 − 26 = 28. Semak: 28 + 26 = 54."
         },
         {
           "id": "t1_c3_q20",
-          "text": "70 âˆ’ 35 = ?",
+          "text": "70 − 35 = ?",
           "options": [
             35,
+            40,
             45,
-            30,
-            40
+            30
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 35"
+          "working": "Tolak 35 daripada 70. 70 − 35 = 35. Semak: 35 + 35 = 70."
         },
         {
           "id": "t1_c3_q21",
@@ -957,32 +990,32 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 25"
+          "working": "Soalan minta baki atau beza, jadi tolak: 52 − 27 = 25."
         },
         {
           "id": "t1_c3_q22",
-          "text": "90 âˆ’ 27 âˆ’ 13 = ?",
+          "text": "90 − 27 − 13 = ?",
           "options": [],
           "correctAnswer": 50,
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 50"
+          "working": "Kira dari kiri ke kanan: 90 − 27 − 13 memberi 63 lalu 50."
         },
         {
           "id": "t1_c3_q23",
           "text": "Nombor manakah bila ditolak 18 akan memberi 22?",
           "options": [
             40,
-            38,
             42,
-            35
+            35,
+            38
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 40"
+          "working": "Soalan minta jumlah, jadi campurkan: 18 + 22 = 40."
         },
         {
           "id": "t1_c3_q24",
@@ -992,42 +1025,42 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 27"
+          "working": "Soalan minta baki atau beza, jadi tolak: RM75 − RM48 = RM27."
         },
         {
           "id": "t1_c3_q25",
-          "text": "83 âˆ’ 46 = ?",
+          "text": "83 − 46 = ?",
           "options": [],
           "correctAnswer": 37,
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 37"
+          "working": "Tolak 46 daripada 83. 83 − 46 = 37. Semak: 37 + 46 = 83."
         },
         {
           "id": "t1_c3_q26",
           "text": "Beza antara 91 dan 58 ialah?",
           "options": [
+            38,
             33,
             23,
-            43,
-            38
+            43
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 33"
+          "working": "Soalan minta baki atau beza, jadi tolak: 91 − 58 = 33."
         },
         {
           "id": "t1_c3_q27",
-          "text": "100 âˆ’ 63 = ?",
+          "text": "100 − 63 = ?",
           "options": [],
           "correctAnswer": 37,
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 37"
+          "working": "Tolak 63 daripada 100. 100 − 63 = 37. Semak: 37 + 63 = 100."
         },
         {
           "id": "t1_c3_q28",
@@ -1037,11 +1070,11 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 24"
+          "working": "Soalan minta baki atau beza, jadi tolak: 40 − 16 = 24."
         },
         {
           "id": "t1_c3_q29",
-          "text": "95 âˆ’ 58 = ?",
+          "text": "95 − 58 = ?",
           "options": [
             37,
             47,
@@ -1052,17 +1085,17 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 37"
+          "working": "Tolak 58 daripada 95. 95 − 58 = 37. Semak: 37 + 58 = 95."
         },
         {
           "id": "t1_c3_q30",
-          "text": "88 âˆ’ 49 = ?",
+          "text": "88 − 49 = ?",
           "options": [],
           "correctAnswer": 39,
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 39"
+          "working": "Tolak 49 daripada 88. 88 − 49 = 39. Semak: 39 + 49 = 88."
         }
       ]
     },
@@ -1075,53 +1108,46 @@
           "id": "t1_c4_q1",
           "text": "Apakah nama bentuk ini?",
           "options": [
-            "Bulatan",
-            "Segiempat sama",
+            "Segiempat tepat",
             "Segitiga",
-            "Segiempat tepat"
+            "Segiempat sama",
+            "Bulatan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Bulatan"
+          "working": "Bentuk yang dilukis mempunyai ciri bentuk bulatan. Jawapan: Bulatan.",
+          "visual": {
+            "type": "shape2d",
+            "kind": "bulatan"
+          }
         },
         {
           "id": "t1_c4_q2",
           "text": "Apakah nama bentuk ini?",
           "options": [
+            "Segiempat tepat",
             "Segiempat sama",
-            "Segitiga",
             "Bulatan",
-            "Segiempat tepat"
+            "Segitiga"
           ],
-          "correctAnswer": 1,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Segitiga"
+          "working": "Bentuk yang dilukis mempunyai ciri bentuk segitiga. Jawapan: Segitiga.",
+          "visual": {
+            "type": "shape2d",
+            "kind": "segitiga"
+          }
         },
         {
           "id": "t1_c4_q3",
           "text": "Apakah nama bentuk ini?",
           "options": [
             "Segiempat tepat",
-            "Bulatan",
-            "Segitiga",
-            "Segiempat sama"
-          ],
-          "correctAnswer": 3,
-          "difficulty": "mudah",
-          "points": 10,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: Segiempat sama"
-        },
-        {
-          "id": "t1_c4_q4",
-          "text": "Apakah nama bentuk ini?",
-          "options": [
             "Segiempat sama",
-            "Segiempat tepat",
             "Segitiga",
             "Bulatan"
           ],
@@ -1129,7 +1155,30 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Segiempat tepat"
+          "working": "Bentuk yang dilukis mempunyai ciri bentuk segiempat sama. Jawapan: Segiempat sama.",
+          "visual": {
+            "type": "shape2d",
+            "kind": "segiempat-sama"
+          }
+        },
+        {
+          "id": "t1_c4_q4",
+          "text": "Apakah nama bentuk ini?",
+          "options": [
+            "Bulatan",
+            "Segiempat tepat",
+            "Segiempat sama",
+            "Segitiga"
+          ],
+          "correctAnswer": 1,
+          "difficulty": "mudah",
+          "points": 10,
+          "type": "mcq",
+          "working": "Bentuk yang dilukis mempunyai ciri bentuk segiempat tepat. Jawapan: Segiempat tepat.",
+          "visual": {
+            "type": "shape2d",
+            "kind": "segiempat-tepat"
+          }
         },
         {
           "id": "t1_c4_q5",
@@ -1139,7 +1188,7 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 3"
+          "working": "Sebuah segitiga mempunyai 3 sisi lurus dan 3 sudut."
         },
         {
           "id": "t1_c4_q6",
@@ -1149,127 +1198,143 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 4"
+          "working": "Sebuah segiempat sama mempunyai 4 sisi lurus dan 4 sudut."
         },
         {
           "id": "t1_c4_q7",
           "text": "Apakah bentuk 3D ini?",
-          "options": [
-            "Kubus",
-            "Kuboid",
-            "Sfera",
-            "Kon"
-          ],
-          "correctAnswer": 0,
-          "difficulty": "mudah",
-          "points": 10,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: Kubus"
-        },
-        {
-          "id": "t1_c4_q8",
-          "text": "Apakah bentuk 3D ini?",
-          "options": [
-            "Silinder",
-            "Kubus",
-            "Sfera",
-            "Kon"
-          ],
-          "correctAnswer": 2,
-          "difficulty": "mudah",
-          "points": 10,
-          "type": "mcq",
-          "working": "Jawapan yang betul ialah: Sfera"
-        },
-        {
-          "id": "t1_c4_q9",
-          "text": "Bola berbentuk seperti...?",
           "options": [
             "Sfera",
             "Kubus",
             "Kon",
             "Kuboid"
           ],
+          "correctAnswer": 1,
+          "difficulty": "mudah",
+          "points": 10,
+          "type": "mcq",
+          "working": "Bentuk pepejal yang dilukis ialah kubus. Jawapan: Kubus.",
+          "visual": {
+            "type": "shape3d",
+            "kind": "kubus"
+          }
+        },
+        {
+          "id": "t1_c4_q8",
+          "text": "Apakah bentuk 3D ini?",
+          "options": [
+            "Sfera",
+            "Silinder",
+            "Kon",
+            "Kubus"
+          ],
           "correctAnswer": 0,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Sfera"
+          "working": "Bentuk pepejal yang dilukis ialah sfera. Jawapan: Sfera.",
+          "visual": {
+            "type": "shape3d",
+            "kind": "sfera"
+          }
+        },
+        {
+          "id": "t1_c4_q9",
+          "text": "Bola berbentuk seperti...?",
+          "options": [
+            "Sfera",
+            "Kon",
+            "Kuboid",
+            "Kubus"
+          ],
+          "correctAnswer": 0,
+          "difficulty": "mudah",
+          "points": 10,
+          "type": "mcq",
+          "working": "Perhatikan bentuk sebenar objek itu. Bola mempunyai bentuk sfera."
         },
         {
           "id": "t1_c4_q10",
           "text": "Kotak tisu biasanya berbentuk...?",
           "options": [
-            "Kuboid",
+            "Silinder",
             "Sfera",
             "Kon",
-            "Silinder"
+            "Kuboid"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Kuboid"
+          "working": "Perhatikan bentuk sebenar objek itu. Kotak tisu mempunyai bentuk kuboid."
         },
         {
           "id": "t1_c4_q11",
           "text": "Apakah warna seterusnya?",
           "options": [
-            "Biru",
-            "Merah",
             "Hijau",
-            "Kuning"
+            "Biru",
+            "Kuning",
+            "Merah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Biru"
+          "working": "Corak warna berulang mengikut turutan merah, biru, kuning. Sambungan corak selepas warna terakhir ialah Biru."
         },
         {
           "id": "t1_c4_q12",
           "text": "Apakah warna seterusnya?",
           "options": [
-            "Kuning",
-            "Hijau",
             "Merah",
-            "Biru"
+            "Hijau",
+            "Biru",
+            "Kuning"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Kuning"
+          "working": "Corak warna berulang mengikut turutan merah, biru, kuning. Sambungan corak selepas warna terakhir ialah Kuning."
         },
         {
           "id": "t1_c4_q13",
           "text": "Apakah bentuk 3D ini?",
           "options": [
-            "Silinder",
-            "Kon",
+            "Sfera",
             "Kubus",
-            "Sfera"
+            "Silinder",
+            "Kon"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Silinder"
+          "working": "Bentuk pepejal yang dilukis ialah silinder. Jawapan: Silinder.",
+          "visual": {
+            "type": "shape3d",
+            "kind": "silinder"
+          }
         },
         {
           "id": "t1_c4_q14",
           "text": "Apakah bentuk 3D ini?",
           "options": [
-            "Kon",
             "Silinder",
-            "Kuboid",
-            "Sfera"
+            "Sfera",
+            "Kon",
+            "Kuboid"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Kon"
+          "working": "Bentuk pepejal yang dilukis ialah kon. Jawapan: Kon.",
+          "visual": {
+            "type": "shape3d",
+            "kind": "kon"
+          }
         },
         {
           "id": "t1_c4_q15",
@@ -1279,67 +1344,67 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 4"
+          "working": "Sebuah segiempat tepat mempunyai 4 sisi lurus dan 4 sudut."
         },
         {
           "id": "t1_c4_q16",
           "text": "Tin makanan biasanya berbentuk...?",
           "options": [
-            "Silinder",
             "Kubus",
+            "Sfera",
             "Kon",
-            "Sfera"
+            "Silinder"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Silinder"
+          "working": "Perhatikan bentuk sebenar objek itu. Tin mempunyai bentuk silinder."
         },
         {
           "id": "t1_c4_q17",
           "text": "Topi keledar parti biasanya berbentuk...?",
           "options": [
-            "Kon",
             "Sfera",
+            "Kuboid",
             "Kubus",
-            "Kuboid"
+            "Kon"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Kon"
+          "working": "Perhatikan bentuk sebenar objek itu. Topi mempunyai bentuk kon."
         },
         {
           "id": "t1_c4_q18",
           "text": "Apakah warna seterusnya?",
           "options": [
-            "Biru",
             "Kuning",
+            "Merah",
             "Hijau",
-            "Merah"
+            "Biru"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Biru"
+          "working": "Corak warna berulang mengikut turutan merah, biru, kuning. Sambungan corak selepas warna terakhir ialah Biru."
         },
         {
           "id": "t1_c4_q19",
           "text": "Bentuk manakah TIDAK mempunyai sudut tepat?",
           "options": [
+            "Segitiga",
             "Bulatan",
             "Segiempat sama",
-            "Segiempat tepat",
-            "Segitiga"
+            "Segiempat tepat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Bulatan"
+          "working": "Bulatan ialah lengkung tertutup tanpa sisi lurus, jadi ia tiada sudut langsung."
         },
         {
           "id": "t1_c4_q20",
@@ -1349,112 +1414,121 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 7"
+          "working": "Soalan minta jumlah, jadi campurkan: 3 + 4 = 7."
         },
         {
           "id": "t1_c4_q21",
           "text": "Apakah warna seterusnya dalam corak ini?",
           "options": [
             "Biru",
-            "Merah",
+            "Kuning",
             "Hijau",
-            "Kuning"
+            "Merah"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Biru"
+          "working": "Ikut turutan corak yang berulang. Yang seterusnya ialah Biru.",
+          "visual": {
+            "type": "pattern",
+            "items": [
+              "biru",
+              "kuning",
+              "merah",
+              "?"
+            ]
+          }
         },
         {
           "id": "t1_c4_q22",
           "text": "Manakah antara berikut ADALAH bentuk 3D?",
           "options": [
-            "Kubus",
-            "Segitiga",
             "Bulatan",
-            "Segiempat sama"
+            "Segiempat sama",
+            "Kubus",
+            "Segitiga"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Kubus"
+          "working": "Bentuk 3D mempunyai panjang, lebar dan tinggi, jadi ia boleh dipegang. Antara pilihan, hanya satu yang begitu. Jawapan: Kubus."
         },
         {
           "id": "t1_c4_q23",
           "text": "Manakah antara berikut ADALAH bentuk 2D?",
           "options": [
+            "Sfera",
             "Segiempat tepat",
             "Kubus",
-            "Sfera",
             "Kon"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Segiempat tepat"
+          "working": "Bentuk 2D rata di atas permukaan dan hanya ada panjang dan lebar. Jawapan: Segiempat tepat."
         },
         {
           "id": "t1_c4_q24",
           "text": "Bentuk yang mempunyai 4 sisi sama panjang dan 4 sudut tepat ialah...?",
           "options": [
-            "Segiempat sama",
             "Segitiga",
             "Bulatan",
-            "Segiempat tepat"
+            "Segiempat tepat",
+            "Segiempat sama"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Segiempat sama"
+          "working": "Bentuk dengan 4 sisi sama panjang dan 4 sudut tepat ialah segiempat sama."
         },
         {
           "id": "t1_c4_q25",
           "text": "Apakah warna seterusnya?",
           "options": [
             "Merah",
+            "Biru",
             "Kuning",
-            "Hijau",
-            "Biru"
+            "Hijau"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Merah"
+          "working": "Corak warna berulang mengikut turutan merah, biru, kuning. Sambungan corak selepas warna terakhir ialah Merah."
         },
         {
           "id": "t1_c4_q26",
           "text": "Sebuah dadu berbentuk...?",
           "options": [
-            "Kubus",
-            "Sfera",
             "Kon",
+            "Sfera",
+            "Kubus",
             "Silinder"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Kubus"
+          "working": "Perhatikan bentuk sebenar objek itu. Dadu mempunyai bentuk kubus."
         },
         {
           "id": "t1_c4_q27",
           "text": "Manakah bentuk yang TIADA sudut langsung?",
           "options": [
-            "Bulatan",
             "Segitiga",
+            "Bulatan",
             "Segiempat sama",
             "Segiempat tepat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Bulatan"
+          "working": "Bulatan ialah lengkung tertutup tanpa sisi lurus, jadi ia tiada sudut langsung."
         },
         {
           "id": "t1_c4_q28",
@@ -1464,35 +1538,35 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 4"
+          "working": "Sebuah segiempat tepat mempunyai 4 sisi lurus dan 4 sudut."
         },
         {
           "id": "t1_c4_q29",
           "text": "Bumbung rumah selalunya menyerupai bentuk...?",
           "options": [
-            "Segitiga",
+            "Sfera",
             "Bulatan",
-            "Kon",
-            "Sfera"
+            "Segitiga",
+            "Kon"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Segitiga"
+          "working": "Perhatikan bentuk sebenar objek itu. Bumbung mempunyai bentuk segitiga."
         },
         {
           "id": "t1_c4_q30",
           "text": "Antara kubus dan kuboid, yang manakah mempunyai SEMUA permukaan sama saiz?",
           "options": [
-            "Kubus",
-            "Kuboid"
+            "Kuboid",
+            "Kubus"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Kubus"
+          "working": "Sebuah kubus mempunyai 6 permukaan. Jawapan: Kubus."
         }
       ]
     },
@@ -1505,46 +1579,56 @@
           "id": "t1_c5_q1",
           "text": "Pukul berapakah ini?",
           "options": [
-            "3:00",
-            "4:00",
             "2:00",
-            "3:30"
+            "3:30",
+            "3:00",
+            "4:00"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 3:00"
+          "working": "Jarum pendek menunjuk 3 dan jarum panjang tepat di angka 12, jadi masa yang ditunjukkan ialah 3:00.",
+          "visual": {
+            "type": "clock",
+            "hour": 3,
+            "minute": 0
+          }
         },
         {
           "id": "t1_c5_q2",
           "text": "Pukul berapakah ini?",
           "options": [
             "8:00",
-            "7:00",
             "6:00",
+            "7:00",
             "7:30"
           ],
-          "correctAnswer": 1,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 7:00"
+          "working": "Jarum pendek menunjuk 7 dan jarum panjang tepat di angka 12, jadi masa yang ditunjukkan ialah 7:00.",
+          "visual": {
+            "type": "clock",
+            "hour": 7,
+            "minute": 0
+          }
         },
         {
           "id": "t1_c5_q3",
           "text": "Selepas hari Isnin ialah hari...?",
           "options": [
-            "Rabu",
             "Selasa",
-            "Ahad",
-            "Khamis"
+            "Khamis",
+            "Rabu",
+            "Ahad"
           ],
-          "correctAnswer": 1,
+          "correctAnswer": 0,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Selasa"
+          "working": "Turutan hari: Ahad, Isnin, Selasa, Rabu, Khamis, Jumaat, Sabtu. Selepas Isnin ialah Selasa."
         },
         {
           "id": "t1_c5_q4",
@@ -1554,307 +1638,393 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 7"
+          "working": "Seminggu ada 7 hari: Ahad, Isnin, Selasa, Rabu, Khamis, Jumaat, Sabtu."
         },
         {
           "id": "t1_c5_q5",
           "text": "Bila kita biasanya bersarapan?",
           "options": [
-            "Malam",
+            "Petang",
             "Pagi",
-            "Tengah malam",
-            "Petang"
+            "Malam",
+            "Tengah malam"
           ],
           "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Pagi"
+          "working": "Sarapan dimakan pada awal hari, iaitu waktu pagi. Jawapan: Pagi."
         },
         {
           "id": "t1_c5_q6",
           "text": "Berapa jumlah wang ini?",
           "options": [
-            "80 sen",
             "70 sen",
+            "80 sen",
             "90 sen",
             "60 sen"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 80 sen"
+          "working": "Kira syiling 50 sen + 20 sen + 10 sen = 80 sen. Jumlah semuanya 80 sen.",
+          "visual": {
+            "type": "money",
+            "notes": [],
+            "coins": [
+              50,
+              20,
+              10
+            ]
+          }
         },
         {
           "id": "t1_c5_q7",
           "text": "Berapa jumlah wang ini?",
           "options": [
-            "RM7",
             "RM6",
-            "RM5",
-            "RM8"
+            "RM8",
+            "RM7",
+            "RM5"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: RM7"
+          "working": "Kira wang kertas RM5 + RM1 + RM1 = RM7. Jumlah semuanya RM7.",
+          "visual": {
+            "type": "money",
+            "notes": [
+              5,
+              1,
+              1
+            ],
+            "coins": []
+          }
         },
         {
           "id": "t1_c5_q8",
           "text": "Hari pertama dalam seminggu (kalendar Malaysia) ialah?",
           "options": [
-            "Ahad",
-            "Isnin",
+            "Selasa",
             "Sabtu",
-            "Selasa"
+            "Isnin",
+            "Ahad"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Ahad"
+          "working": "Kalendar Malaysia bermula pada hari Ahad, jadi hari pertama seminggu ialah Ahad."
         },
         {
           "id": "t1_c5_q9",
           "text": "Bulan pertama dalam setahun ialah?",
           "options": [
-            "Januari",
-            "Disember",
             "Februari",
+            "Disember",
+            "Januari",
             "Mac"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Januari"
+          "working": "Bulan pertama dalam setahun ialah Januari."
         },
         {
           "id": "t1_c5_q10",
           "text": "Berapa jumlah wang ini?",
           "options": [
             "RM1.70",
-            "RM1.50",
             "RM2.00",
+            "RM1.50",
             "RM1.20"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: RM1.70"
+          "working": "Kira wang kertas RM1 = RM1, dan syiling 50 sen + 20 sen = 70 sen. Jumlah semuanya RM1.70.",
+          "visual": {
+            "type": "money",
+            "notes": [
+              1
+            ],
+            "coins": [
+              50,
+              20
+            ]
+          }
         },
         {
           "id": "t1_c5_q11",
           "text": "Pukul berapakah ini?",
           "options": [
-            "9:00",
-            "10:00",
             "8:00",
-            "9:30"
+            "9:30",
+            "10:00",
+            "9:00"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 9:00"
+          "working": "Jarum pendek menunjuk 9 dan jarum panjang tepat di angka 12, jadi masa yang ditunjukkan ialah 9:00.",
+          "visual": {
+            "type": "clock",
+            "hour": 9,
+            "minute": 0
+          }
         },
         {
           "id": "t1_c5_q12",
           "text": "Pukul berapakah ini?",
           "options": [
-            "12:00",
-            "1:00",
+            "12:30",
             "11:00",
-            "12:30"
+            "12:00",
+            "1:00"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 12:00"
+          "working": "Jarum pendek menunjuk 12 dan jarum panjang tepat di angka 12, jadi masa yang ditunjukkan ialah 12:00.",
+          "visual": {
+            "type": "clock",
+            "hour": 12,
+            "minute": 0
+          }
         },
         {
           "id": "t1_c5_q13",
           "text": "Berapa jumlah wang ini?",
           "options": [
-            "RM15.20",
             "RM15.00",
+            "RM16.20",
             "RM14.20",
-            "RM16.20"
+            "RM15.20"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: RM15.20"
+          "working": "Kira wang kertas RM10 + RM5 = RM15, dan syiling 20 sen = 20 sen. Jumlah semuanya RM15.20.",
+          "visual": {
+            "type": "money",
+            "notes": [
+              10,
+              5
+            ],
+            "coins": [
+              20
+            ]
+          }
         },
         {
           "id": "t1_c5_q14",
           "text": "Berapa jumlah wang ini?",
           "options": [
-            "RM1.00",
-            "90 sen",
+            "80 sen",
             "RM1.50",
-            "80 sen"
+            "RM1.00",
+            "90 sen"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: RM1.00"
+          "working": "Kira wang kertas RM1 = RM1. Jumlah semuanya RM1.00.",
+          "visual": {
+            "type": "money",
+            "notes": [
+              1
+            ],
+            "coins": []
+          }
         },
         {
           "id": "t1_c5_q15",
           "text": "Selepas hari Khamis ialah hari...?",
           "options": [
             "Jumaat",
-            "Rabu",
+            "Isnin",
             "Sabtu",
-            "Isnin"
+            "Rabu"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Jumaat"
+          "working": "Turutan hari: Ahad, Isnin, Selasa, Rabu, Khamis, Jumaat, Sabtu. Selepas Khamis ialah Jumaat."
         },
         {
           "id": "t1_c5_q16",
           "text": "Berapa bulan dalam setahun?",
           "options": [
-            12,
-            10,
+            13,
             11,
-            13
+            10,
+            12
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 12"
+          "working": "Setahun ada 12 bulan, dari Januari hingga Disember."
         },
         {
           "id": "t1_c5_q17",
           "text": "Bila kita biasanya tidur pada waktu malam?",
           "options": [
-            "Malam",
-            "Pagi",
             "Tengah hari",
-            "Petang"
+            "Petang",
+            "Pagi",
+            "Malam"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Malam"
+          "working": "Ikut waktu harian biasa, aktiviti ini berlaku pada waktu malam."
         },
         {
           "id": "t1_c5_q18",
           "text": "Pukul berapakah ini?",
           "options": [
-            "5:00",
-            "6:00",
             "4:00",
-            "5:30"
+            "6:00",
+            "5:30",
+            "5:00"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 5:00"
+          "working": "Jarum pendek menunjuk 5 dan jarum panjang tepat di angka 12, jadi masa yang ditunjukkan ialah 5:00.",
+          "visual": {
+            "type": "clock",
+            "hour": 5,
+            "minute": 0
+          }
         },
         {
           "id": "t1_c5_q19",
           "text": "Hari sebelum hari Sabtu ialah?",
           "options": [
-            "Jumaat",
             "Ahad",
-            "Khamis",
-            "Isnin"
+            "Isnin",
+            "Jumaat",
+            "Khamis"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Jumaat"
+          "working": "Turutan hari: Ahad, Isnin, Selasa, Rabu, Khamis, Jumaat, Sabtu. Sebelum Sabtu ialah Jumaat."
         },
         {
           "id": "t1_c5_q20",
           "text": "Berapa jumlah wang ini?",
           "options": [
-            "RM2.30",
-            "RM2.00",
             "RM2.10",
-            "RM2.50"
+            "RM2.00",
+            "RM2.50",
+            "RM2.30"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: RM2.30"
+          "working": "Kira wang kertas RM1 + RM1 = RM2, dan syiling 20 sen + 10 sen = 30 sen. Jumlah semuanya RM2.30.",
+          "visual": {
+            "type": "money",
+            "notes": [
+              1,
+              1
+            ],
+            "coins": [
+              20,
+              10
+            ]
+          }
         },
         {
           "id": "t1_c5_q21",
           "text": "Pukul berapakah ini?",
           "options": [
             "2:30",
-            "3:30",
             "2:00",
+            "3:30",
             "1:30"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 2:30"
+          "working": "Jarum pendek menunjuk 2 dan jarum panjang di angka 6, jadi masa yang ditunjukkan ialah 2:30.",
+          "visual": {
+            "type": "clock",
+            "hour": 2,
+            "minute": 30
+          }
         },
         {
           "id": "t1_c5_q22",
           "text": "Berapa jumlah wang ini?",
           "options": [
             "RM11.50",
-            "RM11.00",
             "RM10.50",
-            "RM12.50"
+            "RM12.50",
+            "RM11.00"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: RM11.50"
+          "working": "Kira wang kertas RM10 + RM1 = RM11, dan syiling 50 sen = 50 sen. Jumlah semuanya RM11.50.",
+          "visual": {
+            "type": "money",
+            "notes": [
+              10,
+              1
+            ],
+            "coins": [
+              50
+            ]
+          }
         },
         {
           "id": "t1_c5_q23",
           "text": "Ali beli gula-gula 60 sen. Dia bayar dengan RM1. Berapa baginya (kembalian)?",
           "options": [
             "40 sen",
-            "30 sen",
+            "60 sen",
             "50 sen",
-            "60 sen"
+            "30 sen"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 40 sen"
+          "working": "Tukar kepada unit sama dahulu: RM1 = 100 sen. Baki = 100 sen − 60 sen = 40 sen."
         },
         {
           "id": "t1_c5_q24",
           "text": "Sekolah bermula pukul 7:30 pagi. Ini waktu...?",
           "options": [
-            "Pagi",
-            "Petang",
+            "Tengah malam",
             "Malam",
-            "Tengah malam"
+            "Petang",
+            "Pagi"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Pagi"
+          "working": "Ikut waktu harian biasa, aktiviti ini berlaku pada waktu pagi."
         },
         {
           "id": "t1_c5_q25",
@@ -1869,80 +2039,95 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 28"
+          "working": "Februari ada 28 hari pada tahun biasa, dan 29 hari pada tahun lompat. Soalan minta tahun biasa, jadi 28 hari."
         },
         {
           "id": "t1_c5_q26",
           "text": "Berapa jumlah wang ini?",
           "options": [
-            "RM20.70",
+            "RM21.00",
             "RM20.00",
-            "RM20.50",
-            "RM21.00"
+            "RM20.70",
+            "RM20.50"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: RM20.70"
+          "working": "Kira wang kertas RM20 = RM20, dan syiling 50 sen + 20 sen = 70 sen. Jumlah semuanya RM20.70.",
+          "visual": {
+            "type": "money",
+            "notes": [
+              20
+            ],
+            "coins": [
+              50,
+              20
+            ]
+          }
         },
         {
           "id": "t1_c5_q27",
           "text": "Jika sekarang hari Rabu, apakah hari 2 hari selepas ini?",
           "options": [
-            "Jumaat",
-            "Khamis",
             "Sabtu",
-            "Isnin"
+            "Isnin",
+            "Khamis",
+            "Jumaat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Jumaat"
+          "working": "Mula dari Rabu, kira ke depan 2 hari mengikut turutan Ahad, Isnin, Selasa, Rabu, Khamis, Jumaat, Sabtu. Sampai ke Jumaat."
         },
         {
           "id": "t1_c5_q28",
           "text": "Pukul berapakah ini?",
           "options": [
             "6:30",
-            "7:30",
             "6:00",
-            "5:30"
+            "5:30",
+            "7:30"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 6:30"
+          "working": "Jarum pendek menunjuk 6 dan jarum panjang di angka 6, jadi masa yang ditunjukkan ialah 6:30.",
+          "visual": {
+            "type": "clock",
+            "hour": 6,
+            "minute": 30
+          }
         },
         {
           "id": "t1_c5_q29",
           "text": "Mana lebih banyak wang: RM2 atau 150 sen?",
           "options": [
-            "RM2",
-            "150 sen"
+            "150 sen",
+            "RM2"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: RM2"
+          "working": "Tukar kepada unit sama: RM2 = 200 sen. Bandingkan 200 sen dengan 150 sen. Yang lebih banyak ialah RM2."
         },
         {
           "id": "t1_c5_q30",
           "text": "Sebuah minggu bermula hari Ahad dan berakhir hari...?",
           "options": [
             "Sabtu",
-            "Jumaat",
             "Isnin",
-            "Khamis"
+            "Khamis",
+            "Jumaat"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Sabtu"
+          "working": "Turutan hari ialah Ahad, Isnin, Selasa, Rabu, Khamis, Jumaat, Sabtu. Hari terakhir ialah Sabtu."
         }
       ]
     }

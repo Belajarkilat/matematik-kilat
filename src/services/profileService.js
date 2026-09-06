@@ -5,21 +5,6 @@
  */
 
 const PROFILES_KEY = 'bk_matematik_kilat_profiles_v1';
-// Profiles saved before the rename still live under the old key; move them
-// across once so nobody loses their child's progress on first launch.
-const LEGACY_PROFILES_KEY = 'bk_matematik_roblox_profiles_v1';
-
-function migrateLegacyProfiles() {
-  try {
-    if (localStorage.getItem(PROFILES_KEY)) return;
-    const legacy = localStorage.getItem(LEGACY_PROFILES_KEY);
-    if (!legacy) return;
-    localStorage.setItem(PROFILES_KEY, legacy);
-    localStorage.removeItem(LEGACY_PROFILES_KEY);
-  } catch (e) {
-    // Private browsing or a full quota - nothing to migrate, carry on.
-  }
-}
 
 // Badge definitions
 const BADGES = {
@@ -32,13 +17,16 @@ const BADGES = {
   'streak-5': { name: 'Hot Streak', emoji: '🔥🔥', description: 'Get 5-combo 3 times' }
 };
 
+// These are the values AvatarBuilder offers, so a brand new profile already
+// shows a selected swatch under every heading instead of an empty ring.
 const DEFAULT_AVATAR = {
-  gender: 'neutral', // 'boy', 'girl', 'neutral'
-  skinColor: '#f4c4a0', // light tan
-  faceColor: '#f4c4a0',
-  hairColor: '#8B4513', // brown
-  hatType: 'none', // 'none', 'cap', 'crown', 'beanie'
-  outfitColor: '#FF6B35' // orange
+  gender: 'boy',
+  skinColor: '#E8B98F',
+  faceColor: '#E8B98F',
+  hairColor: '#3A2A1C',
+  hatType: 'none',
+  outfitColor: '#3E6FD9',
+  faceType: 'smile'
 };
 
 class ProfileService {
@@ -52,7 +40,6 @@ class ProfileService {
    */
   _loadProfiles() {
     try {
-      migrateLegacyProfiles();
       const stored = localStorage.getItem(PROFILES_KEY);
       if (stored) {
         return JSON.parse(stored);

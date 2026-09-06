@@ -61,7 +61,7 @@ function Hub({ profile }) {
           style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
           aria-label="Ubah avatar"
         >
-          <AnimatedAvatar profile={profile} animation={avatarAnimation} size={64} />
+          <AnimatedAvatar profile={profile} animation={avatarAnimation} size={56} />
         </button>
         <div className="grow">
           <h1 className="page__title">Hai, {profile.name}</h1>

@@ -15,22 +15,22 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 5000"
+          "working": "Digit 5 berada di tempat ribu dalam 5 234, jadi nilainya 5 × 1 000 = 5000."
         },
         {
           "id": "t3_c1_q2",
           "text": "Yang manakah mewakili nombor \"tiga ribu enam ratus dua puluh\"?",
           "options": [
-            3620,
             3602,
+            6320,
             3260,
-            6320
+            3620
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 3620"
+          "working": "Pecahkan mengikut nilai tempat: tiga ribu = 3 000, enam ratus = 600, dua puluh = 20. Campurkan: 3 000 + 600 + 20 = 3 620."
         },
         {
           "id": "t3_c1_q3",
@@ -40,7 +40,7 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 5000"
+          "working": "Nombor selepas 4 999 ialah satu lebih: 4 999 + 1 = 5 000."
         },
         {
           "id": "t3_c1_q4",
@@ -50,22 +50,28 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 6999"
+          "working": "Nombor sebelum 7 000 ialah satu kurang: 7 000 − 1 = 6 999."
         },
         {
           "id": "t3_c1_q5",
           "text": "Blok ini mewakili nombor berapa?",
           "options": [
-            342,
+            234,
             324,
             432,
-            234
+            342
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 342"
+          "working": "Kira setiap nilai tempat: 3 blok ratus = 300, 4 batang puluh = 40, 2 kiub sa = 2. Campur semuanya jadi 342.",
+          "visual": {
+            "type": "base10",
+            "hundreds": 3,
+            "tens": 4,
+            "ones": 2
+          }
         },
         {
           "id": "t3_c1_q6",
@@ -75,22 +81,22 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Sila tulis: 8009"
+          "working": "Pecahkan mengikut nilai tempat: \"lapan ribu sembilan\" bermaksud 8 009. Tulis setiap bahagian mengikut tempatnya untuk dapat 8009."
         },
         {
           "id": "t3_c1_q7",
           "text": "Digit manakah berada di tempat ratus dalam nombor 6 758?",
           "options": [
-            7,
+            8,
             6,
-            5,
-            8
+            7,
+            5
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 7"
+          "working": "Tempat ratus bernilai 100. Dalam 6 758, digit di tempat itu ialah 7."
         },
         {
           "id": "t3_c1_q8",
@@ -100,22 +106,22 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 2002"
+          "working": "Nombor genap berakhir dengan 0, 2, 4, 6 atau 8. 2 002 berakhir dengan 2, jadi ia genap."
         },
         {
           "id": "t3_c1_q9",
           "text": "Nombor manakah yang paling besar?",
           "options": [
-            4560,
-            4650,
             4065,
-            4605
+            4650,
+            4605,
+            4560
           ],
           "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 4650"
+          "working": "Bandingkan digit dari kiri. Disusun dari besar ke kecil: 4 650, 4 605, 4 560, 4 065. Jawapannya 4 650."
         },
         {
           "id": "t3_c1_q10",
@@ -125,22 +131,22 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 9345"
+          "working": "Kira dari kiri ke kanan. 9 000 + 300 = 9 300, kemudian 9 300 + 40 = 9 340, kemudian 9 340 + 5 = 9 345."
         },
         {
           "id": "t3_c1_q11",
           "text": "Antara 3 245, 3 425 dan 3 254, yang manakah paling kecil?",
           "options": [
             3245,
+            3452,
             3425,
-            3254,
-            3452
+            3254
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 3245"
+          "working": "Bandingkan digit dari kiri. Disusun dari kecil ke besar: 3 245, 3 254, 3 425, 3 452. Jawapannya 3 245."
         },
         {
           "id": "t3_c1_q12",
@@ -150,22 +156,22 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 7000"
+          "working": "Dalam 7 631, digit 7 berada di tempat ribu. Nilainya 7 × 1 000 = 7 000."
         },
         {
           "id": "t3_c1_q13",
           "text": "Nombor manakah terletak antara 5 480 dan 5 520?",
           "options": [
-            5500,
-            5470,
             5525,
-            5450
+            5500,
+            5450,
+            5470
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 5500"
+          "working": "Cari nombor yang lebih besar daripada 5 480 tetapi lebih kecil daripada 5 520. 5 500 memenuhi syarat itu."
         },
         {
           "id": "t3_c1_q14",
@@ -175,22 +181,22 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 6780"
+          "working": "Untuk membundarkan 6 782 kepada 10 terdekat, lihat baki 2. Kerana 2 < 5, kekalkan nilainya. Jawapan: 6 780."
         },
         {
           "id": "t3_c1_q15",
           "text": "Antara nombor berikut, yang manakah ganjil?",
           "options": [
-            4568,
             3721,
             9006,
-            1234
+            1234,
+            4568
           ],
-          "correctAnswer": 1,
+          "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 3721"
+          "working": "Nombor ganjil berakhir dengan 1, 3, 5, 7 atau 9. 3 721 berakhir dengan 1, jadi ia ganjil."
         },
         {
           "id": "t3_c1_q16",
@@ -200,22 +206,22 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 4400"
+          "working": "Untuk membundarkan 4 356 kepada 100 terdekat, lihat baki 56. Kerana 56 ≥ 50, naikkan nilainya. Jawapan: 4 400."
         },
         {
           "id": "t3_c1_q17",
           "text": "Berapakah beza antara nilai tempat digit 8 dan digit 3 dalam nombor 8 432?",
           "options": [
             7970,
+            7930,
             8000,
-            7700,
-            7930
+            7700
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 7970"
+          "working": "Dalam 8 432, digit 8 bernilai 8 000 dan digit 3 bernilai 30. Bezanya 8 000 − 30 = 7 970."
         },
         {
           "id": "t3_c1_q18",
@@ -225,22 +231,22 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 852"
+          "working": "Nombor genap berakhir dengan 0, 2, 4, 6 atau 8. 852 berakhir dengan 2, jadi ia genap."
         },
         {
           "id": "t3_c1_q19",
           "text": "Corak nombor: 1 200, 1 400, 1 600, ___. Apakah nombor seterusnya?",
           "options": [
+            1900,
             1800,
             1700,
-            2000,
-            1900
+            2000
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 1800"
+          "working": "Corak ini naik 200 setiap kali: 1 200, 1 400, 1 600. Jadi selepas 1 600 ialah 1 600 + 200 = 1 800."
         },
         {
           "id": "t3_c1_q20",
@@ -250,22 +256,22 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 9400"
+          "working": "Nilai digit 9 dalam 9 245 ialah 9 000, dan nilai digit 4 dalam 3 476 ialah 400. Jumlahnya 9 000 + 400 = 9 400."
         },
         {
           "id": "t3_c1_q21",
           "text": "Sebuah kilang mengeluarkan 4 875 biji guli. Bundarkan bilangan itu kepada ribu terdekat.",
           "options": [
-            5000,
             4000,
-            4900,
-            4800
+            4800,
+            5000,
+            4900
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 5000"
+          "working": "Untuk membundarkan 4 875 kepada 1 000 terdekat, lihat baki 875. Kerana 875 ≥ 500, naikkan nilainya. Jawapan: 5 000."
         },
         {
           "id": "t3_c1_q22",
@@ -275,22 +281,22 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 7000"
+          "working": "Soalan minta jumlah, jadi campurkan: 3 + 6 997 = 7 000."
         },
         {
           "id": "t3_c1_q23",
           "text": "Susunan manakah adalah tertib menaik yang betul bagi 2 001, 2 010, 2 100?",
           "options": [
             "2001, 2010, 2100",
-            "2100, 2010, 2001",
             "2010, 2001, 2100",
+            "2100, 2010, 2001",
             "2100, 2001, 2010"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 2001, 2010, 2100"
+          "working": "Bandingkan digit dari kiri satu per satu. Disusun kecil ke besar: 2 001, 2 010, 2 100."
         },
         {
           "id": "t3_c1_q24",
@@ -300,22 +306,22 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 8500"
+          "working": "Soalan minta jumlah, jadi campurkan: 8 456 + 44 = 8 500."
         },
         {
           "id": "t3_c1_q25",
           "text": "Antara 7 099, 7 100, 7 009 dan 7 190, yang manakah terbesar?",
           "options": [
-            7190,
             7100,
+            7009,
             7099,
-            7009
+            7190
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 7190"
+          "working": "Bandingkan digit dari kiri. Disusun dari besar ke kecil: 7 190, 7 100, 7 099, 7 009. Jawapannya 7 190."
         },
         {
           "id": "t3_c1_q26",
@@ -325,22 +331,22 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 7500"
+          "working": "Corak ini turun 500 setiap kali: 9 500, 9 000, 8 500, 8 000. Jadi selepas 8 000 ialah 8 000 − 500 = 7 500."
         },
         {
           "id": "t3_c1_q27",
           "text": "Ahmad menulis nombor 4 digit: digit ribu 6, ratus 0, puluh 8, sa 3. Apakah nombor itu?",
           "options": [
             6083,
-            6803,
+            6830,
             6038,
-            6830
+            6803
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 6083"
+          "working": "Susun mengikut nilai tempat: 6 ribu = 6 000, 0 ratus = 0, 8 puluh = 80, 3 sa = 3. Campurkan semuanya jadi 6 083."
         },
         {
           "id": "t3_c1_q28",
@@ -350,22 +356,22 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 7263"
+          "working": "Nombor terbesar dari digit 1, 5, 8, 2 ialah 8 521, dan terkecil ialah 1 258. Bezanya 8 521 − 1 258 = 7 263."
         },
         {
           "id": "t3_c1_q29",
           "text": "Sebuah kedai menjual 10 000 biji telur. Baki belum terjual ialah 3 250 biji. Berapakah biji telur yang telah terjual?",
           "options": [
-            6750,
             6250,
+            6850,
             7250,
-            6850
+            6750
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 6750"
+          "working": "Soalan minta baki atau beza, jadi tolak: 10 000 − 3 250 = 6 750."
         },
         {
           "id": "t3_c1_q30",
@@ -375,7 +381,7 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 3700"
+          "working": "Dalam 3 745, digit 3 bernilai 3 000 dan digit 7 bernilai 700. Jumlahnya 3 000 + 700 = 3 700."
         }
       ]
     },
@@ -392,17 +398,17 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 3778"
+          "working": "Tambah 2 456 dengan 1 322. Mula dari 2 456, naik 1 322 lagi, jadi 2 456 + 1 322 = 3 778."
         },
         {
           "id": "t3_c2_q2",
-          "text": "5 678 âˆ’ 2 345 = ?",
+          "text": "5 678 − 2 345 = ?",
           "options": [],
           "correctAnswer": 3333,
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 3333"
+          "working": "Tolak 2 345 daripada 5 678. 5 678 − 2 345 = 3 333. Semak: 3 333 + 2 345 = 5 678."
         },
         {
           "id": "t3_c2_q3",
@@ -412,32 +418,32 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 393"
+          "working": "Tambah 134 dengan 259. Mula dari 134, naik 259 lagi, jadi 134 + 259 = 393."
         },
         {
           "id": "t3_c2_q4",
-          "text": "800 âˆ’ 356 = ?",
+          "text": "800 − 356 = ?",
           "options": [],
           "correctAnswer": 444,
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 444"
+          "working": "Tolak 356 daripada 800. 800 − 356 = 444. Semak: 444 + 356 = 800."
         },
         {
           "id": "t3_c2_q5",
           "text": "1 200 + 1 500 = ?",
           "options": [
-            2700,
+            3700,
             2600,
             2800,
-            3700
+            2700
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 2700"
+          "working": "Tambah 1 200 dengan 1 500. Mula dari 1 200, naik 1 500 lagi, jadi 1 200 + 1 500 = 2 700."
         },
         {
           "id": "t3_c2_q6",
@@ -447,22 +453,22 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 5000"
+          "working": "Tambah 4 999 dengan 1. Mula dari 4 999, naik 1 lagi, jadi 4 999 + 1 = 5 000."
         },
         {
           "id": "t3_c2_q7",
-          "text": "6 000 âˆ’ 2 500 = ?",
+          "text": "6 000 − 2 500 = ?",
           "options": [
             3500,
+            3400,
             3600,
-            4500,
-            3400
+            4500
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 3500"
+          "working": "Tolak 2 500 daripada 6 000. 6 000 − 2 500 = 3 500. Semak: 3 500 + 2 500 = 6 000."
         },
         {
           "id": "t3_c2_q8",
@@ -472,32 +478,32 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 5556"
+          "working": "Tambah 2 345 dengan 3 211. Mula dari 2 345, naik 3 211 lagi, jadi 2 345 + 3 211 = 5 556."
         },
         {
           "id": "t3_c2_q9",
           "text": "Anggarkan 398 + 205 kepada ratus terdekat.",
           "options": [
-            600,
             500,
-            700,
-            650
+            600,
+            650,
+            700
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 600"
+          "working": "Bundarkan dahulu kepada 100 terdekat: 398 jadi 400, 205 jadi 200. Anggaran: 400 + 200 = 600."
         },
         {
           "id": "t3_c2_q10",
-          "text": "7 890 âˆ’ 3 456 = ?",
+          "text": "7 890 − 3 456 = ?",
           "options": [],
           "correctAnswer": 4434,
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 4434"
+          "working": "Tolak 3 456 daripada 7 890. 7 890 − 3 456 = 4 434. Semak: 4 434 + 3 456 = 7 890."
         },
         {
           "id": "t3_c2_q11",
@@ -507,57 +513,57 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 6245"
+          "working": "Tambah 3 456 dengan 2 789. Mula dari 3 456, naik 2 789 lagi, jadi 3 456 + 2 789 = 6 245."
         },
         {
           "id": "t3_c2_q12",
-          "text": "8 000 âˆ’ 4 567 = ?",
+          "text": "8 000 − 4 567 = ?",
           "options": [],
           "correctAnswer": 3433,
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 3433"
+          "working": "Tolak 4 567 daripada 8 000. 8 000 − 4 567 = 3 433. Semak: 3 433 + 4 567 = 8 000."
         },
         {
           "id": "t3_c2_q13",
           "text": "Sebuah kedai menjual 1 245 biskut pada hari Isnin dan 987 biskut pada hari Selasa. Berapakah jumlah biskut dijual?",
           "options": [
-            2232,
+            2332,
             2132,
-            2222,
-            2332
+            2232,
+            2222
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 2232"
+          "working": "Soalan minta jumlah, jadi campurkan: 1 245 + 987 = 2 232."
         },
         {
           "id": "t3_c2_q14",
-          "text": "6 234 âˆ’ 1 876 = ?",
+          "text": "6 234 − 1 876 = ?",
           "options": [],
           "correctAnswer": 4358,
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 4358"
+          "working": "Tolak 1 876 daripada 6 234. 6 234 − 1 876 = 4 358. Semak: 4 358 + 1 876 = 6 234."
         },
         {
           "id": "t3_c2_q15",
           "text": "Jumlah dua nombor ialah 5 000. Jika satu nombor ialah 3 245, apakah nombor satu lagi?",
           "options": [
-            1755,
-            1745,
+            1655,
             1855,
-            1655
+            1755,
+            1745
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 1755"
+          "working": "Soalan minta baki atau beza, jadi tolak: 5 000 − 3 245 = 1 755."
         },
         {
           "id": "t3_c2_q16",
@@ -567,22 +573,22 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 6001"
+          "working": "Tambah 2 999 dengan 3 002. Mula dari 2 999, naik 3 002 lagi, jadi 2 999 + 3 002 = 6 001."
         },
         {
           "id": "t3_c2_q17",
           "text": "Sebuah ladang mempunyai 4 500 ekor ayam. 1 875 ekor telah dijual. Berapakah baki ayam?",
           "options": [
-            2625,
-            2725,
+            2635,
             2615,
-            2635
+            2625,
+            2725
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 2625"
+          "working": "Soalan minta baki atau beza, jadi tolak: 4 500 − 1 875 = 2 625."
         },
         {
           "id": "t3_c2_q18",
@@ -592,47 +598,47 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 5655"
+          "working": "Kira dari kiri ke kanan. 1 234 + 4 321 = 5 555, kemudian 5 555 + 100 = 5 655."
         },
         {
           "id": "t3_c2_q19",
           "text": "Beza antara 7 006 dan 3 458 ialah?",
           "options": [
             3548,
-            3648,
             3458,
+            3648,
             3438
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 3548"
+          "working": "Soalan minta baki atau beza, jadi tolak: 7 006 − 3 458 = 3 548."
         },
         {
           "id": "t3_c2_q20",
-          "text": "9 876 âˆ’ 5 432 = ?",
+          "text": "9 876 − 5 432 = ?",
           "options": [],
           "correctAnswer": 4444,
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 4444"
+          "working": "Tolak 5 432 daripada 9 876. 9 876 − 5 432 = 4 444. Semak: 4 444 + 5 432 = 9 876."
         },
         {
           "id": "t3_c2_q21",
           "text": "Sebuah sekolah ada 2 345 murid lelaki dan 2 198 murid perempuan. Berapakah jumlah semua murid?",
           "options": [
+            4533,
             4543,
             4453,
-            4643,
-            4533
+            4643
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 4543"
+          "working": "Soalan minta jumlah, jadi campurkan: 2 345 + 2 198 = 4 543."
         },
         {
           "id": "t3_c2_q22",
@@ -642,22 +648,22 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 2675"
+          "working": "Selesaikan dua langkah. Pertama 8 500 − 3 675 = 4 825. Kemudian 4 825 − 2 150 = 2 675."
         },
         {
           "id": "t3_c2_q23",
           "text": "Nombor X tambah 1 458 bersamaan 6 000. Berapakah nilai X?",
           "options": [
-            4542,
+            4532,
             4552,
             4442,
-            4532
+            4542
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 4542"
+          "working": "Soalan minta baki atau beza, jadi tolak: 6 000 − 1 458 = 4 542."
         },
         {
           "id": "t3_c2_q24",
@@ -667,22 +673,22 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 1500"
+          "working": "Selesaikan dua langkah. Pertama 3 600 − 1 250 = 2 350. Kemudian 2 350 − 850 = 1 500."
         },
         {
           "id": "t3_c2_q25",
           "text": "Dua buah kampung mempunyai penduduk 4 235 dan 3 764 orang. Berapakah beza penduduk kedua-dua kampung itu?",
           "options": [
             471,
-            571,
+            461,
             481,
-            461
+            571
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 471"
+          "working": "Soalan minta baki atau beza, jadi tolak: 4 235 − 3 764 = 471."
         },
         {
           "id": "t3_c2_q26",
@@ -692,22 +698,22 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 5000"
+          "working": "Selesaikan dua langkah. Pertama 1 200 + 2 350 = 3 550. Kemudian 3 550 + 1 450 = 5 000."
         },
         {
           "id": "t3_c2_q27",
           "text": "Sebuah stadium mempunyai 10 000 tempat duduk. 6 758 tiket telah terjual. Berapakah tempat duduk yang masih kosong?",
           "options": [
             3242,
-            3342,
             3232,
-            3142
+            3142,
+            3342
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 3242"
+          "working": "Soalan minta baki atau beza, jadi tolak: 10 000 − 6 758 = 3 242."
         },
         {
           "id": "t3_c2_q28",
@@ -717,22 +723,22 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 5980"
+          "working": "Selesaikan dua langkah. Pertama 4 500 + 2 780 = 7 280. Kemudian 7 280 − 1 300 = 5 980."
         },
         {
           "id": "t3_c2_q29",
           "text": "Hasil tambah dua nombor ialah 8 246. Jika satu nombor ialah 5 000, apakah nombor satu lagi?",
           "options": [
             3246,
-            3346,
             3236,
+            3346,
             3256
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 3246"
+          "working": "Soalan minta baki atau beza, jadi tolak: 8 246 − 5 000 = 3 246."
         },
         {
           "id": "t3_c2_q30",
@@ -742,7 +748,7 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 6750"
+          "working": "Selesaikan dua langkah. Pertama 7 890 + 2 500 = 10 390. Kemudian 10 390 − 3 640 = 6 750."
         }
       ]
     },
@@ -759,7 +765,7 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 42"
+          "working": "Darab 6 dengan 7, iaitu 6 ditambah sebanyak 7 kali. 6 × 7 = 42."
         },
         {
           "id": "t3_c3_q2",
@@ -769,22 +775,22 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 72"
+          "working": "Darab 8 dengan 9, iaitu 8 ditambah sebanyak 9 kali. 8 × 9 = 72."
         },
         {
           "id": "t3_c3_q3",
           "text": "7 × 6 = ?",
           "options": [
-            42,
-            48,
+            49,
             36,
-            49
+            48,
+            42
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 42"
+          "working": "Darab 7 dengan 6, iaitu 7 ditambah sebanyak 6 kali. 7 × 6 = 42."
         },
         {
           "id": "t3_c3_q4",
@@ -794,7 +800,7 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 72"
+          "working": "Darab 9 dengan 8, iaitu 9 ditambah sebanyak 8 kali. 9 × 8 = 72."
         },
         {
           "id": "t3_c3_q5",
@@ -804,7 +810,7 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 6"
+          "working": "Bahagi 36 kepada 6 kumpulan sama banyak. 36 ÷ 6 = 6. Semak: 6 × 6 = 36."
         },
         {
           "id": "t3_c3_q6",
@@ -812,14 +818,14 @@
           "options": [
             8,
             7,
-            9,
-            6
+            6,
+            9
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 8"
+          "working": "Bahagi 56 kepada 7 kumpulan sama banyak. 56 ÷ 7 = 8. Semak: 8 × 7 = 56."
         },
         {
           "id": "t3_c3_q7",
@@ -829,22 +835,22 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 36"
+          "working": "Darab 4 dengan 9, iaitu 4 ditambah sebanyak 9 kali. 4 × 9 = 36."
         },
         {
           "id": "t3_c3_q8",
           "text": "63 ÷ 9 = ?",
           "options": [
-            7,
             8,
             9,
-            6
+            6,
+            7
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 7"
+          "working": "Bahagi 63 kepada 9 kumpulan sama banyak. 63 ÷ 9 = 7. Semak: 7 × 9 = 63."
         },
         {
           "id": "t3_c3_q9",
@@ -854,7 +860,7 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 48"
+          "working": "Darab 12 dengan 4, iaitu 12 ditambah sebanyak 4 kali. 12 × 4 = 48."
         },
         {
           "id": "t3_c3_q10",
@@ -864,7 +870,7 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 9"
+          "working": "Bahagi 45 kepada 5 kumpulan sama banyak. 45 ÷ 5 = 9. Semak: 9 × 5 = 45."
         },
         {
           "id": "t3_c3_q11",
@@ -874,22 +880,22 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 92"
+          "working": "Darab 23 dengan 4, iaitu 23 ditambah sebanyak 4 kali. 23 × 4 = 92."
         },
         {
           "id": "t3_c3_q12",
           "text": "17 × 5 = ?",
           "options": [
-            85,
             80,
-            90,
-            75
+            85,
+            75,
+            90
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 85"
+          "working": "Darab 17 dengan 5, iaitu 17 ditambah sebanyak 5 kali. 17 × 5 = 85."
         },
         {
           "id": "t3_c3_q13",
@@ -899,22 +905,22 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 3"
+          "working": "38 ÷ 5 = 7 kumpulan penuh, kerana 7 × 5 = 35. Baki = 38 − 35 = 3."
         },
         {
           "id": "t3_c3_q14",
           "text": "Jika 6 × 8 = 48, maka 48 ÷ 8 = ?",
           "options": [
-            6,
-            8,
             7,
-            9
+            6,
+            9,
+            8
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 6"
+          "working": "Bahagi 48 sama rata kepada 8 bahagian: 48 ÷ 8 = 6."
         },
         {
           "id": "t3_c3_q15",
@@ -924,22 +930,22 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 135"
+          "working": "Darab 45 dengan 3, iaitu 45 ditambah sebanyak 3 kali. 45 × 3 = 135."
         },
         {
           "id": "t3_c3_q16",
           "text": "29 dibahagi 4, berapakah bakinya?",
           "options": [
-            1,
             2,
+            1,
             3,
             0
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 1"
+          "working": "29 ÷ 4 = 7 kumpulan penuh, kerana 7 × 4 = 28. Baki = 29 − 28 = 1."
         },
         {
           "id": "t3_c3_q17",
@@ -949,22 +955,22 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 96"
+          "working": "Darab 16 dengan 6, iaitu 16 ditambah sebanyak 6 kali. 16 × 6 = 96."
         },
         {
           "id": "t3_c3_q18",
           "text": "72 ÷ 8 = ?",
           "options": [
-            9,
-            8,
             7,
+            8,
+            9,
             6
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 9"
+          "working": "Bahagi 72 kepada 8 kumpulan sama banyak. 72 ÷ 8 = 9. Semak: 9 × 8 = 72."
         },
         {
           "id": "t3_c3_q19",
@@ -974,37 +980,37 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 108"
+          "working": "Darab 27 dengan 4, iaitu 27 ditambah sebanyak 4 kali. 27 × 4 = 108."
         },
         {
           "id": "t3_c3_q20",
           "text": "Jika 9 × 7 = 63, apakah nilai 63 ÷ 7?",
           "options": [
+            8,
             9,
             7,
-            8,
             6
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 9"
+          "working": "Bahagi 63 sama rata kepada 7 bahagian: 63 ÷ 7 = 9."
         },
         {
           "id": "t3_c3_q21",
           "text": "Sebuah kelas mempunyai 8 baris kerusi, setiap baris ada 6 kerusi. Berapakah jumlah kerusi keseluruhan?",
           "options": [
-            48,
-            42,
             54,
+            42,
+            48,
             56
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 48"
+          "working": "Ada 6 kumpulan dengan 8 setiap satu, jadi darab: 8 × 6 = 48."
         },
         {
           "id": "t3_c3_q22",
@@ -1014,22 +1020,22 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 168"
+          "working": "Ada 24 kumpulan dengan 7 setiap satu, jadi darab: 7 × 24 = 168."
         },
         {
           "id": "t3_c3_q23",
           "text": "72 biji epal dibahagikan sama rata kepada 9 orang murid. Berapakah biji epal setiap murid?",
           "options": [
-            8,
-            9,
+            6,
             7,
-            6
+            8,
+            9
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 8"
+          "working": "Bahagi 72 sama rata kepada 9 bahagian: 72 ÷ 9 = 8."
         },
         {
           "id": "t3_c3_q24",
@@ -1039,22 +1045,22 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 12"
+          "working": "Bahagi 96 sama rata kepada 8 bahagian: 96 ÷ 8 = 12."
         },
         {
           "id": "t3_c3_q25",
           "text": "Ali mempunyai 45 biji durian dan ingin mengagihkan sama rata kepada 6 orang rakan. Berapakah baki durian selepas diagihkan?",
           "options": [
-            3,
-            2,
             4,
-            1
+            1,
+            3,
+            2
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 3"
+          "working": "45 ÷ 6 = 7 kumpulan penuh, kerana 7 × 6 = 42. Baki = 45 − 42 = 3."
         },
         {
           "id": "t3_c3_q26",
@@ -1064,22 +1070,22 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 180"
+          "working": "Ada 12 kumpulan dengan 15 setiap satu, jadi darab: 15 × 12 = 180."
         },
         {
           "id": "t3_c3_q27",
           "text": "84 buku dibahagikan sama banyak kepada 7 buah kelas. Berapakah buku yang diterima setiap kelas?",
           "options": [
-            12,
+            13,
             11,
-            14,
-            13
+            12,
+            14
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 12"
+          "working": "Bahagi 84 sama rata kepada 7 bahagian: 84 ÷ 7 = 12."
         },
         {
           "id": "t3_c3_q28",
@@ -1089,22 +1095,22 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 270"
+          "working": "Ada 6 kumpulan dengan 45 setiap satu, jadi darab: 45 × 6 = 270."
         },
         {
           "id": "t3_c3_q29",
           "text": "Sebuah ladang menanam 132 pokok dalam barisan sama banyak. Jika terdapat 11 barisan, berapakah pokok dalam setiap barisan?",
           "options": [
-            12,
             11,
-            13,
-            14
+            12,
+            14,
+            13
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 12"
+          "working": "Bahagi 132 sama rata kepada 11 bahagian: 132 ÷ 11 = 12."
         },
         {
           "id": "t3_c3_q30",
@@ -1114,7 +1120,7 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 152"
+          "working": "Ada 19 kumpulan dengan 8 setiap satu, jadi darab: 8 × 19 = 152."
         }
       ]
     },
@@ -1127,31 +1133,43 @@
           "id": "t3_c4_q1",
           "text": "Berapakah pecahan yang ditunjukkan?",
           "options": [
-            "1/2",
+            "1/4",
             "1/3",
-            "2/3",
-            "1/4"
+            "1/2",
+            "2/3"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 1/2"
+          "working": "Rajah dibahagi kepada 2 bahagian sama besar dan 1 daripadanya berlorek. Pecahan berlorek ialah 1/2.",
+          "visual": {
+            "type": "fraction",
+            "parts": 2,
+            "shaded": 1,
+            "shape": "bar"
+          }
         },
         {
           "id": "t3_c4_q2",
           "text": "Pecahan bahagian berlorek ialah?",
           "options": [
             "3/4",
-            "1/4",
+            "4/3",
             "2/4",
-            "4/3"
+            "1/4"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 3/4"
+          "working": "Rajah dibahagi kepada 4 bahagian sama besar dan 3 daripadanya berlorek. Pecahan berlorek ialah 3/4.",
+          "visual": {
+            "type": "fraction",
+            "parts": 4,
+            "shaded": 3,
+            "shape": "bar"
+          }
         },
         {
           "id": "t3_c4_q3",
@@ -1161,37 +1179,45 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 500"
+          "working": "RM1 bersamaan 100 sen, jadi RM5 = 5 × 100 = 500 sen."
         },
         {
           "id": "t3_c4_q4",
           "text": "Berapakah jumlah wang ini?",
           "options": [
-            "RM15",
-            "RM10",
             "RM5",
+            "RM10",
+            "RM15",
             "RM50"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: RM15"
+          "working": "Kira wang kertas RM10 + RM5 = RM15. Jumlah semuanya RM15.",
+          "visual": {
+            "type": "money",
+            "notes": [
+              10,
+              5
+            ],
+            "coins": []
+          }
         },
         {
           "id": "t3_c4_q5",
           "text": "Antara 1/4 dan 1/2, yang manakah lebih besar?",
           "options": [
+            "Sama",
             "1/2",
             "1/4",
-            "Sama",
             "Tiada"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 1/2"
+          "working": "Tukar kepada penyebut yang sama dahulu: 1/4 = 1/4, 1/2 = 2/4. Bandingkan pengangka, yang paling besar ialah 1/2."
         },
         {
           "id": "t3_c4_q6",
@@ -1201,22 +1227,28 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 80"
+          "working": "Soalan minta jumlah, jadi campurkan: 50 + 30 = 80."
         },
         {
           "id": "t3_c4_q7",
           "text": "Nyatakan pecahan bahagian berlorek.",
           "options": [
             "2/5",
+            "1/5",
             "3/5",
-            "2/3",
-            "1/5"
+            "2/3"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 2/5"
+          "working": "Rajah dibahagi kepada 5 bahagian sama besar dan 2 daripadanya berlorek. Pecahan berlorek ialah 2/5.",
+          "visual": {
+            "type": "fraction",
+            "parts": 5,
+            "shaded": 2,
+            "shape": "bar"
+          }
         },
         {
           "id": "t3_c4_q8",
@@ -1226,67 +1258,76 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 100"
+          "working": "RM1 bersamaan 100 sen, jadi RM1 = 1 × 100 = 100 sen."
         },
         {
           "id": "t3_c4_q9",
           "text": "Jumlahkan wang ini.",
           "options": [
-            "RM0.80",
-            "RM8.00",
+            "RM0.90",
             "RM0.70",
-            "RM0.90"
+            "RM8.00",
+            "RM0.80"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: RM0.80"
+          "working": "Kira syiling 50 sen + 20 sen + 10 sen = 80 sen. Jumlah semuanya RM0.80.",
+          "visual": {
+            "type": "money",
+            "notes": [],
+            "coins": [
+              50,
+              20,
+              10
+            ]
+          }
         },
         {
           "id": "t3_c4_q10",
           "text": "1/3 setara dengan pecahan manakah?",
           "options": [
-            "2/6",
             "1/6",
             "3/6",
-            "2/3"
+            "2/3",
+            "2/6"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 2/6"
+          "working": "Darab pengangka dan penyebut dengan nombor yang sama. 1/3 = (1 × 2)/(3 × 2) = 2/6."
         },
         {
           "id": "t3_c4_q11",
           "text": "1/4 + 2/4 = ?",
           "options": [
-            "3/4",
             "2/4",
-            "1/4",
-            "4/4"
+            "4/4",
+            "3/4",
+            "1/4"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 3/4"
+          "working": "Tukar kepada penyebut yang sama dahulu: 1/4 = 1/4, 2/4 = 2/4. Bandingkan pengangka, yang paling kecil ialah 3/4."
         },
         {
           "id": "t3_c4_q12",
-          "text": "3/5 âˆ’ 1/5 = ?",
+          "text": "3/5 − 1/5 = ?",
           "options": [
-            "2/5",
-            "4/5",
             "1/5",
-            "3/5"
+            "4/5",
+            "3/5",
+            "2/5"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 2/5"
+          "working": "Tukar kepada penyebut yang sama dahulu: 3/5 = 3/5, 1/5 = 1/5. Bandingkan pengangka, yang paling kecil ialah 2/5."
         },
         {
           "id": "t3_c4_q13",
@@ -1296,22 +1337,22 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 5"
+          "working": "Soalan minta baki atau beza, jadi tolak: RM50 − RM45 = RM5."
         },
         {
           "id": "t3_c4_q14",
           "text": "Pecahan setara bagi 2/3 ialah?",
           "options": [
-            "4/6",
+            "5/6",
             "3/4",
             "2/4",
-            "5/6"
+            "4/6"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 4/6"
+          "working": "Darab pengangka dan penyebut dengan nombor yang sama. 2/3 = (2 × 2)/(3 × 2) = 4/6."
         },
         {
           "id": "t3_c4_q15",
@@ -1321,22 +1362,22 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 195"
+          "working": "Soalan minta jumlah, jadi campurkan: RM120 + RM75 = RM195."
         },
         {
           "id": "t3_c4_q16",
           "text": "1/2 + 1/4 = ?",
           "options": [
             "3/4",
-            "2/4",
             "1/4",
-            "1/2"
+            "1/2",
+            "2/4"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 3/4"
+          "working": "Tukar kepada penyebut yang sama dahulu: 1/2 = 2/4, 1/4 = 1/4. Bandingkan pengangka, yang paling kecil ialah 3/4."
         },
         {
           "id": "t3_c4_q17",
@@ -1351,7 +1392,7 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 3/8"
+          "working": "Tukar kepada penyebut yang sama dahulu: 3/8 = 3/8, 5/8 = 5/8. Bandingkan pengangka, yang paling kecil ialah 3/8."
         },
         {
           "id": "t3_c4_q18",
@@ -1361,22 +1402,22 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 40"
+          "working": "Ada 5 kumpulan dengan 8 setiap satu, jadi darab: 8 × 5 = RM40."
         },
         {
           "id": "t3_c4_q19",
-          "text": "5/6 âˆ’ 2/6 = ?",
+          "text": "5/6 − 2/6 = ?",
           "options": [
+            "7/6",
             "3/6",
             "1/6",
-            "7/6",
             "4/6"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 3/6"
+          "working": "Tukar kepada penyebut yang sama dahulu: 5/6 = 5/6, 2/6 = 2/6. Bandingkan pengangka, yang paling kecil ialah 3/6."
         },
         {
           "id": "t3_c4_q20",
@@ -1386,22 +1427,22 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 155"
+          "working": "Soalan minta baki atau beza, jadi tolak: RM250 − RM95 = RM155."
         },
         {
           "id": "t3_c4_q21",
           "text": "Sebuah pizza dipotong kepada 8 bahagian sama besar. Ali makan 3 bahagian. Apakah pecahan pizza yang tinggal?",
           "options": [
+            "8/5",
             "5/8",
-            "3/8",
             "5/3",
-            "8/5"
+            "3/8"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 5/8"
+          "working": "Kek dibahagi 8 bahagian, 3 bahagian dimakan. Yang tinggal 8 − 3 = 5 bahagian, iaitu 5/8."
         },
         {
           "id": "t3_c4_q22",
@@ -1411,22 +1452,22 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 115"
+          "working": "Soalan minta jumlah, jadi campurkan: RM68 + RM47 = RM115."
         },
         {
           "id": "t3_c4_q23",
           "text": "Ibu membeli 2 kg gula berharga RM3 sekilogram dan sebotol minyak masak RM12. Berapakah jumlah perbelanjaan Ibu?",
           "options": [
-            "RM18",
+            "RM20",
             "RM15",
-            "RM17",
-            "RM20"
+            "RM18",
+            "RM17"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: RM18"
+          "working": "Selesaikan dua langkah. Pertama RM2 × RM3 = RM6. Kemudian RM6 + RM12 = RM18."
         },
         {
           "id": "t3_c4_q24",
@@ -1436,22 +1477,22 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 95"
+          "working": "Selesaikan dua langkah. Pertama RM500 − RM320 = RM180. Kemudian RM180 − RM85 = RM95."
         },
         {
           "id": "t3_c4_q25",
           "text": "Sebuah kek dibahagikan sama rata kepada 6 bahagian. Mira makan 1/6 dan Adam makan 2/6. Berapakah jumlah pecahan kek yang telah dimakan?",
           "options": [
             "3/6",
+            "1/6",
             "2/6",
-            "4/6",
-            "1/6"
+            "4/6"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 3/6"
+          "working": "Tukar kepada penyebut yang sama dahulu: 1/6 = 1/6, 2/6 = 2/6. Bandingkan pengangka, yang paling kecil ialah 3/6."
         },
         {
           "id": "t3_c4_q26",
@@ -1461,22 +1502,22 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 330"
+          "working": "Ada 6 kumpulan dengan 55 setiap satu, jadi darab: 55 × 6 = RM330."
         },
         {
           "id": "t3_c4_q27",
           "text": "Pecahan manakah yang setara dengan 3/4?",
           "options": [
-            "6/8",
             "5/8",
             "4/6",
-            "2/4"
+            "2/4",
+            "6/8"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 6/8"
+          "working": "Darab pengangka dan penyebut dengan nombor yang sama. 3/4 = (3 × 2)/(4 × 2) = 6/8."
         },
         {
           "id": "t3_c4_q28",
@@ -1486,22 +1527,22 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 76"
+          "working": "Soalan minta baki atau beza, jadi tolak: RM100 − RM24 = RM76."
         },
         {
           "id": "t3_c4_q29",
           "text": "Sebuah bekas berisi 3/8 air. Jika 1/8 lagi air dituang masuk, berapakah jumlah pecahan air dalam bekas sekarang?",
           "options": [
-            "4/8",
             "5/8",
-            "3/8",
-            "2/8"
+            "4/8",
+            "2/8",
+            "3/8"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 4/8"
+          "working": "Tukar kepada penyebut yang sama dahulu: 3/8 = 3/8, 1/8 = 1/8. Bandingkan pengangka, yang paling kecil ialah 4/8."
         },
         {
           "id": "t3_c4_q30",
@@ -1511,7 +1552,7 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 530"
+          "working": "Soalan minta baki atau beza, jadi tolak: RM650 − RM120 = RM530."
         }
       ]
     },
@@ -1524,31 +1565,36 @@
           "id": "t3_c5_q1",
           "text": "Pukul berapakah ditunjukkan pada jam ini?",
           "options": [
-            "3:00",
-            "3:30",
             "4:00",
-            "2:00"
+            "3:30",
+            "2:00",
+            "3:00"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 3:00"
+          "working": "Jarum pendek menunjuk 3 dan jarum panjang tepat di angka 12, jadi masa yang ditunjukkan ialah 3:00.",
+          "visual": {
+            "type": "clock",
+            "hour": 3,
+            "minute": 0
+          }
         },
         {
           "id": "t3_c5_q2",
           "text": "Bacaan masa yang betul ialah?",
           "options": [
-            "7:30",
             "7:00",
+            "8:30",
             "6:30",
-            "8:30"
+            "7:30"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 7:30"
+          "working": "Baca jarum pendek untuk jam dan jarum panjang untuk minit, kemudian tulis dalam bentuk jam:minit. Jawapan: 7:30."
         },
         {
           "id": "t3_c5_q3",
@@ -1558,7 +1604,7 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 100"
+          "working": "1 meter dibahagi kepada 100 sentimeter."
         },
         {
           "id": "t3_c5_q4",
@@ -1568,37 +1614,42 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 1000"
+          "working": "1 kilogram bersamaan 1 000 gram. Jawapan: 1000."
         },
         {
           "id": "t3_c5_q5",
           "text": "1 liter bersamaan dengan berapa mililiter?",
           "options": [
-            1000,
             100,
-            10000,
-            10
+            10,
+            1000,
+            10000
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 1000"
+          "working": "1 liter bersamaan 1 000 mililiter. Jawapan: 1000."
         },
         {
           "id": "t3_c5_q6",
           "text": "Pukul berapakah ini?",
           "options": [
             "12:15",
-            "12:45",
+            "12:30",
             "1:15",
-            "12:30"
+            "12:45"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 12:15"
+          "working": "Jarum pendek menunjuk 12 dan jarum panjang di angka 3, jadi masa yang ditunjukkan ialah 12:15.",
+          "visual": {
+            "type": "clock",
+            "hour": 12,
+            "minute": 15
+          }
         },
         {
           "id": "t3_c5_q7",
@@ -1608,22 +1659,28 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 60"
+          "working": "1 jam dibahagi kepada 60 minit."
         },
         {
           "id": "t3_c5_q8",
           "text": "Berapakah perimeter bentuk segi empat ini (unit)?",
           "options": [
+            5,
             10,
             6,
-            12,
-            5
+            12
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 10"
+          "working": "Bentuk ini 3 petak lebar dan 2 petak tinggi. Perimeter ialah jumlah keliling: 2 × (3 + 2) = 10 unit.",
+          "visual": {
+            "type": "grid",
+            "cols": 3,
+            "rows": 2,
+            "cells": null
+          }
         },
         {
           "id": "t3_c5_q9",
@@ -1633,37 +1690,37 @@
           "difficulty": "mudah",
           "points": 10,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 2"
+          "working": "1 meter = 100 sentimeter, jadi bahagi dengan 100: 200 ÷ 100 = 2."
         },
         {
           "id": "t3_c5_q10",
           "text": "Sebuah bentuk mempunyai 4 sisi sama panjang. Apakah nama bentuk itu?",
           "options": [
-            "Segi empat sama",
-            "Segi tiga",
             "Bulatan",
-            "Segi empat tepat"
+            "Segi tiga",
+            "Segi empat tepat",
+            "Segi empat sama"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: Segi empat sama"
+          "working": "Bentuk dengan 4 sisi sama panjang dan 4 sudut tepat ialah segi empat sama. Jawapan: Segi empat sama."
         },
         {
           "id": "t3_c5_q11",
           "text": "Jam menunjukkan pukul 5:45. Berapa minit lagi untuk mencapai pukul 6:00?",
           "options": [
-            15,
-            10,
             20,
-            5
+            10,
+            5,
+            15
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 15"
+          "working": "Dari 5:45 ke 6:00. Kira jam penuh dahulu, kemudian minit: jumlahnya 15 minit."
         },
         {
           "id": "t3_c5_q12",
@@ -1673,22 +1730,28 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 90"
+          "working": "Dari 8:00 ke 9:30. Kira jam penuh dahulu, kemudian minit: jumlahnya 90 minit."
         },
         {
           "id": "t3_c5_q13",
           "text": "Kira perimeter segi empat tepat ini (unit).",
           "options": [
-            16,
-            15,
             8,
-            20
+            15,
+            20,
+            16
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 16"
+          "working": "Bentuk ini 4 petak lebar dan 4 petak tinggi. Perimeter ialah jumlah keliling: 2 × (4 + 4) = 16 unit.",
+          "visual": {
+            "type": "grid",
+            "cols": 4,
+            "rows": 4,
+            "cells": null
+          }
         },
         {
           "id": "t3_c5_q14",
@@ -1698,22 +1761,22 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 350"
+          "working": "Tukar kepada unit kecil: 3 meter 50 sentimeter = 300 + 50 = 350."
         },
         {
           "id": "t3_c5_q15",
           "text": "2 kg 300 g bersamaan dengan berapa gram?",
           "options": [
             2300,
-            2030,
             2003,
-            320
+            320,
+            2030
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 2300"
+          "working": "1 kg = 1 000 g, jadi 2 kg = 2 000 g, campur 300 g, jadi jumlahnya 2 300."
         },
         {
           "id": "t3_c5_q16",
@@ -1723,22 +1786,22 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 250"
+          "working": "Tukar semuanya kepada unit kecil dahulu: 1 liter = 1 000; 750 (unit kecil). Tolak: 1 000 − 750 = 250."
         },
         {
           "id": "t3_c5_q17",
           "text": "Pukul 14:00 dalam format 12 jam ialah?",
           "options": [
             "2:00 petang",
-            "2:00 pagi",
             "12:00 tengah hari",
-            "4:00 petang"
+            "4:00 petang",
+            "2:00 pagi"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 2:00 petang"
+          "working": "Selepas tengah hari, tolak 12 daripada jam: 14 − 12 = 2. Jadi pukul 2:00 petang."
         },
         {
           "id": "t3_c5_q18",
@@ -1748,22 +1811,28 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 45"
+          "working": "Dari 10:15 ke 11:00. Kira jam penuh dahulu, kemudian minit: jumlahnya 45 minit."
         },
         {
           "id": "t3_c5_q19",
           "text": "Berapakah perimeter petak segi empat sama ini (unit)?",
           "options": [
+            20,
             16,
-            8,
             12,
-            20
+            8
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 16"
+          "working": "Petak ini 4 unit pada setiap sisi. Perimeter segi empat sama = 4 × sisi = 4 × 4 = 16 unit.",
+          "visual": {
+            "type": "grid",
+            "cols": 4,
+            "rows": 4,
+            "cells": null
+          }
         },
         {
           "id": "t3_c5_q20",
@@ -1773,22 +1842,22 @@
           "difficulty": "sederhana",
           "points": 20,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 5200"
+          "working": "1 liter = 1 000 ml, jadi 5 liter = 5 000 ml, campur 200 ml, jadi jumlahnya 5 200."
         },
         {
           "id": "t3_c5_q21",
           "text": "Kelas Matematik bermula pukul 10:40 pagi dan berakhir pukul 12:10 tengah hari. Berapa lamakah (minit) kelas itu berlangsung?",
           "options": [
-            90,
-            80,
             100,
-            70
+            90,
+            70,
+            80
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 90"
+          "working": "Dari 10:40 ke 12:10. Kira jam penuh dahulu, kemudian minit: jumlahnya 90 minit."
         },
         {
           "id": "t3_c5_q22",
@@ -1798,22 +1867,22 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 155"
+          "working": "Tukar semuanya kepada unit kecil dahulu: 2 m 40 cm = 200 + 40 = 240; 40 (unit kecil). Tolak: 240 − 85 = 155."
         },
         {
           "id": "t3_c5_q23",
           "text": "Sebuah padang berbentuk segi empat tepat mempunyai lebar 2 unit dan panjang 6 unit. Berapakah perimeter padang itu?",
           "options": [
-            16,
+            18,
             12,
-            8,
-            18
+            16,
+            8
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 16"
+          "working": "Objek ini menyerupai bentuk 16."
         },
         {
           "id": "t3_c5_q24",
@@ -1823,22 +1892,22 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 4500"
+          "working": "Tukar semuanya kepada unit kecil dahulu: 8 liter = 8 000; 3 liter 500 ml = 3 000 + 500 = 3 500. Tolak: 8 000 − 3 500 = 4 500."
         },
         {
           "id": "t3_c5_q25",
           "text": "Bas bertolak pukul 07:50 pagi dan sampai ke destinasi pukul 09:20 pagi. Berapa lamakah perjalanan itu (minit)?",
           "options": [
-            90,
             80,
+            90,
             100,
             70
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 90"
+          "working": "Dari 7:50 ke 9:20. Kira jam penuh dahulu, kemudian minit: jumlahnya 90 minit."
         },
         {
           "id": "t3_c5_q26",
@@ -1848,22 +1917,22 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 5250"
+          "working": "Tukar semuanya kepada unit kecil dahulu: 4 kg 750 g = 4 000 + 750 = 4 750; 750 (unit kecil). Campurkan: 4 750 + 500 = 5 250."
         },
         {
           "id": "t3_c5_q27",
           "text": "Sebuah taman berbentuk segi empat sama dengan sisi 9 meter. Berapakah jumlah pagar yang diperlukan untuk mengelilingi taman itu (meter)?",
           "options": [
-            36,
+            27,
             18,
-            81,
-            27
+            36,
+            81
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 36"
+          "working": "Objek ini menyerupai bentuk 36."
         },
         {
           "id": "t3_c5_q28",
@@ -1873,22 +1942,22 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul ialah: 5"
+          "working": "Bahagi 15 sama rata kepada 3 bahagian: 15 ÷ 3 = 5."
         },
         {
           "id": "t3_c5_q29",
           "text": "Sebuah bingkai gambar berbentuk segi empat tepat bersaiz 7 unit × 4 unit. Berapakah jumlah panjang bingkai (perimeter) yang diperlukan?",
           "options": [
+            11,
             22,
             28,
-            11,
             18
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
-          "working": "Jawapan yang betul ialah: 22"
+          "working": "Perimeter segi empat tepat = 2 × (panjang + lebar) = 2 × (7 + 4) = 22 unit."
         },
         {
           "id": "t3_c5_q30",
@@ -1898,7 +1967,7 @@
           "difficulty": "cabaran",
           "points": 30,
           "type": "input",
-          "working": "Jawapan yang betul adalah: 15750"
+          "working": "Tukar semuanya kepada unit kecil dahulu: 12 liter = 12 000; 3 liter 750 ml = 3 000 + 750 = 3 750. Campurkan: 12 000 + 3 750 = 15 750."
         }
       ]
     }
