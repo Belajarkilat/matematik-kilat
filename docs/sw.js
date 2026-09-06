@@ -9,7 +9,7 @@
  * Bump VERSION on any deploy that must invalidate the old cache.
  */
 
-const VERSION = 'kilat-72354e10ea';
+const VERSION = 'kilat-cd6a3d6cde';
 const BASE = new URL('./', self.registration.scope).pathname;
 
 const PRECACHE = [

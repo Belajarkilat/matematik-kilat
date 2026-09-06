@@ -1,32 +1,43 @@
 import React, { useEffect, useRef } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
+import { getProfileService, STAR_CUTOFF, STARS_TO_ADVANCE } from '../services/profileService';
+import { isLevelPaid } from '../services/licenceService';
+import Stars from '../components/Stars';
 
-const PASS = 50;
-
-function verdictFor(score) {
-  if (score === 100) return { head: 'Semua betul', note: 'Aras ini sudah dikuasai sepenuhnya.' };
-  if (score >= 80) return { head: 'Cemerlang', note: 'Hampir semua betul. Teruskan ke aras seterusnya.' };
-  if (score >= PASS) return { head: 'Lulus', note: 'Aras seterusnya sudah dibuka.' };
+function verdictFor(stars, score) {
+  if (stars === 3) return { head: 'Tiga bintang', note: 'Semua betul. Aras ini sudah dikuasai sepenuhnya.' };
+  if (stars === 2) return { head: 'Dikuasai', note: 'Aras seterusnya sudah dibuka. Cuba lagi untuk tiga bintang.' };
+  if (stars === 1) {
+    return {
+      head: 'Satu bintang',
+      note: `Perlu ${STAR_CUTOFF[1]}% untuk membuka aras seterusnya. Kamu dapat ${score}%.`
+    };
+  }
   if (score >= 30) return { head: 'Hampir', note: 'Baca semula langkah kerja, kemudian cuba sekali lagi.' };
   return { head: 'Belum lulus', note: 'Cuba aras Mudah dahulu untuk membina asas.' };
 }
 
-function ResultsPage() {
+function ResultsPage({ profile }) {
   const { tahun, chapter, level } = useParams();
   const navigate = useNavigate();
   const location = useLocation();
   const canvasRef = useRef(null);
+  const ps = getProfileService();
 
-  const state = location.state || { score: 0, correct: 0, total: 0, combo: 0 };
-  const passed = state.score >= PASS;
-  const verdict = verdictFor(state.score);
-  const bonus = state.combo * 5;
-  const points = state.correct * 10 + bonus;
+  const state = location.state || {
+    score: 0, correct: 0, total: 0, combo: 0, stars: 0, starsBefore: 0, points: 0, streak: 0, newBadges: []
+  };
+
+  const stars = state.stars || 0;
+  const advanced = stars >= STARS_TO_ADVANCE;
+  const verdict = verdictFor(stars, state.score);
+  const allBadges = ps.getAllBadges();
+  const earned = (state.newBadges || []).map((id) => allBadges[id]).filter(Boolean);
 
   // Confetti is a reward, so it only runs on a pass, and never for anyone who
   // has asked the system to reduce motion.
   useEffect(() => {
-    if (!passed) return undefined;
+    if (!advanced) return undefined;
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return undefined;
 
     const canvas = canvasRef.current;
@@ -68,9 +79,11 @@ function ResultsPage() {
     };
     draw();
     return () => raf && cancelAnimationFrame(raf);
-  }, [passed]);
+  }, [advanced]);
 
-  const nextLevel = Math.min(4, parseInt(level, 10) + 1);
+  const levelNum = parseInt(level, 10);
+  const nextLevel = Math.min(4, levelNum + 1);
+  const nextIsPaid = isLevelPaid(nextLevel);
 
   return (
     <div className="page" style={{ position: 'relative' }}>
@@ -89,7 +102,11 @@ function ResultsPage() {
 
       <div style={{ position: 'relative', zIndex: 2 }}>
         <div className="paper center pop" style={{ marginBottom: 16 }}>
-          <div className="score">{state.score}%</div>
+          <div className="stars stars--big">
+            <Stars count={stars} size={44} label={`${stars} daripada 3 bintang`} />
+          </div>
+
+          <div className="score" style={{ marginTop: 10 }}>{state.score}%</div>
           <div className="score__label">
             {state.correct} betul daripada {state.total} soalan
           </div>
@@ -99,22 +116,39 @@ function ResultsPage() {
 
           <div className="stats" style={{ marginTop: 18, gridTemplateColumns: 'repeat(3, 1fr)' }}>
             <div className="stat">
-              <div className="stat__num">{state.correct}</div>
-              <div className="stat__label">Betul</div>
-            </div>
-            <div className="stat">
               <div className="stat__num">{state.combo}</div>
               <div className="stat__label">Rentetan terbaik</div>
             </div>
             <div className="stat">
-              <div className="stat__num">{points}</div>
+              <div className="stat__num">{state.points}</div>
               <div className="stat__label">Poin</div>
+            </div>
+            <div className="stat">
+              <div className="stat__num">{state.streak}</div>
+              <div className="stat__label">Hari berturut</div>
             </div>
           </div>
         </div>
 
+        {earned.length > 0 && (
+          <div className="paper paper--plain" style={{ marginBottom: 16 }}>
+            <div className="eyebrow" style={{ marginBottom: 8 }}>Lencana baharu</div>
+            <div className="badges">
+              {earned.map((b) => (
+                <div className="badge" key={b.name}>
+                  <span className="badge__emoji">{b.emoji}</span>
+                  <div>
+                    <div className="badge__name">{b.name}</div>
+                    <div className="badge__note">{b.description}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
         <div className="stack">
-          {passed && parseInt(level, 10) < 4 && (
+          {advanced && levelNum < 4 && !nextIsPaid && (
             <button
               className="btn btn--go btn--block"
               onClick={() => navigate(`/quiz/${tahun}/${chapter}/${nextLevel}`)}
@@ -122,11 +156,16 @@ function ResultsPage() {
               Teruskan ke aras seterusnya
             </button>
           )}
+          {advanced && levelNum < 4 && nextIsPaid && (
+            <button className="btn btn--go btn--block" onClick={() => navigate('/buka')}>
+              Buka aras Cabaran dan Ultra
+            </button>
+          )}
           <button
-            className="btn btn--paper btn--block"
+            className={advanced ? 'btn btn--paper btn--block' : 'btn btn--go btn--block'}
             onClick={() => navigate(`/quiz/${tahun}/${chapter}/${level}`)}
           >
-            Cuba aras ini sekali lagi
+            {stars === 3 ? 'Main aras ini sekali lagi' : 'Cuba lagi untuk lebih bintang'}
           </button>
           <button className="btn btn--quiet btn--block" onClick={() => navigate(`/tahun/${tahun}`)}>
             Pilih bab lain

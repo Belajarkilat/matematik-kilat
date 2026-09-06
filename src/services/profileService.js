@@ -1,24 +1,82 @@
 /**
- * Multi-Profile Management Service
- * Handles profile creation, selection, progress tracking, and avatar customization
- * Uses localStorage - same pattern as the original Matematik Kilat app
+ * Profil, kemajuan, bintang, rentetan harian dan lencana.
+ *
+ * Semuanya disimpan dalam localStorage peranti ini. Tiada akaun dan tiada
+ * pelayan, jadi kemajuan boleh dieksport sebagai satu kod teks supaya ia
+ * boleh dipulihkan kalau pelayar dibersihkan atau budak tukar peranti.
  */
 
 const PROFILES_KEY = 'bk_matematik_kilat_profiles_v1';
 
-// Badge definitions
-const BADGES = {
-  'perfect-score': { name: 'Perfect Score', emoji: '💯', description: 'Got 100% on any level' },
-  'combo-master': { name: 'Combo Master', emoji: '🔥', description: 'Got 5+ combo streak' },
-  'speed-demon': { name: 'Speed Demon', emoji: '⚡', description: 'Answer 10 questions in < 5 min' },
-  'perfect-week': { name: 'Perfect Week', emoji: '🌟', description: 'Get 100% 3 times in one week' },
-  '100-questions': { name: 'Centurion', emoji: '💯', description: 'Answer 100 questions total' },
-  'all-grades-clear': { name: 'Master Learner', emoji: '👑', description: 'Complete all 6 grades' },
-  'streak-5': { name: 'Hot Streak', emoji: '🔥🔥', description: 'Get 5-combo 3 times' }
+// Berapa banyak sesi lepas yang disimpan untuk laporan ibu bapa. Setiap
+// entri kecil, tetapi localStorage ada had, jadi yang lama dibuang.
+const HISTORY_MAX = 300;
+
+// Markah minimum untuk satu, dua dan tiga bintang.
+export const STAR_CUTOFF = [50, 80, 100];
+
+// Aras seterusnya terbuka pada dua bintang. Lulus sekadar separuh markah
+// dahulu bermakna budak naik aras sambil salah separuh soalan.
+export const STARS_TO_ADVANCE = 2;
+
+export function starsForScore(score) {
+  if (score >= STAR_CUTOFF[2]) return 3;
+  if (score >= STAR_CUTOFF[1]) return 2;
+  if (score >= STAR_CUTOFF[0]) return 1;
+  return 0;
+}
+
+// Aksesori avatar. Songkok dan tudung tidak pernah berkunci: itu pilihan
+// identiti, bukan ganjaran. Selebihnya dibuka dengan bintang.
+export const HAT_UNLOCKS = {
+  none: 0,
+  songkok: 0,
+  tudung: 0,
+  cap: 5,
+  beanie: 15,
+  bow: 25,
+  flower: 40,
+  crown: 60
 };
 
-// These are the values AvatarBuilder offers, so a brand new profile already
-// shows a selected swatch under every heading instead of an empty ring.
+const BADGES = {
+  'markah-penuh': {
+    name: 'Markah Penuh',
+    emoji: '💯',
+    description: 'Dapat 100% dalam satu aras'
+  },
+  'rentetan-api': {
+    name: 'Rentetan Api',
+    emoji: '🔥',
+    description: 'Lima jawapan betul berturut-turut'
+  },
+  'bintang-tiga': {
+    name: 'Tiga Bintang',
+    emoji: '⭐',
+    description: 'Kutip tiga bintang pertama'
+  },
+  'seratus-soalan': {
+    name: 'Seratus Soalan',
+    emoji: '📚',
+    description: 'Jawab 100 soalan semuanya'
+  },
+  'tujuh-hari': {
+    name: 'Tujuh Hari',
+    emoji: '📅',
+    description: 'Belajar tujuh hari berturut-turut'
+  },
+  'juara-tahun': {
+    name: 'Juara Tahun',
+    emoji: '🏅',
+    description: 'Kuasai semua aras dalam satu tahun'
+  },
+  'juara-besar': {
+    name: 'Juara Besar',
+    emoji: '👑',
+    description: 'Kuasai semua aras Tahun 1 hingga 6'
+  }
+};
+
 const DEFAULT_AVATAR = {
   gender: 'boy',
   skinColor: '#E8B98F',
@@ -29,66 +87,64 @@ const DEFAULT_AVATAR = {
   faceType: 'smile'
 };
 
+function ymd(date) {
+  const d = new Date(date);
+  const m = `${d.getMonth() + 1}`.padStart(2, '0');
+  const day = `${d.getDate()}`.padStart(2, '0');
+  return `${d.getFullYear()}-${m}-${day}`;
+}
+
+function daysBetween(a, b) {
+  const [ay, am, ad] = a.split('-').map(Number);
+  const [by, bm, bd] = b.split('-').map(Number);
+  const ms = Date.UTC(by, bm - 1, bd) - Date.UTC(ay, am - 1, ad);
+  return Math.round(ms / 86400000);
+}
+
 class ProfileService {
   constructor() {
     this.profiles = this._loadProfiles();
     this.activeId = this.profiles.activeId;
   }
 
-  /**
-   * Load profiles from localStorage or initialize default
-   */
   _loadProfiles() {
     try {
       const stored = localStorage.getItem(PROFILES_KEY);
-      if (stored) {
-        return JSON.parse(stored);
-      }
+      if (stored) return JSON.parse(stored);
     } catch (e) {
-      console.warn('Failed to load profiles:', e);
+      console.warn('Gagal membaca profil:', e);
     }
-    return this._createDefaultProfiles();
+    return { activeId: null, profiles: [] };
   }
 
-  /**
-   * Create initial empty profiles structure
-   */
-  _createDefaultProfiles() {
-    return {
-      activeId: null,
-      profiles: []
-    };
-  }
-
-  /**
-   * Save profiles to localStorage
-   */
   _save() {
     try {
       localStorage.setItem(PROFILES_KEY, JSON.stringify(this.profiles));
     } catch (e) {
-      console.error('Failed to save profiles:', e);
+      console.error('Gagal menyimpan profil:', e);
     }
   }
 
-  /**
-   * Create a new profile
-   */
+  _find(id) {
+    return this.profiles.profiles.find((p) => p.id === id);
+  }
+
   createProfile(name) {
-    const id = `profile_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    const id = `profile_${Date.now()}_${Math.random().toString(36).slice(2, 11)}`;
     const newProfile = {
       id,
       name,
       createdAt: new Date().toISOString(),
-      level: 1, // Tahun 1 by default
       totalPoints: 0,
+      totalQuestions: 0,
       avatar: { ...DEFAULT_AVATAR },
-      progress: this._createEmptyProgress(),
+      progress: {},
       badges: [],
       streakDays: 0,
-      lastActivityDate: null
+      bestStreak: 0,
+      lastActivityDate: null,
+      history: []
     };
-
     this.profiles.profiles.push(newProfile);
     this.activeId = id;
     this.profiles.activeId = id;
@@ -96,136 +152,101 @@ class ProfileService {
     return newProfile;
   }
 
-  /**
-   * Get all profiles
-   */
   getAllProfiles() {
     return this.profiles.profiles;
   }
 
-  /**
-   * Get active profile
-   */
   getActiveProfile() {
     if (!this.activeId) return null;
-    return this.profiles.profiles.find(p => p.id === this.activeId);
+    return this._find(this.activeId) || null;
   }
 
-  /**
-   * Get profile by ID
-   */
   getProfile(id) {
-    return this.profiles.profiles.find(p => p.id === id);
+    return this._find(id);
   }
 
-  /**
-   * Switch active profile
-   */
   switchProfile(id) {
-    const profile = this.profiles.profiles.find(p => p.id === id);
-    if (!profile) throw new Error('Profile not found');
-
+    const profile = this._find(id);
+    if (!profile) throw new Error('Profil tidak dijumpai');
     this.activeId = id;
     this.profiles.activeId = id;
     this._save();
     return profile;
   }
 
-  /**
-   * Delete a profile (must have > 1)
-   */
   deleteProfile(id) {
     if (this.profiles.profiles.length <= 1) {
-      throw new Error('Cannot delete the only profile');
+      throw new Error('Profil terakhir tidak boleh dipadam');
     }
-
-    const idx = this.profiles.profiles.findIndex(p => p.id === id);
-    if (idx === -1) throw new Error('Profile not found');
-
+    const idx = this.profiles.profiles.findIndex((p) => p.id === id);
+    if (idx === -1) throw new Error('Profil tidak dijumpai');
     this.profiles.profiles.splice(idx, 1);
-
     if (this.activeId === id) {
       this.activeId = this.profiles.profiles[0]?.id || null;
       this.profiles.activeId = this.activeId;
     }
-
     this._save();
   }
 
-  /**
-   * Update profile avatar
-   */
   updateAvatar(profileId, avatarData) {
-    const profile = this.profiles.profiles.find(p => p.id === profileId);
-    if (!profile) throw new Error('Profile not found');
-
+    const profile = this._find(profileId);
+    if (!profile) throw new Error('Profil tidak dijumpai');
     profile.avatar = { ...profile.avatar, ...avatarData };
     this._save();
     return profile;
   }
 
-  /**
-   * Add points to profile
-   */
   addPoints(profileId, points) {
-    const profile = this.profiles.profiles.find(p => p.id === profileId);
-    if (!profile) throw new Error('Profile not found');
-
+    const profile = this._find(profileId);
+    if (!profile) throw new Error('Profil tidak dijumpai');
     profile.totalPoints += points;
     this._save();
     return profile;
   }
 
-  /**
-   * Update progress for a specific question
-   */
-  updateProgress(profileId, tahun, chapter, level, questionId, isCorrect) {
-    const profile = this.profiles.profiles.find(p => p.id === profileId);
-    if (!profile) throw new Error('Profile not found');
+  /* ----------------------------------------------------------- kemajuan -- */
 
-    const key = `t${tahun}_c${chapter}_l${level}`;
-    if (!profile.progress[key]) {
-      profile.progress[key] = { attempted: 0, correct: 0, lastAttempted: null };
-    }
-
-    profile.progress[key].attempted += 1;
-    if (isCorrect) {
-      profile.progress[key].correct += 1;
-    }
-    profile.progress[key].lastAttempted = new Date().toISOString();
-    profile.lastActivityDate = new Date().toISOString();
-
-    this._save();
-    return profile.progress[key];
+  _key(tahun, chapter, level) {
+    return `t${tahun}_c${chapter}_l${level}`;
   }
 
   /**
-   * Get progress percentage for a level
-   */
-  getProgressPercentage(profileId, tahun, chapter, level) {
-    const profile = this.profiles.profiles.find(p => p.id === profileId);
-    if (!profile) return 0;
-
-    const key = `t${tahun}_c${chapter}_l${level}`;
-    const prog = profile.progress[key];
-    if (!prog || prog.attempted === 0) return 0;
-
-    return Math.round((prog.correct / prog.attempted) * 100);
-  }
-
-  /**
-   * Has this level been passed at least once?
+   * Baris kemajuan satu aras.
    *
-   * updateProgress records one row per completed quiz, where `correct` counts
-   * the runs that scored 50% or more. So a level is cleared once that count is
-   * above zero. Level 1 of every chapter is always open; the rest unlock when
-   * the level before them is cleared.
+   * Profil yang dibuat sebelum sistem bintang hanya menyimpan `correct`, iaitu
+   * bilangan larian yang lulus separuh markah. Baris begitu diberi dua bintang
+   * supaya budak yang sudah bermain tidak mendapati arasnya berkunci semula.
    */
+  getLevel(profileId, tahun, chapter, level) {
+    const profile = this._find(profileId);
+    const empty = { attempts: 0, bestScore: 0, stars: 0, wrongIds: [], lastAttempted: null };
+    if (!profile) return empty;
+
+    const row = profile.progress[this._key(tahun, chapter, level)];
+    if (!row) return empty;
+
+    if (row.stars === undefined) {
+      const legacyStars = row.correct > 0 ? 2 : 0;
+      return {
+        attempts: row.attempted || 0,
+        bestScore: legacyStars ? 80 : 0,
+        stars: legacyStars,
+        wrongIds: [],
+        lastAttempted: row.lastAttempted || null
+      };
+    }
+
+    return {
+      attempts: row.attempts || 0,
+      bestScore: row.bestScore || 0,
+      stars: row.stars || 0,
+      wrongIds: row.wrongIds || [],
+      lastAttempted: row.lastAttempted || null
+    };
+  }
+
   isLevelCleared(profileId, tahun, chapter, level) {
-    const profile = this.profiles.profiles.find(p => p.id === profileId);
-    if (!profile) return false;
-    const prog = profile.progress[`t${tahun}_c${chapter}_l${level}`];
-    return Boolean(prog && prog.correct > 0);
+    return this.getLevel(profileId, tahun, chapter, level).stars >= STARS_TO_ADVANCE;
   }
 
   isLevelOpen(profileId, tahun, chapter, level) {
@@ -233,9 +254,6 @@ class ProfileService {
     return this.isLevelCleared(profileId, tahun, chapter, level - 1);
   }
 
-  /**
-   * How many levels of a tahun have been cleared, out of the total on offer.
-   */
   getClearedCount(profileId, tahun, chapters = 5, levels = 4) {
     let done = 0;
     for (let c = 1; c <= chapters; c += 1) {
@@ -246,139 +264,284 @@ class ProfileService {
     return { done, total: chapters * levels };
   }
 
-  /**
-   * Get overall progress for a tahun
-   */
-  getOverallProgress(profileId, tahun) {
-    const profile = this.profiles.profiles.find(p => p.id === profileId);
+  getTotalStars(profileId) {
+    const profile = this._find(profileId);
     if (!profile) return 0;
-
-    let totalAttempted = 0;
-    let totalCorrect = 0;
-
-    for (const key in profile.progress) {
-      if (key.startsWith(`t${tahun}_`)) {
-        totalAttempted += profile.progress[key].attempted;
-        totalCorrect += profile.progress[key].correct;
-      }
-    }
-
-    if (totalAttempted === 0) return 0;
-    return Math.round((totalCorrect / totalAttempted) * 100);
+    let stars = 0;
+    Object.keys(profile.progress).forEach((key) => {
+      const m = /^t(\d+)_c(\d+)_l(\d+)$/.exec(key);
+      if (!m) return;
+      stars += this.getLevel(profileId, m[1], m[2], m[3]).stars;
+    });
+    return stars;
   }
 
-  /**
-   * Unlock a badge
-   */
-  unlockBadge(profileId, badgeId) {
-    const profile = this.profiles.profiles.find(p => p.id === profileId);
-    if (!profile) throw new Error('Profile not found');
-
-    if (!profile.badges.includes(badgeId)) {
-      profile.badges.push(badgeId);
-      this._save();
-    }
-    return profile.badges;
+  isHatUnlocked(profileId, hatType) {
+    const need = HAT_UNLOCKS[hatType] ?? 0;
+    if (need === 0) return true;
+    return this.getTotalStars(profileId) >= need;
   }
 
+  /* ------------------------------------------------------------ rentetan -- */
+
   /**
-   * Create empty progress object for all chapters/levels
+   * Rentetan hanya hidup selagi budak main hari ini atau semalam. Kalau dia
+   * terlepas sehari penuh, rentetan itu sudah putus walaupun nombor lama
+   * masih tersimpan sehingga dia main semula.
    */
-  _createEmptyProgress() {
-    const progress = {};
-    for (let t = 1; t <= 6; t++) {
-      for (let c = 1; c <= 5; c++) {
-        for (let l = 1; l <= 3; l++) {
-          progress[`t${t}_c${c}_l${l}`] = { attempted: 0, correct: 0, lastAttempted: null };
-        }
-      }
+  getStreak(profileId) {
+    const profile = this._find(profileId);
+    if (!profile || !profile.lastActivityDate) {
+      return { days: 0, best: profile?.bestStreak || 0, playedToday: false };
     }
-    return progress;
+    const today = ymd(new Date());
+    const gap = daysBetween(profile.lastActivityDate, today);
+    if (gap > 1) return { days: 0, best: profile.bestStreak || 0, playedToday: false };
+    return {
+      days: profile.streakDays || 0,
+      best: profile.bestStreak || 0,
+      playedToday: gap === 0
+    };
   }
 
-  /**
-   * Reset all progress (dangerous!)
-   */
-  resetProgress(profileId) {
-    const profile = this.profiles.profiles.find(p => p.id === profileId);
-    if (!profile) throw new Error('Profile not found');
+  _bumpStreak(profile) {
+    const today = ymd(new Date());
+    const last = profile.lastActivityDate;
+    if (last === today) {
+      // Sudah dikira hari ini.
+    } else if (last && daysBetween(last, today) === 1) {
+      profile.streakDays = (profile.streakDays || 0) + 1;
+    } else {
+      profile.streakDays = 1;
+    }
+    profile.lastActivityDate = today;
+    profile.bestStreak = Math.max(profile.bestStreak || 0, profile.streakDays);
+    return profile.streakDays;
+  }
 
-    profile.progress = this._createEmptyProgress();
-    profile.badges = [];
-    profile.totalPoints = 0;
+  /* ------------------------------------------------------- rekod kuiz -- */
+
+  /**
+   * Satu kuiz siap. Ini satu-satunya tempat kemajuan bertambah, jadi bintang,
+   * rentetan, poin, sejarah dan lencana semuanya dikira sekali di sini.
+   */
+  recordQuiz(profileId, run) {
+    const profile = this._find(profileId);
+    if (!profile) throw new Error('Profil tidak dijumpai');
+
+    const { tahun, chapter, chapterTitle, level, score, correct, total, seconds, combo, bonus, wrongIds } = run;
+    const key = this._key(tahun, chapter, level);
+    const before = this.getLevel(profileId, tahun, chapter, level);
+    const stars = starsForScore(score);
+
+    profile.progress[key] = {
+      attempts: before.attempts + 1,
+      bestScore: Math.max(before.bestScore, score),
+      stars: Math.max(before.stars, stars),
+      wrongIds: wrongIds || [],
+      lastAttempted: new Date().toISOString()
+    };
+
+    profile.totalQuestions = (profile.totalQuestions || 0) + total;
+
+    const points = correct * 10 + (combo || 0) * 5 + (bonus || 0) * 5;
+    profile.totalPoints += points;
+
+    const streak = this._bumpStreak(profile);
+
+    profile.history = profile.history || [];
+    profile.history.push({
+      d: ymd(new Date()),
+      t: Number(tahun),
+      c: Number(chapter),
+      ct: chapterTitle || '',
+      l: Number(level),
+      s: score,
+      q: total,
+      sec: Math.max(0, Math.round(seconds || 0))
+    });
+    if (profile.history.length > HISTORY_MAX) {
+      profile.history = profile.history.slice(-HISTORY_MAX);
+    }
+
     this._save();
-    return profile;
+
+    const newBadges = this._checkBadges(profile, { score, combo: combo || 0, stars, streak });
+
+    return {
+      stars,
+      starsBefore: before.stars,
+      points,
+      streak,
+      newBadges
+    };
   }
 
-  /**
-   * Check and unlock badges based on progress
-   */
-  checkAndUnlockBadges(profileId) {
-    const profile = this.profiles.profiles.find(p => p.id === profileId);
-    if (!profile) throw new Error('Profile not found');
+  /* ------------------------------------------------------------- lencana -- */
 
-    const newBadges = [];
-
-    // Count total questions answered
-    let totalAttempted = 0;
-    let totalCorrect = 0;
-    for (const key in profile.progress) {
-      totalAttempted += profile.progress[key].attempted;
-      totalCorrect += profile.progress[key].correct;
+  _award(profile, id, into) {
+    if (!profile.badges.includes(id)) {
+      profile.badges.push(id);
+      into.push(id);
     }
-
-    // Badge: 100 questions
-    if (totalAttempted >= 100 && !profile.badges.includes('100-questions')) {
-      newBadges.push('100-questions');
-      this.unlockBadge(profileId, '100-questions');
-    }
-
-    // Badge: All grades clear (at least 50% on each grade)
-    let allGradesClear = true;
-    for (let t = 1; t <= 6; t++) {
-      const gradeProgress = this.getOverallProgress(profileId, t);
-      if (gradeProgress < 50) {
-        allGradesClear = false;
-        break;
-      }
-    }
-    if (allGradesClear && !profile.badges.includes('all-grades-clear')) {
-      newBadges.push('all-grades-clear');
-      this.unlockBadge(profileId, 'all-grades-clear');
-    }
-
-    return newBadges;
   }
 
-  /**
-   * Get all available badges with their info
-   */
+  _checkBadges(profile, run) {
+    const earned = [];
+
+    if (run.score >= 100) this._award(profile, 'markah-penuh', earned);
+    if (run.combo >= 5) this._award(profile, 'rentetan-api', earned);
+    if (run.stars >= 3) this._award(profile, 'bintang-tiga', earned);
+    if ((profile.totalQuestions || 0) >= 100) this._award(profile, 'seratus-soalan', earned);
+    if (run.streak >= 7) this._award(profile, 'tujuh-hari', earned);
+
+    let allYears = true;
+    for (let t = 1; t <= 6; t += 1) {
+      const { done, total } = this.getClearedCount(profile.id, t, 5, 4);
+      if (done >= total) this._award(profile, 'juara-tahun', earned);
+      if (done < total) allYears = false;
+    }
+    if (allYears) this._award(profile, 'juara-besar', earned);
+
+    if (earned.length) this._save();
+    return earned;
+  }
+
   getAllBadges() {
     return BADGES;
   }
 
-  /**
-   * Get badge info by id
-   */
   getBadgeInfo(badgeId) {
     return BADGES[badgeId] || null;
   }
+
+  /* ------------------------------------------------- laporan ibu bapa -- */
+
+  /**
+   * Ringkasan tujuh hari lepas, ditambah bab paling lemah. Ini satu-satunya
+   * skrin yang ditulis untuk orang yang membayar, bukan untuk budak.
+   */
+  getReport(profileId, days = 7) {
+    const profile = this._find(profileId);
+    const blank = {
+      questions: 0, minutes: 0, quizzes: 0, activeDays: 0,
+      avgScore: 0, byDay: [], weak: [], recent: []
+    };
+    if (!profile) return blank;
+
+    const history = profile.history || [];
+    const today = ymd(new Date());
+    const window = history.filter((h) => daysBetween(h.d, today) < days);
+
+    const byDayMap = {};
+    for (let i = days - 1; i >= 0; i -= 1) {
+      const d = new Date();
+      d.setDate(d.getDate() - i);
+      byDayMap[ymd(d)] = { d: ymd(d), questions: 0, seconds: 0 };
+    }
+
+    let seconds = 0;
+    let scoreSum = 0;
+    window.forEach((h) => {
+      seconds += h.sec;
+      scoreSum += h.s;
+      if (byDayMap[h.d]) {
+        byDayMap[h.d].questions += h.q;
+        byDayMap[h.d].seconds += h.sec;
+      }
+    });
+
+    const questions = window.reduce((n, h) => n + h.q, 0);
+    const byDay = Object.values(byDayMap);
+
+    // Bab paling lemah dinilai dari markah terbaik setiap aras yang pernah
+    // dicuba, bukan dari larian terakhir, supaya satu hari malang tidak
+    // menandakan bab yang sebenarnya sudah dikuasai.
+    const chapterBest = {};
+    Object.keys(profile.progress).forEach((key) => {
+      const m = /^t(\d+)_c(\d+)_l(\d+)$/.exec(key);
+      if (!m) return;
+      const row = this.getLevel(profileId, m[1], m[2], m[3]);
+      if (!row.attempts) return;
+      const id = `${m[1]}_${m[2]}`;
+      if (!chapterBest[id]) chapterBest[id] = { tahun: Number(m[1]), chapter: Number(m[2]), scores: [] };
+      chapterBest[id].scores.push(row.bestScore);
+    });
+
+    const titleFor = {};
+    history.forEach((h) => { if (h.ct) titleFor[`${h.t}_${h.c}`] = h.ct; });
+
+    const weak = Object.entries(chapterBest)
+      .map(([id, v]) => ({
+        tahun: v.tahun,
+        chapter: v.chapter,
+        title: titleFor[id] || `Bab ${v.chapter}`,
+        avg: Math.round(v.scores.reduce((a, b) => a + b, 0) / v.scores.length)
+      }))
+      .filter((c) => c.avg < 80)
+      .sort((a, b) => a.avg - b.avg)
+      .slice(0, 4);
+
+    return {
+      questions,
+      minutes: Math.round(seconds / 60),
+      quizzes: window.length,
+      activeDays: new Set(window.map((h) => h.d)).size,
+      avgScore: window.length ? Math.round(scoreSum / window.length) : 0,
+      byDay,
+      weak,
+      recent: history.slice(-8).reverse()
+    };
+  }
+
+  /* -------------------------------------------------- eksport / import -- */
+
+  /**
+   * Kemajuan hidup dalam localStorage sahaja, jadi membersihkan pelayar
+   * memadamkan segalanya tanpa cara memulihkan. Kod ini ialah salinan.
+   */
+  exportProgress() {
+    const payload = JSON.stringify(this.profiles);
+    return btoa(unescape(encodeURIComponent(payload)));
+  }
+
+  importProgress(code) {
+    const text = decodeURIComponent(escape(atob(String(code).trim())));
+    const parsed = JSON.parse(text);
+    if (!parsed || !Array.isArray(parsed.profiles)) {
+      throw new Error('Kod ini bukan kod kemajuan Matematik Kilat');
+    }
+    this.profiles = parsed;
+    this.activeId = parsed.activeId;
+    this._save();
+    return parsed.profiles.length;
+  }
+
+  resetProgress(profileId) {
+    const profile = this._find(profileId);
+    if (!profile) throw new Error('Profil tidak dijumpai');
+    profile.progress = {};
+    profile.badges = [];
+    profile.totalPoints = 0;
+    profile.totalQuestions = 0;
+    profile.streakDays = 0;
+    profile.bestStreak = 0;
+    profile.lastActivityDate = null;
+    profile.history = [];
+    this._save();
+    return profile;
+  }
 }
 
-// Singleton instance
 let instance = null;
 
 export function initProfileService() {
-  if (!instance) {
-    instance = new ProfileService();
-  }
+  if (!instance) instance = new ProfileService();
   return instance;
 }
 
 export function getProfileService() {
-  if (!instance) {
-    instance = initProfileService();
-  }
+  if (!instance) instance = initProfileService();
   return instance;
 }
 

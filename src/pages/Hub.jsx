@@ -19,22 +19,19 @@ function Hub({ profile }) {
     return () => clearInterval(id);
   }, []);
 
-  // updateProgress writes one row per finished quiz, where `correct` counts the
-  // runs that passed. So these are quizzes and pass rate, not raw questions.
-  const stats = useMemo(() => {
-    let quizzes = 0;
-    let passes = 0;
-    Object.values(profile.progress || {}).forEach((p) => {
-      quizzes += p.attempted;
-      passes += p.correct;
-    });
-    return {
-      quizzes,
-      passRate: quizzes ? Math.round((passes / quizzes) * 100) : 0,
-      badges: (profile.badges || []).length,
-      points: profile.totalPoints || 0
-    };
-  }, [profile]);
+  // App memegang salinan profil, jadi nombor seperti poin dan jumlah soalan
+  // pada salinan itu tidak berubah selepas satu kuiz direkodkan. Baca terus
+  // dari perkhidmatan supaya papan pemuka sentiasa menunjukkan yang terkini.
+  const live = ps.getProfile(profile.id) || profile;
+
+  const stats = useMemo(() => ({
+    stars: ps.getTotalStars(live.id),
+    questions: live.totalQuestions || 0,
+    badges: (live.badges || []).length,
+    points: live.totalPoints || 0
+  }), [live, ps]);
+
+  const streak = ps.getStreak(profile.id);
 
   const years = useMemo(
     () => YEARS.map((t) => ({ t, ...ps.getClearedCount(profile.id, t, 5, 4) })),
@@ -48,8 +45,8 @@ function Hub({ profile }) {
   const inProgress = years.find((y) => y.done > 0 && y.done < y.total);
   const resumeYear = inProgress ? inProgress.t : (totalCleared ? 6 : 1);
 
-  const allBadges = ps.getAllBadges ? ps.getAllBadges() : {};
-  const earned = (profile.badges || []).map((id) => allBadges[id]).filter(Boolean);
+  const allBadges = ps.getAllBadges();
+  const earned = (live.badges || []).map((id) => allBadges[id]).filter(Boolean);
 
   return (
     <div className="page">
@@ -82,6 +79,28 @@ function Hub({ profile }) {
         {totalCleared ? `Sambung Tahun ${resumeYear}` : 'Mula belajar Tahun 1'}
       </button>
 
+      {/* Rentetan harian ialah sebab budak kembali esok, jadi ia duduk tinggi
+          dan bukan tersembunyi antara statistik di bawah. */}
+      <div className={streak.playedToday ? 'streak streak--on' : 'streak'}>
+        <span className="streak__flame" aria-hidden="true">{streak.days > 0 ? '🔥' : '⭐'}</span>
+        <div className="grow">
+          <div className="streak__num">
+            {streak.days > 0 ? `${streak.days} hari berturut-turut` : 'Mula rentetan kamu'}
+          </div>
+          <div className="streak__note">
+            {streak.playedToday
+              ? 'Sudah belajar hari ini. Jumpa lagi esok.'
+              : 'Habiskan satu aras hari ini untuk menambah sehari.'}
+          </div>
+        </div>
+        {streak.best > 0 && (
+          <div className="streak__best">
+            <div className="streak__bestNum">{streak.best}</div>
+            <div className="streak__bestLabel">terbaik</div>
+          </div>
+        )}
+      </div>
+
       <h2 className="section-title">Pilih tahun</h2>
       <div className="years">
         {years.map(({ t, done, total }) => (
@@ -99,12 +118,12 @@ function Hub({ profile }) {
       <h2 className="section-title">Kemajuan kamu</h2>
       <div className="stats">
         <div className="stat">
-          <div className="stat__num">{stats.quizzes}</div>
-          <div className="stat__label">Kuiz disiapkan</div>
+          <div className="stat__num">{stats.stars}</div>
+          <div className="stat__label">Bintang</div>
         </div>
         <div className="stat">
-          <div className="stat__num">{stats.passRate}%</div>
-          <div className="stat__label">Kadar lulus</div>
+          <div className="stat__num">{stats.questions}</div>
+          <div className="stat__label">Soalan dijawab</div>
         </div>
         <div className="stat">
           <div className="stat__num">{stats.badges}</div>
@@ -119,13 +138,13 @@ function Hub({ profile }) {
       <h2 className="section-title">Lencana</h2>
       <div className="paper paper--plain">
         {earned.length ? (
-          <div className="stack">
+          <div className="badges">
             {earned.map((b, i) => (
-              <div key={i} className="row">
-                <span style={{ fontSize: '1.6rem' }}>{b.emoji}</span>
+              <div key={i} className="badge">
+                <span className="badge__emoji">{b.emoji}</span>
                 <div>
-                  <div style={{ fontWeight: 800 }}>{b.name}</div>
-                  <div className="muted" style={{ fontSize: '0.85rem' }}>{b.description}</div>
+                  <div className="badge__name">{b.name}</div>
+                  <div className="badge__note">{b.description}</div>
                 </div>
               </div>
             ))}
@@ -137,9 +156,12 @@ function Hub({ profile }) {
         )}
       </div>
 
-      <div className="row" style={{ marginTop: 24, gap: 10 }}>
+      <div className="row" style={{ marginTop: 24, gap: 10, flexWrap: 'wrap' }}>
         <button className="btn btn--quiet btn--small grow" onClick={() => navigate('/avatar')}>
           Ubah avatar
+        </button>
+        <button className="btn btn--quiet btn--small grow" onClick={() => navigate('/laporan')}>
+          Laporan ibu bapa
         </button>
         <button className="btn btn--quiet btn--small grow" onClick={() => navigate('/new-profile')}>
           Tukar profil

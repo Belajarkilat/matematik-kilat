@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { getProfileService } from '../services/profileService';
+import { getProfileService, HAT_UNLOCKS } from '../services/profileService';
 import KilatAvatar from '../components/KilatAvatar';
 
 /**
@@ -79,6 +79,7 @@ function normalise(saved = {}) {
 
 function AvatarBuilder({ profile, onProfileChange }) {
   const navigate = useNavigate();
+  const stars = getProfileService().getTotalStars(profile.id);
   const [avatar, setAvatar] = useState(() => normalise(profile.avatar));
 
   const set = (patch) => setAvatar((prev) => ({ ...prev, ...patch }));
@@ -177,12 +178,30 @@ function AvatarBuilder({ profile, onProfileChange }) {
           />
 
           <h2 className="field__head">Aksesori kepala</h2>
-          <Choices
-            options={AKSESORI}
-            selected={avatar.hatType}
-            keyName="type"
-            onPick={(v) => set({ hatType: v })}
-          />
+          <div className="choices">
+            {AKSESORI.map((o) => {
+              const need = HAT_UNLOCKS[o.type] || 0;
+              const locked = stars < need;
+              const on = avatar.hatType === o.type;
+              return (
+                <button
+                  key={o.type}
+                  type="button"
+                  className={locked ? 'choice choice--locked' : on ? 'choice choice--on' : 'choice'}
+                  onClick={() => !locked && set({ hatType: o.type })}
+                  disabled={locked}
+                  aria-pressed={on}
+                  aria-label={locked ? `${o.label}, berkunci sehingga ${need} bintang` : o.label}
+                >
+                  {o.label}
+                  {locked && <span className="choice__need">{need}★</span>}
+                </button>
+              );
+            })}
+          </div>
+          <p className="muted" style={{ fontSize: '0.82rem', marginTop: 8 }}>
+            Aksesori baharu terbuka apabila kamu mengumpul bintang. Kamu ada {stars} bintang.
+          </p>
         </section>
 
         <button className="btn btn--go btn--block" onClick={handleSave}>

@@ -180,9 +180,13 @@ h1, h2, h3, .display {
   box-shadow: none !important;
 }
 
+/* Kuning lut sinar di atas dakwat menjadi warna zaitun yang kotor, jadi
+   butang yang dimatikan mengambil warna neutralnya sendiri. */
 .btn:disabled {
   cursor: not-allowed;
-  opacity: 0.55;
+  background: #E4E7F0;
+  color: #8A90AE;
+  box-shadow: none;
 }
 
 .btn:focus-visible {
@@ -812,4 +816,356 @@ body > div > h2 {
 @keyframes avatar-celebrate {
   0%, 100% { transform: rotate(-6deg) scale(1); }
   50% { transform: rotate(6deg) scale(1.05); }
+}
+
+/* ============================================================
+   Rentetan harian
+   ============================================================ */
+
+.streak {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 14px;
+  padding: 14px 16px;
+  border-radius: var(--r-tile);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 0 0 2px var(--ink-line);
+  color: var(--on-ink);
+}
+
+.streak--on {
+  background: rgba(255, 195, 0, 0.14);
+  box-shadow: inset 0 0 0 2px var(--kilat-deep);
+}
+
+.streak__flame { font-size: 1.7rem; line-height: 1; }
+
+.streak__num {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--on-ink);
+}
+
+.streak__note { font-size: 0.82rem; color: var(--on-ink-muted); margin-top: 2px; }
+
+.streak__best { text-align: center; padding-left: 12px; }
+.streak__bestNum {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--kilat);
+  line-height: 1;
+}
+.streak__bestLabel { font-size: 0.7rem; font-weight: 700; color: var(--on-ink-muted); }
+
+/* ============================================================
+   Bintang
+   ============================================================ */
+
+/* Bintang yang dikutip mengambil warna dari konteksnya. Kuning di atas petak
+   kuning hilang sepenuhnya, jadi di situ ia bertukar menjadi dakwat. */
+.stars { display: inline-flex; gap: 3px; align-items: center; color: var(--kilat); }
+.level--next .stars { color: var(--ink-deep); }
+.stars--big { display: flex; justify-content: center; gap: 6px; }
+
+.level__stars { display: flex; justify-content: center; margin-top: 3px; }
+
+/* Aras yang perlu kod: kelihatan, boleh ditekan, tetapi jelas berbeza
+   daripada aras yang berkunci kerana belum dikuasai. */
+.level--paid {
+  background: #EFEAF8;
+  box-shadow: 0 3px 0 #D9CFEE;
+  color: #5A4A85;
+  cursor: pointer;
+}
+
+/* ============================================================
+   Lencana
+   ============================================================ */
+
+.badges { display: grid; gap: 12px; }
+
+.badge { display: flex; align-items: center; gap: 12px; }
+.badge__emoji { font-size: 1.7rem; line-height: 1; }
+.badge__name { font-family: 'Fredoka', sans-serif; font-weight: 600; color: var(--text); }
+.badge__note { font-size: 0.84rem; color: var(--text-muted); }
+
+/* ============================================================
+   Nota dalam kuiz
+   ============================================================ */
+
+.notice {
+  padding: 12px 14px;
+  border-radius: var(--r-tile);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 0 0 2px var(--ink-line);
+  color: var(--on-ink);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.option { position: relative; }
+
+.option__mark {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+/* Aksesori avatar yang belum dibuka */
+.choice--locked {
+  background: #E4E7F0;
+  box-shadow: none;
+  color: #6B7291;
+  cursor: not-allowed;
+}
+
+.choice__need {
+  margin-left: 6px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: #8A90AE;
+}
+
+/* ============================================================
+   Laporan ibu bapa
+   ============================================================ */
+
+/* Satu siri sahaja, jadi satu rona. Hari tanpa aktiviti kekal menunjukkan
+   landasannya supaya jurang itu sendiri boleh dibaca. */
+.daybars {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  align-items: end;
+}
+
+.daybar { display: grid; gap: 4px; justify-items: center; }
+
+.daybar__value {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  min-height: 1em;
+  font-variant-numeric: tabular-nums;
+}
+
+.daybar__track {
+  width: 100%;
+  height: 84px;
+  background: #EDF0FA;
+  border-radius: 6px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.daybar__fill {
+  width: 100%;
+  background: var(--mark-nombor);
+  border-radius: 4px 4px 0 0;
+  min-height: 0;
+}
+
+.daybar__day { font-size: 0.75rem; font-weight: 800; color: var(--text-muted); }
+
+.weak, .session {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: var(--r-tile);
+  background: #F4F6FC;
+}
+
+.weak__title, .session__title { font-weight: 800; color: var(--text); }
+.weak__meta, .session__meta { font-size: 0.8rem; color: var(--text-muted); }
+
+.weak__score, .session__score {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+
+.weak__score { color: var(--salah); }
+
+.sessions { display: grid; gap: 8px; }
+
+/* ============================================================
+   Kod simpanan
+   ============================================================ */
+
+.backup-code {
+  width: 100%;
+  min-height: 84px;
+  margin-top: 10px;
+  padding: 12px 14px;
+  border-radius: var(--r-tile);
+  border: 2px solid #D3DAF0;
+  background: #FFFFFF;
+  color: var(--text);
+  font-family: ui-monospace, 'Cascadia Mono', Menlo, monospace;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  word-break: break-all;
+  resize: vertical;
+}
+
+.backup-code:focus { outline: none; border-color: var(--kilat); }
+
+/* ============================================================
+   Cincin bonus masa
+   ============================================================ */
+
+.btimer {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 auto;
+}
+
+.btimer svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.btimer__track {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.18);
+  stroke-width: 7;
+}
+
+/* Kuning dari mula sampai habis. Bertukar merah pada saat akhir ialah bahasa
+   jam bom, dan itu yang membina kebimbangan matematik. */
+.btimer__ring {
+  fill: none;
+  stroke: var(--kilat);
+  stroke-width: 7;
+  stroke-linecap: round;
+  animation-name: btimer-drain;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes btimer-drain {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: 163.4; }
+}
+
+.btimer__bolt {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 0.8rem;
+  line-height: 1;
+}
+
+.btimer--spent { opacity: 0.45; }
+
+.kilat-tag {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 10px;
+  border-radius: var(--r-pill);
+  background: var(--kilat);
+  color: var(--ink-deep);
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  vertical-align: middle;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btimer__ring { animation: none; }
+}
+
+/* ============================================================
+   Mod gelap
+   ============================================================
+   Hanya token yang ditulis semula. Kertas menjadi gelap, dakwat menjadi
+   lebih dalam, dan kuning kekal sebagai satu-satunya aksen. Tiada penapis
+   songsang, yang dahulu menukar warna kulit avatar menjadi biru.
+   ============================================================ */
+
+:root[data-theme="dark"] {
+  --paper: #16204A;
+  --paper-edge: #0A0F2C;
+  --grid-line: #24306B;
+
+  --ink: #0B1233;
+  --ink-deep: #060B23;
+  --ink-soft: #16204A;
+  --ink-line: #33407E;
+
+  --text: #E7EBFF;
+  --text-muted: #9AA6D8;
+
+  --betul-soft: #12352A;
+  --salah-soft: #3B1B1F;
+}
+
+:root[data-theme="dark"] .option,
+:root[data-theme="dark"] .level {
+  background: #202C63;
+  box-shadow: 0 4px 0 #131C48;
+  color: var(--text);
+}
+
+:root[data-theme="dark"] .option:hover:not(:disabled):not(.option--picked) {
+  background: #26336F;
+}
+
+:root[data-theme="dark"] .option--right { color: #7FE0B4; }
+:root[data-theme="dark"] .option--wrong { color: #F5A6AA; }
+:root[data-theme="dark"] .verdict--right { color: #7FE0B4; }
+:root[data-theme="dark"] .verdict--wrong { color: #F5A6AA; }
+
+:root[data-theme="dark"] .option--dim,
+:root[data-theme="dark"] .level--locked,
+:root[data-theme="dark"] .choice--locked,
+:root[data-theme="dark"] .btn:disabled {
+  background: #1A2352;
+  color: #7C88BC;
+  box-shadow: none;
+}
+
+:root[data-theme="dark"] .choice,
+:root[data-theme="dark"] .btn--secondary {
+  background: #202C63;
+  box-shadow: 0 3px 0 #131C48;
+  color: var(--text);
+}
+
+:root[data-theme="dark"] .answer-input,
+:root[data-theme="dark"] .backup-code,
+:root[data-theme="dark"] input[type="text"],
+:root[data-theme="dark"] input[type="number"],
+:root[data-theme="dark"] select {
+  background: #0E1740;
+  color: var(--text);
+  border-color: #33407E;
+}
+
+:root[data-theme="dark"] .daybar__track,
+:root[data-theme="dark"] .weak,
+:root[data-theme="dark"] .session,
+:root[data-theme="dark"] .stat {
+  background: #202C63;
+}
+
+:root[data-theme="dark"] .level--paid {
+  background: #2A2354;
+  box-shadow: 0 3px 0 #1B1638;
+  color: #B9A8E4;
 }

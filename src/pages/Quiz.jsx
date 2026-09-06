@@ -1,7 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getProfileService } from '../services/profileService';
+import { isLevelPaid } from '../services/licenceService';
 import QuestionVisual from '../components/QuestionVisual';
+import BonusTimer from '../components/BonusTimer';
+import feedback, { prime } from '../services/feedbackService';
 
 // Compares a submitted answer against a question's key.
 // MCQ answers are option indices. Written answers are compared numerically when
@@ -29,6 +32,16 @@ export function isAnswerCorrect(q, given) {
 }
 
 const LEVEL_NAME = ['Mudah', 'Sederhana', 'Cabaran', 'Ultra'];
+
+// Tempoh bonus, dalam saat, untuk aras Mudah dan Sederhana sahaja. Cabaran
+// dan Ultra penuh soalan berayat yang perlu difikir, dan meletakkan jam di
+// situ menghasilkan kebimbangan, bukan kelajuan.
+//
+// Nombor 19 dan 28 dipilih kerana kedua-duanya tarikh nombor 1 dalam sistem
+// Chaldean, iaitu nombor nama app ini. Ia juga tempoh yang munasabah untuk
+// satu soalan aras rendah.
+const BONUS_SECONDS = { 1: 19, 2: 28 };
+const BONUS_POINTS = 5;
 const DIFFICULTIES = ['mudah', 'sederhana', 'cabaran'];
 
 function chapterNumber(id) {
@@ -42,6 +55,7 @@ function Quiz({ profile }) {
   const ps = getProfileService();
 
   const [questions, setQuestions] = useState([]);
+  const [chapterTitle, setChapterTitle] = useState('');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -51,7 +65,26 @@ function Quiz({ profile }) {
   const [combo, setCombo] = useState(0);
   const [maxCombo, setMaxCombo] = useState(0);
 
+  // Pusingan ulang: soalan yang salah dijawab semula sebelum keputusan keluar.
+  // Markah tetap datang dari pusingan pertama, jadi ini mengajar, bukan
+  // menaikkan markah.
+  const [phase, setPhase] = useState('main');
+  const [queue, setQueue] = useState([]);
+  const [qPos, setQPos] = useState(0);
+  const [rAnswer, setRAnswer] = useState(undefined);
+  const [rChecked, setRChecked] = useState(false);
+
+  const [bonusCount, setBonusCount] = useState(0);
+  const [gotBonus, setGotBonus] = useState(false);
+
+  const startedAt = useRef(Date.now());
+  const questionStart = useRef(Date.now());
   const levelNum = parseInt(level, 10);
+  const bonusSeconds = BONUS_SECONDS[levelNum] || 0;
+
+  useEffect(() => {
+    if (isLevelPaid(levelNum)) navigate(`/buka?dari=${encodeURIComponent(`/tahun/${tahun}`)}`, { replace: true });
+  }, [levelNum, tahun, navigate]);
 
   useEffect(() => {
     let alive = true;
@@ -72,7 +105,26 @@ function Quiz({ profile }) {
           picked = picked.map((q) => ({ ...q, difficulty: 'ultra', points: q.points * 5 }));
         }
         if (!picked.length) throw new Error('Aras ini tiada soalan');
-        if (alive) setQuestions(picked);
+
+        // Soalan yang salah pada percubaan lepas didahulukan, supaya perkara
+        // yang belum difahami dijumpai semula dan bukan terlepas di hujung.
+        const previouslyWrong = new Set(
+          ps.getLevel(profile.id, tahun, chapterNumber(chapter), levelNum).wrongIds
+        );
+        if (previouslyWrong.size) {
+          picked = [...picked].sort((a, b) => {
+            const av = previouslyWrong.has(a.id) ? 0 : 1;
+            const bv = previouslyWrong.has(b.id) ? 0 : 1;
+            return av - bv;
+          });
+        }
+
+        if (alive) {
+          setQuestions(picked);
+          setChapterTitle(chapterData.title || '');
+          startedAt.current = Date.now();
+          questionStart.current = Date.now();
+        }
       } catch (e) {
         if (alive) setError(e.message);
       } finally {
@@ -81,7 +133,7 @@ function Quiz({ profile }) {
     };
     load();
     return () => { alive = false; };
-  }, [tahun, chapter, levelNum]);
+  }, [tahun, chapter, levelNum, profile.id, ps]);
 
   if (loading) {
     return (
@@ -109,43 +161,119 @@ function Quiz({ profile }) {
     );
   }
 
-  const q = questions[currentIdx];
-  const given = answers[currentIdx];
-  const isChecked = Boolean(checked[currentIdx]);
+  const reviewing = phase === 'review';
+  const q = reviewing ? questions[queue[qPos]] : questions[currentIdx];
+  const given = reviewing ? rAnswer : answers[currentIdx];
+  const isChecked = reviewing ? rChecked : Boolean(checked[currentIdx]);
   const wasRight = isChecked && isAnswerCorrect(q, given);
-  const isLast = currentIdx === questions.length - 1;
-  const answeredCount = Object.keys(checked).length;
+  const isLast = reviewing ? qPos === queue.length - 1 : currentIdx === questions.length - 1;
 
   const handlePick = (value) => {
     if (isChecked) return;
-    setAnswers({ ...answers, [currentIdx]: value });
+    if (reviewing) setRAnswer(value);
+    else setAnswers({ ...answers, [currentIdx]: value });
   };
 
   const handleCheck = () => {
     if (given === undefined || given === null || given === '') return;
+    prime();
     const right = isAnswerCorrect(q, given);
+
+    if (reviewing) {
+      setRChecked(true);
+      if (right) feedback.correct(); else feedback.wrong();
+      return;
+    }
+
+    const elapsed = (Date.now() - questionStart.current) / 1000;
+    const earnedBonus = right && bonusSeconds > 0 && elapsed <= bonusSeconds;
+
     setChecked({ ...checked, [currentIdx]: true });
+    setGotBonus(earnedBonus);
+
     if (right) {
       const next = combo + 1;
       setCombo(next);
       setMaxCombo(Math.max(maxCombo, next));
+      if (earnedBonus) {
+        setBonusCount(bonusCount + 1);
+        feedback.bonus();
+      } else {
+        feedback.correct();
+      }
     } else {
       setCombo(0);
+      feedback.wrong();
     }
   };
 
   const finish = () => {
-    const correct = questions.reduce(
-      (n, question, idx) => n + (isAnswerCorrect(question, answers[idx]) ? 1 : 0), 0
-    );
+    const wrongIds = [];
+    const correct = questions.reduce((n, question, idx) => {
+      const right = isAnswerCorrect(question, answers[idx]);
+      if (!right) wrongIds.push(question.id);
+      return n + (right ? 1 : 0);
+    }, 0);
+
     const score = Math.round((correct / questions.length) * 100);
-    ps.updateProgress(profile.id, tahun, chapterNumber(chapter), levelNum, '', score >= 50);
+    const seconds = (Date.now() - startedAt.current) / 1000;
+
+    const result = ps.recordQuiz(profile.id, {
+      tahun,
+      chapter: chapterNumber(chapter),
+      chapterTitle,
+      level: levelNum,
+      score,
+      correct,
+      total: questions.length,
+      seconds,
+      combo: maxCombo,
+      bonus: bonusCount,
+      wrongIds
+    });
+
     navigate(`/results/${tahun}/${chapter}/${levelNum}`, {
-      state: { score, correct, total: questions.length, combo: maxCombo }
+      state: {
+        score,
+        correct,
+        total: questions.length,
+        combo: maxCombo,
+        stars: result.stars,
+        starsBefore: result.starsBefore,
+        points: result.points,
+        streak: result.streak,
+        newBadges: result.newBadges
+      }
     });
   };
 
-  const handleNext = () => (isLast ? finish() : setCurrentIdx(currentIdx + 1));
+  const handleNext = () => {
+    questionStart.current = Date.now();
+    setGotBonus(false);
+
+    if (reviewing) {
+      if (isLast) { finish(); return; }
+      setQPos(qPos + 1);
+      setRAnswer(undefined);
+      setRChecked(false);
+      return;
+    }
+
+    if (!isLast) { setCurrentIdx(currentIdx + 1); return; }
+
+    // Habis pusingan utama. Kalau ada yang salah, ulang yang itu dahulu.
+    const wrong = questions
+      .map((question, idx) => (isAnswerCorrect(question, answers[idx]) ? -1 : idx))
+      .filter((idx) => idx >= 0);
+
+    if (!wrong.length) { finish(); return; }
+
+    setQueue(wrong);
+    setQPos(0);
+    setRAnswer(undefined);
+    setRChecked(false);
+    setPhase('review');
+  };
 
   const optionClass = (idx) => {
     if (!isChecked) return given === idx ? 'option option--picked' : 'option';
@@ -154,8 +282,28 @@ function Quiz({ profile }) {
     return 'option option--dim';
   };
 
-  const progress = Math.round((answeredCount / questions.length) * 100);
+  // Warna sahaja tidak memadai: budak buta warna merah hijau melihat dua
+  // petak yang sama. Tanda betul dan silang membawa maklumat yang sama.
+  const optionMark = (idx) => {
+    if (!isChecked) return null;
+    if (idx === q.correctAnswer) return <span className="option__mark" aria-hidden="true">✓</span>;
+    if (idx === given) return <span className="option__mark" aria-hidden="true">✕</span>;
+    return null;
+  };
+
+  const answeredCount = reviewing ? questions.length : Object.keys(checked).length;
+  const progress = reviewing ? 100 : Math.round((answeredCount / questions.length) * 100);
   const correctText = q.type === 'mcq' ? q.options[q.correctAnswer] : q.correctAnswer;
+
+  const wrongSoFar = questions.filter(
+    (question, idx) => checked[idx] && !isAnswerCorrect(question, answers[idx])
+  ).length;
+
+  const nextLabel = () => {
+    if (!isLast) return 'Soalan seterusnya';
+    if (reviewing || wrongSoFar === 0) return 'Lihat keputusan';
+    return `Ulang ${wrongSoFar} soalan yang belum betul`;
+  };
 
   return (
     <div className="page">
@@ -174,13 +322,33 @@ function Quiz({ profile }) {
             <div className="meter__fill" style={{ width: `${progress}%` }} />
           </div>
         </div>
-        <div className="quiz__count">{currentIdx + 1}/{questions.length}</div>
+        <div className="quiz__count">
+          {reviewing ? `${qPos + 1}/${queue.length}` : `${currentIdx + 1}/${questions.length}`}
+        </div>
       </div>
 
       <div className="row" style={{ marginBottom: 12, justifyContent: 'space-between' }}>
         <span className="pill pill--quiet">{LEVEL_NAME[levelNum - 1]}</span>
-        {combo >= 2 && <span className="pill">{combo} betul berturut-turut</span>}
+        <div className="row" style={{ gap: 10 }}>
+          {reviewing
+            ? <span className="pill">Pusingan ulang</span>
+            : combo >= 2 && <span className="pill">{combo} betul berturut-turut</span>}
+          {!reviewing && bonusSeconds > 0 && (
+            <BonusTimer
+              key={currentIdx}
+              seconds={bonusSeconds}
+              running={!isChecked}
+              spent={isChecked && !gotBonus}
+            />
+          )}
+        </div>
       </div>
+
+      {reviewing && qPos === 0 && !rChecked && (
+        <div className="notice" style={{ marginBottom: 12 }}>
+          Cuba sekali lagi soalan yang tadi belum betul. Markah kamu tidak berubah.
+        </div>
+      )}
 
       <div className="paper">
         <div className="quiz__question">{q.text}</div>
@@ -197,6 +365,7 @@ function Quiz({ profile }) {
                 disabled={isChecked}
               >
                 {option}
+                {optionMark(idx)}
               </button>
             ))}
           </div>
@@ -219,6 +388,7 @@ function Quiz({ profile }) {
           <div className={`verdict ${wasRight ? 'verdict--right' : 'verdict--wrong'} pop`}>
             <div className="verdict__head">
               {wasRight ? 'Betul' : `Belum betul. Jawapannya ${correctText}`}
+              {gotBonus && <span className="kilat-tag">Kilat, +{BONUS_POINTS} poin</span>}
             </div>
             <div className="verdict__working">{q.working}</div>
           </div>
@@ -228,7 +398,7 @@ function Quiz({ profile }) {
       <div style={{ marginTop: 16 }}>
         {isChecked ? (
           <button className="btn btn--go btn--block" onClick={handleNext}>
-            {isLast ? 'Lihat keputusan' : 'Soalan seterusnya'}
+            {nextLabel()}
           </button>
         ) : (
           <button

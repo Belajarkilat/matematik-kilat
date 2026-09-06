@@ -10,6 +10,7 @@ const DEFAULT_SETTINGS = {
   preferredDifficulty: 'sederhana', // mudah, sederhana, cabaran, ultra
   hintsPerQuiz: 3, // Hints available per quiz session
   soundEnabled: true,
+  hapticsEnabled: true,
   theme: 'light', // light, dark, or system
   autoAdvance: true,
   showOfflineIndicator: true
@@ -131,24 +132,33 @@ class SettingsService {
   }
 
   /**
-   * Apply theme to document
+   * Menandakan dokumen supaya CSS boleh menukar token warna.
+   *
+   * Versi lama menggunakan `filter: invert(1)` pada seluruh badan halaman.
+   * Itu menyongsangkan avatar, visual soalan dan setiap warna jenama sekali
+   * gus, jadi warna kulit menjadi biru dan kertas berpetak menjadi hitam.
+   * Sekarang hanya satu atribut ditulis, dan kertas menjadi gelap melalui
+   * token dalam kilat-theme.css.
    */
   applyTheme(theme) {
     const root = document.documentElement;
+    document.body.style.filter = '';
 
-    if (theme === 'dark') {
-      root.style.setProperty('--bg-primary', '#1A1A1A');
-      root.style.setProperty('--bg-secondary', '#2A2A2A');
-      root.style.setProperty('--text-primary', '#FFFFFF');
-      root.style.setProperty('--text-secondary', '#CCCCCC');
-      document.body.style.filter = 'invert(1) hue-rotate(180deg)';
-    } else if (theme === 'light') {
-      root.style.setProperty('--bg-primary', '#FFFFFF');
-      root.style.setProperty('--bg-secondary', '#F8F9FA');
-      root.style.setProperty('--text-primary', '#1A1A1A');
-      root.style.setProperty('--text-secondary', '#666666');
-      document.body.style.filter = 'none';
+    if (theme === 'system') {
+      root.removeAttribute('data-theme');
+      return;
     }
+    root.setAttribute('data-theme', theme === 'dark' ? 'dark' : 'light');
+  }
+
+  /**
+   * Gegaran. Tiada kesan pada Safari iOS, yang tidak menyokong
+   * `navigator.vibrate` langsung.
+   */
+  toggleHaptics() {
+    this.settings.hapticsEnabled = !this.settings.hapticsEnabled;
+    this._save();
+    return this.settings.hapticsEnabled;
   }
 }
 

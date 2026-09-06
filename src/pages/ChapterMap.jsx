@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getProfileService } from '../services/profileService';
+import { isLevelPaid } from '../services/licenceService';
 import ChapterGlyph, { GLYPH_COLOR } from '../components/ChapterGlyph';
+import Stars from '../components/Stars';
 
 const LEVELS = [
   { n: 1, name: 'Mudah' },
@@ -106,31 +108,43 @@ function ChapterMap({ profile }) {
 
               <div className="levels">
                 {LEVELS.map(({ n, name }) => {
+                  const row = ps.getLevel(profile.id, tahun, num, n);
                   const open = ps.isLevelOpen(profile.id, tahun, num, n);
-                  const done = ps.isLevelCleared(profile.id, tahun, num, n);
-                  const score = ps.getProgressPercentage(profile.id, tahun, num, n);
-                  const isNext = open && !done;
+                  const paid = isLevelPaid(n);
+                  const done = row.stars >= 2;
+                  const isNext = open && !paid && !done;
 
-                  const cls = done ? 'level level--done'
-                    : !open ? 'level level--locked'
-                      : isNext ? 'level level--next' : 'level';
+                  const cls = paid ? 'level level--paid'
+                    : done ? 'level level--done'
+                      : !open ? 'level level--locked'
+                        : isNext ? 'level level--next' : 'level';
+
+                  const meta = () => {
+                    if (paid) return 'Perlu kod';
+                    if (!open) return 'Berkunci';
+                    if (row.attempts) return `${row.bestScore}%`;
+                    return 'Mula';
+                  };
+
+                  const label = paid
+                    ? `${name}, perlu kod untuk membuka`
+                    : !open
+                      ? `${name}, berkunci sehingga aras sebelumnya dapat dua bintang`
+                      : `${name}, ${row.attempts ? `${row.stars} daripada 3 bintang, markah terbaik ${row.bestScore} peratus` : 'belum dicuba'}`;
 
                   return (
                     <button
                       key={n}
                       className={cls}
-                      disabled={!open}
-                      onClick={() => navigate(`/quiz/${tahun}/${chapter.id}/${n}`)}
-                      aria-label={
-                        open
-                          ? `${name}, ${done ? `sudah dikuasai, markah terbaik ${score} peratus` : 'belum dicuba'}`
-                          : `${name}, berkunci sehingga aras sebelumnya dikuasai`
-                      }
+                      disabled={!open && !paid}
+                      onClick={() => navigate(paid ? '/buka' : `/quiz/${tahun}/${chapter.id}/${n}`)}
+                      aria-label={label}
                     >
                       <span className="level__name">{name}</span>
-                      <span className="level__meta">
-                        {!open ? 'Berkunci' : done ? `${score}%` : 'Mula'}
-                      </span>
+                      {open && !paid && row.attempts > 0 && (
+                        <span className="level__stars"><Stars count={row.stars} size={13} /></span>
+                      )}
+                      <span className="level__meta">{meta()}</span>
                     </button>
                   );
                 })}

@@ -12,11 +12,11 @@ import React from 'react';
  * from a phone to a tablet.
  */
 
-const INK = '#1F2933';
+const INK = '#0E1740';
 const PAPER = '#FFFFFF';
-const ACCENT = '#F4581E';
-const SHADE = '#FFB703';
-const COOL = '#3A86FF';
+const ACCENT = '#3E6FD9';
+const SHADE = '#FFC300';
+const COOL = '#1F7FA8';
 
 function Frame({ label, children, ratio = 1 }) {
   return (
@@ -99,7 +99,7 @@ function Clock({ hour, minute }) {
         fontSize="9.5"
         fontWeight="800"
         fill={INK}
-        stroke="#FFF8EC"
+        stroke="#FFFBEA"
         strokeWidth="2.6"
         paintOrder="stroke"
       >
@@ -110,7 +110,7 @@ function Clock({ hour, minute }) {
 
   return (
     <>
-      <circle cx={cx} cy={cy} r={r} fill="#FFF8EC" stroke={INK} strokeWidth="3.4" />
+      <circle cx={cx} cy={cy} r={r} fill="#FFFBEA" stroke={INK} strokeWidth="3.4" />
       {ticks}
       {hand(hourAngle, 19, 4.4, INK)}
       {hand(minuteAngle, 27, 3, ACCENT)}
@@ -123,19 +123,19 @@ function Clock({ hour, minute }) {
 /* ---------------------------------------------------------------- money -- */
 
 const NOTE_STYLE = {
-  1: { fill: '#3F7ED9', text: '#FFFFFF' },
-  5: { fill: '#3EA96B', text: '#FFFFFF' },
-  10: { fill: '#D94F3F', text: '#FFFFFF' },
-  20: { fill: '#E58A2E', text: '#FFFFFF' },
-  50: { fill: '#3FA9A0', text: '#FFFFFF' },
-  100: { fill: '#8E44AD', text: '#FFFFFF' }
+  1: { fill: '#3E6FD9', text: '#FFFFFF' },
+  5: { fill: '#148F5F', text: '#FFFFFF' },
+  10: { fill: '#C7363C', text: '#FFFFFF' },
+  20: { fill: '#E0A500', text: '#FFFFFF' },
+  50: { fill: '#1F7FA8', text: '#FFFFFF' },
+  100: { fill: '#7A4DD4', text: '#FFFFFF' }
 };
 
 const COIN_STYLE = {
-  5: '#C0902F',
-  10: '#B9BEC4',
-  20: '#B9BEC4',
-  50: '#B9BEC4'
+  5: '#B08300',
+  10: '#C2CAE4',
+  20: '#C2CAE4',
+  50: '#C2CAE4'
 };
 
 function Money({ notes = [], coins = [] }) {
@@ -192,7 +192,7 @@ function Money({ notes = [], coins = [] }) {
               cx={x}
               cy={y}
               r={rad}
-              fill={COIN_STYLE[it.v] || '#B9BEC4'}
+              fill={COIN_STYLE[it.v] || '#C2CAE4'}
               stroke={INK}
               strokeWidth="1.6"
             />
@@ -346,7 +346,7 @@ function Base10({ hundreds = 0, tens = 0, ones = 0 }) {
         );
       } else {
         els.push(
-          <rect key={`o${i}`} x={x} y={y} width="6" height="6" fill="#2ECC71"
+          <rect key={`o${i}`} x={x} y={y} width="6" height="6" fill="#148F5F"
             stroke={INK} strokeWidth="1.1" />
         );
       }
@@ -365,7 +365,7 @@ function base10Ratio(v) {
 /* --------------------------------------------------------------- shapes -- */
 
 function Shape2D({ kind }) {
-  const stroke = { fill: '#FFE7C2', stroke: INK, strokeWidth: 3 };
+  const stroke = { fill: '#FFF0C4', stroke: INK, strokeWidth: 3 };
   switch (kind) {
     case 'bulatan':
       return <circle cx="50" cy="50" r="36" {...stroke} />;
@@ -387,9 +387,9 @@ function Shape2D({ kind }) {
 }
 
 function Shape3D({ kind }) {
-  const face = { fill: '#CBE0FF', stroke: INK, strokeWidth: 2.6, strokeLinejoin: 'round' };
-  const top = { fill: '#EAF2FF', stroke: INK, strokeWidth: 2.6, strokeLinejoin: 'round' };
-  const side = { fill: '#9EC2F5', stroke: INK, strokeWidth: 2.6, strokeLinejoin: 'round' };
+  const face = { fill: '#CBD6F4', stroke: INK, strokeWidth: 2.6, strokeLinejoin: 'round' };
+  const top = { fill: '#E2E9F8', stroke: INK, strokeWidth: 2.6, strokeLinejoin: 'round' };
+  const side = { fill: '#9EAEE8', stroke: INK, strokeWidth: 2.6, strokeLinejoin: 'round' };
 
   switch (kind) {
     case 'kubus':
@@ -464,8 +464,8 @@ function GridShape({ cols, rows, cells }) {
           y={y0 + r * size}
           width={size}
           height={size}
-          fill={isFilled(r, c) ? '#FFD9A8' : 'transparent'}
-          stroke={isFilled(r, c) ? INK : '#D6DBE1'}
+          fill={isFilled(r, c) ? '#FFE9A8' : 'transparent'}
+          stroke={isFilled(r, c) ? INK : '#D3DAF0'}
           strokeWidth={isFilled(r, c) ? 2 : 0.8}
         />
       );
@@ -477,12 +477,12 @@ function GridShape({ cols, rows, cells }) {
 /* -------------------------------------------------------------- pattern -- */
 
 const SWATCH = {
-  merah: '#E4572E',
-  biru: '#3A86FF',
-  kuning: '#FFBE0B',
-  hijau: '#2ECC71',
-  ungu: '#8E44AD',
-  jingga: '#F4581E'
+  merah: '#2F58B4',
+  biru: '#1F7FA8',
+  kuning: '#FFC300',
+  hijau: '#148F5F',
+  ungu: '#7A4DD4',
+  jingga: '#3E6FD9'
 };
 
 const PATTERN_RATIO = 0.44;
@@ -536,7 +536,7 @@ function Pattern({ items = [] }) {
               width={r * 2}
               height={r * 2}
               rx="4"
-              fill="#FFE7C2"
+              fill="#FFF0C4"
               stroke={INK}
               strokeWidth="2.4"
             />

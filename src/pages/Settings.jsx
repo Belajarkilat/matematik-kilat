@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getSettingsService } from '../services/settingsService';
+import { getProfileService } from '../services/profileService';
 import { getLanguageService } from '../services/languageService';
 import LanguageSelector from '../components/LanguageSelector';
 
@@ -27,6 +28,9 @@ function Settings() {
   const [settings, setSettings] = useState({});
   const [language, setLanguage] = useState('ms');
   const [confirmReset, setConfirmReset] = useState(false);
+  const [backupCode, setBackupCode] = useState('');
+  const [restoreCode, setRestoreCode] = useState('');
+  const [backupNote, setBackupNote] = useState('');
   const audioRef = useRef(null);
 
   useEffect(() => {
@@ -84,6 +88,24 @@ function Settings() {
               {settings.soundEnabled ? 'Hidup' : 'Mati'}
             </button>
           </div>
+
+          <div className="row" style={{ justifyContent: 'space-between', marginBottom: 6 }}>
+            <div>
+              <div style={{ fontWeight: 700 }}>Gegaran</div>
+              <div className="muted" style={{ fontSize: '0.8rem' }}>
+                Tiada kesan pada iPhone
+              </div>
+            </div>
+            <button
+              className={settings.hapticsEnabled ? 'btn btn--go btn--small' : 'btn btn--secondary btn--small'}
+              onClick={() => { ss.toggleHaptics(); refresh(); }}
+              aria-pressed={Boolean(settings.hapticsEnabled)}
+            >
+              {settings.hapticsEnabled ? 'Hidup' : 'Mati'}
+            </button>
+          </div>
+
+          <hr style={{ border: 0, borderTop: '1px solid #E2E9F8', margin: '14px 0' }} />
 
           <label htmlFor="volume" className="row" style={{ justifyContent: 'space-between', marginBottom: 6 }}>
             <span style={{ fontWeight: 700 }}>Kekuatan bunyi</span>
@@ -169,6 +191,79 @@ function Settings() {
               </button>
             ))}
           </div>
+        </section>
+
+        <section className="card">
+          <h2 style={{ fontSize: '1.1rem', marginBottom: 6 }}>Simpanan kemajuan</h2>
+          <p className="muted" style={{ marginBottom: 12, fontSize: '0.9rem' }}>
+            Semua kemajuan disimpan dalam pelayar peranti ini sahaja. Kalau pelayar
+            dibersihkan, semuanya hilang. Salin kod ini dan simpan dalam nota atau
+            hantar kepada diri sendiri di WhatsApp.
+          </p>
+
+          <button
+            className="btn btn--secondary btn--block"
+            onClick={() => {
+              const code = getProfileService().exportProgress();
+              setBackupCode(code);
+              setBackupNote('');
+              if (navigator.clipboard) {
+                navigator.clipboard.writeText(code)
+                  .then(() => setBackupNote('Kod sudah disalin.'))
+                  .catch(() => setBackupNote('Salin sendiri kod di bawah.'));
+              } else {
+                setBackupNote('Salin sendiri kod di bawah.');
+              }
+            }}
+          >
+            Buat kod simpanan
+          </button>
+
+          {backupCode && (
+            <>
+              {backupNote && (
+                <p className="muted" style={{ margin: '10px 0 6px', fontSize: '0.85rem' }}>{backupNote}</p>
+              )}
+              <textarea
+                readOnly
+                value={backupCode}
+                onFocus={(e) => e.target.select()}
+                className="backup-code"
+                aria-label="Kod simpanan kemajuan"
+              />
+            </>
+          )}
+
+          <h3 style={{ fontSize: '0.98rem', margin: '18px 0 8px' }}>Pulihkan dari kod</h3>
+          <p className="muted" style={{ marginBottom: 10, fontSize: '0.85rem' }}>
+            Ini menggantikan semua profil pada peranti ini dengan yang ada dalam kod.
+          </p>
+          <textarea
+            value={restoreCode}
+            onChange={(e) => { setRestoreCode(e.target.value); setBackupNote(''); }}
+            className="backup-code"
+            placeholder="Tampal kod simpanan di sini"
+            aria-label="Tampal kod simpanan"
+          />
+          <button
+            className="btn btn--secondary btn--block"
+            style={{ marginTop: 10 }}
+            disabled={!restoreCode.trim()}
+            onClick={() => {
+              try {
+                const n = getProfileService().importProgress(restoreCode);
+                setBackupNote(`${n} profil dipulihkan. Halaman akan dimuat semula.`);
+                setTimeout(() => window.location.reload(), 800);
+              } catch (err) {
+                setBackupNote('Kod itu tidak boleh dibaca. Pastikan ia disalin penuh.');
+              }
+            }}
+          >
+            Pulihkan kemajuan
+          </button>
+          {backupNote && !backupCode && (
+            <p className="muted" style={{ marginTop: 10, fontSize: '0.85rem' }}>{backupNote}</p>
+          )}
         </section>
 
         <section className="card">

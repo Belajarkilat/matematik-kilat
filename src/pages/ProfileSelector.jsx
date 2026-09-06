@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getProfileService } from '../services/profileService';
+import KilatMark from '../components/KilatMark';
 
 function ProfileSelector({ onProfileChange }) {
   const navigate = useNavigate();
@@ -67,7 +68,9 @@ function ProfileSelector({ onProfileChange }) {
     }}>
       <div style={{ maxWidth: '600px', width: '100%' }}>
         <div className="card card--primary" style={{ textAlign: 'center', marginBottom: '30px' }}>
-          <div style={{ fontSize: '4rem', marginBottom: '10px' }}>⚡</div>
+          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '12px' }}>
+            <KilatMark size={76} />
+          </div>
           <h1>Matematik Kilat</h1>
           <p style={{ fontSize: '1.2rem', marginTop: '10px' }}>Siapa nak belajar?</p>
         </div>
