@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
+import { getSubject } from '../services/subjectService';
 import { getProfileService, STAR_CUTOFF, STARS_TO_ADVANCE } from '../services/profileService';
 import { isLevelPaid } from '../services/licenceService';
 import Stars from '../components/Stars';
@@ -18,7 +19,8 @@ function verdictFor(stars, score) {
 }
 
 function ResultsPage({ profile }) {
-  const { tahun, chapter, level } = useParams();
+  const { subjek, tahun, chapter, level } = useParams();
+  const subject = getSubject(subjek);
   const navigate = useNavigate();
   const location = useLocation();
   const canvasRef = useRef(null);
@@ -151,7 +153,7 @@ function ResultsPage({ profile }) {
           {advanced && levelNum < 4 && !nextIsPaid && (
             <button
               className="btn btn--go btn--block"
-              onClick={() => navigate(`/quiz/${tahun}/${chapter}/${nextLevel}`)}
+              onClick={() => navigate(`/${subject.id}/quiz/${tahun}/${chapter}/${nextLevel}`)}
             >
               Teruskan ke aras seterusnya
             </button>
@@ -163,11 +165,11 @@ function ResultsPage({ profile }) {
           )}
           <button
             className={advanced ? 'btn btn--paper btn--block' : 'btn btn--go btn--block'}
-            onClick={() => navigate(`/quiz/${tahun}/${chapter}/${level}`)}
+            onClick={() => navigate(`/${subject.id}/quiz/${tahun}/${chapter}/${level}`)}
           >
             {stars === 3 ? 'Main aras ini sekali lagi' : 'Cuba lagi untuk lebih bintang'}
           </button>
-          <button className="btn btn--quiet btn--block" onClick={() => navigate(`/tahun/${tahun}`)}>
+          <button className="btn btn--quiet btn--block" onClick={() => navigate(`/${subject.id}/tahun/${tahun}`)}>
             Pilih bab lain
           </button>
         </div>

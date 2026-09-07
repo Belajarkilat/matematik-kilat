@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { getProfileService } from '../services/profileService';
 import AnimatedAvatar from '../components/AnimatedAvatar';
 import OfflineIndicator from '../components/OfflineIndicator';
+import ChapterGlyph from '../components/ChapterGlyph';
+import { SUBJECTS } from '../services/subjectService';
 
 const YEARS = [1, 2, 3, 4, 5, 6];
 
@@ -33,17 +35,24 @@ function Hub({ profile }) {
 
   const streak = ps.getStreak(profile.id);
 
-  const years = useMemo(
-    () => YEARS.map((t) => ({ t, ...ps.getClearedCount(profile.id, t, 5, 4) })),
-    [profile, ps]
-  );
+  // Setiap subjek dikira berasingan, kerana budak yang kuat Matematik dan
+  // belum menyentuh Sains perlu nampak kedua-dua fakta itu, bukan satu
+  // nombor bercampur yang tidak bermakna.
+  const subjects = useMemo(() => SUBJECTS.map((sub) => {
+    const years = YEARS.map((t) => ({ t, ...ps.getClearedCount(profile.id, sub.id, t, 5, 4) }));
+    const done = years.reduce((n, y) => n + y.done, 0);
+    const total = years.reduce((n, y) => n + y.total, 0);
+    const inProgress = years.find((y) => y.done > 0 && y.done < y.total);
+    return { ...sub, years, done, total, resumeYear: inProgress ? inProgress.t : (done ? 6 : 1) };
+  }), [profile, ps]);
 
-  const totalCleared = years.reduce((n, y) => n + y.done, 0);
-  const totalLevels = years.reduce((n, y) => n + y.total, 0);
+  const totalCleared = subjects.filter((s) => s.ready).reduce((n, s) => n + s.done, 0);
+  const totalLevels = subjects.filter((s) => s.ready).reduce((n, s) => n + s.total, 0);
 
-  // Send the child back to the year they are already working through.
-  const inProgress = years.find((y) => y.done > 0 && y.done < y.total);
-  const resumeYear = inProgress ? inProgress.t : (totalCleared ? 6 : 1);
+  // Sambung subjek yang sedang dikerjakan; kalau belum ada, mula dengan yang
+  // pertama dalam senarai.
+  const ready = subjects.filter((s) => s.ready);
+  const resume = ready.find((s) => s.done > 0 && s.done < s.total) || ready[0] || subjects[0];
 
   const allBadges = ps.getAllBadges();
   const earned = (live.badges || []).map((id) => allBadges[id]).filter(Boolean);
@@ -74,9 +83,11 @@ function Hub({ profile }) {
       <button
         className="btn btn--go btn--block"
         style={{ fontSize: '1.15rem', minHeight: 64 }}
-        onClick={() => navigate(`/tahun/${resumeYear}`)}
+        onClick={() => navigate(`/${resume.id}/tahun/${resume.resumeYear}`)}
       >
-        {totalCleared ? `Sambung Tahun ${resumeYear}` : 'Mula belajar Tahun 1'}
+        {resume.done
+          ? `Sambung ${resume.name} Tahun ${resume.resumeYear}`
+          : `Mula belajar ${resume.name} Tahun 1`}
       </button>
 
       {/* Rentetan harian ialah sebab budak kembali esok, jadi ia duduk tinggi
@@ -101,17 +112,41 @@ function Hub({ profile }) {
         )}
       </div>
 
-      <h2 className="section-title">Pilih tahun</h2>
-      <div className="years">
-        {years.map(({ t, done, total }) => (
-          <button key={t} className="year" onClick={() => navigate(`/tahun/${t}`)}>
-            <div className="year__n">{t}</div>
-            <div className="year__label">Tahun {t}</div>
-            <div className="meter">
-              <div className="meter__fill" style={{ width: `${(done / total) * 100}%` }} />
+      <h2 className="section-title">Pilih subjek</h2>
+      <div className="subjects">
+        {subjects.map((sub) => (
+          <div key={sub.id} className="subject">
+            <div className="subject__head">
+              <span className="subject__mark">
+                <ChapterGlyph glyph={sub.glyph} size={30} />
+              </span>
+              <div className="grow">
+                <div className="subject__name">{sub.name}</div>
+                <div className="subject__note">
+                  {sub.ready ? `${sub.done}/${sub.total} aras dikuasai` : 'Soalan sedang ditulis'}
+                </div>
+              </div>
+              {!sub.ready && <span className="pill pill--quiet">Akan datang</span>}
             </div>
-            <div className="stat__label" style={{ marginTop: 6 }}>{done}/{total} aras</div>
-          </button>
+            {sub.ready && (
+            <div className="years">
+              {sub.years.map(({ t, done, total }) => (
+                <button
+                  key={t}
+                  className="year"
+                  onClick={() => navigate(`/${sub.id}/tahun/${t}`)}
+                >
+                  <div className="year__n">{t}</div>
+                  <div className="year__label">Tahun {t}</div>
+                  <div className="meter">
+                    <div className="meter__fill" style={{ width: `${(done / total) * 100}%` }} />
+                  </div>
+                  <div className="stat__label" style={{ marginTop: 6 }}>{done}/{total} aras</div>
+                </button>
+              ))}
+            </div>
+            )}
+          </div>
         ))}
       </div>
 

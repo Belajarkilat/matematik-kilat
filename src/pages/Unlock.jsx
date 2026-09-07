@@ -1,10 +1,18 @@
 import React, { useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import { redeem, isUnlocked, getLicence, formatCode, FREE_LEVELS, OPEN_ACCESS } from '../services/licenceService';
+import {
+  redeem, isUnlocked, getLicence, formatCode, formatExpiry, hasExpiredLicence,
+  FREE_LEVELS, OPEN_ACCESS, HARGA, PERANTI
+} from '../services/licenceService';
 
 // Nombor WhatsApp jualan. Format antarabangsa tanpa tanda tambah: 010-664 0353.
 const WHATSAPP = '60106640353';
-const HARGA = 'RM30 setahun';
+
+const RALAT = {
+  'tidak-sah': 'Kod ini tidak sah. Periksa semula setiap huruf dan nombor.',
+  luput: 'Kod ini sudah tamat tempoh. Hubungi kami untuk kod baharu.',
+  simpanan: 'Peranti ini tidak membenarkan penyimpanan. Cuba matikan mod menyamar.'
+};
 
 function Unlock() {
   const navigate = useNavigate();
@@ -14,15 +22,17 @@ function Unlock() {
   const [code, setCode] = useState('');
   const [error, setError] = useState('');
   const [done, setDone] = useState(isUnlocked());
+  const expired = hasExpiredLicence();
 
   const submit = (e) => {
     e.preventDefault();
-    if (redeem(code)) {
+    const result = redeem(code);
+    if (result.ok) {
       setError('');
       setDone(true);
       return;
     }
-    setError('Kod ini tidak sah. Periksa semula setiap huruf dan nombor.');
+    setError(RALAT[result.reason] || RALAT['tidak-sah']);
   };
 
   // Semasa tempoh ujian terbuka tiada kod wujud, jadi halaman jualan akan
@@ -54,8 +64,13 @@ function Unlock() {
           <p className="muted" style={{ marginBottom: 6 }}>
             Kod pada peranti ini: <strong>{formatCode(getLicence() || '')}</strong>
           </p>
+          <p className="muted" style={{ marginBottom: 6 }}>
+            Sah sehingga <strong>{formatExpiry(getLicence())}</strong>
+          </p>
           <p className="muted" style={{ marginBottom: 18, fontSize: '0.86rem' }}>
-            Simpan kod ini. Kamu perlukannya semula kalau tukar peranti atau bersihkan pelayar.
+            Simpan kod ini. Kamu perlukannya semula kalau tukar peranti atau
+            bersihkan pelayar, dan kod yang sama boleh dipakai pada {PERANTI} peranti
+            dalam keluarga kamu.
           </p>
           <button className="btn btn--go btn--block" onClick={() => navigate(back)}>
             Teruskan belajar
@@ -80,14 +95,31 @@ function Unlock() {
         <h2 style={{ fontSize: '1.05rem', marginBottom: 10 }}>Apa yang percuma</h2>
         <p className="muted" style={{ marginBottom: 12 }}>
           Aras {FREE_LEVELS.map((n) => (n === 1 ? 'Mudah' : 'Sederhana')).join(' dan ')} untuk
-          setiap bab, Tahun 1 hingga Tahun 6, percuma selamanya. Itu lebih 400 soalan
+          setiap bab, Tahun 1 hingga Tahun 6, percuma selamanya. Itu 600 soalan
           dengan langkah kerja penuh.
         </p>
         <h2 style={{ fontSize: '1.05rem', marginBottom: 10 }}>Apa yang perlu kod</h2>
-        <p className="muted">
-          Aras Cabaran dan Ultra. Satu kod membuka semua tahun pada peranti ini, {HARGA}.
+        <p className="muted" style={{ marginBottom: 12 }}>
+          Aras Cabaran dan Ultra, iaitu 600 soalan lagi. Satu kod membuka semua
+          tahun, Darjah 1 hingga Darjah 6.
         </p>
+        <div className="terms">
+          <div className="terms__row"><span>Harga</span><strong>{HARGA}</strong></div>
+          <div className="terms__row"><span>Peranti</span><strong>{PERANTI} peranti</strong></div>
+          <div className="terms__row"><span>Darjah</span><strong>1 hingga 6</strong></div>
+        </div>
       </section>
+
+      {expired && (
+        <section className="paper" style={{ marginBottom: 14 }}>
+          <h2 style={{ fontSize: '1.05rem', marginBottom: 8 }}>Kod kamu sudah tamat</h2>
+          <p className="muted">
+            Kod {formatCode(getLicence() || '')} tamat pada {formatExpiry(getLicence())}.
+            Kemajuan dan bintang anak kamu masih tersimpan. Masukkan kod baharu
+            untuk membuka semula aras Cabaran dan Ultra.
+          </p>
+        </section>
+      )}
 
       <form className="paper" onSubmit={submit}>
         <label className="field__head" htmlFor="kod">Masukkan kod</label>

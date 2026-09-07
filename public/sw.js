@@ -22,12 +22,12 @@ const PRECACHE = [
   BASE + 'apple-touch-icon.png',
   BASE + 'fonts/fredoka-latin.woff2',
   BASE + 'fonts/nunito-latin.woff2',
-  BASE + 'data/questions/tahun1.json',
-  BASE + 'data/questions/tahun2.json',
-  BASE + 'data/questions/tahun3.json',
-  BASE + 'data/questions/tahun4.json',
-  BASE + 'data/questions/tahun5.json',
-  BASE + 'data/questions/tahun6.json'
+  BASE + 'data/questions/matematik/tahun1.json',
+  BASE + 'data/questions/matematik/tahun2.json',
+  BASE + 'data/questions/matematik/tahun3.json',
+  BASE + 'data/questions/matematik/tahun4.json',
+  BASE + 'data/questions/matematik/tahun5.json',
+  BASE + 'data/questions/matematik/tahun6.json'
 ];
 
 self.addEventListener('install', (event) => {

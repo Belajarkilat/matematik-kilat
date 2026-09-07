@@ -266,6 +266,58 @@ h1, h2, h3, .display {
 .btn--danger:hover:not(:disabled) { background: #D6474C; }
 
 /* ============================================================
+   Pemilih subjek pada hub
+   ============================================================ */
+
+.subjects { display: grid; gap: 14px; margin-bottom: 18px; }
+
+.subject {
+  background: var(--paper);
+  border-radius: var(--r-panel);
+  box-shadow: var(--edge);
+  padding: 14px;
+}
+
+.subject__head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.subject__mark { display: grid; place-items: center; flex: 0 0 auto; }
+
+.subject__name {
+  font-family: 'Fredoka', 'Nunito', system-ui, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.subject__note { font-size: 0.85rem; color: var(--text-muted); }
+
+/* Senarai syarat pada halaman jualan. Ia sengaja dibuat seperti resit dan
+   bukan seperti iklan: satu baris satu fakta, tiada ayat memujuk. */
+.terms {
+  border-top: 1px solid var(--paper-edge);
+}
+
+.terms__row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--paper-edge);
+  color: var(--text-muted);
+}
+
+.terms__row strong {
+  font-family: 'Fredoka', 'Nunito', system-ui, sans-serif;
+  color: var(--text);
+}
+
+/* ============================================================
    Pemilih profil
    ============================================================ */
 

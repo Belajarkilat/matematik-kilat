@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getProfileService } from '../services/profileService';
+import { getSubject } from '../services/subjectService';
 
 /**
  * Satu-satunya skrin yang ditulis untuk orang yang membayar.
@@ -81,6 +82,29 @@ function ParentReport({ profile }) {
         </div>
       </section>
 
+      {/* Ayat, bukan carta. Ibu bapa mahu tahu anaknya lemah di mana, dan
+          sebuah carta bar tidak menjawab soalan itu. */}
+      <section className="paper paper--plain" style={{ marginBottom: 14 }}>
+        <h2 style={{ fontSize: '1.05rem', marginBottom: 12 }}>Setiap subjek</h2>
+        <div className="stack" style={{ gap: 10 }}>
+          {report.bySubject.map((sub) => (
+            <div className="weak" key={sub.id}>
+              <div className="grow">
+                <div className="weak__title">{sub.name}</div>
+                <div className="weak__meta">
+                  {sub.quizzes === 0
+                    ? 'Belum dimulakan'
+                    : sub.weak.length
+                      ? `Paling lemah: ${sub.weak.slice(0, 2).map((w) => w.title).join(' dan ')}`
+                      : 'Semua bab yang dicuba sudah kukuh'}
+                </div>
+              </div>
+              <div className="weak__score">{sub.stars}★</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       <section className="paper paper--plain" style={{ marginBottom: 14 }}>
         <h2 style={{ fontSize: '1.05rem', marginBottom: 4 }}>Bab yang perlu diulang</h2>
         <p className="muted" style={{ fontSize: '0.85rem', marginBottom: 12 }}>
@@ -90,10 +114,12 @@ function ParentReport({ profile }) {
         {report.weak.length ? (
           <div className="stack" style={{ gap: 10 }}>
             {report.weak.map((c) => (
-              <div className="weak" key={`${c.tahun}_${c.chapter}`}>
+              <div className="weak" key={`${c.subject}_${c.tahun}_${c.chapter}`}>
                 <div className="grow">
                   <div className="weak__title">{c.title}</div>
-                  <div className="weak__meta">Tahun {c.tahun}</div>
+                  <div className="weak__meta">
+                    {getSubject(c.subject).name} Tahun {c.tahun}
+                  </div>
                 </div>
                 <div className="weak__score">{c.avg}%</div>
               </div>

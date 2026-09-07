@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getProfileService } from '../services/profileService';
 import { isLevelPaid } from '../services/licenceService';
+import { getSubject, questionsUrl } from '../services/subjectService';
 import ChapterGlyph, { GLYPH_COLOR } from '../components/ChapterGlyph';
 import Stars from '../components/Stars';
 
@@ -19,18 +20,24 @@ function chapterNumber(id) {
 }
 
 function ChapterMap({ profile }) {
-  const { tahun } = useParams();
+  const { subjek, tahun } = useParams();
+  const subject = getSubject(subjek);
   const navigate = useNavigate();
   const [chapters, setChapters] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [soon, setSoon] = useState(false);
   const ps = getProfileService();
 
   useEffect(() => {
     let alive = true;
     const load = async () => {
       try {
-        const res = await fetch(`/matematik-kilat/data/questions/tahun${tahun}.json`);
+        // Subjek yang belum ada kandungan bukan ralat. Ia sekadar belum siap,
+        // dan budak patut diberitahu begitu, bukan ditayangkan kod status.
+        if (!subject.ready) { if (alive) setSoon(true); return; }
+
+        const res = await fetch(questionsUrl(subject.id, tahun));
         if (!res.ok) throw new Error(`Fail soalan tidak dijumpai (${res.status})`);
         const data = await res.json();
         if (!data?.chapters?.length) throw new Error('Fail soalan tiada bab');
@@ -43,7 +50,7 @@ function ChapterMap({ profile }) {
     };
     load();
     return () => { alive = false; };
-  }, [tahun]);
+  }, [subject.id, subject.ready, tahun]);
 
   if (loading) {
     return (
@@ -51,6 +58,27 @@ function ChapterMap({ profile }) {
         <div className="center">
           <div className="spinner" style={{ margin: '0 auto 16px' }} />
           <div className="on-ink-muted">Membuka Tahun {tahun}…</div>
+        </div>
+      </div>
+    );
+  }
+
+  if (soon) {
+    return (
+      <div className="page">
+        <button className="back" onClick={() => navigate('/hub')}>← Kembali</button>
+        <div className="paper paper--plain center">
+          <div style={{ fontSize: '2.4rem', marginBottom: 8 }}>🌱</div>
+          <h2 style={{ fontSize: '1.25rem', marginBottom: 8 }}>
+            {subject.name} Tahun {tahun} belum siap
+          </h2>
+          <p className="muted" style={{ marginBottom: 18 }}>
+            Soalan {subject.name} sedang ditulis. Sementara itu, subjek lain
+            sudah penuh dan menunggu kamu.
+          </p>
+          <button className="btn btn--go btn--block" onClick={() => navigate('/hub')}>
+            Pilih subjek lain
+          </button>
         </div>
       </div>
     );
@@ -69,7 +97,7 @@ function ChapterMap({ profile }) {
     );
   }
 
-  const cleared = ps.getClearedCount(profile.id, tahun, chapters.length, LEVELS.length);
+  const cleared = ps.getClearedCount(profile.id, subject.id, tahun, chapters.length, LEVELS.length);
 
   return (
     <div className="page">
@@ -77,7 +105,7 @@ function ChapterMap({ profile }) {
 
       <div className="page__head">
         <div className="grow">
-          <h1 className="page__title">Tahun {tahun}</h1>
+          <h1 className="page__title">{subject.name} Tahun {tahun}</h1>
           <div className="page__sub">
             {cleared.done} daripada {cleared.total} aras sudah dikuasai
           </div>
@@ -108,8 +136,8 @@ function ChapterMap({ profile }) {
 
               <div className="levels">
                 {LEVELS.map(({ n, name }) => {
-                  const row = ps.getLevel(profile.id, tahun, num, n);
-                  const open = ps.isLevelOpen(profile.id, tahun, num, n);
+                  const row = ps.getLevel(profile.id, subject.id, tahun, num, n);
+                  const open = ps.isLevelOpen(profile.id, subject.id, tahun, num, n);
                   const paid = isLevelPaid(n);
                   const done = row.stars >= 2;
                   const isNext = open && !paid && !done;
@@ -137,7 +165,7 @@ function ChapterMap({ profile }) {
                       key={n}
                       className={cls}
                       disabled={!open && !paid}
-                      onClick={() => navigate(paid ? '/buka' : `/quiz/${tahun}/${chapter.id}/${n}`)}
+                      onClick={() => navigate(paid ? '/buka' : `/${subject.id}/quiz/${tahun}/${chapter.id}/${n}`)}
                       aria-label={label}
                     >
                       <span className="level__name">{name}</span>

@@ -44,8 +44,12 @@ if (fs.existsSync(swPath)) {
 
   const questions = path.join(docs, 'data', 'questions');
   if (fs.existsSync(questions)) {
-    fs.readdirSync(questions).sort().forEach((name) => {
-      hash.update(fs.readFileSync(path.join(questions, name)));
+    fs.readdirSync(questions).sort().forEach((subject) => {
+      const dir = path.join(questions, subject);
+      if (!fs.statSync(dir).isDirectory()) return;
+      fs.readdirSync(dir).sort().forEach((name) => {
+        hash.update(fs.readFileSync(path.join(dir, name)));
+      });
     });
   }
 

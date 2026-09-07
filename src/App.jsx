@@ -107,9 +107,9 @@ function App() {
           <Route path="/dev/visuals" element={<VisualGallery />} />
         )}
         <Route path="/hub" element={activeProfile ? <Hub profile={activeProfile} /> : <Navigate to="/" />} />
-        <Route path="/tahun/:tahun" element={activeProfile ? <ChapterMap profile={activeProfile} /> : <Navigate to="/" />} />
-        <Route path="/quiz/:tahun/:chapter/:level" element={activeProfile ? <Quiz profile={activeProfile} /> : <Navigate to="/" />} />
-        <Route path="/results/:tahun/:chapter/:level" element={activeProfile ? <ResultsPage profile={activeProfile} /> : <Navigate to="/" />} />
+        <Route path="/:subjek/tahun/:tahun" element={activeProfile ? <ChapterMap profile={activeProfile} /> : <Navigate to="/" />} />
+        <Route path="/:subjek/quiz/:tahun/:chapter/:level" element={activeProfile ? <Quiz profile={activeProfile} /> : <Navigate to="/" />} />
+        <Route path="/:subjek/results/:tahun/:chapter/:level" element={activeProfile ? <ResultsPage profile={activeProfile} /> : <Navigate to="/" />} />
         {/* Catch-all: an unknown URL must never leave the child staring at a blank page. */}
         <Route path="*" element={<Navigate to={activeProfile ? '/hub' : '/'} replace />} />
       </Routes>

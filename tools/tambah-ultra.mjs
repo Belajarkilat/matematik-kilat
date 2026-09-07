@@ -18,7 +18,7 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
-const DATA_DIR = path.join(ROOT, 'public', 'data', 'questions');
+const DATA_DIR = path.join(ROOT, 'public', 'data', 'questions', 'matematik');
 
 const ULTRA_POINTS = 50;
 const PER_CHAPTER = 10;

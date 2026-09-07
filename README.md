@@ -2,6 +2,7 @@
 
 Permainan latihan matematik KSSR untuk Darjah 1 hingga 6, dibina dengan React 18 dan Vite 5.
 
+- Dua subjek: Matematik (1 200 soalan siap) dan Sains (sedang ditulis)
 - 1 200 soalan merentas 6 tahun dan 30 bab, setiap satu dengan langkah kerja
 - 112 visual SVG untuk soalan yang memerlukan gambar rajah
 - Berbilang profil pada satu peranti, jadi adik-beradik tidak berlanggar kemajuan
@@ -18,10 +19,21 @@ npm run dev
 
 Terbuka di `http://localhost:5173/matematik-kilat/`.
 
+## Subjek
+
+Senarai subjek hidup dalam `src/services/subjectService.js`, dan itu satu-satunya
+tempat ia ditakrifkan. Setiap subjek mempunyai penanda `ready`; subjek yang belum
+ada fail soalan dipaparkan sebagai "Akan datang" dan tidak boleh dimasuki.
+
+Alamat membawa subjek selepas pangkalnya, contohnya `/matematik/tahun/3` dan
+`/matematik/quiz/3/d3-b1/4`. Kunci kemajuan juga berawalan subjek, contohnya
+`matematik_t3_c1_l4`. Simpanan lama tanpa awalan dihijrahkan sekali pada muat
+pertama.
+
 ## Bank soalan
 
 Setiap bab ada 40 soalan, sepuluh bagi setiap aras. Soalan Mudah, Sederhana dan
-Cabaran duduk terus dalam `public/data/questions/tahunN.json`. Soalan Ultra
+Cabaran duduk terus dalam `public/data/questions/<subjek>/tahunN.json`. Soalan Ultra
 ditulis dalam `tools/ultra/tahunN.mjs` dan disuntik ke dalam fail JSON itu:
 
 ```bash

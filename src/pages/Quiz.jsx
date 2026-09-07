@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getProfileService } from '../services/profileService';
 import { isLevelPaid } from '../services/licenceService';
+import { getSubject, questionsUrl } from '../services/subjectService';
 import QuestionVisual from '../components/QuestionVisual';
 import BonusTimer from '../components/BonusTimer';
 import feedback, { prime } from '../services/feedbackService';
@@ -50,7 +51,8 @@ function chapterNumber(id) {
 }
 
 function Quiz({ profile }) {
-  const { tahun, chapter, level } = useParams();
+  const { subjek, tahun, chapter, level } = useParams();
+  const subject = getSubject(subjek);
   const navigate = useNavigate();
   const ps = getProfileService();
 
@@ -88,14 +90,14 @@ function Quiz({ profile }) {
   const bonusSeconds = BONUS_SECONDS[levelNum] || 0;
 
   useEffect(() => {
-    if (isLevelPaid(levelNum)) navigate(`/buka?dari=${encodeURIComponent(`/tahun/${tahun}`)}`, { replace: true });
-  }, [levelNum, tahun, navigate]);
+    if (isLevelPaid(levelNum)) navigate(`/buka?dari=${encodeURIComponent(`/${subject.id}/tahun/${tahun}`)}`, { replace: true });
+  }, [levelNum, tahun, subject.id, navigate]);
 
   useEffect(() => {
     let alive = true;
     const load = async () => {
       try {
-        const res = await fetch(`/matematik-kilat/data/questions/tahun${tahun}.json`);
+        const res = await fetch(questionsUrl(subject.id, tahun));
         if (!res.ok) throw new Error(`Fail soalan tidak dijumpai (${res.status})`);
         const data = await res.json();
         const chapterData = data.chapters[chapterNumber(chapter) - 1];
@@ -119,7 +121,7 @@ function Quiz({ profile }) {
         // Soalan yang salah pada percubaan lepas didahulukan, supaya perkara
         // yang belum difahami dijumpai semula dan bukan terlepas di hujung.
         const previouslyWrong = new Set(
-          ps.getLevel(profile.id, tahun, chapterNumber(chapter), levelNum).wrongIds
+          ps.getLevel(profile.id, subject.id, tahun, chapterNumber(chapter), levelNum).wrongIds
         );
         if (previouslyWrong.size) {
           picked = [...picked].sort((a, b) => {
@@ -143,7 +145,7 @@ function Quiz({ profile }) {
     };
     load();
     return () => { alive = false; };
-  }, [tahun, chapter, levelNum, profile.id, ps]);
+  }, [subject.id, tahun, chapter, levelNum, profile.id, ps]);
 
   if (loading) {
     return (
@@ -159,11 +161,11 @@ function Quiz({ profile }) {
   if (error) {
     return (
       <div className="page">
-        <button className="back" onClick={() => navigate(`/tahun/${tahun}`)}>← Kembali</button>
+        <button className="back" onClick={() => navigate(`/${subject.id}/tahun/${tahun}`)}>← Kembali</button>
         <div className="paper paper--plain center">
           <h2 style={{ marginBottom: 8 }}>Kuiz ini tidak dapat dimulakan</h2>
           <p className="muted" style={{ marginBottom: 16 }}>{error}</p>
-          <button className="btn btn--go" onClick={() => navigate(`/tahun/${tahun}`)}>
+          <button className="btn btn--go" onClick={() => navigate(`/${subject.id}/tahun/${tahun}`)}>
             Pilih bab lain
           </button>
         </div>
@@ -242,7 +244,7 @@ function Quiz({ profile }) {
       wrongIds
     });
 
-    navigate(`/results/${tahun}/${chapter}/${levelNum}`, {
+    navigate(`/${subject.id}/results/${tahun}/${chapter}/${levelNum}`, {
       state: {
         score,
         correct,
@@ -311,7 +313,7 @@ function Quiz({ profile }) {
 
   const answered = Object.keys(checked).length;
 
-  const leave = () => navigate(`/tahun/${tahun}`);
+  const leave = () => navigate(`/${subject.id}/tahun/${tahun}`);
 
   const requestExit = () => {
     if (answered === 0) { leave(); return; }

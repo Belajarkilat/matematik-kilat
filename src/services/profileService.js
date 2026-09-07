@@ -7,6 +7,7 @@
  */
 
 import { OPEN_ALL_LEVELS } from './licenceService';
+import { DEFAULT_SUBJECT, SUBJECTS } from './subjectService';
 
 const PROFILES_KEY = 'bk_matematik_kilat_profiles_v1';
 
@@ -121,11 +122,55 @@ class ProfileService {
   _loadProfiles() {
     try {
       const stored = localStorage.getItem(PROFILES_KEY);
-      if (stored) return JSON.parse(stored);
+      if (stored) {
+        const data = JSON.parse(stored);
+        const changed = this._migrate(data);
+        // Tulis semula sekali sahaja. Tanpa ini penghijrahan berjalan pada
+        // setiap muat, dan bentuk lama kekal dalam simpanan selamanya.
+        if (changed) {
+          try {
+            localStorage.setItem(PROFILES_KEY, JSON.stringify(data));
+          } catch (e) {
+            console.warn('Gagal menyimpan hasil penghijrahan:', e);
+          }
+        }
+        return data;
+      }
     } catch (e) {
       console.warn('Gagal membaca profil:', e);
     }
     return { activeId: null, profiles: [] };
+  }
+
+  /**
+   * Membawa simpanan lama ke bentuk berbilang subjek.
+   *
+   * App ini pernah mengandungi satu subjek sahaja, jadi kunci kemajuan
+   * berbunyi `t3_c1_l4` dan entri sejarah tidak menyebut subjek langsung.
+   * Semua baris begitu ialah Matematik mengikut takrif, jadi ia diberi awalan
+   * itu. Tanpa langkah ini setiap penguji akan membuka app dan mendapati
+   * bintangnya hilang.
+   */
+  _migrate(data) {
+    if (!data || !Array.isArray(data.profiles)) return false;
+    let changed = false;
+
+    data.profiles.forEach((profile) => {
+      const progress = profile.progress || {};
+      Object.keys(progress).forEach((key) => {
+        if (!/^t\d+_c\d+_l\d+$/.test(key)) return;
+        progress[`${DEFAULT_SUBJECT}_${key}`] = progress[key];
+        delete progress[key];
+        changed = true;
+      });
+      profile.progress = progress;
+
+      (profile.history || []).forEach((entry) => {
+        if (!entry.sj) { entry.sj = DEFAULT_SUBJECT; changed = true; }
+      });
+    });
+
+    return changed;
   }
 
   _save() {
@@ -217,8 +262,8 @@ class ProfileService {
 
   /* ----------------------------------------------------------- kemajuan -- */
 
-  _key(tahun, chapter, level) {
-    return `t${tahun}_c${chapter}_l${level}`;
+  _key(subject, tahun, chapter, level) {
+    return `${subject}_t${tahun}_c${chapter}_l${level}`;
   }
 
   /**
@@ -228,12 +273,12 @@ class ProfileService {
    * bilangan larian yang lulus separuh markah. Baris begitu diberi dua bintang
    * supaya budak yang sudah bermain tidak mendapati arasnya berkunci semula.
    */
-  getLevel(profileId, tahun, chapter, level) {
+  getLevel(profileId, subject, tahun, chapter, level) {
     const profile = this._find(profileId);
     const empty = { attempts: 0, bestScore: 0, stars: 0, wrongIds: [], lastAttempted: null };
     if (!profile) return empty;
 
-    const row = profile.progress[this._key(tahun, chapter, level)];
+    const row = profile.progress[this._key(subject, tahun, chapter, level)];
     if (!row) return empty;
 
     if (row.stars === undefined) {
@@ -256,36 +301,49 @@ class ProfileService {
     };
   }
 
-  isLevelCleared(profileId, tahun, chapter, level) {
-    return this.getLevel(profileId, tahun, chapter, level).stars >= STARS_TO_ADVANCE;
+  isLevelCleared(profileId, subject, tahun, chapter, level) {
+    return this.getLevel(profileId, subject, tahun, chapter, level).stars >= STARS_TO_ADVANCE;
   }
 
-  isLevelOpen(profileId, tahun, chapter, level) {
+  isLevelOpen(profileId, subject, tahun, chapter, level) {
     if (OPEN_ALL_LEVELS) return true;
     if (level <= 1) return true;
-    return this.isLevelCleared(profileId, tahun, chapter, level - 1);
+    return this.isLevelCleared(profileId, subject, tahun, chapter, level - 1);
   }
 
-  getClearedCount(profileId, tahun, chapters = 5, levels = 4) {
+  getClearedCount(profileId, subject, tahun, chapters = 5, levels = 4) {
     let done = 0;
     for (let c = 1; c <= chapters; c += 1) {
       for (let l = 1; l <= levels; l += 1) {
-        if (this.isLevelCleared(profileId, tahun, c, l)) done += 1;
+        if (this.isLevelCleared(profileId, subject, tahun, c, l)) done += 1;
       }
     }
     return { done, total: chapters * levels };
   }
 
-  getTotalStars(profileId) {
+  /**
+   * Setiap baris kemajuan, dihuraikan semula daripada kuncinya.
+   *
+   * Beberapa ringkasan perlu berjalan merentas semua subjek dan semua tahun,
+   * jadi mereka semua melalui pembantu ini dan bukan menulis regex sendiri.
+   */
+  _rows(profileId) {
     const profile = this._find(profileId);
-    if (!profile) return 0;
-    let stars = 0;
-    Object.keys(profile.progress).forEach((key) => {
-      const m = /^t(\d+)_c(\d+)_l(\d+)$/.exec(key);
-      if (!m) return;
-      stars += this.getLevel(profileId, m[1], m[2], m[3]).stars;
-    });
-    return stars;
+    if (!profile) return [];
+    return Object.keys(profile.progress)
+      .map((key) => {
+        const m = /^([a-z]+)_t(\d+)_c(\d+)_l(\d+)$/.exec(key);
+        if (!m) return null;
+        return { subject: m[1], tahun: Number(m[2]), chapter: Number(m[3]), level: Number(m[4]) };
+      })
+      .filter(Boolean);
+  }
+
+  /** Bintang bagi satu subjek, atau semua subjek apabila `subject` ditinggalkan. */
+  getTotalStars(profileId, subject = null) {
+    return this._rows(profileId)
+      .filter((r) => !subject || r.subject === subject)
+      .reduce((n, r) => n + this.getLevel(profileId, r.subject, r.tahun, r.chapter, r.level).stars, 0);
   }
 
   isHatUnlocked(profileId, hatType) {
@@ -341,9 +399,12 @@ class ProfileService {
     const profile = this._find(profileId);
     if (!profile) throw new Error('Profil tidak dijumpai');
 
-    const { tahun, chapter, chapterTitle, level, score, correct, total, seconds, combo, bonus, wrongIds } = run;
-    const key = this._key(tahun, chapter, level);
-    const before = this.getLevel(profileId, tahun, chapter, level);
+    const {
+      subject = DEFAULT_SUBJECT,
+      tahun, chapter, chapterTitle, level, score, correct, total, seconds, combo, bonus, wrongIds
+    } = run;
+    const key = this._key(subject, tahun, chapter, level);
+    const before = this.getLevel(profileId, subject, tahun, chapter, level);
     const stars = starsForScore(score);
 
     profile.progress[key] = {
@@ -366,6 +427,7 @@ class ProfileService {
     profile.history = profile.history || [];
     profile.history.push({
       d: ymd(new Date()),
+      sj: subject,
       t: Number(tahun),
       c: Number(chapter),
       ct: chapterTitle || '',
@@ -439,7 +501,7 @@ class ProfileService {
     const profile = this._find(profileId);
     const blank = {
       questions: 0, minutes: 0, quizzes: 0, activeDays: 0,
-      avgScore: 0, byDay: [], weak: [], recent: []
+      avgScore: 0, byDay: [], weak: [], bySubject: [], recent: []
     };
     if (!profile) return blank;
 
@@ -472,21 +534,24 @@ class ProfileService {
     // dicuba, bukan dari larian terakhir, supaya satu hari malang tidak
     // menandakan bab yang sebenarnya sudah dikuasai.
     const chapterBest = {};
-    Object.keys(profile.progress).forEach((key) => {
-      const m = /^t(\d+)_c(\d+)_l(\d+)$/.exec(key);
-      if (!m) return;
-      const row = this.getLevel(profileId, m[1], m[2], m[3]);
+    this._rows(profileId).forEach((r) => {
+      const row = this.getLevel(profileId, r.subject, r.tahun, r.chapter, r.level);
       if (!row.attempts) return;
-      const id = `${m[1]}_${m[2]}`;
-      if (!chapterBest[id]) chapterBest[id] = { tahun: Number(m[1]), chapter: Number(m[2]), scores: [] };
+      const id = `${r.subject}_${r.tahun}_${r.chapter}`;
+      if (!chapterBest[id]) {
+        chapterBest[id] = { subject: r.subject, tahun: r.tahun, chapter: r.chapter, scores: [] };
+      }
       chapterBest[id].scores.push(row.bestScore);
     });
 
     const titleFor = {};
-    history.forEach((h) => { if (h.ct) titleFor[`${h.t}_${h.c}`] = h.ct; });
+    history.forEach((h) => {
+      if (h.ct) titleFor[`${h.sj || DEFAULT_SUBJECT}_${h.t}_${h.c}`] = h.ct;
+    });
 
     const weak = Object.entries(chapterBest)
       .map(([id, v]) => ({
+        subject: v.subject,
         tahun: v.tahun,
         chapter: v.chapter,
         title: titleFor[id] || `Bab ${v.chapter}`,
@@ -496,6 +561,21 @@ class ProfileService {
       .sort((a, b) => a.avg - b.avg)
       .slice(0, 4);
 
+    // Ringkasan setiap subjek, supaya laporan boleh berkata "Sains belum
+    // dimulakan" dan bukan berdiam diri tentangnya.
+    const bySubject = SUBJECTS.map((sub) => {
+      const runs = window.filter((h) => (h.sj || DEFAULT_SUBJECT) === sub.id);
+      return {
+        id: sub.id,
+        name: sub.name,
+        stars: this.getTotalStars(profileId, sub.id),
+        questions: runs.reduce((n, h) => n + h.q, 0),
+        quizzes: runs.length,
+        avgScore: runs.length ? Math.round(runs.reduce((n, h) => n + h.s, 0) / runs.length) : 0,
+        weak: weak.filter((w) => w.subject === sub.id)
+      };
+    });
+
     return {
       questions,
       minutes: Math.round(seconds / 60),
@@ -504,6 +584,7 @@ class ProfileService {
       avgScore: window.length ? Math.round(scoreSum / window.length) : 0,
       byDay,
       weak,
+      bySubject,
       recent: history.slice(-8).reverse()
     };
   }
