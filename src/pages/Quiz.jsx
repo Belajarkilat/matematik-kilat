@@ -248,6 +248,10 @@ function Quiz({ profile }) {
       state: {
         score,
         correct,
+        // Skrin keputusan menamakan bab ini dalam maklum balas anak, dan ia
+        // tiada cara lain untuk mengetahuinya tanpa memuat turun fail soalan
+        // sekali lagi.
+        chapterTitle,
         total: questions.length,
         combo: maxCombo,
         stars: result.stars,

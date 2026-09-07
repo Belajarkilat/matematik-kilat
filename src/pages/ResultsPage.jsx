@@ -4,6 +4,7 @@ import { getSubject } from '../services/subjectService';
 import { getProfileService, STAR_CUTOFF, STARS_TO_ADVANCE } from '../services/profileService';
 import { isLevelPaid } from '../services/licenceService';
 import Stars from '../components/Stars';
+import RasaAnak from '../components/RasaAnak';
 
 function verdictFor(stars, score) {
   if (stars === 3) return { head: 'Tiga bintang', note: 'Semua betul. Aras ini sudah dikuasai sepenuhnya.' };
@@ -27,7 +28,8 @@ function ResultsPage({ profile }) {
   const ps = getProfileService();
 
   const state = location.state || {
-    score: 0, correct: 0, total: 0, combo: 0, stars: 0, starsBefore: 0, points: 0, streak: 0, newBadges: []
+    score: 0, correct: 0, total: 0, combo: 0, stars: 0, starsBefore: 0, points: 0, streak: 0, newBadges: [],
+    chapterTitle: ''
   };
 
   const stars = state.stars || 0;
@@ -148,6 +150,15 @@ function ResultsPage({ profile }) {
             </div>
           </div>
         )}
+
+        <RasaAnak
+          profile={profile}
+          subject={subject.id}
+          tahun={tahun}
+          chapter={chapter}
+          chapterTitle={state.chapterTitle}
+          level={levelNum}
+        />
 
         <div className="stack">
           {advanced && levelNum < 4 && !nextIsPaid && (

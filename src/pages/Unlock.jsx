@@ -4,9 +4,9 @@ import {
   redeem, isUnlocked, getLicence, formatCode, formatExpiry, hasExpiredLicence,
   FREE_LEVELS, OPEN_ACCESS, HARGA, PERANTI
 } from '../services/licenceService';
-
-// Nombor WhatsApp jualan. Format antarabangsa tanpa tanda tambah: 010-664 0353.
-const WHATSAPP = '60106640353';
+// Satu nombor sahaja untuk seluruh app, jadi jualan dan maklum balas tidak
+// boleh terpisah apabila nombor itu bertukar suatu hari nanti.
+import { WHATSAPP } from '../services/maklumBalasService';
 
 const RALAT = {
   'tidak-sah': 'Kod ini tidak sah. Periksa semula setiap huruf dan nombor.',

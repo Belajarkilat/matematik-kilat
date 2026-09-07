@@ -8,6 +8,7 @@
 
 import { OPEN_ALL_LEVELS } from './licenceService';
 import { DEFAULT_SUBJECT, SUBJECTS } from './subjectService';
+import { buangRasa } from './maklumBalasService';
 
 const PROFILES_KEY = 'bk_matematik_kilat_profiles_v1';
 
@@ -241,6 +242,10 @@ class ProfileService {
       this.activeId = this.profiles.profiles[0]?.id || null;
       this.profiles.activeId = this.activeId;
     }
+    // Ketukan muka anak disimpan berasingan daripada profil, jadi ia perlu
+    // dibuang di sini juga. Kalau tidak, profil baharu dengan id yang sama
+    // suatu hari nanti akan mewarisi rasa anak yang lain.
+    buangRasa(id);
     this._save();
   }
 
@@ -623,6 +628,7 @@ class ProfileService {
     profile.bestStreak = 0;
     profile.lastActivityDate = null;
     profile.history = [];
+    buangRasa(profileId);
     this._save();
     return profile;
   }

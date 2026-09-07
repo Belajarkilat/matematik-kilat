@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getProfileService } from '../services/profileService';
 import { getSubject } from '../services/subjectService';
+import MaklumBalasIbuBapa from '../components/MaklumBalasIbuBapa';
 
 /**
  * Satu-satunya skrin yang ditulis untuk orang yang membayar.
@@ -152,6 +153,8 @@ function ParentReport({ profile }) {
           <p className="muted">Belum ada sesi direkodkan.</p>
         )}
       </section>
+
+      <MaklumBalasIbuBapa profile={profile} laporan={report} />
     </div>
   );
 }
