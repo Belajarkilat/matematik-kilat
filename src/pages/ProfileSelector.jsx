@@ -2,182 +2,196 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getProfileService } from '../services/profileService';
 import KilatMark from '../components/KilatMark';
+import KilatAvatar from '../components/KilatAvatar';
+
+/**
+ * Skrin pertama yang dilihat sesiapa pun.
+ *
+ * Ia pernah dibina dengan gaya dalam baris sendiri, jadi ia satu-satunya
+ * halaman yang tidak mengikut tema: tajuk gelap atas latar gelap, kad kelabu
+ * dan bukan kertas krim, dan avatar emoji dan bukan avatar yang budak reka.
+ * Semuanya kini datang daripada tema yang sama seperti halaman lain.
+ *
+ * Butang padam dahulunya duduk terus di sebelah nama anak, sama menonjol
+ * dengan tindakan memilih profil. Sekarang ia bersembunyi di belakang mod
+ * "Urus", jadi budak yang mencari namanya tidak boleh memadam adiknya.
+ */
 
 function ProfileSelector({ onProfileChange }) {
   const navigate = useNavigate();
+  const ps = getProfileService();
+
   const [profiles, setProfiles] = useState([]);
   const [showNewProfile, setShowNewProfile] = useState(false);
   const [newProfileName, setNewProfileName] = useState('');
   const [error, setError] = useState('');
+  const [managing, setManaging] = useState(false);
+  const [confirmId, setConfirmId] = useState(null);
 
   useEffect(() => {
-    const ps = getProfileService();
-    const allProfiles = ps.getAllProfiles();
-    setProfiles(allProfiles);
+    const all = ps.getAllProfiles();
+    setProfiles(all);
+    if (all.length === 0) setShowNewProfile(true);
+  }, [ps]);
 
-    // If no profiles exist, show new profile form
-    if (allProfiles.length === 0) {
-      setShowNewProfile(true);
-    }
-  }, []);
-
-  const handleSelectProfile = (profile) => {
-    const ps = getProfileService();
+  const selectProfile = (profile) => {
+    if (managing) return;
     ps.switchProfile(profile.id);
     onProfileChange(profile);
     navigate('/hub');
   };
 
-  const handleCreateProfile = (e) => {
+  const createProfile = (e) => {
     e.preventDefault();
     setError('');
 
     if (!newProfileName.trim()) {
-      setError('Sila masukkan nama profil');
+      setError('Sila masukkan nama dahulu.');
       return;
     }
 
     try {
-      const ps = getProfileService();
-      const newProfile = ps.createProfile(newProfileName);
-      setProfiles([...profiles, newProfile]);
+      const created = ps.createProfile(newProfileName.trim());
+      setProfiles([...profiles, created]);
       setNewProfileName('');
       setShowNewProfile(false);
-      onProfileChange(newProfile);
+      onProfileChange(created);
       navigate('/avatar');
     } catch (err) {
       setError(err.message);
     }
   };
 
-  const handleDeleteProfile = (profileId) => {
-    if (window.confirm('Adakah anda pasti ingin memadamkan profil ini?')) {
-      const ps = getProfileService();
-      ps.deleteProfile(profileId);
-      setProfiles(profiles.filter(p => p.id !== profileId));
+  const deleteProfile = (id) => {
+    ps.deleteProfile(id);
+    const left = profiles.filter((p) => p.id !== id);
+    setProfiles(left);
+    setConfirmId(null);
+    if (!left.length) {
+      setManaging(false);
+      setShowNewProfile(true);
     }
   };
 
   return (
-    <div style={{
-      minHeight: '100vh',
-      padding: '20px',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center'
-    }}>
-      <div style={{ maxWidth: '600px', width: '100%' }}>
-        <div className="card card--primary" style={{ textAlign: 'center', marginBottom: '30px' }}>
-          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '12px' }}>
-            <KilatMark size={76} />
-          </div>
-          <h1>Matematik Kilat</h1>
-          <p style={{ fontSize: '1.2rem', marginTop: '10px' }}>Siapa nak belajar?</p>
+    <div className="page page--centre">
+      <div className="card card--primary center" style={{ marginBottom: 18 }}>
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 12 }}>
+          <KilatMark size={76} />
         </div>
+        <h1 style={{ fontSize: '1.6rem' }}>Matematik Kilat</h1>
+        <p style={{ marginTop: 6 }}>Siapa nak belajar?</p>
+      </div>
 
-        {profiles.length > 0 && (
-          <div style={{ marginBottom: '30px' }}>
-            <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>Pilih Profil</h2>
-            <div style={{ display: 'grid', gap: '12px' }}>
-              {profiles.map(profile => (
-                <div
-                  key={profile.id}
-                  onClick={() => handleSelectProfile(profile)}
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                    padding: '16px',
-                    background: 'linear-gradient(160deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.85) 100%)',
-                    border: '4px solid #1A1A1A',
-                    borderRadius: '8px',
-                    cursor: 'pointer',
-                    boxShadow: '4px 4px 0px rgba(0, 0, 0, 0.3)',
-                    transition: 'all 0.2s ease'
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.transform = 'translateY(-2px)';
-                    e.currentTarget.style.boxShadow = '4px 6px 0px rgba(0, 0, 0, 0.3)';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.transform = 'none';
-                    e.currentTarget.style.boxShadow = '4px 4px 0px rgba(0, 0, 0, 0.3)';
-                  }}
-                >
-                  <div>
-                    <div style={{ fontSize: '2rem', marginBottom: '5px' }}>
-                      {profile.avatar?.skinColor ? '🎮' : '👤'}
-                    </div>
-                    <div style={{ fontWeight: 'bold', fontSize: '1.1rem' }}>{profile.name}</div>
-                    <div style={{ fontSize: '0.9rem', color: '#666' }}>Tahun {profile.level}</div>
-                  </div>
-                  <div style={{ display: 'flex', gap: '8px' }}>
+      {profiles.length > 0 && (
+        <section style={{ marginBottom: 18 }}>
+          <div className="picker__head">
+            <h2 className="picker__title">Pilih profil</h2>
+            <button
+              className="btn btn--quiet btn--small"
+              onClick={() => { setManaging(!managing); setConfirmId(null); }}
+            >
+              {managing ? 'Selesai' : 'Urus'}
+            </button>
+          </div>
+
+          <div className="picker__list">
+            {profiles.map((profile) => {
+              const stars = ps.getTotalStars(profile.id);
+              const confirming = confirmId === profile.id;
+
+              return (
+                <div key={profile.id} className="picker__row">
+                  <button
+                    className="picker__pick"
+                    onClick={() => selectProfile(profile)}
+                    disabled={managing}
+                  >
+                    <span className="picker__face">
+                      <KilatAvatar profile={profile} size={44} />
+                    </span>
+                    <span className="picker__who">
+                      <span className="picker__name">{profile.name}</span>
+                      <span className="picker__meta">
+                        {stars ? `${stars} bintang` : 'Belum mula'}
+                      </span>
+                    </span>
+                  </button>
+
+                  {managing && !confirming && (
                     <button
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        handleDeleteProfile(profile.id);
-                      }}
-                      style={{
-                        padding: '8px 12px',
-                        background: '#E74C3C',
-                        color: 'white',
-                        border: '2px solid #1A1A1A',
-                        borderRadius: '4px',
-                        cursor: 'pointer',
-                        fontWeight: 'bold'
-                      }}
+                      className="btn btn--quiet btn--small"
+                      onClick={() => setConfirmId(profile.id)}
                     >
                       Padam
                     </button>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
+                  )}
 
-        {showNewProfile ? (
-          <div className="card">
-            <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>Profil Baru</h2>
-            <form onSubmit={handleCreateProfile}>
-              <div style={{ marginBottom: '16px' }}>
-                <label style={{ display: 'block', marginBottom: '8px', fontWeight: 'bold' }}>
-                  Nama
-                </label>
-                <input
-                  type="text"
-                  value={newProfileName}
-                  onChange={(e) => setNewProfileName(e.target.value)}
-                  placeholder="Masukkan nama"
-                  maxLength={20}
-                  autoFocus
-                />
-              </div>
-              {error && <div style={{ color: '#E74C3C', marginBottom: '16px' }}>{error}</div>}
-              <button type="submit" className="btn btn--primary btn--block" style={{ marginBottom: '8px' }}>
-                Buat Profil
-              </button>
-              {profiles.length > 0 && (
-                <button
-                  type="button"
-                  onClick={() => setShowNewProfile(false)}
-                  className="btn btn--ghost btn--block"
-                >
-                  Batal
-                </button>
-              )}
-            </form>
+                  {confirming && (
+                    <div className="picker__confirm">
+                      <button className="btn btn--danger btn--small" onClick={() => deleteProfile(profile.id)}>
+                        Padam {profile.name}
+                      </button>
+                      <button className="btn btn--secondary btn--small" onClick={() => setConfirmId(null)}>
+                        Batal
+                      </button>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
           </div>
-        ) : (
-          <button
-            onClick={() => setShowNewProfile(true)}
-            className="btn btn--primary btn--block"
-            style={{ fontSize: '1.1rem' }}
-          >
-            + Profil Baru
-          </button>
-        )}
-      </div>
+
+          {managing && (
+            <p className="on-ink-muted" style={{ marginTop: 10, fontSize: '0.85rem' }}>
+              Memadam profil membuang semua bintang dan kemajuannya. Ia tidak
+              boleh dikembalikan.
+            </p>
+          )}
+        </section>
+      )}
+
+      {showNewProfile ? (
+        <div className="card">
+          <h2 style={{ fontSize: '1.1rem', marginBottom: 14 }}>Profil baru</h2>
+          <form onSubmit={createProfile}>
+            <label className="field__head" htmlFor="nama">Nama</label>
+            <input
+              id="nama"
+              className="answer-input"
+              type="text"
+              value={newProfileName}
+              onChange={(e) => { setNewProfileName(e.target.value); setError(''); }}
+              placeholder="Masukkan nama"
+              maxLength={20}
+              enterKeyHint="go"
+              autoFocus
+            />
+            {error && (
+              <div className="verdict verdict--wrong" style={{ marginTop: 12 }}>
+                <div className="verdict__working">{error}</div>
+              </div>
+            )}
+            <button type="submit" className="btn btn--go btn--block" style={{ marginTop: 14 }}>
+              Buat profil
+            </button>
+            {profiles.length > 0 && (
+              <button
+                type="button"
+                className="btn btn--secondary btn--block"
+                style={{ marginTop: 8 }}
+                onClick={() => { setShowNewProfile(false); setError(''); }}
+              >
+                Batal
+              </button>
+            )}
+          </form>
+        </div>
+      ) : (
+        <button className="btn btn--go btn--block" onClick={() => setShowNewProfile(true)}>
+          + Profil baru
+        </button>
+      )}
     </div>
   );
 }

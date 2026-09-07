@@ -1,6 +1,6 @@
 {
   "tahun": 2,
-  "total": 150,
+  "total": 200,
   "chapters": [
     {
       "id": "d2-b1",
@@ -382,6 +382,125 @@
           "points": 30,
           "type": "input",
           "working": "Nombor di antara 400 dan 402 ialah 401, kerana 400 + 1 = 401."
+        },
+        {
+          "id": "t2_c1_q31",
+          "text": "Sebuah nombor tiga digit. Digit ratusnya 4, digit sanya 2 lebih daripada digit ratus, dan digit puluhnya 0. Apakah nombor itu?",
+          "options": [],
+          "correctAnswer": 406,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Ratus = 4, puluh = 0, sa = 4 + 2 = 6. Nombor itu 406."
+        },
+        {
+          "id": "t2_c1_q32",
+          "text": "Daripada digit 5, 2 dan 8, bina nombor tiga digit yang PALING BESAR. Berapakah beza antaranya dengan yang paling kecil?",
+          "options": [],
+          "correctAnswer": 594,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Paling besar 852, paling kecil 258. Beza = 852 − 258 = 594."
+        },
+        {
+          "id": "t2_c1_q33",
+          "text": "Nombor 738 dibundarkan kepada RATUS terdekat. Apakah jawapannya?",
+          "options": [
+            700,
+            800,
+            740,
+            730
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "738 terletak antara 700 dan 800. Bakinya selepas 700 ialah 38, dan 38 kurang daripada 50. Jadi bundarkan ke bawah kepada 700."
+        },
+        {
+          "id": "t2_c1_q34",
+          "text": "Corak: 250, 300, 350, ... Apakah nombor ke-6 dalam corak ini?",
+          "options": [],
+          "correctAnswer": 500,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Setiap kali bertambah 50. Nombor ke-1 ialah 250, jadi nombor ke-6 = 250 + 5 × 50 = 250 + 250 = 500."
+        },
+        {
+          "id": "t2_c1_q35",
+          "text": "Dalam nombor 495, digit manakah yang mempunyai NILAI paling besar?",
+          "options": [
+            "4",
+            "9",
+            "5",
+            "Semua sama"
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Digit 4 berada di tempat ratus, jadi nilainya 400. Digit 9 bernilai 90 dan digit 5 bernilai 5. Nilai terbesar ialah digit 4."
+        },
+        {
+          "id": "t2_c1_q36",
+          "text": "Nombor manakah yang berada TEPAT di tengah antara 480 dan 520?",
+          "options": [],
+          "correctAnswer": 500,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Beza antara 480 dan 520 ialah 40. Separuh daripada 40 ialah 20. Jadi 480 + 20 = 500."
+        },
+        {
+          "id": "t2_c1_q37",
+          "text": "Susun 604, 640 dan 406 dalam tertib MENURUN. Nombor manakah berada di tengah?",
+          "options": [
+            640,
+            604,
+            406
+          ],
+          "correctAnswer": 1,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Tertib menurun ialah dari besar ke kecil: 640, 604, 406. Yang di tengah ialah 604."
+        },
+        {
+          "id": "t2_c1_q38",
+          "text": "Nilai digit 7 dalam nombor 573 ialah berapa?",
+          "options": [],
+          "correctAnswer": 70,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Digit 7 berada di tempat puluh, jadi nilainya 7 puluh, iaitu 70."
+        },
+        {
+          "id": "t2_c1_q39",
+          "text": "Berapa banyak nombor GENAP yang ada antara 20 dan 30 (tidak termasuk 20 dan 30)?",
+          "options": [],
+          "correctAnswer": 4,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Nombor genap antara 20 dan 30 ialah 22, 24, 26, 28. Semuanya 4 nombor."
+        },
+        {
+          "id": "t2_c1_q40",
+          "text": "Nombor manakah yang 100 LEBIH KECIL daripada 1 000?",
+          "options": [
+            900,
+            990,
+            800,
+            100
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "1 000 − 100 = 900."
         }
       ]
     },
@@ -729,6 +848,116 @@
           "points": 30,
           "type": "input",
           "working": "Tolak 275 daripada 750. 750 − 275 = 475. Semak: 475 + 275 = 750."
+        },
+        {
+          "id": "t2_c2_q31",
+          "text": "Sebuah kedai ada 625 biji telur. 148 biji dijual pagi dan 96 biji dijual petang. Berapa biji yang tinggal?",
+          "options": [],
+          "correctAnswer": 381,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "625 − 148 = 477. Kemudian 477 − 96 = 381."
+        },
+        {
+          "id": "t2_c2_q32",
+          "text": "___ + 285 = 700. Apakah nombor yang patut diisi?",
+          "options": [],
+          "correctAnswer": 415,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Nombor yang hilang = 700 − 285 = 415. Semak: 415 + 285 = 700."
+        },
+        {
+          "id": "t2_c2_q33",
+          "text": "Ali ada 340 keping setem. Bakar ada 85 keping kurang daripada Ali. Berapa keping setem mereka berdua semuanya?",
+          "options": [],
+          "correctAnswer": 595,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Setem Bakar = 340 − 85 = 255. Jumlah = 340 + 255 = 595."
+        },
+        {
+          "id": "t2_c2_q34",
+          "text": "506 − 128 − 74 = ?",
+          "options": [],
+          "correctAnswer": 304,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "506 − 128 = 378. Kemudian 378 − 74 = 304."
+        },
+        {
+          "id": "t2_c2_q35",
+          "text": "Nombor manakah yang apabila DITOLAK 265 memberi 385?",
+          "options": [
+            650,
+            620,
+            550,
+            660
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Nombor asal = 385 + 265 = 650. Semak: 650 − 265 = 385."
+        },
+        {
+          "id": "t2_c2_q36",
+          "text": "Tabung Rina ada RM128. Dia menyimpan RM45 lagi, kemudian membelanjakan RM60. Berapa RM baki dalam tabungnya?",
+          "options": [],
+          "correctAnswer": 113,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "128 + 45 = 173. Kemudian 173 − 60 = 113."
+        },
+        {
+          "id": "t2_c2_q37",
+          "text": "Jumlah dua nombor ialah 900. Salah satu nombor ialah 356. Berapakah nombor yang satu lagi?",
+          "options": [],
+          "correctAnswer": 544,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "900 − 356 = 544."
+        },
+        {
+          "id": "t2_c2_q38",
+          "text": "Anggarkan 398 + 205 dengan membundar kepada ratus terdekat. Berapakah anggarannya?",
+          "options": [
+            600,
+            500,
+            700,
+            550
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "398 dibundar menjadi 400, 205 dibundar menjadi 200. Anggaran = 400 + 200 = 600. (Jawapan tepat 603.)"
+        },
+        {
+          "id": "t2_c2_q39",
+          "text": "Sebuah bas membawa 68 penumpang. Di hentian pertama 25 turun dan 17 naik. Di hentian kedua 30 turun. Berapa penumpang yang tinggal?",
+          "options": [],
+          "correctAnswer": 30,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "68 − 25 = 43, kemudian 43 + 17 = 60, kemudian 60 − 30 = 30."
+        },
+        {
+          "id": "t2_c2_q40",
+          "text": "175 + 175 + 175 = ?",
+          "options": [],
+          "correctAnswer": 525,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "175 + 175 = 350. Kemudian 350 + 175 = 525."
         }
       ]
     },
@@ -1096,6 +1325,121 @@
           "points": 30,
           "type": "input",
           "working": "Bahagi 36 sama rata kepada 6 bahagian: 36 ÷ 6 = 6."
+        },
+        {
+          "id": "t2_c3_q31",
+          "text": "Ada 6 kotak. Setiap kotak ada 8 biji gula-gula. 9 biji gula-gula dimakan. Berapa biji yang tinggal?",
+          "options": [],
+          "correctAnswer": 39,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Jumlah gula-gula = 6 × 8 = 48. Selepas dimakan: 48 − 9 = 39."
+        },
+        {
+          "id": "t2_c3_q32",
+          "text": "45 biji buah dibahagikan sama rata kepada 5 bakul. Kemudian 2 biji diambil dari setiap bakul. Berapa biji tinggal dalam SATU bakul?",
+          "options": [],
+          "correctAnswer": 7,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Setiap bakul dapat 45 ÷ 5 = 9 biji. Selepas diambil 2: 9 − 2 = 7 biji."
+        },
+        {
+          "id": "t2_c3_q33",
+          "text": "Nombor manakah yang apabila DIDARAB dengan 7 memberi 56?",
+          "options": [
+            8,
+            6,
+            9,
+            7
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "56 ÷ 7 = 8. Semak: 8 × 7 = 56."
+        },
+        {
+          "id": "t2_c3_q34",
+          "text": "Ali membeli 4 paket pen. Setiap paket ada 6 batang. Dia beri 5 batang kepada adik. Berapa batang pen yang tinggal?",
+          "options": [],
+          "correctAnswer": 19,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "4 × 6 = 24 batang. Selepas diberi: 24 − 5 = 19 batang."
+        },
+        {
+          "id": "t2_c3_q35",
+          "text": "3 × 8 dan 4 × 6 — berapakah JUMLAH kedua-dua hasil darab itu?",
+          "options": [],
+          "correctAnswer": 48,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "3 × 8 = 24 dan 4 × 6 = 24. Jumlah = 24 + 24 = 48."
+        },
+        {
+          "id": "t2_c3_q36",
+          "text": "38 biji telur dimasukkan ke dalam bekas. Setiap bekas muat 5 biji. Berapa biji telur yang TIDAK muat dalam bekas penuh?",
+          "options": [],
+          "correctAnswer": 3,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "38 ÷ 5 = 7 bekas penuh dengan baki 3. Jadi 3 biji tidak muat dalam bekas penuh."
+        },
+        {
+          "id": "t2_c3_q37",
+          "text": "Sebuah kelas ada 5 baris meja, setiap baris 6 meja. Dua meja rosak. Berapa meja yang boleh digunakan?",
+          "options": [
+            28,
+            30,
+            26,
+            32
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "5 × 6 = 30 meja. Selepas tolak yang rosak: 30 − 2 = 28 meja."
+        },
+        {
+          "id": "t2_c3_q38",
+          "text": "Harga sebatang pen ialah RM3. Berapa RM harga 9 batang pen?",
+          "options": [],
+          "correctAnswer": 27,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "9 × RM3 = RM27."
+        },
+        {
+          "id": "t2_c3_q39",
+          "text": "Dua kali sebuah nombor ialah 18. Berapakah TIGA kali nombor itu?",
+          "options": [],
+          "correctAnswer": 27,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Nombor itu = 18 ÷ 2 = 9. Tiga kali nombor itu = 3 × 9 = 27."
+        },
+        {
+          "id": "t2_c3_q40",
+          "text": "Manakah antara berikut TIDAK sama dengan 24?",
+          "options": [
+            "4 × 6",
+            "3 × 8",
+            "2 × 12",
+            "5 × 5"
+          ],
+          "correctAnswer": 3,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "4 × 6 = 24, 3 × 8 = 24, 2 × 12 = 24, tetapi 5 × 5 = 25."
         }
       ]
     },
@@ -1631,6 +1975,147 @@
           "points": 30,
           "type": "mcq",
           "working": "Tukar kepada penyebut yang sama dahulu: 1/2 = 12/24, 1/8 = 3/24, 1/3 = 8/24. Bandingkan pengangka, yang paling besar ialah 1/2."
+        },
+        {
+          "id": "t2_c4_q31",
+          "text": "Sebuah kek dipotong kepada 8 bahagian sama. Ali makan 2 bahagian dan Siti makan 3 bahagian. Berapakah pecahan kek yang TINGGAL?",
+          "options": [
+            "3/8",
+            "5/8",
+            "4/8",
+            "2/8"
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Dimakan = 2 + 3 = 5 bahagian. Tinggal = 8 − 5 = 3 bahagian daripada 8, iaitu 3/8."
+        },
+        {
+          "id": "t2_c4_q32",
+          "text": "Bahagian berlorek dalam rajah ini mewakili pecahan yang mana?",
+          "options": [
+            "3/4",
+            "1/4",
+            "2/4",
+            "1/3"
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Bulatan dibahagi 4 bahagian sama dan 3 bahagian berlorek, jadi pecahannya 3/4.",
+          "visual": {
+            "type": "fraction",
+            "shape": "circle",
+            "parts": 4,
+            "shaded": 3
+          }
+        },
+        {
+          "id": "t2_c4_q33",
+          "text": "Manakah pecahan yang PALING BESAR antara 1/2, 1/5 dan 1/3?",
+          "options": [
+            "1/2",
+            "1/3",
+            "1/5"
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Bila pengangka sama, pecahan dengan penyebut lebih KECIL adalah lebih besar. Penyebut terkecil ialah 2, jadi 1/2 paling besar."
+        },
+        {
+          "id": "t2_c4_q34",
+          "text": "Sebuah bekas ada 20 biji guli. 1/4 daripadanya berwarna merah. Berapa biji guli merah?",
+          "options": [],
+          "correctAnswer": 5,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "1/4 daripada 20 bermaksud 20 dibahagi 4, iaitu 5 biji."
+        },
+        {
+          "id": "t2_c4_q35",
+          "text": "Sebuah reben 12 meter dipotong kepada 3 bahagian sama. Berapa meter panjang SATU bahagian?",
+          "options": [],
+          "correctAnswer": 4,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "12 ÷ 3 = 4 meter. (Setiap bahagian ialah 1/3 daripada reben.)"
+        },
+        {
+          "id": "t2_c4_q36",
+          "text": "Pecahan manakah yang SAMA nilai dengan 2/4?",
+          "options": [
+            "3/6",
+            "2/3",
+            "1/3",
+            "3/4"
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "2/4 sama dengan 1/2. Antara pilihan, 3/6 juga sama dengan 1/2 kerana 3 ialah separuh daripada 6."
+        },
+        {
+          "id": "t2_c4_q37",
+          "text": "Rina ada 18 keping biskut. Dia makan 1/3 daripadanya. Berapa keping biskut yang tinggal?",
+          "options": [],
+          "correctAnswer": 12,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "1/3 daripada 18 = 18 ÷ 3 = 6 keping dimakan. Tinggal = 18 − 6 = 12 keping."
+        },
+        {
+          "id": "t2_c4_q38",
+          "text": "Bahagian berlorek pada bar ini mewakili pecahan yang mana?",
+          "options": [
+            "2/6",
+            "4/6",
+            "2/4",
+            "3/6"
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Bar dibahagi 6 bahagian sama dan 2 bahagian berlorek, jadi 2/6.",
+          "visual": {
+            "type": "fraction",
+            "shape": "bar",
+            "parts": 6,
+            "shaded": 2
+          }
+        },
+        {
+          "id": "t2_c4_q39",
+          "text": "Ali makan 1/4 pizza dan Bakar makan 2/4 pizza. Berapakah pecahan pizza yang mereka makan BERSAMA?",
+          "options": [
+            "3/4",
+            "2/4",
+            "3/8",
+            "1/2"
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Penyebut sama, jadi campur pengangka: 1/4 + 2/4 = 3/4."
+        },
+        {
+          "id": "t2_c4_q40",
+          "text": "Separuh daripada sebuah nombor ialah 14. Berapakah nombor itu?",
+          "options": [],
+          "correctAnswer": 28,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Jika separuh nombor ialah 14, nombor penuh ialah 14 × 2 = 28."
         }
       ]
     },
@@ -2215,6 +2700,182 @@
               20
             ]
           }
+        },
+        {
+          "id": "t2_c5_q31",
+          "text": "Ibu ada RM50. Dia beli baju RM28 dan seluar RM15. Berapa RM bakinya?",
+          "options": [],
+          "correctAnswer": 7,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Jumlah belanja = 28 + 15 = RM43. Baki = 50 − 43 = RM7."
+        },
+        {
+          "id": "t2_c5_q32",
+          "text": "Berapakah jumlah wang ini?",
+          "options": [
+            "RM26.30",
+            "RM25.30",
+            "RM26.80",
+            "RM21.30"
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Kertas: RM20 + RM5 + RM1 = RM26. Syiling: 20 sen + 10 sen = 30 sen. Jumlah RM26.30.",
+          "visual": {
+            "type": "money",
+            "notes": [
+              20,
+              5,
+              1
+            ],
+            "coins": [
+              20,
+              10
+            ]
+          }
+        },
+        {
+          "id": "t2_c5_q33",
+          "text": "Sebuah filem bermula pukul 2:15 petang dan berlangsung 1 jam 30 minit. Pukul berapakah ia tamat?",
+          "options": [
+            "3:45 petang",
+            "3:15 petang",
+            "4:45 petang",
+            "2:45 petang"
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "2:15 tambah 1 jam menjadi 3:15. Tambah 30 minit lagi menjadi 3:45 petang."
+        },
+        {
+          "id": "t2_c5_q34",
+          "text": "Berapakah perimeter bentuk berlorek ini, dalam unit petak?",
+          "options": [],
+          "correctAnswer": 12,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Bentuk berlorek ialah segi empat tepat 4 petak × 2 petak. Perimeter = 4 + 2 + 4 + 2 = 12 unit.",
+          "visual": {
+            "type": "grid",
+            "cols": 5,
+            "rows": 3,
+            "cells": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          }
+        },
+        {
+          "id": "t2_c5_q35",
+          "text": "Ali menyimpan RM3 setiap minggu. Berapa RM simpanannya selepas 8 minggu?",
+          "options": [],
+          "correctAnswer": 24,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "8 minggu × RM3 = RM24."
+        },
+        {
+          "id": "t2_c5_q36",
+          "text": "Sebuah bentuk mempunyai 6 permukaan, semuanya segi empat tepat, dan 8 bucu. Apakah bentuk itu?",
+          "options": [
+            "Kuboid",
+            "Piramid",
+            "Silinder",
+            "Kon"
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Kuboid mempunyai 6 permukaan segi empat tepat, 12 tepi dan 8 bucu."
+        },
+        {
+          "id": "t2_c5_q37",
+          "text": "Kelas bermula pukul 7:50 pagi dan tamat pukul 9:20 pagi. Berapa MINIT lamanya?",
+          "options": [],
+          "correctAnswer": 90,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Dari 7:50 ke 8:50 ialah 60 minit. Dari 8:50 ke 9:20 ialah 30 minit lagi. Jumlah 90 minit."
+        },
+        {
+          "id": "t2_c5_q38",
+          "text": "Sebuah buku berharga RM8. Berapakah harga 5 buah buku itu?",
+          "options": [
+            "RM40",
+            "RM35",
+            "RM45",
+            "RM30"
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "5 × RM8 = RM40."
+        },
+        {
+          "id": "t2_c5_q39",
+          "text": "Sebuah segi empat sama mempunyai perimeter 24 cm. Berapakah panjang SATU sisinya, dalam cm?",
+          "options": [],
+          "correctAnswer": 6,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Segi empat sama ada 4 sisi sama panjang. 24 ÷ 4 = 6 cm."
+        },
+        {
+          "id": "t2_c5_q40",
+          "text": "Rina beli air 90 sen dan roti RM1.20. Dia bayar dengan RM5. Berapakah bakinya?",
+          "options": [
+            "RM2.90",
+            "RM3.10",
+            "RM2.80",
+            "RM3.90"
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Jumlah belanja = 90 sen + RM1.20 = RM2.10. Baki = RM5 − RM2.10 = RM2.90."
         }
       ]
     }

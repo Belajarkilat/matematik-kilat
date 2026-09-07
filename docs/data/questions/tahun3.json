@@ -1,6 +1,6 @@
 {
   "tahun": 3,
-  "total": 150,
+  "total": 200,
   "chapters": [
     {
       "id": "d3-b1",
@@ -382,6 +382,120 @@
           "points": 30,
           "type": "input",
           "working": "Dalam 3 745, digit 3 bernilai 3 000 dan digit 7 bernilai 700. Jumlahnya 3 000 + 700 = 3 700."
+        },
+        {
+          "id": "t3_c1_q31",
+          "text": "Sebuah nombor empat digit. Digit ribunya 5, digit ratusnya 0, digit sanya 2, dan digit puluhnya separuh daripada digit sa. Apakah nombor itu?",
+          "options": [],
+          "correctAnswer": 5012,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Ribu = 5, ratus = 0, sa = 2, puluh = separuh daripada 2 = 1. Nombor itu 5 012."
+        },
+        {
+          "id": "t3_c1_q32",
+          "text": "Bundarkan 3 649 kepada RATUS terdekat, kemudian tolak 400 daripada jawapan itu. Berapakah hasilnya?",
+          "options": [],
+          "correctAnswer": 3200,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "3 649 dibundar kepada ratus terdekat: baki selepas 3 600 ialah 49, kurang daripada 50, jadi 3 600. Kemudian 3 600 − 400 = 3 200."
+        },
+        {
+          "id": "t3_c1_q33",
+          "text": "Nombor manakah yang berada TEPAT di tengah antara 4 200 dan 4 800?",
+          "options": [
+            4500,
+            4400,
+            4600,
+            4550
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Beza = 4 800 − 4 200 = 600. Separuhnya 300. Jadi 4 200 + 300 = 4 500."
+        },
+        {
+          "id": "t3_c1_q34",
+          "text": "Daripada digit 7, 1, 4 dan 9, bina nombor empat digit terbesar dan terkecil. Berapakah bezanya?",
+          "options": [],
+          "correctAnswer": 8262,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Terbesar 9 741, terkecil 1 479. Beza = 9 741 − 1 479 = 8 262."
+        },
+        {
+          "id": "t3_c1_q35",
+          "text": "Corak: 1 250, 1 500, 1 750, ... Apakah nombor ke-6 dalam corak ini?",
+          "options": [],
+          "correctAnswer": 2500,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Setiap kali bertambah 250. Nombor ke-6 = 1 250 + 5 × 250 = 1 250 + 1 250 = 2 500."
+        },
+        {
+          "id": "t3_c1_q36",
+          "text": "Dalam nombor 6 038, apakah NILAI digit 6?",
+          "options": [
+            6000,
+            600,
+            60,
+            6
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Digit 6 berada di tempat ribu, jadi nilainya 6 000."
+        },
+        {
+          "id": "t3_c1_q37",
+          "text": "Nombor X ialah 1 200 kurang daripada 9 050. Berapakah nilai X?",
+          "options": [],
+          "correctAnswer": 7850,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "X = 9 050 − 1 200 = 7 850."
+        },
+        {
+          "id": "t3_c1_q38",
+          "text": "Susun 5 099, 5 909 dan 5 990 dalam tertib MENURUN. Nombor manakah berada di tengah?",
+          "options": [
+            5990,
+            5909,
+            5099
+          ],
+          "correctAnswer": 1,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Tertib menurun: 5 990, 5 909, 5 099. Yang di tengah ialah 5 909."
+        },
+        {
+          "id": "t3_c1_q39",
+          "text": "Berapakah nombor GENAP terbesar yang boleh dibina daripada digit 3, 8, 5 dan 2 tanpa mengulang digit?",
+          "options": [],
+          "correctAnswer": 8532,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Untuk nombor genap, digit sa mesti genap. Pilih 2 sebagai digit sa, kemudian susun 8, 5, 3 dari besar ke kecil: 8 532."
+        },
+        {
+          "id": "t3_c1_q40",
+          "text": "Sebuah kilang menghasilkan 2 500 unit setiap bulan. Berapakah jumlah unit dalam 4 bulan?",
+          "options": [],
+          "correctAnswer": 10000,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "4 × 2 500 = 10 000 unit."
         }
       ]
     },
@@ -749,6 +863,116 @@
           "points": 30,
           "type": "input",
           "working": "Selesaikan dua langkah. Pertama 7 890 + 2 500 = 10 390. Kemudian 10 390 − 3 640 = 6 750."
+        },
+        {
+          "id": "t3_c2_q31",
+          "text": "Sebuah perpustakaan ada 4 250 buah buku. 1 380 buah dipinjam dan 640 buah dipulangkan. Berapa buah buku ada di rak sekarang?",
+          "options": [],
+          "correctAnswer": 3510,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "4 250 − 1 380 = 2 870. Kemudian 2 870 + 640 = 3 510."
+        },
+        {
+          "id": "t3_c2_q32",
+          "text": "___ + 2 675 = 8 000. Apakah nombor yang patut diisi?",
+          "options": [],
+          "correctAnswer": 5325,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Nombor hilang = 8 000 − 2 675 = 5 325. Semak: 5 325 + 2 675 = 8 000."
+        },
+        {
+          "id": "t3_c2_q33",
+          "text": "Ali ada 3 480 keping setem. Bakar ada 725 keping kurang daripada Ali. Berapa keping setem mereka berdua semuanya?",
+          "options": [],
+          "correctAnswer": 6235,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Setem Bakar = 3 480 − 725 = 2 755. Jumlah = 3 480 + 2 755 = 6 235."
+        },
+        {
+          "id": "t3_c2_q34",
+          "text": "Anggarkan 4 890 + 3 120 dengan membundar kepada ribu terdekat. Berapakah anggarannya?",
+          "options": [
+            8000,
+            7000,
+            9000,
+            8500
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "4 890 dibundar menjadi 5 000, 3 120 dibundar menjadi 3 000. Anggaran = 5 000 + 3 000 = 8 000. (Jawapan tepat 8 010.)"
+        },
+        {
+          "id": "t3_c2_q35",
+          "text": "7 000 − 2 358 − 1 142 = ?",
+          "options": [],
+          "correctAnswer": 3500,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "7 000 − 2 358 = 4 642. Kemudian 4 642 − 1 142 = 3 500."
+        },
+        {
+          "id": "t3_c2_q36",
+          "text": "Sebuah stadium ada 9 500 kerusi. 3 275 kerusi diisi pada sesi pagi dan 2 890 kerusi pada sesi petang. Berapa kerusi kosong jika kedua-dua sesi dijumlahkan?",
+          "options": [],
+          "correctAnswer": 3335,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Jumlah diisi = 3 275 + 2 890 = 6 165. Kerusi kosong = 9 500 − 6 165 = 3 335."
+        },
+        {
+          "id": "t3_c2_q37",
+          "text": "Nombor manakah yang apabila DITOLAK 1 875 memberi 3 625?",
+          "options": [
+            5500,
+            5400,
+            5250,
+            5600
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Nombor asal = 3 625 + 1 875 = 5 500."
+        },
+        {
+          "id": "t3_c2_q38",
+          "text": "Tabung sekolah ada RM6 480. Sebanyak RM1 250 dibelanjakan untuk buku dan RM980 untuk sukan. Berapa RM bakinya?",
+          "options": [],
+          "correctAnswer": 4250,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "6 480 − 1 250 = 5 230. Kemudian 5 230 − 980 = 4 250."
+        },
+        {
+          "id": "t3_c2_q39",
+          "text": "Jumlah dua nombor ialah 7 400. Beza antara kedua-duanya ialah 400. Berapakah nombor yang LEBIH BESAR?",
+          "options": [],
+          "correctAnswer": 3900,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Nombor besar = (jumlah + beza) ÷ 2 = (7 400 + 400) ÷ 2 = 7 800 ÷ 2 = 3 900."
+        },
+        {
+          "id": "t3_c2_q40",
+          "text": "Sebuah kedai menjual 1 265 kotak pada Isnin, 985 kotak pada Selasa dan 1 750 kotak pada Rabu. Berapa jumlah kotak dalam tiga hari itu?",
+          "options": [],
+          "correctAnswer": 4000,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "1 265 + 985 = 2 250. Kemudian 2 250 + 1 750 = 4 000."
         }
       ]
     },
@@ -1121,6 +1345,116 @@
           "points": 30,
           "type": "input",
           "working": "Ada 19 kumpulan dengan 8 setiap satu, jadi darab: 8 × 19 = 152."
+        },
+        {
+          "id": "t3_c3_q31",
+          "text": "Sebuah dewan ada 12 baris kerusi, setiap baris 15 kerusi. 20 kerusi rosak. Berapa kerusi yang boleh digunakan?",
+          "options": [],
+          "correctAnswer": 160,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Jumlah kerusi = 12 × 15 = 180. Selepas tolak rosak: 180 − 20 = 160."
+        },
+        {
+          "id": "t3_c3_q32",
+          "text": "156 biji buah dibahagikan sama rata kepada 6 bakul. Berapa biji dalam SETIAP bakul?",
+          "options": [],
+          "correctAnswer": 26,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "156 ÷ 6 = 26 biji."
+        },
+        {
+          "id": "t3_c3_q33",
+          "text": "95 ÷ 7 memberi hasil bahagi dan baki yang mana?",
+          "options": [
+            "13 baki 4",
+            "13 baki 3",
+            "14 baki 1",
+            "12 baki 5"
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "7 × 13 = 91, dan 95 − 91 = 4. Jadi hasil bahagi 13 dengan baki 4."
+        },
+        {
+          "id": "t3_c3_q34",
+          "text": "Ibu membeli 8 kotak biskut. Setiap kotak ada 25 keping. Dia beri 60 keping kepada jiran. Berapa keping yang tinggal?",
+          "options": [],
+          "correctAnswer": 140,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "8 × 25 = 200 keping. Selepas diberi: 200 − 60 = 140 keping."
+        },
+        {
+          "id": "t3_c3_q35",
+          "text": "Sebuah nombor didarab dengan 9 memberi 216. Berapakah nombor itu?",
+          "options": [],
+          "correctAnswer": 24,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "216 ÷ 9 = 24. Semak: 24 × 9 = 216."
+        },
+        {
+          "id": "t3_c3_q36",
+          "text": "144 batang pen dimasukkan ke dalam kotak. Setiap kotak muat 12 batang. Kemudian 3 kotak dijual. Berapa kotak yang tinggal?",
+          "options": [],
+          "correctAnswer": 9,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Bilangan kotak = 144 ÷ 12 = 12 kotak. Selepas dijual: 12 − 3 = 9 kotak."
+        },
+        {
+          "id": "t3_c3_q37",
+          "text": "Harga 6 buah buku ialah RM54. Berapakah harga 9 buah buku yang sama?",
+          "options": [
+            "RM81",
+            "RM72",
+            "RM90",
+            "RM76"
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Harga sebuah buku = 54 ÷ 6 = RM9. Harga 9 buah = 9 × 9 = RM81."
+        },
+        {
+          "id": "t3_c3_q38",
+          "text": "(7 × 8) + (6 × 9) = ?",
+          "options": [],
+          "correctAnswer": 110,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "7 × 8 = 56 dan 6 × 9 = 54. Jumlah = 56 + 54 = 110."
+        },
+        {
+          "id": "t3_c3_q39",
+          "text": "Sebuah lori boleh membawa 45 guni sekali jalan. Berapa kali jalan diperlukan untuk membawa 270 guni?",
+          "options": [],
+          "correctAnswer": 6,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "270 ÷ 45 = 6 kali jalan."
+        },
+        {
+          "id": "t3_c3_q40",
+          "text": "Tiga kali sebuah nombor ialah 84. Berapakah SEPARUH nombor itu?",
+          "options": [],
+          "correctAnswer": 14,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Nombor itu = 84 ÷ 3 = 28. Separuhnya = 28 ÷ 2 = 14."
         }
       ]
     },
@@ -1553,6 +1887,131 @@
           "points": 30,
           "type": "input",
           "working": "Soalan minta baki atau beza, jadi tolak: RM650 − RM120 = RM530."
+        },
+        {
+          "id": "t3_c4_q31",
+          "text": "Sebuah kek dipotong kepada 10 bahagian sama. Ali makan 3 bahagian dan Siti makan 4 bahagian. Apakah pecahan kek yang tinggal?",
+          "options": [
+            "3/10",
+            "7/10",
+            "4/10",
+            "1/10"
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Dimakan = 3 + 4 = 7 bahagian. Tinggal = 10 − 7 = 3 bahagian, iaitu 3/10."
+        },
+        {
+          "id": "t3_c4_q32",
+          "text": "Sebuah kelas ada 36 murid. 1/4 daripadanya menyertai kelab sukan. Berapa orang murid TIDAK menyertai kelab sukan?",
+          "options": [],
+          "correctAnswer": 27,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "1/4 daripada 36 = 9 murid menyertai. Tidak menyertai = 36 − 9 = 27 murid."
+        },
+        {
+          "id": "t3_c4_q33",
+          "text": "Ibu membeli 3 kg beras pada RM4 sekilogram dan 2 botol minyak pada RM9 sebotol. Berapa RM jumlah bayarannya?",
+          "options": [],
+          "correctAnswer": 30,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Beras = 3 × 4 = RM12. Minyak = 2 × 9 = RM18. Jumlah = 12 + 18 = RM30."
+        },
+        {
+          "id": "t3_c4_q34",
+          "text": "Pecahan manakah yang PALING BESAR antara 2/5, 3/5 dan 1/5?",
+          "options": [
+            "3/5",
+            "2/5",
+            "1/5"
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Bila penyebut sama, pecahan dengan pengangka lebih besar adalah lebih besar. Pengangka terbesar ialah 3, jadi 3/5."
+        },
+        {
+          "id": "t3_c4_q35",
+          "text": "Ali ada RM100. Dia belanja 1/5 daripadanya untuk buku. Berapa RM bakinya?",
+          "options": [],
+          "correctAnswer": 80,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "1/5 daripada 100 = RM20 dibelanjakan. Baki = 100 − 20 = RM80."
+        },
+        {
+          "id": "t3_c4_q36",
+          "text": "Apakah pecahan bahagian yang berlorek dalam rajah ini?",
+          "options": [
+            "5/8",
+            "3/8",
+            "4/8",
+            "6/8"
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Bulatan dibahagi 8 bahagian sama dan 5 bahagian berlorek, jadi 5/8.",
+          "visual": {
+            "type": "fraction",
+            "shape": "circle",
+            "parts": 8,
+            "shaded": 5
+          }
+        },
+        {
+          "id": "t3_c4_q37",
+          "text": "Rina membeli sehelai baju RM45 dan sepasang kasut RM68. Dia bayar dengan RM150. Berapa RM bakinya?",
+          "options": [],
+          "correctAnswer": 37,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Jumlah belanja = 45 + 68 = RM113. Baki = 150 − 113 = RM37."
+        },
+        {
+          "id": "t3_c4_q38",
+          "text": "Berapakah hasil 2/7 + 3/7?",
+          "options": [
+            "5/7",
+            "5/14",
+            "6/7",
+            "1/7"
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Penyebut sama, jadi campur pengangka sahaja: 2 + 3 = 5, menjadi 5/7."
+        },
+        {
+          "id": "t3_c4_q39",
+          "text": "Sebuah reben panjangnya 24 meter. Berapakah panjang 3/4 daripada reben itu, dalam meter?",
+          "options": [],
+          "correctAnswer": 18,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "3/4 daripada 24 = (24 ÷ 4) × 3 = 6 × 3 = 18 meter."
+        },
+        {
+          "id": "t3_c4_q40",
+          "text": "Sebuah barang berharga RM85. Ali membayar dengan tiga keping wang RM50. Berapa RM bakinya?",
+          "options": [],
+          "correctAnswer": 65,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Ali bayar 3 × 50 = RM150. Baki = 150 − 85 = RM65."
         }
       ]
     },
@@ -1968,6 +2427,176 @@
           "points": 30,
           "type": "input",
           "working": "Tukar semuanya kepada unit kecil dahulu: 12 liter = 12 000; 3 liter 750 ml = 3 000 + 750 = 3 750. Campurkan: 12 000 + 3 750 = 15 750."
+        },
+        {
+          "id": "t3_c5_q31",
+          "text": "Sebuah perjalanan bermula pukul 9:35 pagi dan mengambil masa 2 jam 50 minit. Pukul berapakah ia tamat?",
+          "options": [
+            "12:25 tengah hari",
+            "12:15 tengah hari",
+            "11:25 pagi",
+            "1:25 petang"
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "9:35 tambah 2 jam menjadi 11:35. Tambah 50 minit: 11:35 + 25 minit = 12:00, tambah 25 minit lagi menjadi 12:25."
+        },
+        {
+          "id": "t3_c5_q32",
+          "text": "Sebatang kayu 3 m 20 cm dipotong dua kali, setiap potongan 95 cm. Berapa cm baki kayu itu?",
+          "options": [],
+          "correctAnswer": 130,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "3 m 20 cm = 320 cm. Dua potongan = 2 × 95 = 190 cm. Baki = 320 − 190 = 130 cm."
+        },
+        {
+          "id": "t3_c5_q33",
+          "text": "Sebuah padang segi empat tepat berukuran panjang 25 m dan lebar 15 m. Berapakah perimeternya, dalam meter?",
+          "options": [],
+          "correctAnswer": 80,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Perimeter = 2 × (panjang + lebar) = 2 × (25 + 15) = 2 × 40 = 80 m."
+        },
+        {
+          "id": "t3_c5_q34",
+          "text": "Sebuah bekas mengandungi 2 liter 350 ml air. 800 ml dituang keluar. Berapa ml air yang tinggal?",
+          "options": [],
+          "correctAnswer": 1550,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "2 liter 350 ml = 2 350 ml. Baki = 2 350 − 800 = 1 550 ml."
+        },
+        {
+          "id": "t3_c5_q35",
+          "text": "Sebuah kotak berjisim 1 kg 250 g. Berapakah jumlah jisim 4 kotak yang sama, dalam gram?",
+          "options": [],
+          "correctAnswer": 5000,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "1 kg 250 g = 1 250 g. Empat kotak = 4 × 1 250 = 5 000 g."
+        },
+        {
+          "id": "t3_c5_q36",
+          "text": "Sebuah kedai buka pukul 8:30 pagi dan tutup pukul 6:00 petang. Berapa JAM dan MINIT ia dibuka?",
+          "options": [
+            "9 jam 30 minit",
+            "10 jam",
+            "9 jam",
+            "10 jam 30 minit"
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Dari 8:30 pagi ke 6:30 petang ialah 10 jam. Kedai tutup 30 minit lebih awal, jadi 10 jam − 30 minit = 9 jam 30 minit."
+        },
+        {
+          "id": "t3_c5_q37",
+          "text": "Berapakah luas bentuk berlorek ini, dalam unit persegi?",
+          "options": [],
+          "correctAnswer": 12,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Bentuk berlorek ialah segi empat tepat 4 petak lebar dan 3 petak tinggi. Luas = 4 × 3 = 12 unit persegi.",
+          "visual": {
+            "type": "grid",
+            "cols": 5,
+            "rows": 4,
+            "cells": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          }
+        },
+        {
+          "id": "t3_c5_q38",
+          "text": "Perimeter sebuah segi empat tepat ialah 36 cm. Panjangnya 11 cm. Berapakah lebarnya, dalam cm?",
+          "options": [],
+          "correctAnswer": 7,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Panjang + lebar = 36 ÷ 2 = 18 cm. Lebar = 18 − 11 = 7 cm."
+        },
+        {
+          "id": "t3_c5_q39",
+          "text": "Ali berlari 450 m setiap hari selama 6 hari. Berapakah jumlah jarak larinya, dalam meter?",
+          "options": [],
+          "correctAnswer": 2700,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "6 × 450 = 2 700 m (iaitu 2 km 700 m)."
+        },
+        {
+          "id": "t3_c5_q40",
+          "text": "Sebuah mesyuarat bermula pukul 10:45 pagi dan tamat pukul 1:15 petang. Berapa lamakah mesyuarat itu?",
+          "options": [
+            "2 jam 30 minit",
+            "3 jam 30 minit",
+            "2 jam",
+            "3 jam"
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Dari 10:45 pagi ke 12:45 tengah hari ialah 2 jam. Dari 12:45 ke 1:15 ialah 30 minit lagi. Jumlah 2 jam 30 minit."
         }
       ]
     }

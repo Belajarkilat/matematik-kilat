@@ -2,7 +2,7 @@
 
 Permainan latihan matematik KSSR untuk Darjah 1 hingga 6, dibina dengan React 18 dan Vite 5.
 
-- 900 soalan merentas 6 tahun dan 30 bab, setiap satu dengan langkah kerja
+- 1 200 soalan merentas 6 tahun dan 30 bab, setiap satu dengan langkah kerja
 - 112 visual SVG untuk soalan yang memerlukan gambar rajah
 - Berbilang profil pada satu peranti, jadi adik-beradik tidak berlanggar kemajuan
 - Boleh dimain sepenuhnya tanpa internet selepas lawatan pertama
@@ -17,6 +17,31 @@ npm run dev
 ```
 
 Terbuka di `http://localhost:5173/matematik-kilat/`.
+
+## Bank soalan
+
+Setiap bab ada 40 soalan, sepuluh bagi setiap aras. Soalan Mudah, Sederhana dan
+Cabaran duduk terus dalam `public/data/questions/tahunN.json`. Soalan Ultra
+ditulis dalam `tools/ultra/tahunN.mjs` dan disuntik ke dalam fail JSON itu:
+
+```bash
+node tools/tambah-ultra.mjs
+```
+
+Skrip itu boleh dijalankan berulang kali. Ia menolak binaan yang mempunyai
+indeks jawapan aneka pilihan yang salah, soalan tanpa langkah kerja, pilihan
+berulang atau teks yang bertindih dengan aras lain. Sunting fail `.mjs`, bukan
+JSON, kerana JSON ditulis semula setiap kali skrip berjalan.
+
+## Tempoh ujian terbuka
+
+Dua pemalar dalam `src/services/licenceService.js` membuka app sepenuhnya untuk
+penguji. **Kedua-duanya mesti ditukar kepada `false` sebelum jualan pertama.**
+
+| Suis | Kesan semasa `true` |
+| --- | --- |
+| `OPEN_ACCESS` | Semua aras boleh dimain tanpa kod lesen |
+| `OPEN_ALL_LEVELS` | Aras tidak lagi perlu dibuka berperingkat |
 
 ## Bina dan terbit
 

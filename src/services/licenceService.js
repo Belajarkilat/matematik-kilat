@@ -11,6 +11,25 @@
  * di pelayan apabila jualan cukup untuk membayarnya.
  */
 
+/**
+ * Tempoh ujian terbuka.
+ *
+ * Dua suis di bawah membuka app sepenuhnya untuk penguji. TUKAR KEDUA-DUANYA
+ * KEPADA `false` SEBELUM JUALAN PERTAMA. Tiada kod lain perlu disentuh, dan
+ * kod lesen yang sudah dijana kekal sah.
+ *
+ * `OPEN_ACCESS` membuang dinding bayaran: setiap aras boleh dimain tanpa kod,
+ * dan skrin "Buka semua aras" bertukar menjadi nota ujian, bukan halaman
+ * jualan.
+ *
+ * `OPEN_ALL_LEVELS` membuang penggredan: penguji boleh terus masuk Cabaran
+ * atau Ultra tanpa lulus aras sebelumnya. Ini supaya maklum balas boleh
+ * diperoleh tentang soalan aras tinggi tanpa penguji perlu bermain tiga puluh
+ * soalan dahulu. Kemajuan dan bintang masih direkod seperti biasa.
+ */
+export const OPEN_ACCESS = true;
+export const OPEN_ALL_LEVELS = true;
+
 const LICENCE_KEY = 'bk_matematik_kilat_licence_v1';
 const SALT = 'matematik-kilat-2026';
 const ALPHABET = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
@@ -74,6 +93,7 @@ export function getLicence() {
 }
 
 export function isUnlocked() {
+  if (OPEN_ACCESS) return true;
   const stored = getLicence();
   return Boolean(stored && isValidCode(stored));
 }

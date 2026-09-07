@@ -8,7 +8,34 @@
  * next and nothing else.
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap');
+/*
+ * Fon disimpan dalam app, bukan diambil dari Google.
+ *
+ * Sebelum ini fail ini mengimport fonts.googleapis.com. Service worker hanya
+ * menyimpan fail app sendiri, jadi budak tanpa data mendapat fon sistem dan
+ * app kelihatan berbeza daripada yang dia biasa lihat. Import itu juga
+ * memerlukan tiga pusingan rangkaian sebelum teks dilukis dengan betul, yang
+ * ketara pada Android murah.
+ *
+ * Kedua-duanya fon boleh ubah, jadi satu fail meliputi seluruh julat berat.
+ * Hanya subset latin diambil; itu sudah merangkumi −, × dan ÷ yang dipakai
+ * dalam teks soalan.
+ */
+@font-face {
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url('/matematik-kilat/fonts/fredoka-latin.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('/matematik-kilat/fonts/nunito-latin.woff2') format('woff2');
+}
 
 :root {
   /* Ink — chrome, never body text background */
@@ -229,6 +256,106 @@ h1, h2, h3, .display {
   padding: 8px 14px;
   font-size: 0.9rem;
 }
+
+.btn--danger {
+  background: var(--salah);
+  color: #FFFFFF;
+  box-shadow: 0 4px 0 #9C282D;
+}
+
+.btn--danger:hover:not(:disabled) { background: #D6474C; }
+
+/* ============================================================
+   Pemilih profil
+   ============================================================ */
+
+.page--centre {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.picker__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+/* Tajuk ini duduk atas latar dakwat, bukan atas kertas, jadi ia perlu warna
+   dakwat-terbalik. Tanpa ini ia gelap atas gelap dan hampir hilang. */
+.picker__title {
+  font-family: 'Fredoka', 'Nunito', system-ui, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--on-ink);
+  margin: 0;
+}
+
+.picker__list {
+  display: grid;
+  gap: 10px;
+}
+
+.picker__row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.picker__pick {
+  flex: 1 1 200px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: var(--tap);
+  padding: 10px 16px;
+  border: none;
+  border-radius: var(--r-tile);
+  background: var(--paper);
+  box-shadow: var(--edge);
+  color: var(--text);
+  cursor: pointer;
+  text-align: left;
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+
+.picker__pick:active:not(:disabled) {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 var(--paper-edge);
+}
+
+.picker__pick:disabled { cursor: default; opacity: 0.85; }
+
+.picker__face {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: var(--r-pill);
+  background: var(--grid-line);
+  overflow: hidden;
+}
+
+.picker__who { display: grid; gap: 2px; min-width: 0; }
+
+.picker__name {
+  font-family: 'Fredoka', 'Nunito', system-ui, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.picker__meta { font-size: 0.85rem; color: var(--text-muted); }
+
+.picker__confirm { display: flex; gap: 8px; flex-wrap: wrap; }
 
 /* Back control: a link, not a button box. */
 .back {

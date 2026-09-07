@@ -6,10 +6,11 @@
  * screen after that works with the radio off. Progress already lives in
  * localStorage, so nothing else has to reach the network.
  *
- * Bump VERSION on any deploy that must invalidate the old cache.
+ * VERSION di sini hanya nilai pembangunan. build-docs.js menggantikannya
+ * dengan cap khusus binaan, jadi tiada siapa perlu ingat untuk menaikkannya.
  */
 
-const VERSION = 'kilat-cd6a3d6cde';
+const VERSION = 'kilat-3bc03559c4';
 const BASE = new URL('./', self.registration.scope).pathname;
 
 const PRECACHE = [
@@ -19,6 +20,8 @@ const PRECACHE = [
   BASE + 'icon-192.png',
   BASE + 'icon-512.png',
   BASE + 'apple-touch-icon.png',
+  BASE + 'fonts/fredoka-latin.woff2',
+  BASE + 'fonts/nunito-latin.woff2',
   BASE + 'data/questions/tahun1.json',
   BASE + 'data/questions/tahun2.json',
   BASE + 'data/questions/tahun3.json',

@@ -42,7 +42,7 @@ const LEVEL_NAME = ['Mudah', 'Sederhana', 'Cabaran', 'Ultra'];
 // satu soalan aras rendah.
 const BONUS_SECONDS = { 1: 19, 2: 28 };
 const BONUS_POINTS = 5;
-const DIFFICULTIES = ['mudah', 'sederhana', 'cabaran'];
+const DIFFICULTIES = ['mudah', 'sederhana', 'cabaran', 'ultra'];
 
 function chapterNumber(id) {
   const m = /-b(\d+)$/.exec(id || '');
@@ -77,6 +77,11 @@ function Quiz({ profile }) {
   const [bonusCount, setBonusCount] = useState(0);
   const [gotBonus, setGotBonus] = useState(false);
 
+  // Keluar dahulunya membuang kuiz serta-merta. Budak yang tersilap tekan
+  // kehilangan sembilan jawapan tanpa amaran, jadi keluar kini bertanya
+  // dahulu, tetapi hanya selepas ada sesuatu untuk hilang.
+  const [confirmExit, setConfirmExit] = useState(false);
+
   const startedAt = useRef(Date.now());
   const questionStart = useRef(Date.now());
   const levelNum = parseInt(level, 10);
@@ -96,13 +101,18 @@ function Quiz({ profile }) {
         const chapterData = data.chapters[chapterNumber(chapter) - 1];
         if (!chapterData) throw new Error('Bab ini tiada dalam fail soalan');
 
-        const baseDifficulty = levelNum === 4 ? 'cabaran' : DIFFICULTIES[levelNum - 1];
-        let picked = chapterData.questions
-          .filter((q) => q.difficulty === baseDifficulty)
-          .slice(0, 10);
+        const wanted = DIFFICULTIES[levelNum - 1];
+        let picked = chapterData.questions.filter((q) => q.difficulty === wanted).slice(0, 10);
 
-        if (levelNum === 4) {
-          picked = picked.map((q) => ({ ...q, difficulty: 'ultra', points: q.points * 5 }));
+        // Peranti yang masih memegang fail soalan lama dalam cache tidak
+        // mempunyai soalan ultra. Lebih baik mereka bermain soalan cabaran
+        // sekali lagi daripada berdepan skrin ralat, dan cache akan segar
+        // sendiri pada muat semula berikutnya.
+        if (!picked.length && wanted === 'ultra') {
+          picked = chapterData.questions
+            .filter((q) => q.difficulty === 'cabaran')
+            .slice(0, 10)
+            .map((q) => ({ ...q, difficulty: 'ultra' }));
         }
         if (!picked.length) throw new Error('Aras ini tiada soalan');
 
@@ -299,16 +309,51 @@ function Quiz({ profile }) {
     (question, idx) => checked[idx] && !isAnswerCorrect(question, answers[idx])
   ).length;
 
+  const answered = Object.keys(checked).length;
+
+  const leave = () => navigate(`/tahun/${tahun}`);
+
+  const requestExit = () => {
+    if (answered === 0) { leave(); return; }
+    setConfirmExit(true);
+  };
+
   const nextLabel = () => {
     if (!isLast) return 'Soalan seterusnya';
     if (reviewing || wrongSoFar === 0) return 'Lihat keputusan';
     return `Ulang ${wrongSoFar} soalan yang belum betul`;
   };
 
+  if (confirmExit) {
+    return (
+      <div className="page">
+        <div className="paper paper--plain center">
+          <div style={{ fontSize: '2.4rem', marginBottom: 8 }}>✋</div>
+          <h2 style={{ fontSize: '1.25rem', marginBottom: 8 }}>Keluar dari kuiz ini?</h2>
+          <p className="muted" style={{ marginBottom: 18 }}>
+            {answered === 1
+              ? 'Satu jawapan sudah dibuat. Ia tidak akan disimpan.'
+              : `${answered} jawapan sudah dibuat. Semuanya tidak akan disimpan.`}
+          </p>
+          <button className="btn btn--go btn--block" onClick={() => setConfirmExit(false)}>
+            Sambung kuiz
+          </button>
+          <button
+            className="btn btn--secondary btn--block"
+            style={{ marginTop: 8 }}
+            onClick={leave}
+          >
+            Keluar juga
+          </button>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="page">
       <div className="quiz__bar">
-        <button className="back" onClick={() => navigate(`/tahun/${tahun}`)} aria-label="Keluar dari kuiz">
+        <button className="back" onClick={requestExit} aria-label="Keluar dari kuiz">
           ← Keluar
         </button>
         <div className="grow">

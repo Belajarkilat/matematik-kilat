@@ -6,6 +6,8 @@
  * boleh dipulihkan kalau pelayar dibersihkan atau budak tukar peranti.
  */
 
+import { OPEN_ALL_LEVELS } from './licenceService';
+
 const PROFILES_KEY = 'bk_matematik_kilat_profiles_v1';
 
 // Berapa banyak sesi lepas yang disimpan untuk laporan ibu bapa. Setiap
@@ -24,6 +26,15 @@ export function starsForScore(score) {
   if (score >= STAR_CUTOFF[1]) return 2;
   if (score >= STAR_CUTOFF[0]) return 1;
   return 0;
+}
+
+// Soalan Cabaran dan Ultra mengambil masa lebih lama dan lebih mudah salah,
+// jadi poin yang sama untuk kerja yang lebih berat terasa seperti hukuman.
+// Pendarab ini membuat murid yang naik aras nampak poinnya melonjak.
+const LEVEL_MULTIPLIER = { 1: 1, 2: 1.5, 3: 2, 4: 3 };
+
+export function levelMultiplier(level) {
+  return LEVEL_MULTIPLIER[Number(level)] || 1;
 }
 
 // Aksesori avatar. Songkok dan tudung tidak pernah berkunci: itu pilihan
@@ -250,6 +261,7 @@ class ProfileService {
   }
 
   isLevelOpen(profileId, tahun, chapter, level) {
+    if (OPEN_ALL_LEVELS) return true;
     if (level <= 1) return true;
     return this.isLevelCleared(profileId, tahun, chapter, level - 1);
   }
@@ -344,7 +356,9 @@ class ProfileService {
 
     profile.totalQuestions = (profile.totalQuestions || 0) + total;
 
-    const points = correct * 10 + (combo || 0) * 5 + (bonus || 0) * 5;
+    const points = Math.round(
+      (correct * 10 + (combo || 0) * 5 + (bonus || 0) * 5) * levelMultiplier(level)
+    );
     profile.totalPoints += points;
 
     const streak = this._bumpStreak(profile);

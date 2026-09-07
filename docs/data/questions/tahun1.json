@@ -1,6 +1,6 @@
 {
   "tahun": 1,
-  "total": 150,
+  "total": 200,
   "chapters": [
     {
       "id": "d1-b1",
@@ -402,6 +402,129 @@
           "points": 30,
           "type": "input",
           "working": "Soalan minta baki atau beza, jadi tolak: 30 − 25 = 5."
+        },
+        {
+          "id": "t1_c1_q31",
+          "text": "Sebuah nombor dua digit. Digit sanya ialah 4. Digit puluhnya 3 lebih daripada digit sanya. Apakah nombor itu?",
+          "options": [],
+          "correctAnswer": 74,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Digit sa = 4. Digit puluh = 4 + 3 = 7. Jadi nombor itu 7 puluh 4 sa, iaitu 74."
+        },
+        {
+          "id": "t1_c1_q32",
+          "text": "Corak melompat lima: 5, 10, 15, 20, ... Apakah nombor ke-7 dalam corak ini?",
+          "options": [],
+          "correctAnswer": 35,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Nombor ke-1 ialah 5, jadi nombor ke-7 ialah 7 kumpulan lima. 5, 10, 15, 20, 25, 30, 35. Jawapan 35."
+        },
+        {
+          "id": "t1_c1_q33",
+          "text": "Susun 67, 76 dan 66 dari BESAR ke KECIL. Nombor manakah berada di tengah?",
+          "options": [
+            76,
+            67,
+            66
+          ],
+          "correctAnswer": 1,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Bandingkan digit puluh dahulu: 76 ada 7 puluh, 67 dan 66 ada 6 puluh. Jadi 76 paling besar. Antara 67 dan 66, 67 lebih besar. Susunan: 76, 67, 66. Yang di tengah ialah 67."
+        },
+        {
+          "id": "t1_c1_q34",
+          "text": "Nombor ini lebih besar daripada 47 dan lebih kecil daripada 52. Nombor ini ganjil dan digit sanya ialah 9. Apakah nombor itu?",
+          "options": [],
+          "correctAnswer": 49,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Nombor antara 47 dan 52 ialah 48, 49, 50, 51. Yang berdigit sa 9 hanya 49, dan 49 memang ganjil. Jawapan 49."
+        },
+        {
+          "id": "t1_c1_q35",
+          "text": "Ali mengira melompat dua bermula dari 2: 2, 4, 6, ... Apakah nombor ke-10?",
+          "options": [],
+          "correctAnswer": 20,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Setiap lompatan menambah 2. Nombor ke-10 ialah 10 lompatan dua, iaitu 10 + 10 = 20."
+        },
+        {
+          "id": "t1_c1_q36",
+          "text": "Nombor 85 ditulis sebagai 8 puluh 5 sa. Jika 1 puluh ditukar kepada 10 sa, berapa banyak SA yang ada sekarang?",
+          "options": [
+            15,
+            5,
+            10,
+            13
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Satu puluh bersamaan 10 sa. Sa asal 5, tambah 10 sa lagi menjadi 15 sa. (Nombornya masih 85, cuma cara tulisnya 7 puluh 15 sa.)"
+        },
+        {
+          "id": "t1_c1_q37",
+          "text": "Daripada digit 3 dan 9, bina nombor dua digit yang PALING BESAR dan yang PALING KECIL. Berapakah beza antara kedua-duanya?",
+          "options": [],
+          "correctAnswer": 54,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Paling besar 93, paling kecil 39. Beza = 93 − 39 = 54."
+        },
+        {
+          "id": "t1_c1_q38",
+          "text": "Rina ada 3 kotak pensel. Setiap kotak ada 10 batang. Ada 6 batang lagi di luar kotak. Berapa batang pensel semuanya?",
+          "options": [],
+          "correctAnswer": 36,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "3 kotak × 10 = 30 batang. Tambah 6 batang di luar: 30 + 6 = 36."
+        },
+        {
+          "id": "t1_c1_q39",
+          "text": "Lihat corak ini. Apakah nombor yang sepatutnya berada dalam kotak?",
+          "options": [
+            21,
+            22,
+            20,
+            23
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Setiap kali nombor berkurang 3: 30 → 27 → 24. Jadi seterusnya 24 − 3 = 21.",
+          "visual": {
+            "type": "pattern",
+            "items": [
+              "30",
+              "27",
+              "24",
+              "?"
+            ]
+          }
+        },
+        {
+          "id": "t1_c1_q40",
+          "text": "Apakah nombor GANJIL yang paling besar tetapi masih lebih kecil daripada 68?",
+          "options": [],
+          "correctAnswer": 67,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Nombor sebelum 68 ialah 67. 67 ialah nombor ganjil, jadi itulah jawapannya."
         }
       ]
     },
@@ -749,6 +872,116 @@
           "points": 30,
           "type": "input",
           "working": "Kira dari kiri ke kanan. 25 + 25 = 50, kemudian 50 + 25 = 75."
+        },
+        {
+          "id": "t1_c2_q31",
+          "text": "Ali ada 28 guli. Abang beri 15 guli dan kakak beri 9 guli. Berapa guli Ali sekarang?",
+          "options": [],
+          "correctAnswer": 52,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Campur satu demi satu: 28 + 15 = 43, kemudian 43 + 9 = 52."
+        },
+        {
+          "id": "t1_c2_q32",
+          "text": "___ + 26 = 71. Apakah nombor yang patut diisi?",
+          "options": [],
+          "correctAnswer": 45,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Untuk mencari nombor yang hilang di hadapan, tolak: 71 − 26 = 45. Semak: 45 + 26 = 71."
+        },
+        {
+          "id": "t1_c2_q33",
+          "text": "Jumlah dua nombor ialah 60. Nombor pertama ialah 24. Berapakah nombor kedua?",
+          "options": [],
+          "correctAnswer": 36,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Nombor kedua = jumlah tolak nombor pertama = 60 − 24 = 36."
+        },
+        {
+          "id": "t1_c2_q34",
+          "text": "Siti ada 35 keping setem. Rina ada 12 keping LEBIH daripada Siti. Berapa keping setem mereka berdua semuanya?",
+          "options": [],
+          "correctAnswer": 82,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Setem Rina = 35 + 12 = 47. Jumlah berdua = 35 + 47 = 82."
+        },
+        {
+          "id": "t1_c2_q35",
+          "text": "17 + 17 + 17 = ?",
+          "options": [],
+          "correctAnswer": 51,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Campur dua dahulu: 17 + 17 = 34. Kemudian 34 + 17 = 51."
+        },
+        {
+          "id": "t1_c2_q36",
+          "text": "Sebuah bakul ada 46 biji buah. Dua kumpulan buah ditambah, setiap kumpulan 9 biji. Berapa biji buah dalam bakul sekarang?",
+          "options": [],
+          "correctAnswer": 64,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Dua kumpulan sembilan = 9 + 9 = 18. Jumlah = 46 + 18 = 64."
+        },
+        {
+          "id": "t1_c2_q37",
+          "text": "Pasangan nombor manakah yang jumlahnya TEPAT 100?",
+          "options": [
+            "45 dan 55",
+            "48 dan 62",
+            "39 dan 51",
+            "57 dan 33"
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Cuba satu demi satu: 45 + 55 = 100 (betul), 48 + 62 = 110, 39 + 51 = 90, 57 + 33 = 90."
+        },
+        {
+          "id": "t1_c2_q38",
+          "text": "Nombor A ialah 26. Nombor B ialah 8 lebih daripada A. Berapakah jumlah A dan B?",
+          "options": [],
+          "correctAnswer": 60,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "B = 26 + 8 = 34. Jumlah = 26 + 34 = 60."
+        },
+        {
+          "id": "t1_c2_q39",
+          "text": "Tiga kotak telur mengandungi 15, 22 dan 18 biji. Berapa biji telur semuanya?",
+          "options": [],
+          "correctAnswer": 55,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "15 + 22 = 37, kemudian 37 + 18 = 55."
+        },
+        {
+          "id": "t1_c2_q40",
+          "text": "Tanpa mengira tepat, hasil 38 + 45 paling hampir dengan nombor yang mana?",
+          "options": [
+            70,
+            80,
+            90,
+            100
+          ],
+          "correctAnswer": 1,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Bundarkan: 38 hampir 40, 45 hampir 45. 40 + 45 = 85, dan hasil sebenar 83. Antara pilihan, 80 paling hampir."
         }
       ]
     },
@@ -1096,6 +1329,111 @@
           "points": 30,
           "type": "input",
           "working": "Tolak 49 daripada 88. 88 − 49 = 39. Semak: 39 + 49 = 88."
+        },
+        {
+          "id": "t1_c3_q31",
+          "text": "Ada 84 biji rambutan. 29 biji diberi kepada jiran dan 17 biji dimakan. Berapa biji yang tinggal?",
+          "options": [],
+          "correctAnswer": 38,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Tolak satu demi satu: 84 − 29 = 55, kemudian 55 − 17 = 38."
+        },
+        {
+          "id": "t1_c3_q32",
+          "text": "___ − 26 = 38. Apakah nombor yang patut diisi?",
+          "options": [],
+          "correctAnswer": 64,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Nombor asal = jawapan tambah yang ditolak = 38 + 26 = 64. Semak: 64 − 26 = 38."
+        },
+        {
+          "id": "t1_c3_q33",
+          "text": "72 − ___ = 45. Apakah nombor yang patut diisi?",
+          "options": [],
+          "correctAnswer": 27,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Yang ditolak = 72 − 45 = 27. Semak: 72 − 27 = 45."
+        },
+        {
+          "id": "t1_c3_q34",
+          "text": "Lihat nombor 91, 47 dan 68. Berapakah beza antara nombor yang PALING BESAR dan yang PALING KECIL?",
+          "options": [],
+          "correctAnswer": 44,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Paling besar 91, paling kecil 47. Beza = 91 − 47 = 44."
+        },
+        {
+          "id": "t1_c3_q35",
+          "text": "Ali ada 60 sen. Dia beli gula-gula 25 sen dan biskut 18 sen. Berapa sen bakinya?",
+          "options": [],
+          "correctAnswer": 17,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Jumlah belanja = 25 + 18 = 43 sen. Baki = 60 − 43 = 17 sen."
+        },
+        {
+          "id": "t1_c3_q36",
+          "text": "Sebuah bas ada 45 penumpang. 18 orang turun di hentian pertama dan 9 orang naik di hentian kedua. Berapa penumpang dalam bas sekarang?",
+          "options": [],
+          "correctAnswer": 36,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Selepas turun: 45 − 18 = 27. Selepas naik: 27 + 9 = 36."
+        },
+        {
+          "id": "t1_c3_q37",
+          "text": "Nombor manakah yang apabila DITOLAK 37 memberi 28?",
+          "options": [
+            65,
+            55,
+            75,
+            63
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Nombor asal = 28 + 37 = 65. Semak: 65 − 37 = 28."
+        },
+        {
+          "id": "t1_c3_q38",
+          "text": "Rina ada 50 keping pelekat. Dia beri 13 keping kepada Ali dan 13 keping kepada Siti. Berapa keping bakinya?",
+          "options": [],
+          "correctAnswer": 24,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Jumlah diberi = 13 + 13 = 26. Baki = 50 − 26 = 24."
+        },
+        {
+          "id": "t1_c3_q39",
+          "text": "Umur ayah 42 tahun dan umur Ali 9 tahun. Berapakah beza umur mereka?",
+          "options": [],
+          "correctAnswer": 33,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Beza umur = 42 − 9 = 33 tahun."
+        },
+        {
+          "id": "t1_c3_q40",
+          "text": "100 − 46 − 24 = ?",
+          "options": [],
+          "correctAnswer": 30,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Tolak dari kiri: 100 − 46 = 54, kemudian 54 − 24 = 30."
         }
       ]
     },
@@ -1567,6 +1905,184 @@
           "points": 30,
           "type": "mcq",
           "working": "Sebuah kubus mempunyai 6 permukaan. Jawapan: Kubus."
+        },
+        {
+          "id": "t1_c4_q31",
+          "text": "Lihat corak warna ini. Apakah warna yang sepatutnya berada dalam kotak?",
+          "options": [
+            "Merah",
+            "Biru",
+            "Kuning",
+            "Hijau"
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Corak berulang tiga-tiga: merah, biru, biru. Selepas merah, biru, biru datang merah semula.",
+          "visual": {
+            "type": "pattern",
+            "items": [
+              "merah",
+              "biru",
+              "biru",
+              "merah",
+              "biru",
+              "biru",
+              "?"
+            ]
+          }
+        },
+        {
+          "id": "t1_c4_q32",
+          "text": "Bentuk 3D manakah yang mempunyai KESEMUA permukaannya berbentuk segi empat sama?",
+          "options": [
+            "Kuboid",
+            "Kubus",
+            "Silinder",
+            "Piramid"
+          ],
+          "correctAnswer": 1,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Kubus mempunyai 6 permukaan dan setiap satu segi empat sama. Kuboid ada permukaan segi empat tepat, silinder ada permukaan melengkung, piramid ada permukaan segi tiga."
+        },
+        {
+          "id": "t1_c4_q33",
+          "text": "Berapa banyak bucu (sudut) yang ada pada sebuah segi empat tepat?",
+          "options": [],
+          "correctAnswer": 4,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Segi empat tepat mempunyai 4 sisi dan setiap dua sisi bertemu di satu bucu, jadi 4 bucu."
+        },
+        {
+          "id": "t1_c4_q34",
+          "text": "Sebuah bentuk 2D mempunyai 3 sisi dan 3 bucu. Bentuk apakah itu?",
+          "options": [
+            "Segi tiga",
+            "Bulatan",
+            "Segi empat sama",
+            "Pentagon"
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Tiga sisi dan tiga bucu hanya dimiliki segi tiga. Bulatan tiada sisi lurus, segi empat sama ada 4 sisi, pentagon ada 5."
+        },
+        {
+          "id": "t1_c4_q35",
+          "text": "Ali menyusun corak: segi tiga, bulatan, segi tiga, bulatan, ... Berapa banyak SEGI TIGA yang ada dalam 10 bentuk pertama?",
+          "options": [],
+          "correctAnswer": 5,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Corak berulang dua-dua, jadi separuh daripada bentuk ialah segi tiga. Separuh daripada 10 ialah 5."
+        },
+        {
+          "id": "t1_c4_q36",
+          "text": "Berapa banyak petak berlorek yang ada pada bentuk ini?",
+          "options": [
+            6,
+            5,
+            7,
+            8
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Kira petak berlorek baris demi baris: 3 petak di baris atas dan 3 petak di baris bawah, jumlahnya 6.",
+          "visual": {
+            "type": "grid",
+            "cols": 4,
+            "rows": 2,
+            "cells": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          }
+        },
+        {
+          "id": "t1_c4_q37",
+          "text": "Bentuk 3D manakah yang boleh MENGGOLEK di atas lantai?",
+          "options": [
+            "Kubus",
+            "Kuboid",
+            "Sfera",
+            "Piramid"
+          ],
+          "correctAnswer": 2,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Sfera mempunyai permukaan melengkung sepenuhnya, jadi ia menggolek. Kubus, kuboid dan piramid mempunyai permukaan rata sahaja."
+        },
+        {
+          "id": "t1_c4_q38",
+          "text": "Corak: 2 bulatan, 4 bulatan, 6 bulatan, ... Berapa bulatan dalam kumpulan KEEMPAT?",
+          "options": [
+            8,
+            7,
+            10,
+            9
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Setiap kumpulan bertambah 2 bulatan: 2, 4, 6, kemudian 6 + 2 = 8."
+        },
+        {
+          "id": "t1_c4_q39",
+          "text": "Sebuah segi empat sama mempunyai sisi 5 unit. Berapakah jumlah panjang KESEMUA sisinya, dalam unit?",
+          "options": [],
+          "correctAnswer": 20,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Segi empat sama ada 4 sisi yang sama panjang. Jumlah = 5 + 5 + 5 + 5 = 20 unit."
+        },
+        {
+          "id": "t1_c4_q40",
+          "text": "Manakah antara berikut BUKAN bentuk 3D?",
+          "options": [
+            "Kon",
+            "Silinder",
+            "Pentagon",
+            "Sfera"
+          ],
+          "correctAnswer": 2,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Pentagon ialah bentuk 2D yang rata dan bersisi lima. Kon, silinder dan sfera semuanya bentuk 3D."
         }
       ]
     },
@@ -2128,6 +2644,152 @@
           "points": 30,
           "type": "mcq",
           "working": "Turutan hari ialah Ahad, Isnin, Selasa, Rabu, Khamis, Jumaat, Sabtu. Hari terakhir ialah Sabtu."
+        },
+        {
+          "id": "t1_c5_q31",
+          "text": "Berapakah jumlah wang ini?",
+          "options": [
+            "RM6.70",
+            "RM6.30",
+            "RM7.20",
+            "RM5.70"
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Wang kertas: RM5 + RM1 = RM6. Syiling: 50 sen + 20 sen = 70 sen. Jumlah RM6.70.",
+          "visual": {
+            "type": "money",
+            "notes": [
+              5,
+              1
+            ],
+            "coins": [
+              50,
+              20
+            ]
+          }
+        },
+        {
+          "id": "t1_c5_q32",
+          "text": "Siti ada RM10. Dia beli buku RM4 dan pen RM3. Berapa RM bakinya?",
+          "options": [],
+          "correctAnswer": 3,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Jumlah belanja = 4 + 3 = RM7. Baki = 10 − 7 = RM3."
+        },
+        {
+          "id": "t1_c5_q33",
+          "text": "Ali beli aiskrim 80 sen. Dia bayar dengan RM2. Berapakah baki wangnya?",
+          "options": [
+            "RM1.20",
+            "RM1.80",
+            "RM1.00",
+            "RM0.80"
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "RM2 sama dengan 200 sen. Baki = 200 − 80 = 120 sen, iaitu RM1.20."
+        },
+        {
+          "id": "t1_c5_q34",
+          "text": "Pukul berapakah jam ini menunjukkan?",
+          "options": [
+            "4:30",
+            "6:20",
+            "4:00",
+            "5:30"
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Jarum pendek berada antara 4 dan 5, jarum panjang di nombor 6. Jarum panjang di 6 bermakna 30 minit. Jadi pukul 4:30.",
+          "visual": {
+            "type": "clock",
+            "hour": 4,
+            "minute": 30
+          }
+        },
+        {
+          "id": "t1_c5_q35",
+          "text": "Kelas bermula pukul 8:00 pagi dan tamat pukul 9:00 pagi. Berapa MINIT lamanya kelas itu?",
+          "options": [],
+          "correctAnswer": 60,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "Dari pukul 8:00 ke pukul 9:00 ialah satu jam. Satu jam = 60 minit."
+        },
+        {
+          "id": "t1_c5_q36",
+          "text": "Rina menyimpan 20 sen setiap hari. Berapa sen simpanannya selepas 5 hari?",
+          "options": [],
+          "correctAnswer": 100,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "5 hari × 20 sen = 100 sen. (100 sen juga bersamaan RM1.)"
+        },
+        {
+          "id": "t1_c5_q37",
+          "text": "Ibu beli sayur RM3 dan ikan RM6. Dia bayar dengan RM10. Berapakah baki ibu?",
+          "options": [
+            "RM1",
+            "RM2",
+            "RM3",
+            "RM4"
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Jumlah belanja = 3 + 6 = RM9. Baki = 10 − 9 = RM1."
+        },
+        {
+          "id": "t1_c5_q38",
+          "text": "Ali tidur pukul 9:00 malam dan bangun pukul 6:00 pagi. Berapa JAM dia tidur?",
+          "options": [
+            9,
+            8,
+            10,
+            7
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Dari 9:00 malam ke 12:00 tengah malam ialah 3 jam. Dari 12:00 ke 6:00 pagi ialah 6 jam. Jumlah 3 + 6 = 9 jam."
+        },
+        {
+          "id": "t1_c5_q39",
+          "text": "Sebuah pen berharga 50 sen. Berapa batang pen yang boleh dibeli dengan RM3?",
+          "options": [],
+          "correctAnswer": 6,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "input",
+          "working": "RM3 = 300 sen. 300 sen ÷ 50 sen = 6 batang pen."
+        },
+        {
+          "id": "t1_c5_q40",
+          "text": "Hari ini hari Selasa. Hari apakah 3 hari lagi?",
+          "options": [
+            "Jumaat",
+            "Khamis",
+            "Sabtu",
+            "Rabu"
+          ],
+          "correctAnswer": 0,
+          "difficulty": "ultra",
+          "points": 50,
+          "type": "mcq",
+          "working": "Kira ke hadapan dari Selasa: 1 hari lagi Rabu, 2 hari lagi Khamis, 3 hari lagi Jumaat."
         }
       ]
     }

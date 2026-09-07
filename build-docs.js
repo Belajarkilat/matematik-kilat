@@ -30,17 +30,29 @@ fs.cpSync(dist, docs, { recursive: true });
 fs.writeFileSync(path.join(docs, '.nojekyll'), '');
 fs.copyFileSync(path.join(docs, 'index.html'), path.join(docs, '404.html'));
 
-// Stamp the service worker cache with this build's asset hash. Without it a
+// Stamp the service worker cache with this build's content hash. Without it a
 // deploy leaves the previous bundle sitting in every child's cache forever,
 // because only a changed cache name makes the worker throw the old one away.
+//
+// The hash covers the question files as well as the hashed asset names. A
+// release that only rewrites questions produces identical asset names, so
+// hashing names alone would hand every returning child the old questions.
 const swPath = path.join(docs, 'sw.js');
 if (fs.existsSync(swPath)) {
-  const stamp = crypto
-    .createHash('sha1')
-    .update(fs.readdirSync(path.join(docs, 'assets')).sort().join('|'))
-    .digest('hex')
-    .slice(0, 10);
-  const sw = fs.readFileSync(swPath, 'utf8').replace("'kilat-v1'", `'kilat-${stamp}'`);
+  const hash = crypto.createHash('sha1');
+  hash.update(fs.readdirSync(path.join(docs, 'assets')).sort().join('|'));
+
+  const questions = path.join(docs, 'data', 'questions');
+  if (fs.existsSync(questions)) {
+    fs.readdirSync(questions).sort().forEach((name) => {
+      hash.update(fs.readFileSync(path.join(questions, name)));
+    });
+  }
+
+  const stamp = hash.digest('hex').slice(0, 10);
+  const sw = fs
+    .readFileSync(swPath, 'utf8')
+    .replace(/const VERSION = '[^']*';/, `const VERSION = 'kilat-${stamp}';`);
   fs.writeFileSync(swPath, sw);
 }
 

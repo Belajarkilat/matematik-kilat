@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import { redeem, isUnlocked, getLicence, formatCode, FREE_LEVELS } from '../services/licenceService';
+import { redeem, isUnlocked, getLicence, formatCode, FREE_LEVELS, OPEN_ACCESS } from '../services/licenceService';
 
-// Tukar nombor ini kepada nombor WhatsApp jualan sebenar sebelum melancarkan.
-const WHATSAPP = '60000000000';
+// Nombor WhatsApp jualan. Format antarabangsa tanpa tanda tambah: 010-664 0353.
+const WHATSAPP = '60106640353';
 const HARGA = 'RM30 setahun';
 
 function Unlock() {
@@ -24,6 +24,26 @@ function Unlock() {
     }
     setError('Kod ini tidak sah. Periksa semula setiap huruf dan nombor.');
   };
+
+  // Semasa tempoh ujian terbuka tiada kod wujud, jadi halaman jualan akan
+  // mengelirukan penguji dan memaparkan kod kosong. Tunjukkan nota ringkas.
+  if (OPEN_ACCESS) {
+    return (
+      <div className="page">
+        <div className="paper center">
+          <div style={{ fontSize: '2.6rem', marginBottom: 8 }}>🎁</div>
+          <h1 style={{ fontSize: '1.4rem', marginBottom: 8 }}>Semua aras terbuka</h1>
+          <p className="muted" style={{ marginBottom: 18 }}>
+            Ini versi ujian percuma. Keempat-empat aras bagi setiap bab, Tahun 1
+            hingga Tahun 6, sudah terbuka. Tiada kod diperlukan.
+          </p>
+          <button className="btn btn--go btn--block" onClick={() => navigate(back)}>
+            Teruskan belajar
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   if (done) {
     return (

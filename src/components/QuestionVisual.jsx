@@ -476,13 +476,16 @@ function GridShape({ cols, rows, cells }) {
 
 /* -------------------------------------------------------------- pattern -- */
 
+// Nama warna mesti sepadan dengan warna yang dilukis. Sebelum ini 'merah' dan
+// 'jingga' kedua-duanya biru, jadi soalan corak warna mustahil dijawab betul
+// oleh murid yang benar-benar melihat rajah.
 const SWATCH = {
-  merah: '#2F58B4',
-  biru: '#1F7FA8',
+  merah: '#C7363C',
+  biru: '#2F58B4',
   kuning: '#FFC300',
   hijau: '#148F5F',
   ungu: '#7A4DD4',
-  jingga: '#3E6FD9'
+  jingga: '#E07A1F'
 };
 
 const PATTERN_RATIO = 0.44;
@@ -496,6 +499,11 @@ function Pattern({ items = [] }) {
       {items.map((it, i) => {
         const x = i * cw + cw / 2;
         const r = Math.min(cw * 0.34, 100 * PATTERN_RATIO * 0.36);
+        // Saiz teks mesti mengikut saiz kotak. Nilai tetap muat untuk corak
+        // empat item tetapi melimpah keluar sebaik sahaja coraknya lebih
+        // panjang dan setiap kotak menjadi kecil.
+        const fontFor = (label) =>
+          Math.min(r * 1.3, (r * 2.83) / Math.max(1, String(label).length));
         if (it === '?') {
           return (
             <g key={i}>
@@ -504,17 +512,17 @@ function Pattern({ items = [] }) {
                 y={cy - r}
                 width={r * 2}
                 height={r * 2}
-                rx="4"
+                rx={r * 0.45}
                 fill={PAPER}
                 stroke={INK}
-                strokeWidth="2.4"
-                strokeDasharray="5 4"
+                strokeWidth={Math.max(1, r * 0.28)}
+                strokeDasharray={`${r * 0.5} ${r * 0.4}`}
               />
               <text
                 x={x}
                 y={cy + r * 0.42}
                 textAnchor="middle"
-                fontSize="16"
+                fontSize={fontFor('?')}
                 fontWeight="800"
                 fill={INK}
               >
@@ -540,7 +548,7 @@ function Pattern({ items = [] }) {
               stroke={INK}
               strokeWidth="2.4"
             />
-            <text x={x} y={cy + r * 0.4} textAnchor="middle" fontSize="12" fontWeight="800" fill={INK}>
+            <text x={x} y={cy + r * 0.4} textAnchor="middle" fontSize={fontFor(it)} fontWeight="800" fill={INK}>
               {it}
             </text>
           </g>
