@@ -10,7 +10,7 @@
  * dengan cap khusus binaan, jadi tiada siapa perlu ingat untuk menaikkannya.
  */
 
-const VERSION = 'kilat-210949f4ca';
+const VERSION = 'kilat-4b08d3892d';
 const BASE = new URL('./', self.registration.scope).pathname;
 
 const PRECACHE = [
