@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matematik Kilat — Mula Percuma</title>
+<!--
+  Halaman pengenalan untuk ibu bapa.
+
+  Halaman ini menggantikan trial-signup.html yang lama. Halaman lama menawarkan
+  percubaan 14 hari, meminta nama, emel dan nombor telefon, lalu menjanjikan
+  komisi rujukan RM9. Tiada satu pun daripada itu wujud: app ini tiada akaun,
+  tiada pelayan dan tiada sistem rujukan. Yang wujud ialah model percuma dengan
+  aras berbayar, seperti yang dikuatkuasakan dalam src/services/licenceService.js.
+
+  Jadi halaman ini tidak mempunyai borang. Ia menerangkan apa yang percuma dan
+  menghantar pembaca terus ke app. Angka di sini mesti sepadan dengan halaman
+  Buka Semua Aras di dalam app.
+-->
+<style>
+@font-face {
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url('public/fonts/fredoka-latin.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('public/fonts/nunito-latin.woff2') format('woff2');
+}
+
+:root {
+  --ink: #17225A;
+  --ink-deep: #0E1740;
+  --ink-line: #46559C;
+  --paper: #FFFDF6;
+  --paper-edge: #E8E2CE;
+  --grid-line: #E2E9F8;
+  --kilat: #FFC300;
+  --kilat-deep: #E0A500;
+  --betul: #148F5F;
+  --text: #16204A;
+  --text-muted: #5A648C;
+  --on-ink: #F4F6FF;
+  --on-ink-muted: #B9C2E8;
+  --r-panel: 20px;
+  --sans: 'Nunito', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --display: 'Fredoka', 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--sans);
+  background: var(--ink-deep);
+  color: var(--on-ink);
+  line-height: 1.6;
+  padding: 20px 16px 48px;
+}
+
+.wrap { max-width: 620px; margin: 0 auto; }
+
+/* ------------------------------------------------------------ kepala -- */
+
+.hero { text-align: center; padding: 24px 4px 30px; }
+
+.bolt {
+  font-size: 2.8rem;
+  line-height: 1;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  font-family: var(--display);
+  font-size: clamp(1.9rem, 7vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+}
+
+.hero .tag {
+  color: var(--on-ink-muted);
+  font-size: 1.02rem;
+  max-width: 34ch;
+  margin: 0 auto;
+}
+
+.badge {
+  display: inline-block;
+  background: var(--kilat);
+  color: var(--ink-deep);
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 0.84rem;
+  letter-spacing: 0.02em;
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
+
+/* ------------------------------------------------------------- kertas -- */
+
+.paper {
+  background: var(--paper);
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 22px 22px;
+  border: 1px solid var(--paper-edge);
+  border-radius: var(--r-panel);
+  color: var(--text);
+  padding: 24px 22px;
+  margin-bottom: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.paper h2 {
+  font-family: var(--display);
+  font-size: 1.22rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.paper p { color: var(--text-muted); margin-bottom: 12px; }
+.paper p:last-child { margin-bottom: 0; }
+
+/* -------------------------------------------------------------- senarai -- */
+
+.list { list-style: none; }
+
+.list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 11px;
+  color: var(--text);
+}
+
+.list li:last-child { margin-bottom: 0; }
+
+.list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--betul);
+  font-weight: 700;
+}
+
+.list li b { font-weight: 800; }
+
+/* ---------------------------------------------------------------- angka -- */
+
+.counts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 18px 0 4px;
+}
+
+.count {
+  background: rgba(23, 34, 90, 0.05);
+  border: 1px solid var(--paper-edge);
+  border-radius: 12px;
+  padding: 12px 8px;
+  text-align: center;
+}
+
+.count .n {
+  display: block;
+  font-family: var(--display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.15;
+}
+
+.count .l {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* --------------------------------------------------------------- butang -- */
+
+.btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  font-family: var(--display);
+  font-size: 1.06rem;
+  font-weight: 600;
+  padding: 16px 20px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.btn--go {
+  background: var(--kilat);
+  color: var(--ink-deep);
+  box-shadow: 0 4px 0 var(--kilat-deep);
+  margin-bottom: 12px;
+}
+
+.btn--go:hover { transform: translateY(-1px); box-shadow: 0 5px 0 var(--kilat-deep); }
+.btn--go:active { transform: translateY(2px); box-shadow: 0 2px 0 var(--kilat-deep); }
+
+.btn--quiet {
+  background: transparent;
+  color: var(--on-ink);
+  border: 1px solid var(--ink-line);
+}
+
+.btn--quiet:hover { background: rgba(255, 255, 255, 0.05); }
+
+.note {
+  text-align: center;
+  color: var(--on-ink-muted);
+  font-size: 0.86rem;
+  margin-top: 18px;
+}
+
+.note a { color: var(--kilat); text-decoration: none; }
+.note a:hover { text-decoration: underline; }
+
+@media (min-width: 560px) {
+  body { padding-top: 34px; }
+  .paper { padding: 28px 26px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <span class="bolt">⚡</span>
+    <span class="badge">600 soalan percuma selamanya</span>
+    <h1>Matematik Kilat</h1>
+    <p class="tag">Latihan matematik KSSR untuk Darjah 1 hingga Darjah 6, dalam bahasa Melayu.</p>
+  </header>
+
+  <section class="paper">
+    <h2>Percuma, tanpa daftar</h2>
+    <p>
+      Tiada borang, tiada emel, tiada nombor telefon. Buka pautan, pilih tahun,
+      terus main. Kemajuan anak disimpan pada peranti itu sendiri.
+    </p>
+    <ul class="list">
+      <li>Aras <b>Mudah</b> dan <b>Sederhana</b> untuk setiap bab, Darjah 1 hingga 6</li>
+      <li>Setiap soalan ada <b>langkah kerja penuh</b>, bukan jawapan sahaja</li>
+      <li>Boleh dimain <b>tanpa internet</b> selepas kali pertama dibuka</li>
+      <li>Tiada iklan dan tiada pembelian dalam app</li>
+    </ul>
+    <div class="counts">
+      <div class="count"><span class="n">600</span><span class="l">soalan percuma</span></div>
+      <div class="count"><span class="n">6</span><span class="l">tahun persekolahan</span></div>
+      <div class="count"><span class="n">RM0</span><span class="l">untuk mula</span></div>
+    </div>
+  </section>
+
+  <a class="btn btn--go" href="https://belajarkilat.github.io/matematik-kilat/">
+    Mula belajar sekarang
+  </a>
+  <a class="btn btn--quiet" href="harga.html">
+    Lihat aras Cabaran dan Ultra
+  </a>
+
+  <p class="note">
+    Ada soalan? WhatsApp <a href="https://wa.me/60106640353">010-664 0353</a>
+  </p>
+
+</div>
+</body>
+</html>

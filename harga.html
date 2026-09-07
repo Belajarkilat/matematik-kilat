@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matematik Kilat — Harga</title>
+<!--
+  Halaman harga untuk ibu bapa.
+
+  Halaman ini menggantikan pricing-payment.html yang lama. Halaman lama
+  mengandungi borang pembayaran palsu: ia meminta nama, emel, nombor telefon
+  dan kaedah pembayaran FPX atau kad kredit, kemudian memaparkan "Pembelian
+  berjaya" tanpa sebarang pemprosesan sebenar. Tiada gerbang pembayaran
+  disambungkan kepada projek ini. Borang itu dibuang sepenuhnya dan bukan
+  digantikan dengan borang lain.
+
+  Halaman lama juga menjanjikan komisi rujukan RM9 setiap pelanggan. Tiada
+  sistem yang menjejak atau membayar komisi itu, jadi janji tersebut dibuang.
+
+  Angka di sini mesti sepadan dengan src/services/licenceService.js:
+  HARGA RM37 setahun, PERANTI 3, FREE_LEVELS aras 1 dan 2. Kalau pemalar itu
+  berubah, kemas kini halaman ini pada masa yang sama.
+
+  Jualan berjalan secara manual buat masa ini. Kod dijana dengan
+  node tools/jana-kod.js dan dihantar melalui WhatsApp selepas bayaran diterima.
+-->
+<style>
+@font-face {
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url('public/fonts/fredoka-latin.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('public/fonts/nunito-latin.woff2') format('woff2');
+}
+
+:root {
+  --ink: #17225A;
+  --ink-deep: #0E1740;
+  --ink-line: #46559C;
+  --paper: #FFFDF6;
+  --paper-edge: #E8E2CE;
+  --grid-line: #E2E9F8;
+  --kilat: #FFC300;
+  --kilat-deep: #E0A500;
+  --betul: #148F5F;
+  --text: #16204A;
+  --text-muted: #5A648C;
+  --on-ink: #F4F6FF;
+  --on-ink-muted: #B9C2E8;
+  --r-panel: 20px;
+  --sans: 'Nunito', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --display: 'Fredoka', 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--sans);
+  background: var(--ink-deep);
+  color: var(--on-ink);
+  line-height: 1.6;
+  padding: 20px 16px 48px;
+}
+
+.wrap { max-width: 620px; margin: 0 auto; }
+
+.back {
+  display: inline-block;
+  color: var(--on-ink-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-bottom: 14px;
+}
+
+.back:hover { color: var(--on-ink); }
+
+.hero { text-align: center; padding: 6px 4px 26px; }
+
+.hero h1 {
+  font-family: var(--display);
+  font-size: clamp(1.8rem, 6.5vw, 2.3rem);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.hero p {
+  color: var(--on-ink-muted);
+  max-width: 36ch;
+  margin: 0 auto;
+}
+
+/* ------------------------------------------------------------- kertas -- */
+
+.paper {
+  background: var(--paper);
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 22px 22px;
+  border: 1px solid var(--paper-edge);
+  border-radius: var(--r-panel);
+  color: var(--text);
+  padding: 24px 22px;
+  margin-bottom: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.paper h2 {
+  font-family: var(--display);
+  font-size: 1.22rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.paper .sub {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  margin-bottom: 16px;
+}
+
+.paper p { color: var(--text-muted); margin-bottom: 12px; }
+.paper p:last-child { margin-bottom: 0; }
+
+.paper--sold { border-color: var(--kilat-deep); border-width: 2px; }
+
+/* --------------------------------------------------------------- harga -- */
+
+.price {
+  font-family: var(--display);
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1;
+  margin-bottom: 2px;
+}
+
+.price small {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.free-mark {
+  font-family: var(--display);
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--betul);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+/* -------------------------------------------------------------- senarai -- */
+
+.list { list-style: none; margin-top: 14px; }
+
+.list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 11px;
+  color: var(--text);
+}
+
+.list li:last-child { margin-bottom: 0; }
+
+.list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--betul);
+  font-weight: 700;
+}
+
+.list li b { font-weight: 800; }
+
+/* --------------------------------------------------------------- syarat -- */
+
+.terms {
+  margin-top: 18px;
+  border-top: 1px solid var(--paper-edge);
+}
+
+.terms__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--paper-edge);
+  font-size: 0.94rem;
+}
+
+.terms__row span { color: var(--text-muted); }
+.terms__row strong { color: var(--text); text-align: right; }
+
+/* -------------------------------------------------------------- langkah -- */
+
+.steps { list-style: none; counter-reset: step; margin-top: 4px; }
+
+.steps li {
+  counter-increment: step;
+  position: relative;
+  padding-left: 38px;
+  margin-bottom: 14px;
+  color: var(--text);
+}
+
+.steps li:last-child { margin-bottom: 0; }
+
+.steps li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--display);
+  font-size: 0.86rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --------------------------------------------------------------- butang -- */
+
+.btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  font-family: var(--display);
+  font-size: 1.06rem;
+  font-weight: 600;
+  padding: 16px 20px;
+  border-radius: 14px;
+  border: none;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.btn--go {
+  background: var(--kilat);
+  color: var(--ink-deep);
+  box-shadow: 0 4px 0 var(--kilat-deep);
+  margin-bottom: 12px;
+}
+
+.btn--go:hover { transform: translateY(-1px); box-shadow: 0 5px 0 var(--kilat-deep); }
+.btn--go:active { transform: translateY(2px); box-shadow: 0 2px 0 var(--kilat-deep); }
+
+.btn--quiet {
+  background: transparent;
+  color: var(--on-ink);
+  border: 1px solid var(--ink-line);
+}
+
+.btn--quiet:hover { background: rgba(255, 255, 255, 0.05); }
+
+.note {
+  color: var(--on-ink-muted);
+  font-size: 0.86rem;
+  margin-top: 18px;
+  text-align: center;
+}
+
+@media (min-width: 560px) {
+  body { padding-top: 30px; }
+  .paper { padding: 28px 26px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <a class="back" href="mula.html">← Kembali</a>
+
+  <header class="hero">
+    <h1>Harga</h1>
+    <p>Separuh app ini percuma selamanya. Separuh lagi dibuka dengan satu kod.</p>
+  </header>
+
+  <section class="paper">
+    <h2>Percuma selamanya</h2>
+    <div class="sub">Tiada pendaftaran, tiada had masa</div>
+    <div class="free-mark">RM0</div>
+    <ul class="list">
+      <li>Aras <b>Mudah</b> dan <b>Sederhana</b> untuk setiap bab</li>
+      <li><b>600 soalan</b> merentas Darjah 1 hingga Darjah 6</li>
+      <li>Langkah kerja penuh bagi setiap soalan</li>
+      <li>Boleh dimain tanpa internet</li>
+    </ul>
+  </section>
+
+  <section class="paper paper--sold">
+    <h2>Buka semua aras</h2>
+    <div class="sub">Satu kod membuka Darjah 1 hingga Darjah 6</div>
+    <div class="price">RM37 <small>setahun</small></div>
+    <ul class="list">
+      <li>Aras <b>Cabaran</b> dan <b>Ultra</b> untuk setiap bab</li>
+      <li><b>600 soalan</b> tambahan, iaitu 1200 soalan kesemuanya</li>
+      <li>Soalan berayat dan aras yang menolak anak berfikir lebih jauh</li>
+      <li>Kemajuan dan bintang kekal walaupun kod tamat tempoh</li>
+    </ul>
+    <div class="terms">
+      <div class="terms__row"><span>Harga</span><strong>RM37 setahun</strong></div>
+      <div class="terms__row"><span>Peranti</span><strong>3 peranti dalam keluarga</strong></div>
+      <div class="terms__row"><span>Darjah</span><strong>1 hingga 6</strong></div>
+      <div class="terms__row"><span>Tempoh</span><strong>365 hari dari tarikh kod dijana</strong></div>
+    </div>
+  </section>
+
+  <section class="paper">
+    <h2>Cara membeli</h2>
+    <div class="sub">Buat masa ini jualan diuruskan sendiri melalui WhatsApp</div>
+    <ol class="steps">
+      <li>WhatsApp kami dan beritahu anak darjah berapa.</li>
+      <li>Kami hantar butiran pembayaran dan jumlahnya.</li>
+      <li>Selepas bayaran diterima, kami hantar kod anda melalui WhatsApp.</li>
+      <li>Buka app, masuk ke skrin Buka Semua Aras, dan taip kod itu.</li>
+    </ol>
+    <p style="margin-top: 16px;">
+      Simpan kod itu. Anda perlukannya semula kalau tukar telefon atau
+      bersihkan pelayar, dan kod yang sama boleh dipakai pada tiga peranti
+      dalam keluarga anda.
+    </p>
+  </section>
+
+  <a class="btn btn--go" href="https://wa.me/60106640353?text=Saya%20nak%20beli%20kod%20Matematik%20Kilat">
+    WhatsApp untuk beli
+  </a>
+  <a class="btn btn--quiet" href="https://belajarkilat.github.io/matematik-kilat/">
+    Cuba aras percuma dahulu
+  </a>
+
+  <p class="note">
+    Belum pasti? Main aras percuma seberapa lama yang anda mahu. Ia tidak akan
+    tamat tempoh.
+  </p>
+
+</div>
+</body>
+</html>

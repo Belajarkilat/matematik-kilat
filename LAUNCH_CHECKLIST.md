@@ -57,27 +57,42 @@
 ## 📂 FILES READY TO DEPLOY
 
 ```
-✅ src/data/questions/tahun1-6.json (900 soalan)
-✅ trial-signup.html
-✅ pricing-payment.html
+✅ public/data/questions/matematik/tahun1-6.json (1200 soalan)
+✅ mula.html          halaman pengenalan untuk ibu bapa
+✅ harga.html         halaman harga dan cara membeli
 ✅ matematik-kilat-preview.html
-✅ dist/ (built app)
+✅ docs/ (binaan yang disiarkan GitHub Pages)
 ✅ admin-dashboard.html
-✅ All supporting files
 ```
 
 ---
 
 ## 💰 BUSINESS MODEL
 
-```
-Trial: 14 hari PERCUMA
-Price: RM30/tahun per subject
-Devices: 3 devices per account
-Referral: RM9 one-off per customer
+Model sebenar ialah percuma dengan aras berbayar, bukan percubaan bertempoh.
+Angka rasmi ada dalam `src/services/licenceService.js`. Kalau pemalar di situ
+berubah, kemas kini `harga.html` pada masa yang sama.
 
-Status: READY TO SELL
 ```
+Percuma: aras Mudah + Sederhana, 600 soalan, kekal selamanya
+Berbayar: aras Cabaran + Ultra, 600 soalan lagi
+Harga: RM37 setahun, membuka Darjah 1 hingga 6
+Peranti: 3 peranti, syarat pada resit dan bukan sekatan teknikal
+Jualan: manual melalui WhatsApp, kod dijana dengan tools/jana-kod.js
+```
+
+Tiada percubaan 14 hari. Kiraan hari dalam pelayar boleh direset dengan
+membersihkan data laman, jadi ia tidak melindungi apa-apa sambil memadamkan app
+daripada telefon apabila tempohnya tamat.
+
+Tiada komisi rujukan RM9. Tiada sistem yang menjejak atau membayarnya.
+
+Tiada gerbang pembayaran. Jangan siarkan borang yang meminta butiran kad atau
+FPX sehingga pembayaran sebenar disambungkan.
+
+**BELUM SIAP UNTUK JUAL:** `OPEN_ACCESS` dan `OPEN_ALL_LEVELS` dalam
+`src/services/licenceService.js` masih `true` untuk tempoh ujian terbuka.
+Tukar kedua-duanya kepada `false` sebelum jualan pertama.
 
 ---
 
