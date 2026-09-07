@@ -4,7 +4,7 @@ import { getProfileService } from '../services/profileService';
 import AnimatedAvatar from '../components/AnimatedAvatar';
 import OfflineIndicator from '../components/OfflineIndicator';
 import ChapterGlyph from '../components/ChapterGlyph';
-import { SUBJECTS } from '../services/subjectService';
+import { SUBJECTS, chaptersFor } from '../services/subjectService';
 
 const YEARS = [1, 2, 3, 4, 5, 6];
 
@@ -39,7 +39,10 @@ function Hub({ profile }) {
   // belum menyentuh Sains perlu nampak kedua-dua fakta itu, bukan satu
   // nombor bercampur yang tidak bermakna.
   const subjects = useMemo(() => SUBJECTS.map((sub) => {
-    const years = YEARS.map((t) => ({ t, ...ps.getClearedCount(profile.id, sub.id, t, 5, 4) }));
+    const years = YEARS.map((t) => ({
+      t,
+      ...ps.getClearedCount(profile.id, sub.id, t, chaptersFor(sub, t), 4)
+    }));
     const done = years.reduce((n, y) => n + y.done, 0);
     const total = years.reduce((n, y) => n + y.total, 0);
     const inProgress = years.find((y) => y.done > 0 && y.done < y.total);

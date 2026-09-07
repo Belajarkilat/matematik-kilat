@@ -18,7 +18,8 @@ export const SUBJECTS = [
     tagline: 'Nombor, operasi, ukuran dan ruang',
     accent: 'var(--mark-nombor)',
     glyph: 'nombor',
-    ready: true
+    ready: true,
+    chapters: { default: 5 }
   },
   {
     id: 'sains',
@@ -31,9 +32,19 @@ export const SUBJECTS = [
     // dipegang di sini dan bukan diteka daripada rangkaian, kerana pelayan
     // memulangkan index.html untuk fail yang tiada, jadi permintaan yang gagal
     // kelihatan seperti berjaya.
-    ready: false
+    ready: false,
+    // Sukatan Sains jauh lebih luas daripada Matematik. Setiap tahun ada
+    // sepuluh unit, dan Tahun 6 ada tiga belas, jadi bilangan bab tidak boleh
+    // ditetapkan pada satu nombor seperti dahulu.
+    chapters: { default: 10, 6: 13 }
   }
 ];
+
+/** Bilangan bab bagi satu subjek pada satu tahun. */
+export function chaptersFor(subject, tahun) {
+  const map = (typeof subject === 'string' ? getSubject(subject) : subject).chapters || {};
+  return map[Number(tahun)] || map.default || 5;
+}
 
 export const DEFAULT_SUBJECT = 'matematik';
 
