@@ -4,6 +4,7 @@ import { initProfileService, getProfileService } from './services/profileService
 import { initFirebase } from './services/firebase';
 import { getSettingsService } from './services/settingsService';
 import KilatMark from './components/KilatMark';
+import NaikGredKaki from './components/NaikGredKaki';
 import feedback from './services/feedbackService';
 
 // Pages
@@ -113,6 +114,7 @@ function App() {
         {/* Catch-all: an unknown URL must never leave the child staring at a blank page. */}
         <Route path="*" element={<Navigate to={activeProfile ? '/hub' : '/'} replace />} />
       </Routes>
+      <NaikGredKaki />
     </Router>
   );
 }

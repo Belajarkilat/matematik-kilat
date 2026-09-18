@@ -1398,3 +1398,33 @@ body > div > h2 {
   box-shadow: 0 3px 0 #1B1638;
   color: #B9A8E4;
 }
+
+/* ============================================================
+   Jenama payung NaikGred. Sokongan sahaja, tidak menggantikan
+   jenama Matematik Kilat.
+   ============================================================ */
+.jenama-kaki {
+  max-width: var(--page-max);
+  margin: 0 auto;
+  padding: 16px 16px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  color: var(--on-ink-muted);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+.jenama-kaki svg { width: 18px; height: 18px; flex: none; display: block; }
+.jenama-kaki__nama { letter-spacing: -0.015em; font-size: 0.85rem; }
+.jenama-kaki__nama i { font-style: normal; font-weight: 700; color: #7ED3BF; }
+.jenama-kaki__nama b { font-weight: 800; color: #FFC24D; }
+@media print { .jenama-kaki { display: none; } }
+
+/* Halaman bertengah mengisi skrin penuh, jadi footer mesti berkongsi
+   ketinggian itu dan bukan ditolak ke bawah lipatan. */
+#root { min-height: 100dvh; display: flex; flex-direction: column; }
+#root > * { width: 100%; }
+#root > .page--centre { flex: 1; min-height: 0; }
+#root > .jenama-kaki { margin-top: auto; }
