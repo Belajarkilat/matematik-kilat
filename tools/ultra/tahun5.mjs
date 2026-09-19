@@ -1,4 +1,4 @@
-// Soalan aras Ultra untuk Darjah 5.
+// Soalan aras Ultra untuk Tahun 5.
 
 const q = (type, text, options, correctAnswer, working, visual) => {
   const item = { type, text, options, correctAnswer, working };

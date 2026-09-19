@@ -1,4 +1,4 @@
-// Soalan aras Ultra untuk Darjah 1.
+// Soalan aras Ultra untuk Tahun 1.
 //
 // Ultra bukan sekadar cabaran yang lebih besar nombornya. Setiap soalan di sini
 // perlu sekurang-kurangnya dua langkah, atau memaksa murid berfikir ke belakang

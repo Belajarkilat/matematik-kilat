@@ -1,4 +1,4 @@
-// Soalan aras Ultra untuk Darjah 4.
+// Soalan aras Ultra untuk Tahun 4.
 
 const q = (type, text, options, correctAnswer, working, visual) => {
   const item = { type, text, options, correctAnswer, working };

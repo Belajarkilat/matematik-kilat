@@ -2,7 +2,7 @@
   "name": "matematik-kilat",
   "version": "1.0.0",
   "type": "module",
-  "description": "Matematik Kilat: permainan latihan matematik KSSR untuk Darjah 1 hingga 6",
+  "description": "Matematik Kilat: permainan latihan matematik KSSR untuk Tahun 1 hingga 6",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

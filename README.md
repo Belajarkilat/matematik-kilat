@@ -1,6 +1,6 @@
 # Matematik Kilat
 
-Permainan latihan matematik KSSR untuk Darjah 1 hingga 6, dibina dengan React 18 dan Vite 5.
+Permainan latihan matematik KSSR untuk Tahun 1 hingga 6, dibina dengan React 18 dan Vite 5.
 
 - Dua subjek: Matematik (1 200 soalan siap) dan Sains (sedang ditulis)
 - 1 200 soalan merentas 6 tahun dan 30 bab, setiap satu dengan langkah kerja

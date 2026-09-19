@@ -5,7 +5,7 @@ import feedback from '../services/feedbackService';
 /**
  * Satu soalan untuk anak, di skrin keputusan.
  *
- * Tiga muka sahaja, tiada tempat menaip. Budak Darjah 1 tidak akan menulis
+ * Tiga muka sahaja, tiada tempat menaip. Budak Tahun 1 tidak akan menulis
  * ayat, tetapi dia akan menekan muka, dan muka itu sudah cukup untuk memberitahu
  * kami bab mana yang membosankan.
  *

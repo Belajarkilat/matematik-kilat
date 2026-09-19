@@ -101,12 +101,12 @@ function Unlock() {
         <h2 style={{ fontSize: '1.05rem', marginBottom: 10 }}>Apa yang perlu kod</h2>
         <p className="muted" style={{ marginBottom: 12 }}>
           Aras Cabaran dan Ultra, iaitu 600 soalan lagi. Satu kod membuka semua
-          tahun, Darjah 1 hingga Darjah 6.
+          tahun, Tahun 1 hingga Tahun 6.
         </p>
         <div className="terms">
           <div className="terms__row"><span>Harga</span><strong>{HARGA}</strong></div>
           <div className="terms__row"><span>Peranti</span><strong>{PERANTI} peranti</strong></div>
-          <div className="terms__row"><span>Darjah</span><strong>1 hingga 6</strong></div>
+          <div className="terms__row"><span>Tahun</span><strong>1 hingga 6</strong></div>
         </div>
       </section>
 

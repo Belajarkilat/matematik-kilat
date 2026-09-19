@@ -1,7 +1,7 @@
 /**
  * Maklum balas daripada anak, dan maklum balas daripada ibu bapa.
  *
- * Dua orang yang berbeza, jadi dua cara yang berbeza. Anak darjah satu tidak
+ * Dua orang yang berbeza, jadi dua cara yang berbeza. Anak tahun satu tidak
  * akan menaip satu ayat pun, tetapi dia akan menekan satu muka. Ibu bapa pula
  * sanggup menaip, tetapi hanya di tempat mereka sudah pun melihat kemajuan
  * anak, iaitu skrin Laporan.

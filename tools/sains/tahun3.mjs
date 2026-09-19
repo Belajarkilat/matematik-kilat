@@ -1,4 +1,4 @@
-// Soalan Sains Darjah 3, sepuluh bab.
+// Soalan Sains Tahun 3, sepuluh bab.
 
 import { m, i } from './soalan.mjs';
 

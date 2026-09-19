@@ -1,4 +1,4 @@
-// Soalan aras Ultra untuk Darjah 2.
+// Soalan aras Ultra untuk Tahun 2.
 
 const q = (type, text, options, correctAnswer, working, visual) => {
   const item = { type, text, options, correctAnswer, working };

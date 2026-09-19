@@ -1,12 +1,12 @@
 /**
- * Tajuk bab Sains Kilat, Darjah 1 hingga 6.
+ * Tajuk bab Sains Kilat, Tahun 1 hingga 6.
  *
  * Ini bukan rekaan. Setiap senarai disemak terhadap kandungan KSSR Semakan
  * 2017 melalui dua sumber bebas: senarai unit yang diterbitkan untuk RPT dan
  * susunan bab yang dipakai platform pembelajaran, dengan tajuk yang berbeza
  * disemak semula terhadap DSKP.
  *
- * Sepuluh unit setiap tahun, kecuali Darjah 6 yang mempunyai tiga belas. Ini
+ * Sepuluh unit setiap tahun, kecuali Tahun 6 yang mempunyai tiga belas. Ini
  * bermakna Sains hampir dua kali ganda saiz Matematik, bukan sama seperti yang
  * disangka pada mulanya.
  *

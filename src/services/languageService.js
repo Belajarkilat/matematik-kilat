@@ -25,8 +25,8 @@ const translations = {
 
     // Hub
     hub: 'Hub Pembelajaran',
-    selectGrade: 'Pilih Darjah',
-    grade: 'Darjah',
+    selectGrade: 'Pilih Tahun',
+    grade: 'Tahun',
     chapters: 'Bab',
     difficulty: 'Kesukaran',
     easy: '😊 Mudah',

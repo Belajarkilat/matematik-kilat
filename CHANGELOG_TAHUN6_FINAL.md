@@ -1,4 +1,4 @@
-# Matematik Kilat - Darjah 6 (Tahun 6) - FINAL v1.0
+# Matematik Kilat - Tahun 6 - FINAL v1.0
 
 ## Status: ✅ FINALIZED
 

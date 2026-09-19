@@ -76,7 +76,7 @@ berubah, kemas kini `harga.html` pada masa yang sama.
 ```
 Percuma: aras Mudah + Sederhana, 600 soalan, kekal selamanya
 Berbayar: aras Cabaran + Ultra, 600 soalan lagi
-Harga: RM37 setahun, membuka Darjah 1 hingga 6
+Harga: RM37 setahun, membuka Tahun 1 hingga 6
 Peranti: 3 peranti, syarat pada resit dan bukan sekatan teknikal
 Jualan: manual melalui WhatsApp, kod dijana dengan tools/jana-kod.js
 ```

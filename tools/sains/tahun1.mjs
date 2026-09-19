@@ -1,4 +1,4 @@
-// Soalan Sains Darjah 1, sepuluh bab.
+// Soalan Sains Tahun 1, sepuluh bab.
 //
 // Bahasa dijaga supaya budak tujuh tahun boleh membacanya sendiri. Ayat
 // pendek, tiada istilah yang belum diajar, dan langkah kerja menerangkan
