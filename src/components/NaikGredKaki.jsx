@@ -20,11 +20,12 @@ export default function NaikGredKaki() {
         />
       </svg>
       <span>
-        Sebuah produk{' '}
+        A{' '}
         <span className="jenama-kaki__nama">
           <i>Naik</i>
           <b>Gred</b>
-        </span>
+        </span>{' '}
+        product
       </span>
     </footer>
   );
