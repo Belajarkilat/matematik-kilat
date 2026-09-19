@@ -18,6 +18,7 @@ import Settings from './pages/Settings';
 import VisualGallery from './pages/VisualGallery';
 import ParentReport from './pages/ParentReport';
 import Unlock from './pages/Unlock';
+import Tampal from './pages/Tampal';
 
 // Styles
 import './styles/kilat-theme.css';
@@ -111,6 +112,7 @@ function App() {
         <Route path="/:subjek/tahun/:tahun" element={activeProfile ? <ChapterMap profile={activeProfile} /> : <Navigate to="/" />} />
         <Route path="/:subjek/quiz/:tahun/:chapter/:level" element={activeProfile ? <Quiz profile={activeProfile} /> : <Navigate to="/" />} />
         <Route path="/:subjek/results/:tahun/:chapter/:level" element={activeProfile ? <ResultsPage profile={activeProfile} /> : <Navigate to="/" />} />
+        <Route path="/:subjek/tampal/:tahun/:chapter" element={activeProfile ? <Tampal profile={activeProfile} /> : <Navigate to="/" />} />
         {/* Catch-all: an unknown URL must never leave the child staring at a blank page. */}
         <Route path="*" element={<Navigate to={activeProfile ? '/hub' : '/'} replace />} />
       </Routes>

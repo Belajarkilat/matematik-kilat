@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "extract-questions": "node extract-questions.js",
     "type-check": "tsc --noEmit",
+    "tampal": "node tools/tampal/bina.mjs",
     "build:docs": "vite build && node build-docs.js"
   },
   "dependencies": {

@@ -11,12 +11,12 @@
           "id": "s3_c1_q1",
           "text": "Apakah yang dimaksudkan dengan membuat inferens?",
           "options": [
-            "Memberi penjelasan awal berdasarkan pemerhatian",
             "Meneka tanpa melihat",
+            "Memberi penjelasan awal berdasarkan pemerhatian",
             "Mengukur dengan pembaris",
             "Menyalin jawapan kawan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -26,12 +26,12 @@
           "id": "s3_c1_q2",
           "text": "Apakah yang dimaksudkan dengan pemerhatian?",
           "options": [
-            "Maklumat yang dikumpul menggunakan deria",
-            "Pendapat peribadi",
             "Ramalan masa depan",
-            "Cerita rekaan"
+            "Maklumat yang dikumpul menggunakan deria",
+            "Cerita rekaan",
+            "Pendapat peribadi"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -41,12 +41,12 @@
           "id": "s3_c1_q3",
           "text": "Alat manakah digunakan untuk mengukur isi padu cecair dengan tepat?",
           "options": [
-            "Silinder penyukat",
-            "Pembaris",
             "Neraca",
-            "Termometer"
+            "Silinder penyukat",
+            "Termometer",
+            "Pembaris"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -56,12 +56,12 @@
           "id": "s3_c1_q4",
           "text": "Apakah unit piawai bagi jisim?",
           "options": [
-            "Kilogram",
-            "Meter",
+            "Saat",
             "Liter",
-            "Saat"
+            "Kilogram",
+            "Meter"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -73,8 +73,8 @@
           "options": [
             "Meter",
             "Kilogram",
-            "Liter",
-            "Saat"
+            "Saat",
+            "Liter"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -87,9 +87,9 @@
           "text": "Kenapa kita menggunakan unit piawai?",
           "options": [
             "Supaya semua orang mendapat ukuran yang sama",
-            "Supaya nampak pandai",
+            "Supaya lebih murah",
             "Supaya lebih cepat",
-            "Supaya lebih murah"
+            "Supaya nampak pandai"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -102,8 +102,8 @@
           "text": "Apakah yang dimaksudkan dengan pemboleh ubah dimalarkan?",
           "options": [
             "Perkara yang dikekalkan sama dalam eksperimen",
-            "Perkara yang diubah",
             "Perkara yang diukur",
+            "Perkara yang diubah",
             "Perkara yang dibuang"
           ],
           "correctAnswer": 0,
@@ -116,12 +116,12 @@
           "id": "s3_c1_q8",
           "text": "Apakah yang dimaksudkan dengan pemboleh ubah dimanipulasi?",
           "options": [
-            "Perkara yang sengaja diubah",
             "Perkara yang dikekalkan",
             "Perkara yang dilupakan",
+            "Perkara yang sengaja diubah",
             "Perkara yang disalin"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -131,12 +131,12 @@
           "id": "s3_c1_q9",
           "text": "Kenapa kita membuat hipotesis sebelum eksperimen?",
           "options": [
-            "Untuk menyatakan jangkaan yang boleh diuji",
+            "Untuk menyalin jawapan",
             "Untuk menjawab terus",
             "Untuk mengelak eksperimen",
-            "Untuk menyalin jawapan"
+            "Untuk menyatakan jangkaan yang boleh diuji"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -146,12 +146,12 @@
           "id": "s3_c1_q10",
           "text": "Apakah yang perlu dibuat selepas mengumpul data?",
           "options": [
-            "Mentafsir dan membuat kesimpulan",
+            "Menukar data",
             "Membuang data",
-            "Melupakan data",
-            "Menukar data"
+            "Mentafsir dan membuat kesimpulan",
+            "Melupakan data"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -161,12 +161,12 @@
           "id": "s3_c1_q11",
           "text": "Ali melihat lantai basah dan berkata \"hujan baru sahaja turun.\" Apakah itu?",
           "options": [
-            "Inferens",
-            "Pemerhatian",
             "Ukuran",
+            "Pemerhatian",
+            "Inferens",
             "Hipotesis"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -201,12 +201,12 @@
           "id": "s3_c1_q14",
           "text": "Dalam ujian yang sama, apakah pemboleh ubah bergerak balas?",
           "options": [
-            "Tinggi pokok",
-            "Jumlah baja",
+            "Saiz pasu",
             "Jenis tanah",
-            "Saiz pasu"
+            "Tinggi pokok",
+            "Jumlah baja"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -227,9 +227,9 @@
           "text": "Manakah pernyataan yang merupakan PEMERHATIAN?",
           "options": [
             "Daun itu berwarna kuning",
-            "Daun itu cantik",
             "Daun itu sedih",
-            "Daun itu bertuah"
+            "Daun itu bertuah",
+            "Daun itu cantik"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -241,12 +241,12 @@
           "id": "s3_c1_q17",
           "text": "Kenapa eksperimen mesti mengubah satu pemboleh ubah sahaja?",
           "options": [
-            "Supaya kita tahu punca sebenar perubahan",
-            "Supaya lebih cepat",
             "Supaya lebih murah",
-            "Supaya lebih senang ditulis"
+            "Supaya lebih cepat",
+            "Supaya lebih senang ditulis",
+            "Supaya kita tahu punca sebenar perubahan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -266,12 +266,12 @@
           "id": "s3_c1_q19",
           "text": "Manakah cara terbaik menunjukkan perubahan suhu sepanjang masa?",
           "options": [
-            "Graf garis",
             "Perenggan panjang",
+            "Senarai nama",
             "Gambar",
-            "Senarai nama"
+            "Graf garis"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -281,12 +281,12 @@
           "id": "s3_c1_q20",
           "text": "Ali mendapat keputusan yang berbeza daripada hipotesisnya. Apakah maksudnya?",
           "options": [
-            "Hipotesisnya tidak disokong dan perlu difikirkan semula",
-            "Eksperimennya gagal sepenuhnya",
+            "Dia perlu berhenti",
             "Dia perlu menukar data",
-            "Dia perlu berhenti"
+            "Eksperimennya gagal sepenuhnya",
+            "Hipotesisnya tidak disokong dan perlu difikirkan semula"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -307,8 +307,8 @@
           "text": "Rina menguji tiga jenis tanah dengan biji benih yang sama, air yang sama dan cahaya yang sama. Apakah yang dia uji?",
           "options": [
             "Kesan jenis tanah terhadap pertumbuhan",
-            "Kesan air",
             "Kesan cahaya",
+            "Kesan air",
             "Kesan biji benih"
           ],
           "correctAnswer": 0,
@@ -322,9 +322,9 @@
           "text": "Kenapa eksperimen perlu diulang sekurang-kurangnya tiga kali?",
           "options": [
             "Untuk memastikan keputusan bukan kebetulan",
+            "Untuk memenuhi buku",
             "Untuk membuang masa",
-            "Untuk menggunakan lebih banyak bahan",
-            "Untuk memenuhi buku"
+            "Untuk menggunakan lebih banyak bahan"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -346,12 +346,12 @@
           "id": "s3_c1_q25",
           "text": "Ali mengukur panjang meja tiga kali: 152 cm, 151 cm dan 153 cm. Apakah yang patut dia laporkan?",
           "options": [
-            "Purata 152 cm",
-            "Yang paling besar 153 cm",
             "Yang paling kecil 151 cm",
-            "Ukuran pertama sahaja"
+            "Yang paling besar 153 cm",
+            "Ukuran pertama sahaja",
+            "Purata 152 cm"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -362,8 +362,8 @@
           "text": "Manakah kesimpulan yang SAH daripada data?",
           "options": [
             "Pokok dengan baja tumbuh 12 cm lebih tinggi",
-            "Baja sentiasa terbaik untuk semua tumbuhan",
             "Baja menjadikan tumbuhan cantik",
+            "Baja sentiasa terbaik untuk semua tumbuhan",
             "Baja sesuai untuk semua tanah"
           ],
           "correctAnswer": 0,
@@ -386,12 +386,12 @@
           "id": "s3_c1_q28",
           "text": "Kenapa dua kumpulan mendapat keputusan berbeza walaupun mengikut langkah yang sama?",
           "options": [
-            "Ada pemboleh ubah yang tidak dikawal dengan sama",
             "Sains tidak boleh dipercayai",
+            "Bahan berubah sendiri",
             "Salah satu kumpulan menipu",
-            "Bahan berubah sendiri"
+            "Ada pemboleh ubah yang tidak dikawal dengan sama"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -401,12 +401,12 @@
           "id": "s3_c1_q29",
           "text": "Manakah tindakan yang PALING saintifik apabila data kelihatan pelik?",
           "options": [
+            "Tulis data yang dijangka",
             "Semak semula cara ukuran dibuat",
             "Buang data itu",
-            "Tulis data yang dijangka",
             "Abaikan sahaja"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -416,12 +416,12 @@
           "id": "s3_c1_q30",
           "text": "Kenapa graf lebih berguna daripada jadual untuk menunjukkan arah aliran?",
           "options": [
+            "Graf lebih kecil",
             "Bentuk garis menunjukkan arah perubahan dengan serta-merta",
             "Graf lebih cantik",
-            "Graf lebih kecil",
             "Jadual tidak sah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -441,12 +441,12 @@
           "id": "s3_c1_q32",
           "text": "Ali menguji kesan suhu terhadap kelarutan gula tetapi menggunakan gula halus untuk air panas dan gula kasar untuk air sejuk. Apakah masalahnya?",
           "options": [
-            "Dua pemboleh ubah berubah serentak",
+            "Masa terlalu singkat",
             "Air terlalu banyak",
-            "Gula terlalu sedikit",
-            "Masa terlalu singkat"
+            "Dua pemboleh ubah berubah serentak",
+            "Gula terlalu sedikit"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -458,8 +458,8 @@
           "options": [
             "Supaya orang lain boleh mengulang dan menyemak",
             "Supaya kertas lebih panjang",
-            "Supaya kelihatan pandai",
-            "Supaya sukar disalin"
+            "Supaya sukar disalin",
+            "Supaya kelihatan pandai"
           ],
           "correctAnswer": 0,
           "difficulty": "ultra",
@@ -482,8 +482,8 @@
           "text": "Manakah kelemahan PALING serius dalam eksperimen yang hanya dijalankan sekali?",
           "options": [
             "Kesilapan tunggal tidak dapat dikesan",
-            "Ia mengambil masa singkat",
             "Ia menggunakan sedikit bahan",
+            "Ia mengambil masa singkat",
             "Ia mudah ditulis"
           ],
           "correctAnswer": 0,
@@ -496,12 +496,12 @@
           "id": "s3_c1_q36",
           "text": "Dua murid mengukur isi padu batu yang sama dan mendapat 24 ml dan 31 ml. Apakah sebab paling munasabah?",
           "options": [
-            "Seorang membaca paras air dari sudut yang salah",
-            "Batu itu mengembang",
             "Air menyejat sepenuhnya",
-            "Silinder itu rosak kekal"
+            "Silinder itu rosak kekal",
+            "Batu itu mengembang",
+            "Seorang membaca paras air dari sudut yang salah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -521,12 +521,12 @@
           "id": "s3_c1_q38",
           "text": "Kenapa kesimpulan \"baja ini terbaik di dunia\" tidak sah daripada satu eksperimen sekolah?",
           "options": [
+            "Murid tidak layak",
             "Hanya beberapa keadaan diuji, bukan semua keadaan",
             "Baja itu terlalu mahal",
-            "Eksperimen terlalu pendek sahaja",
-            "Murid tidak layak"
+            "Eksperimen terlalu pendek sahaja"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -536,12 +536,12 @@
           "id": "s3_c1_q39",
           "text": "Manakah pasangan pemboleh ubah yang betul untuk menguji kesan cahaya terhadap pertumbuhan?",
           "options": [
-            "Dimanipulasi: cahaya; bergerak balas: tinggi pokok",
-            "Dimanipulasi: tinggi pokok; bergerak balas: cahaya",
             "Dimanipulasi: air; bergerak balas: cahaya",
-            "Dimanipulasi: tanah; bergerak balas: air"
+            "Dimanipulasi: tinggi pokok; bergerak balas: cahaya",
+            "Dimanipulasi: tanah; bergerak balas: air",
+            "Dimanipulasi: cahaya; bergerak balas: tinggi pokok"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -551,12 +551,12 @@
           "id": "s3_c1_q40",
           "text": "Kenapa data yang bertentangan dengan jangkaan tetap penting dalam sains?",
           "options": [
-            "Ia menunjukkan pemahaman kita perlu diperbaiki",
-            "Ia bermakna eksperimen gagal",
             "Ia patut dibuang",
-            "Ia menunjukkan alat rosak"
+            "Ia menunjukkan pemahaman kita perlu diperbaiki",
+            "Ia menunjukkan alat rosak",
+            "Ia bermakna eksperimen gagal"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -573,12 +573,12 @@
           "id": "s3_c2_q1",
           "text": "Apakah maksud simbol tengkorak pada label bahan?",
           "options": [
+            "Bahan itu berat",
             "Bahan itu beracun",
-            "Bahan itu sejuk",
             "Bahan itu murah",
-            "Bahan itu berat"
+            "Bahan itu sejuk"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -588,12 +588,12 @@
           "id": "s3_c2_q2",
           "text": "Apakah maksud simbol api pada label?",
           "options": [
-            "Bahan itu mudah terbakar",
+            "Bahan itu manis",
             "Bahan itu sejuk",
             "Bahan itu berat",
-            "Bahan itu manis"
+            "Bahan itu mudah terbakar"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -603,12 +603,12 @@
           "id": "s3_c2_q3",
           "text": "Apakah yang perlu dibuat sebelum menggunakan bahan baharu?",
           "options": [
-            "Baca label dan arahan",
             "Terus guna",
+            "Campur dengan air",
             "Rasa dahulu",
-            "Campur dengan air"
+            "Baca label dan arahan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -618,12 +618,12 @@
           "id": "s3_c2_q4",
           "text": "Ke mana kita patut menghala mulut tabung uji semasa memanaskannya?",
           "options": [
-            "Jauh daripada semua orang",
-            "Ke arah kawan",
             "Ke arah diri sendiri",
-            "Ke arah guru"
+            "Ke arah guru",
+            "Ke arah kawan",
+            "Jauh daripada semua orang"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -634,9 +634,9 @@
           "text": "Apakah alat yang digunakan memadam api kecil di makmal?",
           "options": [
             "Alat pemadam api",
+            "Penyapu",
             "Kipas",
-            "Kertas",
-            "Penyapu"
+            "Kertas"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -649,8 +649,8 @@
           "text": "Kenapa kita perlu tahu lokasi pintu kecemasan?",
           "options": [
             "Untuk keluar dengan cepat semasa bahaya",
-            "Untuk masuk lebih awal",
             "Untuk menyimpan beg",
+            "Untuk masuk lebih awal",
             "Untuk berehat"
           ],
           "correctAnswer": 0,
@@ -665,8 +665,8 @@
           "options": [
             "Basuh dengan banyak air dan beritahu guru",
             "Gosok mata",
-            "Tutup mata sahaja",
-            "Tunggu ia hilang"
+            "Tunggu ia hilang",
+            "Tutup mata sahaja"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -678,12 +678,12 @@
           "id": "s3_c2_q8",
           "text": "Bolehkah kita mencampur bahan sesuka hati?",
           "options": [
-            "Tidak boleh",
+            "Boleh jika cepat",
             "Boleh",
             "Boleh jika sedikit",
-            "Boleh jika cepat"
+            "Tidak boleh"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -694,8 +694,8 @@
           "text": "Apakah yang perlu dipakai untuk melindungi tangan?",
           "options": [
             "Sarung tangan",
-            "Cincin",
             "Jam",
+            "Cincin",
             "Gelang"
           ],
           "correctAnswer": 0,
@@ -709,9 +709,9 @@
           "text": "Kenapa kuku panjang tidak sesuai semasa aktiviti makmal?",
           "options": [
             "Bahan boleh terperangkap di bawahnya",
+            "Kuku menjadi cantik",
             "Kuku menjadi pendek",
-            "Kuku menjadi keras",
-            "Kuku menjadi cantik"
+            "Kuku menjadi keras"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -724,9 +724,9 @@
           "text": "Kenapa bahan mudah terbakar disimpan jauh daripada sumber api?",
           "options": [
             "Wapnya boleh menyala walaupun tanpa sentuhan terus",
-            "Ia menjadi berat",
             "Ia menjadi sejuk",
-            "Ia menjadi mahal"
+            "Ia menjadi mahal",
+            "Ia menjadi berat"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -738,12 +738,12 @@
           "id": "s3_c2_q12",
           "text": "Ali menuang asid ke dalam air, bukan air ke dalam asid. Kenapa urutan ini penting?",
           "options": [
-            "Menuang air ke dalam asid boleh menyebabkan percikan panas",
-            "Air lebih berat",
             "Asid lebih murah",
-            "Air lebih sejuk"
+            "Air lebih berat",
+            "Air lebih sejuk",
+            "Menuang air ke dalam asid boleh menyebabkan percikan panas"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -754,8 +754,8 @@
           "text": "Kenapa makmal mempunyai singki dan pancuran kecemasan?",
           "options": [
             "Untuk membasuh bahan daripada kulit dan mata dengan cepat",
-            "Untuk mencuci tangan sahaja",
             "Untuk minum",
+            "Untuk mencuci tangan sahaja",
             "Untuk membersihkan lantai"
           ],
           "correctAnswer": 0,
@@ -768,12 +768,12 @@
           "id": "s3_c2_q14",
           "text": "Manakah tindakan yang menunjukkan pemahaman keselamatan yang BAIK?",
           "options": [
-            "Membaca semua langkah sebelum memulakan",
             "Memulakan sambil membaca",
             "Mengikut kawan",
-            "Meneka langkah seterusnya"
+            "Meneka langkah seterusnya",
+            "Membaca semua langkah sebelum memulakan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -783,12 +783,12 @@
           "id": "s3_c2_q15",
           "text": "Kenapa bahan sisa dikumpul dalam bekas berlabel yang berbeza?",
           "options": [
-            "Bahan berbeza memerlukan cara pembuangan berbeza",
-            "Supaya bekas cantik",
+            "Supaya lebih murah",
             "Supaya bekas ringan",
-            "Supaya lebih murah"
+            "Supaya bekas cantik",
+            "Bahan berbeza memerlukan cara pembuangan berbeza"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -798,12 +798,12 @@
           "id": "s3_c2_q16",
           "text": "Apakah risiko memakai kasut terbuka di makmal?",
           "options": [
-            "Bahan tumpah boleh terkena kaki",
-            "Kaki menjadi sejuk",
             "Kasut menjadi kotor",
-            "Berjalan menjadi lambat"
+            "Bahan tumpah boleh terkena kaki",
+            "Berjalan menjadi lambat",
+            "Kaki menjadi sejuk"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -813,12 +813,12 @@
           "id": "s3_c2_q17",
           "text": "Kenapa kita tidak boleh menyimpan bahan makmal dalam botol minuman?",
           "options": [
-            "Orang boleh tersilap sangka ia minuman",
-            "Botol menjadi berat",
+            "Botol menjadi kotor",
             "Bahan menjadi sejuk",
-            "Botol menjadi kotor"
+            "Botol menjadi berat",
+            "Orang boleh tersilap sangka ia minuman"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -829,9 +829,9 @@
           "text": "Manakah maklumat PALING penting pada label bahan?",
           "options": [
             "Nama bahan dan simbol bahaya",
-            "Harga bahan",
             "Berat botol",
-            "Warna botol"
+            "Warna botol",
+            "Harga bahan"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -843,12 +843,12 @@
           "id": "s3_c2_q19",
           "text": "Kenapa aktiviti yang menghasilkan wasap dijalankan di kebuk wasap?",
           "options": [
-            "Wasap disedut keluar supaya tidak dihidu",
-            "Kebuk lebih terang",
+            "Kebuk lebih sejuk",
             "Kebuk lebih besar",
-            "Kebuk lebih sejuk"
+            "Wasap disedut keluar supaya tidak dihidu",
+            "Kebuk lebih terang"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -859,8 +859,8 @@
           "text": "Manakah tindakan yang salah selepas kemalangan kecil?",
           "options": [
             "Menyembunyikannya daripada guru",
-            "Melaporkan kepada guru",
             "Membasuh bahagian yang terkena",
+            "Melaporkan kepada guru",
             "Menghentikan aktiviti"
           ],
           "correctAnswer": 0,
@@ -873,12 +873,12 @@
           "id": "s3_c2_q21",
           "text": "Seorang murid tertumpah asid pada mejanya dan terus mengelapnya dengan tisu. Apakah masalahnya?",
           "options": [
-            "Tisu boleh bertindak balas dan tangannya terdedah",
-            "Meja menjadi kotor",
             "Tisu menjadi basah",
-            "Asid menjadi sejuk"
+            "Tisu boleh bertindak balas dan tangannya terdedah",
+            "Asid menjadi sejuk",
+            "Meja menjadi kotor"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -888,12 +888,12 @@
           "id": "s3_c2_q22",
           "text": "Kenapa peraturan makmal menetapkan jumlah bahan yang kecil untuk setiap kumpulan?",
           "options": [
-            "Kesan kemalangan menjadi lebih kecil dan lebih mudah dikawal",
-            "Bahan itu mahal sahaja",
             "Supaya cepat habis",
+            "Bahan itu mahal sahaja",
+            "Kesan kemalangan menjadi lebih kecil dan lebih mudah dikawal",
             "Supaya murid berkongsi"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -903,12 +903,12 @@
           "id": "s3_c2_q23",
           "text": "Manakah urutan tindakan yang betul apabila pakaian seseorang terbakar?",
           "options": [
-            "Berhenti, baring, gulingkan badan",
             "Berlari mencari air",
-            "Tiup api itu",
-            "Tanggalkan pakaian sambil berlari"
+            "Berhenti, baring, gulingkan badan",
+            "Tanggalkan pakaian sambil berlari",
+            "Tiup api itu"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -918,12 +918,12 @@
           "id": "s3_c2_q24",
           "text": "Kenapa botol bahan tidak boleh diisi semula dengan bahan lain?",
           "options": [
-            "Label lama akan mengelirukan dan menyebabkan kesilapan bahaya",
             "Botol menjadi lemah",
-            "Bahan menjadi sejuk",
-            "Botol menjadi berat"
+            "Label lama akan mengelirukan dan menyebabkan kesilapan bahaya",
+            "Botol menjadi berat",
+            "Bahan menjadi sejuk"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -933,12 +933,12 @@
           "id": "s3_c2_q25",
           "text": "Dua murid melaporkan bau tajam tetapi guru tidak menghidunya. Apakah tindakan yang betul?",
           "options": [
+            "Suruh murid keluar sahaja",
             "Anggap laporan itu benar dan periksa punca",
             "Abaikan kerana guru tidak menghidunya",
-            "Teruskan aktiviti",
-            "Suruh murid keluar sahaja"
+            "Teruskan aktiviti"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -949,8 +949,8 @@
           "text": "Kenapa peraturan makmal termasuk larangan berlari, walaupun berlari sendiri tidak berbahaya?",
           "options": [
             "Berlari menggabungkan risiko lain menjadi kemalangan besar",
-            "Berlari memenatkan",
             "Berlari membuat bising",
+            "Berlari memenatkan",
             "Berlari merosakkan lantai"
           ],
           "correctAnswer": 0,
@@ -963,12 +963,12 @@
           "id": "s3_c2_q27",
           "text": "Manakah situasi yang memerlukan pengosongan makmal serta-merta?",
           "options": [
-            "Kebocoran gas yang tidak dapat dihentikan",
+            "Lampu terpadam",
             "Sedikit air tumpah",
             "Radas kaca retak",
-            "Lampu terpadam"
+            "Kebocoran gas yang tidak dapat dihentikan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -978,12 +978,12 @@
           "id": "s3_c2_q28",
           "text": "Kenapa murid tidak dibenarkan membersihkan tumpahan bahan kimia sendiri?",
           "options": [
-            "Mereka mungkin tidak tahu bahan itu dan cara meneutralkannya",
-            "Mereka terlalu perlahan",
             "Mereka terlalu kecil",
-            "Mereka akan kotor"
+            "Mereka akan kotor",
+            "Mereka mungkin tidak tahu bahan itu dan cara meneutralkannya",
+            "Mereka terlalu perlahan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -993,12 +993,12 @@
           "id": "s3_c2_q29",
           "text": "Manakah yang menunjukkan budaya keselamatan yang matang di sebuah makmal?",
           "options": [
-            "Murid melaporkan hampir-kemalangan walaupun tiada siapa cedera",
-            "Murid hanya melaporkan kecederaan",
             "Murid tidak pernah bertanya",
-            "Murid bekerja pantas"
+            "Murid bekerja pantas",
+            "Murid hanya melaporkan kecederaan",
+            "Murid melaporkan hampir-kemalangan walaupun tiada siapa cedera"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -1008,12 +1008,12 @@
           "id": "s3_c2_q30",
           "text": "Kenapa peraturan keselamatan diulang setiap kali sebelum aktiviti baharu?",
           "options": [
-            "Setiap aktiviti mempunyai bahaya yang berbeza",
-            "Guru lupa",
             "Murid tidak mendengar",
-            "Untuk membuang masa"
+            "Untuk membuang masa",
+            "Setiap aktiviti mempunyai bahaya yang berbeza",
+            "Guru lupa"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -1023,12 +1023,12 @@
           "id": "s3_c2_q31",
           "text": "Sebuah makmal mempunyai rekod kemalangan kecil yang berulang di tempat yang sama. Apakah tindakan PALING berkesan?",
           "options": [
-            "Kaji punca di lokasi itu dan ubah susun aturnya",
-            "Ingatkan murid supaya berhati-hati",
+            "Tambah lebih banyak peraturan",
             "Kurangkan bilangan aktiviti",
-            "Tambah lebih banyak peraturan"
+            "Ingatkan murid supaya berhati-hati",
+            "Kaji punca di lokasi itu dan ubah susun aturnya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1038,12 +1038,12 @@
           "id": "s3_c2_q32",
           "text": "Kenapa peraturan \"beritahu guru\" muncul dalam hampir setiap prosedur kecemasan?",
           "options": [
-            "Guru mempunyai maklumat dan alat yang murid tiada",
             "Guru perlu tahu segalanya",
-            "Supaya murid tidak dipersalahkan",
-            "Supaya guru sibuk"
+            "Guru mempunyai maklumat dan alat yang murid tiada",
+            "Supaya guru sibuk",
+            "Supaya murid tidak dipersalahkan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1053,12 +1053,12 @@
           "id": "s3_c2_q33",
           "text": "Seorang murid mengikut semua peraturan tetapi bekerja dengan sangat pantas untuk siap dahulu. Apakah risiko tersembunyi?",
           "options": [
-            "Kelajuan mengurangkan ketelitian dan menyebabkan langkah terlepas",
             "Dia akan penat",
+            "Dia akan mendapat markah rendah",
             "Dia akan bosan",
-            "Dia akan mendapat markah rendah"
+            "Kelajuan mengurangkan ketelitian dan menyebabkan langkah terlepas"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1068,12 +1068,12 @@
           "id": "s3_c2_q34",
           "text": "Kenapa maklumat keselamatan bahan disimpan di makmal dan bukan di pejabat sahaja?",
           "options": [
-            "Ia diperlukan dalam beberapa saat semasa kecemasan",
-            "Ia terlalu tebal",
             "Pejabat terlalu jauh sahaja",
+            "Ia terlalu tebal",
+            "Ia diperlukan dalam beberapa saat semasa kecemasan",
             "Ia perlu dibaca setiap hari"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1084,8 +1084,8 @@
           "text": "Manakah kombinasi peraturan yang melindungi terhadap kebakaran dengan PALING lengkap?",
           "options": [
             "Bahan mudah terbakar disimpan jauh, rambut diikat, laluan keluar bebas",
-            "Apron dan sarung tangan sahaja",
             "Cermin mata dan kasut tertutup",
+            "Apron dan sarung tangan sahaja",
             "Meja bersih sahaja"
           ],
           "correctAnswer": 0,
@@ -1098,12 +1098,12 @@
           "id": "s3_c2_q36",
           "text": "Kenapa larangan makan di makmal terpakai walaupun untuk aktiviti tanpa bahan kimia?",
           "options": [
-            "Sisa bahan daripada kelas sebelumnya mungkin masih ada",
-            "Makanan menjadi sejuk",
             "Guru tidak suka",
-            "Meja menjadi penuh"
+            "Meja menjadi penuh",
+            "Makanan menjadi sejuk",
+            "Sisa bahan daripada kelas sebelumnya mungkin masih ada"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1113,12 +1113,12 @@
           "id": "s3_c2_q37",
           "text": "Manakah pernyataan yang PALING tepat tentang peralatan keselamatan?",
           "options": [
-            "Ia mengurangkan kesan kemalangan tetapi tidak menghalangnya",
-            "Ia menghalang semua kemalangan",
             "Ia hanya untuk kelihatan selamat",
-            "Ia menggantikan keperluan berhati-hati"
+            "Ia menggantikan keperluan berhati-hati",
+            "Ia menghalang semua kemalangan",
+            "Ia mengurangkan kesan kemalangan tetapi tidak menghalangnya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1129,9 +1129,9 @@
           "text": "Kenapa prosedur kecemasan dilatih dan bukan hanya dibaca?",
           "options": [
             "Dalam kecemasan orang bertindak mengikut latihan, bukan ingatan bacaan",
-            "Membaca terlalu lambat",
+            "Bacaan tidak sah",
             "Latihan lebih seronok",
-            "Bacaan tidak sah"
+            "Membaca terlalu lambat"
           ],
           "correctAnswer": 0,
           "difficulty": "ultra",
@@ -1143,12 +1143,12 @@
           "id": "s3_c2_q39",
           "text": "Sebuah makmal memiliki peralatan lengkap tetapi laluan keluarnya dihalang almari. Apakah kesan sebenarnya?",
           "options": [
-            "Semua peralatan lain menjadi kurang bermakna dalam kecemasan besar",
             "Makmal nampak kemas",
-            "Ruang bertambah",
-            "Almari lebih selamat"
+            "Almari lebih selamat",
+            "Semua peralatan lain menjadi kurang bermakna dalam kecemasan besar",
+            "Ruang bertambah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1159,8 +1159,8 @@
           "text": "Manakah kesimpulan yang PALING tepat tentang keselamatan makmal?",
           "options": [
             "Ia gabungan reka bentuk, peraturan dan tabiat harian",
-            "Ia bergantung pada peraturan sahaja",
             "Ia bergantung pada peralatan sahaja",
+            "Ia bergantung pada peraturan sahaja",
             "Ia bergantung pada guru sahaja"
           ],
           "correctAnswer": 0,
@@ -1196,9 +1196,9 @@
           "text": "Apakah kegunaan gigi taring?",
           "options": [
             "Mengoyak makanan",
-            "Memotong makanan",
+            "Menelan makanan",
             "Mengisar makanan",
-            "Menelan makanan"
+            "Memotong makanan"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -1210,12 +1210,12 @@
           "id": "s3_c3_q3",
           "text": "Apakah kegunaan gigi geraham?",
           "options": [
-            "Mengunyah dan mengisar makanan",
+            "Menelan makanan",
             "Memotong makanan",
             "Mengoyak makanan",
-            "Menelan makanan"
+            "Mengunyah dan mengisar makanan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1225,12 +1225,12 @@
           "id": "s3_c3_q4",
           "text": "Berapa kali sehari kita patut memberus gigi?",
           "options": [
-            "Dua kali",
-            "Sekali seminggu",
             "Sekali sebulan",
+            "Sekali seminggu",
+            "Dua kali",
             "Tiga kali seminggu"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1241,9 +1241,9 @@
           "text": "Apakah yang menyebabkan gigi berlubang?",
           "options": [
             "Sisa makanan dan bakteria",
-            "Air masak",
             "Sayur",
-            "Berus gigi"
+            "Berus gigi",
+            "Air masak"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -1255,12 +1255,12 @@
           "id": "s3_c3_q6",
           "text": "Manakah makanan yang baik untuk gigi?",
           "options": [
-            "Susu",
+            "Kek",
             "Gula-gula",
             "Air manis",
-            "Kek"
+            "Susu"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1271,9 +1271,9 @@
           "text": "Apakah gigi yang tumbuh pada kanak-kanak dan kemudian tanggal?",
           "options": [
             "Gigi susu",
-            "Gigi kekal",
+            "Gigi palsu",
             "Gigi geraham besar",
-            "Gigi palsu"
+            "Gigi kekal"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -1285,12 +1285,12 @@
           "id": "s3_c3_q8",
           "text": "Kenapa kita perlu berjumpa doktor gigi?",
           "options": [
-            "Untuk memeriksa dan merawat gigi lebih awal",
             "Untuk mencabut semua gigi",
-            "Untuk membeli berus gigi",
-            "Untuk mewarnakan gigi"
+            "Untuk memeriksa dan merawat gigi lebih awal",
+            "Untuk mewarnakan gigi",
+            "Untuk membeli berus gigi"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1300,12 +1300,12 @@
           "id": "s3_c3_q9",
           "text": "Apakah yang perlu digunakan bersama berus gigi?",
           "options": [
-            "Ubat gigi",
-            "Sabun",
+            "Gula",
             "Minyak",
-            "Gula"
+            "Sabun",
+            "Ubat gigi"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1316,9 +1316,9 @@
           "text": "Manakah bahagian gigi yang kelihatan di dalam mulut?",
           "options": [
             "Mahkota",
-            "Akar",
+            "Lidah",
             "Gusi",
-            "Lidah"
+            "Akar"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -1357,8 +1357,8 @@
           "options": [
             "Sisa makanan tinggal sepanjang malam tanpa dibasuh air liur",
             "Malam lebih sejuk",
-            "Berus lebih bersih pada malam",
-            "Gigi lebih lembut pada malam"
+            "Gigi lebih lembut pada malam",
+            "Berus lebih bersih pada malam"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -1380,12 +1380,12 @@
           "id": "s3_c3_q15",
           "text": "Manakah urutan gigi dari hadapan ke belakang mulut?",
           "options": [
-            "Kacip, taring, geraham",
             "Geraham, taring, kacip",
             "Taring, kacip, geraham",
-            "Geraham, kacip, taring"
+            "Geraham, kacip, taring",
+            "Kacip, taring, geraham"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -1395,12 +1395,12 @@
           "id": "s3_c3_q16",
           "text": "Kenapa manusia mempunyai ketiga-tiga jenis gigi?",
           "options": [
+            "Untuk minum air",
             "Kita makan pelbagai jenis makanan",
-            "Untuk kelihatan cantik",
             "Untuk bercakap",
-            "Untuk minum air"
+            "Untuk kelihatan cantik"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -1411,9 +1411,9 @@
           "text": "Apakah yang berlaku jika gigi berlubang tidak dirawat?",
           "options": [
             "Lubang membesar dan menyebabkan sakit",
+            "Gigi menjadi putih",
             "Gigi menjadi kuat",
-            "Lubang menutup sendiri",
-            "Gigi menjadi putih"
+            "Lubang menutup sendiri"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -1435,12 +1435,12 @@
           "id": "s3_c3_q19",
           "text": "Kenapa mengunyah dengan betul membantu pencernaan?",
           "options": [
-            "Makanan yang halus lebih mudah dicerna",
-            "Makanan menjadi sejuk",
             "Makanan menjadi manis",
-            "Makanan menjadi ringan"
+            "Makanan yang halus lebih mudah dicerna",
+            "Makanan menjadi ringan",
+            "Makanan menjadi sejuk"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -1450,12 +1450,12 @@
           "id": "s3_c3_q20",
           "text": "Manakah tabiat yang PALING merosakkan gigi?",
           "options": [
-            "Makan gula-gula kerap sepanjang hari",
             "Minum air masak",
-            "Makan sayur",
-            "Memberus gigi"
+            "Memberus gigi",
+            "Makan gula-gula kerap sepanjang hari",
+            "Makan sayur"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -1475,12 +1475,12 @@
           "id": "s3_c3_q22",
           "text": "Kenapa gigi geraham mempunyai permukaan yang berbonjol dan bukan rata?",
           "options": [
-            "Bonjol menghancurkan makanan dengan lebih berkesan",
             "Bonjol menjadikannya cantik",
+            "Bonjol menghancurkan makanan dengan lebih berkesan",
             "Bonjol menjadikannya ringan",
             "Bonjol menjadikannya tajam"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -1490,12 +1490,12 @@
           "id": "s3_c3_q23",
           "text": "Dua orang makan makanan yang sama. Seorang memberus gigi, seorang tidak. Apakah perbezaan selepas setahun?",
           "options": [
+            "Yang memberus lebih banyak lubang",
             "Yang tidak memberus lebih banyak gigi berlubang",
             "Kedua-duanya sama",
-            "Yang memberus lebih banyak lubang",
             "Tiada perbezaan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -1515,12 +1515,12 @@
           "id": "s3_c3_q25",
           "text": "Kenapa haiwan pemakan tumbuhan mempunyai geraham yang besar dan rata?",
           "options": [
-            "Rumput perlu dikisar lama sebelum boleh dicerna",
             "Untuk mengoyak daging",
+            "Rumput perlu dikisar lama sebelum boleh dicerna",
             "Untuk memotong ranting",
             "Untuk minum air"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -1531,9 +1531,9 @@
           "text": "Manakah kesimpulan yang betul tentang bentuk gigi?",
           "options": [
             "Bentuk gigi sepadan dengan jenis makanan haiwan itu",
-            "Semua haiwan mempunyai gigi yang sama",
             "Bentuk gigi bergantung pada saiz badan",
-            "Bentuk gigi berubah setiap tahun"
+            "Bentuk gigi berubah setiap tahun",
+            "Semua haiwan mempunyai gigi yang sama"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -1555,12 +1555,12 @@
           "id": "s3_c3_q28",
           "text": "Kenapa doktor gigi mengesyorkan pemeriksaan setiap enam bulan?",
           "options": [
-            "Masalah dikesan sebelum menjadi teruk",
             "Supaya gigi bersih",
             "Supaya doktor sibuk",
+            "Masalah dikesan sebelum menjadi teruk",
             "Supaya gigi putih"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -1570,12 +1570,12 @@
           "id": "s3_c3_q29",
           "text": "Apakah kesan kehilangan gigi geraham kepada pencernaan?",
           "options": [
-            "Makanan tidak dikisar dengan baik dan lebih sukar dicerna",
-            "Makanan menjadi sejuk",
             "Makanan menjadi manis",
-            "Tiada kesan langsung"
+            "Tiada kesan langsung",
+            "Makanan tidak dikisar dengan baik dan lebih sukar dicerna",
+            "Makanan menjadi sejuk"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -1585,12 +1585,12 @@
           "id": "s3_c3_q30",
           "text": "Kenapa air liur penting untuk kesihatan gigi?",
           "options": [
-            "Ia membasuh sisa makanan dan mengurangkan asid",
             "Ia menjadikan gigi putih",
+            "Ia membasuh sisa makanan dan mengurangkan asid",
             "Ia menguatkan gusi sahaja",
             "Ia menjadikan mulut sejuk"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -1600,12 +1600,12 @@
           "id": "s3_c3_q31",
           "text": "Kenapa manusia dianggap omnivor berdasarkan struktur giginya?",
           "options": [
-            "Kita mempunyai gigi untuk memotong, mengoyak dan mengisar",
-            "Kita mempunyai banyak gigi",
             "Gigi kita putih",
-            "Gigi kita kecil"
+            "Gigi kita kecil",
+            "Kita mempunyai banyak gigi",
+            "Kita mempunyai gigi untuk memotong, mengoyak dan mengisar"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1625,12 +1625,12 @@
           "id": "s3_c3_q33",
           "text": "Dua kanak-kanak makan gula-gula yang sama banyak. Seorang makan sekali gus, seorang makan sedikit-sedikit sepanjang hari. Siapa lebih berisiko?",
           "options": [
-            "Yang makan sedikit-sedikit sepanjang hari",
             "Yang makan sekali gus",
-            "Kedua-duanya sama",
-            "Bergantung pada rasa gula-gula"
+            "Yang makan sedikit-sedikit sepanjang hari",
+            "Bergantung pada rasa gula-gula",
+            "Kedua-duanya sama"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1650,12 +1650,12 @@
           "id": "s3_c3_q35",
           "text": "Kenapa gigi kekal tidak tumbuh semula jika tanggal?",
           "options": [
+            "Gigi kekal terlalu kuat",
             "Badan hanya menghasilkan dua set gigi sepanjang hidup",
-            "Gigi kekal terlalu besar",
             "Gusi menjadi keras",
-            "Gigi kekal terlalu kuat"
+            "Gigi kekal terlalu besar"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1665,12 +1665,12 @@
           "id": "s3_c3_q36",
           "text": "Manakah bukti PALING kuat bahawa bakteria menyebabkan gigi berlubang?",
           "options": [
-            "Mengurangkan bakteria dengan memberus mengurangkan kadar berlubang",
             "Gigi berwarna putih",
-            "Gula rasa manis",
-            "Gigi tumbuh perlahan"
+            "Mengurangkan bakteria dengan memberus mengurangkan kadar berlubang",
+            "Gigi tumbuh perlahan",
+            "Gula rasa manis"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1690,12 +1690,12 @@
           "id": "s3_c3_q38",
           "text": "Kenapa ubat gigi berfluorida disyorkan?",
           "options": [
+            "Fluorida membunuh semua bakteria",
             "Fluorida menguatkan lapisan luar gigi terhadap asid",
             "Fluorida memutihkan gigi",
-            "Fluorida menyejukkan mulut",
-            "Fluorida membunuh semua bakteria"
+            "Fluorida menyejukkan mulut"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1705,12 +1705,12 @@
           "id": "s3_c3_q39",
           "text": "Sebuah kampung bertukar daripada makanan tradisional kepada makanan bergula. Apakah kesan yang dijangka kepada gigi penduduknya?",
           "options": [
-            "Kadar gigi berlubang meningkat",
-            "Gigi menjadi lebih kuat",
             "Tiada perubahan",
-            "Gigi tumbuh lebih cepat"
+            "Gigi menjadi lebih kuat",
+            "Gigi tumbuh lebih cepat",
+            "Kadar gigi berlubang meningkat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1720,12 +1720,12 @@
           "id": "s3_c3_q40",
           "text": "Manakah kesimpulan yang PALING tepat tentang penjagaan gigi?",
           "options": [
-            "Ia gabungan pembersihan, pemakanan dan pemeriksaan",
-            "Memberus sahaja sudah cukup",
             "Elakkan gula sahaja sudah cukup",
-            "Pemeriksaan sahaja sudah cukup"
+            "Memberus sahaja sudah cukup",
+            "Pemeriksaan sahaja sudah cukup",
+            "Ia gabungan pembersihan, pemakanan dan pemeriksaan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1742,12 +1742,12 @@
           "id": "s3_c4_q1",
           "text": "Apakah peringkat pertama dalam kitaran hidup ayam?",
           "options": [
-            "Telur",
-            "Anak ayam",
             "Ayam dewasa",
+            "Anak ayam",
+            "Telur",
             "Bulu"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1772,12 +1772,12 @@
           "id": "s3_c4_q3",
           "text": "Apakah peringkat selepas ulat beluncas?",
           "options": [
-            "Kepompong",
-            "Telur",
+            "Anak rama-rama",
             "Rama-rama dewasa",
-            "Anak rama-rama"
+            "Telur",
+            "Kepompong"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1787,12 +1787,12 @@
           "id": "s3_c4_q4",
           "text": "Apakah peringkat pertama dalam kitaran hidup katak?",
           "options": [
-            "Telur",
-            "Berudu",
             "Katak muda",
-            "Katak dewasa"
+            "Katak dewasa",
+            "Berudu",
+            "Telur"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1802,12 +1802,12 @@
           "id": "s3_c4_q5",
           "text": "Apakah nama peringkat kedua dalam kitaran hidup katak?",
           "options": [
-            "Berudu",
-            "Kepompong",
             "Ulat",
-            "Anak katak"
+            "Anak katak",
+            "Berudu",
+            "Kepompong"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1817,12 +1817,12 @@
           "id": "s3_c4_q6",
           "text": "Haiwan manakah melahirkan anak, bukan bertelur?",
           "options": [
-            "Kucing",
-            "Ayam",
             "Katak",
-            "Rama-rama"
+            "Rama-rama",
+            "Ayam",
+            "Kucing"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1832,12 +1832,12 @@
           "id": "s3_c4_q7",
           "text": "Haiwan manakah bertelur?",
           "options": [
-            "Ayam",
+            "Kambing",
             "Kucing",
             "Lembu",
-            "Kambing"
+            "Ayam"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1848,9 +1848,9 @@
           "text": "Apakah maksud kitaran hidup?",
           "options": [
             "Peringkat perubahan haiwan dari lahir hingga dewasa",
+            "Warna haiwan",
             "Umur haiwan",
-            "Berat haiwan",
-            "Warna haiwan"
+            "Berat haiwan"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -1862,12 +1862,12 @@
           "id": "s3_c4_q9",
           "text": "Di manakah berudu tinggal?",
           "options": [
-            "Dalam air",
             "Di atas pokok",
             "Dalam tanah",
-            "Di udara"
+            "Di udara",
+            "Dalam air"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1877,12 +1877,12 @@
           "id": "s3_c4_q10",
           "text": "Berapa peringkat dalam kitaran hidup rama-rama?",
           "options": [
-            "4",
             "2",
             "3",
+            "4",
             "5"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1892,12 +1892,12 @@
           "id": "s3_c4_q11",
           "text": "Kenapa berudu perlu tinggal dalam air?",
           "options": [
-            "Ia bernafas menggunakan insang",
-            "Ia takut cahaya",
             "Ia terlalu kecil",
-            "Ia mencari kawan"
+            "Ia bernafas menggunakan insang",
+            "Ia mencari kawan",
+            "Ia takut cahaya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -1917,12 +1917,12 @@
           "id": "s3_c4_q13",
           "text": "Apakah perubahan PALING besar antara berudu dan katak dewasa?",
           "options": [
+            "Berudu ada kaki lebih banyak",
             "Berudu bernafas dengan insang, katak dewasa dengan peparu",
-            "Berudu lebih berwarna",
             "Katak lebih kecil",
-            "Berudu ada kaki lebih banyak"
+            "Berudu lebih berwarna"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -1933,9 +1933,9 @@
           "text": "Kenapa rama-rama meletakkan telurnya pada daun?",
           "options": [
             "Ulat yang menetas terus mendapat makanan",
+            "Daun lebih tinggi",
             "Daun lebih selamat sahaja",
-            "Daun lebih cantik",
-            "Daun lebih tinggi"
+            "Daun lebih cantik"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -1957,12 +1957,12 @@
           "id": "s3_c4_q16",
           "text": "Manakah pasangan haiwan dan cara pembiakannya yang BETUL?",
           "options": [
+            "Kedua-duanya bertelur",
             "Katak bertelur, kucing melahirkan anak",
             "Katak melahirkan anak, kucing bertelur",
-            "Kedua-duanya bertelur",
             "Kedua-duanya melahirkan anak"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -1972,12 +1972,12 @@
           "id": "s3_c4_q17",
           "text": "Kenapa ulat beluncas makan dengan banyak?",
           "options": [
-            "Untuk mengumpul tenaga bagi peringkat kepompong",
             "Untuk menjadi berat sahaja",
+            "Untuk menakutkan burung",
             "Untuk kelihatan besar",
-            "Untuk menakutkan burung"
+            "Untuk mengumpul tenaga bagi peringkat kepompong"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -1997,12 +1997,12 @@
           "id": "s3_c4_q19",
           "text": "Kenapa anak kucing lebih selamat daripada anak katak pada peringkat awal?",
           "options": [
-            "Ibu kucing menjaga anaknya",
+            "Anak kucing berbulu",
             "Anak kucing lebih besar",
             "Anak kucing lebih laju",
-            "Anak kucing berbulu"
+            "Ibu kucing menjaga anaknya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -2013,9 +2013,9 @@
           "text": "Manakah kitaran hidup yang mempunyai perubahan bentuk paling ketara?",
           "options": [
             "Rama-rama",
+            "Lembu",
             "Kucing",
-            "Ayam",
-            "Lembu"
+            "Ayam"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -2037,12 +2037,12 @@
           "id": "s3_c4_q22",
           "text": "Kenapa haiwan yang bertelur banyak selalunya tidak menjaga anaknya?",
           "options": [
-            "Bilangan yang banyak menggantikan penjagaan",
-            "Ia malas",
+            "Ia tidak nampak telurnya",
             "Telur terlalu kecil",
-            "Ia tidak nampak telurnya"
+            "Bilangan yang banyak menggantikan penjagaan",
+            "Ia malas"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2054,8 +2054,8 @@
           "options": [
             "Ia masih bernafas dengan insang",
             "Ia terlalu kecil",
-            "Ia tidak boleh melompat",
-            "Ia kelaparan"
+            "Ia kelaparan",
+            "Ia tidak boleh melompat"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -2078,9 +2078,9 @@
           "text": "Kenapa peringkat kepompong penting dalam kitaran hidup rama-rama?",
           "options": [
             "Badan ulat disusun semula menjadi rama-rama",
+            "Ia bersembunyi daripada hujan",
             "Ia berehat sahaja",
-            "Ia menyimpan air",
-            "Ia bersembunyi daripada hujan"
+            "Ia menyimpan air"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -2092,12 +2092,12 @@
           "id": "s3_c4_q26",
           "text": "Manakah persamaan antara kitaran hidup katak dan rama-rama?",
           "options": [
-            "Kedua-duanya berubah bentuk dengan ketara",
+            "Kedua-duanya berbulu",
             "Kedua-duanya hidup dalam air sepanjang hidup",
             "Kedua-duanya melahirkan anak",
-            "Kedua-duanya berbulu"
+            "Kedua-duanya berubah bentuk dengan ketara"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2117,12 +2117,12 @@
           "id": "s3_c4_q28",
           "text": "Kenapa kitaran hidup penting difahami oleh petani?",
           "options": [
-            "Ia membantu menjaga haiwan pada setiap peringkat",
-            "Ia menjadikan haiwan besar",
             "Ia menjimatkan wang sahaja",
+            "Ia menjadikan haiwan besar",
+            "Ia membantu menjaga haiwan pada setiap peringkat",
             "Ia menjadikan haiwan cantik"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2132,12 +2132,12 @@
           "id": "s3_c4_q29",
           "text": "Apakah kesan jika semua ulat beluncas dibunuh di sebuah kawasan?",
           "options": [
-            "Rama-rama akan hilang dari kawasan itu",
             "Rama-rama akan bertambah",
             "Tiada kesan",
-            "Bunga akan bertambah"
+            "Bunga akan bertambah",
+            "Rama-rama akan hilang dari kawasan itu"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2147,12 +2147,12 @@
           "id": "s3_c4_q30",
           "text": "Manakah kesimpulan yang betul tentang kitaran hidup?",
           "options": [
-            "Setiap peringkat mempunyai keperluan yang berbeza",
             "Semua peringkat sama sahaja",
             "Hanya peringkat dewasa penting",
-            "Kitaran hidup sama bagi semua haiwan"
+            "Kitaran hidup sama bagi semua haiwan",
+            "Setiap peringkat mempunyai keperluan yang berbeza"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2162,12 +2162,12 @@
           "id": "s3_c4_q31",
           "text": "Sebuah kolam dicemari bahan kimia yang membunuh berudu tetapi tidak katak dewasa. Apakah kesan jangka panjang?",
           "options": [
-            "Populasi katak akhirnya menurun kerana tiada gantian",
+            "Katak berpindah ke darat sepenuhnya",
             "Katak dewasa menjadi lebih ramai",
             "Tiada kesan",
-            "Katak berpindah ke darat sepenuhnya"
+            "Populasi katak akhirnya menurun kerana tiada gantian"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2188,9 +2188,9 @@
           "text": "Kenapa haiwan yang melahirkan anak selalunya mempunyai bilangan anak yang sedikit?",
           "options": [
             "Penjagaan ibu menaikkan peluang setiap anak hidup",
-            "Ia tidak mampu melahirkan banyak",
+            "Ia hidup lebih lama",
             "Anaknya terlalu besar sahaja",
-            "Ia hidup lebih lama"
+            "Ia tidak mampu melahirkan banyak"
           ],
           "correctAnswer": 0,
           "difficulty": "ultra",
@@ -2202,12 +2202,12 @@
           "id": "s3_c4_q34",
           "text": "Manakah kelebihan kitaran hidup yang mempunyai peringkat berbeza bentuk seperti rama-rama?",
           "options": [
-            "Peringkat muda dan dewasa tidak bersaing untuk makanan yang sama",
+            "Ia lebih pantas",
             "Ia kelihatan menarik",
-            "Ia menjimatkan tenaga",
-            "Ia lebih pantas"
+            "Peringkat muda dan dewasa tidak bersaing untuk makanan yang sama",
+            "Ia menjimatkan tenaga"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2227,12 +2227,12 @@
           "id": "s3_c4_q36",
           "text": "Kenapa memusnahkan tempat pembiakan lebih memudaratkan populasi haiwan daripada memburu haiwan dewasa?",
           "options": [
-            "Ia menghentikan seluruh generasi baharu",
+            "Haiwan dewasa lebih ramai",
             "Haiwan dewasa lebih kuat",
-            "Tempat pembiakan lebih besar",
-            "Haiwan dewasa lebih ramai"
+            "Ia menghentikan seluruh generasi baharu",
+            "Tempat pembiakan lebih besar"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2267,12 +2267,12 @@
           "id": "s3_c4_q39",
           "text": "Kenapa kajian kitaran hidup penting untuk mengawal serangga perosak?",
           "options": [
-            "Peringkat tertentu lebih mudah dikawal daripada yang lain",
-            "Serangga dewasa tidak berbahaya",
+            "Kepompong sangat kuat",
             "Telur tidak boleh dilihat",
-            "Kepompong sangat kuat"
+            "Serangga dewasa tidak berbahaya",
+            "Peringkat tertentu lebih mudah dikawal daripada yang lain"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2282,12 +2282,12 @@
           "id": "s3_c4_q40",
           "text": "Manakah kesimpulan yang PALING tepat tentang kitaran hidup haiwan?",
           "options": [
+            "Peringkat dewasa sentiasa paling lama",
             "Bentuk kitaran itu sesuai dengan cara haiwan itu bertahan hidup",
             "Semua kitaran hidup sama panjang",
-            "Kitaran hidup tidak berubah antara spesies",
-            "Peringkat dewasa sentiasa paling lama"
+            "Kitaran hidup tidak berubah antara spesies"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2304,12 +2304,12 @@
           "id": "s3_c5_q1",
           "text": "Apakah peringkat pertama dalam kitaran hidup tumbuhan berbunga?",
           "options": [
-            "Biji benih",
-            "Anak pokok",
             "Pokok dewasa",
-            "Bunga"
+            "Bunga",
+            "Anak pokok",
+            "Biji benih"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -2320,9 +2320,9 @@
           "text": "Apakah maksud percambahan?",
           "options": [
             "Biji benih mula bertunas",
-            "Bunga gugur",
+            "Buah masak",
             "Daun menjadi kuning",
-            "Buah masak"
+            "Bunga gugur"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -2334,12 +2334,12 @@
           "id": "s3_c5_q3",
           "text": "Apakah yang diperlukan biji benih untuk bercambah?",
           "options": [
-            "Air",
-            "Bunyi",
             "Cahaya terang",
-            "Warna"
+            "Air",
+            "Warna",
+            "Bunyi"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -2364,12 +2364,12 @@
           "id": "s3_c5_q5",
           "text": "Apakah peringkat selepas anak pokok?",
           "options": [
-            "Pokok dewasa",
-            "Biji benih",
             "Bunga sahaja",
-            "Buah sahaja"
+            "Biji benih",
+            "Buah sahaja",
+            "Pokok dewasa"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -2379,12 +2379,12 @@
           "id": "s3_c5_q6",
           "text": "Apakah yang terhasil selepas bunga didebungakan?",
           "options": [
+            "Batang baharu",
             "Buah dan biji",
             "Akar baharu",
-            "Daun baharu",
-            "Batang baharu"
+            "Daun baharu"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -2394,12 +2394,12 @@
           "id": "s3_c5_q7",
           "text": "Cara manakah biji benih tersebar oleh angin?",
           "options": [
+            "Biji dalam air sahaja",
             "Biji ringan bersayap",
             "Biji berat",
-            "Biji dalam tanah",
-            "Biji dalam air sahaja"
+            "Biji dalam tanah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -2410,9 +2410,9 @@
           "text": "Cara manakah biji tersebar oleh haiwan?",
           "options": [
             "Buah dimakan dan biji dikeluarkan di tempat lain",
-            "Biji terbang sendiri",
             "Biji meletup",
-            "Biji terapung"
+            "Biji terapung",
+            "Biji terbang sendiri"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -2424,12 +2424,12 @@
           "id": "s3_c5_q9",
           "text": "Manakah tumbuhan yang membiak menggunakan keratan batang?",
           "options": [
-            "Pokok bunga raya",
+            "Pokok kacang",
             "Pokok padi",
-            "Pokok jagung",
-            "Pokok kacang"
+            "Pokok bunga raya",
+            "Pokok jagung"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -2439,12 +2439,12 @@
           "id": "s3_c5_q10",
           "text": "Apakah yang berlaku kepada biji benih yang tidak mendapat air?",
           "options": [
-            "Ia tidak bercambah",
+            "Ia menjadi buah",
             "Ia bercambah cepat",
-            "Ia menjadi bunga",
-            "Ia menjadi buah"
+            "Ia tidak bercambah",
+            "Ia menjadi bunga"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -2464,12 +2464,12 @@
           "id": "s3_c5_q12",
           "text": "Kenapa biji benih tidak memerlukan cahaya untuk bercambah?",
           "options": [
-            "Ia menggunakan makanan yang tersimpan di dalamnya",
             "Cahaya merosakkan biji",
             "Ia terlalu kecil",
-            "Ia berada dalam tanah"
+            "Ia berada dalam tanah",
+            "Ia menggunakan makanan yang tersimpan di dalamnya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -2479,12 +2479,12 @@
           "id": "s3_c5_q13",
           "text": "Bilakah anak pokok mula memerlukan cahaya?",
           "options": [
-            "Selepas daun pertama terbentuk",
             "Sebelum bercambah",
-            "Semasa masih dalam biji",
-            "Tidak pernah"
+            "Tidak pernah",
+            "Selepas daun pertama terbentuk",
+            "Semasa masih dalam biji"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -2504,12 +2504,12 @@
           "id": "s3_c5_q15",
           "text": "Kenapa penyebaran biji penting kepada tumbuhan?",
           "options": [
-            "Anak pokok tidak bersaing dengan pokok induk",
-            "Biji menjadi ringan",
             "Biji menjadi cantik",
-            "Biji menjadi manis"
+            "Anak pokok tidak bersaing dengan pokok induk",
+            "Biji menjadi manis",
+            "Biji menjadi ringan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -2519,12 +2519,12 @@
           "id": "s3_c5_q16",
           "text": "Manakah pasangan cara penyebaran yang BETUL?",
           "options": [
-            "Kelapa dan air",
-            "Kelapa dan angin",
             "Buah getah dan air",
-            "Biji dandelion dan haiwan"
+            "Biji dandelion dan haiwan",
+            "Kelapa dan angin",
+            "Kelapa dan air"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -2534,12 +2534,12 @@
           "id": "s3_c5_q17",
           "text": "Kenapa petani merendam biji benih sebelum menanam?",
           "options": [
+            "Untuk mewarnakannya",
             "Untuk mempercepat percambahan",
             "Untuk membersihkannya",
-            "Untuk menjadikannya berat",
-            "Untuk mewarnakannya"
+            "Untuk menjadikannya berat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -2559,12 +2559,12 @@
           "id": "s3_c5_q19",
           "text": "Apakah kelebihan membiak dengan keratan batang berbanding biji benih?",
           "options": [
-            "Pokok baharu tumbuh lebih cepat dan serupa dengan induknya",
+            "Ia lebih berat",
             "Ia lebih murah",
-            "Ia lebih cantik",
-            "Ia lebih berat"
+            "Pokok baharu tumbuh lebih cepat dan serupa dengan induknya",
+            "Ia lebih cantik"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -2574,12 +2574,12 @@
           "id": "s3_c5_q20",
           "text": "Kenapa buah selalunya manis dan berwarna cerah?",
           "options": [
-            "Untuk menarik haiwan supaya memakannya dan menyebarkan biji",
-            "Untuk menakutkan haiwan",
             "Untuk menyerap air",
-            "Untuk menyokong batang"
+            "Untuk menyokong batang",
+            "Untuk menarik haiwan supaya memakannya dan menyebarkan biji",
+            "Untuk menakutkan haiwan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -2589,12 +2589,12 @@
           "id": "s3_c5_q21",
           "text": "Tiga bekas biji benih diletakkan: satu dengan air, satu kering, satu direndam sepenuhnya. Manakah bercambah paling baik?",
           "options": [
+            "Kesemuanya sama",
             "Yang lembap dengan air secukupnya",
-            "Yang kering",
             "Yang direndam sepenuhnya",
-            "Kesemuanya sama"
+            "Yang kering"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2614,12 +2614,12 @@
           "id": "s3_c5_q23",
           "text": "Kenapa biji kelapa mempunyai sabut yang tebal dan ringan?",
           "options": [
-            "Supaya ia terapung dan hanyut ke pantai lain",
+            "Supaya ia keras sahaja",
             "Supaya ia berat",
-            "Supaya ia manis",
-            "Supaya ia keras sahaja"
+            "Supaya ia terapung dan hanyut ke pantai lain",
+            "Supaya ia manis"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2639,12 +2639,12 @@
           "id": "s3_c5_q25",
           "text": "Kenapa biji buah getah tersebar dengan letupan buahnya?",
           "options": [
+            "Letupan menghasilkan bunyi amaran",
             "Letupan melontar biji jauh dari pokok induk",
-            "Letupan membunuh serangga",
             "Letupan membuka kulit biji",
-            "Letupan menghasilkan bunyi amaran"
+            "Letupan membunuh serangga"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2654,12 +2654,12 @@
           "id": "s3_c5_q26",
           "text": "Manakah keadaan yang menghalang percambahan?",
           "options": [
+            "Tanah yang gembur",
             "Tanah yang tenggelam air sepenuhnya",
             "Tanah yang lembap",
-            "Tanah yang gembur",
             "Suhu yang sederhana"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2679,12 +2679,12 @@
           "id": "s3_c5_q28",
           "text": "Kenapa hutan yang ditebang mengambil masa lama untuk pulih?",
           "options": [
+            "Tanah menjadi keras selamanya",
             "Pokok besar mengambil bertahun-tahun untuk tumbuh dari biji",
             "Biji tidak wujud lagi",
-            "Tanah menjadi keras selamanya",
             "Hujan berhenti"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2694,12 +2694,12 @@
           "id": "s3_c5_q29",
           "text": "Apakah kesan jika semua haiwan pemakan buah hilang dari sebuah hutan?",
           "options": [
-            "Banyak biji tidak tersebar dan hanya tumbuh di bawah induknya",
-            "Pokok akan bertambah cepat",
+            "Tiada kesan",
             "Buah akan menjadi manis",
-            "Tiada kesan"
+            "Banyak biji tidak tersebar dan hanya tumbuh di bawah induknya",
+            "Pokok akan bertambah cepat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2709,12 +2709,12 @@
           "id": "s3_c5_q30",
           "text": "Manakah kesimpulan yang betul tentang percambahan?",
           "options": [
+            "Ia hanya memerlukan tanah",
             "Ia memerlukan air, udara dan suhu sesuai, tetapi belum memerlukan cahaya",
             "Ia memerlukan cahaya dahulu",
-            "Ia hanya memerlukan tanah",
             "Ia berlaku tanpa apa-apa keperluan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2724,12 +2724,12 @@
           "id": "s3_c5_q31",
           "text": "Dua kumpulan biji ditanam pada kedalaman berbeza: 1 cm dan 15 cm. Manakah lebih berjaya dan kenapa?",
           "options": [
-            "1 cm, kerana tunas dapat mencapai permukaan sebelum makanan simpanan habis",
             "15 cm, kerana lebih selamat",
+            "Bergantung pada warna biji",
             "Kedua-duanya sama",
-            "Bergantung pada warna biji"
+            "1 cm, kerana tunas dapat mencapai permukaan sebelum makanan simpanan habis"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2749,12 +2749,12 @@
           "id": "s3_c5_q33",
           "text": "Kenapa tumbuhan menghasilkan lebih banyak biji daripada bilangan pokok yang akhirnya tumbuh?",
           "options": [
+            "Biji menjadi makanan sahaja",
             "Kebanyakan biji tidak sampai ke tempat yang sesuai",
             "Biji mudah dibuat",
-            "Biji menjadi makanan sahaja",
             "Pokok tidak boleh mengira"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2764,12 +2764,12 @@
           "id": "s3_c5_q34",
           "text": "Manakah kelebihan pembiakan menggunakan biji berbanding keratan batang?",
           "options": [
-            "Anak pokok mempunyai ciri yang lebih pelbagai",
             "Ia lebih cepat",
+            "Ia lebih pasti berjaya",
             "Ia lebih murah",
-            "Ia lebih pasti berjaya"
+            "Anak pokok mempunyai ciri yang lebih pelbagai"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2789,12 +2789,12 @@
           "id": "s3_c5_q36",
           "text": "Kenapa ladang yang menanam satu jenis tanaman sahaja lebih mudah dimusnahkan penyakit?",
           "options": [
-            "Semua pokok mempunyai kelemahan yang sama",
-            "Pokok terlalu rapat",
             "Tanah menjadi miskin",
-            "Cahaya tidak cukup"
+            "Pokok terlalu rapat",
+            "Cahaya tidak cukup",
+            "Semua pokok mempunyai kelemahan yang sama"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2806,8 +2806,8 @@
           "options": [
             "Biji dalam bekas gelap tetap bercambah jika ada air dan udara",
             "Biji berwarna coklat",
-            "Biji ditanam dalam tanah",
-            "Biji kecil"
+            "Biji kecil",
+            "Biji ditanam dalam tanah"
           ],
           "correctAnswer": 0,
           "difficulty": "ultra",
@@ -2829,12 +2829,12 @@
           "id": "s3_c5_q39",
           "text": "Kenapa penyebaran biji oleh haiwan lebih berkesan daripada oleh angin untuk biji yang berat?",
           "options": [
-            "Haiwan boleh membawa biji berat jauh, angin tidak",
-            "Haiwan lebih pantas",
             "Angin tidak wujud dalam hutan",
-            "Biji berat lebih manis"
+            "Biji berat lebih manis",
+            "Haiwan lebih pantas",
+            "Haiwan boleh membawa biji berat jauh, angin tidak"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2844,12 +2844,12 @@
           "id": "s3_c5_q40",
           "text": "Manakah kesimpulan yang PALING tepat tentang kitaran hidup tumbuhan?",
           "options": [
-            "Setiap peringkat bergantung pada keadaan persekitaran yang sesuai",
             "Semua peringkat berlaku secara automatik",
-            "Hanya biji yang penting",
-            "Kitaran itu sama bagi semua tumbuhan"
+            "Setiap peringkat bergantung pada keadaan persekitaran yang sesuai",
+            "Kitaran itu sama bagi semua tumbuhan",
+            "Hanya biji yang penting"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2866,12 +2866,12 @@
           "id": "s3_c6_q1",
           "text": "Apakah unit piawai untuk mengukur jarak jauh?",
           "options": [
-            "Kilometer",
+            "Gram",
             "Sentimeter",
-            "Milimeter",
-            "Gram"
+            "Kilometer",
+            "Milimeter"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -2911,12 +2911,12 @@
           "id": "s3_c6_q5",
           "text": "Alat manakah untuk mengukur jisim dengan tepat?",
           "options": [
-            "Neraca",
+            "Termometer",
             "Pembaris",
             "Jam",
-            "Termometer"
+            "Neraca"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -2926,12 +2926,12 @@
           "id": "s3_c6_q6",
           "text": "Apakah unit piawai untuk masa?",
           "options": [
-            "Saat",
             "Meter",
-            "Gram",
-            "Liter"
+            "Saat",
+            "Liter",
+            "Gram"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -2951,12 +2951,12 @@
           "id": "s3_c6_q8",
           "text": "Kenapa kita tidak mengukur dengan jengkal tangan?",
           "options": [
+            "Tangan terlalu besar",
             "Saiz tangan setiap orang berbeza",
             "Tangan terlalu kecil",
-            "Tangan terlalu besar",
             "Tangan tidak lurus"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -2966,12 +2966,12 @@
           "id": "s3_c6_q9",
           "text": "Alat manakah untuk mengukur suhu badan?",
           "options": [
-            "Termometer",
-            "Neraca",
             "Pembaris",
-            "Jam"
+            "Neraca",
+            "Jam",
+            "Termometer"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3021,12 +3021,12 @@
           "id": "s3_c6_q14",
           "text": "Kenapa kita menggunakan milimeter untuk mengukur ketebalan kertas?",
           "options": [
-            "Sentimeter terlalu besar untuk ukuran yang sangat kecil",
             "Milimeter lebih murah",
+            "Kertas terlalu nipis untuk diukur",
             "Milimeter lebih senang dibaca",
-            "Kertas terlalu nipis untuk diukur"
+            "Sentimeter terlalu besar untuk ukuran yang sangat kecil"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3046,12 +3046,12 @@
           "id": "s3_c6_q16",
           "text": "Manakah unit yang PALING sesuai untuk mengukur jisim sebiji epal?",
           "options": [
-            "Gram",
+            "Milimeter",
             "Kilogram",
             "Tan",
-            "Milimeter"
+            "Gram"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3071,12 +3071,12 @@
           "id": "s3_c6_q18",
           "text": "Kenapa mata perlu sejajar dengan skala semasa membaca pembaris?",
           "options": [
+            "Skala menjadi kabur",
             "Melihat dari sudut menyebabkan bacaan salah",
             "Pembaris menjadi panjang",
-            "Skala menjadi kabur",
             "Objek bergerak"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3096,12 +3096,12 @@
           "id": "s3_c6_q20",
           "text": "Manakah unit yang sesuai untuk mengukur jarak antara dua bandar?",
           "options": [
-            "Kilometer",
             "Sentimeter",
             "Milimeter",
-            "Meter"
+            "Meter",
+            "Kilometer"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3131,12 +3131,12 @@
           "id": "s3_c6_q23",
           "text": "Kenapa mengukur isi padu batu memerlukan air, bukan pembaris?",
           "options": [
-            "Batu berbentuk tidak sekata",
-            "Batu terlalu berat",
             "Batu terlalu kecil",
-            "Pembaris terlalu pendek"
+            "Batu terlalu berat",
+            "Pembaris terlalu pendek",
+            "Batu berbentuk tidak sekata"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -3166,12 +3166,12 @@
           "id": "s3_c6_q26",
           "text": "Ali mengukur meja tiga kali dan mendapat 120 cm, 121 cm dan 119 cm. Apakah maksudnya?",
           "options": [
-            "Ukuran sebenar lebih kurang 120 cm dengan sedikit kesilapan",
-            "Meja berubah saiz",
             "Pembaris rosak",
-            "Ukuran tidak boleh dipercayai langsung"
+            "Meja berubah saiz",
+            "Ukuran tidak boleh dipercayai langsung",
+            "Ukuran sebenar lebih kurang 120 cm dengan sedikit kesilapan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -3192,9 +3192,9 @@
           "text": "Kenapa pengukuran dalam sains mesti menyertakan unit?",
           "options": [
             "Nombor tanpa unit tidak bermakna",
-            "Unit menjadikan ayat panjang",
             "Unit menunjukkan kepandaian",
-            "Unit diperlukan guru sahaja"
+            "Unit diperlukan guru sahaja",
+            "Unit menjadikan ayat panjang"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -3216,12 +3216,12 @@
           "id": "s3_c6_q30",
           "text": "Manakah kaedah PALING tepat untuk mengukur ketebalan sehelai kertas?",
           "options": [
-            "Ukur 100 helai bersama dan bahagi dengan 100",
-            "Ukur satu helai dengan pembaris",
             "Anggarkan dengan mata",
-            "Timbang sehelai"
+            "Ukur satu helai dengan pembaris",
+            "Timbang sehelai",
+            "Ukur 100 helai bersama dan bahagi dengan 100"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -3251,12 +3251,12 @@
           "id": "s3_c6_q33",
           "text": "Kenapa mengukur menggunakan alat yang lebih halus tidak semestinya menjadikan keputusan lebih tepat?",
           "options": [
-            "Cara mengukur yang salah tetap memberi bacaan yang salah",
             "Alat halus lebih mahal",
             "Alat halus lebih berat",
+            "Cara mengukur yang salah tetap memberi bacaan yang salah",
             "Alat halus lebih lambat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -3276,12 +3276,12 @@
           "id": "s3_c6_q35",
           "text": "Manakah punca kesilapan PALING biasa semasa mengukur isi padu cecair?",
           "options": [
-            "Membaca skala dari sudut yang salah",
-            "Silinder terlalu tinggi",
             "Cecair terlalu jernih",
+            "Silinder terlalu tinggi",
+            "Membaca skala dari sudut yang salah",
             "Bilik terlalu terang"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -3301,12 +3301,12 @@
           "id": "s3_c6_q37",
           "text": "Kenapa saintis di seluruh dunia menggunakan sistem unit yang sama?",
           "options": [
-            "Supaya keputusan boleh dibandingkan dan diulang",
             "Supaya lebih mudah dieja",
-            "Supaya lebih pendek ditulis",
-            "Supaya lebih murah"
+            "Supaya keputusan boleh dibandingkan dan diulang",
+            "Supaya lebih murah",
+            "Supaya lebih pendek ditulis"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -3326,12 +3326,12 @@
           "id": "s3_c6_q39",
           "text": "Manakah kelebihan mengukur berkali-kali berbanding sekali sahaja?",
           "options": [
+            "Ia menggunakan lebih banyak kertas",
             "Kesilapan rawak dapat dikurangkan dengan mengambil purata",
             "Ia mengambil masa lebih lama",
-            "Ia menggunakan lebih banyak kertas",
             "Ia menunjukkan kerajinan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -3341,12 +3341,12 @@
           "id": "s3_c6_q40",
           "text": "Manakah kesimpulan yang PALING tepat tentang pengukuran dalam sains?",
           "options": [
-            "Ukuran yang baik memerlukan alat sesuai, unit betul dan kaedah yang konsisten",
             "Alat mahal sudah memadai",
             "Satu ukuran sudah memadai",
-            "Unit boleh diabaikan"
+            "Unit boleh diabaikan",
+            "Ukuran yang baik memerlukan alat sesuai, unit betul dan kaedah yang konsisten"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -3363,12 +3363,12 @@
           "id": "s3_c7_q1",
           "text": "Apakah yang berlaku kepada objek yang lebih tumpat daripada air?",
           "options": [
-            "Ia tenggelam",
+            "Ia hilang",
             "Ia terapung",
             "Ia larut",
-            "Ia hilang"
+            "Ia tenggelam"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3379,9 +3379,9 @@
           "text": "Apakah yang berlaku kepada objek yang kurang tumpat daripada air?",
           "options": [
             "Ia terapung",
-            "Ia tenggelam",
+            "Ia pecah",
             "Ia larut",
-            "Ia pecah"
+            "Ia tenggelam"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -3393,12 +3393,12 @@
           "id": "s3_c7_q3",
           "text": "Manakah objek yang TERAPUNG dalam air?",
           "options": [
-            "Kayu",
-            "Batu",
             "Paku besi",
-            "Syiling"
+            "Batu",
+            "Syiling",
+            "Kayu"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3408,12 +3408,12 @@
           "id": "s3_c7_q4",
           "text": "Manakah objek yang TENGGELAM dalam air?",
           "options": [
-            "Batu",
             "Kayu",
-            "Gabus",
-            "Bola plastik kosong"
+            "Bola plastik kosong",
+            "Batu",
+            "Gabus"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3424,9 +3424,9 @@
           "text": "Apakah yang berlaku kepada minyak dalam air?",
           "options": [
             "Minyak terapung di atas",
+            "Minyak hilang",
             "Minyak tenggelam",
-            "Minyak larut",
-            "Minyak hilang"
+            "Minyak larut"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -3453,12 +3453,12 @@
           "id": "s3_c7_q7",
           "text": "Manakah bahan yang biasanya terapung?",
           "options": [
-            "Gabus",
             "Besi",
             "Batu",
+            "Gabus",
             "Kaca"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3468,12 +3468,12 @@
           "id": "s3_c7_q8",
           "text": "Apakah yang dimaksudkan dengan ketumpatan?",
           "options": [
-            "Jisim bagi isi padu tertentu",
+            "Warna bahan",
             "Berat sahaja",
             "Saiz sahaja",
-            "Warna bahan"
+            "Jisim bagi isi padu tertentu"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3483,12 +3483,12 @@
           "id": "s3_c7_q9",
           "text": "Manakah cecair yang berada di bawah apabila minyak dan air dicampur?",
           "options": [
-            "Air",
             "Minyak",
+            "Air",
             "Kedua-duanya bercampur",
             "Bergantung pada suhu"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3499,8 +3499,8 @@
           "text": "Kenapa manusia lebih mudah terapung di air masin?",
           "options": [
             "Air masin lebih tumpat daripada air tawar",
-            "Air masin lebih sejuk",
             "Air masin lebih cetek",
+            "Air masin lebih sejuk",
             "Air masin lebih jernih"
           ],
           "correctAnswer": 0,
@@ -3513,12 +3513,12 @@
           "id": "s3_c7_q11",
           "text": "Dua objek mempunyai saiz yang sama tetapi jisim berbeza. Manakah lebih tumpat?",
           "options": [
+            "Kedua-duanya sama",
             "Yang lebih berat",
             "Yang lebih ringan",
-            "Kedua-duanya sama",
             "Bergantung pada warna"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3538,12 +3538,12 @@
           "id": "s3_c7_q13",
           "text": "Kenapa bola pingpong terapung tetapi guli kaca tenggelam?",
           "options": [
-            "Bola pingpong berongga dan lebih ringan bagi saiznya",
+            "Guli lebih kecil",
             "Bola pingpong lebih besar",
             "Guli lebih licin",
-            "Guli lebih kecil"
+            "Bola pingpong berongga dan lebih ringan bagi saiznya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3553,12 +3553,12 @@
           "id": "s3_c7_q14",
           "text": "Apakah yang berlaku kepada plastisin berbentuk bola apabila dimasukkan ke dalam air?",
           "options": [
-            "Ia tenggelam",
             "Ia terapung",
+            "Ia tenggelam",
             "Ia larut",
             "Ia terbelah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3568,12 +3568,12 @@
           "id": "s3_c7_q15",
           "text": "Apakah yang berlaku jika plastisin yang sama dibentuk seperti mangkuk?",
           "options": [
-            "Ia boleh terapung",
             "Ia tetap tenggelam",
             "Ia larut",
-            "Ia menjadi ringan"
+            "Ia menjadi ringan",
+            "Ia boleh terapung"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3593,12 +3593,12 @@
           "id": "s3_c7_q17",
           "text": "Kenapa belon berisi helium naik ke udara?",
           "options": [
-            "Helium kurang tumpat daripada udara",
-            "Helium lebih panas",
             "Belon lebih ringan",
-            "Helium menolak belon"
+            "Helium lebih panas",
+            "Helium menolak belon",
+            "Helium kurang tumpat daripada udara"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3608,12 +3608,12 @@
           "id": "s3_c7_q18",
           "text": "Manakah cara menguji sama ada objek terapung atau tenggelam?",
           "options": [
-            "Masukkan ke dalam air dan perhati",
             "Timbang sahaja",
+            "Masukkan ke dalam air dan perhati",
             "Ukur panjang sahaja",
             "Lihat warnanya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3634,9 +3634,9 @@
           "text": "Kenapa kayu basah kadangkala tenggelam?",
           "options": [
             "Air mengisi ruang dalam kayu dan menambah jisimnya",
+            "Kayu menjadi sejuk",
             "Kayu menjadi besar",
-            "Air menjadi berat",
-            "Kayu menjadi sejuk"
+            "Air menjadi berat"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -3658,12 +3658,12 @@
           "id": "s3_c7_q22",
           "text": "Dua objek berjisim sama tetapi isi padu berbeza. Manakah lebih mungkin terapung?",
           "options": [
-            "Yang isi padunya lebih besar",
-            "Yang isi padunya lebih kecil",
             "Kedua-duanya sama",
-            "Bergantung pada warna"
+            "Bergantung pada warna",
+            "Yang isi padunya lebih besar",
+            "Yang isi padunya lebih kecil"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -3683,12 +3683,12 @@
           "id": "s3_c7_q24",
           "text": "Kenapa kapal selam boleh tenggelam dan naik semula?",
           "options": [
-            "Ia mengisi dan mengosongkan tangki dengan air",
+            "Ia menjadi panas",
             "Ia menukar bentuk",
-            "Ia menukar warna",
-            "Ia menjadi panas"
+            "Ia mengisi dan mengosongkan tangki dengan air",
+            "Ia menukar warna"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -3708,12 +3708,12 @@
           "id": "s3_c7_q26",
           "text": "Berdasarkan jawapan di atas, adakah kayu itu terapung dalam air?",
           "options": [
+            "Tidak, kerana ia besar",
             "Ya, kerana 0.6 kurang daripada 1",
             "Tidak, kerana ia berat",
-            "Tidak, kerana ia besar",
             "Bergantung pada suhu air"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -3723,12 +3723,12 @@
           "id": "s3_c7_q27",
           "text": "Kenapa minyak yang tumpah di laut kekal di permukaan?",
           "options": [
-            "Ketumpatannya lebih rendah daripada air laut",
-            "Ia terlalu panas",
             "Ia terlalu banyak",
-            "Ia menyerap air"
+            "Ketumpatannya lebih rendah daripada air laut",
+            "Ia menyerap air",
+            "Ia terlalu panas"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -3748,12 +3748,12 @@
           "id": "s3_c7_q29",
           "text": "Ali membuat bot daripada kepingan aluminium yang tenggelam apabila digumpal. Kenapa bot itu terapung?",
           "options": [
-            "Bentuk bot memerangkap udara dan menurunkan ketumpatan purata",
             "Aluminium menjadi ringan",
             "Air menjadi tumpat",
-            "Bot menjadi panas"
+            "Bot menjadi panas",
+            "Bentuk bot memerangkap udara dan menurunkan ketumpatan purata"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -3788,12 +3788,12 @@
           "id": "s3_c7_q32",
           "text": "Kenapa ais terapung di atas air walaupun ia pepejal?",
           "options": [
-            "Air mengembang apabila membeku, jadi ais kurang tumpat",
-            "Ais lebih sejuk",
             "Ais lebih ringan secara semula jadi",
-            "Ais mengandungi udara sahaja"
+            "Air mengembang apabila membeku, jadi ais kurang tumpat",
+            "Ais mengandungi udara sahaja",
+            "Ais lebih sejuk"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -3813,12 +3813,12 @@
           "id": "s3_c7_q34",
           "text": "Kenapa kesan pemanasan global terhadap paras laut dikaitkan dengan ketumpatan air?",
           "options": [
+            "Air menjadi lebih jernih",
             "Air mengembang apabila panas, jadi isi padunya bertambah",
-            "Air menjadi lebih berat",
             "Air menjadi lebih masin",
-            "Air menjadi lebih jernih"
+            "Air menjadi lebih berat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -3838,12 +3838,12 @@
           "id": "s3_c7_q36",
           "text": "Berdasarkan soalan di atas, cecair manakah berada di lapisan paling atas?",
           "options": [
-            "Yang berketumpatan 0.8",
             "Yang berketumpatan 1.0",
             "Yang berketumpatan 1.3",
+            "Yang berketumpatan 0.8",
             "Semuanya bercampur"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -3853,12 +3853,12 @@
           "id": "s3_c7_q37",
           "text": "Kenapa kapal memuatkan barang sehingga had tertentu sahaja?",
           "options": [
+            "Air menjadi keruh",
             "Menambah jisim menaikkan ketumpatan purata sehingga ia tenggelam",
-            "Kapal menjadi lambat",
             "Barang menjadi rosak",
-            "Air menjadi keruh"
+            "Kapal menjadi lambat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -3878,12 +3878,12 @@
           "id": "s3_c7_q39",
           "text": "Manakah eksperimen PALING baik untuk membandingkan ketumpatan dua bahan?",
           "options": [
-            "Ukur jisim dan isi padu setiap satu, kemudian bahagi",
-            "Timbang kedua-duanya sahaja",
             "Ukur panjang kedua-duanya",
-            "Rasa kedua-duanya"
+            "Rasa kedua-duanya",
+            "Ukur jisim dan isi padu setiap satu, kemudian bahagi",
+            "Timbang kedua-duanya sahaja"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -3895,8 +3895,8 @@
           "options": [
             "Ia sifat bahan yang tidak berubah walaupun saiz berubah",
             "Ia bergantung pada saiz objek",
-            "Ia bergantung pada warna",
-            "Ia bergantung pada bentuk sahaja"
+            "Ia bergantung pada bentuk sahaja",
+            "Ia bergantung pada warna"
           ],
           "correctAnswer": 0,
           "difficulty": "ultra",
@@ -3915,12 +3915,12 @@
           "id": "s3_c8_q1",
           "text": "Apakah rasa bahan berasid?",
           "options": [
-            "Masam",
             "Manis",
             "Masin",
-            "Pahit"
+            "Pahit",
+            "Masam"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3930,12 +3930,12 @@
           "id": "s3_c8_q2",
           "text": "Manakah bahan berasid?",
           "options": [
-            "Jus limau",
             "Air sabun",
-            "Ubat gigi",
-            "Air masak"
+            "Jus limau",
+            "Air masak",
+            "Ubat gigi"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3945,12 +3945,12 @@
           "id": "s3_c8_q3",
           "text": "Manakah bahan beralkali?",
           "options": [
-            "Air sabun",
             "Cuka",
             "Jus limau",
-            "Jus oren"
+            "Jus oren",
+            "Air sabun"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3960,12 +3960,12 @@
           "id": "s3_c8_q4",
           "text": "Apakah warna kertas litmus biru dalam bahan berasid?",
           "options": [
-            "Merah",
-            "Biru",
             "Hijau",
-            "Kuning"
+            "Merah",
+            "Kuning",
+            "Biru"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3975,12 +3975,12 @@
           "id": "s3_c8_q5",
           "text": "Apakah warna kertas litmus merah dalam bahan beralkali?",
           "options": [
-            "Biru",
             "Merah",
+            "Hitam",
             "Hijau",
-            "Hitam"
+            "Biru"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3990,12 +3990,12 @@
           "id": "s3_c8_q6",
           "text": "Apakah kesan bahan berasid pada kertas litmus merah?",
           "options": [
-            "Tiada perubahan",
             "Bertukar biru",
+            "Bertukar hitam",
             "Bertukar hijau",
-            "Bertukar hitam"
+            "Tiada perubahan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4005,12 +4005,12 @@
           "id": "s3_c8_q7",
           "text": "Manakah bahan neutral?",
           "options": [
-            "Air masak",
             "Cuka",
-            "Air sabun",
-            "Jus limau"
+            "Jus limau",
+            "Air masak",
+            "Air sabun"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4020,12 +4020,12 @@
           "id": "s3_c8_q8",
           "text": "Kenapa kita tidak boleh merasa bahan makmal untuk menguji asid?",
           "options": [
+            "Ia terlalu mahal",
             "Ia mungkin beracun atau melecur",
-            "Ia tidak berasa",
             "Ia terlalu sejuk",
-            "Ia terlalu mahal"
+            "Ia tidak berasa"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4035,12 +4035,12 @@
           "id": "s3_c8_q9",
           "text": "Manakah alat yang selamat untuk menguji asid atau alkali?",
           "options": [
-            "Kertas litmus",
-            "Lidah",
             "Tangan",
-            "Hidung"
+            "Kertas litmus",
+            "Hidung",
+            "Lidah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4050,12 +4050,12 @@
           "id": "s3_c8_q10",
           "text": "Apakah rasa bahan beralkali yang selamat seperti ubat gigi?",
           "options": [
-            "Pahit",
             "Masam",
+            "Pahit",
             "Sangat manis",
             "Masin sahaja"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4065,12 +4065,12 @@
           "id": "s3_c8_q11",
           "text": "Ali menguji sesuatu bahan. Kertas litmus biru bertukar merah. Apakah bahan itu?",
           "options": [
-            "Asid",
-            "Alkali",
+            "Air",
             "Neutral",
-            "Air"
+            "Asid",
+            "Alkali"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4080,12 +4080,12 @@
           "id": "s3_c8_q12",
           "text": "Rina menguji bahan lain. Kedua-dua kertas litmus tidak berubah. Apakah bahan itu?",
           "options": [
-            "Neutral",
-            "Asid",
             "Alkali",
-            "Asid kuat"
+            "Asid kuat",
+            "Neutral",
+            "Asid"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4105,12 +4105,12 @@
           "id": "s3_c8_q14",
           "text": "Kenapa perut kita mengandungi asid?",
           "options": [
-            "Untuk membantu mencerna makanan",
             "Untuk memanaskan badan",
             "Untuk memberi rasa",
+            "Untuk membantu mencerna makanan",
             "Untuk menyimpan air"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4120,12 +4120,12 @@
           "id": "s3_c8_q15",
           "text": "Kenapa ubat gastrik bersifat alkali?",
           "options": [
-            "Untuk meneutralkan asid berlebihan dalam perut",
+            "Untuk memberi rasa manis",
             "Untuk menambah asid",
-            "Untuk memberi tenaga",
-            "Untuk memberi rasa manis"
+            "Untuk meneutralkan asid berlebihan dalam perut",
+            "Untuk memberi tenaga"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4135,12 +4135,12 @@
           "id": "s3_c8_q16",
           "text": "Manakah pasangan bahan dan sifatnya yang BETUL?",
           "options": [
+            "Kedua-duanya beralkali",
             "Cuka berasid, sabun beralkali",
             "Cuka beralkali, sabun berasid",
-            "Kedua-duanya berasid",
-            "Kedua-duanya beralkali"
+            "Kedua-duanya berasid"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4150,12 +4150,12 @@
           "id": "s3_c8_q17",
           "text": "Kenapa hujan asid merosakkan bangunan batu?",
           "options": [
-            "Asid melarutkan bahan dalam batu",
-            "Asid menjadikan batu sejuk",
+            "Asid memanaskan batu",
             "Asid mewarnakan batu",
-            "Asid memanaskan batu"
+            "Asid menjadikan batu sejuk",
+            "Asid melarutkan bahan dalam batu"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4175,12 +4175,12 @@
           "id": "s3_c8_q19",
           "text": "Kenapa kita berkumur selepas makan buah masam?",
           "options": [
-            "Asid boleh menghakis lapisan gigi",
-            "Buah menjadi manis",
             "Mulut menjadi kering",
-            "Gigi menjadi putih"
+            "Gigi menjadi putih",
+            "Buah menjadi manis",
+            "Asid boleh menghakis lapisan gigi"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4191,8 +4191,8 @@
           "text": "Manakah tanda bahan itu berkemungkinan alkali?",
           "options": [
             "Terasa licin pada jari",
-            "Berasa masam",
             "Berbuih dengan logam",
+            "Berasa masam",
             "Berwarna merah"
           ],
           "correctAnswer": 0,
@@ -4205,12 +4205,12 @@
           "id": "s3_c8_q21",
           "text": "Sebuah bahan menukarkan litmus biru kepada merah dan berbuih apabila bertemu logam. Apakah bahan itu?",
           "options": [
-            "Asid",
             "Alkali",
+            "Air suling",
             "Neutral",
-            "Air suling"
+            "Asid"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -4230,12 +4230,12 @@
           "id": "s3_c8_q23",
           "text": "Kenapa petani menambah kapur ke dalam tanah yang terlalu berasid?",
           "options": [
-            "Kapur bersifat alkali dan meneutralkan asid",
             "Kapur menambah warna",
+            "Kapur membunuh serangga",
             "Kapur menyimpan air",
-            "Kapur membunuh serangga"
+            "Kapur bersifat alkali dan meneutralkan asid"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -4245,12 +4245,12 @@
           "id": "s3_c8_q24",
           "text": "Apakah yang berlaku apabila asid dan alkali dicampur dalam kuantiti yang sesuai?",
           "options": [
-            "Kedua-duanya meneutralkan antara satu sama lain",
             "Kedua-duanya menjadi lebih kuat",
+            "Kedua-duanya meneutralkan antara satu sama lain",
             "Campuran menjadi asid kuat",
             "Campuran menjadi alkali kuat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -4270,12 +4270,12 @@
           "id": "s3_c8_q26",
           "text": "Kenapa hujan asid lebih teruk berhampiran kawasan perindustrian?",
           "options": [
-            "Asap kilang melepaskan gas yang menjadi asid dalam awan",
             "Kilang menghasilkan hujan",
             "Awan lebih rendah di situ",
-            "Angin lebih kuat"
+            "Angin lebih kuat",
+            "Asap kilang melepaskan gas yang menjadi asid dalam awan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -4285,12 +4285,12 @@
           "id": "s3_c8_q27",
           "text": "Ali mahu menguji sama ada sampel tanah berasid. Apakah kaedah yang paling sesuai?",
           "options": [
-            "Campurkan tanah dengan air suling dan uji dengan kertas litmus",
-            "Rasa tanah itu",
+            "Timbang tanah itu",
             "Hidu tanah itu",
-            "Timbang tanah itu"
+            "Rasa tanah itu",
+            "Campurkan tanah dengan air suling dan uji dengan kertas litmus"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -4311,9 +4311,9 @@
           "text": "Kenapa gigi lebih cepat rosak pada orang yang kerap minum air berkarbonat?",
           "options": [
             "Minuman itu berasid dan menghakis enamel",
+            "Minuman itu berbuih",
             "Minuman itu manis sahaja",
-            "Minuman itu sejuk",
-            "Minuman itu berbuih"
+            "Minuman itu sejuk"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -4325,12 +4325,12 @@
           "id": "s3_c8_q30",
           "text": "Manakah kesimpulan yang betul tentang ujian litmus?",
           "options": [
-            "Ia menunjukkan sifat asid atau alkali tetapi bukan kekuatannya",
-            "Ia menunjukkan kekuatan dengan tepat",
+            "Ia menunjukkan berat bahan",
             "Ia menunjukkan suhu bahan",
-            "Ia menunjukkan berat bahan"
+            "Ia menunjukkan kekuatan dengan tepat",
+            "Ia menunjukkan sifat asid atau alkali tetapi bukan kekuatannya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -4340,12 +4340,12 @@
           "id": "s3_c8_q31",
           "text": "Dua bahan kedua-duanya menukarkan litmus biru kepada merah, tetapi satu menghakis logam dengan lebih pantas. Apakah maksudnya?",
           "options": [
-            "Kedua-duanya asid, tetapi satu lebih kuat",
-            "Satu daripadanya alkali",
             "Litmus rosak",
+            "Satu daripadanya alkali",
+            "Kedua-duanya asid, tetapi satu lebih kuat",
             "Logam berbeza"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -4366,8 +4366,8 @@
           "text": "Kenapa air suling digunakan untuk melarutkan sampel dalam ujian asid dan alkali?",
           "options": [
             "Air paip mungkin sudah mengandungi bahan yang menjejaskan keputusan",
-            "Air suling lebih murah",
             "Air suling lebih sejuk",
+            "Air suling lebih murah",
             "Air suling lebih jernih sahaja"
           ],
           "correctAnswer": 0,
@@ -4380,12 +4380,12 @@
           "id": "s3_c8_q34",
           "text": "Sebuah tasik menjadi berasid dan ikan mula mati. Apakah rantaian kesan yang paling munasabah?",
           "options": [
-            "Tumbuhan air mati, makanan berkurangan, ikan mati",
-            "Air menjadi sejuk lalu ikan mati",
             "Ikan menjadi berat lalu tenggelam",
-            "Tasik menjadi cetek"
+            "Tasik menjadi cetek",
+            "Tumbuhan air mati, makanan berkurangan, ikan mati",
+            "Air menjadi sejuk lalu ikan mati"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -4421,9 +4421,9 @@
           "text": "Manakah bukti PALING kuat bahawa peneutralan telah berlaku sepenuhnya?",
           "options": [
             "Kertas litmus merah dan biru kedua-duanya tidak berubah",
-            "Campuran menjadi panas",
             "Campuran berbuih",
-            "Campuran bertukar warna"
+            "Campuran bertukar warna",
+            "Campuran menjadi panas"
           ],
           "correctAnswer": 0,
           "difficulty": "ultra",
@@ -4445,12 +4445,12 @@
           "id": "s3_c8_q39",
           "text": "Kenapa kawalan hujan asid memerlukan kerjasama antara negara?",
           "options": [
+            "Hujan hanya turun di sempadan",
             "Angin membawa gas melintasi sempadan",
             "Setiap negara mempunyai asid berbeza",
-            "Hujan hanya turun di sempadan",
             "Awan tidak boleh dikawal"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -4460,12 +4460,12 @@
           "id": "s3_c8_q40",
           "text": "Manakah kesimpulan yang PALING tepat tentang asid dan alkali?",
           "options": [
-            "Kedua-duanya berguna dan berbahaya bergantung pada kekuatan dan penggunaannya",
+            "Kedua-duanya tidak berguna",
             "Asid sentiasa berbahaya",
-            "Alkali sentiasa selamat",
-            "Kedua-duanya tidak berguna"
+            "Kedua-duanya berguna dan berbahaya bergantung pada kekuatan dan penggunaannya",
+            "Alkali sentiasa selamat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -4482,12 +4482,12 @@
           "id": "s3_c9_q1",
           "text": "Apakah pusat Sistem Suria?",
           "options": [
-            "Matahari",
+            "Marikh",
             "Bumi",
-            "Bulan",
-            "Marikh"
+            "Matahari",
+            "Bulan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4497,12 +4497,12 @@
           "id": "s3_c9_q2",
           "text": "Berapa banyak planet dalam Sistem Suria?",
           "options": [
-            "8",
             "7",
-            "9",
-            "10"
+            "8",
+            "10",
+            "9"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4513,9 +4513,9 @@
           "text": "Planet manakah paling dekat dengan matahari?",
           "options": [
             "Utarid",
-            "Zuhrah",
             "Bumi",
-            "Marikh"
+            "Marikh",
+            "Zuhrah"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -4527,12 +4527,12 @@
           "id": "s3_c9_q4",
           "text": "Planet manakah kita tinggal?",
           "options": [
-            "Bumi",
             "Marikh",
-            "Musytari",
-            "Zuhal"
+            "Zuhal",
+            "Bumi",
+            "Musytari"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4543,9 +4543,9 @@
           "text": "Apakah yang mengelilingi Bumi?",
           "options": [
             "Bulan",
-            "Matahari",
+            "Zuhal",
             "Marikh",
-            "Zuhal"
+            "Matahari"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -4572,12 +4572,12 @@
           "id": "s3_c9_q7",
           "text": "Planet manakah dikenali kerana gelangnya?",
           "options": [
-            "Zuhal",
             "Bumi",
+            "Zuhal",
             "Marikh",
             "Utarid"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4587,12 +4587,12 @@
           "id": "s3_c9_q8",
           "text": "Planet manakah dikenali sebagai planet merah?",
           "options": [
+            "Musytari",
             "Marikh",
-            "Zuhrah",
             "Bumi",
-            "Musytari"
+            "Zuhrah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4602,12 +4602,12 @@
           "id": "s3_c9_q9",
           "text": "Apakah matahari?",
           "options": [
-            "Sebuah bintang",
             "Sebuah planet",
-            "Sebuah bulan",
-            "Sebuah awan"
+            "Sebuah awan",
+            "Sebuah bintang",
+            "Sebuah bulan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4617,12 +4617,12 @@
           "id": "s3_c9_q10",
           "text": "Kenapa Bumi sesuai untuk hidupan?",
           "options": [
-            "Ia mempunyai air dan udara",
             "Ia paling besar",
+            "Ia mempunyai air dan udara",
             "Ia paling dekat matahari",
             "Ia berwarna biru"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4633,9 +4633,9 @@
           "text": "Kenapa Utarid sangat panas pada bahagian yang menghadap matahari?",
           "options": [
             "Ia paling dekat dengan matahari",
-            "Ia paling kecil",
             "Ia tiada bulan",
-            "Ia bergerak laju"
+            "Ia bergerak laju",
+            "Ia paling kecil"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -4657,12 +4657,12 @@
           "id": "s3_c9_q13",
           "text": "Kenapa planet yang jauh dari matahari lebih sejuk?",
           "options": [
-            "Haba matahari lemah pada jarak jauh",
+            "Planet itu berwarna gelap",
             "Planet itu lebih kecil",
             "Planet itu bergerak perlahan",
-            "Planet itu berwarna gelap"
+            "Haba matahari lemah pada jarak jauh"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4672,12 +4672,12 @@
           "id": "s3_c9_q14",
           "text": "Apakah perbezaan antara planet dan bintang?",
           "options": [
-            "Bintang menghasilkan cahaya sendiri, planet tidak",
             "Planet lebih panas",
+            "Bintang menghasilkan cahaya sendiri, planet tidak",
             "Bintang lebih dekat",
             "Planet lebih besar"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4687,12 +4687,12 @@
           "id": "s3_c9_q15",
           "text": "Kenapa bulan kelihatan berubah bentuk sepanjang bulan?",
           "options": [
+            "Awan menutup bulan",
             "Bahagian yang menerima cahaya matahari berubah kedudukan",
             "Bulan berubah saiz",
-            "Awan menutup bulan",
             "Bulan berpecah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4712,12 +4712,12 @@
           "id": "s3_c9_q17",
           "text": "Kenapa kita tidak boleh hidup di Marikh tanpa peralatan khas?",
           "options": [
-            "Udaranya tidak sesuai untuk manusia bernafas",
             "Ia terlalu terang",
+            "Udaranya tidak sesuai untuk manusia bernafas",
             "Ia terlalu dekat",
             "Ia berwarna merah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4727,12 +4727,12 @@
           "id": "s3_c9_q18",
           "text": "Manakah susunan yang betul dari matahari?",
           "options": [
+            "Marikh, Bumi, Zuhrah, Utarid",
             "Utarid, Zuhrah, Bumi, Marikh",
             "Bumi, Utarid, Zuhrah, Marikh",
-            "Marikh, Bumi, Zuhrah, Utarid",
             "Zuhrah, Utarid, Marikh, Bumi"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4744,8 +4744,8 @@
           "options": [
             "Ia jauh lebih dekat dengan Bumi",
             "Ia memang paling besar di alam",
-            "Ia lebih terang secara semula jadi",
-            "Ia bergerak lebih perlahan"
+            "Ia bergerak lebih perlahan",
+            "Ia lebih terang secara semula jadi"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -4783,9 +4783,9 @@
           "text": "Kenapa satu tahun di Utarid lebih pendek daripada satu tahun di Bumi?",
           "options": [
             "Orbitnya lebih kecil kerana ia lebih dekat matahari",
-            "Ia bergerak lebih perlahan",
+            "Ia tiada bulan",
             "Ia lebih kecil saiznya",
-            "Ia tiada bulan"
+            "Ia bergerak lebih perlahan"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -4797,12 +4797,12 @@
           "id": "s3_c9_q23",
           "text": "Kenapa Zuhrah lebih panas daripada Utarid walaupun ia lebih jauh dari matahari?",
           "options": [
-            "Atmosfera tebalnya memerangkap haba",
             "Ia lebih besar",
-            "Ia berputar lebih laju",
-            "Ia mempunyai lebih banyak bulan"
+            "Atmosfera tebalnya memerangkap haba",
+            "Ia mempunyai lebih banyak bulan",
+            "Ia berputar lebih laju"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -4823,8 +4823,8 @@
           "text": "Kenapa manusia menghantar kapal angkasa tanpa awak ke planet jauh?",
           "options": [
             "Perjalanan terlalu lama dan berbahaya untuk manusia",
-            "Manusia tidak berminat",
             "Kapal berawak terlalu kecil",
+            "Manusia tidak berminat",
             "Planet itu terlalu terang"
           ],
           "correctAnswer": 0,
@@ -4838,9 +4838,9 @@
           "text": "Manakah kesan jika Bumi lebih dekat dengan matahari?",
           "options": [
             "Air akan menyejat dan hidupan sukar bertahan",
-            "Bumi menjadi lebih sejuk",
             "Tahun menjadi lebih panjang",
-            "Bulan akan hilang"
+            "Bulan akan hilang",
+            "Bumi menjadi lebih sejuk"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -4879,8 +4879,8 @@
           "options": [
             "Kedudukan bintang berubah mengikut musim",
             "Matahari kelihatan bergerak",
-            "Bumi berwarna biru",
-            "Bulan mengelilingi Bumi"
+            "Bulan mengelilingi Bumi",
+            "Bumi berwarna biru"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -4892,12 +4892,12 @@
           "id": "s3_c9_q30",
           "text": "Kenapa kajian planet lain penting kepada manusia?",
           "options": [
+            "Ia menjimatkan wang",
             "Ia membantu kita memahami dan menjaga Bumi",
             "Ia menjadikan kita terkenal",
-            "Ia menjimatkan wang",
             "Ia menambah bilangan planet"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -4917,12 +4917,12 @@
           "id": "s3_c9_q32",
           "text": "Kenapa kita sentiasa melihat muka bulan yang sama dari Bumi?",
           "options": [
-            "Bulan berputar sekali setiap kali ia mengelilingi Bumi",
-            "Bulan tidak berputar langsung",
             "Bulan terlalu jauh",
-            "Bulan berbentuk rata"
+            "Bulan tidak berputar langsung",
+            "Bulan berbentuk rata",
+            "Bulan berputar sekali setiap kali ia mengelilingi Bumi"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -4942,12 +4942,12 @@
           "id": "s3_c9_q34",
           "text": "Kenapa kita tidak dapat mendengar bunyi dari planet lain?",
           "options": [
+            "Telinga kita terlalu lemah",
             "Bunyi memerlukan bahan untuk merambat dan angkasa hampir kosong",
-            "Bunyi terlalu perlahan",
             "Planet tidak berbunyi",
-            "Telinga kita terlalu lemah"
+            "Bunyi terlalu perlahan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -4957,12 +4957,12 @@
           "id": "s3_c9_q35",
           "text": "Manakah penjelasan terbaik kenapa Bumi mempunyai musim?",
           "options": [
+            "Matahari berubah suhu",
             "Paksi Bumi condong semasa ia mengelilingi matahari",
             "Jarak Bumi ke matahari berubah banyak",
-            "Matahari berubah suhu",
             "Bulan menutup matahari"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -4982,12 +4982,12 @@
           "id": "s3_c9_q37",
           "text": "Kenapa saintis mencari air apabila menyiasat kemungkinan hidupan di planet lain?",
           "options": [
-            "Semua hidupan yang kita tahu memerlukan air",
-            "Air mudah dilihat",
+            "Air menandakan graviti",
             "Air memberi cahaya",
-            "Air menandakan graviti"
+            "Air mudah dilihat",
+            "Semua hidupan yang kita tahu memerlukan air"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -4997,12 +4997,12 @@
           "id": "s3_c9_q38",
           "text": "Manakah kesimpulan yang boleh dibuat daripada fakta bahawa Zuhrah lebih panas daripada Utarid?",
           "options": [
-            "Atmosfera boleh mempengaruhi suhu lebih daripada jarak",
+            "Zuhrah lebih dekat matahari",
             "Jarak tidak penting langsung",
             "Utarid tiada matahari",
-            "Zuhrah lebih dekat matahari"
+            "Atmosfera boleh mempengaruhi suhu lebih daripada jarak"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -5022,12 +5022,12 @@
           "id": "s3_c9_q40",
           "text": "Manakah kesimpulan yang PALING tepat tentang Sistem Suria?",
           "options": [
-            "Keadaan setiap planet ditentukan oleh jarak, saiz dan atmosferanya",
             "Semua planet serupa",
-            "Hanya jarak yang menentukan suhu",
-            "Semua planet mempunyai hidupan"
+            "Keadaan setiap planet ditentukan oleh jarak, saiz dan atmosferanya",
+            "Semua planet mempunyai hidupan",
+            "Hanya jarak yang menentukan suhu"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -5045,9 +5045,9 @@
           "text": "Apakah mesin ringkas?",
           "options": [
             "Alat yang memudahkan kerja",
-            "Alat yang menghasilkan elektrik",
+            "Alat yang menyimpan air",
             "Alat yang menghasilkan bunyi",
-            "Alat yang menyimpan air"
+            "Alat yang menghasilkan elektrik"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -5060,9 +5060,9 @@
           "text": "Manakah contoh tuas?",
           "options": [
             "Jongkang-jongket",
-            "Roda basikal",
             "Skru",
-            "Tali"
+            "Tali",
+            "Roda basikal"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -5074,12 +5074,12 @@
           "id": "s3_c10_q3",
           "text": "Manakah contoh satah condong?",
           "options": [
-            "Tanjakan",
             "Roda",
             "Gear",
-            "Takal"
+            "Takal",
+            "Tanjakan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -5089,12 +5089,12 @@
           "id": "s3_c10_q4",
           "text": "Apakah kegunaan takal?",
           "options": [
+            "Memanaskan barang",
             "Mengangkat barang dengan menarik ke bawah",
             "Memotong barang",
-            "Memanaskan barang",
             "Menimbang barang"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -5105,9 +5105,9 @@
           "text": "Manakah contoh baji?",
           "options": [
             "Kapak",
+            "Gear",
             "Roda",
-            "Takal",
-            "Gear"
+            "Takal"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -5119,12 +5119,12 @@
           "id": "s3_c10_q6",
           "text": "Manakah contoh roda dan gandar?",
           "options": [
+            "Gunting",
             "Tayar kereta",
-            "Kapak",
             "Tangga",
-            "Gunting"
+            "Kapak"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -5134,12 +5134,12 @@
           "id": "s3_c10_q7",
           "text": "Apakah kegunaan skru?",
           "options": [
-            "Menyambung dan mengetatkan bahan",
+            "Memanaskan bahan",
             "Memotong bahan",
-            "Menimbang bahan",
-            "Memanaskan bahan"
+            "Menyambung dan mengetatkan bahan",
+            "Menimbang bahan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -5150,9 +5150,9 @@
           "text": "Manakah alat yang menggunakan dua tuas?",
           "options": [
             "Gunting",
-            "Skru",
+            "Roda",
             "Tanjakan",
-            "Roda"
+            "Skru"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -5164,12 +5164,12 @@
           "id": "s3_c10_q9",
           "text": "Kenapa manusia menggunakan mesin ringkas?",
           "options": [
-            "Untuk mengurangkan usaha yang diperlukan",
-            "Untuk menambah berat",
+            "Untuk menghias rumah",
             "Untuk memanaskan barang",
-            "Untuk menghias rumah"
+            "Untuk mengurangkan usaha yang diperlukan",
+            "Untuk menambah berat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -5180,8 +5180,8 @@
           "text": "Manakah contoh gear?",
           "options": [
             "Gear basikal",
-            "Tangga",
             "Kapak",
+            "Tangga",
             "Tali"
           ],
           "correctAnswer": 0,
@@ -5195,9 +5195,9 @@
           "text": "Kenapa menaikkan barang melalui tanjakan lebih mudah daripada mengangkatnya terus?",
           "options": [
             "Daya yang diperlukan lebih kecil walaupun jarak lebih panjang",
-            "Barang menjadi ringan",
             "Tanjakan menolak barang",
-            "Graviti hilang"
+            "Graviti hilang",
+            "Barang menjadi ringan"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -5209,12 +5209,12 @@
           "id": "s3_c10_q12",
           "text": "Apakah tiga bahagian utama sebuah tuas?",
           "options": [
+            "Gear, takal dan skru",
             "Fulkrum, beban dan daya",
             "Roda, gandar dan tali",
-            "Gear, takal dan skru",
             "Baji, skru dan roda"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -5234,12 +5234,12 @@
           "id": "s3_c10_q14",
           "text": "Kenapa kapak lebih berkesan apabila matanya tajam?",
           "options": [
-            "Daya tertumpu pada kawasan yang lebih kecil",
             "Kapak menjadi ringan",
+            "Kapak menjadi panjang",
             "Kayu menjadi lembut",
-            "Kapak menjadi panjang"
+            "Daya tertumpu pada kawasan yang lebih kecil"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -5249,12 +5249,12 @@
           "id": "s3_c10_q15",
           "text": "Manakah pasangan alat dan jenis mesin ringkas yang BETUL?",
           "options": [
-            "Gunting dan tuas",
             "Gunting dan takal",
-            "Tangga dan gear",
-            "Skru dan roda"
+            "Gunting dan tuas",
+            "Skru dan roda",
+            "Tangga dan gear"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -5264,12 +5264,12 @@
           "id": "s3_c10_q16",
           "text": "Kenapa takal digunakan untuk menaikkan bendera?",
           "options": [
-            "Kita boleh menarik ke bawah dan bendera naik",
             "Bendera menjadi ringan",
+            "Tiang menjadi rendah",
             "Tali menjadi pendek",
-            "Tiang menjadi rendah"
+            "Kita boleh menarik ke bawah dan bendera naik"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -5289,12 +5289,12 @@
           "id": "s3_c10_q18",
           "text": "Kenapa pemutar skru mempunyai pemegang yang tebal?",
           "options": [
+            "Ia lebih murah",
             "Pemegang lebar memberi putaran yang lebih kuat",
-            "Ia lebih cantik",
             "Ia lebih ringan",
-            "Ia lebih murah"
+            "Ia lebih cantik"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -5304,12 +5304,12 @@
           "id": "s3_c10_q19",
           "text": "Manakah alat yang menggunakan satah condong?",
           "options": [
-            "Tangga",
-            "Takal",
             "Gear",
-            "Gunting"
+            "Tangga",
+            "Gunting",
+            "Takal"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -5319,12 +5319,12 @@
           "id": "s3_c10_q20",
           "text": "Kenapa gear digunakan pada basikal?",
           "options": [
-            "Untuk mengubah kelajuan dan daya mengayuh",
-            "Untuk menghasilkan bunyi",
+            "Untuk menyimpan tenaga",
             "Untuk menambah berat",
-            "Untuk menyimpan tenaga"
+            "Untuk mengubah kelajuan dan daya mengayuh",
+            "Untuk menghasilkan bunyi"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -5334,12 +5334,12 @@
           "id": "s3_c10_q21",
           "text": "Kenapa memindahkan fulkrum lebih dekat kepada beban menjadikan tuas lebih mudah digunakan?",
           "options": [
-            "Lengan daya menjadi lebih panjang",
-            "Beban menjadi ringan",
+            "Tuas menjadi pendek",
             "Fulkrum menjadi kuat",
-            "Tuas menjadi pendek"
+            "Lengan daya menjadi lebih panjang",
+            "Beban menjadi ringan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -5359,12 +5359,12 @@
           "id": "s3_c10_q23",
           "text": "Berdasarkan tanjakan di atas, apakah kesannya kepada daya yang diperlukan?",
           "options": [
-            "Daya menjadi lebih kecil",
-            "Daya menjadi lebih besar",
+            "Daya menjadi sifar",
             "Daya tidak berubah",
-            "Daya menjadi sifar"
+            "Daya menjadi lebih kecil",
+            "Daya menjadi lebih besar"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -5374,12 +5374,12 @@
           "id": "s3_c10_q24",
           "text": "Kenapa kilang menggunakan mesin kompleks dan bukan mesin ringkas sahaja?",
           "options": [
-            "Mesin kompleks menggabungkan beberapa mesin ringkas untuk kerja yang lebih rumit",
             "Mesin ringkas tidak berfungsi",
             "Mesin kompleks lebih murah",
+            "Mesin kompleks menggabungkan beberapa mesin ringkas untuk kerja yang lebih rumit",
             "Mesin ringkas terlalu besar"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -5399,12 +5399,12 @@
           "id": "s3_c10_q26",
           "text": "Kenapa memotong dengan pisau tumpul memerlukan lebih banyak daya?",
           "options": [
+            "Pisau menjadi panjang",
             "Daya tersebar pada kawasan yang lebih luas",
             "Pisau menjadi berat",
-            "Bahan menjadi keras",
-            "Pisau menjadi panjang"
+            "Bahan menjadi keras"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -5414,12 +5414,12 @@
           "id": "s3_c10_q27",
           "text": "Manakah gabungan mesin ringkas dalam sebuah basikal?",
           "options": [
-            "Roda dan gandar, gear, dan tuas",
             "Hanya roda",
-            "Hanya gear",
-            "Hanya tuas"
+            "Hanya tuas",
+            "Roda dan gandar, gear, dan tuas",
+            "Hanya gear"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -5439,12 +5439,12 @@
           "id": "s3_c10_q29",
           "text": "Kenapa mesin ringkas tidak mengurangkan jumlah kerja yang perlu dilakukan?",
           "options": [
-            "Daya yang lebih kecil ditukar dengan jarak yang lebih panjang",
             "Mesin menyerap tenaga",
-            "Kerja bertambah",
-            "Mesin menghasilkan tenaga"
+            "Mesin menghasilkan tenaga",
+            "Daya yang lebih kecil ditukar dengan jarak yang lebih panjang",
+            "Kerja bertambah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -5480,8 +5480,8 @@
           "text": "Kenapa tanjakan yang lebih landai memerlukan daya yang lebih kecil tetapi jarak yang lebih panjang?",
           "options": [
             "Jumlah kerja kekal sama, jadi mengurangkan daya menambah jarak",
-            "Landai menghilangkan graviti",
             "Barang menjadi ringan",
+            "Landai menghilangkan graviti",
             "Tanjakan menolak barang"
           ],
           "correctAnswer": 0,
@@ -5504,12 +5504,12 @@
           "id": "s3_c10_q34",
           "text": "Kenapa jam mekanikal dianggap mesin kompleks?",
           "options": [
-            "Ia menggabungkan banyak gear yang bekerja bersama",
+            "Ia berbunyi",
             "Ia mahal",
             "Ia kecil",
-            "Ia berbunyi"
+            "Ia menggabungkan banyak gear yang bekerja bersama"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -5529,12 +5529,12 @@
           "id": "s3_c10_q36",
           "text": "Kenapa kereta memerlukan gear yang berbeza untuk mendaki bukit dan memandu di jalan rata?",
           "options": [
+            "Enjin menjadi panas",
             "Mendaki memerlukan daya lebih besar, jalan rata memerlukan kelajuan",
             "Gear rosak di bukit",
-            "Enjin menjadi panas",
             "Tayar berubah saiz"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -5569,12 +5569,12 @@
           "id": "s3_c10_q39",
           "text": "Kenapa geseran mengurangkan kecekapan mesin?",
           "options": [
-            "Sebahagian tenaga bertukar menjadi haba dan bukan kerja berguna",
+            "Geseran menghentikan graviti",
             "Geseran menambah berat",
-            "Geseran mengubah bentuk mesin",
-            "Geseran menghentikan graviti"
+            "Sebahagian tenaga bertukar menjadi haba dan bukan kerja berguna",
+            "Geseran mengubah bentuk mesin"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -5585,9 +5585,9 @@
           "text": "Manakah kesimpulan yang PALING tepat tentang mesin ringkas?",
           "options": [
             "Ia menukar saiz atau arah daya untuk memudahkan kerja",
-            "Ia mencipta tenaga baharu",
             "Ia menghapuskan geseran",
-            "Ia mengurangkan jumlah tenaga yang diperlukan"
+            "Ia mengurangkan jumlah tenaga yang diperlukan",
+            "Ia mencipta tenaga baharu"
           ],
           "correctAnswer": 0,
           "difficulty": "ultra",

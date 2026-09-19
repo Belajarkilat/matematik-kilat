@@ -42,16 +42,18 @@ if (fs.existsSync(swPath)) {
   const hash = crypto.createHash('sha1');
   hash.update(fs.readdirSync(path.join(docs, 'assets')).sort().join('|'));
 
-  const questions = path.join(docs, 'data', 'questions');
-  if (fs.existsSync(questions)) {
-    fs.readdirSync(questions).sort().forEach((subject) => {
-      const dir = path.join(questions, subject);
+  // Fail Tampal Label berubah dengan cara yang sama, jadi ia turut dicap.
+  ['questions', 'tampal'].forEach((jenis) => {
+    const akar = path.join(docs, 'data', jenis);
+    if (!fs.existsSync(akar)) return;
+    fs.readdirSync(akar).sort().forEach((subject) => {
+      const dir = path.join(akar, subject);
       if (!fs.statSync(dir).isDirectory()) return;
       fs.readdirSync(dir).sort().forEach((name) => {
         hash.update(fs.readFileSync(path.join(dir, name)));
       });
     });
-  }
+  });
 
   const stamp = hash.digest('hex').slice(0, 10);
   const sw = fs

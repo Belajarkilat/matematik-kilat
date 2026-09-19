@@ -10,7 +10,7 @@
  * dengan cap khusus binaan, jadi tiada siapa perlu ingat untuk menaikkannya.
  */
 
-const VERSION = 'kilat-3a4d4ffc67';
+const VERSION = 'kilat-4b3996e01f';
 const BASE = new URL('./', self.registration.scope).pathname;
 
 const PRECACHE = [
@@ -27,7 +27,13 @@ const PRECACHE = [
   BASE + 'data/questions/matematik/tahun3.json',
   BASE + 'data/questions/matematik/tahun4.json',
   BASE + 'data/questions/matematik/tahun5.json',
-  BASE + 'data/questions/matematik/tahun6.json'
+  BASE + 'data/questions/matematik/tahun6.json',
+  BASE + 'data/tampal/matematik/tahun1.json',
+  BASE + 'data/tampal/matematik/tahun2.json',
+  BASE + 'data/tampal/matematik/tahun3.json',
+  BASE + 'data/tampal/matematik/tahun4.json',
+  BASE + 'data/tampal/matematik/tahun5.json',
+  BASE + 'data/tampal/matematik/tahun6.json'
 ];
 
 self.addEventListener('install', (event) => {

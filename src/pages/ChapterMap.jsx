@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getProfileService } from '../services/profileService';
-import { isLevelPaid } from '../services/licenceService';
+import { isLevelPaid, isUnlocked } from '../services/licenceService';
+import { getTampal, hasTampal } from '../services/tampalService';
 import { getSubject, questionsUrl } from '../services/subjectService';
 import ChapterGlyph, { GLYPH_COLOR } from '../components/ChapterGlyph';
 import Stars from '../components/Stars';
@@ -177,6 +178,27 @@ function ChapterMap({ profile }) {
                   );
                 })}
               </div>
+
+              {hasTampal(subject.id) && (() => {
+                const t = getTampal(profile.id, subject.id, tahun, chapter.id);
+                const kunci = num !== 1 && !isUnlocked();
+                return (
+                  <button
+                    className="tampal-btn"
+                    onClick={() => navigate(kunci ? '/buka' : `/${subject.id}/tampal/${tahun}/${chapter.id}`)}
+                    aria-label={`Tampal Label untuk ${chapter.title}${kunci ? ', perlu kod' : t.attempts ? `, ${t.stars} daripada 3 bintang` : ''}`}
+                  >
+                    <svg className="tampal-btn__ikon" viewBox="0 0 26 26" aria-hidden="true">
+                      <rect x="2" y="5" width="16" height="11" rx="3" fill="#7A4DD4" />
+                      <path d="M18 10.5h3l3 3" stroke="#7A4DD4" strokeWidth="2" fill="none" strokeLinecap="round" />
+                      <rect x="8" y="14" width="16" height="9" rx="3" fill="#FFC300" stroke="#17225A" strokeWidth="1.6" />
+                    </svg>
+                    <span className="tampal-btn__nama">Tampal Label</span>
+                    {t.attempts > 0 && !kunci && <Stars count={t.stars} size={13} />}
+                    <span className="tampal-btn__meta">{kunci ? 'Perlu kod' : t.attempts ? `${t.best}%` : 'Baharu'}</span>
+                  </button>
+                );
+              })()}
             </section>
           );
         })}
