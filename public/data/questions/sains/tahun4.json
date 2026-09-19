@@ -11,12 +11,12 @@
           "id": "s4_c1_q1",
           "text": "Alat manakah digunakan untuk mengukur suhu?",
           "options": [
-            "Termometer",
             "Pembaris",
-            "Neraca",
-            "Jam randik"
+            "Jam randik",
+            "Termometer",
+            "Neraca"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -26,12 +26,12 @@
           "id": "s4_c1_q2",
           "text": "Alat manakah digunakan untuk mengukur jisim?",
           "options": [
-            "Neraca",
-            "Termometer",
             "Silinder penyukat",
-            "Pembaris"
+            "Neraca",
+            "Pembaris",
+            "Termometer"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -41,12 +41,12 @@
           "id": "s4_c1_q3",
           "text": "Unit manakah digunakan untuk mengukur isi padu cecair?",
           "options": [
-            "Mililiter",
-            "Gram",
             "Meter",
-            "Saat"
+            "Gram",
+            "Saat",
+            "Mililiter"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -58,8 +58,8 @@
           "options": [
             "Mengumpulkan objek mengikut ciri sepunya",
             "Membuang objek yang rosak",
-            "Mengira bilangan objek",
-            "Melukis objek dengan cantik"
+            "Melukis objek dengan cantik",
+            "Mengira bilangan objek"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -71,12 +71,12 @@
           "id": "s4_c1_q5",
           "text": "Apakah maksud membuat ramalan?",
           "options": [
-            "Menyatakan apa yang mungkin berlaku berdasarkan corak",
             "Meneka secara rawak",
             "Menyalin jawapan kawan",
+            "Menyatakan apa yang mungkin berlaku berdasarkan corak",
             "Mengukur dengan pembaris"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -86,12 +86,12 @@
           "id": "s4_c1_q6",
           "text": "Apakah yang direkodkan dalam jadual data?",
           "options": [
-            "Ukuran dan pemerhatian yang dikumpul",
+            "Pendapat peribadi guru",
             "Nama semua kawan sekelas",
             "Cerita rekaan",
-            "Pendapat peribadi guru"
+            "Ukuran dan pemerhatian yang dikumpul"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -122,8 +122,8 @@
           "text": "Apakah unit piawai bagi masa?",
           "options": [
             "Saat",
-            "Meter",
             "Gram",
+            "Meter",
             "Liter"
           ],
           "correctAnswer": 0,
@@ -137,9 +137,9 @@
           "text": "Kenapa data direkodkan semasa eksperimen dan bukan selepasnya?",
           "options": [
             "Supaya maklumat tidak lupa atau berubah",
-            "Supaya kelihatan sibuk",
             "Supaya cepat habis",
-            "Supaya buku penuh"
+            "Supaya buku penuh",
+            "Supaya kelihatan sibuk"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -161,12 +161,12 @@
           "id": "s4_c1_q12",
           "text": "Ali menguji kesan panjang tali terhadap ayunan bandul. Apakah pemboleh ubah dimalarkan?",
           "options": [
-            "Jisim bandul",
-            "Panjang tali",
             "Bilangan ayunan yang dikira",
-            "Masa yang diambil"
+            "Panjang tali",
+            "Masa yang diambil",
+            "Jisim bandul"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -186,12 +186,12 @@
           "id": "s4_c1_q14",
           "text": "Manakah antara berikut ialah inferens dan bukan pemerhatian?",
           "options": [
-            "Tanah basah kerana hujan turun semalam",
             "Tanah itu basah",
             "Tanah itu berwarna gelap",
+            "Tanah basah kerana hujan turun semalam",
             "Tanah itu melekat pada kasut"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -211,12 +211,12 @@
           "id": "s4_c1_q16",
           "text": "Kenapa neraca perlu diletakkan di atas permukaan rata?",
           "options": [
-            "Supaya bacaan jisim tepat",
-            "Supaya kelihatan kemas",
             "Supaya tidak jatuh",
-            "Supaya lebih cepat digunakan"
+            "Supaya lebih cepat digunakan",
+            "Supaya kelihatan kemas",
+            "Supaya bacaan jisim tepat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -236,12 +236,12 @@
           "id": "s4_c1_q18",
           "text": "Apakah yang ditunjukkan oleh graf bar dengan paling jelas?",
           "options": [
+            "Bau sesuatu bahan",
             "Perbandingan antara kumpulan",
             "Perubahan halus setiap saat",
-            "Warna sesuatu bahan",
-            "Bau sesuatu bahan"
+            "Warna sesuatu bahan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -251,12 +251,12 @@
           "id": "s4_c1_q19",
           "text": "Rina membaca pembaris dengan matanya di tepi, bukan di atas tanda. Apakah kesilapannya?",
           "options": [
-            "Kedudukan mata menyebabkan bacaan tidak tepat",
-            "Pembaris terlalu pendek",
             "Pembaris terlalu panjang",
-            "Cahaya terlalu terang"
+            "Cahaya terlalu terang",
+            "Kedudukan mata menyebabkan bacaan tidak tepat",
+            "Pembaris terlalu pendek"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -286,12 +286,12 @@
           "id": "s4_c1_q22",
           "text": "Ali menguji kesan cahaya terhadap pertumbuhan pokok tetapi satu pasu diletak di luar dan satu lagi dalam bilik sejuk. Apakah masalahnya?",
           "options": [
-            "Suhu turut berbeza, bukan cahaya sahaja",
             "Pasu terlalu kecil",
+            "Suhu turut berbeza, bukan cahaya sahaja",
             "Pokok terlalu muda",
             "Air terlalu banyak"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -312,9 +312,9 @@
           "text": "Kenapa keputusan daripada satu kumpulan sahaja tidak cukup untuk membuat kesimpulan umum?",
           "options": [
             "Satu keputusan boleh dipengaruhi kesilapan atau kebetulan",
-            "Satu kumpulan terlalu kecil untuk dilihat",
+            "Data satu kumpulan tidak sah",
             "Guru tidak membenarkannya",
-            "Data satu kumpulan tidak sah"
+            "Satu kumpulan terlalu kecil untuk dilihat"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -336,12 +336,12 @@
           "id": "s4_c1_q26",
           "text": "Graf garis menunjukkan suhu naik mendadak kemudian mendatar. Apakah maksud bahagian mendatar itu?",
           "options": [
-            "Suhu berhenti berubah",
-            "Suhu terus naik dengan cepat",
+            "Alat ukur telah rosak",
             "Suhu turun perlahan",
-            "Alat ukur telah rosak"
+            "Suhu terus naik dengan cepat",
+            "Suhu berhenti berubah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -361,12 +361,12 @@
           "id": "s4_c1_q28",
           "text": "Apakah yang menjadikan sesuatu ujian itu adil?",
           "options": [
-            "Hanya satu pemboleh ubah diubah dan yang lain dikekalkan",
             "Semua pemboleh ubah diubah serentak",
             "Tiada pemboleh ubah diukur",
+            "Hanya satu pemboleh ubah diubah dan yang lain dikekalkan",
             "Keputusan ditulis terlebih dahulu"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -376,12 +376,12 @@
           "id": "s4_c1_q29",
           "text": "Satu bacaan dalam set data jauh berbeza daripada yang lain. Apakah tindakan terbaik?",
           "options": [
-            "Ulang ukuran itu untuk menyemak",
-            "Padam terus bacaan itu",
+            "Berhenti membuat eksperimen",
             "Tukar kepada nombor yang dijangka",
-            "Berhenti membuat eksperimen"
+            "Ulang ukuran itu untuk menyemak",
+            "Padam terus bacaan itu"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -412,9 +412,9 @@
           "text": "Dua kumpulan mengukur takat didih air yang sama tetapi mendapat 98 darjah dan 100 darjah. Apakah penjelasan yang paling munasabah?",
           "options": [
             "Termometer atau cara bacaan berbeza sedikit",
-            "Air kumpulan pertama bukan air",
+            "Satu kumpulan pasti menipu",
             "Sains tidak boleh dipercayai",
-            "Satu kumpulan pasti menipu"
+            "Air kumpulan pertama bukan air"
           ],
           "correctAnswer": 0,
           "difficulty": "ultra",
@@ -437,8 +437,8 @@
           "text": "Kenapa saintis menggunakan kumpulan kawalan dalam eksperimen?",
           "options": [
             "Untuk menunjukkan apa yang berlaku tanpa rawatan yang diuji",
-            "Untuk menambah bilangan data",
             "Untuk menjimatkan bahan",
+            "Untuk menambah bilangan data",
             "Untuk memendekkan masa ujian"
           ],
           "correctAnswer": 0,
@@ -461,12 +461,12 @@
           "id": "s4_c1_q36",
           "text": "Sebuah graf menunjukkan pertumbuhan pokok bertambah cepat kemudian menjadi perlahan. Apakah kesimpulan yang paling berhati-hati?",
           "options": [
-            "Kadar pertumbuhan berkurang selepas tempoh tertentu",
             "Pokok itu akan mati",
             "Pokok itu tidak sihat",
-            "Baja tidak berkesan langsung"
+            "Baja tidak berkesan langsung",
+            "Kadar pertumbuhan berkurang selepas tempoh tertentu"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -486,12 +486,12 @@
           "id": "s4_c1_q38",
           "text": "Kenapa hipotesis mesti boleh diuji?",
           "options": [
-            "Kerana idea yang tidak boleh diuji tidak dapat disemak betul atau salah",
             "Kerana ia mesti panjang",
             "Kerana guru mahukannya",
-            "Kerana ia mesti betul"
+            "Kerana ia mesti betul",
+            "Kerana idea yang tidak boleh diuji tidak dapat disemak betul atau salah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -502,9 +502,9 @@
           "text": "Ali menyimpulkan baja menyebabkan pokok tinggi, tetapi pokok berbaja juga mendapat lebih banyak cahaya. Apakah kelemahannya?",
           "options": [
             "Cahaya mungkin punca sebenar, bukan baja",
-            "Pokok terlalu banyak",
             "Masa terlalu lama",
-            "Baja terlalu murah"
+            "Baja terlalu murah",
+            "Pokok terlalu banyak"
           ],
           "correctAnswer": 0,
           "difficulty": "ultra",
@@ -533,12 +533,12 @@
           "id": "s4_c2_q1",
           "text": "Berapakah bilangan deria yang ada pada manusia?",
           "options": [
-            "Lima",
-            "Tiga",
             "Empat",
-            "Tujuh"
+            "Tiga",
+            "Tujuh",
+            "Lima"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -548,12 +548,12 @@
           "id": "s4_c2_q2",
           "text": "Organ manakah digunakan untuk deria bau?",
           "options": [
-            "Hidung",
             "Lidah",
+            "Hidung",
             "Telinga",
             "Kulit"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -578,12 +578,12 @@
           "id": "s4_c2_q4",
           "text": "Organ manakah digunakan untuk deria sentuh?",
           "options": [
-            "Kulit",
-            "Mata",
             "Lidah",
-            "Telinga"
+            "Telinga",
+            "Kulit",
+            "Mata"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -594,9 +594,9 @@
           "text": "Apakah fungsi telinga?",
           "options": [
             "Mendengar bunyi",
+            "Menghidu bau",
             "Melihat cahaya",
-            "Merasa makanan",
-            "Menghidu bau"
+            "Merasa makanan"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -609,9 +609,9 @@
           "text": "Manakah antara berikut ialah rasa yang dikesan oleh lidah?",
           "options": [
             "Manis",
-            "Kasar",
             "Terang",
-            "Bising"
+            "Bising",
+            "Kasar"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -623,12 +623,12 @@
           "id": "s4_c2_q7",
           "text": "Apakah yang melindungi mata daripada habuk?",
           "options": [
-            "Bulu mata dan kelopak mata",
-            "Rambut kepala",
             "Kulit tangan",
-            "Gigi"
+            "Rambut kepala",
+            "Gigi",
+            "Bulu mata dan kelopak mata"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -638,12 +638,12 @@
           "id": "s4_c2_q8",
           "text": "Kenapa kita tidak boleh memandang terus ke arah matahari?",
           "options": [
-            "Cahaya yang terlalu kuat merosakkan mata",
+            "Matahari terlalu kecil",
             "Matahari terlalu jauh",
-            "Mata akan menjadi sejuk",
-            "Matahari terlalu kecil"
+            "Cahaya yang terlalu kuat merosakkan mata",
+            "Mata akan menjadi sejuk"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -653,12 +653,12 @@
           "id": "s4_c2_q9",
           "text": "Apakah yang patut dibuat untuk menjaga telinga?",
           "options": [
-            "Elakkan bunyi yang terlalu kuat",
             "Masukkan benda tajam ke dalamnya",
+            "Elakkan bunyi yang terlalu kuat",
             "Dengar muzik sekuat mungkin",
             "Basuh bahagian dalam dengan sabun"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -668,12 +668,12 @@
           "id": "s4_c2_q10",
           "text": "Deria manakah paling membantu apabila bilik menjadi gelap?",
           "options": [
+            "Penglihatan dan rasa",
             "Pendengaran dan sentuh",
             "Penglihatan sahaja",
-            "Penglihatan dan rasa",
             "Rasa sahaja"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -683,12 +683,12 @@
           "id": "s4_c2_q11",
           "text": "Kenapa makanan terasa hambar apabila kita selesema?",
           "options": [
-            "Hidung tersumbat, jadi bau tidak dapat dikesan",
+            "Perut menjadi penuh",
             "Lidah menjadi kecil",
             "Gigi menjadi lemah",
-            "Perut menjadi penuh"
+            "Hidung tersumbat, jadi bau tidak dapat dikesan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -698,12 +698,12 @@
           "id": "s4_c2_q12",
           "text": "Apakah yang berlaku kepada anak mata di dalam bilik yang gelap?",
           "options": [
+            "Ia berhenti bergerak",
             "Ia membesar untuk membenarkan lebih banyak cahaya masuk",
             "Ia mengecil",
-            "Ia bertukar warna",
-            "Ia berhenti bergerak"
+            "Ia bertukar warna"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -713,12 +713,12 @@
           "id": "s4_c2_q13",
           "text": "Kenapa kita menarik tangan dengan pantas apabila menyentuh benda panas?",
           "options": [
+            "Otot menjadi sejuk",
             "Kulit menghantar isyarat amaran ke otak dengan pantas",
             "Tangan menjadi ringan",
-            "Benda panas menolak tangan",
-            "Otot menjadi sejuk"
+            "Benda panas menolak tangan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -728,12 +728,12 @@
           "id": "s4_c2_q14",
           "text": "Lidah mengesan rasa melalui apa?",
           "options": [
-            "Tunas rasa",
-            "Gigi",
+            "Bibir",
             "Air liur sahaja",
-            "Bibir"
+            "Gigi",
+            "Tunas rasa"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -743,12 +743,12 @@
           "id": "s4_c2_q15",
           "text": "Kenapa orang buta boleh membaca tulisan Braille?",
           "options": [
-            "Kulit hujung jari sangat peka kepada sentuhan",
-            "Mereka masih boleh melihat sedikit",
             "Kertas mengeluarkan bunyi",
-            "Braille mempunyai bau tersendiri"
+            "Mereka masih boleh melihat sedikit",
+            "Braille mempunyai bau tersendiri",
+            "Kulit hujung jari sangat peka kepada sentuhan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -758,12 +758,12 @@
           "id": "s4_c2_q16",
           "text": "Apakah yang sering berlaku kepada deria lain apabila penglihatan hilang?",
           "options": [
-            "Deria lain menjadi lebih tajam kerana lebih digunakan",
-            "Semua deria lain turut hilang",
+            "Kulit menjadi kebas",
             "Pendengaran berhenti",
-            "Kulit menjadi kebas"
+            "Deria lain menjadi lebih tajam kerana lebih digunakan",
+            "Semua deria lain turut hilang"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -773,12 +773,12 @@
           "id": "s4_c2_q17",
           "text": "Kenapa kita perlu menutup mulut apabila bersin?",
           "options": [
-            "Untuk menghalang kuman merebak kepada orang lain",
-            "Supaya bunyi lebih kuat",
             "Supaya hidung menjadi bersih",
-            "Supaya mata tidak sakit"
+            "Untuk menghalang kuman merebak kepada orang lain",
+            "Supaya mata tidak sakit",
+            "Supaya bunyi lebih kuat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -788,12 +788,12 @@
           "id": "s4_c2_q18",
           "text": "Manakah contoh deria yang boleh menipu kita?",
           "options": [
-            "Air suam terasa sejuk selepas tangan direndam dalam air panas",
-            "Warna merah sentiasa merah",
             "Bunyi kuat sentiasa kuat",
-            "Gula sentiasa manis"
+            "Air suam terasa sejuk selepas tangan direndam dalam air panas",
+            "Gula sentiasa manis",
+            "Warna merah sentiasa merah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -804,9 +804,9 @@
           "text": "Kenapa sesetengah orang memerlukan cermin mata?",
           "options": [
             "Untuk membetulkan pemfokusan cahaya di dalam mata",
+            "Untuk mengurangkan bunyi",
             "Untuk menambah warna",
-            "Untuk menyejukkan mata",
-            "Untuk mengurangkan bunyi"
+            "Untuk menyejukkan mata"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -818,12 +818,12 @@
           "id": "s4_c2_q20",
           "text": "Apakah kepentingan mempunyai dua telinga?",
           "options": [
-            "Membantu mengesan arah datangnya bunyi",
-            "Menjadikan bunyi dua kali lebih kuat",
+            "Menambah rasa makanan",
             "Menjadikan kepala seimbang",
-            "Menambah rasa makanan"
+            "Menjadikan bunyi dua kali lebih kuat",
+            "Membantu mengesan arah datangnya bunyi"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -833,12 +833,12 @@
           "id": "s4_c2_q21",
           "text": "Ali menutup mata dan hidungnya lalu tidak dapat membezakan epal daripada kentang. Apakah kesimpulannya?",
           "options": [
-            "Rasa bergantung pada gabungan beberapa deria",
             "Lidahnya tidak berfungsi",
-            "Epal dan kentang memang sama",
-            "Deria sentuhnya hilang"
+            "Deria sentuhnya hilang",
+            "Rasa bergantung pada gabungan beberapa deria",
+            "Epal dan kentang memang sama"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -850,8 +850,8 @@
           "options": [
             "Kerosakan pendengaran terkumpul sepanjang masa",
             "Bunyi berterusan lebih tinggi nadanya",
-            "Bunyi sekejap tidak masuk ke telinga",
-            "Telinga membaiki diri serta-merta"
+            "Telinga membaiki diri serta-merta",
+            "Bunyi sekejap tidak masuk ke telinga"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -863,12 +863,12 @@
           "id": "s4_c2_q23",
           "text": "Seorang murid nampak papan tulis kabur dari belakang kelas tetapi jelas dari depan. Apakah yang mungkin berlaku?",
           "options": [
-            "Rabun jauh, iaitu masalah memfokus objek yang jauh",
+            "Telinganya bermasalah",
             "Papan tulis terlalu kecil",
-            "Cahaya terlalu banyak",
-            "Telinganya bermasalah"
+            "Rabun jauh, iaitu masalah memfokus objek yang jauh",
+            "Cahaya terlalu banyak"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -878,12 +878,12 @@
           "id": "s4_c2_q24",
           "text": "Kenapa doktor menguji setiap telinga secara berasingan?",
           "options": [
-            "Untuk mengesan masalah yang hanya pada sebelah",
+            "Kerana bunyi tidak boleh diulang",
             "Untuk menjimatkan masa",
             "Kerana dua telinga memang sama",
-            "Kerana bunyi tidak boleh diulang"
+            "Untuk mengesan masalah yang hanya pada sebelah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -893,12 +893,12 @@
           "id": "s4_c2_q25",
           "text": "Apakah yang menerangkan mengapa kita masih boleh berjalan dalam bilik gelap yang kita kenali?",
           "options": [
-            "Ingatan dan deria sentuh menggantikan penglihatan",
             "Mata boleh melihat dalam gelap penuh",
-            "Kaki mengeluarkan cahaya",
-            "Bunyi menerangi bilik"
+            "Ingatan dan deria sentuh menggantikan penglihatan",
+            "Bunyi menerangi bilik",
+            "Kaki mengeluarkan cahaya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -908,12 +908,12 @@
           "id": "s4_c2_q26",
           "text": "Kenapa makanan yang terlalu panas boleh merosakkan deria rasa buat sementara?",
           "options": [
-            "Haba mencederakan tunas rasa pada lidah",
+            "Gigi menghalang rasa",
             "Makanan menjadi masin",
             "Lidah menjadi tebal secara kekal",
-            "Gigi menghalang rasa"
+            "Haba mencederakan tunas rasa pada lidah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -923,12 +923,12 @@
           "id": "s4_c2_q27",
           "text": "Seorang tukang masak dapat mengenal pasti bahan dalam sup hanya dengan menghidu. Apakah yang ditunjukkan?",
           "options": [
+            "Sup mengeluarkan cahaya",
             "Deria boleh menjadi lebih tajam melalui latihan",
             "Hidungnya lebih besar",
-            "Sup mengeluarkan cahaya",
             "Bau lebih kuat daripada rasa"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -938,12 +938,12 @@
           "id": "s4_c2_q28",
           "text": "Kenapa amaran bahaya di jalan raya menggunakan bunyi dan lampu serentak?",
           "options": [
-            "Supaya orang dengan satu deria terhad masih mendapat amaran",
             "Supaya kosnya lebih mahal",
+            "Supaya orang dengan satu deria terhad masih mendapat amaran",
             "Supaya kelihatan lebih cantik",
             "Supaya lebih senang dibuat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -969,9 +969,9 @@
           "text": "Kenapa lampu bilik belajar tidak boleh terlalu malap?",
           "options": [
             "Mata terpaksa bekerja lebih kuat dan cepat penat",
+            "Telinga akan terganggu",
             "Buku akan menjadi basah",
-            "Kertas akan bertukar warna",
-            "Telinga akan terganggu"
+            "Kertas akan bertukar warna"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -984,8 +984,8 @@
           "text": "Kenapa seseorang yang hilang deria bau masih boleh mengesan rasa masin dan manis?",
           "options": [
             "Rasa asas dikesan oleh lidah tanpa bantuan hidung",
-            "Lidah menggantikan hidung sepenuhnya",
             "Bau memang tidak penting",
+            "Lidah menggantikan hidung sepenuhnya",
             "Makanan berubah rasa dengan sendirinya"
           ],
           "correctAnswer": 0,
@@ -999,9 +999,9 @@
           "text": "Seorang murid dapat mendengar bunyi tetapi tidak faham perkataan dalam bilik bising. Apakah penjelasannya?",
           "options": [
             "Otak sukar mengasingkan suara daripada bunyi latar",
-            "Telinganya pekak sepenuhnya",
+            "Suara tidak sampai ke telinga",
             "Perkataan itu terlalu perlahan",
-            "Suara tidak sampai ke telinga"
+            "Telinganya pekak sepenuhnya"
           ],
           "correctAnswer": 0,
           "difficulty": "ultra",
@@ -1013,12 +1013,12 @@
           "id": "s4_c2_q33",
           "text": "Kenapa ujian penglihatan menggunakan huruf yang mengecil secara berperingkat?",
           "options": [
-            "Untuk mencari saiz terkecil yang masih dapat difokus dengan jelas",
-            "Untuk menguji ingatan huruf",
             "Untuk menjimatkan kertas",
+            "Untuk menguji ingatan huruf",
+            "Untuk mencari saiz terkecil yang masih dapat difokus dengan jelas",
             "Untuk menguji kelajuan membaca"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1028,12 +1028,12 @@
           "id": "s4_c2_q34",
           "text": "Apakah kesan jangka panjang menggunakan fon telinga pada kelantangan yang tinggi?",
           "options": [
-            "Kehilangan pendengaran yang tidak dapat dipulihkan",
-            "Telinga menjadi lebih peka",
             "Bunyi menjadi lebih jelas selamanya",
-            "Tiada kesan langsung"
+            "Telinga menjadi lebih peka",
+            "Tiada kesan langsung",
+            "Kehilangan pendengaran yang tidak dapat dipulihkan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1044,9 +1044,9 @@
           "text": "Kenapa deria sentuh pada hujung jari lebih peka daripada pada belakang badan?",
           "options": [
             "Hujung jari mempunyai lebih banyak penerima sentuhan",
-            "Kulit jari lebih tebal",
+            "Belakang badan tiada kulit",
             "Jari lebih dekat dengan otak",
-            "Belakang badan tiada kulit"
+            "Kulit jari lebih tebal"
           ],
           "correctAnswer": 0,
           "difficulty": "ultra",
@@ -1058,12 +1058,12 @@
           "id": "s4_c2_q36",
           "text": "Seorang murid mendakwa dia boleh mengenal warna makanan dengan mata tertutup. Bagaimana ujian yang adil dijalankan?",
           "options": [
-            "Guna makanan sama rasa tetapi warna berbeza, tanpa sebarang petunjuk lain",
-            "Beritahu warnanya terlebih dahulu",
             "Guna makanan yang berbeza rasa",
-            "Biarkan dia melihat sekejap"
+            "Biarkan dia melihat sekejap",
+            "Beritahu warnanya terlebih dahulu",
+            "Guna makanan sama rasa tetapi warna berbeza, tanpa sebarang petunjuk lain"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1073,12 +1073,12 @@
           "id": "s4_c2_q37",
           "text": "Kenapa suhu bilik yang sama dirasa berbeza oleh dua orang?",
           "options": [
-            "Kulit membandingkan dengan keadaan sebelumnya, bukan mengukur secara mutlak",
             "Bilik itu mempunyai dua suhu",
             "Termometer rosak",
-            "Suhu berubah setiap saat"
+            "Suhu berubah setiap saat",
+            "Kulit membandingkan dengan keadaan sebelumnya, bukan mengukur secara mutlak"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1089,8 +1089,8 @@
           "text": "Kenapa peraturan makmal melarang menghidu bahan kimia terus dari mulut botol?",
           "options": [
             "Wap pekat boleh mencederakan saluran pernafasan",
-            "Baunya akan hilang",
             "Botol akan pecah",
+            "Baunya akan hilang",
             "Bahan menjadi tidak berguna"
           ],
           "correctAnswer": 0,
@@ -1103,12 +1103,12 @@
           "id": "s4_c2_q39",
           "text": "Kenapa orang tua sering memerlukan cahaya lebih terang untuk membaca?",
           "options": [
+            "Otak berhenti membaca",
             "Mata berkurang kemampuan mengumpul dan memfokus cahaya",
-            "Buku bertukar warna",
             "Huruf mengecil dengan masa",
-            "Otak berhenti membaca"
+            "Buku bertukar warna"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1118,12 +1118,12 @@
           "id": "s4_c2_q40",
           "text": "Apakah bukti terbaik bahawa deria boleh ditipu?",
           "options": [
-            "Dua garis sama panjang kelihatan berbeza dalam ilusi optik",
             "Gula sentiasa terasa manis",
             "Api sentiasa terasa panas",
+            "Dua garis sama panjang kelihatan berbeza dalam ilusi optik",
             "Bunyi loceng sentiasa jelas"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1140,12 +1140,12 @@
           "id": "s4_c3_q1",
           "text": "Apakah organ pernafasan bagi ikan?",
           "options": [
-            "Insang",
             "Peparu",
             "Kulit",
-            "Trakea"
+            "Trakea",
+            "Insang"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1155,12 +1155,12 @@
           "id": "s4_c3_q2",
           "text": "Apakah organ pernafasan bagi manusia dan kucing?",
           "options": [
-            "Peparu",
             "Insang",
-            "Trakea",
-            "Kulit lembap"
+            "Peparu",
+            "Kulit lembap",
+            "Trakea"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1170,12 +1170,12 @@
           "id": "s4_c3_q3",
           "text": "Haiwan manakah bernafas melalui trakea?",
           "options": [
-            "Belalang",
-            "Ikan",
+            "Kucing",
             "Katak dewasa",
-            "Kucing"
+            "Belalang",
+            "Ikan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1185,12 +1185,12 @@
           "id": "s4_c3_q4",
           "text": "Katak dewasa bernafas menggunakan apa?",
           "options": [
-            "Peparu dan kulit lembap",
+            "Bulu",
             "Insang sahaja",
             "Trakea",
-            "Bulu"
+            "Peparu dan kulit lembap"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1200,12 +1200,12 @@
           "id": "s4_c3_q5",
           "text": "Haiwan manakah membiak dengan bertelur?",
           "options": [
-            "Ayam",
-            "Kucing",
             "Lembu",
-            "Kambing"
+            "Kucing",
+            "Kambing",
+            "Ayam"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1215,12 +1215,12 @@
           "id": "s4_c3_q6",
           "text": "Haiwan manakah melahirkan anak?",
           "options": [
-            "Lembu",
             "Ayam",
             "Katak",
-            "Penyu"
+            "Penyu",
+            "Lembu"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1230,12 +1230,12 @@
           "id": "s4_c3_q7",
           "text": "Apakah maksud perkumuhan?",
           "options": [
-            "Membuang bahan kumuh daripada badan",
             "Mengambil makanan",
+            "Membuang bahan kumuh daripada badan",
             "Membiak",
             "Tidur panjang"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1245,12 +1245,12 @@
           "id": "s4_c3_q8",
           "text": "Manakah proses hidup yang dilakukan oleh semua haiwan?",
           "options": [
-            "Bernafas",
             "Berenang",
+            "Bernafas",
             "Terbang",
             "Memanjat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1260,12 +1260,12 @@
           "id": "s4_c3_q9",
           "text": "Apakah yang diperlukan haiwan untuk hidup?",
           "options": [
-            "Makanan, air dan udara",
-            "Wang dan kereta",
             "Muzik dan lampu",
-            "Buku dan pensel"
+            "Wang dan kereta",
+            "Buku dan pensel",
+            "Makanan, air dan udara"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1275,12 +1275,12 @@
           "id": "s4_c3_q10",
           "text": "Haiwan manakah bernafas melalui insang sepanjang hidupnya?",
           "options": [
-            "Ikan",
             "Burung",
+            "Cicak",
             "Arnab",
-            "Cicak"
+            "Ikan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1290,12 +1290,12 @@
           "id": "s4_c3_q11",
           "text": "Kenapa ikan mati apabila dikeluarkan dari air terlalu lama?",
           "options": [
+            "Ikan terlalu lapar",
             "Insang mengering dan tidak dapat mengambil oksigen",
             "Ikan terlalu sejuk",
-            "Ikan terlalu lapar",
             "Ikan takut"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -1305,12 +1305,12 @@
           "id": "s4_c3_q12",
           "text": "Kenapa katak berudu bernafas berbeza daripada katak dewasa?",
           "options": [
-            "Berudu hidup dalam air dan menggunakan insang",
-            "Berudu lebih kecil",
             "Berudu tidak bernafas",
-            "Berudu bernafas dengan bulu"
+            "Berudu bernafas dengan bulu",
+            "Berudu lebih kecil",
+            "Berudu hidup dalam air dan menggunakan insang"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -1321,9 +1321,9 @@
           "text": "Apakah kelebihan haiwan yang melahirkan anak berbanding yang bertelur?",
           "options": [
             "Anak lebih terlindung semasa membesar dalam badan induk",
+            "Anak lebih kecil",
             "Anak lebih cepat lahir",
-            "Anak tidak perlu makan",
-            "Anak lebih kecil"
+            "Anak tidak perlu makan"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -1335,12 +1335,12 @@
           "id": "s4_c3_q14",
           "text": "Kenapa haiwan yang bertelur biasanya bertelur dalam jumlah yang banyak?",
           "options": [
-            "Kerana banyak telur tidak sempat menetas atau dimakan pemangsa",
             "Kerana telur mudah dibuat",
             "Kerana telur ringan",
+            "Kerana banyak telur tidak sempat menetas atau dimakan pemangsa",
             "Kerana telur murah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -1350,12 +1350,12 @@
           "id": "s4_c3_q15",
           "text": "Apakah cara serangga mendapatkan udara?",
           "options": [
-            "Melalui liang kecil pada badan yang membawa udara ke trakea",
             "Melalui mulut sahaja",
-            "Melalui insang",
-            "Melalui sayap"
+            "Melalui liang kecil pada badan yang membawa udara ke trakea",
+            "Melalui sayap",
+            "Melalui insang"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -1366,9 +1366,9 @@
           "text": "Kenapa cacing tanah perlu berada di tanah yang lembap?",
           "options": [
             "Ia bernafas melalui kulit yang mesti sentiasa lembap",
-            "Ia suka air minum",
             "Ia takut cahaya",
-            "Ia mencari kawan"
+            "Ia mencari kawan",
+            "Ia suka air minum"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -1380,12 +1380,12 @@
           "id": "s4_c3_q17",
           "text": "Apakah yang berlaku jika haiwan tidak dapat membuang bahan kumuh?",
           "options": [
-            "Bahan beracun terkumpul dan membahayakan badan",
-            "Haiwan menjadi lebih kuat",
             "Haiwan membesar lebih cepat",
-            "Tiada apa-apa berlaku"
+            "Tiada apa-apa berlaku",
+            "Bahan beracun terkumpul dan membahayakan badan",
+            "Haiwan menjadi lebih kuat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -1395,12 +1395,12 @@
           "id": "s4_c3_q18",
           "text": "Kenapa penyu bertelur di pantai walaupun hidup di laut?",
           "options": [
+            "Penyu tidak suka air",
             "Telurnya memerlukan udara dan tidak boleh menetas dalam air",
             "Pantai lebih selamat sepenuhnya",
-            "Penyu tidak suka air",
             "Telur terapung"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -1410,12 +1410,12 @@
           "id": "s4_c3_q19",
           "text": "Apakah persamaan antara insang dan peparu?",
           "options": [
-            "Kedua-duanya mengambil oksigen untuk badan",
             "Kedua-duanya berada di dalam air",
-            "Kedua-duanya berbulu",
-            "Kedua-duanya menghasilkan makanan"
+            "Kedua-duanya mengambil oksigen untuk badan",
+            "Kedua-duanya menghasilkan makanan",
+            "Kedua-duanya berbulu"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -1425,12 +1425,12 @@
           "id": "s4_c3_q20",
           "text": "Kenapa ibu burung mengeram telurnya?",
           "options": [
-            "Untuk mengekalkan kepanasan yang diperlukan embrio",
             "Untuk menyembunyikan telur",
-            "Untuk memecahkan telur",
-            "Untuk memberi makanan"
+            "Untuk mengekalkan kepanasan yang diperlukan embrio",
+            "Untuk memberi makanan",
+            "Untuk memecahkan telur"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -1440,12 +1440,12 @@
           "id": "s4_c3_q21",
           "text": "Ikan paus hidup di laut tetapi kerap naik ke permukaan. Kenapa?",
           "options": [
-            "Ia bernafas dengan peparu dan perlukan udara",
+            "Insangnya kecil",
             "Ia mencari cahaya",
             "Ia mahu melihat kapal",
-            "Insangnya kecil"
+            "Ia bernafas dengan peparu dan perlukan udara"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -1455,12 +1455,12 @@
           "id": "s4_c3_q22",
           "text": "Kenapa haiwan yang menjaga anak biasanya menghasilkan anak yang lebih sedikit?",
           "options": [
+            "Anak lebih besar sahaja",
             "Setiap anak mendapat lebih banyak perlindungan dan makanan",
             "Anak lebih mahal",
-            "Induk terlalu penat",
-            "Anak lebih besar sahaja"
+            "Induk terlalu penat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -1470,12 +1470,12 @@
           "id": "s4_c3_q23",
           "text": "Katak mengalami perubahan bentuk daripada berudu kepada dewasa. Apakah kesan perubahan ini?",
           "options": [
-            "Ia dapat hidup di air dan di darat pada peringkat berbeza",
-            "Ia menjadi lebih kecil",
+            "Ia hidup lebih singkat",
             "Ia berhenti bernafas",
-            "Ia hidup lebih singkat"
+            "Ia menjadi lebih kecil",
+            "Ia dapat hidup di air dan di darat pada peringkat berbeza"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -1485,12 +1485,12 @@
           "id": "s4_c3_q24",
           "text": "Kenapa serangga tidak boleh membesar sebesar kucing?",
           "options": [
-            "Sistem trakeanya tidak dapat menghantar udara ke badan yang terlalu besar",
-            "Ia tidak cukup makanan",
             "Ia terlalu ringan",
+            "Ia tidak cukup makanan",
+            "Sistem trakeanya tidak dapat menghantar udara ke badan yang terlalu besar",
             "Ia tidak mahu"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -1500,12 +1500,12 @@
           "id": "s4_c3_q25",
           "text": "Seekor ikan diletakkan dalam air yang kurang oksigen. Apakah yang akan berlaku?",
           "options": [
-            "Ia bernafas lebih laju untuk mendapatkan oksigen yang cukup",
             "Ia berhenti bernafas",
-            "Ia bertukar menjadi katak",
-            "Ia membesar dengan cepat"
+            "Ia membesar dengan cepat",
+            "Ia bernafas lebih laju untuk mendapatkan oksigen yang cukup",
+            "Ia bertukar menjadi katak"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -1515,12 +1515,12 @@
           "id": "s4_c3_q26",
           "text": "Kenapa haiwan gurun mengeluarkan air kencing yang sangat pekat?",
           "options": [
-            "Untuk menjimatkan air dalam badan",
             "Untuk menakutkan pemangsa",
             "Untuk menandakan kawasan sahaja",
+            "Untuk menjimatkan air dalam badan",
             "Untuk menyejukkan badan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -1530,12 +1530,12 @@
           "id": "s4_c3_q27",
           "text": "Apakah kelebihan telur bercengkerang keras bagi haiwan darat?",
           "options": [
-            "Ia menghalang telur daripada kering",
-            "Ia menjadikan telur lebih berat",
+            "Ia menjadikan telur berwarna",
             "Ia menghalang udara masuk",
-            "Ia menjadikan telur berwarna"
+            "Ia menghalang telur daripada kering",
+            "Ia menjadikan telur lebih berat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -1545,12 +1545,12 @@
           "id": "s4_c3_q28",
           "text": "Kenapa anak ikan yang baru menetas tidak dijaga oleh induknya dalam kebanyakan spesies?",
           "options": [
-            "Bilangannya banyak dan sebahagian akan terus hidup tanpa jagaan",
+            "Anak ikan tidak makan",
             "Induk tidak boleh berenang",
-            "Anak ikan terlalu besar",
-            "Anak ikan tidak makan"
+            "Bilangannya banyak dan sebahagian akan terus hidup tanpa jagaan",
+            "Anak ikan terlalu besar"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -1561,9 +1561,9 @@
           "text": "Apakah yang membezakan pernafasan cacing tanah daripada belalang?",
           "options": [
             "Cacing menggunakan kulit manakala belalang menggunakan trakea",
+            "Belalang menggunakan kulit",
             "Kedua-duanya menggunakan peparu",
-            "Cacing menggunakan insang",
-            "Belalang menggunakan kulit"
+            "Cacing menggunakan insang"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -1575,12 +1575,12 @@
           "id": "s4_c3_q30",
           "text": "Kenapa haiwan yang hidup dalam air sejuk sering lebih besar saiznya?",
           "options": [
-            "Air sejuk mengandungi lebih banyak oksigen terlarut",
             "Air sejuk lebih ringan",
-            "Air sejuk mempunyai lebih banyak makanan sentiasa",
-            "Air sejuk menolak haiwan"
+            "Air sejuk mengandungi lebih banyak oksigen terlarut",
+            "Air sejuk menolak haiwan",
+            "Air sejuk mempunyai lebih banyak makanan sentiasa"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -1591,8 +1591,8 @@
           "text": "Seekor haiwan bernafas dengan peparu, melahirkan anak dan hidup di laut. Apakah kumpulannya?",
           "options": [
             "Mamalia",
-            "Ikan",
             "Amfibia",
+            "Ikan",
             "Reptilia"
           ],
           "correctAnswer": 0,
@@ -1607,8 +1607,8 @@
           "options": [
             "Kulit nipisnya menyerap bahan cemar dengan mudah",
             "Ia tidak boleh berenang",
-            "Ia tidak boleh melompat",
-            "Ia tidak mempunyai mata"
+            "Ia tidak mempunyai mata",
+            "Ia tidak boleh melompat"
           ],
           "correctAnswer": 0,
           "difficulty": "ultra",
@@ -1620,12 +1620,12 @@
           "id": "s4_c3_q33",
           "text": "Sebuah kolam kehilangan tumbuhan airnya. Apakah kesan langsung kepada ikan?",
           "options": [
-            "Oksigen terlarut berkurang dan ikan sukar bernafas",
-            "Air menjadi lebih sejuk",
             "Ikan membiak lebih cepat",
+            "Air menjadi lebih sejuk",
+            "Oksigen terlarut berkurang dan ikan sukar bernafas",
             "Ikan bertukar kepada peparu"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1636,9 +1636,9 @@
           "text": "Kenapa embrio dalam telur ayam memerlukan cengkerang yang berliang halus?",
           "options": [
             "Untuk membenarkan oksigen masuk dan karbon dioksida keluar",
-            "Untuk membenarkan air masuk",
             "Untuk membenarkan cahaya masuk",
-            "Untuk menjadikan telur ringan"
+            "Untuk menjadikan telur ringan",
+            "Untuk membenarkan air masuk"
           ],
           "correctAnswer": 0,
           "difficulty": "ultra",
@@ -1650,12 +1650,12 @@
           "id": "s4_c3_q35",
           "text": "Apakah kelemahan utama strategi bertelur banyak tanpa penjagaan?",
           "options": [
+            "Anak membesar terlalu cepat",
             "Kadar kemandirian setiap anak sangat rendah",
-            "Induk menjadi lemah",
             "Telur terlalu berat",
-            "Anak membesar terlalu cepat"
+            "Induk menjadi lemah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1665,12 +1665,12 @@
           "id": "s4_c3_q36",
           "text": "Kenapa haiwan yang berhibernasi mengurangkan kadar pernafasan?",
           "options": [
-            "Untuk menjimatkan tenaga apabila makanan sukar didapati",
+            "Untuk membiak",
             "Untuk membesar lebih cepat",
-            "Untuk menghasilkan haba",
-            "Untuk membiak"
+            "Untuk menjimatkan tenaga apabila makanan sukar didapati",
+            "Untuk menghasilkan haba"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1681,9 +1681,9 @@
           "text": "Seekor serangga air membawa gelembung udara di bawah badannya. Apakah fungsinya?",
           "options": [
             "Sebagai bekalan udara untuk bernafas dalam air",
-            "Untuk terapung sahaja",
+            "Untuk mengumpul makanan",
             "Untuk menakutkan musuh",
-            "Untuk mengumpul makanan"
+            "Untuk terapung sahaja"
           ],
           "correctAnswer": 0,
           "difficulty": "ultra",
@@ -1695,12 +1695,12 @@
           "id": "s4_c3_q38",
           "text": "Kenapa ikan air tawar mengeluarkan banyak air kencing yang cair?",
           "options": [
-            "Air meresap masuk ke badannya dan lebihan mesti dibuang",
             "Ia minum terlalu banyak",
-            "Ia tidak boleh menahan air",
-            "Air tawar beracun"
+            "Air tawar beracun",
+            "Air meresap masuk ke badannya dan lebihan mesti dibuang",
+            "Ia tidak boleh menahan air"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1711,9 +1711,9 @@
           "text": "Apakah hubungan antara kadar pernafasan dan saiz badan haiwan kecil seperti tikus?",
           "options": [
             "Haiwan kecil bernafas lebih laju kerana kehilangan haba lebih cepat",
+            "Haiwan kecil tidak bernafas",
             "Haiwan kecil bernafas lebih perlahan",
-            "Saiz tidak mempengaruhi pernafasan",
-            "Haiwan kecil tidak bernafas"
+            "Saiz tidak mempengaruhi pernafasan"
           ],
           "correctAnswer": 0,
           "difficulty": "ultra",
@@ -1725,12 +1725,12 @@
           "id": "s4_c3_q40",
           "text": "Kenapa telur reptilia boleh diletakkan jauh dari air tetapi telur katak tidak?",
           "options": [
-            "Telur reptilia bercengkerang dan tidak mudah kering",
             "Telur katak lebih besar",
             "Telur reptilia lebih ringan",
-            "Telur katak bercengkerang keras"
+            "Telur katak bercengkerang keras",
+            "Telur reptilia bercengkerang dan tidak mudah kering"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1748,8 +1748,8 @@
           "text": "Apakah bahagian tumbuhan yang menyerap air dari tanah?",
           "options": [
             "Akar",
-            "Daun",
             "Bunga",
+            "Daun",
             "Buah"
           ],
           "correctAnswer": 0,
@@ -1763,9 +1763,9 @@
           "text": "Bahagian manakah membuat makanan untuk tumbuhan?",
           "options": [
             "Daun",
-            "Akar",
+            "Buah",
             "Batang",
-            "Buah"
+            "Akar"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -1793,9 +1793,9 @@
           "text": "Apakah yang diperlukan tumbuhan untuk membuat makanan?",
           "options": [
             "Cahaya matahari, air dan karbon dioksida",
-            "Wang dan tanah liat",
+            "Garam dan gula sahaja",
             "Bunyi dan angin",
-            "Garam dan gula sahaja"
+            "Wang dan tanah liat"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -1807,12 +1807,12 @@
           "id": "s4_c4_q5",
           "text": "Apakah gas yang dibebaskan oleh tumbuhan semasa fotosintesis?",
           "options": [
-            "Oksigen",
-            "Karbon dioksida",
             "Nitrogen",
-            "Wap air sahaja"
+            "Oksigen",
+            "Wap air sahaja",
+            "Karbon dioksida"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1822,12 +1822,12 @@
           "id": "s4_c4_q6",
           "text": "Bahagian manakah yang menjadi buah?",
           "options": [
-            "Bunga selepas didebungakan",
             "Akar",
+            "Batang",
             "Daun muda",
-            "Batang"
+            "Bunga selepas didebungakan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1837,12 +1837,12 @@
           "id": "s4_c4_q7",
           "text": "Apakah maksud pendebungaan?",
           "options": [
-            "Pemindahan debunga ke stigma",
-            "Penyerapan air",
+            "Pembahagian batang",
             "Pembuangan daun",
-            "Pembahagian batang"
+            "Pemindahan debunga ke stigma",
+            "Penyerapan air"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1852,12 +1852,12 @@
           "id": "s4_c4_q8",
           "text": "Haiwan manakah paling banyak membantu pendebungaan?",
           "options": [
-            "Lebah",
-            "Ikan",
+            "Ular",
             "Cacing",
-            "Ular"
+            "Lebah",
+            "Ikan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1868,9 +1868,9 @@
           "text": "Apakah yang berlaku kepada tumbuhan yang tidak mendapat cahaya?",
           "options": [
             "Ia menjadi pucat dan akhirnya mati",
-            "Ia membesar lebih cepat",
+            "Ia menghasilkan lebih banyak buah",
             "Ia bertukar warna merah",
-            "Ia menghasilkan lebih banyak buah"
+            "Ia membesar lebih cepat"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -1882,12 +1882,12 @@
           "id": "s4_c4_q10",
           "text": "Apakah proses hidup yang dilakukan tumbuhan seperti haiwan?",
           "options": [
-            "Bernafas dan membiak",
-            "Berjalan",
             "Berlari",
-            "Memburu"
+            "Berjalan",
+            "Memburu",
+            "Bernafas dan membiak"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1897,12 +1897,12 @@
           "id": "s4_c4_q11",
           "text": "Kenapa daun kebanyakan tumbuhan berwarna hijau?",
           "options": [
-            "Kerana mengandungi klorofil yang menyerap cahaya",
             "Kerana tanah berwarna hijau",
-            "Kerana air berwarna hijau",
-            "Kerana udara berwarna hijau"
+            "Kerana udara berwarna hijau",
+            "Kerana mengandungi klorofil yang menyerap cahaya",
+            "Kerana air berwarna hijau"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -1912,12 +1912,12 @@
           "id": "s4_c4_q12",
           "text": "Kenapa daun kebanyakan tumbuhan lebar dan nipis?",
           "options": [
-            "Untuk menyerap cahaya sebanyak mungkin",
             "Untuk menahan angin",
             "Untuk menyimpan air",
+            "Untuk menyerap cahaya sebanyak mungkin",
             "Untuk menarik haiwan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -1927,12 +1927,12 @@
           "id": "s4_c4_q13",
           "text": "Apakah yang berlaku kepada tumbuhan yang diletakkan berhampiran tingkap?",
           "options": [
-            "Ia membengkok ke arah cahaya",
             "Ia membengkok menjauhi cahaya",
+            "Ia bertukar menjadi haiwan",
             "Ia berhenti membesar",
-            "Ia bertukar menjadi haiwan"
+            "Ia membengkok ke arah cahaya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -1942,12 +1942,12 @@
           "id": "s4_c4_q14",
           "text": "Kenapa akar tumbuh ke bawah walaupun biji ditanam terbalik?",
           "options": [
+            "Akar mengikut angin",
             "Akar bertindak balas terhadap graviti",
             "Akar mengejar bunyi",
-            "Akar takut cahaya sahaja",
-            "Akar mengikut angin"
+            "Akar takut cahaya sahaja"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -1957,12 +1957,12 @@
           "id": "s4_c4_q15",
           "text": "Bagaimanakah biji kelapa tersebar?",
           "options": [
-            "Melalui air",
-            "Melalui angin sahaja",
             "Melalui letupan",
-            "Melalui bunyi"
+            "Melalui bunyi",
+            "Melalui air",
+            "Melalui angin sahaja"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -1974,8 +1974,8 @@
           "options": [
             "Melalui angin",
             "Melalui air",
-            "Melalui letupan",
-            "Melalui akar"
+            "Melalui akar",
+            "Melalui letupan"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -1987,12 +1987,12 @@
           "id": "s4_c4_q17",
           "text": "Kenapa penyebaran biji penting bagi tumbuhan?",
           "options": [
-            "Mengurangkan persaingan antara anak pokok dan induk",
-            "Menjadikan biji lebih besar",
+            "Menghalang pendebungaan",
             "Menjadikan biji lebih berat",
-            "Menghalang pendebungaan"
+            "Mengurangkan persaingan antara anak pokok dan induk",
+            "Menjadikan biji lebih besar"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -2002,12 +2002,12 @@
           "id": "s4_c4_q18",
           "text": "Apakah yang berlaku jika semua lebah di sesuatu kawasan hilang?",
           "options": [
-            "Banyak tumbuhan gagal didebungakan dan hasil buah berkurang",
-            "Tumbuhan membesar lebih cepat",
+            "Tiada kesan langsung",
             "Tumbuhan menghasilkan lebih banyak daun",
-            "Tiada kesan langsung"
+            "Tumbuhan membesar lebih cepat",
+            "Banyak tumbuhan gagal didebungakan dan hasil buah berkurang"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -2017,12 +2017,12 @@
           "id": "s4_c4_q19",
           "text": "Kenapa tumbuhan gurun mempunyai daun berbentuk duri?",
           "options": [
-            "Untuk mengurangkan kehilangan air",
             "Untuk menyerap lebih banyak cahaya",
-            "Untuk menarik lebah",
-            "Untuk menyimpan biji"
+            "Untuk menyimpan biji",
+            "Untuk mengurangkan kehilangan air",
+            "Untuk menarik lebah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -2033,8 +2033,8 @@
           "text": "Apakah kegunaan bunga yang berwarna terang dan berbau harum?",
           "options": [
             "Menarik serangga untuk pendebungaan",
-            "Menakutkan haiwan",
             "Menyimpan air",
+            "Menakutkan haiwan",
             "Menyerap cahaya"
           ],
           "correctAnswer": 0,
@@ -2048,8 +2048,8 @@
           "text": "Sebuah tumbuhan diletakkan dalam bekas gelap selama seminggu. Apakah yang berlaku kepada daunnya?",
           "options": [
             "Daun menjadi pucat kerana klorofil berkurang",
-            "Daun menjadi lebih hijau",
             "Daun bertambah tebal",
+            "Daun menjadi lebih hijau",
             "Daun mengeluarkan bunga"
           ],
           "correctAnswer": 0,
@@ -2062,12 +2062,12 @@
           "id": "s4_c4_q22",
           "text": "Kenapa tumbuhan dalam hutan tebal tumbuh sangat tinggi dan lurus?",
           "options": [
-            "Untuk bersaing mendapatkan cahaya di bahagian atas",
-            "Untuk mengelak air",
             "Untuk menarik burung",
+            "Untuk mengelak air",
+            "Untuk bersaing mendapatkan cahaya di bahagian atas",
             "Untuk menyimpan makanan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2077,12 +2077,12 @@
           "id": "s4_c4_q23",
           "text": "Apakah kesan menebang pokok besar dalam hutan terhadap tumbuhan kecil di bawahnya?",
           "options": [
-            "Mereka mendapat lebih banyak cahaya dan tumbuh dengan cepat",
-            "Mereka mati serta-merta",
             "Mereka bertukar warna",
-            "Tiada kesan"
+            "Mereka mati serta-merta",
+            "Tiada kesan",
+            "Mereka mendapat lebih banyak cahaya dan tumbuh dengan cepat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2092,12 +2092,12 @@
           "id": "s4_c4_q24",
           "text": "Kenapa petani mencantas dahan pokok buah?",
           "options": [
-            "Supaya tenaga tumbuhan tertumpu pada buah dan cahaya sampai ke dalam",
-            "Supaya pokok menjadi pendek sahaja",
             "Supaya pokok tidak berbunga",
-            "Supaya akar hilang"
+            "Supaya akar hilang",
+            "Supaya tenaga tumbuhan tertumpu pada buah dan cahaya sampai ke dalam",
+            "Supaya pokok menjadi pendek sahaja"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2107,12 +2107,12 @@
           "id": "s4_c4_q25",
           "text": "Sebuah biji buah rambutan dibawa burung ke kawasan jauh. Apakah kelebihannya?",
           "options": [
-            "Anak pokok tumbuh di kawasan baharu tanpa bersaing dengan induk",
+            "Burung menjadi pokok",
             "Biji menjadi lebih besar",
             "Biji tidak perlu air",
-            "Burung menjadi pokok"
+            "Anak pokok tumbuh di kawasan baharu tanpa bersaing dengan induk"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2122,12 +2122,12 @@
           "id": "s4_c4_q26",
           "text": "Kenapa tumbuhan yang ditanam terlalu rapat menghasilkan buah yang kecil?",
           "options": [
-            "Mereka bersaing untuk cahaya, air dan mineral",
             "Buah takut sesak",
             "Tanah menjadi keras",
+            "Mereka bersaing untuk cahaya, air dan mineral",
             "Akar bertukar menjadi daun"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2138,8 +2138,8 @@
           "text": "Apakah bukti bahawa tumbuhan bernafas?",
           "options": [
             "Tumbuhan menggunakan oksigen pada waktu malam",
-            "Tumbuhan bergerak",
             "Tumbuhan berbunyi",
+            "Tumbuhan bergerak",
             "Tumbuhan berjalan"
           ],
           "correctAnswer": 0,
@@ -2153,9 +2153,9 @@
           "text": "Kenapa tanah yang selalu digunakan menjadi kurang subur?",
           "options": [
             "Mineral dalam tanah diserap habis oleh tumbuhan",
-            "Tanah menjadi terlalu berat",
             "Tanah menjadi terlalu ringan",
-            "Tanah kehilangan warna"
+            "Tanah kehilangan warna",
+            "Tanah menjadi terlalu berat"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -2167,12 +2167,12 @@
           "id": "s4_c4_q29",
           "text": "Apakah kesan hujan yang terlalu lebat berterusan kepada akar pokok?",
           "options": [
-            "Akar boleh reput kerana kekurangan udara dalam tanah",
-            "Akar membesar dengan cepat",
             "Akar bertukar menjadi batang",
-            "Akar mengeluarkan bunga"
+            "Akar mengeluarkan bunga",
+            "Akar membesar dengan cepat",
+            "Akar boleh reput kerana kekurangan udara dalam tanah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2183,9 +2183,9 @@
           "text": "Kenapa tumbuhan bakau mempunyai akar yang mencuat ke atas?",
           "options": [
             "Untuk mendapatkan udara dalam tanah berlumpur",
-            "Untuk menangkap ikan",
             "Untuk menyerap cahaya",
-            "Untuk menahan hujan"
+            "Untuk menahan hujan",
+            "Untuk menangkap ikan"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -2198,8 +2198,8 @@
           "text": "Kenapa kepekatan karbon dioksida yang rendah menghadkan kadar fotosintesis?",
           "options": [
             "Karbon dioksida ialah bahan mentah yang diperlukan untuk membuat makanan",
-            "Karbon dioksida menyejukkan daun",
             "Karbon dioksida memberi warna",
+            "Karbon dioksida menyejukkan daun",
             "Karbon dioksida menolak air"
           ],
           "correctAnswer": 0,
@@ -2213,9 +2213,9 @@
           "text": "Sebuah eksperimen menutup separuh daun dengan kertas hitam selama dua hari. Apakah keputusan yang dijangka?",
           "options": [
             "Bahagian tertutup tidak menghasilkan kanji",
-            "Seluruh daun menghasilkan kanji sama banyak",
             "Bahagian tertutup lebih hijau",
-            "Daun gugur serta-merta"
+            "Daun gugur serta-merta",
+            "Seluruh daun menghasilkan kanji sama banyak"
           ],
           "correctAnswer": 0,
           "difficulty": "ultra",
@@ -2227,12 +2227,12 @@
           "id": "s4_c4_q33",
           "text": "Kenapa tumbuhan menutup liang daunnya pada tengah hari yang sangat panas?",
           "options": [
+            "Untuk menarik serangga",
             "Untuk mengurangkan kehilangan air walaupun fotosintesis berkurang",
-            "Untuk berehat",
             "Untuk menyimpan cahaya",
-            "Untuk menarik serangga"
+            "Untuk berehat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2242,12 +2242,12 @@
           "id": "s4_c4_q34",
           "text": "Apakah kesan jangka panjang penggunaan racun serangga berlebihan pada kebun buah?",
           "options": [
-            "Pendebunga turut terbunuh dan hasil buah menurun",
-            "Buah menjadi lebih manis",
+            "Tanah menjadi subur",
             "Pokok membesar dengan cepat",
-            "Tanah menjadi subur"
+            "Buah menjadi lebih manis",
+            "Pendebunga turut terbunuh dan hasil buah menurun"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2257,12 +2257,12 @@
           "id": "s4_c4_q35",
           "text": "Kenapa tumbuhan yang tumbuh di bawah naungan mempunyai daun yang lebih besar dan nipis?",
           "options": [
-            "Untuk menangkap cahaya yang sedikit dengan lebih berkesan",
             "Untuk menahan hujan",
             "Untuk menyimpan lebih banyak air",
+            "Untuk menangkap cahaya yang sedikit dengan lebih berkesan",
             "Untuk menakutkan haiwan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2272,12 +2272,12 @@
           "id": "s4_c4_q36",
           "text": "Apakah hubungan antara pendebungaan silang dan kepelbagaian tumbuhan?",
           "options": [
-            "Pendebungaan silang menghasilkan anak dengan ciri yang lebih pelbagai",
-            "Ia menghasilkan anak yang serupa",
+            "Ia mengurangkan bilangan biji",
             "Ia menghentikan pembiakan",
-            "Ia mengurangkan bilangan biji"
+            "Ia menghasilkan anak yang serupa",
+            "Pendebungaan silang menghasilkan anak dengan ciri yang lebih pelbagai"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2287,12 +2287,12 @@
           "id": "s4_c4_q37",
           "text": "Kenapa hutan hujan mempunyai lapisan tumbuhan yang berbeza ketinggian?",
           "options": [
+            "Angin berbeza pada setiap lapisan sahaja",
             "Setiap lapisan menerima jumlah cahaya yang berbeza",
             "Tanah berbeza pada setiap lapisan",
-            "Angin berbeza pada setiap lapisan sahaja",
             "Haiwan menyusunnya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2303,8 +2303,8 @@
           "text": "Sebuah pokok dikelilingi simen sepenuhnya di pangkalnya. Apakah kesannya?",
           "options": [
             "Air dan udara sukar sampai ke akar",
-            "Pokok menjadi lebih tinggi",
             "Pokok menghasilkan lebih banyak buah",
+            "Pokok menjadi lebih tinggi",
             "Daun bertukar warna merah"
           ],
           "correctAnswer": 0,
@@ -2317,12 +2317,12 @@
           "id": "s4_c4_q39",
           "text": "Kenapa penanaman semula pokok selepas pembalakan mengambil masa yang sangat lama untuk memulihkan hutan?",
           "options": [
-            "Struktur hutan matang terbentuk melalui puluhan tahun pertumbuhan berlapis",
-            "Pokok baharu tidak boleh hidup",
+            "Biji tidak wujud",
             "Tanah tidak boleh digunakan lagi",
-            "Biji tidak wujud"
+            "Pokok baharu tidak boleh hidup",
+            "Struktur hutan matang terbentuk melalui puluhan tahun pertumbuhan berlapis"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2332,12 +2332,12 @@
           "id": "s4_c4_q40",
           "text": "Apakah kelebihan tumbuhan yang biji tersebar melalui letupan buah?",
           "options": [
+            "Biji lebih cepat masak",
             "Biji dilontar jauh tanpa bergantung pada haiwan atau angin",
             "Biji menjadi lebih berat",
-            "Biji tidak perlu air",
-            "Biji lebih cepat masak"
+            "Biji tidak perlu air"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2355,9 +2355,9 @@
           "text": "Apakah sumber cahaya semula jadi yang paling utama?",
           "options": [
             "Matahari",
+            "Mentol",
             "Lampu suluh",
-            "Lilin",
-            "Mentol"
+            "Lilin"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -2370,9 +2370,9 @@
           "text": "Cahaya bergerak dalam bentuk apa?",
           "options": [
             "Garis lurus",
+            "Lengkung",
             "Bulatan",
-            "Zigzag secara semula jadi",
-            "Lengkung"
+            "Zigzag secara semula jadi"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -2385,9 +2385,9 @@
           "text": "Apakah yang terbentuk apabila cahaya dihalang oleh objek legap?",
           "options": [
             "Bayang-bayang",
-            "Pelangi",
             "Bunyi",
-            "Haba sahaja"
+            "Haba sahaja",
+            "Pelangi"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -2399,12 +2399,12 @@
           "id": "s4_c5_q4",
           "text": "Bahan manakah yang lut sinar?",
           "options": [
-            "Cermin tingkap jernih",
+            "Logam",
             "Papan kayu",
             "Batu",
-            "Logam"
+            "Cermin tingkap jernih"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -2416,8 +2416,8 @@
           "options": [
             "Papan kayu",
             "Kaca jernih",
-            "Air jernih",
-            "Udara"
+            "Udara",
+            "Air jernih"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -2429,12 +2429,12 @@
           "id": "s4_c5_q6",
           "text": "Apakah yang berlaku apabila cahaya mengenai cermin?",
           "options": [
-            "Cahaya dipantulkan",
-            "Cahaya hilang",
             "Cahaya bertukar bunyi",
-            "Cahaya menjadi haba sepenuhnya"
+            "Cahaya menjadi haba sepenuhnya",
+            "Cahaya hilang",
+            "Cahaya dipantulkan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -2444,12 +2444,12 @@
           "id": "s4_c5_q7",
           "text": "Kenapa kita boleh melihat objek yang bukan sumber cahaya?",
           "options": [
-            "Kerana cahaya dipantulkan daripadanya ke mata kita",
             "Kerana objek mengeluarkan cahaya sendiri",
-            "Kerana mata mengeluarkan cahaya",
-            "Kerana udara bercahaya"
+            "Kerana udara bercahaya",
+            "Kerana cahaya dipantulkan daripadanya ke mata kita",
+            "Kerana mata mengeluarkan cahaya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -2459,12 +2459,12 @@
           "id": "s4_c5_q8",
           "text": "Bila bayang-bayang menjadi paling panjang dalam sehari?",
           "options": [
-            "Awal pagi dan lewat petang",
-            "Tengah hari",
             "Waktu malam",
-            "Waktu hujan sahaja"
+            "Waktu hujan sahaja",
+            "Tengah hari",
+            "Awal pagi dan lewat petang"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -2474,12 +2474,12 @@
           "id": "s4_c5_q9",
           "text": "Apakah warna yang terhasil apabila cahaya putih melalui prisma?",
           "options": [
+            "Hanya biru",
             "Tujuh warna pelangi",
             "Hanya merah",
-            "Hanya biru",
             "Hitam dan putih"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -2490,9 +2490,9 @@
           "text": "Apakah yang diperlukan untuk membentuk bayang-bayang?",
           "options": [
             "Sumber cahaya, objek legap dan permukaan",
-            "Bunyi dan air",
             "Angin dan haba",
-            "Cermin dan wap"
+            "Cermin dan wap",
+            "Bunyi dan air"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -2504,12 +2504,12 @@
           "id": "s4_c5_q11",
           "text": "Kenapa bayang-bayang menjadi lebih besar apabila objek didekatkan kepada sumber cahaya?",
           "options": [
-            "Objek menghalang bahagian pancaran cahaya yang lebih luas",
-            "Objek benar-benar membesar",
+            "Permukaan bergerak",
             "Cahaya menjadi lebih kuat",
-            "Permukaan bergerak"
+            "Objek menghalang bahagian pancaran cahaya yang lebih luas",
+            "Objek benar-benar membesar"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -2519,12 +2519,12 @@
           "id": "s4_c5_q12",
           "text": "Kenapa imej dalam cermin kelihatan terbalik dari kiri ke kanan?",
           "options": [
-            "Cahaya dipantulkan terus kembali dan bertukar arah sisi",
-            "Cermin memutarkan objek",
             "Mata terbalik",
-            "Cahaya melengkung"
+            "Cahaya melengkung",
+            "Cahaya dipantulkan terus kembali dan bertukar arah sisi",
+            "Cermin memutarkan objek"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -2534,12 +2534,12 @@
           "id": "s4_c5_q13",
           "text": "Kenapa dasar kolam kelihatan lebih cetek daripada sebenarnya?",
           "options": [
+            "Mata rosak",
             "Cahaya membias apabila keluar dari air ke udara",
-            "Air menyusut",
             "Dasar bergerak naik",
-            "Mata rosak"
+            "Air menyusut"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -2551,8 +2551,8 @@
           "options": [
             "Cahaya membias pada sempadan air dan udara",
             "Sudu benar-benar bengkok",
-            "Air memanaskan sudu",
-            "Gelas melengkung"
+            "Gelas melengkung",
+            "Air memanaskan sudu"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -2564,12 +2564,12 @@
           "id": "s4_c5_q15",
           "text": "Bahan manakah yang lut cahaya tetapi tidak jernih?",
           "options": [
-            "Kertas minyak",
+            "Batu bata",
             "Cermin tingkap",
-            "Papan",
-            "Batu bata"
+            "Kertas minyak",
+            "Papan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -2579,12 +2579,12 @@
           "id": "s4_c5_q16",
           "text": "Kenapa periskop menggunakan dua cermin?",
           "options": [
-            "Untuk memantulkan cahaya dua kali supaya kita nampak melepasi halangan",
             "Untuk menjadikan imej lebih besar",
-            "Untuk menghasilkan warna",
-            "Untuk menyerap cahaya"
+            "Untuk menyerap cahaya",
+            "Untuk memantulkan cahaya dua kali supaya kita nampak melepasi halangan",
+            "Untuk menghasilkan warna"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -2594,12 +2594,12 @@
           "id": "s4_c5_q17",
           "text": "Kenapa bayang-bayang berbentuk sama dengan garis luar objek?",
           "options": [
-            "Cahaya bergerak lurus dan dihalang mengikut bentuk objek",
-            "Bayang-bayang meniru warna",
             "Cahaya melengkung mengikut objek",
-            "Permukaan membentuknya"
+            "Bayang-bayang meniru warna",
+            "Permukaan membentuknya",
+            "Cahaya bergerak lurus dan dihalang mengikut bentuk objek"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -2610,9 +2610,9 @@
           "text": "Kenapa pemandu memasang cermin sisi pada kereta?",
           "options": [
             "Untuk melihat kawasan di belakang tanpa memusing badan",
-            "Untuk menambah cahaya",
             "Untuk menghasilkan warna",
-            "Untuk mengurangkan bunyi"
+            "Untuk mengurangkan bunyi",
+            "Untuk menambah cahaya"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -2624,12 +2624,12 @@
           "id": "s4_c5_q19",
           "text": "Apakah yang menyebabkan pelangi terbentuk selepas hujan?",
           "options": [
-            "Titisan air membiaskan dan memisahkan cahaya matahari",
-            "Awan menghasilkan warna",
+            "Tanah memantulkan warna",
             "Angin membawa warna",
-            "Tanah memantulkan warna"
+            "Awan menghasilkan warna",
+            "Titisan air membiaskan dan memisahkan cahaya matahari"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -2639,12 +2639,12 @@
           "id": "s4_c5_q20",
           "text": "Kenapa bilik dengan dinding berwarna terang kelihatan lebih cerah?",
           "options": [
-            "Warna terang memantulkan lebih banyak cahaya",
+            "Warna terang menambah lampu",
             "Warna terang menghasilkan cahaya",
             "Warna terang menyerap cahaya",
-            "Warna terang menambah lampu"
+            "Warna terang memantulkan lebih banyak cahaya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -2655,8 +2655,8 @@
           "text": "Sebuah objek diletakkan 20 cm dari lampu dan bayangnya jatuh pada dinding. Objek dialihkan kepada 40 cm dari lampu. Apakah yang berlaku kepada bayang itu?",
           "options": [
             "Bayang menjadi lebih kecil",
-            "Bayang menjadi lebih besar",
             "Bayang hilang",
+            "Bayang menjadi lebih besar",
             "Bayang bertukar warna"
           ],
           "correctAnswer": 0,
@@ -2669,12 +2669,12 @@
           "id": "s4_c5_q22",
           "text": "Kenapa gerhana matahari berlaku?",
           "options": [
-            "Bulan menghalang cahaya matahari daripada sampai ke bumi",
-            "Matahari padam",
             "Bumi berhenti berputar",
-            "Awan menutup matahari"
+            "Bulan menghalang cahaya matahari daripada sampai ke bumi",
+            "Awan menutup matahari",
+            "Matahari padam"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2684,12 +2684,12 @@
           "id": "s4_c5_q23",
           "text": "Kenapa cahaya yang melalui kanta cembung boleh membakar kertas?",
           "options": [
-            "Kanta menumpukan cahaya matahari pada satu titik kecil",
-            "Kanta menghasilkan api",
             "Kanta menjadi panas dahulu",
+            "Kanta menghasilkan api",
+            "Kanta menumpukan cahaya matahari pada satu titik kecil",
             "Kertas menarik cahaya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2699,12 +2699,12 @@
           "id": "s4_c5_q24",
           "text": "Kenapa kita tidak nampak apa-apa dalam bilik yang gelap gelita walaupun mata terbuka?",
           "options": [
-            "Tiada cahaya untuk dipantulkan ke mata",
-            "Mata tertutup sendiri",
             "Objek hilang",
-            "Udara terlalu tebal"
+            "Udara terlalu tebal",
+            "Tiada cahaya untuk dipantulkan ke mata",
+            "Mata tertutup sendiri"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2714,12 +2714,12 @@
           "id": "s4_c5_q25",
           "text": "Sebuah lampu jalan menghasilkan bayang yang semakin panjang apabila kita menjauh. Kenapa?",
           "options": [
-            "Sudut cahaya menjadi lebih landai terhadap badan kita",
-            "Badan kita membesar",
             "Lampu menjadi lebih terang",
+            "Badan kita membesar",
+            "Sudut cahaya menjadi lebih landai terhadap badan kita",
             "Jalan bergerak"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2729,12 +2729,12 @@
           "id": "s4_c5_q26",
           "text": "Kenapa air laut yang dalam kelihatan gelap?",
           "options": [
-            "Cahaya diserap sebelum sampai ke dasar",
+            "Cahaya tidak wujud di laut",
             "Air laut berwarna hitam",
             "Dasar laut menyerap mata",
-            "Cahaya tidak wujud di laut"
+            "Cahaya diserap sebelum sampai ke dasar"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2744,12 +2744,12 @@
           "id": "s4_c5_q27",
           "text": "Kenapa cermin yang berkabus tidak menghasilkan imej yang jelas?",
           "options": [
-            "Titisan air kecil menyerakkan cahaya ke pelbagai arah",
+            "Cermin bertukar warna",
             "Cermin menjadi legap kekal",
-            "Cahaya berhenti",
-            "Cermin bertukar warna"
+            "Titisan air kecil menyerakkan cahaya ke pelbagai arah",
+            "Cahaya berhenti"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2760,9 +2760,9 @@
           "text": "Apakah kesimpulan daripada eksperimen tiga kad berlubang yang mesti disusun lurus untuk melihat lilin?",
           "options": [
             "Cahaya bergerak dalam garis lurus",
-            "Cahaya melengkung",
+            "Cahaya menghasilkan bunyi",
             "Cahaya memantul dari kad",
-            "Cahaya menghasilkan bunyi"
+            "Cahaya melengkung"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -2774,12 +2774,12 @@
           "id": "s4_c5_q29",
           "text": "Kenapa jaket keselamatan pekerja jalan raya menggunakan jalur pemantul?",
           "options": [
-            "Ia memantulkan cahaya lampu kereta kembali ke pemandu",
             "Ia menghasilkan cahaya sendiri",
-            "Ia menyerap cahaya",
-            "Ia menghasilkan bunyi"
+            "Ia menghasilkan bunyi",
+            "Ia memantulkan cahaya lampu kereta kembali ke pemandu",
+            "Ia menyerap cahaya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2789,12 +2789,12 @@
           "id": "s4_c5_q30",
           "text": "Kenapa kolam renang kelihatan lebih cetek pada bahagian yang dalam apabila dilihat dari tepi?",
           "options": [
+            "Cahaya berhenti di air",
             "Pembiasan cahaya mengubah kedudukan imej dasar",
             "Air mengalir keluar",
-            "Dasar naik",
-            "Cahaya berhenti di air"
+            "Dasar naik"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2804,12 +2804,12 @@
           "id": "s4_c5_q31",
           "text": "Kenapa langit kelihatan biru pada siang hari?",
           "options": [
-            "Cahaya biru diserakkan lebih banyak oleh udara",
-            "Udara berwarna biru",
             "Laut memantulkan warna ke langit",
+            "Udara berwarna biru",
+            "Cahaya biru diserakkan lebih banyak oleh udara",
             "Matahari berwarna biru"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2819,12 +2819,12 @@
           "id": "s4_c5_q32",
           "text": "Kenapa matahari kelihatan merah semasa senja?",
           "options": [
+            "Bumi lebih dekat",
             "Cahaya melalui lapisan udara yang lebih tebal dan biru tersebar keluar",
-            "Matahari menjadi sejuk",
             "Awan menukar warna matahari",
-            "Bumi lebih dekat"
+            "Matahari menjadi sejuk"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2834,12 +2834,12 @@
           "id": "s4_c5_q33",
           "text": "Sebuah objek kelihatan merah di bawah cahaya putih. Bagaimana ia kelihatan di bawah cahaya biru sahaja?",
           "options": [
-            "Hampir hitam kerana tiada cahaya merah untuk dipantulkan",
-            "Tetap merah terang",
             "Bertukar putih",
-            "Bertukar hijau"
+            "Bertukar hijau",
+            "Tetap merah terang",
+            "Hampir hitam kerana tiada cahaya merah untuk dipantulkan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2849,12 +2849,12 @@
           "id": "s4_c5_q34",
           "text": "Kenapa umbra bayang lebih gelap daripada penumbra?",
           "options": [
+            "Umbra lebih dekat",
             "Umbra tidak menerima cahaya langsung daripada mana-mana bahagian sumber",
-            "Umbra lebih besar",
             "Penumbra menyerap cahaya",
-            "Umbra lebih dekat"
+            "Umbra lebih besar"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2865,8 +2865,8 @@
           "text": "Kenapa gerhana matahari penuh hanya kelihatan di kawasan yang kecil di bumi?",
           "options": [
             "Umbra bulan yang jatuh ke bumi sangat kecil",
-            "Matahari terlalu kecil",
             "Bumi terlalu laju",
+            "Matahari terlalu kecil",
             "Bulan terlalu jauh untuk dilihat"
           ],
           "correctAnswer": 0,
@@ -2879,12 +2879,12 @@
           "id": "s4_c5_q36",
           "text": "Kenapa gentian optik dapat membawa cahaya mengikut lengkungan?",
           "options": [
-            "Cahaya dipantulkan berulang kali di dinding dalam gentian",
             "Cahaya melengkung sendiri",
+            "Cahaya dipantulkan berulang kali di dinding dalam gentian",
             "Gentian menghasilkan cahaya",
             "Cahaya menjadi bunyi"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2894,12 +2894,12 @@
           "id": "s4_c5_q37",
           "text": "Kenapa kanta cekung digunakan untuk membetulkan rabun jauh?",
           "options": [
-            "Ia mencapahkan cahaya supaya fokus jatuh lebih ke belakang",
-            "Ia menumpukan cahaya lebih ke depan",
+            "Ia menyerap cahaya",
             "Ia menghasilkan cahaya",
-            "Ia menyerap cahaya"
+            "Ia mencapahkan cahaya supaya fokus jatuh lebih ke belakang",
+            "Ia menumpukan cahaya lebih ke depan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2909,12 +2909,12 @@
           "id": "s4_c5_q38",
           "text": "Apakah yang menerangkan mengapa bintang berkelip tetapi planet tidak begitu?",
           "options": [
-            "Cahaya bintang datang dari titik yang sangat kecil dan terganggu oleh udara",
             "Bintang menghasilkan cahaya berselang",
-            "Planet lebih terang",
-            "Bintang bergerak laju"
+            "Cahaya bintang datang dari titik yang sangat kecil dan terganggu oleh udara",
+            "Bintang bergerak laju",
+            "Planet lebih terang"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2924,12 +2924,12 @@
           "id": "s4_c5_q39",
           "text": "Sebuah lampu diletakkan di antara dua cermin selari. Apakah yang dilihat?",
           "options": [
-            "Siri imej berulang yang semakin malap",
+            "Imej bertukar warna",
             "Satu imej sahaja",
             "Tiada imej",
-            "Imej bertukar warna"
+            "Siri imej berulang yang semakin malap"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2939,12 +2939,12 @@
           "id": "s4_c5_q40",
           "text": "Kenapa fotografi memerlukan masa dedahan lebih lama dalam keadaan malap?",
           "options": [
-            "Lebih banyak masa diperlukan untuk mengumpul cahaya yang mencukupi",
-            "Kamera menjadi perlahan",
             "Cahaya bergerak lebih perlahan",
-            "Warna hilang"
+            "Kamera menjadi perlahan",
+            "Warna hilang",
+            "Lebih banyak masa diperlukan untuk mengumpul cahaya yang mencukupi"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2961,12 +2961,12 @@
           "id": "s4_c6_q1",
           "text": "Apakah yang menghasilkan bunyi?",
           "options": [
+            "Warna",
             "Getaran",
-            "Cahaya",
             "Haba",
-            "Warna"
+            "Cahaya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -2976,12 +2976,12 @@
           "id": "s4_c6_q2",
           "text": "Bunyi merambat paling laju melalui apa?",
           "options": [
-            "Pepejal",
+            "Vakum",
             "Cecair",
             "Gas",
-            "Vakum"
+            "Pepejal"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -2991,12 +2991,12 @@
           "id": "s4_c6_q3",
           "text": "Bolehkah bunyi merambat dalam vakum?",
           "options": [
-            "Tidak, kerana tiada zarah untuk bergetar",
-            "Ya, dengan mudah",
             "Ya, tetapi perlahan",
-            "Ya, jika sangat kuat"
+            "Ya, jika sangat kuat",
+            "Tidak, kerana tiada zarah untuk bergetar",
+            "Ya, dengan mudah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3006,12 +3006,12 @@
           "id": "s4_c6_q4",
           "text": "Organ manakah mengesan bunyi?",
           "options": [
-            "Telinga",
             "Mata",
-            "Hidung",
-            "Lidah"
+            "Lidah",
+            "Telinga",
+            "Hidung"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3021,12 +3021,12 @@
           "id": "s4_c6_q5",
           "text": "Apakah maksud gema?",
           "options": [
-            "Bunyi yang dipantulkan kembali kepada kita",
-            "Bunyi yang hilang",
             "Bunyi yang bertukar warna",
-            "Bunyi yang berhenti"
+            "Bunyi yang berhenti",
+            "Bunyi yang dipantulkan kembali kepada kita",
+            "Bunyi yang hilang"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3036,12 +3036,12 @@
           "id": "s4_c6_q6",
           "text": "Bunyi manakah dianggap bising dan mengganggu?",
           "options": [
-            "Bunyi jentera yang kuat berterusan",
+            "Bunyi daun bergesel",
             "Bunyi burung berkicau perlahan",
             "Bunyi hujan renyai",
-            "Bunyi daun bergesel"
+            "Bunyi jentera yang kuat berterusan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3051,12 +3051,12 @@
           "id": "s4_c6_q7",
           "text": "Apakah yang berlaku kepada bunyi apabila kita menjauh dari sumbernya?",
           "options": [
+            "Bunyi bertukar warna",
             "Bunyi menjadi semakin perlahan",
-            "Bunyi menjadi lebih kuat",
             "Bunyi berhenti serta-merta",
-            "Bunyi bertukar warna"
+            "Bunyi menjadi lebih kuat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3066,12 +3066,12 @@
           "id": "s4_c6_q8",
           "text": "Alat muzik manakah menghasilkan bunyi daripada tali yang bergetar?",
           "options": [
-            "Gitar",
             "Gendang",
-            "Seruling",
-            "Loceng"
+            "Loceng",
+            "Gitar",
+            "Seruling"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3081,12 +3081,12 @@
           "id": "s4_c6_q9",
           "text": "Apakah yang patut dipakai pekerja di kilang yang bising?",
           "options": [
-            "Pelindung telinga",
             "Cermin mata hitam",
-            "Sarung tangan sahaja",
-            "Topi keledar sahaja"
+            "Pelindung telinga",
+            "Topi keledar sahaja",
+            "Sarung tangan sahaja"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3111,12 +3111,12 @@
           "id": "s4_c6_q11",
           "text": "Kenapa kita mendengar guruh selepas melihat kilat?",
           "options": [
-            "Cahaya bergerak jauh lebih laju daripada bunyi",
             "Guruh berlaku kemudian",
             "Bunyi berhenti sekejap",
+            "Cahaya bergerak jauh lebih laju daripada bunyi",
             "Kilat lebih kuat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3126,12 +3126,12 @@
           "id": "s4_c6_q12",
           "text": "Kenapa gema kedengaran dalam dewan kosong tetapi tidak dalam bilik berlangsir tebal?",
           "options": [
-            "Kain menyerap bunyi manakala dinding keras memantulkannya",
+            "Dewan tiada udara",
             "Bilik berlangsir lebih kecil sentiasa",
             "Kain menghasilkan bunyi",
-            "Dewan tiada udara"
+            "Kain menyerap bunyi manakala dinding keras memantulkannya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3141,12 +3141,12 @@
           "id": "s4_c6_q13",
           "text": "Kenapa tali gitar yang lebih ketat menghasilkan bunyi yang lebih tinggi?",
           "options": [
-            "Ia bergetar dengan lebih cepat",
+            "Ia lebih lembut",
             "Ia lebih panjang",
             "Ia lebih berat",
-            "Ia lebih lembut"
+            "Ia bergetar dengan lebih cepat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3157,9 +3157,9 @@
           "text": "Kenapa dua orang boleh bercakap di bawah air tetapi sukar mendengar dengan jelas?",
           "options": [
             "Bunyi merambat dalam air tetapi telinga kita disesuaikan untuk udara",
-            "Air menghentikan bunyi",
+            "Air memantulkan semua bunyi",
             "Bunyi tidak wujud dalam air",
-            "Air memantulkan semua bunyi"
+            "Air menghentikan bunyi"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -3171,12 +3171,12 @@
           "id": "s4_c6_q15",
           "text": "Kenapa telefon boleh menghantar suara jauh?",
           "options": [
-            "Getaran ditukar menjadi isyarat lalu ditukar semula kepada bunyi",
+            "Suara disimpan dalam wayar",
             "Suara terbang melalui udara sejauh itu",
             "Bunyi menjadi cahaya",
-            "Suara disimpan dalam wayar"
+            "Getaran ditukar menjadi isyarat lalu ditukar semula kepada bunyi"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3186,12 +3186,12 @@
           "id": "s4_c6_q16",
           "text": "Kenapa mikrofon dan pembesar suara digunakan dalam dewan besar?",
           "options": [
+            "Untuk memantulkan bunyi",
             "Untuk menguatkan tenaga bunyi supaya sampai ke belakang",
             "Untuk menukar warna bunyi",
-            "Untuk memantulkan bunyi",
             "Untuk menyerap bunyi"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3201,12 +3201,12 @@
           "id": "s4_c6_q17",
           "text": "Apakah yang berlaku pada gendang telinga apabila bunyi sampai?",
           "options": [
-            "Ia bergetar mengikut gelombang bunyi",
-            "Ia berhenti bergerak",
             "Ia bertukar warna",
-            "Ia mengeluarkan cahaya"
+            "Ia berhenti bergerak",
+            "Ia mengeluarkan cahaya",
+            "Ia bergetar mengikut gelombang bunyi"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3216,12 +3216,12 @@
           "id": "s4_c6_q18",
           "text": "Kenapa loceng yang dipegang berhenti berbunyi dengan cepat?",
           "options": [
-            "Tangan menghentikan getarannya",
-            "Loceng menjadi sejuk",
             "Udara hilang",
-            "Bunyi diserap tangan sahaja"
+            "Tangan menghentikan getarannya",
+            "Bunyi diserap tangan sahaja",
+            "Loceng menjadi sejuk"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3231,12 +3231,12 @@
           "id": "s4_c6_q19",
           "text": "Kenapa kapal menggunakan sonar untuk mengukur kedalaman laut?",
           "options": [
-            "Bunyi dipantulkan dari dasar dan masa pantulan diukur",
-            "Bunyi menerangi dasar",
             "Bunyi menolak air",
-            "Bunyi memanaskan air"
+            "Bunyi dipantulkan dari dasar dan masa pantulan diukur",
+            "Bunyi memanaskan air",
+            "Bunyi menerangi dasar"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3246,12 +3246,12 @@
           "id": "s4_c6_q20",
           "text": "Kenapa jalan raya berhampiran sekolah dipasang penghadang bunyi?",
           "options": [
-            "Untuk mengurangkan bunyi bising yang sampai ke kelas",
-            "Untuk menambah cahaya",
             "Untuk menahan hujan",
+            "Untuk menambah cahaya",
+            "Untuk mengurangkan bunyi bising yang sampai ke kelas",
             "Untuk menghalang haba"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3281,12 +3281,12 @@
           "id": "s4_c6_q23",
           "text": "Kenapa bunyi kedengaran lebih jelas pada waktu malam?",
           "options": [
+            "Telinga membesar pada malam",
             "Kurang bunyi latar dan keadaan udara membantu bunyi merambat",
             "Bunyi bergerak lebih laju pada malam",
-            "Telinga membesar pada malam",
             "Udara hilang pada malam"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -3306,12 +3306,12 @@
           "id": "s4_c6_q25",
           "text": "Kenapa bunyi merambat lebih laju dalam keluli berbanding udara?",
           "options": [
-            "Zarah keluli lebih rapat dan memindahkan getaran dengan cepat",
-            "Keluli lebih panas",
             "Keluli lebih berat sahaja",
+            "Keluli lebih panas",
+            "Zarah keluli lebih rapat dan memindahkan getaran dengan cepat",
             "Udara menyerap semua bunyi"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -3322,9 +3322,9 @@
           "text": "Kenapa studio rakaman dibina dengan dinding berbusa?",
           "options": [
             "Busa menyerap pantulan supaya rakaman jelas",
+            "Busa menyejukkan bilik",
             "Busa menguatkan bunyi",
-            "Busa menghasilkan bunyi",
-            "Busa menyejukkan bilik"
+            "Busa menghasilkan bunyi"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -3346,12 +3346,12 @@
           "id": "s4_c6_q28",
           "text": "Kenapa kelawar boleh terbang dalam gelap tanpa berlanggar?",
           "options": [
-            "Ia menghantar bunyi dan mendengar pantulannya",
-            "Ia boleh melihat dalam gelap penuh",
+            "Ia menghidu halangan",
             "Ia mengeluarkan cahaya",
-            "Ia menghidu halangan"
+            "Ia boleh melihat dalam gelap penuh",
+            "Ia menghantar bunyi dan mendengar pantulannya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -3361,12 +3361,12 @@
           "id": "s4_c6_q29",
           "text": "Kenapa jerit di dalam gua kedengaran berulang beberapa kali?",
           "options": [
-            "Bunyi dipantulkan oleh banyak permukaan pada jarak berbeza",
-            "Bunyi menjadi lebih kuat sendiri",
+            "Udara gua istimewa",
             "Gua menghasilkan bunyi",
-            "Udara gua istimewa"
+            "Bunyi dipantulkan oleh banyak permukaan pada jarak berbeza",
+            "Bunyi menjadi lebih kuat sendiri"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -3376,12 +3376,12 @@
           "id": "s4_c6_q30",
           "text": "Apakah kesan bunyi bising berterusan terhadap pelajar?",
           "options": [
-            "Tumpuan berkurang dan pembelajaran terganggu",
             "Ingatan menjadi lebih baik",
             "Mata menjadi lebih tajam",
-            "Tiada kesan langsung"
+            "Tiada kesan langsung",
+            "Tumpuan berkurang dan pembelajaran terganggu"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -3402,8 +3402,8 @@
           "text": "Kenapa bunyi enjin kereta yang menghampiri kedengaran lebih tinggi nadanya berbanding selepas ia melepasi kita?",
           "options": [
             "Gelombang bunyi dimampatkan semasa menghampiri dan diregangkan selepas berlalu",
-            "Enjin berubah kelajuan",
             "Telinga berubah",
+            "Enjin berubah kelajuan",
             "Udara berubah suhu"
           ],
           "correctAnswer": 0,
@@ -3426,12 +3426,12 @@
           "id": "s4_c6_q34",
           "text": "Kenapa dewan konsert direka dengan bentuk siling melengkung tertentu?",
           "options": [
-            "Untuk mengarahkan pantulan bunyi sekata ke seluruh penonton",
-            "Untuk kelihatan cantik sahaja",
+            "Untuk menghasilkan gema panjang",
             "Untuk menyerap semua bunyi",
-            "Untuk menghasilkan gema panjang"
+            "Untuk kelihatan cantik sahaja",
+            "Untuk mengarahkan pantulan bunyi sekata ke seluruh penonton"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -3441,12 +3441,12 @@
           "id": "s4_c6_q35",
           "text": "Seorang murid mendakwa bunyi boleh merambat di angkasa lepas. Apakah bukti yang menyangkalnya?",
           "options": [
+            "Bunyi menjadi cahaya di angkasa",
             "Angkasa hampir vakum dan tiada zarah untuk memindahkan getaran",
-            "Angkasa terlalu sejuk",
             "Angkasa terlalu luas",
-            "Bunyi menjadi cahaya di angkasa"
+            "Angkasa terlalu sejuk"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -3466,12 +3466,12 @@
           "id": "s4_c6_q37",
           "text": "Kenapa alat pengesan ultrasonik digunakan untuk memeriksa bayi dalam kandungan?",
           "options": [
-            "Gelombang bunyi frekuensi tinggi memantul dari tisu tanpa merosakkannya",
             "Bunyi menerangi bayi",
+            "Gelombang bunyi frekuensi tinggi memantul dari tisu tanpa merosakkannya",
             "Bunyi memanaskan tisu",
             "Bunyi menukar warna"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -3481,12 +3481,12 @@
           "id": "s4_c6_q38",
           "text": "Kenapa haiwan seperti gajah dapat berkomunikasi pada jarak berkilometer?",
           "options": [
-            "Bunyi berfrekuensi sangat rendah merambat jauh dengan kehilangan tenaga yang kecil",
-            "Gajah menjerit sangat kuat sahaja",
             "Bunyi bergerak melalui cahaya",
-            "Gajah menggunakan bau"
+            "Bunyi berfrekuensi sangat rendah merambat jauh dengan kehilangan tenaga yang kecil",
+            "Gajah menggunakan bau",
+            "Gajah menjerit sangat kuat sahaja"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -3496,12 +3496,12 @@
           "id": "s4_c6_q39",
           "text": "Apakah sebab bunyi yang sama kedengaran berbeza kuat di dalam bilik kecil berbanding padang terbuka?",
           "options": [
+            "Bilik menghasilkan bunyi",
             "Pantulan dalam bilik menambah tenaga yang sampai ke telinga",
-            "Bunyi menjadi lebih besar di bilik",
             "Padang menyerap bunyi sepenuhnya",
-            "Bilik menghasilkan bunyi"
+            "Bunyi menjadi lebih besar di bilik"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -3529,9 +3529,9 @@
           "text": "Apakah sumber tenaga utama bagi bumi?",
           "options": [
             "Matahari",
-            "Bulan",
             "Bintang jauh",
-            "Angin"
+            "Angin",
+            "Bulan"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -3543,12 +3543,12 @@
           "id": "s4_c7_q2",
           "text": "Apakah bentuk tenaga yang membolehkan kita melihat?",
           "options": [
-            "Tenaga cahaya",
-            "Tenaga bunyi",
             "Tenaga kimia",
-            "Tenaga bunyi dan haba"
+            "Tenaga bunyi dan haba",
+            "Tenaga cahaya",
+            "Tenaga bunyi"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3559,8 +3559,8 @@
           "text": "Apakah bentuk tenaga yang tersimpan dalam makanan?",
           "options": [
             "Tenaga kimia",
-            "Tenaga bunyi",
             "Tenaga cahaya",
+            "Tenaga bunyi",
             "Tenaga elektrik"
           ],
           "correctAnswer": 0,
@@ -3573,12 +3573,12 @@
           "id": "s4_c7_q4",
           "text": "Manakah sumber tenaga yang boleh diperbaharui?",
           "options": [
-            "Tenaga suria",
             "Arang batu",
             "Petroleum",
+            "Tenaga suria",
             "Gas asli"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3588,12 +3588,12 @@
           "id": "s4_c7_q5",
           "text": "Manakah sumber tenaga yang tidak boleh diperbaharui?",
           "options": [
-            "Petroleum",
-            "Angin",
+            "Matahari",
             "Air",
-            "Matahari"
+            "Petroleum",
+            "Angin"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3603,12 +3603,12 @@
           "id": "s4_c7_q6",
           "text": "Apakah tenaga yang menggerakkan kipas elektrik?",
           "options": [
-            "Tenaga elektrik",
             "Tenaga bunyi",
-            "Tenaga cahaya",
-            "Tenaga kimia sahaja"
+            "Tenaga kimia sahaja",
+            "Tenaga elektrik",
+            "Tenaga cahaya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3618,12 +3618,12 @@
           "id": "s4_c7_q7",
           "text": "Apakah maksud tenaga kinetik?",
           "options": [
-            "Tenaga pada objek yang bergerak",
+            "Tenaga bunyi",
             "Tenaga pada objek yang diam",
-            "Tenaga cahaya",
-            "Tenaga bunyi"
+            "Tenaga pada objek yang bergerak",
+            "Tenaga cahaya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3633,12 +3633,12 @@
           "id": "s4_c7_q8",
           "text": "Apakah maksud tenaga keupayaan?",
           "options": [
-            "Tenaga yang tersimpan disebabkan kedudukan atau keadaan",
-            "Tenaga bergerak",
             "Tenaga bunyi",
-            "Tenaga cahaya"
+            "Tenaga yang tersimpan disebabkan kedudukan atau keadaan",
+            "Tenaga cahaya",
+            "Tenaga bergerak"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3648,12 +3648,12 @@
           "id": "s4_c7_q9",
           "text": "Apakah yang berlaku kepada tenaga apabila ia digunakan?",
           "options": [
-            "Ia ditukar kepada bentuk lain",
+            "Ia berhenti wujud",
             "Ia hilang terus",
-            "Ia menjadi jirim",
-            "Ia berhenti wujud"
+            "Ia ditukar kepada bentuk lain",
+            "Ia menjadi jirim"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3663,12 +3663,12 @@
           "id": "s4_c7_q10",
           "text": "Kenapa kita perlu menjimatkan tenaga elektrik?",
           "options": [
-            "Kerana kebanyakan penjanaannya menggunakan sumber terhad dan mencemarkan",
             "Kerana elektrik berbahaya sentiasa",
-            "Kerana lampu tidak berguna",
-            "Kerana wayar mudah putus"
+            "Kerana kebanyakan penjanaannya menggunakan sumber terhad dan mencemarkan",
+            "Kerana wayar mudah putus",
+            "Kerana lampu tidak berguna"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3678,12 +3678,12 @@
           "id": "s4_c7_q11",
           "text": "Apakah perubahan tenaga yang berlaku pada lampu suluh?",
           "options": [
-            "Kimia kepada elektrik kepada cahaya",
-            "Cahaya kepada kimia",
+            "Haba kepada kimia",
             "Bunyi kepada cahaya",
-            "Haba kepada kimia"
+            "Cahaya kepada kimia",
+            "Kimia kepada elektrik kepada cahaya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3694,9 +3694,9 @@
           "text": "Apakah perubahan tenaga apabila kita bermain gitar?",
           "options": [
             "Kinetik kepada bunyi",
+            "Kimia kepada cahaya",
             "Bunyi kepada cahaya",
-            "Cahaya kepada haba",
-            "Kimia kepada cahaya"
+            "Cahaya kepada haba"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -3708,12 +3708,12 @@
           "id": "s4_c7_q13",
           "text": "Apakah perubahan tenaga dalam panel solar?",
           "options": [
-            "Cahaya kepada elektrik",
-            "Elektrik kepada cahaya",
             "Bunyi kepada elektrik",
-            "Haba kepada bunyi"
+            "Elektrik kepada cahaya",
+            "Haba kepada bunyi",
+            "Cahaya kepada elektrik"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3723,12 +3723,12 @@
           "id": "s4_c7_q14",
           "text": "Kenapa turbin angin diletakkan di kawasan lapang dan tinggi?",
           "options": [
-            "Angin di situ lebih kuat dan sekata",
-            "Ia lebih cantik di situ",
             "Ia lebih murah dibina",
-            "Ia lebih dekat dengan matahari"
+            "Ia lebih cantik di situ",
+            "Ia lebih dekat dengan matahari",
+            "Angin di situ lebih kuat dan sekata"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3738,12 +3738,12 @@
           "id": "s4_c7_q15",
           "text": "Kenapa empangan dibina tinggi untuk menjana elektrik?",
           "options": [
-            "Air yang jatuh dari ketinggian membawa lebih banyak tenaga",
-            "Air menjadi lebih bersih",
             "Air menjadi lebih sejuk",
+            "Air menjadi lebih bersih",
+            "Air yang jatuh dari ketinggian membawa lebih banyak tenaga",
             "Air menjadi lebih ringan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3753,12 +3753,12 @@
           "id": "s4_c7_q16",
           "text": "Apakah perubahan tenaga apabila bola dilepaskan dari atas meja?",
           "options": [
-            "Keupayaan kepada kinetik",
             "Kinetik kepada keupayaan",
             "Bunyi kepada kinetik",
-            "Cahaya kepada kinetik"
+            "Cahaya kepada kinetik",
+            "Keupayaan kepada kinetik"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3768,12 +3768,12 @@
           "id": "s4_c7_q17",
           "text": "Kenapa mentol lampu pijar menjadi panas?",
           "options": [
+            "Wayar menyimpan haba",
             "Sebahagian tenaga elektrik bertukar menjadi haba",
             "Cahaya menghasilkan haba sendiri",
-            "Wayar menyimpan haba",
             "Udara memanaskan mentol"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3783,12 +3783,12 @@
           "id": "s4_c7_q18",
           "text": "Kenapa lampu LED lebih menjimatkan berbanding mentol pijar?",
           "options": [
-            "Kurang tenaga terbuang sebagai haba",
-            "LED lebih besar",
             "LED menghasilkan bunyi",
-            "LED lebih murah dibuat"
+            "LED lebih murah dibuat",
+            "Kurang tenaga terbuang sebagai haba",
+            "LED lebih besar"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3798,12 +3798,12 @@
           "id": "s4_c7_q19",
           "text": "Apakah sumber tenaga bagi kereta biasa?",
           "options": [
-            "Tenaga kimia dalam petrol",
             "Tenaga bunyi",
-            "Tenaga cahaya",
-            "Tenaga elektrik dari matahari"
+            "Tenaga kimia dalam petrol",
+            "Tenaga elektrik dari matahari",
+            "Tenaga cahaya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3814,9 +3814,9 @@
           "text": "Kenapa makanan penting sebagai sumber tenaga bagi manusia?",
           "options": [
             "Badan membebaskan tenaga kimia dalam makanan untuk semua aktiviti",
-            "Makanan memberi cahaya",
             "Makanan memberi bunyi",
-            "Makanan memberi elektrik terus"
+            "Makanan memberi elektrik terus",
+            "Makanan memberi cahaya"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -3830,8 +3830,8 @@
           "options": [
             "Bertukar kepada bunyi dan haba",
             "Hilang terus daripada alam",
-            "Menjadi jirim baharu",
-            "Disimpan dalam bola selamanya"
+            "Disimpan dalam bola selamanya",
+            "Menjadi jirim baharu"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -3843,12 +3843,12 @@
           "id": "s4_c7_q22",
           "text": "Kenapa negara menggalakkan tenaga suria walaupun kos pemasangannya tinggi?",
           "options": [
-            "Sumbernya tidak habis dan tidak mencemarkan semasa penjanaan",
             "Ia lebih cepat dipasang",
+            "Sumbernya tidak habis dan tidak mencemarkan semasa penjanaan",
             "Ia menghasilkan bunyi",
             "Ia lebih murah pada mulanya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -3859,9 +3859,9 @@
           "text": "Apakah kelemahan utama tenaga suria dan tenaga angin?",
           "options": [
             "Bekalannya tidak menentu bergantung cuaca",
-            "Ia terlalu kuat",
             "Ia mencemarkan udara",
-            "Ia menghabiskan bahan api"
+            "Ia menghabiskan bahan api",
+            "Ia terlalu kuat"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -3873,12 +3873,12 @@
           "id": "s4_c7_q24",
           "text": "Kenapa membakar arang batu untuk elektrik dianggap merugikan alam sekitar?",
           "options": [
+            "Ia menyerap cahaya matahari",
             "Ia membebaskan gas yang mencemarkan dan memanaskan bumi",
             "Ia menggunakan terlalu banyak air sahaja",
-            "Ia menghasilkan bunyi",
-            "Ia menyerap cahaya matahari"
+            "Ia menghasilkan bunyi"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -3888,12 +3888,12 @@
           "id": "s4_c7_q25",
           "text": "Sebuah rumah menukar semua mentol pijar kepada LED. Apakah kesan yang dijangka?",
           "options": [
-            "Penggunaan elektrik berkurang untuk kecerahan yang sama",
             "Rumah menjadi lebih gelap",
             "Bil elektrik meningkat",
-            "Bilik menjadi lebih panas"
+            "Bilik menjadi lebih panas",
+            "Penggunaan elektrik berkurang untuk kecerahan yang sama"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -3904,9 +3904,9 @@
           "text": "Kenapa kenderaan elektrik masih boleh menyumbang pencemaran?",
           "options": [
             "Elektriknya mungkin dijana daripada bahan api fosil",
+            "Ia menggunakan petrol",
             "Ia mengeluarkan asap sendiri",
-            "Bateri menghasilkan asap",
-            "Ia menggunakan petrol"
+            "Bateri menghasilkan asap"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -3918,12 +3918,12 @@
           "id": "s4_c7_q27",
           "text": "Apakah perubahan tenaga lengkap dalam stesen janakuasa hidroelektrik?",
           "options": [
-            "Keupayaan kepada kinetik kepada elektrik",
             "Elektrik kepada kinetik",
-            "Kimia kepada bunyi",
-            "Cahaya kepada haba"
+            "Keupayaan kepada kinetik kepada elektrik",
+            "Cahaya kepada haba",
+            "Kimia kepada bunyi"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -3933,12 +3933,12 @@
           "id": "s4_c7_q28",
           "text": "Kenapa penebat digunakan pada dinding rumah di negara sejuk?",
           "options": [
-            "Untuk mengurangkan kehilangan tenaga haba",
             "Untuk menambah bunyi",
-            "Untuk menghasilkan elektrik",
-            "Untuk menyerap cahaya"
+            "Untuk mengurangkan kehilangan tenaga haba",
+            "Untuk menyerap cahaya",
+            "Untuk menghasilkan elektrik"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -3950,8 +3950,8 @@
           "options": [
             "Nisbah tenaga berguna yang terhasil berbanding tenaga yang dibekalkan",
             "Kelajuan mesin",
-            "Saiz mesin",
-            "Harga mesin"
+            "Harga mesin",
+            "Saiz mesin"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -3978,12 +3978,12 @@
           "id": "s4_c7_q31",
           "text": "Apakah asal usul tenaga kimia dalam arang batu?",
           "options": [
+            "Tenaga yang dicipta manusia",
             "Tenaga matahari yang disimpan oleh tumbuhan purba",
             "Tenaga dari pusat bumi",
-            "Tenaga dari bulan",
-            "Tenaga yang dicipta manusia"
+            "Tenaga dari bulan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -3994,9 +3994,9 @@
           "text": "Kenapa rantai makanan hanya boleh menyokong beberapa aras sahaja?",
           "options": [
             "Kebanyakan tenaga hilang sebagai haba pada setiap aras",
-            "Haiwan tidak mahu makan",
+            "Tenaga bertambah setiap aras",
             "Tumbuhan terlalu sedikit",
-            "Tenaga bertambah setiap aras"
+            "Haiwan tidak mahu makan"
           ],
           "correctAnswer": 0,
           "difficulty": "ultra",
@@ -4008,12 +4008,12 @@
           "id": "s4_c7_q33",
           "text": "Sebuah bola berjisim besar dan bola kecil dijatuhkan dari ketinggian yang sama. Apakah perbezaan tenaga keupayaannya?",
           "options": [
-            "Bola berjisim besar mempunyai lebih banyak tenaga keupayaan",
-            "Kedua-duanya sama",
+            "Tiada tenaga keupayaan",
             "Bola kecil lebih banyak",
-            "Tiada tenaga keupayaan"
+            "Bola berjisim besar mempunyai lebih banyak tenaga keupayaan",
+            "Kedua-duanya sama"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -4023,12 +4023,12 @@
           "id": "s4_c7_q34",
           "text": "Kenapa penjimatan tenaga di rumah memberi kesan yang besar apabila dilakukan ramai orang?",
           "options": [
+            "Bekalan bertambah sendiri",
             "Jumlah penjimatan kecil yang digandakan menjadi sangat besar",
             "Satu rumah sudah mencukupi",
-            "Elektrik menjadi percuma",
-            "Bekalan bertambah sendiri"
+            "Elektrik menjadi percuma"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -4040,8 +4040,8 @@
           "options": [
             "Tenaga boleh digunakan pada waktu malam atau mendung",
             "Tenaga menjadi lebih kuat",
-            "Bateri menghasilkan tenaga sendiri",
-            "Panel menjadi lebih cekap"
+            "Panel menjadi lebih cekap",
+            "Bateri menghasilkan tenaga sendiri"
           ],
           "correctAnswer": 0,
           "difficulty": "ultra",
@@ -4054,9 +4054,9 @@
           "text": "Kenapa enjin kereta memerlukan sistem penyejuk?",
           "options": [
             "Sebahagian besar tenaga bahan api menjadi haba yang mesti dibuang",
+            "Untuk mengurangkan bunyi",
             "Enjin memerlukan air untuk bergerak",
-            "Penyejuk menghasilkan tenaga",
-            "Untuk mengurangkan bunyi"
+            "Penyejuk menghasilkan tenaga"
           ],
           "correctAnswer": 0,
           "difficulty": "ultra",
@@ -4069,8 +4069,8 @@
           "text": "Apakah kesan mengganti hutan dengan ladang tenaga suria yang besar?",
           "options": [
             "Bekalan elektrik bersih bertambah tetapi habitat hilang",
-            "Tiada kesan langsung",
             "Hutan tumbuh lebih cepat",
+            "Tiada kesan langsung",
             "Tenaga menjadi kotor"
           ],
           "correctAnswer": 0,
@@ -4083,12 +4083,12 @@
           "id": "s4_c7_q38",
           "text": "Kenapa tenaga nuklear menghasilkan banyak elektrik daripada bahan yang sedikit?",
           "options": [
-            "Tindak balas nuklear membebaskan tenaga yang jauh lebih besar setiap kilogram",
             "Bahannya lebih murah",
             "Ia menggunakan matahari",
-            "Ia tidak menghasilkan haba"
+            "Ia tidak menghasilkan haba",
+            "Tindak balas nuklear membebaskan tenaga yang jauh lebih besar setiap kilogram"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -4113,12 +4113,12 @@
           "id": "s4_c7_q40",
           "text": "Kenapa mengurangkan penggunaan lebih baik daripada mencari sumber tenaga baharu sahaja?",
           "options": [
-            "Tenaga yang tidak digunakan langsung tidak perlu dijana atau diangkut",
             "Sumber baharu tidak wujud",
-            "Penggunaan tidak boleh dikurangkan",
-            "Penjanaan adalah percuma"
+            "Penjanaan adalah percuma",
+            "Tenaga yang tidak digunakan langsung tidak perlu dijana atau diangkut",
+            "Penggunaan tidak boleh dikurangkan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -4135,12 +4135,12 @@
           "id": "s4_c8_q1",
           "text": "Apakah bahan yang paling sesuai untuk membuat payung?",
           "options": [
-            "Kain kalis air",
-            "Kertas",
             "Span",
+            "Kertas",
+            "Kain kalis air",
             "Kain kapas nipis"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4150,12 +4150,12 @@
           "id": "s4_c8_q2",
           "text": "Bahan manakah yang menyerap air dengan baik?",
           "options": [
-            "Span",
+            "Logam",
             "Plastik",
             "Kaca",
-            "Logam"
+            "Span"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4166,9 +4166,9 @@
           "text": "Bahan manakah konduktor elektrik yang baik?",
           "options": [
             "Kuprum",
+            "Plastik",
             "Getah",
-            "Kayu",
-            "Plastik"
+            "Kayu"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -4180,12 +4180,12 @@
           "id": "s4_c8_q4",
           "text": "Bahan manakah penebat elektrik yang baik?",
           "options": [
-            "Getah",
-            "Kuprum",
             "Aluminium",
-            "Besi"
+            "Getah",
+            "Besi",
+            "Kuprum"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4195,12 +4195,12 @@
           "id": "s4_c8_q5",
           "text": "Kenapa periuk masakan diperbuat daripada logam?",
           "options": [
-            "Logam mengalirkan haba dengan baik",
-            "Logam ringan sahaja",
             "Logam berwarna cantik",
+            "Logam ringan sahaja",
+            "Logam mengalirkan haba dengan baik",
             "Logam menyerap air"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4210,12 +4210,12 @@
           "id": "s4_c8_q6",
           "text": "Kenapa pemegang periuk diperbuat daripada plastik atau kayu?",
           "options": [
-            "Bahan itu penebat haba yang baik",
             "Bahan itu lebih murah sahaja",
-            "Bahan itu mengalirkan haba",
-            "Bahan itu menyerap air"
+            "Bahan itu penebat haba yang baik",
+            "Bahan itu menyerap air",
+            "Bahan itu mengalirkan haba"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4225,12 +4225,12 @@
           "id": "s4_c8_q7",
           "text": "Bahan manakah lut sinar?",
           "options": [
-            "Kaca jernih",
-            "Kayu",
+            "Getah",
             "Logam",
-            "Getah"
+            "Kaca jernih",
+            "Kayu"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4240,12 +4240,12 @@
           "id": "s4_c8_q8",
           "text": "Apakah sifat bahan yang menjadikannya sesuai untuk tali?",
           "options": [
-            "Kuat dan lentur",
             "Rapuh dan keras",
+            "Mudah pecah",
             "Menyerap air",
-            "Mudah pecah"
+            "Kuat dan lentur"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4271,9 +4271,9 @@
           "text": "Apakah sifat bahan yang menjadikannya sesuai untuk tuala?",
           "options": [
             "Menyerap air dengan baik",
+            "Mengalirkan elektrik",
             "Kalis air",
-            "Keras dan licin",
-            "Mengalirkan elektrik"
+            "Keras dan licin"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -4286,9 +4286,9 @@
           "text": "Kenapa wayar elektrik diperbuat daripada logam tetapi disaluti getah?",
           "options": [
             "Logam mengalirkan elektrik dan getah melindungi pengguna",
-            "Getah mengalirkan elektrik",
             "Logam menebat elektrik",
-            "Getah menjadikannya cantik"
+            "Getah menjadikannya cantik",
+            "Getah mengalirkan elektrik"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -4300,12 +4300,12 @@
           "id": "s4_c8_q12",
           "text": "Kenapa but hujan diperbuat daripada getah?",
           "options": [
-            "Getah kalis air dan lentur",
-            "Getah menyerap air",
             "Getah keras dan berat",
-            "Getah mengalirkan haba"
+            "Getah menyerap air",
+            "Getah mengalirkan haba",
+            "Getah kalis air dan lentur"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4315,12 +4315,12 @@
           "id": "s4_c8_q13",
           "text": "Kenapa bahagian dalam bekas termos berkilat seperti cermin?",
           "options": [
-            "Untuk memantulkan haba supaya tidak hilang",
             "Untuk kelihatan cantik",
             "Untuk menyerap haba",
-            "Untuk menghasilkan cahaya"
+            "Untuk menghasilkan cahaya",
+            "Untuk memantulkan haba supaya tidak hilang"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4331,9 +4331,9 @@
           "text": "Kenapa baju sukan diperbuat daripada kain yang menyerap peluh?",
           "options": [
             "Untuk memindahkan peluh dari kulit supaya cepat kering",
-            "Untuk menambah berat",
             "Untuk menahan cahaya",
-            "Untuk menyimpan haba"
+            "Untuk menyimpan haba",
+            "Untuk menambah berat"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -4345,12 +4345,12 @@
           "id": "s4_c8_q15",
           "text": "Kenapa jambatan besar diperbuat daripada keluli dan bukan kayu?",
           "options": [
-            "Keluli jauh lebih kuat dan tahan beban berat",
-            "Keluli lebih murah",
             "Keluli lebih ringan",
-            "Kayu tidak wujud"
+            "Keluli jauh lebih kuat dan tahan beban berat",
+            "Kayu tidak wujud",
+            "Keluli lebih murah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4390,12 +4390,12 @@
           "id": "s4_c8_q18",
           "text": "Apakah kelemahan utama plastik walaupun ia berguna?",
           "options": [
-            "Ia mengambil masa sangat lama untuk terurai",
+            "Ia mengalirkan elektrik",
             "Ia terlalu berat",
             "Ia mudah reput",
-            "Ia mengalirkan elektrik"
+            "Ia mengambil masa sangat lama untuk terurai"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4420,12 +4420,12 @@
           "id": "s4_c8_q20",
           "text": "Kenapa payung tidak diperbuat daripada kertas untuk kegunaan harian?",
           "options": [
-            "Kertas menyerap air dan menjadi lemah",
             "Kertas terlalu berat",
+            "Kertas menyerap air dan menjadi lemah",
             "Kertas terlalu mahal",
             "Kertas mengalirkan elektrik"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4435,12 +4435,12 @@
           "id": "s4_c8_q21",
           "text": "Sebuah eksperimen menguji lima kain untuk penyerapan air dengan saiz dan masa yang sama. Apakah pemboleh ubah dimanipulasi?",
           "options": [
+            "Jumlah air",
             "Jenis kain",
             "Saiz kain",
-            "Masa rendaman",
-            "Jumlah air"
+            "Masa rendaman"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -4450,12 +4450,12 @@
           "id": "s4_c8_q22",
           "text": "Kenapa periuk tekanan memasak makanan dengan lebih cepat?",
           "options": [
-            "Tekanan tinggi meningkatkan suhu air sebelum mendidih",
-            "Periuk menghasilkan haba sendiri",
             "Makanan menjadi lebih kecil",
+            "Periuk menghasilkan haba sendiri",
+            "Tekanan tinggi meningkatkan suhu air sebelum mendidih",
             "Air menjadi lebih sejuk"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -4465,12 +4465,12 @@
           "id": "s4_c8_q23",
           "text": "Kenapa aluminium digunakan untuk badan kapal terbang?",
           "options": [
-            "Ia kuat tetapi ringan",
             "Ia sangat berat",
             "Ia mudah pecah",
-            "Ia menyerap air"
+            "Ia menyerap air",
+            "Ia kuat tetapi ringan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -4480,12 +4480,12 @@
           "id": "s4_c8_q24",
           "text": "Kenapa seluar kalis air masih perlu membenarkan udara keluar?",
           "options": [
-            "Supaya peluh tidak terperangkap dan menyebabkan tidak selesa",
+            "Supaya lebih cantik",
             "Supaya lebih murah",
-            "Supaya lebih berat",
-            "Supaya lebih cantik"
+            "Supaya peluh tidak terperangkap dan menyebabkan tidak selesa",
+            "Supaya lebih berat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -4495,12 +4495,12 @@
           "id": "s4_c8_q25",
           "text": "Apakah kesimpulan jika bahan A menyerap 40 ml air dan bahan B menyerap 12 ml dalam ujian yang sama?",
           "options": [
-            "Bahan A lebih sesuai untuk tuala",
             "Bahan B lebih sesuai untuk tuala",
-            "Kedua-duanya sama",
-            "Bahan B kalis air sepenuhnya"
+            "Bahan A lebih sesuai untuk tuala",
+            "Bahan B kalis air sepenuhnya",
+            "Kedua-duanya sama"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -4510,12 +4510,12 @@
           "id": "s4_c8_q26",
           "text": "Kenapa bekas makanan panas tidak sesuai diperbuat daripada plastik nipis biasa?",
           "options": [
-            "Ia boleh melembut atau melepaskan bahan kimia pada suhu tinggi",
             "Ia terlalu keras",
+            "Ia boleh melembut atau melepaskan bahan kimia pada suhu tinggi",
             "Ia menyerap makanan",
             "Ia mengalirkan elektrik"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -4526,9 +4526,9 @@
           "text": "Kenapa besi yang digunakan di luar rumah dicat atau disadur?",
           "options": [
             "Untuk menghalang udara dan air menyentuh permukaannya",
+            "Untuk mengalirkan haba",
             "Untuk menjadikannya lebih berat",
-            "Untuk menambah kekuatan sahaja",
-            "Untuk mengalirkan haba"
+            "Untuk menambah kekuatan sahaja"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -4540,12 +4540,12 @@
           "id": "s4_c8_q28",
           "text": "Kenapa kaca sukar dikitar semula bersama plastik?",
           "options": [
-            "Kedua-duanya diproses dengan cara dan suhu yang berbeza",
-            "Kaca terlalu ringan",
             "Plastik terlalu keras",
-            "Kedua-duanya sama sahaja"
+            "Kedua-duanya sama sahaja",
+            "Kedua-duanya diproses dengan cara dan suhu yang berbeza",
+            "Kaca terlalu ringan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -4555,12 +4555,12 @@
           "id": "s4_c8_q29",
           "text": "Sebuah bahan baharu kuat, ringan, murah tetapi tidak boleh dikitar semula. Apakah pertimbangan utamanya?",
           "options": [
-            "Kesan jangka panjang terhadap alam sekitar",
-            "Warnanya",
+            "Namanya",
             "Beratnya sahaja",
-            "Namanya"
+            "Warnanya",
+            "Kesan jangka panjang terhadap alam sekitar"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -4572,8 +4572,8 @@
           "options": [
             "Ia digunakan sebentar tetapi kekal dalam alam sekitar sangat lama",
             "Ia terlalu kuat",
-            "Ia terlalu mahal",
-            "Ia menyerap air"
+            "Ia menyerap air",
+            "Ia terlalu mahal"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -4600,12 +4600,12 @@
           "id": "s4_c8_q32",
           "text": "Kenapa seramik digunakan pada bahagian luar kapal angkasa?",
           "options": [
-            "Ia menahan suhu yang sangat tinggi tanpa lebur",
             "Ia sangat ringan sahaja",
-            "Ia mengalirkan haba dengan baik",
-            "Ia menyerap air"
+            "Ia menyerap air",
+            "Ia menahan suhu yang sangat tinggi tanpa lebur",
+            "Ia mengalirkan haba dengan baik"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -4617,8 +4617,8 @@
           "options": [
             "Gabungan dua bahan menampung kelemahan masing-masing",
             "Ia lebih berat",
-            "Ia lebih murah",
-            "Ia lebih nipis"
+            "Ia lebih nipis",
+            "Ia lebih murah"
           ],
           "correctAnswer": 0,
           "difficulty": "ultra",
@@ -4645,12 +4645,12 @@
           "id": "s4_c8_q35",
           "text": "Sebuah eksperimen mendapati kain A kering dalam 20 minit dan kain B dalam 45 minit dalam keadaan sama. Apakah kesimpulan yang paling tepat?",
           "options": [
-            "Kain A melepaskan lembapan lebih cepat dalam keadaan ujian itu",
-            "Kain A sentiasa lebih baik",
+            "Kain B lebih tebal",
             "Kain B tidak menyerap air",
-            "Kain B lebih tebal"
+            "Kain A melepaskan lembapan lebih cepat dalam keadaan ujian itu",
+            "Kain A sentiasa lebih baik"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -4660,12 +4660,12 @@
           "id": "s4_c8_q36",
           "text": "Kenapa kitar semula aluminium menjimatkan tenaga secara ketara?",
           "options": [
-            "Melebur aluminium lama menggunakan jauh lebih sedikit tenaga daripada mengeluarkannya dari bijih",
-            "Aluminium tidak perlu dilebur",
             "Aluminium terhasil sendiri",
+            "Aluminium tidak perlu dilebur",
+            "Melebur aluminium lama menggunakan jauh lebih sedikit tenaga daripada mengeluarkannya dari bijih",
             "Bijih aluminium percuma"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -4675,12 +4675,12 @@
           "id": "s4_c8_q37",
           "text": "Kenapa penebat haba yang baik biasanya mengandungi banyak ruang udara?",
           "options": [
-            "Udara yang terperangkap memindahkan haba dengan sangat perlahan",
-            "Udara memantulkan haba",
+            "Udara menghasilkan sejuk",
             "Udara menyerap haba",
-            "Udara menghasilkan sejuk"
+            "Udara memantulkan haba",
+            "Udara yang terperangkap memindahkan haba dengan sangat perlahan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -4690,12 +4690,12 @@
           "id": "s4_c8_q38",
           "text": "Apakah kesan penggunaan bahan yang tahan lama terhadap jumlah sampah?",
           "options": [
-            "Sampah berkurang kerana barang tidak kerap diganti",
             "Sampah bertambah",
+            "Sampah berkurang kerana barang tidak kerap diganti",
             "Tiada kesan",
             "Bahan menjadi beracun"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -4705,12 +4705,12 @@
           "id": "s4_c8_q39",
           "text": "Kenapa pengasingan sampah di rumah meningkatkan kejayaan kitar semula?",
           "options": [
-            "Bahan yang bersih dan terasing lebih mudah diproses semula",
             "Sampah menjadi lebih ringan",
+            "Bahan yang bersih dan terasing lebih mudah diproses semula",
             "Kilang tidak perlu bekerja",
             "Sampah hilang sendiri"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -4720,12 +4720,12 @@
           "id": "s4_c8_q40",
           "text": "Kenapa memilih bahan tempatan boleh mengurangkan kesan alam sekitar sesuatu produk?",
           "options": [
-            "Pengangkutan yang lebih pendek menggunakan kurang bahan api",
-            "Bahan tempatan lebih kuat",
+            "Bahan tempatan tidak perlu diproses",
             "Bahan tempatan lebih murah sentiasa",
-            "Bahan tempatan tidak perlu diproses"
+            "Bahan tempatan lebih kuat",
+            "Pengangkutan yang lebih pendek menggunakan kurang bahan api"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -4742,12 +4742,12 @@
           "id": "s4_c9_q1",
           "text": "Berapakah peratus permukaan bumi yang diliputi air?",
           "options": [
-            "Kira-kira 71 peratus",
             "Kira-kira 20 peratus",
+            "Kira-kira 95 peratus",
             "Kira-kira 50 peratus",
-            "Kira-kira 95 peratus"
+            "Kira-kira 71 peratus"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4772,12 +4772,12 @@
           "id": "s4_c9_q3",
           "text": "Gas manakah paling banyak dalam udara?",
           "options": [
-            "Nitrogen",
-            "Oksigen",
+            "Hidrogen",
             "Karbon dioksida",
-            "Hidrogen"
+            "Nitrogen",
+            "Oksigen"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4787,12 +4787,12 @@
           "id": "s4_c9_q4",
           "text": "Gas manakah diperlukan untuk pernafasan?",
           "options": [
-            "Oksigen",
             "Nitrogen",
             "Karbon dioksida",
+            "Oksigen",
             "Helium"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4802,12 +4802,12 @@
           "id": "s4_c9_q5",
           "text": "Apakah sumber air semula jadi?",
           "options": [
-            "Sungai, tasik dan hujan",
-            "Paip dan tangki sahaja",
             "Botol air",
-            "Kolam renang"
+            "Kolam renang",
+            "Paip dan tangki sahaja",
+            "Sungai, tasik dan hujan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4818,9 +4818,9 @@
           "text": "Apakah yang berlaku kepada air apabila dipanaskan oleh matahari?",
           "options": [
             "Ia tersejat menjadi wap air",
+            "Ia menjadi tanah",
             "Ia membeku",
-            "Ia hilang terus",
-            "Ia menjadi tanah"
+            "Ia hilang terus"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -4832,12 +4832,12 @@
           "id": "s4_c9_q7",
           "text": "Apakah yang terbentuk apabila wap air menyejuk di langit?",
           "options": [
-            "Awan",
-            "Batu",
             "Angin",
-            "Tanah"
+            "Batu",
+            "Tanah",
+            "Awan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4849,8 +4849,8 @@
           "options": [
             "Tanah",
             "Batu keras sahaja",
-            "Udara sahaja",
-            "Air sahaja"
+            "Air sahaja",
+            "Udara sahaja"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -4862,12 +4862,12 @@
           "id": "s4_c9_q9",
           "text": "Apakah kesan pembakaran terbuka kepada udara?",
           "options": [
-            "Udara menjadi tercemar",
             "Udara menjadi bersih",
-            "Udara menjadi sejuk",
-            "Tiada kesan"
+            "Udara menjadi tercemar",
+            "Tiada kesan",
+            "Udara menjadi sejuk"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4877,12 +4877,12 @@
           "id": "s4_c9_q10",
           "text": "Apakah cara mudah menjimatkan air di rumah?",
           "options": [
-            "Tutup paip semasa memberus gigi",
             "Biarkan paip terbuka",
-            "Basuh kereta setiap hari",
-            "Guna pancuran lebih lama"
+            "Tutup paip semasa memberus gigi",
+            "Guna pancuran lebih lama",
+            "Basuh kereta setiap hari"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4892,12 +4892,12 @@
           "id": "s4_c9_q11",
           "text": "Apakah urutan yang betul dalam kitaran air?",
           "options": [
-            "Penyejatan, kondensasi, kerpasan",
+            "Penyejatan, kerpasan, kondensasi",
             "Kerpasan, penyejatan, kondensasi",
-            "Kondensasi, kerpasan, penyejatan",
-            "Penyejatan, kerpasan, kondensasi"
+            "Penyejatan, kondensasi, kerpasan",
+            "Kondensasi, kerpasan, penyejatan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4907,12 +4907,12 @@
           "id": "s4_c9_q12",
           "text": "Kenapa air laut tidak sesuai diminum?",
           "options": [
-            "Ia mengandungi terlalu banyak garam",
             "Ia terlalu sejuk",
             "Ia terlalu jernih",
+            "Ia mengandungi terlalu banyak garam",
             "Ia tidak mengandungi air"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4922,12 +4922,12 @@
           "id": "s4_c9_q13",
           "text": "Kenapa hujan penting kepada bekalan air kita?",
           "options": [
-            "Ia mengisi semula sungai, tasik dan air bawah tanah",
-            "Ia menyejukkan udara sahaja",
             "Ia membersihkan jalan",
+            "Ia menyejukkan udara sahaja",
+            "Ia mengisi semula sungai, tasik dan air bawah tanah",
             "Ia menghasilkan angin"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4952,12 +4952,12 @@
           "id": "s4_c9_q15",
           "text": "Kenapa sungai menjadi keruh selepas hujan lebat di kawasan yang gondol?",
           "options": [
-            "Tanah terhakis dan dibawa masuk ke sungai",
             "Air bertukar warna sendiri",
-            "Ikan mengeruhkan air",
-            "Hujan berwarna coklat"
+            "Hujan berwarna coklat",
+            "Tanah terhakis dan dibawa masuk ke sungai",
+            "Ikan mengeruhkan air"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4967,12 +4967,12 @@
           "id": "s4_c9_q16",
           "text": "Apakah kesan pencemaran udara terhadap kesihatan?",
           "options": [
-            "Masalah pernafasan seperti asma bertambah",
-            "Pendengaran bertambah baik",
             "Penglihatan bertambah baik",
-            "Tiada kesan"
+            "Tiada kesan",
+            "Masalah pernafasan seperti asma bertambah",
+            "Pendengaran bertambah baik"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4982,12 +4982,12 @@
           "id": "s4_c9_q17",
           "text": "Kenapa kilang dikehendaki merawat air sisa sebelum dilepaskan?",
           "options": [
-            "Untuk mengelakkan bahan beracun mencemarkan sungai",
             "Untuk menjadikan air lebih panas",
-            "Untuk menjimatkan wang",
-            "Untuk menambah warna air"
+            "Untuk menambah warna air",
+            "Untuk mengelakkan bahan beracun mencemarkan sungai",
+            "Untuk menjimatkan wang"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4997,12 +4997,12 @@
           "id": "s4_c9_q18",
           "text": "Apakah yang dimaksudkan dengan sumber air bersih yang terhad?",
           "options": [
-            "Hanya sebahagian kecil air di bumi sesuai untuk diminum",
-            "Air akan habis esok",
+            "Semua air adalah bersih",
             "Air laut boleh diminum",
-            "Semua air adalah bersih"
+            "Hanya sebahagian kecil air di bumi sesuai untuk diminum",
+            "Air akan habis esok"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -5012,12 +5012,12 @@
           "id": "s4_c9_q19",
           "text": "Kenapa menanam pokok membantu kualiti udara?",
           "options": [
-            "Pokok menyerap karbon dioksida dan membebaskan oksigen",
-            "Pokok menyerap bunyi sahaja",
+            "Pokok memanaskan udara",
             "Pokok menghasilkan hujan terus",
-            "Pokok memanaskan udara"
+            "Pokok menyerap bunyi sahaja",
+            "Pokok menyerap karbon dioksida dan membebaskan oksigen"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -5027,12 +5027,12 @@
           "id": "s4_c9_q20",
           "text": "Apakah kesan membuang sampah ke dalam sungai?",
           "options": [
-            "Air tercemar dan hidupan air terjejas",
-            "Sungai menjadi lebih dalam",
             "Air menjadi lebih jernih",
-            "Ikan bertambah"
+            "Sungai menjadi lebih dalam",
+            "Ikan bertambah",
+            "Air tercemar dan hidupan air terjejas"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -5042,12 +5042,12 @@
           "id": "s4_c9_q21",
           "text": "Kenapa kawasan bandar lebih panas daripada kawasan luar bandar?",
           "options": [
-            "Konkrit dan jalan menyerap dan membebaskan lebih banyak haba",
-            "Bandar lebih dekat dengan matahari",
             "Bandar mempunyai lebih banyak pokok",
-            "Angin tidak sampai ke bandar"
+            "Konkrit dan jalan menyerap dan membebaskan lebih banyak haba",
+            "Angin tidak sampai ke bandar",
+            "Bandar lebih dekat dengan matahari"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -5058,8 +5058,8 @@
           "text": "Apakah kesan berantai apabila hutan di kawasan tadahan air ditebang?",
           "options": [
             "Hakisan meningkat, empangan bertakung lumpur dan bekalan air terjejas",
-            "Bekalan air bertambah",
             "Tanah menjadi lebih kuat",
+            "Bekalan air bertambah",
             "Hujan berhenti serta-merta"
           ],
           "correctAnswer": 0,
@@ -5072,12 +5072,12 @@
           "id": "s4_c9_q23",
           "text": "Kenapa banjir kilat lebih kerap berlaku di bandar?",
           "options": [
-            "Permukaan bersimen tidak membenarkan air meresap ke dalam tanah",
             "Hujan lebih lebat di bandar sentiasa",
             "Bandar lebih rendah sentiasa",
+            "Permukaan bersimen tidak membenarkan air meresap ke dalam tanah",
             "Sungai bandar lebih besar"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -5087,12 +5087,12 @@
           "id": "s4_c9_q24",
           "text": "Apakah hubungan antara pembakaran bahan api fosil dan pemanasan bumi?",
           "options": [
-            "Karbon dioksida yang dibebaskan memerangkap lebih banyak haba",
             "Api memanaskan udara secara langsung sahaja",
-            "Asap menghalang matahari sepenuhnya",
-            "Bahan api menyerap haba"
+            "Bahan api menyerap haba",
+            "Karbon dioksida yang dibebaskan memerangkap lebih banyak haba",
+            "Asap menghalang matahari sepenuhnya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -5102,12 +5102,12 @@
           "id": "s4_c9_q25",
           "text": "Kenapa air bawah tanah yang tercemar sukar dipulihkan?",
           "options": [
-            "Ia bergerak perlahan dan tersembunyi di bawah permukaan",
             "Ia sentiasa bersih",
-            "Ia mudah dibersihkan",
-            "Ia menguap dengan cepat"
+            "Ia menguap dengan cepat",
+            "Ia bergerak perlahan dan tersembunyi di bawah permukaan",
+            "Ia mudah dibersihkan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -5118,9 +5118,9 @@
           "text": "Apakah kesan menutup sungai kecil untuk pembinaan?",
           "options": [
             "Aliran air terganggu dan risiko banjir meningkat",
-            "Air mengalir lebih laju",
             "Kawasan menjadi lebih selamat",
-            "Ikan bertambah"
+            "Ikan bertambah",
+            "Air mengalir lebih laju"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -5132,12 +5132,12 @@
           "id": "s4_c9_q27",
           "text": "Kenapa penapisan air sahaja tidak mencukupi untuk menjamin bekalan air bersih?",
           "options": [
-            "Sumber air mesti dilindungi daripada pencemaran dari awal",
             "Penapisan terlalu mahal",
-            "Air tidak boleh ditapis",
-            "Penapisan menambah kotoran"
+            "Sumber air mesti dilindungi daripada pencemaran dari awal",
+            "Penapisan menambah kotoran",
+            "Air tidak boleh ditapis"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -5148,9 +5148,9 @@
           "text": "Apakah bukti bahawa aktiviti manusia mempengaruhi atmosfera?",
           "options": [
             "Kepekatan karbon dioksida meningkat sejak era perindustrian",
-            "Langit bertukar warna sepenuhnya",
+            "Angin berhenti bertiup",
             "Bulan bergerak lebih dekat",
-            "Angin berhenti bertiup"
+            "Langit bertukar warna sepenuhnya"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -5162,12 +5162,12 @@
           "id": "s4_c9_q29",
           "text": "Kenapa tanah pertanian yang terhakis sukar dipulihkan dengan cepat?",
           "options": [
-            "Lapisan atas yang subur mengambil ratusan tahun untuk terbentuk",
             "Tanah tidak boleh ditanam semula",
-            "Tanah menjadi batu",
-            "Petani tidak mahu"
+            "Petani tidak mahu",
+            "Lapisan atas yang subur mengambil ratusan tahun untuk terbentuk",
+            "Tanah menjadi batu"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -5178,9 +5178,9 @@
           "text": "Apakah penyelesaian paling berkesan untuk mengurangkan pencemaran udara di bandar?",
           "options": [
             "Meningkatkan pengangkutan awam dan kawasan hijau",
+            "Menebang lebih banyak pokok",
             "Menambah bilangan kereta persendirian",
-            "Membakar sampah secara terbuka",
-            "Menebang lebih banyak pokok"
+            "Membakar sampah secara terbuka"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -5193,8 +5193,8 @@
           "text": "Kenapa lapisan ozon penting bagi hidupan di bumi?",
           "options": [
             "Ia menyerap sebahagian besar sinaran ultraungu yang berbahaya",
-            "Ia menghasilkan oksigen",
             "Ia menahan hujan",
+            "Ia menghasilkan oksigen",
             "Ia menyejukkan bumi secara langsung"
           ],
           "correctAnswer": 0,
@@ -5207,12 +5207,12 @@
           "id": "s4_c9_q32",
           "text": "Apakah perbezaan antara pencemaran udara tempatan dan perubahan iklim global?",
           "options": [
+            "Perubahan iklim hanya di bandar",
             "Satu memberi kesan pada kawasan tertentu, satu lagi mempengaruhi seluruh planet",
             "Kedua-duanya sama sahaja",
-            "Perubahan iklim hanya di bandar",
             "Pencemaran udara hanya di laut"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -5222,12 +5222,12 @@
           "id": "s4_c9_q33",
           "text": "Kenapa pencairan ais kutub menaikkan aras laut tetapi ais terapung tidak?",
           "options": [
-            "Ais di daratan menambah air baharu ke laut manakala ais terapung sudah menyesarkan isi padunya",
+            "Kedua-duanya menaikkan aras laut sama banyak",
             "Ais kutub lebih berat",
-            "Ais terapung lebih besar",
-            "Kedua-duanya menaikkan aras laut sama banyak"
+            "Ais di daratan menambah air baharu ke laut manakala ais terapung sudah menyesarkan isi padunya",
+            "Ais terapung lebih besar"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -5237,12 +5237,12 @@
           "id": "s4_c9_q34",
           "text": "Apakah kesan jangka panjang penggunaan air bawah tanah melebihi kadar isian semula?",
           "options": [
-            "Paras air menurun dan tanah boleh mendap",
             "Air menjadi lebih bersih",
             "Tanah menjadi lebih kuat",
-            "Hujan bertambah"
+            "Hujan bertambah",
+            "Paras air menurun dan tanah boleh mendap"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -5252,12 +5252,12 @@
           "id": "s4_c9_q35",
           "text": "Kenapa hutan bakau penting untuk melindungi pantai?",
           "options": [
-            "Akarnya memerangkap sedimen dan mengurangkan tenaga ombak",
-            "Ia menghasilkan pasir",
+            "Ia menghalang hujan",
             "Ia menyerap air laut sepenuhnya",
-            "Ia menghalang hujan"
+            "Ia menghasilkan pasir",
+            "Akarnya memerangkap sedimen dan mengurangkan tenaga ombak"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -5267,12 +5267,12 @@
           "id": "s4_c9_q36",
           "text": "Apakah maksud kesan rumah hijau dan mengapa ia sebenarnya diperlukan?",
           "options": [
-            "Ia menahan haba supaya bumi cukup panas untuk hidupan, tetapi berlebihan menjadi masalah",
-            "Ia sentiasa berbahaya",
             "Ia menyejukkan bumi",
-            "Ia menghasilkan oksigen"
+            "Ia sentiasa berbahaya",
+            "Ia menghasilkan oksigen",
+            "Ia menahan haba supaya bumi cukup panas untuk hidupan, tetapi berlebihan menjadi masalah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -5284,8 +5284,8 @@
           "options": [
             "Atmosfera dikongsi dan gas bergerak merentasi sempadan",
             "Negara lain tidak peduli",
-            "Masalahnya terlalu kecil",
-            "Setiap negara mempunyai atmosfera sendiri"
+            "Setiap negara mempunyai atmosfera sendiri",
+            "Masalahnya terlalu kecil"
           ],
           "correctAnswer": 0,
           "difficulty": "ultra",
@@ -5297,12 +5297,12 @@
           "id": "s4_c9_q38",
           "text": "Apakah kelebihan sistem pengumpulan air hujan di rumah?",
           "options": [
-            "Mengurangkan penggunaan air terawat dan air larian permukaan",
-            "Menghasilkan air minuman terus tanpa rawatan",
             "Menambah hujan",
-            "Menyejukkan rumah"
+            "Mengurangkan penggunaan air terawat dan air larian permukaan",
+            "Menyejukkan rumah",
+            "Menghasilkan air minuman terus tanpa rawatan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -5312,12 +5312,12 @@
           "id": "s4_c9_q39",
           "text": "Kenapa data cuaca jangka panjang diperlukan untuk mengesahkan perubahan iklim?",
           "options": [
-            "Cuaca berubah setiap hari, jadi corak hanya jelas selepas bertahun-tahun",
             "Data pendek lebih tepat",
             "Cuaca tidak boleh diukur",
+            "Cuaca berubah setiap hari, jadi corak hanya jelas selepas bertahun-tahun",
             "Iklim berubah setiap jam"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -5327,12 +5327,12 @@
           "id": "s4_c9_q40",
           "text": "Apakah kaitan antara kepupusan spesies dan kemusnahan habitat?",
           "options": [
-            "Spesies yang kehilangan habitat kehilangan makanan, tempat tinggal dan tempat membiak",
-            "Spesies berpindah dengan mudah ke mana-mana",
             "Habitat tidak penting",
-            "Kepupusan berlaku secara rawak sahaja"
+            "Spesies yang kehilangan habitat kehilangan makanan, tempat tinggal dan tempat membiak",
+            "Kepupusan berlaku secara rawak sahaja",
+            "Spesies berpindah dengan mudah ke mana-mana"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -5349,12 +5349,12 @@
           "id": "s4_c10_q1",
           "text": "Apakah fungsi mesin ringkas?",
           "options": [
+            "Menghentikan gerakan",
             "Memudahkan kerja",
             "Menambah kerja",
-            "Menghasilkan tenaga baharu",
-            "Menghentikan gerakan"
+            "Menghasilkan tenaga baharu"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -5364,12 +5364,12 @@
           "id": "s4_c10_q2",
           "text": "Manakah contoh tuas?",
           "options": [
-            "Gunting",
-            "Skru",
+            "Roda tunggal",
             "Baji sahaja",
-            "Roda tunggal"
+            "Skru",
+            "Gunting"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -5380,9 +5380,9 @@
           "text": "Manakah contoh satah condong?",
           "options": [
             "Tangga jalan landai",
+            "Gear",
             "Gunting",
-            "Takal",
-            "Gear"
+            "Takal"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -5394,12 +5394,12 @@
           "id": "s4_c10_q4",
           "text": "Manakah contoh baji?",
           "options": [
-            "Kapak",
-            "Takal",
             "Gear",
-            "Roda dan gandar"
+            "Roda dan gandar",
+            "Kapak",
+            "Takal"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -5409,12 +5409,12 @@
           "id": "s4_c10_q5",
           "text": "Manakah contoh skru?",
           "options": [
-            "Bolt",
-            "Gunting",
+            "Takal",
             "Tuas",
-            "Takal"
+            "Gunting",
+            "Bolt"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -5424,12 +5424,12 @@
           "id": "s4_c10_q6",
           "text": "Apakah kegunaan takal?",
           "options": [
-            "Menukar arah daya untuk mengangkat beban",
+            "Menyimpan tenaga",
             "Memotong bahan",
             "Menghasilkan bunyi",
-            "Menyimpan tenaga"
+            "Menukar arah daya untuk mengangkat beban"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -5440,9 +5440,9 @@
           "text": "Manakah contoh roda dan gandar?",
           "options": [
             "Tombol pintu",
-            "Kapak",
             "Baji",
-            "Skru"
+            "Skru",
+            "Kapak"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -5454,12 +5454,12 @@
           "id": "s4_c10_q8",
           "text": "Apakah maksud fulkrum?",
           "options": [
-            "Titik sokongan tempat tuas berputar",
             "Beban yang diangkat",
             "Daya yang dikenakan",
+            "Titik sokongan tempat tuas berputar",
             "Panjang tuas"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -5470,9 +5470,9 @@
           "text": "Manakah antara berikut mesin kompleks?",
           "options": [
             "Basikal",
+            "Baji",
             "Gunting",
-            "Tuas",
-            "Baji"
+            "Tuas"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -5485,9 +5485,9 @@
           "text": "Kenapa mesin ringkas berguna dalam kehidupan harian?",
           "options": [
             "Ia membolehkan kerja berat dilakukan dengan lebih mudah",
-            "Ia menjadikan kerja lebih susah",
+            "Ia menghasilkan cahaya",
             "Ia menghasilkan makanan",
-            "Ia menghasilkan cahaya"
+            "Ia menjadikan kerja lebih susah"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -5499,12 +5499,12 @@
           "id": "s4_c10_q11",
           "text": "Kenapa satah condong yang lebih panjang memudahkan kerja?",
           "options": [
-            "Daya yang diperlukan menjadi lebih kecil walaupun jaraknya lebih jauh",
             "Beban menjadi lebih ringan",
-            "Graviti berkurang",
-            "Jarak menjadi lebih pendek"
+            "Jarak menjadi lebih pendek",
+            "Daya yang diperlukan menjadi lebih kecil walaupun jaraknya lebih jauh",
+            "Graviti berkurang"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -5515,9 +5515,9 @@
           "text": "Kenapa pemegang gunting yang panjang memudahkan pemotongan?",
           "options": [
             "Lengan daya yang panjang menghasilkan kesan yang lebih besar",
+            "Bahannya berbeza",
             "Bilahnya lebih tajam",
-            "Gunting lebih ringan",
-            "Bahannya berbeza"
+            "Gunting lebih ringan"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -5529,12 +5529,12 @@
           "id": "s4_c10_q13",
           "text": "Dalam sebuah kereta sorong, di manakah kedudukan fulkrum?",
           "options": [
-            "Pada roda di hadapan",
-            "Pada pemegang",
+            "Pada kaki pengguna",
             "Pada beban",
-            "Pada kaki pengguna"
+            "Pada roda di hadapan",
+            "Pada pemegang"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -5544,12 +5544,12 @@
           "id": "s4_c10_q14",
           "text": "Kenapa skru memerlukan pusingan yang banyak untuk masuk sepenuhnya?",
           "options": [
-            "Ia satah condong panjang yang dililit, jadi jaraknya jauh",
-            "Ia terlalu keras",
             "Ia terlalu pendek",
-            "Kayu menolaknya keluar"
+            "Ia satah condong panjang yang dililit, jadi jaraknya jauh",
+            "Kayu menolaknya keluar",
+            "Ia terlalu keras"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -5560,9 +5560,9 @@
           "text": "Kenapa gear bersaiz berbeza digunakan pada basikal?",
           "options": [
             "Untuk menukar antara kelajuan dan kekuatan mengayuh",
-            "Untuk kelihatan cantik",
+            "Untuk mengurangkan bunyi",
             "Untuk menambah berat",
-            "Untuk mengurangkan bunyi"
+            "Untuk kelihatan cantik"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -5574,12 +5574,12 @@
           "id": "s4_c10_q16",
           "text": "Apakah mesin ringkas yang terdapat pada pisau?",
           "options": [
-            "Baji",
-            "Takal",
             "Skru",
-            "Gear"
+            "Takal",
+            "Gear",
+            "Baji"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -5589,12 +5589,12 @@
           "id": "s4_c10_q17",
           "text": "Kenapa bendera dinaikkan menggunakan takal di puncak tiang?",
           "options": [
-            "Supaya kita boleh menarik ke bawah dan bukan memanjat tiang",
-            "Supaya bendera lebih ringan",
             "Supaya bendera lebih besar",
-            "Supaya tiang lebih kuat"
+            "Supaya kita boleh menarik ke bawah dan bukan memanjat tiang",
+            "Supaya tiang lebih kuat",
+            "Supaya bendera lebih ringan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -5604,12 +5604,12 @@
           "id": "s4_c10_q18",
           "text": "Apakah kelebihan menggunakan jek pada kereta?",
           "options": [
-            "Daya kecil manusia dapat mengangkat beban yang sangat berat",
             "Kereta menjadi ringan",
             "Graviti berkurang",
+            "Daya kecil manusia dapat mengangkat beban yang sangat berat",
             "Tayar mengecil"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -5619,12 +5619,12 @@
           "id": "s4_c10_q19",
           "text": "Kenapa kunci sauk mempunyai pemegang panjang?",
           "options": [
-            "Untuk menghasilkan daya putaran yang lebih besar",
-            "Untuk kelihatan profesional",
             "Untuk menambah berat",
-            "Untuk mengurangkan geseran"
+            "Untuk mengurangkan geseran",
+            "Untuk kelihatan profesional",
+            "Untuk menghasilkan daya putaran yang lebih besar"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -5634,12 +5634,12 @@
           "id": "s4_c10_q20",
           "text": "Apakah kesan geseran terhadap mesin?",
           "options": [
-            "Sebahagian tenaga terbuang sebagai haba dan bahagian menjadi haus",
+            "Tiada kesan",
             "Mesin menjadi lebih cekap",
             "Mesin bergerak lebih laju",
-            "Tiada kesan"
+            "Sebahagian tenaga terbuang sebagai haba dan bahagian menjadi haus"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -5649,12 +5649,12 @@
           "id": "s4_c10_q21",
           "text": "Sebuah papan digunakan sebagai satah condong untuk menaikkan tong. Papan yang lebih panjang digunakan. Apakah kesannya?",
           "options": [
-            "Daya menolak berkurang tetapi jarak menolak bertambah",
             "Daya dan jarak kedua-duanya berkurang",
             "Daya bertambah",
+            "Daya menolak berkurang tetapi jarak menolak bertambah",
             "Tiada perubahan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -5664,12 +5664,12 @@
           "id": "s4_c10_q22",
           "text": "Kenapa mesin ringkas tidak mengurangkan jumlah kerja yang perlu dilakukan?",
           "options": [
-            "Ia hanya mengagihkan daya sepanjang jarak yang berbeza",
-            "Ia menambah tenaga baharu",
             "Ia menghapuskan graviti",
+            "Ia menambah tenaga baharu",
+            "Ia hanya mengagihkan daya sepanjang jarak yang berbeza",
             "Ia menjadikan beban lebih ringan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -5679,12 +5679,12 @@
           "id": "s4_c10_q23",
           "text": "Sebuah takal tunggal tetap digunakan untuk menaikkan beban 50 kg. Apakah kelebihannya?",
           "options": [
-            "Arah daya bertukar walaupun besar daya hampir sama",
-            "Beban menjadi 25 kg",
             "Beban menjadi 10 kg",
-            "Tiada daya diperlukan"
+            "Beban menjadi 25 kg",
+            "Tiada daya diperlukan",
+            "Arah daya bertukar walaupun besar daya hampir sama"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -5695,9 +5695,9 @@
           "text": "Kenapa sistem takal berganda memudahkan pengangkatan beban berat?",
           "options": [
             "Beban dikongsi oleh beberapa bahagian tali",
-            "Beban menjadi lebih ringan sebenarnya",
+            "Tali menjadi lebih kuat",
             "Graviti berkurang",
-            "Tali menjadi lebih kuat"
+            "Beban menjadi lebih ringan sebenarnya"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -5709,12 +5709,12 @@
           "id": "s4_c10_q25",
           "text": "Sebuah tuas mempunyai fulkrum di tengah dengan lengan sama panjang. Apakah kelebihan mekanikalnya?",
           "options": [
-            "Tiada kelebihan daya, hanya arah bertukar",
-            "Daya digandakan dua kali",
             "Daya digandakan empat kali",
-            "Beban hilang"
+            "Beban hilang",
+            "Daya digandakan dua kali",
+            "Tiada kelebihan daya, hanya arah bertukar"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -5724,12 +5724,12 @@
           "id": "s4_c10_q26",
           "text": "Kenapa basikal mendaki bukit lebih senang dengan gear rendah?",
           "options": [
+            "Roda menjadi lebih besar",
             "Setiap kayuhan menghasilkan daya lebih besar walaupun basikal bergerak lebih perlahan",
-            "Basikal menjadi lebih ringan",
             "Bukit menjadi lebih landai",
-            "Roda menjadi lebih besar"
+            "Basikal menjadi lebih ringan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -5740,9 +5740,9 @@
           "text": "Apakah kesan menggunakan minyak pelincir pada rantai basikal?",
           "options": [
             "Geseran berkurang dan tenaga kayuhan digunakan dengan lebih cekap",
+            "Rantai menjadi lebih panjang",
             "Rantai menjadi lebih berat",
-            "Basikal menjadi lebih perlahan",
-            "Rantai menjadi lebih panjang"
+            "Basikal menjadi lebih perlahan"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -5754,12 +5754,12 @@
           "id": "s4_c10_q28",
           "text": "Kenapa gunting untuk memotong logam mempunyai pemegang panjang dan bilah pendek?",
           "options": [
-            "Untuk menghasilkan daya potong yang sangat besar",
-            "Untuk memotong lebih panjang",
+            "Untuk mengurangkan berat",
             "Untuk kelihatan berbeza",
-            "Untuk mengurangkan berat"
+            "Untuk menghasilkan daya potong yang sangat besar",
+            "Untuk memotong lebih panjang"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -5769,12 +5769,12 @@
           "id": "s4_c10_q29",
           "text": "Sebuah jalan gunung dibina berliku dan bukan lurus menaik. Kenapa?",
           "options": [
-            "Ia bertindak sebagai satah condong panjang yang mengurangkan kecerunan",
             "Ia lebih pendek",
+            "Ia lebih selamat daripada hujan",
             "Ia lebih murah sentiasa",
-            "Ia lebih selamat daripada hujan"
+            "Ia bertindak sebagai satah condong panjang yang mengurangkan kecerunan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -5784,12 +5784,12 @@
           "id": "s4_c10_q30",
           "text": "Apakah mesin ringkas yang terlibat apabila kita membuka penutup botol dengan pembuka?",
           "options": [
+            "Roda dan gandar",
             "Tuas",
-            "Takal",
             "Skru",
-            "Roda dan gandar"
+            "Takal"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -5820,9 +5820,9 @@
           "text": "Kenapa kelebihan mekanikal sebenar sentiasa kurang daripada kelebihan mekanikal ideal?",
           "options": [
             "Sebahagian daya digunakan untuk mengatasi geseran",
-            "Pengiraan sentiasa salah",
             "Beban bertambah",
-            "Mesin menyerap tenaga kekal"
+            "Mesin menyerap tenaga kekal",
+            "Pengiraan sentiasa salah"
           ],
           "correctAnswer": 0,
           "difficulty": "ultra",
@@ -5844,12 +5844,12 @@
           "id": "s4_c10_q35",
           "text": "Sebuah mesin ringkas memberi kelebihan mekanikal 5. Apakah maksudnya bagi jarak?",
           "options": [
-            "Daya berkurang lima kali tetapi jarak menjadi lima kali ganda",
             "Daya dan jarak kedua-duanya berkurang lima kali",
-            "Jarak berkurang lima kali",
-            "Kerja berkurang lima kali"
+            "Daya berkurang lima kali tetapi jarak menjadi lima kali ganda",
+            "Kerja berkurang lima kali",
+            "Jarak berkurang lima kali"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -5871,8 +5871,8 @@
           "options": [
             "Hidraulik menghantar daya besar dengan lancar melalui bendalir",
             "Tuas tidak berfungsi langsung",
-            "Hidraulik lebih murah",
-            "Hidraulik tidak memerlukan tenaga"
+            "Hidraulik tidak memerlukan tenaga",
+            "Hidraulik lebih murah"
           ],
           "correctAnswer": 0,
           "difficulty": "ultra",
@@ -5884,12 +5884,12 @@
           "id": "s4_c10_q38",
           "text": "Apakah persamaan asas semua mesin ringkas?",
           "options": [
-            "Semuanya menukar antara daya dan jarak tanpa menambah tenaga",
-            "Semuanya menghasilkan tenaga",
+            "Semuanya menggunakan elektrik",
             "Semuanya mengurangkan kerja",
-            "Semuanya menggunakan elektrik"
+            "Semuanya menukar antara daya dan jarak tanpa menambah tenaga",
+            "Semuanya menghasilkan tenaga"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -5909,12 +5909,12 @@
           "id": "s4_c10_q40",
           "text": "Kenapa reka bentuk basikal moden dianggap sangat cekap dari segi tenaga?",
           "options": [
-            "Kebanyakan tenaga kayuhan bertukar terus kepada gerakan dengan sedikit kehilangan",
+            "Ia menggunakan elektrik",
             "Ia menghasilkan tenaga sendiri",
             "Ia tidak memerlukan tenaga",
-            "Ia menggunakan elektrik"
+            "Kebanyakan tenaga kayuhan bertukar terus kepada gerakan dengan sedikit kehilangan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",

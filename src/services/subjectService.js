@@ -28,11 +28,12 @@ export const SUBJECTS = [
     tagline: 'Hidupan, bahan, tenaga dan bumi',
     accent: 'var(--mark-tambah)',
     glyph: 'bentuk',
-    // Tukar kepada `true` sebaik sahaja fail soalan Sains ditulis. Penanda ini
+    // Dibuka pada 8 September 2026, apabila keenam-enam tahun siap. Penanda ini
     // dipegang di sini dan bukan diteka daripada rangkaian, kerana pelayan
     // memulangkan index.html untuk fail yang tiada, jadi permintaan yang gagal
-    // kelihatan seperti berjaya.
-    ready: false,
+    // kelihatan seperti berjaya. Ia meliputi seluruh subjek dan bukan setiap
+    // tahun, jadi ia hanya boleh menjadi `true` apabila semua tahun ada failnya.
+    ready: true,
     // Sukatan Sains jauh lebih luas daripada Matematik. Setiap tahun ada
     // sepuluh unit, dan Tahun 6 ada tiga belas, jadi bilangan bab tidak boleh
     // ditetapkan pada satu nombor seperti dahulu.

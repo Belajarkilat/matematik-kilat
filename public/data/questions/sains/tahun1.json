@@ -11,12 +11,12 @@
           "id": "s1_c1_q1",
           "text": "Berapa banyak deria yang ada pada manusia?",
           "options": [
+            "6",
             "5",
             "3",
-            "4",
-            "6"
+            "4"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -26,12 +26,12 @@
           "id": "s1_c1_q2",
           "text": "Kita menggunakan deria apa untuk melihat warna?",
           "options": [
-            "Penglihatan",
             "Pendengaran",
-            "Bau",
-            "Rasa"
+            "Penglihatan",
+            "Rasa",
+            "Bau"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -42,9 +42,9 @@
           "text": "Alat manakah digunakan untuk mengukur panjang?",
           "options": [
             "Pembaris",
-            "Jam",
             "Neraca",
-            "Termometer"
+            "Termometer",
+            "Jam"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -57,9 +57,9 @@
           "text": "Kita menggunakan deria apa untuk mendengar bunyi loceng?",
           "options": [
             "Pendengaran",
-            "Penglihatan",
+            "Bau",
             "Sentuh",
-            "Bau"
+            "Penglihatan"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -71,12 +71,12 @@
           "id": "s1_c1_q5",
           "text": "Deria apa yang kita guna untuk tahu bau nasi goreng?",
           "options": [
-            "Bau",
-            "Rasa",
             "Sentuh",
-            "Penglihatan"
+            "Penglihatan",
+            "Rasa",
+            "Bau"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -86,12 +86,12 @@
           "id": "s1_c1_q6",
           "text": "Alat manakah digunakan untuk mengukur masa?",
           "options": [
-            "Jam",
-            "Pembaris",
             "Neraca",
-            "Cawan penyukat"
+            "Cawan penyukat",
+            "Pembaris",
+            "Jam"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -101,12 +101,12 @@
           "id": "s1_c1_q7",
           "text": "Kita tahu air itu panas atau sejuk dengan deria apa?",
           "options": [
-            "Sentuh",
             "Bau",
             "Pendengaran",
-            "Penglihatan"
+            "Penglihatan",
+            "Sentuh"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -116,12 +116,12 @@
           "id": "s1_c1_q8",
           "text": "Apakah yang kita buat apabila kita \"memerhati\"?",
           "options": [
-            "Menggunakan deria untuk mendapat maklumat",
             "Meneka sahaja",
             "Menulis nama",
+            "Menggunakan deria untuk mendapat maklumat",
             "Berlari pantas"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -131,12 +131,12 @@
           "id": "s1_c1_q9",
           "text": "Alat manakah digunakan untuk mengukur isi padu air?",
           "options": [
-            "Silinder penyukat",
-            "Pembaris",
             "Jam",
+            "Pembaris",
+            "Silinder penyukat",
             "Termometer"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -146,12 +146,12 @@
           "id": "s1_c1_q10",
           "text": "Deria rasa datang daripada bahagian badan yang mana?",
           "options": [
-            "Lidah",
             "Hidung",
             "Telinga",
+            "Lidah",
             "Mata"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -161,12 +161,12 @@
           "id": "s1_c1_q11",
           "text": "Ali menutup matanya dan memegang sebiji buah. Deria manakah yang dia guna?",
           "options": [
+            "Bau",
             "Sentuh",
-            "Penglihatan",
             "Pendengaran",
-            "Bau"
+            "Penglihatan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -176,12 +176,12 @@
           "id": "s1_c1_q12",
           "text": "Rina hendak tahu buku mana lebih panjang. Apakah yang patut dia guna?",
           "options": [
-            "Pembaris",
-            "Jam",
             "Termometer",
-            "Neraca"
+            "Jam",
+            "Neraca",
+            "Pembaris"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -191,12 +191,12 @@
           "id": "s1_c1_q13",
           "text": "Siti mengumpulkan butang mengikut warna. Kemahiran apakah itu?",
           "options": [
-            "Mengelas",
             "Mengukur",
-            "Meramal",
-            "Berkomunikasi"
+            "Mengelas",
+            "Berkomunikasi",
+            "Meramal"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -207,9 +207,9 @@
           "text": "Manakah antara berikut TIDAK boleh diketahui hanya dengan melihat?",
           "options": [
             "Rasa manis gula",
-            "Warna bola",
             "Bentuk kotak",
-            "Saiz buku"
+            "Saiz buku",
+            "Warna bola"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -221,12 +221,12 @@
           "id": "s1_c1_q15",
           "text": "Ali kata \"esok akan hujan kerana langit gelap.\" Kemahiran apakah itu?",
           "options": [
-            "Meramal",
+            "Memerhati",
             "Mengukur",
-            "Mengelas",
-            "Memerhati"
+            "Meramal",
+            "Mengelas"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -246,12 +246,12 @@
           "id": "s1_c1_q17",
           "text": "Untuk mengukur berat sebiji tembikai, apakah alat yang sesuai?",
           "options": [
-            "Neraca",
+            "Silinder penyukat",
             "Pembaris",
-            "Jam",
-            "Silinder penyukat"
+            "Neraca",
+            "Jam"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -261,12 +261,12 @@
           "id": "s1_c1_q18",
           "text": "Manakah pasangan yang betul?",
           "options": [
+            "Mata dan sentuh",
             "Telinga dan pendengaran",
-            "Telinga dan bau",
             "Hidung dan rasa",
-            "Mata dan sentuh"
+            "Telinga dan bau"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -278,8 +278,8 @@
           "options": [
             "Saiz",
             "Bau",
-            "Bunyi",
-            "Rasa"
+            "Rasa",
+            "Bunyi"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -291,12 +291,12 @@
           "id": "s1_c1_q20",
           "text": "Kenapa kita tidak boleh merasa bahan yang tidak dikenali di dalam bilik sains?",
           "options": [
-            "Ia mungkin berbahaya",
-            "Ia sejuk",
             "Ia berat",
-            "Ia mahal"
+            "Ia mungkin berbahaya",
+            "Ia mahal",
+            "Ia sejuk"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -306,12 +306,12 @@
           "id": "s1_c1_q21",
           "text": "Ali memegang dua bekas tertutup. Satu berbunyi bila digoncang, satu senyap. Deria apakah yang membantu dia membezakannya?",
           "options": [
-            "Pendengaran",
             "Penglihatan",
-            "Bau",
-            "Rasa"
+            "Pendengaran",
+            "Rasa",
+            "Bau"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -331,12 +331,12 @@
           "id": "s1_c1_q23",
           "text": "Siti mengasingkan bola kepada dua kumpulan: bulat dan tidak bulat. Apakah ciri yang dia guna untuk mengelas?",
           "options": [
-            "Bentuk",
             "Warna",
             "Berat",
-            "Bau"
+            "Bau",
+            "Bentuk"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -346,12 +346,12 @@
           "id": "s1_c1_q24",
           "text": "Rina nampak awan hitam tebal di langit. Ramalan manakah paling munasabah?",
           "options": [
-            "Hujan akan turun",
             "Matahari akan terbit",
-            "Angin akan berhenti",
-            "Bulan akan muncul"
+            "Bulan akan muncul",
+            "Hujan akan turun",
+            "Angin akan berhenti"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -361,12 +361,12 @@
           "id": "s1_c1_q25",
           "text": "Ali ingin tahu air dalam mana antara dua cawan lebih banyak. Apakah cara yang paling tepat?",
           "options": [
-            "Tuang ke dalam silinder penyukat",
             "Bau kedua-duanya",
+            "Sentuh cawan itu",
             "Dengar bunyinya",
-            "Sentuh cawan itu"
+            "Tuang ke dalam silinder penyukat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -386,12 +386,12 @@
           "id": "s1_c1_q27",
           "text": "Manakah antara berikut BUKAN kemahiran memerhati?",
           "options": [
-            "Meneka jawapan tanpa melihat",
-            "Melihat warna bunga",
             "Mendengar bunyi burung",
-            "Menghidu bau roti"
+            "Melihat warna bunga",
+            "Menghidu bau roti",
+            "Meneka jawapan tanpa melihat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -401,12 +401,12 @@
           "id": "s1_c1_q28",
           "text": "Sebuah bekas berisi air panas. Kenapa kita tidak sentuh terus dengan tangan?",
           "options": [
-            "Boleh melecur",
             "Air jadi kotor",
             "Bekas jadi berat",
+            "Boleh melecur",
             "Air jadi sejuk"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -416,12 +416,12 @@
           "id": "s1_c1_q29",
           "text": "Ali menyusun kejadian: telur, anak ayam, ayam dewasa. Kemahiran apakah itu?",
           "options": [
-            "Menyusun mengikut urutan",
             "Mengukur",
+            "Menyusun mengikut urutan",
             "Menimbang",
             "Menghidu"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -431,12 +431,12 @@
           "id": "s1_c1_q30",
           "text": "Dua bekas kelihatan sama besar tetapi satu lebih berat. Apakah yang boleh kita simpulkan?",
           "options": [
-            "Isi dalamnya berbeza",
-            "Warnanya berbeza",
             "Bunyinya berbeza",
-            "Baunya berbeza"
+            "Baunya berbeza",
+            "Isi dalamnya berbeza",
+            "Warnanya berbeza"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -446,12 +446,12 @@
           "id": "s1_c1_q31",
           "text": "Ali diberi tiga bekas tertutup yang sama rupa. Dia hanya dibenarkan menggoncang dan menimbangnya. Deria manakah TIDAK berguna langsung di sini?",
           "options": [
-            "Rasa",
+            "Penglihatan",
             "Pendengaran",
-            "Sentuh",
-            "Penglihatan"
+            "Rasa",
+            "Sentuh"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -472,9 +472,9 @@
           "text": "Rina kata \"bola ini akan terapung\" sebelum meletakkannya di dalam air. Selepas itu bola tenggelam. Apakah yang patut dia buat?",
           "options": [
             "Terima pemerhatian dan betulkan ramalan",
-            "Katakan bola itu rosak",
             "Buang bola itu",
-            "Ulang ramalan yang sama"
+            "Ulang ramalan yang sama",
+            "Katakan bola itu rosak"
           ],
           "correctAnswer": 0,
           "difficulty": "ultra",
@@ -486,12 +486,12 @@
           "id": "s1_c1_q34",
           "text": "Manakah cara terbaik untuk membandingkan berat dua benda yang hampir sama?",
           "options": [
+            "Dengar bunyinya",
             "Guna neraca",
             "Angkat dengan tangan",
-            "Lihat saiznya",
-            "Dengar bunyinya"
+            "Lihat saiznya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -501,12 +501,12 @@
           "id": "s1_c1_q35",
           "text": "Ali mengelas haiwan kepada \"ada kaki\" dan \"tiada kaki\". Manakah masuk kumpulan tiada kaki?",
           "options": [
-            "Ular",
-            "Kucing",
+            "Katak",
             "Ayam",
-            "Katak"
+            "Ular",
+            "Kucing"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -542,8 +542,8 @@
           "text": "Ali hendak tahu adakah gula larut lebih cepat dalam air panas atau air sejuk. Apakah yang MESTI sama pada kedua-dua cawan?",
           "options": [
             "Banyaknya gula",
-            "Suhu air",
             "Warna cawan sahaja",
+            "Suhu air",
             "Nama murid"
           ],
           "correctAnswer": 0,
@@ -556,12 +556,12 @@
           "id": "s1_c1_q39",
           "text": "Deria manakah yang paling tidak selamat digunakan di dalam bilik sains?",
           "options": [
-            "Rasa",
+            "Sentuh",
             "Penglihatan",
-            "Pendengaran",
-            "Sentuh"
+            "Rasa",
+            "Pendengaran"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -571,12 +571,12 @@
           "id": "s1_c1_q40",
           "text": "Siti memerhati bahawa tanah di bawah pokok sentiasa lembap. Inferens manakah paling munasabah?",
           "options": [
-            "Pokok itu melindungi tanah daripada matahari",
             "Tanah itu berwarna gelap",
+            "Pokok itu melindungi tanah daripada matahari",
             "Pokok itu tinggi",
             "Tanah itu keras"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -593,12 +593,12 @@
           "id": "s1_c2_q1",
           "text": "Sebelum menjalankan aktiviti sains, apakah yang mesti kita buat dahulu?",
           "options": [
+            "Makan di dalam bilik",
             "Dengar arahan guru",
             "Bermain alat",
-            "Makan di dalam bilik",
             "Berlari"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -608,12 +608,12 @@
           "id": "s1_c2_q2",
           "text": "Bolehkah kita makan di dalam bilik sains?",
           "options": [
-            "Tidak boleh",
-            "Boleh",
             "Boleh jika lapar",
-            "Boleh jika sedikit"
+            "Boleh jika sedikit",
+            "Boleh",
+            "Tidak boleh"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -623,12 +623,12 @@
           "id": "s1_c2_q3",
           "text": "Apakah yang perlu dipakai untuk melindungi mata?",
           "options": [
-            "Cermin mata keselamatan",
-            "Topi",
+            "Jam tangan",
             "Sarung kaki",
-            "Jam tangan"
+            "Cermin mata keselamatan",
+            "Topi"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -638,12 +638,12 @@
           "id": "s1_c2_q4",
           "text": "Jika sesuatu tumpah di atas lantai, apakah yang patut kita buat?",
           "options": [
+            "Pijak ia",
             "Beritahu guru",
             "Biarkan sahaja",
-            "Pijak ia",
             "Lari keluar"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -653,12 +653,12 @@
           "id": "s1_c2_q5",
           "text": "Bolehkah kita berlari di dalam bilik sains?",
           "options": [
-            "Tidak boleh",
+            "Boleh jika seorang",
             "Boleh",
-            "Boleh jika perlahan",
-            "Boleh jika seorang"
+            "Tidak boleh",
+            "Boleh jika perlahan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -668,12 +668,12 @@
           "id": "s1_c2_q6",
           "text": "Selepas menjalankan aktiviti, apakah yang mesti kita buat pada tangan?",
           "options": [
+            "Biarkan sahaja",
             "Basuh dengan sabun",
             "Lap pada baju",
-            "Biarkan sahaja",
             "Tiup sahaja"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -683,12 +683,12 @@
           "id": "s1_c2_q7",
           "text": "Alat kaca yang pecah patut dibuang ke mana?",
           "options": [
-            "Bekas khas untuk kaca pecah",
             "Tong sampah biasa",
+            "Poket",
             "Bawah meja",
-            "Poket"
+            "Bekas khas untuk kaca pecah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -700,8 +700,8 @@
           "options": [
             "Tidak boleh",
             "Boleh",
-            "Boleh jika sedikit",
-            "Boleh jika cepat"
+            "Boleh jika cepat",
+            "Boleh jika sedikit"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -713,12 +713,12 @@
           "id": "s1_c2_q9",
           "text": "Rambut panjang patut diapakan semasa aktiviti sains?",
           "options": [
+            "Dipotong",
             "Diikat",
-            "Dibiarkan",
             "Ditutup dengan tangan",
-            "Dipotong"
+            "Dibiarkan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -729,9 +729,9 @@
           "text": "Siapakah yang patut kita beritahu jika kita cedera?",
           "options": [
             "Guru",
-            "Kawan sahaja",
+            "Adik",
             "Tiada siapa",
-            "Adik"
+            "Kawan sahaja"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -743,12 +743,12 @@
           "id": "s1_c2_q11",
           "text": "Ali ternampak wayar berbulu terkeluar dari plug. Apakah yang patut dia buat?",
           "options": [
-            "Beritahu guru dan jangan sentuh",
             "Tarik wayar itu",
-            "Tutup dengan kertas",
-            "Guna juga"
+            "Beritahu guru dan jangan sentuh",
+            "Guna juga",
+            "Tutup dengan kertas"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -773,12 +773,12 @@
           "id": "s1_c2_q13",
           "text": "Rina mahu mengambil bekas panas. Apakah yang patut dia guna?",
           "options": [
-            "Penyepit atau kain tebal",
-            "Tangan kosong",
             "Kertas nipis",
-            "Jari sahaja"
+            "Jari sahaja",
+            "Tangan kosong",
+            "Penyepit atau kain tebal"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -788,12 +788,12 @@
           "id": "s1_c2_q14",
           "text": "Manakah tindakan yang PALING selamat?",
           "options": [
-            "Membaca label sebelum menggunakan bahan",
             "Mencampur bahan tanpa arahan",
+            "Menuang tanpa melihat",
             "Merasa bahan",
-            "Menuang tanpa melihat"
+            "Membaca label sebelum menggunakan bahan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -803,12 +803,12 @@
           "id": "s1_c2_q15",
           "text": "Kenapa meja perlu dibersihkan selepas aktiviti?",
           "options": [
-            "Supaya orang seterusnya selamat",
-            "Supaya meja berkilat",
             "Supaya cepat balik",
-            "Supaya guru gembira sahaja"
+            "Supaya guru gembira sahaja",
+            "Supaya meja berkilat",
+            "Supaya orang seterusnya selamat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -818,12 +818,12 @@
           "id": "s1_c2_q16",
           "text": "Ali terkena bahan kimia pada tangannya. Apakah langkah pertama?",
           "options": [
-            "Basuh dengan banyak air",
-            "Lap dengan baju",
             "Tiup tangan",
-            "Biarkan kering"
+            "Biarkan kering",
+            "Basuh dengan banyak air",
+            "Lap dengan baju"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -835,8 +835,8 @@
           "options": [
             "Ia boleh pecah dan mencederakan",
             "Ia berat",
-            "Ia mahal sahaja",
-            "Ia berwarna"
+            "Ia berwarna",
+            "Ia mahal sahaja"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -848,12 +848,12 @@
           "id": "s1_c2_q18",
           "text": "Manakah yang BUKAN peraturan bilik sains?",
           "options": [
-            "Berlari untuk mengambil radas",
-            "Ikut arahan guru",
             "Basuh tangan selepas aktiviti",
-            "Pakai cermin mata keselamatan"
+            "Pakai cermin mata keselamatan",
+            "Ikut arahan guru",
+            "Berlari untuk mengambil radas"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -864,9 +864,9 @@
           "text": "Kenapa botol bahan mesti ditutup semula selepas digunakan?",
           "options": [
             "Supaya bahan tidak tumpah atau menyejat",
+            "Supaya bahan sejuk",
             "Supaya botol cantik",
-            "Supaya botol berat",
-            "Supaya bahan sejuk"
+            "Supaya botol berat"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -878,12 +878,12 @@
           "id": "s1_c2_q20",
           "text": "Rina nampak kawannya cuba merasa serbuk putih. Apakah yang patut dia buat?",
           "options": [
+            "Ketawa",
             "Halang dan beritahu guru",
             "Turut merasa",
-            "Ketawa",
             "Diam sahaja"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -893,12 +893,12 @@
           "id": "s1_c2_q21",
           "text": "Api kecil terjadi di atas meja. Manakah tindakan pertama yang betul?",
           "options": [
-            "Beritahu guru dengan segera",
             "Tiup api itu",
+            "Lari keluar tanpa memberitahu sesiapa",
             "Siram dengan sebarang cecair",
-            "Lari keluar tanpa memberitahu sesiapa"
+            "Beritahu guru dengan segera"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -908,12 +908,12 @@
           "id": "s1_c2_q22",
           "text": "Kenapa arahan \"jangan campur bahan tanpa kebenaran\" penting?",
           "options": [
-            "Campuran boleh menghasilkan gas berbahaya",
             "Campuran menjadi berat",
             "Campuran menjadi sejuk",
-            "Campuran menjadi cantik"
+            "Campuran menjadi cantik",
+            "Campuran boleh menghasilkan gas berbahaya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -923,12 +923,12 @@
           "id": "s1_c2_q23",
           "text": "Ali memakai apron tetapi tidak memakai cermin mata keselamatan semasa menuang cecair. Apakah risikonya?",
           "options": [
-            "Cecair boleh terpercik ke mata",
-            "Bajunya kotor",
             "Tangannya sejuk",
-            "Cecair jadi panas"
+            "Cecair boleh terpercik ke mata",
+            "Cecair jadi panas",
+            "Bajunya kotor"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -939,9 +939,9 @@
           "text": "Manakah susunan yang betul selepas aktiviti tamat?",
           "options": [
             "Kemas radas, bersihkan meja, basuh tangan",
-            "Basuh tangan, keluar, tinggalkan radas",
+            "Bersihkan meja sahaja",
             "Keluar dahulu, kemas esok",
-            "Bersihkan meja sahaja"
+            "Basuh tangan, keluar, tinggalkan radas"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -954,9 +954,9 @@
           "text": "Kenapa kita tidak boleh berdiri terlalu dekat semasa memanaskan air?",
           "options": [
             "Wap panas boleh melecur muka",
-            "Air jadi sejuk",
             "Air jadi kotor",
-            "Bekas jadi berat"
+            "Bekas jadi berat",
+            "Air jadi sejuk"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -998,12 +998,12 @@
           "id": "s1_c2_q28",
           "text": "Manakah yang menunjukkan murid memahami peraturan dengan BAIK?",
           "options": [
-            "Membaca label, memakai apron, dan bertanya guru bila ragu",
-            "Bekerja cepat tanpa bertanya",
             "Mencuba bahan baharu sendiri",
+            "Bekerja cepat tanpa bertanya",
+            "Membaca label, memakai apron, dan bertanya guru bila ragu",
             "Menyimpan radas dalam beg"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -1013,12 +1013,12 @@
           "id": "s1_c2_q29",
           "text": "Kenapa keputusan aktiviti perlu dicatat semasa aktiviti, bukan selepas balik?",
           "options": [
+            "Guru marah",
             "Ingatan boleh salah",
-            "Kertas jadi lusuh",
             "Pen habis dakwat",
-            "Guru marah"
+            "Kertas jadi lusuh"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -1028,12 +1028,12 @@
           "id": "s1_c2_q30",
           "text": "Ali rasa pening selepas menghidu sesuatu. Apakah tindakan terbaik?",
           "options": [
-            "Keluar mencari udara segar dan beritahu guru",
             "Duduk diam sahaja",
-            "Hidu lagi untuk pasti",
-            "Minum bahan itu"
+            "Keluar mencari udara segar dan beritahu guru",
+            "Minum bahan itu",
+            "Hidu lagi untuk pasti"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -1043,12 +1043,12 @@
           "id": "s1_c2_q31",
           "text": "Sebuah kelas menjalankan aktiviti memanaskan air. Manakah gabungan langkah keselamatan yang PALING lengkap?",
           "options": [
-            "Cermin mata, rambut diikat, penyepit untuk bekas panas",
             "Cermin mata sahaja",
             "Rambut diikat sahaja",
-            "Apron dan makan tengah hari"
+            "Apron dan makan tengah hari",
+            "Cermin mata, rambut diikat, penyepit untuk bekas panas"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1058,12 +1058,12 @@
           "id": "s1_c2_q32",
           "text": "Kenapa peraturan \"jangan bekerja seorang diri\" wujud di dalam bilik sains?",
           "options": [
+            "Bilik jadi sunyi",
             "Jika berlaku kemalangan, tiada siapa boleh memanggil bantuan",
-            "Kerja jadi lambat",
             "Radas jadi kotor",
-            "Bilik jadi sunyi"
+            "Kerja jadi lambat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1073,12 +1073,12 @@
           "id": "s1_c2_q33",
           "text": "Dua murid tumpahkan bahan berbeza. Satu air, satu cecair berlabel bahaya. Manakah kenyataan yang BETUL?",
           "options": [
-            "Kedua-duanya dilaporkan, tetapi cecair berlabel bahaya perlu tindakan segera",
             "Hanya air perlu dilaporkan",
-            "Kedua-duanya boleh diabaikan",
-            "Hanya yang berbau perlu dilaporkan"
+            "Kedua-duanya dilaporkan, tetapi cecair berlabel bahaya perlu tindakan segera",
+            "Hanya yang berbau perlu dilaporkan",
+            "Kedua-duanya boleh diabaikan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1088,12 +1088,12 @@
           "id": "s1_c2_q34",
           "text": "Seorang murid berkata peraturan sains melambatkan kerja. Jawapan terbaik ialah?",
           "options": [
-            "Peraturan menghalang kemalangan yang akan melambatkan lebih banyak",
-            "Peraturan memang membuang masa",
             "Peraturan hanya untuk murid lemah",
-            "Peraturan boleh diabaikan jika berhati-hati"
+            "Peraturan boleh diabaikan jika berhati-hati",
+            "Peraturan menghalang kemalangan yang akan melambatkan lebih banyak",
+            "Peraturan memang membuang masa"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1103,12 +1103,12 @@
           "id": "s1_c2_q35",
           "text": "Kenapa label bahan mengandungi simbol dan bukan perkataan sahaja?",
           "options": [
-            "Simbol difahami dengan cepat walaupun tanpa membaca",
             "Simbol lebih cantik",
             "Perkataan mahal dicetak",
+            "Simbol difahami dengan cepat walaupun tanpa membaca",
             "Simbol lebih kecil"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1118,12 +1118,12 @@
           "id": "s1_c2_q36",
           "text": "Manakah situasi yang paling berbahaya?",
           "options": [
-            "Berlari sambil membawa bikar kaca berisi cecair",
-            "Berjalan sambil membawa buku",
             "Duduk membaca label",
+            "Berjalan sambil membawa buku",
+            "Berlari sambil membawa bikar kaca berisi cecair",
             "Berdiri memakai apron"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1133,12 +1133,12 @@
           "id": "s1_c2_q37",
           "text": "Selepas aktiviti, Ali dapati satu botol tiada label. Apakah tindakan yang betul?",
           "options": [
-            "Serahkan kepada guru tanpa membukanya",
             "Hidu untuk mengetahuinya",
+            "Buang ke dalam singki",
             "Simpan untuk kegunaan lain",
-            "Buang ke dalam singki"
+            "Serahkan kepada guru tanpa membukanya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1149,9 +1149,9 @@
           "text": "Kenapa singki bukan tempat membuang semua sisa aktiviti?",
           "options": [
             "Sesetengah bahan mencemarkan air",
+            "Singki jadi kotor sahaja",
             "Singki mudah tersumbat sahaja",
-            "Air jadi sejuk",
-            "Singki jadi kotor sahaja"
+            "Air jadi sejuk"
           ],
           "correctAnswer": 0,
           "difficulty": "ultra",
@@ -1163,12 +1163,12 @@
           "id": "s1_c2_q39",
           "text": "Peraturan manakah yang melindungi murid LAIN, bukan diri sendiri?",
           "options": [
-            "Membersihkan meja selepas aktiviti",
-            "Memakai cermin mata",
             "Memakai apron",
-            "Mengikat rambut"
+            "Membersihkan meja selepas aktiviti",
+            "Mengikat rambut",
+            "Memakai cermin mata"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1178,12 +1178,12 @@
           "id": "s1_c2_q40",
           "text": "Seorang murid mengikut semua peraturan tetapi tidak memberitahu guru tentang luka kecil. Apakah masalahnya?",
           "options": [
+            "Luka menjadikan tangan berat",
             "Bahan boleh masuk melalui luka terbuka",
-            "Luka itu nampak hodoh",
             "Guru akan marah",
-            "Luka menjadikan tangan berat"
+            "Luka itu nampak hodoh"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1200,12 +1200,12 @@
           "id": "s1_c3_q1",
           "text": "Manakah antara berikut benda hidup?",
           "options": [
-            "Kucing",
-            "Batu",
             "Kerusi",
+            "Batu",
+            "Kucing",
             "Cawan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1215,12 +1215,12 @@
           "id": "s1_c3_q2",
           "text": "Manakah antara berikut benda BUKAN hidup?",
           "options": [
-            "Meja",
-            "Pokok",
             "Burung",
-            "Ikan"
+            "Ikan",
+            "Meja",
+            "Pokok"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1230,12 +1230,12 @@
           "id": "s1_c3_q3",
           "text": "Semua benda hidup perlu apa untuk terus hidup?",
           "options": [
-            "Makanan",
             "Kereta",
+            "Buku",
             "Televisyen",
-            "Buku"
+            "Makanan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1245,12 +1245,12 @@
           "id": "s1_c3_q4",
           "text": "Adakah pokok benda hidup?",
           "options": [
-            "Ya",
-            "Tidak",
+            "Hanya waktu siang",
             "Kadang-kadang",
-            "Hanya waktu siang"
+            "Ya",
+            "Tidak"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1260,12 +1260,12 @@
           "id": "s1_c3_q5",
           "text": "Benda hidup boleh membesar. Manakah yang BOLEH membesar?",
           "options": [
-            "Anak ayam",
             "Bola",
             "Pensel",
+            "Anak ayam",
             "Pintu"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1275,12 +1275,12 @@
           "id": "s1_c3_q6",
           "text": "Manakah keperluan asas semua benda hidup?",
           "options": [
-            "Udara",
             "Wang",
             "Telefon",
+            "Udara",
             "Kasut"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1290,12 +1290,12 @@
           "id": "s1_c3_q7",
           "text": "Ikan bergerak di dalam air. Adakah ikan benda hidup?",
           "options": [
-            "Ya",
-            "Tidak",
             "Hanya di laut",
-            "Hanya waktu malam"
+            "Hanya waktu malam",
+            "Tidak",
+            "Ya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1306,9 +1306,9 @@
           "text": "Manakah antara berikut TIDAK memerlukan makanan?",
           "options": [
             "Basikal",
-            "Anjing",
+            "Ayam",
             "Rumput",
-            "Ayam"
+            "Anjing"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -1322,8 +1322,8 @@
           "options": [
             "Menghasilkan anak",
             "Menjadi berat",
-            "Bertukar warna",
-            "Menjadi sejuk"
+            "Menjadi sejuk",
+            "Bertukar warna"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -1335,12 +1335,12 @@
           "id": "s1_c3_q10",
           "text": "Manakah kumpulan yang SEMUANYA benda hidup?",
           "options": [
-            "Kucing, pokok, ikan",
-            "Kucing, batu, ikan",
             "Meja, pokok, ikan",
-            "Batu, cawan, pintu"
+            "Batu, cawan, pintu",
+            "Kucing, pokok, ikan",
+            "Kucing, batu, ikan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1351,9 +1351,9 @@
           "text": "Kenapa kereta BUKAN benda hidup walaupun ia bergerak?",
           "options": [
             "Ia tidak membesar dan tidak membiak",
-            "Ia terlalu besar",
+            "Ia bising",
             "Ia berwarna",
-            "Ia bising"
+            "Ia terlalu besar"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -1365,12 +1365,12 @@
           "id": "s1_c3_q12",
           "text": "Manakah ciri yang ADA pada benda hidup sahaja?",
           "options": [
-            "Bernafas",
-            "Berwarna",
             "Berat",
-            "Keras"
+            "Keras",
+            "Bernafas",
+            "Berwarna"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -1391,9 +1391,9 @@
           "text": "Sebiji telur menetas menjadi anak ayam. Apakah ciri benda hidup yang ditunjukkan?",
           "options": [
             "Membiak",
+            "Bergerak sahaja",
             "Bertukar warna",
-            "Menjadi berat",
-            "Bergerak sahaja"
+            "Menjadi berat"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -1405,12 +1405,12 @@
           "id": "s1_c3_q15",
           "text": "Kenapa pokok dianggap benda hidup walaupun ia tidak berjalan?",
           "options": [
-            "Ia membesar, bernafas dan membiak",
+            "Ia berdaun",
             "Ia hijau",
-            "Ia tinggi",
-            "Ia berdaun"
+            "Ia membesar, bernafas dan membiak",
+            "Ia tinggi"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -1420,12 +1420,12 @@
           "id": "s1_c3_q16",
           "text": "Ali menyiram pokok setiap hari. Kenapa?",
           "options": [
-            "Pokok perlukan air untuk hidup",
-            "Supaya pokok bersih",
             "Supaya pokok sejuk",
-            "Supaya tanah berat"
+            "Supaya tanah berat",
+            "Pokok perlukan air untuk hidup",
+            "Supaya pokok bersih"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -1436,9 +1436,9 @@
           "text": "Manakah pasangan yang BETUL?",
           "options": [
             "Rama-rama hidup, batu bukan hidup",
-            "Rama-rama bukan hidup, batu hidup",
             "Kedua-duanya hidup",
-            "Kedua-duanya bukan hidup"
+            "Kedua-duanya bukan hidup",
+            "Rama-rama bukan hidup, batu hidup"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -1450,12 +1450,12 @@
           "id": "s1_c3_q18",
           "text": "Sebiji benih tumbuh menjadi pokok kecil. Ciri apakah ini?",
           "options": [
+            "Bergerak",
             "Membesar",
             "Membiak",
-            "Bergerak",
             "Bernafas"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -1465,12 +1465,12 @@
           "id": "s1_c3_q19",
           "text": "Kenapa robot mainan BUKAN benda hidup?",
           "options": [
-            "Ia tidak membesar atau membiak",
-            "Ia bergerak laju",
             "Ia berwarna",
-            "Ia mahal"
+            "Ia mahal",
+            "Ia bergerak laju",
+            "Ia tidak membesar atau membiak"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -1480,12 +1480,12 @@
           "id": "s1_c3_q20",
           "text": "Manakah kumpulan yang SEMUANYA benda bukan hidup?",
           "options": [
-            "Batu, cawan, kerusi",
             "Batu, cawan, ikan",
             "Pokok, cawan, kerusi",
-            "Batu, ayam, kerusi"
+            "Batu, ayam, kerusi",
+            "Batu, cawan, kerusi"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -1495,12 +1495,12 @@
           "id": "s1_c3_q21",
           "text": "Sebatang kayu di dalam rumah tidak membesar. Adakah ia benda hidup?",
           "options": [
-            "Tidak, kerana ia sudah mati",
-            "Ya, kerana ia daripada pokok",
             "Ya, kerana ia berwarna coklat",
-            "Tidak, kerana ia keras"
+            "Tidak, kerana ia keras",
+            "Ya, kerana ia daripada pokok",
+            "Tidak, kerana ia sudah mati"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -1520,12 +1520,12 @@
           "id": "s1_c3_q23",
           "text": "Manakah ciri yang PALING pasti menunjukkan sesuatu itu benda hidup?",
           "options": [
-            "Ia boleh membiak",
-            "Ia bergerak",
             "Ia berwarna",
-            "Ia berbunyi"
+            "Ia bergerak",
+            "Ia berbunyi",
+            "Ia boleh membiak"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -1535,12 +1535,12 @@
           "id": "s1_c3_q24",
           "text": "Sebiji telur belum menetas. Adakah ia benda hidup?",
           "options": [
-            "Ya, kerana ada anak ayam hidup di dalamnya",
-            "Tidak, kerana ia tidak bergerak",
             "Tidak, kerana ia bulat",
-            "Ya, kerana ia licin"
+            "Ya, kerana ia licin",
+            "Tidak, kerana ia tidak bergerak",
+            "Ya, kerana ada anak ayam hidup di dalamnya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -1550,12 +1550,12 @@
           "id": "s1_c3_q25",
           "text": "Kenapa awan yang bergerak dan membesar BUKAN benda hidup?",
           "options": [
-            "Ia tidak bernafas, tidak makan dan tidak membiak",
-            "Ia terlalu tinggi",
             "Ia berwarna putih",
-            "Ia ringan"
+            "Ia ringan",
+            "Ia terlalu tinggi",
+            "Ia tidak bernafas, tidak makan dan tidak membiak"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -1576,9 +1576,9 @@
           "text": "Ali meletakkan dua pasu, satu disiram dan satu tidak. Selepas seminggu, pokok yang tidak disiram layu. Apakah yang dibuktikan?",
           "options": [
             "Benda hidup perlukan air",
+            "Pokok suka matahari",
             "Pasu perlu dicuci",
-            "Tanah perlu ditukar",
-            "Pokok suka matahari"
+            "Tanah perlu ditukar"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -1590,12 +1590,12 @@
           "id": "s1_c3_q28",
           "text": "Manakah pernyataan yang SALAH?",
           "options": [
-            "Semua benda yang bergerak adalah hidup",
-            "Semua benda hidup perlukan udara",
+            "Semua benda hidup membiak",
             "Semua benda hidup membesar",
-            "Semua benda hidup membiak"
+            "Semua benda yang bergerak adalah hidup",
+            "Semua benda hidup perlukan udara"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -1605,12 +1605,12 @@
           "id": "s1_c3_q29",
           "text": "Kenapa manusia perlu makan setiap hari?",
           "options": [
-            "Untuk mendapat tenaga dan membesar",
             "Untuk menjadi berat",
+            "Untuk bercakap",
             "Untuk bergerak sahaja",
-            "Untuk bercakap"
+            "Untuk mendapat tenaga dan membesar"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -1620,12 +1620,12 @@
           "id": "s1_c3_q30",
           "text": "Sebuah bilik ada 3 pasu bunga, 2 ekor ikan dan 5 buah kerusi. Berapa kumpulan benda hidup yang berbeza ada di situ?",
           "options": [
-            "2",
-            "3",
+            "5",
             "1",
-            "5"
+            "3",
+            "2"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -1635,12 +1635,12 @@
           "id": "s1_c3_q31",
           "text": "Seorang murid berkata \"bulan bergerak, jadi bulan hidup.\" Apakah kesilapan dalam pemikirannya?",
           "options": [
-            "Dia menggunakan satu ciri sahaja, sedangkan benda hidup perlu semua ciri",
-            "Bulan terlalu jauh",
+            "Bulan hanya nampak malam",
             "Bulan berwarna putih",
-            "Bulan hanya nampak malam"
+            "Dia menggunakan satu ciri sahaja, sedangkan benda hidup perlu semua ciri",
+            "Bulan terlalu jauh"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1650,12 +1650,12 @@
           "id": "s1_c3_q32",
           "text": "Manakah yang membuktikan seekor haiwan itu hidup, walaupun ia sedang tidur dan tidak bergerak?",
           "options": [
-            "Ia bernafas",
+            "Ia berat",
             "Ia berbulu",
             "Ia berwarna",
-            "Ia berat"
+            "Ia bernafas"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1675,12 +1675,12 @@
           "id": "s1_c3_q34",
           "text": "Kenapa buah yang dipetik masih boleh dianggap pernah menjadi sebahagian benda hidup?",
           "options": [
-            "Ia tumbuh daripada pokok yang hidup",
-            "Ia berwarna cerah",
             "Ia manis",
-            "Ia bulat"
+            "Ia bulat",
+            "Ia berwarna cerah",
+            "Ia tumbuh daripada pokok yang hidup"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1690,12 +1690,12 @@
           "id": "s1_c3_q35",
           "text": "Dua bekas ditutup rapat. Satu ada tumbuhan, satu ada batu. Selepas beberapa hari tumbuhan layu. Apakah sebab yang paling munasabah?",
           "options": [
-            "Tumbuhan kehabisan udara dan cahaya",
             "Batu menyerap air",
+            "Tumbuhan kehabisan udara dan cahaya",
             "Bekas terlalu kecil",
             "Tumbuhan terlalu berat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1706,9 +1706,9 @@
           "text": "Manakah senarai yang disusun daripada PALING pasti hidup kepada paling pasti bukan hidup?",
           "options": [
             "Ayam, benih, batu",
+            "Batu, benih, ayam",
             "Batu, ayam, benih",
-            "Benih, batu, ayam",
-            "Batu, benih, ayam"
+            "Benih, batu, ayam"
           ],
           "correctAnswer": 0,
           "difficulty": "ultra",
@@ -1730,12 +1730,12 @@
           "id": "s1_c3_q38",
           "text": "Kenapa kita tidak boleh menilai sesuatu itu hidup hanya kerana ia berwarna cerah?",
           "options": [
-            "Banyak benda bukan hidup juga berwarna cerah",
-            "Warna cerah menyakitkan mata",
+            "Warna berubah setiap hari",
             "Benda hidup tiada warna",
-            "Warna berubah setiap hari"
+            "Warna cerah menyakitkan mata",
+            "Banyak benda bukan hidup juga berwarna cerah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1745,12 +1745,12 @@
           "id": "s1_c3_q39",
           "text": "Sebiji benih disimpan dalam bekas kering selama setahun, kemudian ditanam dan tumbuh. Apakah yang ditunjukkan?",
           "options": [
-            "Benih itu hidup walaupun kelihatan tidak aktif",
             "Benih itu mati kemudian hidup semula",
+            "Benih itu hidup walaupun kelihatan tidak aktif",
             "Tanah menghidupkan benih",
             "Air menciptakan hidupan baharu"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -1782,12 +1782,12 @@
           "id": "s1_c4_q1",
           "text": "Organ manakah memberi kita deria penglihatan?",
           "options": [
-            "Mata",
-            "Telinga",
+            "Lidah",
             "Hidung",
-            "Lidah"
+            "Mata",
+            "Telinga"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1828,9 +1828,9 @@
           "text": "Organ manakah memberi kita deria rasa?",
           "options": [
             "Lidah",
-            "Hidung",
+            "Mata",
             "Telinga",
-            "Mata"
+            "Hidung"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -1843,9 +1843,9 @@
           "text": "Organ manakah memberi kita deria sentuh?",
           "options": [
             "Kulit",
+            "Lidah",
             "Mata",
-            "Telinga",
-            "Lidah"
+            "Telinga"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -1867,12 +1867,12 @@
           "id": "s1_c4_q7",
           "text": "Kita tahu makanan itu masin dengan organ apa?",
           "options": [
-            "Lidah",
+            "Telinga",
             "Hidung",
             "Mata",
-            "Telinga"
+            "Lidah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1882,12 +1882,12 @@
           "id": "s1_c4_q8",
           "text": "Kita tahu bunga itu wangi dengan organ apa?",
           "options": [
-            "Hidung",
             "Mata",
             "Lidah",
+            "Hidung",
             "Kulit"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1898,9 +1898,9 @@
           "text": "Kita tahu air itu sejuk dengan organ apa?",
           "options": [
             "Kulit",
-            "Mata",
+            "Hidung",
             "Telinga",
-            "Hidung"
+            "Mata"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -1912,12 +1912,12 @@
           "id": "s1_c4_q10",
           "text": "Apakah yang perlu kita buat untuk menjaga mata?",
           "options": [
-            "Membaca dengan cahaya yang cukup",
-            "Membaca dalam gelap",
             "Menggosok mata dengan tangan kotor",
-            "Melihat matahari terus"
+            "Melihat matahari terus",
+            "Membaca dalam gelap",
+            "Membaca dengan cahaya yang cukup"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -1927,12 +1927,12 @@
           "id": "s1_c4_q11",
           "text": "Ali menutup hidungnya lalu makan epal. Kenapa rasanya kurang jelas?",
           "options": [
-            "Bau membantu kita mengenal rasa",
             "Epal jadi sejuk",
             "Lidah berhenti berfungsi",
-            "Epal jadi keras"
+            "Epal jadi keras",
+            "Bau membantu kita mengenal rasa"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -1942,12 +1942,12 @@
           "id": "s1_c4_q12",
           "text": "Rina berdiri di dalam bilik gelap. Deria manakah paling banyak membantunya bergerak?",
           "options": [
-            "Sentuh",
             "Penglihatan",
-            "Rasa",
-            "Bau"
+            "Bau",
+            "Sentuh",
+            "Rasa"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -1957,12 +1957,12 @@
           "id": "s1_c4_q13",
           "text": "Kenapa kita tidak patut mendengar muzik yang sangat kuat?",
           "options": [
-            "Ia boleh merosakkan telinga",
             "Ia membuang bateri",
-            "Ia membuat lidah kering",
-            "Ia menyakitkan mata"
+            "Ia boleh merosakkan telinga",
+            "Ia menyakitkan mata",
+            "Ia membuat lidah kering"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -1984,8 +1984,8 @@
           "options": [
             "Bekas itu terlalu panas",
             "Bekas itu berwarna merah",
-            "Bekas itu berbunyi",
-            "Bekas itu berbau"
+            "Bekas itu berbau",
+            "Bekas itu berbunyi"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -1997,12 +1997,12 @@
           "id": "s1_c4_q16",
           "text": "Manakah pasangan organ dan deria yang SALAH?",
           "options": [
-            "Kulit dan penglihatan",
-            "Mata dan penglihatan",
             "Telinga dan pendengaran",
-            "Lidah dan rasa"
+            "Mata dan penglihatan",
+            "Lidah dan rasa",
+            "Kulit dan penglihatan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -2012,12 +2012,12 @@
           "id": "s1_c4_q17",
           "text": "Kenapa kita perlu membasuh tangan sebelum makan?",
           "options": [
-            "Kuman pada tangan boleh masuk ke mulut",
             "Tangan jadi wangi",
+            "Kuman pada tangan boleh masuk ke mulut",
             "Makanan jadi sedap",
             "Tangan jadi sejuk"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -2042,12 +2042,12 @@
           "id": "s1_c4_q19",
           "text": "Kenapa kita perlu memotong kuku dengan kerap?",
           "options": [
-            "Kotoran dan kuman berkumpul di bawah kuku",
             "Kuku jadi cantik sahaja",
-            "Kuku jadi ringan",
-            "Jari jadi panjang"
+            "Kotoran dan kuman berkumpul di bawah kuku",
+            "Jari jadi panjang",
+            "Kuku jadi ringan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -2057,12 +2057,12 @@
           "id": "s1_c4_q20",
           "text": "Manakah cara MENJAGA telinga yang betul?",
           "options": [
+            "Mendengar bunyi kuat setiap hari",
             "Tidak memasukkan benda tajam ke dalamnya",
             "Membersihkan dengan pensel",
-            "Mendengar bunyi kuat setiap hari",
             "Menutup telinga sepanjang masa"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -2073,9 +2073,9 @@
           "text": "Ali dapat mengenal kawan dari jauh sebelum kawannya bercakap. Deria manakah yang dia guna?",
           "options": [
             "Penglihatan",
-            "Pendengaran",
             "Bau",
-            "Sentuh"
+            "Sentuh",
+            "Pendengaran"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -2097,12 +2097,12 @@
           "id": "s1_c4_q23",
           "text": "Kenapa orang selesema sukar merasa makanan?",
           "options": [
-            "Hidung tersumbat, jadi bau tidak dikesan",
             "Lidah menjadi kecil",
             "Gigi menjadi lemah",
+            "Hidung tersumbat, jadi bau tidak dikesan",
             "Mulut menjadi kering"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2112,12 +2112,12 @@
           "id": "s1_c4_q24",
           "text": "Seorang murid buta boleh membaca dengan jarinya. Deria manakah yang menggantikan penglihatan?",
           "options": [
-            "Sentuh",
-            "Bau",
             "Rasa",
+            "Bau",
+            "Sentuh",
             "Pendengaran"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2127,12 +2127,12 @@
           "id": "s1_c4_q25",
           "text": "Rina memegang dua bekas air. Satu terasa panas, satu sejuk. Deria dan organ manakah yang terlibat?",
           "options": [
+            "Bau, hidung",
             "Sentuh, kulit",
             "Rasa, lidah",
-            "Bau, hidung",
             "Penglihatan, mata"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2142,12 +2142,12 @@
           "id": "s1_c4_q26",
           "text": "Kenapa deria sentuh ada di seluruh badan, bukan di satu tempat sahaja?",
           "options": [
-            "Kulit menutupi seluruh badan",
             "Sentuhan lebih penting",
             "Badan perlu berat",
+            "Kulit menutupi seluruh badan",
             "Kulit berwarna"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2167,12 +2167,12 @@
           "id": "s1_c4_q28",
           "text": "Manakah aktiviti yang menggunakan PALING banyak deria?",
           "options": [
-            "Makan sambil menonton televisyen",
-            "Membaca buku senyap",
+            "Memegang batu dengan mata tertutup",
             "Mendengar radio dalam gelap",
-            "Memegang batu dengan mata tertutup"
+            "Makan sambil menonton televisyen",
+            "Membaca buku senyap"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2182,12 +2182,12 @@
           "id": "s1_c4_q29",
           "text": "Kenapa kita perlu berhenti membaca sebentar setiap 30 minit?",
           "options": [
-            "Supaya mata berehat",
             "Supaya buku sejuk",
-            "Supaya tangan kuat",
-            "Supaya bilik terang"
+            "Supaya bilik terang",
+            "Supaya mata berehat",
+            "Supaya tangan kuat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2197,12 +2197,12 @@
           "id": "s1_c4_q30",
           "text": "Seorang murid tidak dapat mengesan bau asap. Apakah bahaya yang paling besar?",
           "options": [
-            "Dia tidak sedar ada kebakaran",
-            "Dia tidak dapat makan",
+            "Dia tidak dapat berjalan",
             "Dia tidak dapat melihat",
-            "Dia tidak dapat berjalan"
+            "Dia tidak dapat makan",
+            "Dia tidak sedar ada kebakaran"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2212,12 +2212,12 @@
           "id": "s1_c4_q31",
           "text": "Dua orang murid merasa air yang sama. Seorang kata masin, seorang kata hambar. Apakah sebab yang paling munasabah?",
           "options": [
-            "Seorang daripada mereka baru makan sesuatu yang mengubah rasa",
             "Air itu bertukar semasa dirasa",
+            "Seorang daripada mereka baru makan sesuatu yang mengubah rasa",
             "Lidah satu daripada mereka rosak kekal",
             "Air masin hanya pada waktu petang"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2228,9 +2228,9 @@
           "text": "Kenapa deria bekerja lebih baik apabila digunakan bersama?",
           "options": [
             "Setiap deria memberi maklumat berbeza yang saling melengkapi",
-            "Deria bersaing antara satu sama lain",
+            "Deria hanya berfungsi berpasangan",
             "Satu deria melemahkan yang lain",
-            "Deria hanya berfungsi berpasangan"
+            "Deria bersaing antara satu sama lain"
           ],
           "correctAnswer": 0,
           "difficulty": "ultra",
@@ -2253,8 +2253,8 @@
           "text": "Manakah kenyataan yang PALING tepat tentang kulit?",
           "options": [
             "Kulit ialah organ deria yang paling luas",
-            "Kulit hanya merasa sakit",
             "Kulit tidak merasa suhu",
+            "Kulit hanya merasa sakit",
             "Kulit hanya ada pada tangan"
           ],
           "correctAnswer": 0,
@@ -2267,12 +2267,12 @@
           "id": "s1_c4_q35",
           "text": "Kenapa kita menarik tangan dengan cepat daripada benda panas sebelum sempat berfikir?",
           "options": [
-            "Badan memberi tindak balas segera untuk melindungi diri",
+            "Kulit menjadi licin",
             "Tangan menjadi ringan",
-            "Benda panas menolak tangan",
-            "Kulit menjadi licin"
+            "Badan memberi tindak balas segera untuk melindungi diri",
+            "Benda panas menolak tangan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2283,9 +2283,9 @@
           "text": "Seorang murid pekak sebelah telinga. Apakah yang paling sukar untuknya?",
           "options": [
             "Mengetahui arah datangnya bunyi",
+            "Menghidu bau",
             "Melihat warna",
-            "Merasa makanan",
-            "Menghidu bau"
+            "Merasa makanan"
           ],
           "correctAnswer": 0,
           "difficulty": "ultra",
@@ -2307,12 +2307,12 @@
           "id": "s1_c4_q38",
           "text": "Kenapa doktor memeriksa mata, telinga dan tekak semasa pemeriksaan kesihatan?",
           "options": [
-            "Ia laluan biasa masuknya kuman dan tanda awal penyakit",
             "Ia bahagian yang cantik",
-            "Ia mudah dilihat sahaja",
-            "Ia bahagian yang berat"
+            "Ia laluan biasa masuknya kuman dan tanda awal penyakit",
+            "Ia bahagian yang berat",
+            "Ia mudah dilihat sahaja"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2337,12 +2337,12 @@
           "id": "s1_c4_q40",
           "text": "Kenapa menjaga kebersihan diri termasuk dalam pelajaran sains?",
           "options": [
-            "Ia melindungi organ badan daripada kuman dan kerosakan",
+            "Ia peraturan sekolah sahaja",
             "Ia menjadikan kita nampak kemas sahaja",
             "Ia menjimatkan wang",
-            "Ia peraturan sekolah sahaja"
+            "Ia melindungi organ badan daripada kuman dan kerosakan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2360,8 +2360,8 @@
           "text": "Bahagian tubuh manakah membolehkan burung terbang?",
           "options": [
             "Sayap",
-            "Kaki",
             "Paruh",
+            "Kaki",
             "Ekor"
           ],
           "correctAnswer": 0,
@@ -2374,12 +2374,12 @@
           "id": "s1_c5_q2",
           "text": "Bahagian tubuh manakah membolehkan ikan berenang?",
           "options": [
-            "Sirip",
+            "Telinga",
             "Sayap",
             "Kaki",
-            "Telinga"
+            "Sirip"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -2391,8 +2391,8 @@
           "options": [
             "Kucing",
             "Burung",
-            "Ikan",
-            "Ular"
+            "Ular",
+            "Ikan"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -2404,12 +2404,12 @@
           "id": "s1_c5_q4",
           "text": "Apakah kegunaan paruh burung?",
           "options": [
-            "Mengambil makanan",
-            "Terbang",
             "Berenang",
-            "Mendengar"
+            "Mendengar",
+            "Terbang",
+            "Mengambil makanan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -2434,12 +2434,12 @@
           "id": "s1_c5_q6",
           "text": "Bahagian tubuh manakah digunakan kucing untuk mendengar?",
           "options": [
-            "Telinga",
-            "Ekor",
             "Kaki",
-            "Bulu"
+            "Ekor",
+            "Bulu",
+            "Telinga"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -2450,8 +2450,8 @@
           "text": "Haiwan manakah mempunyai dua kaki?",
           "options": [
             "Ayam",
-            "Kucing",
             "Lembu",
+            "Kucing",
             "Kambing"
           ],
           "correctAnswer": 0,
@@ -2479,12 +2479,12 @@
           "id": "s1_c5_q9",
           "text": "Haiwan manakah mempunyai bulu pelepah?",
           "options": [
-            "Burung",
-            "Ikan",
             "Ular",
-            "Katak"
+            "Katak",
+            "Burung",
+            "Ikan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -2494,12 +2494,12 @@
           "id": "s1_c5_q10",
           "text": "Apakah kegunaan kaki katak yang berselaput?",
           "options": [
-            "Membantu berenang",
             "Membantu terbang",
-            "Membantu mendengar",
-            "Membantu melihat"
+            "Membantu berenang",
+            "Membantu melihat",
+            "Membantu mendengar"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -2509,12 +2509,12 @@
           "id": "s1_c5_q11",
           "text": "Kenapa ikan mempunyai badan yang licin dan tirus?",
           "options": [
-            "Supaya mudah bergerak dalam air",
-            "Supaya nampak cantik",
             "Supaya berat",
-            "Supaya panas"
+            "Supaya nampak cantik",
+            "Supaya panas",
+            "Supaya mudah bergerak dalam air"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -2524,12 +2524,12 @@
           "id": "s1_c5_q12",
           "text": "Kenapa burung mempunyai tulang yang ringan?",
           "options": [
-            "Supaya senang terbang",
             "Supaya senang berenang",
+            "Supaya senang terbang",
             "Supaya senang berjalan",
             "Supaya senang makan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -2551,8 +2551,8 @@
           "options": [
             "Dengan mengengsot badannya",
             "Dengan melompat",
-            "Dengan terbang",
-            "Dengan berenang sahaja"
+            "Dengan berenang sahaja",
+            "Dengan terbang"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -2565,9 +2565,9 @@
           "text": "Kenapa ayam mempunyai kuku yang kuat pada kakinya?",
           "options": [
             "Untuk mengais tanah mencari makanan",
-            "Untuk berenang",
             "Untuk terbang tinggi",
-            "Untuk mendengar"
+            "Untuk mendengar",
+            "Untuk berenang"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -2579,12 +2579,12 @@
           "id": "s1_c5_q16",
           "text": "Bahagian manakah membantu kucing mengekalkan keseimbangan semasa melompat?",
           "options": [
-            "Ekor",
-            "Telinga",
             "Kumis",
-            "Bulu"
+            "Telinga",
+            "Bulu",
+            "Ekor"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -2604,12 +2604,12 @@
           "id": "s1_c5_q18",
           "text": "Kenapa arnab mempunyai telinga yang panjang?",
           "options": [
-            "Untuk mendengar bahaya dari jauh",
-            "Untuk terbang",
             "Untuk berenang",
-            "Untuk makan"
+            "Untuk mendengar bahaya dari jauh",
+            "Untuk makan",
+            "Untuk terbang"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -2619,12 +2619,12 @@
           "id": "s1_c5_q19",
           "text": "Manakah pasangan haiwan dan bahagian tubuh yang SALAH?",
           "options": [
+            "Kucing dan kumis",
             "Ikan dan sayap",
             "Burung dan paruh",
-            "Kucing dan kumis",
             "Katak dan kaki berselaput"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -2634,12 +2634,12 @@
           "id": "s1_c5_q20",
           "text": "Kenapa itik boleh berenang tetapi ayam tidak?",
           "options": [
-            "Kaki itik berselaput",
-            "Itik lebih besar",
+            "Ayam takut air",
             "Itik lebih ringan",
-            "Ayam takut air"
+            "Itik lebih besar",
+            "Kaki itik berselaput"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -2649,12 +2649,12 @@
           "id": "s1_c5_q21",
           "text": "Seekor haiwan mempunyai sayap tetapi tidak boleh terbang. Manakah contohnya?",
           "options": [
-            "Ayam",
-            "Burung merpati",
             "Helang",
-            "Burung layang-layang"
+            "Burung merpati",
+            "Burung layang-layang",
+            "Ayam"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2674,12 +2674,12 @@
           "id": "s1_c5_q23",
           "text": "Kenapa haiwan yang hidup di air biasanya mempunyai sirip dan bukan kaki?",
           "options": [
+            "Kaki mudah patah",
             "Sirip lebih sesuai untuk menolak air",
-            "Kaki terlalu berat",
             "Sirip lebih cantik",
-            "Kaki mudah patah"
+            "Kaki terlalu berat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2691,8 +2691,8 @@
           "options": [
             "Katak",
             "Ikan",
-            "Ular",
-            "Burung hantu"
+            "Burung hantu",
+            "Ular"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -2714,12 +2714,12 @@
           "id": "s1_c5_q26",
           "text": "Kenapa burung hantu mempunyai mata yang besar?",
           "options": [
-            "Untuk melihat dengan lebih baik pada waktu malam",
-            "Untuk terbang laju",
             "Untuk mendengar",
-            "Untuk makan"
+            "Untuk makan",
+            "Untuk terbang laju",
+            "Untuk melihat dengan lebih baik pada waktu malam"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2730,9 +2730,9 @@
           "text": "Manakah kumpulan haiwan yang SEMUANYA berkaki empat?",
           "options": [
             "Kucing, lembu, kambing",
-            "Kucing, ayam, lembu",
             "Ular, kambing, kucing",
-            "Ikan, lembu, kambing"
+            "Ikan, lembu, kambing",
+            "Kucing, ayam, lembu"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -2745,9 +2745,9 @@
           "text": "Kenapa ikan tidak boleh hidup lama di darat?",
           "options": [
             "Insangnya hanya boleh mengambil udara daripada air",
-            "Ia tidak boleh berjalan",
+            "Ia terlalu sejuk",
             "Ia terlalu licin",
-            "Ia terlalu sejuk"
+            "Ia tidak boleh berjalan"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -2759,12 +2759,12 @@
           "id": "s1_c5_q29",
           "text": "Seekor haiwan mempunyai bulu, dua kaki dan paruh. Apakah kumpulannya?",
           "options": [
-            "Burung",
             "Ikan",
             "Mamalia",
-            "Reptilia"
+            "Reptilia",
+            "Burung"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2774,12 +2774,12 @@
           "id": "s1_c5_q30",
           "text": "Kenapa gajah mempunyai belalai yang panjang?",
           "options": [
-            "Untuk mengambil makanan dan air",
-            "Untuk berenang",
             "Untuk terbang",
-            "Untuk mendengar"
+            "Untuk mendengar",
+            "Untuk berenang",
+            "Untuk mengambil makanan dan air"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -2789,12 +2789,12 @@
           "id": "s1_c5_q31",
           "text": "Dua ekor haiwan hidup di padang pasir yang panas. Ciri manakah paling membantu mereka?",
           "options": [
-            "Boleh menyimpan air dalam badan",
-            "Bulu yang tebal",
             "Sirip yang besar",
-            "Kaki berselaput"
+            "Boleh menyimpan air dalam badan",
+            "Kaki berselaput",
+            "Bulu yang tebal"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2814,12 +2814,12 @@
           "id": "s1_c5_q33",
           "text": "Kenapa haiwan yang diburu selalunya mempunyai mata di tepi kepala?",
           "options": [
-            "Supaya dapat melihat ke banyak arah sekali gus",
-            "Supaya nampak comel",
             "Supaya kepala ringan",
+            "Supaya nampak comel",
+            "Supaya dapat melihat ke banyak arah sekali gus",
             "Supaya boleh berenang"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2829,12 +2829,12 @@
           "id": "s1_c5_q34",
           "text": "Seekor katak boleh hidup di darat dan dalam air. Ciri manakah membolehkannya?",
           "options": [
-            "Kulit lembap dan kaki berselaput",
             "Bulu tebal",
+            "Kulit lembap dan kaki berselaput",
             "Paruh keras",
             "Sisik kering"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2844,12 +2844,12 @@
           "id": "s1_c5_q35",
           "text": "Kenapa bentuk paruh burung berbeza-beza?",
           "options": [
-            "Setiap bentuk sesuai untuk jenis makanan yang berbeza",
-            "Untuk membezakan jantina",
             "Untuk terbang lebih laju",
-            "Untuk membuat bunyi"
+            "Untuk membuat bunyi",
+            "Untuk membezakan jantina",
+            "Setiap bentuk sesuai untuk jenis makanan yang berbeza"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2869,12 +2869,12 @@
           "id": "s1_c5_q37",
           "text": "Manakah kesimpulan yang PALING tepat tentang bahagian tubuh haiwan?",
           "options": [
-            "Bentuknya sesuai dengan tempat tinggal dan cara hidupnya",
             "Semuanya sama sahaja",
-            "Bentuknya berubah setiap hari",
-            "Bentuknya bergantung pada warna"
+            "Bentuknya bergantung pada warna",
+            "Bentuknya sesuai dengan tempat tinggal dan cara hidupnya",
+            "Bentuknya berubah setiap hari"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2884,12 +2884,12 @@
           "id": "s1_c5_q38",
           "text": "Kenapa haiwan pemangsa seperti helang mempunyai kuku yang tajam dan melengkung?",
           "options": [
-            "Untuk mencengkam mangsa supaya tidak terlepas",
+            "Untuk memanjat pokok sahaja",
             "Untuk berjalan di tanah",
             "Untuk berenang",
-            "Untuk memanjat pokok sahaja"
+            "Untuk mencengkam mangsa supaya tidak terlepas"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2899,12 +2899,12 @@
           "id": "s1_c5_q39",
           "text": "Sebuah kolam mengering. Haiwan manakah paling terjejas?",
           "options": [
-            "Ikan",
             "Burung",
-            "Kucing",
-            "Arnab"
+            "Arnab",
+            "Ikan",
+            "Kucing"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2914,12 +2914,12 @@
           "id": "s1_c5_q40",
           "text": "Kenapa arnab mempunyai kaki belakang yang lebih kuat daripada kaki hadapan?",
           "options": [
-            "Untuk melompat jauh melarikan diri",
             "Untuk menggali sahaja",
             "Untuk berenang",
+            "Untuk melompat jauh melarikan diri",
             "Untuk memanjat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -2936,12 +2936,12 @@
           "id": "s1_c6_q1",
           "text": "Bahagian tumbuhan manakah menyerap air dari tanah?",
           "options": [
-            "Akar",
-            "Daun",
             "Bunga",
-            "Buah"
+            "Akar",
+            "Buah",
+            "Daun"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -2951,12 +2951,12 @@
           "id": "s1_c6_q2",
           "text": "Bahagian tumbuhan manakah membuat makanan?",
           "options": [
-            "Daun",
-            "Akar",
+            "Buah",
             "Batang",
-            "Buah"
+            "Daun",
+            "Akar"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -2966,12 +2966,12 @@
           "id": "s1_c6_q3",
           "text": "Bahagian tumbuhan manakah menyokong pokok supaya berdiri tegak?",
           "options": [
-            "Batang",
-            "Daun",
             "Bunga",
-            "Akar"
+            "Akar",
+            "Batang",
+            "Daun"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -2982,9 +2982,9 @@
           "text": "Bahagian tumbuhan manakah selalunya berwarna dan wangi?",
           "options": [
             "Bunga",
-            "Akar",
+            "Daun",
             "Batang",
-            "Daun"
+            "Akar"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -3011,12 +3011,12 @@
           "id": "s1_c6_q6",
           "text": "Bahagian tumbuhan manakah mengandungi biji benih?",
           "options": [
-            "Buah",
             "Akar",
             "Daun",
-            "Batang"
+            "Batang",
+            "Buah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3028,8 +3028,8 @@
           "options": [
             "Ia layu",
             "Ia membesar",
-            "Ia berbunga",
-            "Ia berbuah"
+            "Ia berbuah",
+            "Ia berbunga"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -3041,12 +3041,12 @@
           "id": "s1_c6_q8",
           "text": "Manakah bahagian tumbuhan yang berada di DALAM tanah?",
           "options": [
-            "Akar",
             "Daun",
+            "Buah",
             "Bunga",
-            "Buah"
+            "Akar"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3066,12 +3066,12 @@
           "id": "s1_c6_q10",
           "text": "Melalui bahagian manakah air bergerak dari akar ke daun?",
           "options": [
-            "Batang",
-            "Bunga",
+            "Biji",
             "Buah",
-            "Biji"
+            "Bunga",
+            "Batang"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3081,12 +3081,12 @@
           "id": "s1_c6_q11",
           "text": "Kenapa daun kebanyakan tumbuhan berwarna hijau?",
           "options": [
-            "Warna hijau membantu daun menyerap cahaya",
             "Hijau lebih cantik",
-            "Hijau lebih sejuk",
-            "Hijau lebih berat"
+            "Hijau lebih berat",
+            "Warna hijau membantu daun menyerap cahaya",
+            "Hijau lebih sejuk"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3096,12 +3096,12 @@
           "id": "s1_c6_q12",
           "text": "Kenapa akar tumbuh ke bawah, bukan ke atas?",
           "options": [
-            "Air dan zat ada di dalam tanah",
-            "Tanah lebih ringan",
             "Ke atas terlalu panas",
-            "Ke bawah lebih gelap"
+            "Tanah lebih ringan",
+            "Ke bawah lebih gelap",
+            "Air dan zat ada di dalam tanah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3122,9 +3122,9 @@
           "text": "Ali meletakkan pokok di dalam almari gelap selama seminggu. Apakah yang akan berlaku?",
           "options": [
             "Daunnya menjadi pucat dan pokok lemah",
-            "Pokok membesar cepat",
+            "Pokok berbuah",
             "Pokok berbunga",
-            "Pokok berbuah"
+            "Pokok membesar cepat"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -3136,12 +3136,12 @@
           "id": "s1_c6_q15",
           "text": "Kenapa bunga mempunyai bau yang wangi?",
           "options": [
-            "Untuk menarik serangga",
-            "Untuk menakutkan haiwan",
+            "Untuk menyokong batang",
             "Untuk menyerap air",
-            "Untuk menyokong batang"
+            "Untuk menakutkan haiwan",
+            "Untuk menarik serangga"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3151,12 +3151,12 @@
           "id": "s1_c6_q16",
           "text": "Manakah pasangan bahagian dan fungsinya yang BETUL?",
           "options": [
-            "Akar dan menyerap air",
-            "Daun dan menyerap air",
             "Bunga dan menyokong pokok",
-            "Batang dan membuat makanan"
+            "Akar dan menyerap air",
+            "Batang dan membuat makanan",
+            "Daun dan menyerap air"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3166,12 +3166,12 @@
           "id": "s1_c6_q17",
           "text": "Kenapa pokok di dalam rumah perlu diletakkan berhampiran tingkap?",
           "options": [
-            "Supaya mendapat cahaya matahari",
-            "Supaya nampak cantik",
             "Supaya senang disiram",
-            "Supaya angin masuk"
+            "Supaya angin masuk",
+            "Supaya nampak cantik",
+            "Supaya mendapat cahaya matahari"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3191,12 +3191,12 @@
           "id": "s1_c6_q19",
           "text": "Apakah yang berlaku jika akar sebuah pokok dipotong semuanya?",
           "options": [
-            "Pokok tidak dapat menyerap air dan akan mati",
+            "Pokok menjadi lebih tinggi",
             "Pokok membesar lebih cepat",
             "Pokok berbunga",
-            "Pokok menjadi lebih tinggi"
+            "Pokok tidak dapat menyerap air dan akan mati"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3206,12 +3206,12 @@
           "id": "s1_c6_q20",
           "text": "Kenapa tumbuhan penting kepada manusia dan haiwan?",
           "options": [
-            "Ia memberi makanan dan udara bersih",
             "Ia memberi warna sahaja",
+            "Ia memberi makanan dan udara bersih",
             "Ia memberi bunyi",
             "Ia memberi cahaya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3221,12 +3221,12 @@
           "id": "s1_c6_q21",
           "text": "Dua pasu diletakkan di tempat sama dan disiram sama. Satu ditutup dengan kotak gelap. Apakah yang berbeza selepas seminggu?",
           "options": [
+            "Pokok dalam kotak berbuah",
             "Pokok dalam kotak menjadi pucat",
-            "Kedua-duanya sama",
             "Pokok dalam kotak lebih hijau",
-            "Pokok dalam kotak berbuah"
+            "Kedua-duanya sama"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -3246,12 +3246,12 @@
           "id": "s1_c6_q23",
           "text": "Kenapa pokok besar mempunyai akar yang besar dan dalam?",
           "options": [
-            "Untuk memegang pokok supaya tidak tumbang",
+            "Untuk menarik serangga",
             "Untuk menyimpan buah",
-            "Untuk membuat makanan",
-            "Untuk menarik serangga"
+            "Untuk memegang pokok supaya tidak tumbang",
+            "Untuk membuat makanan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -3261,12 +3261,12 @@
           "id": "s1_c6_q24",
           "text": "Seorang murid memetik semua daun sebuah pokok kecil. Apakah kesan yang paling teruk?",
           "options": [
-            "Pokok tidak dapat membuat makanan",
-            "Pokok menjadi ringan",
+            "Pokok berbau",
             "Pokok menjadi pendek",
-            "Pokok berbau"
+            "Pokok tidak dapat membuat makanan",
+            "Pokok menjadi ringan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -3288,8 +3288,8 @@
           "options": [
             "Untuk mencapai cahaya matahari di atas",
             "Untuk kelihatan cantik",
-            "Untuk menyerap air lebih banyak",
-            "Untuk mengelak haiwan"
+            "Untuk mengelak haiwan",
+            "Untuk menyerap air lebih banyak"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -3301,12 +3301,12 @@
           "id": "s1_c6_q27",
           "text": "Manakah urutan yang BETUL bagi pergerakan air dalam tumbuhan?",
           "options": [
+            "Batang, akar, daun",
             "Akar, batang, daun",
             "Daun, batang, akar",
-            "Batang, akar, daun",
             "Bunga, akar, daun"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -3316,12 +3316,12 @@
           "id": "s1_c6_q28",
           "text": "Sebuah pokok diletakkan di tepi tingkap. Selepas sebulan, batangnya membengkok ke arah tingkap. Kenapa?",
           "options": [
-            "Pokok tumbuh ke arah cahaya",
+            "Tanah bergerak",
             "Tingkap menarik pokok",
             "Angin menolak pokok",
-            "Tanah bergerak"
+            "Pokok tumbuh ke arah cahaya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -3346,12 +3346,12 @@
           "id": "s1_c6_q30",
           "text": "Manakah yang BUKAN keperluan asas tumbuhan?",
           "options": [
-            "Bunyi",
-            "Air",
+            "Udara",
             "Cahaya matahari",
-            "Udara"
+            "Air",
+            "Bunyi"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -3361,12 +3361,12 @@
           "id": "s1_c6_q31",
           "text": "Dua pokok sama ditanam. Satu di tanah gembur, satu di tanah keras berbatu. Manakah tumbuh lebih baik dan kenapa?",
           "options": [
-            "Tanah gembur, kerana akar dan udara mudah bergerak",
-            "Tanah berbatu, kerana lebih kukuh",
             "Kedua-duanya sama",
-            "Tanah berbatu, kerana lebih sejuk"
+            "Tanah berbatu, kerana lebih sejuk",
+            "Tanah berbatu, kerana lebih kukuh",
+            "Tanah gembur, kerana akar dan udara mudah bergerak"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -3386,12 +3386,12 @@
           "id": "s1_c6_q33",
           "text": "Kenapa daun tumbuhan di kawasan panas dan kering selalunya kecil atau berduri?",
           "options": [
-            "Untuk mengurangkan kehilangan air",
+            "Untuk menarik serangga",
             "Untuk kelihatan berbeza",
             "Untuk menyerap lebih banyak cahaya",
-            "Untuk menarik serangga"
+            "Untuk mengurangkan kehilangan air"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -3401,12 +3401,12 @@
           "id": "s1_c6_q34",
           "text": "Seorang murid berkata \"pokok makan tanah kerana tanah berkurangan.\" Apakah kesilapannya?",
           "options": [
-            "Pokok membuat makanan sendiri di daun, bukan memakan tanah",
-            "Tanah tidak pernah berkurangan",
+            "Pokok makan udara sahaja",
             "Pokok makan air sahaja",
-            "Pokok makan udara sahaja"
+            "Tanah tidak pernah berkurangan",
+            "Pokok membuat makanan sendiri di daun, bukan memakan tanah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -3416,12 +3416,12 @@
           "id": "s1_c6_q35",
           "text": "Kenapa hutan yang ditebang menyebabkan tanah runtuh?",
           "options": [
-            "Tiada akar yang memegang tanah",
             "Tanah menjadi panas",
+            "Hujan menjadi lebat",
             "Tanah menjadi ringan",
-            "Hujan menjadi lebat"
+            "Tiada akar yang memegang tanah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -3441,12 +3441,12 @@
           "id": "s1_c6_q37",
           "text": "Manakah bukti PALING kuat bahawa daun membuat makanan?",
           "options": [
-            "Pokok tanpa daun akan mati walaupun disiram",
             "Daun berwarna hijau",
+            "Pokok tanpa daun akan mati walaupun disiram",
             "Daun berbau",
             "Daun mudah gugur"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -3456,12 +3456,12 @@
           "id": "s1_c6_q38",
           "text": "Kenapa bunga yang tidak dilawati serangga selalunya tidak menghasilkan buah?",
           "options": [
+            "Serangga memakan daun",
             "Serangga membantu proses menghasilkan biji",
             "Serangga menyiram bunga",
-            "Serangga memberi cahaya",
-            "Serangga memakan daun"
+            "Serangga memberi cahaya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -3486,12 +3486,12 @@
           "id": "s1_c6_q40",
           "text": "Manakah kesimpulan yang PALING tepat tentang bahagian tumbuhan?",
           "options": [
-            "Setiap bahagian mempunyai tugas yang berbeza tetapi saling bergantung",
+            "Hanya akar yang penting",
             "Semua bahagian melakukan tugas yang sama",
-            "Hanya daun yang penting",
-            "Hanya akar yang penting"
+            "Setiap bahagian mempunyai tugas yang berbeza tetapi saling bergantung",
+            "Hanya daun yang penting"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -3508,12 +3508,12 @@
           "id": "s1_c7_q1",
           "text": "Apakah yang boleh dilakukan magnet?",
           "options": [
-            "Menarik besi",
+            "Menarik kayu",
             "Menarik kertas",
-            "Menarik kaca",
-            "Menarik kayu"
+            "Menarik besi",
+            "Menarik kaca"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3524,9 +3524,9 @@
           "text": "Manakah bahan yang DITARIK oleh magnet?",
           "options": [
             "Paku besi",
-            "Pemadam getah",
+            "Cawan plastik",
             "Pensel kayu",
-            "Cawan plastik"
+            "Pemadam getah"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -3538,12 +3538,12 @@
           "id": "s1_c7_q3",
           "text": "Manakah bahan yang TIDAK ditarik oleh magnet?",
           "options": [
-            "Kertas",
-            "Klip kertas besi",
+            "Gunting besi",
             "Paku",
-            "Gunting besi"
+            "Kertas",
+            "Klip kertas besi"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3553,12 +3553,12 @@
           "id": "s1_c7_q4",
           "text": "Berapakah bilangan kutub pada sebatang magnet?",
           "options": [
-            "2",
-            "1",
+            "4",
             "3",
-            "4"
+            "2",
+            "1"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3568,12 +3568,12 @@
           "id": "s1_c7_q5",
           "text": "Apakah nama dua kutub magnet?",
           "options": [
-            "Utara dan selatan",
-            "Atas dan bawah",
             "Kiri dan kanan",
-            "Panas dan sejuk"
+            "Panas dan sejuk",
+            "Atas dan bawah",
+            "Utara dan selatan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3583,12 +3583,12 @@
           "id": "s1_c7_q6",
           "text": "Apakah yang berlaku apabila kutub utara didekatkan dengan kutub utara?",
           "options": [
-            "Ia menolak",
+            "Tiada apa berlaku",
             "Ia menarik",
             "Ia melekat",
-            "Tiada apa berlaku"
+            "Ia menolak"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3599,9 +3599,9 @@
           "text": "Apakah yang berlaku apabila kutub utara didekatkan dengan kutub selatan?",
           "options": [
             "Ia menarik",
+            "Tiada apa berlaku",
             "Ia menolak",
-            "Ia pecah",
-            "Tiada apa berlaku"
+            "Ia pecah"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -3613,12 +3613,12 @@
           "id": "s1_c7_q8",
           "text": "Manakah alat yang menggunakan magnet?",
           "options": [
-            "Kompas",
             "Pembaris",
+            "Kompas",
             "Pensel",
             "Buku"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3629,9 +3629,9 @@
           "text": "Bahan manakah paling banyak ditarik magnet?",
           "options": [
             "Besi",
+            "Getah",
             "Plastik",
-            "Kaca",
-            "Getah"
+            "Kaca"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -3643,12 +3643,12 @@
           "id": "s1_c7_q10",
           "text": "Bolehkah magnet menarik melalui sekeping kertas nipis?",
           "options": [
-            "Boleh",
-            "Tidak boleh",
             "Hanya jika basah",
-            "Hanya jika berwarna"
+            "Tidak boleh",
+            "Hanya jika berwarna",
+            "Boleh"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -3669,8 +3669,8 @@
           "text": "Kenapa klip kertas melekat pada magnet tetapi butang plastik tidak?",
           "options": [
             "Klip kertas diperbuat daripada besi",
-            "Klip kertas lebih kecil",
             "Klip kertas lebih ringan",
+            "Klip kertas lebih kecil",
             "Klip kertas berwarna"
           ],
           "correctAnswer": 0,
@@ -3683,12 +3683,12 @@
           "id": "s1_c7_q13",
           "text": "Rina mendekatkan dua magnet dan ia menolak antara satu sama lain. Apakah yang berlaku?",
           "options": [
+            "Magnet terlalu sejuk",
             "Kutub yang sama bertemu",
-            "Magnet itu rosak",
             "Magnet terlalu kecil",
-            "Magnet terlalu sejuk"
+            "Magnet itu rosak"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3699,9 +3699,9 @@
           "text": "Kenapa jarum kompas sentiasa menunjuk ke arah yang sama?",
           "options": [
             "Bumi sendiri bertindak seperti magnet besar",
-            "Jarum itu berat",
+            "Jarum itu berwarna",
             "Jarum itu panjang",
-            "Jarum itu berwarna"
+            "Jarum itu berat"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -3713,12 +3713,12 @@
           "id": "s1_c7_q15",
           "text": "Manakah cara terbaik untuk mengumpul paku yang bertaburan di lantai?",
           "options": [
-            "Guna magnet",
-            "Guna kertas",
             "Guna air",
-            "Guna kain"
+            "Guna kertas",
+            "Guna kain",
+            "Guna magnet"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3738,12 +3738,12 @@
           "id": "s1_c7_q17",
           "text": "Manakah pernyataan yang BETUL?",
           "options": [
-            "Magnet menarik besi tetapi bukan plastik",
-            "Magnet menarik semua logam",
             "Magnet menarik kertas",
-            "Magnet menarik air"
+            "Magnet menarik semua logam",
+            "Magnet menarik air",
+            "Magnet menarik besi tetapi bukan plastik"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3753,12 +3753,12 @@
           "id": "s1_c7_q18",
           "text": "Ali meletakkan magnet di bawah meja nipis dan klip di atasnya. Klip bergerak. Apakah yang ditunjukkan?",
           "options": [
-            "Tarikan magnet boleh menembusi bahan nipis",
             "Meja itu magnet",
-            "Klip itu hidup",
-            "Meja itu besi"
+            "Meja itu besi",
+            "Tarikan magnet boleh menembusi bahan nipis",
+            "Klip itu hidup"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3768,12 +3768,12 @@
           "id": "s1_c7_q19",
           "text": "Kenapa pintu peti sejuk melekat rapat apabila ditutup?",
           "options": [
+            "Ia licin",
             "Ada magnet pada tepinya",
-            "Ia sejuk",
             "Ia berat",
-            "Ia licin"
+            "Ia sejuk"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3783,12 +3783,12 @@
           "id": "s1_c7_q20",
           "text": "Manakah kumpulan yang SEMUANYA ditarik magnet?",
           "options": [
+            "Kaca, kayu, kertas",
             "Paku, klip besi, gunting besi",
             "Paku, kertas, klip besi",
-            "Getah, paku, plastik",
-            "Kaca, kayu, kertas"
+            "Getah, paku, plastik"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -3798,12 +3798,12 @@
           "id": "s1_c7_q21",
           "text": "Sebatang magnet dipotong dua. Berapa kutub yang ada pada setiap bahagian?",
           "options": [
+            "0",
             "2",
             "1",
-            "0",
             "4"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -3823,12 +3823,12 @@
           "id": "s1_c7_q23",
           "text": "Rina meletakkan magnet berhampiran timbunan pasir bercampur serbuk besi. Apakah yang berlaku?",
           "options": [
-            "Serbuk besi melekat pada magnet, pasir tinggal",
             "Semuanya melekat",
             "Tiada apa melekat",
+            "Serbuk besi melekat pada magnet, pasir tinggal",
             "Hanya pasir melekat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -3838,12 +3838,12 @@
           "id": "s1_c7_q24",
           "text": "Kenapa magnet tidak sesuai diletakkan berhampiran kad bank atau jam?",
           "options": [
-            "Ia boleh merosakkan bahagian dalamnya",
-            "Ia menjadikan kad panas",
             "Ia menjadikan kad berat",
-            "Ia menukar warna kad"
+            "Ia menukar warna kad",
+            "Ia boleh merosakkan bahagian dalamnya",
+            "Ia menjadikan kad panas"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -3853,12 +3853,12 @@
           "id": "s1_c7_q25",
           "text": "Dua magnet diletakkan berdekatan dan ia melekat. Apakah yang pasti berlaku?",
           "options": [
-            "Kutub berlainan yang bertemu",
-            "Kedua-duanya kutub utara",
             "Kedua-duanya kutub selatan",
-            "Magnet itu rosak"
+            "Magnet itu rosak",
+            "Kutub berlainan yang bertemu",
+            "Kedua-duanya kutub utara"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -3878,12 +3878,12 @@
           "id": "s1_c7_q27",
           "text": "Kenapa kompas tidak berguna berhampiran magnet yang kuat?",
           "options": [
-            "Magnet itu menarik jarum lebih kuat daripada Bumi",
             "Kompas jadi berat",
             "Kompas jadi panas",
-            "Jarum jadi pendek"
+            "Jarum jadi pendek",
+            "Magnet itu menarik jarum lebih kuat daripada Bumi"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -3894,9 +3894,9 @@
           "text": "Ali menggosok paku dengan magnet berulang kali ke satu arah. Apakah yang mungkin berlaku?",
           "options": [
             "Paku itu menjadi magnet lemah",
+            "Paku itu bertukar warna",
             "Paku itu menjadi panas",
-            "Paku itu menjadi pendek",
-            "Paku itu bertukar warna"
+            "Paku itu menjadi pendek"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -3908,12 +3908,12 @@
           "id": "s1_c7_q29",
           "text": "Manakah pernyataan yang SALAH?",
           "options": [
+            "Magnet menarik besi",
             "Magnet menarik semua benda berkilat",
             "Magnet ada dua kutub",
-            "Kutub sama menolak",
-            "Magnet menarik besi"
+            "Kutub sama menolak"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -3923,12 +3923,12 @@
           "id": "s1_c7_q30",
           "text": "Kenapa magnet berguna di tapak pelupusan besi buruk?",
           "options": [
-            "Ia mengangkat besi dan meninggalkan bahan lain",
             "Ia memotong besi",
-            "Ia membakar sampah",
-            "Ia menimbang sampah"
+            "Ia menimbang sampah",
+            "Ia mengangkat besi dan meninggalkan bahan lain",
+            "Ia membakar sampah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -3939,9 +3939,9 @@
           "text": "Sebatang magnet dipotong kepada 4 bahagian. Berapa jumlah kutub pada kesemua bahagian?",
           "options": [
             "8",
+            "6",
             "2",
-            "4",
-            "6"
+            "4"
           ],
           "correctAnswer": 0,
           "difficulty": "ultra",
@@ -3954,9 +3954,9 @@
           "text": "Ali mahu memisahkan klip besi daripada butang plastik yang bercampur. Cara manakah PALING cepat dan bersih?",
           "options": [
             "Lalukan magnet di atas campuran itu",
-            "Asingkan satu demi satu dengan tangan",
+            "Tiup campuran itu",
             "Tuang ke dalam air",
-            "Tiup campuran itu"
+            "Asingkan satu demi satu dengan tangan"
           ],
           "correctAnswer": 0,
           "difficulty": "ultra",
@@ -3978,12 +3978,12 @@
           "id": "s1_c7_q34",
           "text": "Kenapa dua magnet yang menolak akan menarik jika satu daripadanya dipusing?",
           "options": [
-            "Memusing menukar kutub yang bertemu",
             "Memusing menjadikan magnet lebih kuat",
+            "Memusing menambah kutub",
             "Memusing menjadikan magnet panas",
-            "Memusing menambah kutub"
+            "Memusing menukar kutub yang bertemu"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -3993,12 +3993,12 @@
           "id": "s1_c7_q35",
           "text": "Manakah eksperimen yang PALING baik untuk menguji kekuatan dua magnet?",
           "options": [
-            "Kira berapa klip setiap magnet boleh angkat",
-            "Lihat warna kedua-duanya",
             "Timbang kedua-duanya",
-            "Ukur panjang kedua-duanya"
+            "Kira berapa klip setiap magnet boleh angkat",
+            "Ukur panjang kedua-duanya",
+            "Lihat warna kedua-duanya"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -4008,12 +4008,12 @@
           "id": "s1_c7_q36",
           "text": "Kenapa daya magnet menjadi lemah apabila jarak bertambah?",
           "options": [
-            "Daya magnet paling kuat rapat dengan magnet",
+            "Objek menjadi berat",
             "Udara memakan daya itu",
-            "Magnet menjadi sejuk",
-            "Objek menjadi berat"
+            "Daya magnet paling kuat rapat dengan magnet",
+            "Magnet menjadi sejuk"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -4033,12 +4033,12 @@
           "id": "s1_c7_q38",
           "text": "Sebuah kompas diletakkan di atas meja besi. Kenapa bacaannya mungkin salah?",
           "options": [
-            "Meja besi mengganggu arah jarum",
-            "Meja terlalu tinggi",
             "Meja terlalu licin",
-            "Meja terlalu berat"
+            "Meja terlalu tinggi",
+            "Meja terlalu berat",
+            "Meja besi mengganggu arah jarum"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -4048,12 +4048,12 @@
           "id": "s1_c7_q39",
           "text": "Manakah kesimpulan yang PALING tepat selepas menguji banyak bahan dengan magnet?",
           "options": [
-            "Hanya bahan yang mengandungi besi ditarik",
-            "Semua logam ditarik",
+            "Semua benda berat ditarik",
             "Semua benda keras ditarik",
-            "Semua benda berat ditarik"
+            "Hanya bahan yang mengandungi besi ditarik",
+            "Semua logam ditarik"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -4063,12 +4063,12 @@
           "id": "s1_c7_q40",
           "text": "Kenapa magnet digunakan pada pintu almari dan bukan selak biasa pada sesetengah perabot?",
           "options": [
-            "Ia menutup sendiri dan tiada bahagian yang mudah patah",
-            "Ia lebih murah sahaja",
+            "Ia lebih berwarna",
             "Ia lebih berat",
-            "Ia lebih berwarna"
+            "Ia lebih murah sahaja",
+            "Ia menutup sendiri dan tiada bahagian yang mudah patah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -4085,12 +4085,12 @@
           "id": "s1_c8_q1",
           "text": "Apakah maksud bahan yang menyerap air?",
           "options": [
-            "Air masuk ke dalam bahan itu",
             "Air melantun daripadanya",
             "Air bertukar warna",
-            "Air menjadi panas"
+            "Air menjadi panas",
+            "Air masuk ke dalam bahan itu"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4100,12 +4100,12 @@
           "id": "s1_c8_q2",
           "text": "Manakah bahan yang MENYERAP air?",
           "options": [
-            "Tuala",
-            "Plastik",
+            "Besi",
             "Kaca",
-            "Besi"
+            "Plastik",
+            "Tuala"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4115,12 +4115,12 @@
           "id": "s1_c8_q3",
           "text": "Manakah bahan yang TIDAK menyerap air?",
           "options": [
-            "Plastik",
-            "Span",
             "Kertas tisu",
-            "Kain"
+            "Span",
+            "Kain",
+            "Plastik"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4130,12 +4130,12 @@
           "id": "s1_c8_q4",
           "text": "Kenapa kita guna span untuk mengelap air yang tumpah?",
           "options": [
-            "Span menyerap banyak air",
-            "Span berwarna",
             "Span ringan",
-            "Span murah"
+            "Span menyerap banyak air",
+            "Span murah",
+            "Span berwarna"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4145,12 +4145,12 @@
           "id": "s1_c8_q5",
           "text": "Manakah bahan yang paling sesuai dibuat payung?",
           "options": [
-            "Kain kalis air",
-            "Kertas tisu",
+            "Tuala",
             "Span",
-            "Tuala"
+            "Kain kalis air",
+            "Kertas tisu"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4160,12 +4160,12 @@
           "id": "s1_c8_q6",
           "text": "Apakah yang berlaku kepada kertas tisu yang dicelup ke dalam air?",
           "options": [
+            "Ia bertukar warna sahaja",
             "Ia menyerap air dan menjadi lembap",
-            "Ia kekal kering",
             "Ia menjadi keras",
-            "Ia bertukar warna sahaja"
+            "Ia kekal kering"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4175,12 +4175,12 @@
           "id": "s1_c8_q7",
           "text": "Manakah bahan yang sesuai dibuat baju hujan?",
           "options": [
-            "Plastik",
-            "Tuala",
             "Span",
-            "Kertas"
+            "Tuala",
+            "Kertas",
+            "Plastik"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4190,12 +4190,12 @@
           "id": "s1_c8_q8",
           "text": "Kenapa tuala mandi diperbuat daripada kain tebal?",
           "options": [
-            "Supaya menyerap lebih banyak air",
             "Supaya berat",
-            "Supaya panas",
-            "Supaya cantik"
+            "Supaya cantik",
+            "Supaya menyerap lebih banyak air",
+            "Supaya panas"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4220,12 +4220,12 @@
           "id": "s1_c8_q10",
           "text": "Kenapa bumbung rumah tidak diperbuat daripada kertas?",
           "options": [
-            "Kertas menyerap air dan mudah rosak",
-            "Kertas terlalu mahal",
             "Kertas terlalu berat",
-            "Kertas terlalu keras"
+            "Kertas menyerap air dan mudah rosak",
+            "Kertas terlalu keras",
+            "Kertas terlalu mahal"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4245,12 +4245,12 @@
           "id": "s1_c8_q12",
           "text": "Kenapa air tumpah di atas meja plastik mudah dilap?",
           "options": [
-            "Air kekal di permukaan kerana plastik tidak menyerap",
-            "Plastik menolak air",
+            "Air menjadi ringan",
             "Plastik memanaskan air",
-            "Air menjadi ringan"
+            "Air kekal di permukaan kerana plastik tidak menyerap",
+            "Plastik menolak air"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4275,12 +4275,12 @@
           "id": "s1_c8_q14",
           "text": "Kenapa kain yang basah lebih berat daripada kain kering?",
           "options": [
-            "Air yang diserap menambah berat",
             "Kain mengembang",
+            "Air yang diserap menambah berat",
             "Kain menjadi tebal",
             "Air menjadi berat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4290,12 +4290,12 @@
           "id": "s1_c8_q15",
           "text": "Manakah pasangan yang BETUL?",
           "options": [
-            "Span menyerap, kaca tidak menyerap",
             "Span tidak menyerap, kaca menyerap",
             "Kedua-duanya menyerap",
-            "Kedua-duanya tidak menyerap"
+            "Kedua-duanya tidak menyerap",
+            "Span menyerap, kaca tidak menyerap"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4305,12 +4305,12 @@
           "id": "s1_c8_q16",
           "text": "Kenapa payung yang berlubang tidak berguna?",
           "options": [
-            "Air masuk melalui lubang itu",
             "Payung menjadi berat",
+            "Payung menjadi kecil",
             "Payung menjadi panas",
-            "Payung menjadi kecil"
+            "Air masuk melalui lubang itu"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4330,12 +4330,12 @@
           "id": "s1_c8_q18",
           "text": "Kenapa lampin bayi diperbuat daripada bahan yang sangat menyerap?",
           "options": [
-            "Supaya kulit bayi kekal kering",
             "Supaya lampin berat",
-            "Supaya lampin berwarna",
-            "Supaya lampin panas"
+            "Supaya lampin panas",
+            "Supaya kulit bayi kekal kering",
+            "Supaya lampin berwarna"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4346,9 +4346,9 @@
           "text": "Ali mahu menyimpan air di dalam bekas. Bahan manakah yang sesuai?",
           "options": [
             "Plastik",
-            "Kertas",
             "Kain",
-            "Span"
+            "Span",
+            "Kertas"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -4361,9 +4361,9 @@
           "text": "Kenapa baju yang dijemur di bawah matahari cepat kering?",
           "options": [
             "Haba matahari menyejatkan air dalam kain",
-            "Matahari menyerap kain",
+            "Kain menjadi tebal",
             "Angin menyerap kain",
-            "Kain menjadi tebal"
+            "Matahari menyerap kain"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -4400,12 +4400,12 @@
           "id": "s1_c8_q23",
           "text": "Kenapa kasut kulit dilapisi bahan kalis air?",
           "options": [
-            "Supaya air tidak meresap masuk ke dalam kasut",
+            "Supaya kasut sejuk",
             "Supaya kasut cantik",
-            "Supaya kasut ringan",
-            "Supaya kasut sejuk"
+            "Supaya air tidak meresap masuk ke dalam kasut",
+            "Supaya kasut ringan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -4426,9 +4426,9 @@
           "text": "Rina menuang air ke atas dua permukaan: satu kayu tidak bersalut dan satu kayu bersalut varnis. Apakah yang berbeza?",
           "options": [
             "Air meresap masuk pada kayu tidak bersalut",
-            "Air meresap pada kayu bersalut",
             "Kedua-duanya sama",
-            "Air menjadi panas"
+            "Air menjadi panas",
+            "Air meresap pada kayu bersalut"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -4440,12 +4440,12 @@
           "id": "s1_c8_q26",
           "text": "Kenapa tuala basah tidak dapat mengeringkan tangan dengan baik?",
           "options": [
-            "Ia sudah penuh air, jadi tidak boleh menyerap lagi",
-            "Ia menjadi keras",
             "Ia menjadi sejuk",
-            "Ia menjadi ringan"
+            "Ia menjadi ringan",
+            "Ia sudah penuh air, jadi tidak boleh menyerap lagi",
+            "Ia menjadi keras"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -4455,12 +4455,12 @@
           "id": "s1_c8_q27",
           "text": "Manakah bahan paling sesuai untuk membuat khemah?",
           "options": [
-            "Kain kalis air",
-            "Kertas tisu",
+            "Kain tuala",
             "Span",
-            "Kain tuala"
+            "Kain kalis air",
+            "Kertas tisu"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -4480,12 +4480,12 @@
           "id": "s1_c8_q29",
           "text": "Kenapa lantai bilik air dibuat daripada jubin dan bukan kayu biasa?",
           "options": [
-            "Jubin tidak menyerap air jadi tidak reput",
-            "Jubin lebih murah",
             "Jubin lebih ringan",
-            "Jubin lebih panas"
+            "Jubin tidak menyerap air jadi tidak reput",
+            "Jubin lebih panas",
+            "Jubin lebih murah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -4520,12 +4520,12 @@
           "id": "s1_c8_q32",
           "text": "Kenapa bahan yang berliang halus menyerap lebih banyak air daripada bahan padat?",
           "options": [
-            "Liang itu memberi ruang untuk air masuk",
-            "Liang menjadikan bahan berat",
+            "Liang memanaskan air",
             "Liang menarik air seperti magnet",
-            "Liang memanaskan air"
+            "Liang menjadikan bahan berat",
+            "Liang itu memberi ruang untuk air masuk"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -4535,12 +4535,12 @@
           "id": "s1_c8_q33",
           "text": "Sebuah bumbung bocor. Bahan manakah PALING buruk untuk menampalnya?",
           "options": [
-            "Kertas",
             "Plastik tebal",
             "Getah",
-            "Logam nipis"
+            "Logam nipis",
+            "Kertas"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -4560,12 +4560,12 @@
           "id": "s1_c8_q35",
           "text": "Kenapa pasu bunga mempunyai lubang di bawah?",
           "options": [
-            "Supaya air berlebihan keluar dan akar tidak reput",
-            "Supaya pasu ringan",
             "Supaya tanah keluar",
+            "Supaya pasu ringan",
+            "Supaya air berlebihan keluar dan akar tidak reput",
             "Supaya udara masuk sahaja"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -4575,12 +4575,12 @@
           "id": "s1_c8_q36",
           "text": "Dua kain yang sama saiz diuji. Kain A menyerap 30 ml, kain B menyerap 30 ml tetapi lebih cepat. Manakah lebih sesuai untuk tuala tangan?",
           "options": [
-            "Kain B, kerana ia mengeringkan lebih cepat",
-            "Kain A, kerana lebih perlahan",
             "Kedua-duanya sama sahaja",
-            "Tiada yang sesuai"
+            "Tiada yang sesuai",
+            "Kain B, kerana ia mengeringkan lebih cepat",
+            "Kain A, kerana lebih perlahan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -4590,12 +4590,12 @@
           "id": "s1_c8_q37",
           "text": "Kenapa bahan kalis air digunakan pada beg komputer riba?",
           "options": [
-            "Air boleh merosakkan bahagian elektrik di dalamnya",
-            "Beg jadi ringan",
             "Beg jadi cantik",
+            "Beg jadi ringan",
+            "Air boleh merosakkan bahagian elektrik di dalamnya",
             "Beg jadi murah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -4615,12 +4615,12 @@
           "id": "s1_c8_q39",
           "text": "Manakah kesimpulan yang PALING tepat selepas menguji banyak bahan?",
           "options": [
-            "Bahan berliang menyerap, bahan padat dan licin tidak",
-            "Semua bahan lembut menyerap",
+            "Semua bahan berwarna menyerap",
             "Semua bahan berat menyerap",
-            "Semua bahan berwarna menyerap"
+            "Semua bahan lembut menyerap",
+            "Bahan berliang menyerap, bahan padat dan licin tidak"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -4630,12 +4630,12 @@
           "id": "s1_c8_q40",
           "text": "Kenapa jalan raya dibina supaya sedikit condong ke tepi?",
           "options": [
+            "Supaya jalan cantik",
             "Supaya air hujan mengalir keluar dan tidak bertakung",
             "Supaya kereta laju",
-            "Supaya jalan cantik",
             "Supaya jalan sejuk"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -4653,9 +4653,9 @@
           "text": "Apakah yang kita nampak di langit pada waktu siang?",
           "options": [
             "Matahari",
+            "Lampu jalan",
             "Bulan penuh",
-            "Bintang",
-            "Lampu jalan"
+            "Bintang"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -4667,12 +4667,12 @@
           "id": "s1_c9_q2",
           "text": "Apakah yang kita nampak di langit pada waktu malam?",
           "options": [
-            "Bulan dan bintang",
+            "Pelangi",
             "Matahari",
-            "Awan sahaja",
-            "Pelangi"
+            "Bulan dan bintang",
+            "Awan sahaja"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4683,9 +4683,9 @@
           "text": "Dari manakah datangnya cahaya pada waktu siang?",
           "options": [
             "Matahari",
-            "Bulan",
             "Bintang",
-            "Awan"
+            "Awan",
+            "Bulan"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -4697,12 +4697,12 @@
           "id": "s1_c9_q4",
           "text": "Apakah yang menutupi permukaan Bumi paling banyak?",
           "options": [
+            "Batu",
             "Air",
-            "Tanah",
             "Pasir",
-            "Batu"
+            "Tanah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4712,12 +4712,12 @@
           "id": "s1_c9_q5",
           "text": "Apakah yang kita perlukan daripada matahari?",
           "options": [
-            "Cahaya dan haba",
+            "Bunyi",
             "Air",
-            "Tanah",
-            "Bunyi"
+            "Cahaya dan haba",
+            "Tanah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4727,12 +4727,12 @@
           "id": "s1_c9_q6",
           "text": "Bilakah kita paling mudah melihat bintang?",
           "options": [
-            "Malam yang cerah",
-            "Tengah hari",
             "Pagi cerah",
-            "Petang cerah"
+            "Malam yang cerah",
+            "Petang cerah",
+            "Tengah hari"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4742,12 +4742,12 @@
           "id": "s1_c9_q7",
           "text": "Apakah bentuk Bumi?",
           "options": [
-            "Bulat seperti bola",
-            "Rata seperti pinggan",
             "Segi empat",
-            "Segi tiga"
+            "Segi tiga",
+            "Bulat seperti bola",
+            "Rata seperti pinggan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4758,9 +4758,9 @@
           "text": "Manakah yang memberi cahaya sendiri?",
           "options": [
             "Matahari",
-            "Bulan",
             "Bumi",
-            "Awan"
+            "Awan",
+            "Bulan"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -4772,12 +4772,12 @@
           "id": "s1_c9_q9",
           "text": "Apakah yang berlaku apabila matahari terbenam?",
           "options": [
+            "Hujan turun",
             "Hari menjadi gelap",
             "Hari menjadi terang",
-            "Hujan turun",
             "Angin berhenti"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4787,12 +4787,12 @@
           "id": "s1_c9_q10",
           "text": "Manakah sumber air di Bumi?",
           "options": [
-            "Sungai",
             "Awan sahaja",
-            "Batu",
-            "Pasir"
+            "Pasir",
+            "Sungai",
+            "Batu"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -4802,12 +4802,12 @@
           "id": "s1_c9_q11",
           "text": "Kenapa kita tidak nampak bintang pada waktu siang?",
           "options": [
-            "Cahaya matahari terlalu terang",
-            "Bintang hilang",
+            "Bintang jatuh",
             "Bintang tidur",
-            "Bintang jatuh"
+            "Bintang hilang",
+            "Cahaya matahari terlalu terang"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4817,12 +4817,12 @@
           "id": "s1_c9_q12",
           "text": "Kenapa bulan kelihatan bercahaya walaupun ia tidak menghasilkan cahaya?",
           "options": [
-            "Ia memantulkan cahaya matahari",
-            "Ia terbakar",
+            "Ia berwarna putih",
             "Ia ada lampu",
-            "Ia berwarna putih"
+            "Ia terbakar",
+            "Ia memantulkan cahaya matahari"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4844,8 +4844,8 @@
           "options": [
             "Ia menjadi sumber hujan",
             "Ia memberi cahaya",
-            "Ia memberi bunyi",
-            "Ia memberi warna"
+            "Ia memberi warna",
+            "Ia memberi bunyi"
           ],
           "correctAnswer": 0,
           "difficulty": "sederhana",
@@ -4857,12 +4857,12 @@
           "id": "s1_c9_q15",
           "text": "Manakah yang PALING panas?",
           "options": [
-            "Matahari",
-            "Bulan",
             "Bumi",
-            "Bintang jatuh"
+            "Bulan",
+            "Bintang jatuh",
+            "Matahari"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4888,8 +4888,8 @@
           "text": "Ali keluar pada waktu tengah hari dan rasa sangat panas. Kenapa?",
           "options": [
             "Matahari berada tinggi dan cahayanya paling kuat",
-            "Bumi menjadi kecil",
             "Angin berhenti",
+            "Bumi menjadi kecil",
             "Awan hilang selamanya"
           ],
           "correctAnswer": 0,
@@ -4902,12 +4902,12 @@
           "id": "s1_c9_q18",
           "text": "Manakah pasangan yang BETUL?",
           "options": [
-            "Siang dan matahari",
-            "Siang dan bulan",
             "Malam dan matahari",
-            "Malam dan pelangi"
+            "Malam dan pelangi",
+            "Siang dan matahari",
+            "Siang dan bulan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4917,12 +4917,12 @@
           "id": "s1_c9_q19",
           "text": "Kenapa kita memakai topi apabila keluar pada waktu panas?",
           "options": [
-            "Untuk melindungi kepala daripada cahaya matahari",
-            "Supaya nampak kemas",
             "Supaya kepala berat",
-            "Supaya rambut panjang"
+            "Supaya nampak kemas",
+            "Supaya rambut panjang",
+            "Untuk melindungi kepala daripada cahaya matahari"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4932,12 +4932,12 @@
           "id": "s1_c9_q20",
           "text": "Manakah yang BUKAN terdapat di Bumi?",
           "options": [
-            "Api matahari",
-            "Air",
+            "Udara",
             "Tanah",
-            "Udara"
+            "Api matahari",
+            "Air"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -4948,9 +4948,9 @@
           "text": "Kenapa kawasan berhampiran laut selalunya lebih sejuk daripada kawasan jauh dari laut?",
           "options": [
             "Air laut menyejukkan udara di sekitarnya",
-            "Laut lebih tinggi",
+            "Laut lebih dalam",
             "Laut lebih gelap",
-            "Laut lebih dalam"
+            "Laut lebih tinggi"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -4972,12 +4972,12 @@
           "id": "s1_c9_q23",
           "text": "Kenapa bayang-bayang kita panjang pada waktu pagi dan pendek pada tengah hari?",
           "options": [
-            "Kedudukan matahari berubah sepanjang hari",
-            "Badan kita berubah saiz",
             "Tanah bergerak",
-            "Bayang menjadi berat"
+            "Kedudukan matahari berubah sepanjang hari",
+            "Bayang menjadi berat",
+            "Badan kita berubah saiz"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -4987,12 +4987,12 @@
           "id": "s1_c9_q24",
           "text": "Kenapa Bumi sesuai untuk hidupan tetapi bulan tidak?",
           "options": [
-            "Bumi ada air dan udara",
+            "Bumi berwarna biru",
             "Bumi lebih besar",
             "Bumi lebih dekat matahari",
-            "Bumi berwarna biru"
+            "Bumi ada air dan udara"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -5002,12 +5002,12 @@
           "id": "s1_c9_q25",
           "text": "Ali memerhati bahawa laut kelihatan biru. Apakah sebabnya?",
           "options": [
+            "Ikan berwarna biru",
             "Air memantulkan warna langit",
             "Air memang berwarna biru pekat",
-            "Ikan berwarna biru",
             "Pasir berwarna biru"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -5028,9 +5028,9 @@
           "text": "Kenapa hujan penting kepada Bumi?",
           "options": [
             "Ia membekalkan air kepada hidupan dan tanah",
-            "Ia menyejukkan matahari",
+            "Ia menggelapkan hari",
             "Ia membersihkan langit",
-            "Ia menggelapkan hari"
+            "Ia menyejukkan matahari"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -5043,9 +5043,9 @@
           "text": "Manakah kenyataan yang SALAH?",
           "options": [
             "Bulan menghasilkan cahayanya sendiri",
+            "Bintang menghasilkan cahaya sendiri",
             "Matahari menghasilkan cahayanya sendiri",
-            "Bumi menerima cahaya matahari",
-            "Bintang menghasilkan cahaya sendiri"
+            "Bumi menerima cahaya matahari"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -5057,12 +5057,12 @@
           "id": "s1_c9_q29",
           "text": "Kenapa kita tidak boleh memandang matahari secara terus?",
           "options": [
+            "Ia terlalu kecil",
             "Cahayanya boleh merosakkan mata",
             "Ia terlalu jauh",
-            "Ia terlalu kecil",
             "Ia berwarna kuning"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -5072,12 +5072,12 @@
           "id": "s1_c9_q30",
           "text": "Sebuah kawasan tidak menerima hujan selama berbulan-bulan. Apakah kesan yang paling teruk?",
           "options": [
+            "Bumi menjadi sejuk",
             "Tumbuhan mati dan sungai kering",
             "Langit menjadi gelap",
-            "Bumi menjadi sejuk",
             "Angin berhenti"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -5088,8 +5088,8 @@
           "text": "Kenapa waktu siang dan malam berlaku silih berganti?",
           "options": [
             "Bumi berputar, jadi satu bahagian menghadap matahari pada satu masa",
-            "Matahari padam pada waktu malam",
             "Bulan menutup matahari setiap malam",
+            "Matahari padam pada waktu malam",
             "Awan menutup matahari"
           ],
           "correctAnswer": 0,
@@ -5112,12 +5112,12 @@
           "id": "s1_c9_q33",
           "text": "Kenapa kawasan gurun sangat panas pada siang tetapi sejuk pada malam?",
           "options": [
-            "Tiada air atau awan untuk menyimpan haba",
-            "Matahari lebih dekat",
             "Pasir menghasilkan haba",
-            "Angin berhenti pada malam"
+            "Angin berhenti pada malam",
+            "Matahari lebih dekat",
+            "Tiada air atau awan untuk menyimpan haba"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -5127,12 +5127,12 @@
           "id": "s1_c9_q34",
           "text": "Manakah bukti PALING kuat bahawa bulan tidak menghasilkan cahaya sendiri?",
           "options": [
-            "Bahagian bulan yang gelap ialah bahagian yang tidak kena cahaya matahari",
-            "Bulan kelihatan putih",
             "Bulan lebih kecil daripada matahari",
+            "Bulan kelihatan putih",
+            "Bahagian bulan yang gelap ialah bahagian yang tidak kena cahaya matahari",
             "Bulan hanya nampak pada malam"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -5152,12 +5152,12 @@
           "id": "s1_c9_q36",
           "text": "Kenapa pokok penting untuk menjaga Bumi?",
           "options": [
+            "Ia memberi haba",
             "Ia memberi udara bersih dan menahan tanah",
             "Ia memberi cahaya",
-            "Ia memberi haba",
             "Ia memberi bunyi"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -5167,12 +5167,12 @@
           "id": "s1_c9_q37",
           "text": "Dua kawasan menerima hujan yang sama. Satu berhutan, satu tandus. Manakah lebih mudah banjir?",
           "options": [
+            "Bergantung pada warna tanah",
             "Kawasan tandus, kerana tiada akar menyerap air",
             "Kawasan berhutan, kerana pokok menahan air",
-            "Kedua-duanya sama",
-            "Bergantung pada warna tanah"
+            "Kedua-duanya sama"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -5207,12 +5207,12 @@
           "id": "s1_c9_q40",
           "text": "Manakah tindakan yang PALING membantu menjaga Bumi?",
           "options": [
-            "Menanam pokok dan mengurangkan sampah",
             "Membakar sampah di halaman",
             "Membuang sampah ke sungai",
-            "Menebang pokok untuk ruang"
+            "Menebang pokok untuk ruang",
+            "Menanam pokok dan mengurangkan sampah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -5230,9 +5230,9 @@
           "text": "Manakah bentuk yang PALING kukuh untuk binaan?",
           "options": [
             "Segi tiga",
+            "Bintang",
             "Bulatan",
-            "Bujur",
-            "Bintang"
+            "Bujur"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -5246,8 +5246,8 @@
           "options": [
             "Tiang",
             "Cat",
-            "Tingkap",
-            "Bumbung"
+            "Bumbung",
+            "Tingkap"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -5274,12 +5274,12 @@
           "id": "s1_c10_q4",
           "text": "Kenapa bangunan mempunyai asas di dalam tanah?",
           "options": [
-            "Supaya bangunan tidak tumbang",
+            "Supaya bangunan ringan",
             "Supaya bangunan cantik",
-            "Supaya bangunan sejuk",
-            "Supaya bangunan ringan"
+            "Supaya bangunan tidak tumbang",
+            "Supaya bangunan sejuk"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -5291,8 +5291,8 @@
           "options": [
             "Tapak yang lebar",
             "Tapak yang sempit",
-            "Tapak yang tajam",
-            "Tapak yang bulat kecil"
+            "Tapak yang bulat kecil",
+            "Tapak yang tajam"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -5304,12 +5304,12 @@
           "id": "s1_c10_q6",
           "text": "Apakah kegunaan bumbung?",
           "options": [
-            "Melindungi daripada hujan dan panas",
-            "Menyokong tiang",
             "Menyimpan air",
-            "Menghias lantai"
+            "Menghias lantai",
+            "Menyokong tiang",
+            "Melindungi daripada hujan dan panas"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -5319,12 +5319,12 @@
           "id": "s1_c10_q7",
           "text": "Manakah binaan yang lebih stabil?",
           "options": [
-            "Menara pendek dan lebar",
-            "Menara tinggi dan kurus",
             "Menara condong",
-            "Menara di atas bola"
+            "Menara pendek dan lebar",
+            "Menara di atas bola",
+            "Menara tinggi dan kurus"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -5335,9 +5335,9 @@
           "text": "Kenapa jambatan perlu kuat?",
           "options": [
             "Untuk menanggung berat kenderaan",
-            "Untuk kelihatan cantik",
             "Untuk menyimpan air",
-            "Untuk menghalang angin"
+            "Untuk menghalang angin",
+            "Untuk kelihatan cantik"
           ],
           "correctAnswer": 0,
           "difficulty": "mudah",
@@ -5349,12 +5349,12 @@
           "id": "s1_c10_q9",
           "text": "Manakah bahan yang TIDAK sesuai untuk membina dinding rumah?",
           "options": [
-            "Kertas",
-            "Batu bata",
             "Konkrit",
-            "Kayu"
+            "Batu bata",
+            "Kayu",
+            "Kertas"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -5364,12 +5364,12 @@
           "id": "s1_c10_q10",
           "text": "Apakah yang berlaku jika tiang bangunan terlalu lemah?",
           "options": [
-            "Bangunan boleh runtuh",
-            "Bangunan menjadi tinggi",
+            "Bangunan menjadi cantik",
             "Bangunan menjadi sejuk",
-            "Bangunan menjadi cantik"
+            "Bangunan boleh runtuh",
+            "Bangunan menjadi tinggi"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "mudah",
           "points": 10,
           "type": "mcq",
@@ -5379,12 +5379,12 @@
           "id": "s1_c10_q11",
           "text": "Kenapa struktur segi tiga digunakan pada bumbung dan jambatan?",
           "options": [
-            "Segi tiga tidak berubah bentuk apabila ditolak",
-            "Segi tiga lebih murah",
             "Segi tiga lebih ringan",
-            "Segi tiga lebih cantik"
+            "Segi tiga lebih cantik",
+            "Segi tiga lebih murah",
+            "Segi tiga tidak berubah bentuk apabila ditolak"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -5404,12 +5404,12 @@
           "id": "s1_c10_q13",
           "text": "Ali membina dua menara sama tinggi. Satu bertapak lebar, satu bertapak sempit. Manakah lebih mudah tumbang?",
           "options": [
-            "Bertapak sempit",
-            "Bertapak lebar",
             "Kedua-duanya sama",
-            "Bergantung pada warna"
+            "Bertapak sempit",
+            "Bergantung pada warna",
+            "Bertapak lebar"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -5419,12 +5419,12 @@
           "id": "s1_c10_q14",
           "text": "Kenapa dinding rumah dibina lurus dan tegak?",
           "options": [
-            "Supaya berat turun terus ke tanah",
-            "Supaya cantik",
             "Supaya senang dicat",
-            "Supaya rumah sejuk"
+            "Supaya rumah sejuk",
+            "Supaya cantik",
+            "Supaya berat turun terus ke tanah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -5434,12 +5434,12 @@
           "id": "s1_c10_q15",
           "text": "Manakah gabungan yang PALING kukuh?",
           "options": [
-            "Bahan kuat dan bentuk segi tiga",
             "Bahan lemah dan bentuk segi tiga",
             "Bahan kuat dan tapak sempit",
+            "Bahan kuat dan bentuk segi tiga",
             "Bahan lemah dan tapak sempit"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -5459,12 +5459,12 @@
           "id": "s1_c10_q17",
           "text": "Kenapa bangunan tinggi mempunyai asas yang sangat dalam?",
           "options": [
+            "Supaya ada ruang simpanan",
             "Berat yang besar perlu disokong dengan kukuh",
-            "Supaya nampak tinggi",
             "Supaya sejuk",
-            "Supaya ada ruang simpanan"
+            "Supaya nampak tinggi"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -5474,12 +5474,12 @@
           "id": "s1_c10_q18",
           "text": "Rina meletakkan buku berat di atas menara kertas. Menara runtuh. Apakah masalahnya?",
           "options": [
-            "Bahan terlalu lemah untuk berat itu",
-            "Buku terlalu berwarna",
             "Menara terlalu pendek",
-            "Kertas terlalu putih"
+            "Buku terlalu berwarna",
+            "Kertas terlalu putih",
+            "Bahan terlalu lemah untuk berat itu"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -5489,12 +5489,12 @@
           "id": "s1_c10_q19",
           "text": "Manakah cara terbaik menjadikan menara blok lebih stabil?",
           "options": [
-            "Buat tapak lebih lebar",
             "Buat lebih tinggi",
-            "Buat lebih kurus",
-            "Letak di tempat licin"
+            "Letak di tempat licin",
+            "Buat tapak lebih lebar",
+            "Buat lebih kurus"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "sederhana",
           "points": 20,
           "type": "mcq",
@@ -5505,8 +5505,8 @@
           "text": "Kenapa rumah di kawasan banjir dibina di atas tiang tinggi?",
           "options": [
             "Supaya air tidak masuk ke dalam rumah",
-            "Supaya nampak cantik",
             "Supaya angin masuk",
+            "Supaya nampak cantik",
             "Supaya rumah ringan"
           ],
           "correctAnswer": 0,
@@ -5519,12 +5519,12 @@
           "id": "s1_c10_q21",
           "text": "Ali membina jambatan kertas. Bagaimana dia boleh menguatkannya tanpa menambah kertas?",
           "options": [
-            "Lipat kertas menjadi bentuk beralun",
-            "Basahkan kertas",
+            "Cat kertas itu",
             "Potong kertas kecil",
-            "Cat kertas itu"
+            "Lipat kertas menjadi bentuk beralun",
+            "Basahkan kertas"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -5544,12 +5544,12 @@
           "id": "s1_c10_q23",
           "text": "Kenapa kaki kerusi selalunya empat dan bukan tiga?",
           "options": [
-            "Empat kaki mengedarkan berat dengan lebih rata",
-            "Tiga kaki terlalu mahal",
             "Empat kaki lebih ringan",
-            "Tiga kaki terlalu tinggi"
+            "Tiga kaki terlalu tinggi",
+            "Tiga kaki terlalu mahal",
+            "Empat kaki mengedarkan berat dengan lebih rata"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -5559,12 +5559,12 @@
           "id": "s1_c10_q24",
           "text": "Sebuah menara tinggi berdiri di kawasan berangin. Ciri manakah paling penting?",
           "options": [
-            "Tapak yang lebar dan berat di bawah",
+            "Tingkap yang banyak",
             "Warna yang cerah",
-            "Bumbung yang licin",
-            "Tingkap yang banyak"
+            "Tapak yang lebar dan berat di bawah",
+            "Bumbung yang licin"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -5584,12 +5584,12 @@
           "id": "s1_c10_q26",
           "text": "Kenapa struktur bulat seperti terowong kuat menahan tekanan?",
           "options": [
-            "Bentuk melengkung menyebarkan daya ke seluruh permukaan",
             "Bulat lebih ringan",
-            "Bulat lebih murah",
-            "Bulat lebih cantik"
+            "Bulat lebih cantik",
+            "Bentuk melengkung menyebarkan daya ke seluruh permukaan",
+            "Bulat lebih murah"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -5599,12 +5599,12 @@
           "id": "s1_c10_q27",
           "text": "Manakah struktur yang paling mudah runtuh?",
           "options": [
-            "Tinggi, kurus dan bertapak sempit",
-            "Rendah, lebar dan berat",
             "Segi tiga yang kukuh",
-            "Bertapak lebar dan pendek"
+            "Bertapak lebar dan pendek",
+            "Tinggi, kurus dan bertapak sempit",
+            "Rendah, lebar dan berat"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -5615,9 +5615,9 @@
           "text": "Rina mahu menguji jambatan mana lebih kuat. Apakah yang MESTI sama?",
           "options": [
             "Panjang jambatan dan cara beban diletakkan",
+            "Masa ujian sahaja",
             "Warna jambatan",
-            "Nama jambatan",
-            "Masa ujian sahaja"
+            "Nama jambatan"
           ],
           "correctAnswer": 0,
           "difficulty": "cabaran",
@@ -5629,12 +5629,12 @@
           "id": "s1_c10_q29",
           "text": "Kenapa binaan menggunakan gabungan bahan dan bukan satu bahan sahaja?",
           "options": [
-            "Setiap bahan kuat pada perkara yang berbeza",
             "Supaya lebih berwarna",
-            "Supaya lebih murah sahaja",
-            "Supaya lebih berat"
+            "Supaya lebih berat",
+            "Setiap bahan kuat pada perkara yang berbeza",
+            "Supaya lebih murah sahaja"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -5644,12 +5644,12 @@
           "id": "s1_c10_q30",
           "text": "Apakah yang paling mungkin berlaku kepada bangunan yang asasnya terlalu cetek?",
           "options": [
-            "Ia condong atau runtuh lama-kelamaan",
             "Ia menjadi tinggi",
+            "Ia condong atau runtuh lama-kelamaan",
             "Ia menjadi sejuk",
             "Ia menjadi ringan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "cabaran",
           "points": 30,
           "type": "mcq",
@@ -5661,8 +5661,8 @@
           "options": [
             "Menara A, kerana beratnya berada di bawah",
             "Menara B, kerana beratnya di atas",
-            "Kedua-duanya sama",
-            "Bergantung pada warna blok"
+            "Bergantung pada warna blok",
+            "Kedua-duanya sama"
           ],
           "correctAnswer": 0,
           "difficulty": "ultra",
@@ -5684,12 +5684,12 @@
           "id": "s1_c10_q33",
           "text": "Kenapa jambatan panjang dibina dengan banyak segi tiga besi?",
           "options": [
+            "Segi tiga lebih senang dicat",
             "Segi tiga menahan bentuk walaupun beban berubah",
             "Segi tiga lebih murah",
-            "Segi tiga lebih ringan sahaja",
-            "Segi tiga lebih senang dicat"
+            "Segi tiga lebih ringan sahaja"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -5699,12 +5699,12 @@
           "id": "s1_c10_q34",
           "text": "Sebuah rak buku goyang apabila disentuh. Apakah pembaikan yang PALING berkesan?",
           "options": [
-            "Tambah palang serong di belakang",
             "Cat rak itu",
             "Tambah buku di atas",
+            "Tambah palang serong di belakang",
             "Alihkan ke tempat lain"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 2,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -5726,8 +5726,8 @@
           "options": [
             "Struktur yang langsung tidak boleh bergerak akan patah",
             "Supaya orang di dalam berasa seronok",
-            "Supaya bangunan ringan",
-            "Supaya bangunan cantik"
+            "Supaya bangunan cantik",
+            "Supaya bangunan ringan"
           ],
           "correctAnswer": 0,
           "difficulty": "ultra",
@@ -5739,12 +5739,12 @@
           "id": "s1_c10_q37",
           "text": "Manakah kesimpulan yang PALING tepat tentang kekuatan binaan?",
           "options": [
-            "Kekuatan bergantung pada bahan dan bentuk, bukan satu sahaja",
-            "Hanya bahan yang penting",
             "Hanya bentuk yang penting",
-            "Hanya saiz yang penting"
+            "Kekuatan bergantung pada bahan dan bentuk, bukan satu sahaja",
+            "Hanya saiz yang penting",
+            "Hanya bahan yang penting"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -5754,12 +5754,12 @@
           "id": "s1_c10_q38",
           "text": "Kenapa rumah tradisional Melayu dibina di atas tiang?",
           "options": [
+            "Supaya ringan",
             "Mengelak banjir dan membenarkan udara mengalir di bawah",
-            "Supaya nampak tinggi",
             "Supaya senang dicat",
-            "Supaya ringan"
+            "Supaya nampak tinggi"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 1,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",
@@ -5779,12 +5779,12 @@
           "id": "s1_c10_q40",
           "text": "Seorang murid berkata \"menara paling tinggi mesti paling kuat.\" Apakah kesilapannya?",
           "options": [
-            "Ketinggian tidak menentukan kekuatan; tapak dan bahan yang menentukan",
-            "Menara tinggi memang selalu lemah",
             "Ketinggian tidak boleh diukur",
-            "Menara pendek tidak berguna"
+            "Menara pendek tidak berguna",
+            "Menara tinggi memang selalu lemah",
+            "Ketinggian tidak menentukan kekuatan; tapak dan bahan yang menentukan"
           ],
-          "correctAnswer": 0,
+          "correctAnswer": 3,
           "difficulty": "ultra",
           "points": 50,
           "type": "mcq",

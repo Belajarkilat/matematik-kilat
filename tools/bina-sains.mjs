@@ -30,6 +30,31 @@ const LEVELS = [
 ];
 const PER_LEVEL = 10;
 
+/**
+ * Bank ditulis dengan jawapan betul sebagai pilihan pertama, kerana itu
+ * paling mudah disemak semasa menulis. App tidak mengocok pilihan, jadi
+ * tanpa langkah ini jawapan sentiasa di kedudukan A dan budak cepat belajar
+ * menekan A tanpa membaca. Pilihan dikocok dengan benih daripada id soalan,
+ * supaya susunan tetap sama pada setiap binaan dan fail JSON tidak berubah
+ * tanpa sebab.
+ */
+function kocok(id, options, correct) {
+  let h = 2166136261;
+  for (const ch of id) { h ^= ch.charCodeAt(0); h = Math.imul(h, 16777619); }
+  const rand = () => {
+    h = Math.imul(h ^ (h >>> 15), 2246822507);
+    h = Math.imul(h ^ (h >>> 13), 3266489909);
+    h ^= h >>> 16;
+    return (h >>> 0) / 4294967296;
+  };
+  const idx = options.map((_, k) => k);
+  for (let k = idx.length - 1; k > 0; k--) {
+    const j = Math.floor(rand() * (k + 1));
+    [idx[k], idx[j]] = [idx[j], idx[k]];
+  }
+  return { options: idx.map((k) => options[k]), correctAnswer: idx.indexOf(correct) };
+}
+
 const only = process.argv[2] ? [Number(process.argv[2])] : [1, 2, 3, 4, 5, 6];
 const problems = [];
 const note = (where, msg) => problems.push(`${where}: ${msg}`);
@@ -94,11 +119,16 @@ for (const tahun of only) {
           note(where, `jenis soalan tidak dikenali: ${raw.type}`);
         }
 
+        const qid = `s${tahun}_c${ci + 1}_q${li * PER_LEVEL + qi + 1}`;
+        let options = raw.options || [];
+        let correctAnswer = raw.correctAnswer;
+        if (raw.type === 'mcq') ({ options, correctAnswer } = kocok(qid, options, correctAnswer));
+
         const built = {
-          id: `s${tahun}_c${ci + 1}_q${li * PER_LEVEL + qi + 1}`,
+          id: qid,
           text,
-          options: raw.options || [],
-          correctAnswer: raw.correctAnswer,
+          options,
+          correctAnswer,
           difficulty: level.key,
           points: level.points,
           type: raw.type,
